@@ -12,6 +12,8 @@ const lastSatApr = { type: "relative", ordinal: "last", weekday: "sat", month: 4
 const nov15 = { type: "fixed", month: 11, day: 15, verbatim: "Nov 15" } as const;
 const nov16 = { type: "fixed", month: 11, day: 16, verbatim: "Nov 16" } as const;
 const friBeforeLastSatApr = { type: "relative", ordinal: "last", weekday: "sat", month: 4, relation: "preceding", offset_days: -1, verbatim: "Fri preceding last Sat Apr" } as const;
+const jan1 = { type: "fixed", month: 1, day: 1, verbatim: "Jan 1" } as const;
+const dec31 = { type: "fixed", month: 12, day: 31, verbatim: "Dec 31" } as const;
 
 const src = { key: "s1", url: "https://example.gov/reg", title: "Test Reg", documentType: "webpage", instrumentType: "commission_reg", authorityLevel: "primary_regulatory", authorityKey: "cdfw", retrievedDate: "2026-07-01", quotedText: null } as const;
 
@@ -63,15 +65,59 @@ const water2: WaterDataset = {
   reciprocity: [],
 };
 
+// water3: an open (year-round) season with a period-bound *keepable* bag for one species PLUS an
+// unbound, always-in-force catch-and-release protection bag for a *different* species. The scope
+// must read as "open" — the unrelated C&R bag must not downgrade it. (Fails before the fix, which
+// downgraded on ANY active catch_and_release bag.)
+const water3: WaterDataset = {
+  asOf: "2026-07-01",
+  water: { name: "Mixed Bag Lake", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.25, lat: 39.28, verifyCurrent: false },
+  authorities: [{ key: "cdfw", name: "California Department of Fish and Wildlife", state: "CA", type: "state_agency", roles: ["take_rules"] }],
+  reaches: [], species: [], speciesGroups: [],
+  sources: [{ ...src }],
+  groups: [],
+  seasonPeriods: [
+    { key: "yr", groupKey: null, label: "All year", status: "open", startSpec: jan1, endSpec: dec31 },
+  ],
+  regulations: [
+    // period-bound keepable bag for species A (daily 2)
+    { ruleType: "bag", parameters: { daily: 2, unit: "fish", aggregation: "combined_group" }, groupKey: null, seasonPeriodKey: "yr", authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "spA", humanSummary: "2 species-A/day (keepable)", verbatimText: "2 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
+    // UNBOUND always-in-force catch-and-release protection bag for species B (daily 0)
+    { ruleType: "bag", parameters: { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "spB", humanSummary: "0 species-B, catch-and-release (protected)", verbatimText: "0 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
+  ],
+  reciprocity: [],
+};
+
+// water4: open season, and the ONLY active bag is catch-and-release → scope stays catch_and_release.
+const water4: WaterDataset = {
+  asOf: "2026-07-01",
+  water: { name: "Release Only Lake", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.26, lat: 39.27, verifyCurrent: false },
+  authorities: [{ key: "cdfw", name: "California Department of Fish and Wildlife", state: "CA", type: "state_agency", roles: ["take_rules"] }],
+  reaches: [], species: [], speciesGroups: [],
+  sources: [{ ...src }],
+  groups: [],
+  seasonPeriods: [
+    { key: "yr", groupKey: null, label: "All year", status: "open", startSpec: jan1, endSpec: dec31 },
+  ],
+  regulations: [
+    { ruleType: "bag", parameters: { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true }, groupKey: null, seasonPeriodKey: "yr", authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "cr", humanSummary: "0/day, catch-and-release only", verbatimText: "0 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
+  ],
+  reciprocity: [],
+};
+
 let water1Id: number;
 let water2Id: number;
+let water3Id: number;
+let water4Id: number;
 
 describe("GET /api/waters/:id/rules", () => {
   beforeAll(async () => {
-    await loadDatasets(db, [water1, water2]);
+    await loadDatasets(db, [water1, water2, water3, water4]);
     const ws = await db.select().from(waterBody);
     water1Id = ws.find((w) => w.name === "Truckee Test River")!.id;
     water2Id = ws.find((w) => w.name === "No Season Lake")!.id;
+    water3Id = ws.find((w) => w.name === "Mixed Bag Lake")!.id;
+    water4Id = ws.find((w) => w.name === "Release Only Lake")!.id;
   });
 
   it("on 2026-07-01: reach A has the take bag (not winter), closed reach is closed, license + asserts_none render", async () => {
@@ -115,6 +161,23 @@ describe("GET /api/waters/:id/rules", () => {
     const body = await res.json();
     expect(body.status.overall).toBe("unknown");
     expect(body.status.verifyCurrent).toBe(true);
+  });
+
+  it("open season + keepable bag is 'open' even when an unrelated-species C&R bag is in force", async () => {
+    const res = await app.request(`/api/waters/${water3Id}/rules?on=2026-07-01`);
+    const body = await res.json();
+    // both bags surface on the water scope, but the keepable daily-2 bag drives status
+    const water = body.scopes.find((s: any) => s.kind === "water");
+    const dailies = water.rules.filter((r: any) => r.ruleType === "bag").map((r: any) => r.detail.daily).sort();
+    expect(dailies).toEqual([0, 2]);
+    expect(water.status).toBe("open");
+    expect(body.status.overall).toBe("open");
+  });
+
+  it("open season whose only active bag is catch-and-release stays 'catch_and_release'", async () => {
+    const res = await app.request(`/api/waters/${water4Id}/rules?on=2026-07-01`);
+    const body = await res.json();
+    expect(body.status.overall).toBe("catch_and_release");
   });
 
   it("404 for an unknown water id", async () => {

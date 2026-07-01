@@ -109,6 +109,17 @@
       "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_300", "s_ndow_cr2516"] }
     },
     {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Main body of the lake, both states: CA lakes default (§5.85(a)(1), open all year) and NV CR 25-16 ('Open year around') agree. Tributaries and the 300-ft tributary-mouth zones follow the separate §7.50(b)(152) catch-and-release window instead." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": null, "citation": "NV CR 25-16 (Lake Tahoe and tributaries); CCR T14 §5.85(a)(1)",
+      "humanSummary": "Lake Tahoe's main body is open to fishing all year (both the California and Nevada sides).",
+      "verbatimText": "Lake Tahoe and tributaries. Open year around.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ca_regs"] }
+    },
+    {
       "ruleType": "bag",
       "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "'Trout' for this statewide default means Rainbow, Golden, Brown, and Cutthroat trout combined (CCR §5.85); Mackinaw/Lake Trout are a different genus (Salvelinus) and are not included in this count." },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",

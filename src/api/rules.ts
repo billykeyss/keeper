@@ -53,12 +53,15 @@ interface ResolvedRule {
   periods?: Array<{ label: string; status: PeriodStatus; activeNow: boolean }>;
 }
 
-/** Whether an active closure rule marks its whole scope closed.
- *  Water-scoped *spatial* closures (partial-area, e.g. buffers around tributary mouths, swim
- *  areas) render as cards but must NOT close the whole water — excluded from status. */
-function closureClosesScope(params: Params, kind: string | undefined, isWaterScope: boolean): boolean {
-  if (isWaterScope && kind === "spatial") return false;
-  return true;
+/** Whether an active closure rule forces its whole scope to "closed".
+ *  Reach-scope closures close their reach. Water-scope closure rules in this corpus are always
+ *  partial-area geographic closures — spatial buffers around tributary mouths / swim areas, or
+ *  year-round tributary-only closures (e.g. Independence Lake, whose closure covers only the
+ *  tributaries and the water within 300 ft of their mouths). They render as informational cards
+ *  but must NOT close the whole water; a genuine whole-water closure is modelled as a "closed"
+ *  season period, which deriveStatus handles separately. */
+function closureClosesScope(isWaterScope: boolean): boolean {
+  return !isWaterScope;
 }
 
 rules.get("/api/waters/:id/rules", async (c) => {
@@ -226,34 +229,49 @@ rules.get("/api/waters/:id/rules", async (c) => {
 
   // --- derive per-scope status ---
   function deriveStatus(scopeRules: ResolvedRule[], isWaterScope: boolean): ScopeStatus {
-    // 1. active closures (season-status "closed" bindings, or active closure rules)
-    let closed = false;
+    // 1. Active closure that closes this whole scope, or an active "closed" season period.
     for (const rr of scopeRules) {
       if (!rr._inForce) continue;
-      if (rr.ruleType === "closure") {
-        const kind = rr.detail.closure_kind as string | undefined;
-        if (closureClosesScope(rr.detail, kind, isWaterScope)) closed = true;
-      }
-      if (rr._activePeriodStatuses.includes("closed")) closed = true;
+      if (rr.ruleType === "closure" && closureClosesScope(isWaterScope)) return "closed";
+      if (rr._activePeriodStatuses.includes("closed")) return "closed";
     }
-    if (closed) return "closed";
 
-    // 2. open-season evidence
+    // 2. Collect active season-period evidence for this scope. `_activePeriodStatuses` already
+    //    folds in BOTH bound season_period bindings (in-window via isDateInWindow) AND `season`-rule
+    //    parameters.periods entries that are active on `on`.
     let hasOpen = false;
-    let hasCR = false;
+    let hasOpenCR = false;
     for (const rr of scopeRules) {
       if (!rr._inForce) continue;
       for (const st of rr._activePeriodStatuses) {
         if (st === "open") hasOpen = true;
-        if (st === "open_catch_release") hasCR = true;
+        else if (st === "open_catch_release") hasOpenCR = true;
       }
     }
-    const activeCRBag = scopeRules.some(
-      (rr) => rr._inForce && rr.ruleType === "bag" && rr.detail.catch_and_release === true,
-    );
-    if (hasCR) return "catch_and_release";
-    if (hasOpen && activeCRBag) return "catch_and_release";
-    if (hasOpen) return "open";
+
+    // 3. An open period exists. Scope status must reflect only bags that could permit harvest in
+    //    THIS scope — an unrelated always-in-force catch-and-release protection bag for a different
+    //    species (cui-ui at Pyramid, LCT at Independence) must not downgrade a keepable fishery.
+    if (hasOpen) {
+      const activeBags = scopeRules.filter((rr) => rr._inForce && rr.ruleType === "bag");
+      const permitsHarvest = activeBags.some((rr) => {
+        if (rr.polarity !== "applies") return false; // asserts_none bags are neutral, not permissive
+        if (rr.detail.catch_and_release === true) return false;
+        const daily = rr.detail.daily;
+        return (typeof daily === "number" && daily > 0) || daily == null;
+      });
+      if (permitsHarvest) return "open";
+      const hasCRBag = activeBags.some(
+        (rr) => rr.detail.catch_and_release === true || rr.detail.daily === 0,
+      );
+      if (hasCRBag) return "catch_and_release";
+      return "open"; // open season, no bag rule (or only asserts_none) → open
+    }
+
+    // 4. No open period, but an active catch-and-release ("open_catch_release") season period.
+    if (hasOpenCR) return "catch_and_release";
+
+    // 5. Nothing resolvable.
     return "unknown";
   }
 
