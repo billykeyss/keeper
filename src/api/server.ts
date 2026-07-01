@@ -2,10 +2,12 @@ import { Hono } from "hono";
 import { existsSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { waters } from "./waters";
+import { rules } from "./rules";
 
 export const app = new Hono();
 
 app.route("/", waters);
+app.route("/", rules);
 
 // Statically serve the built SPA (web/dist) when present. Guarded so tests and the
 // API-only workflow don't require a web build to exist.
@@ -19,7 +21,8 @@ if (existsSync(WEB_DIST)) {
 // `npm run api` entrypoint — only listens when run directly, never when imported by tests.
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { serve } = await import("@hono/node-server");
-  serve({ fetch: app.fetch, port: 8787 });
+  const port = Number(process.env.PORT) || 8787;
+  serve({ fetch: app.fetch, port });
   // eslint-disable-next-line no-console
-  console.log("API listening on http://localhost:8787");
+  console.log(`API listening on http://localhost:${port}`);
 }
