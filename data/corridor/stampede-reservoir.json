@@ -1,0 +1,80 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Stampede Reservoir",
+    "waterType": "reservoir",
+    "states": ["CA"],
+    "counties": ["Sierra"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.1170,
+    "lat": 39.4740,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]}
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [
+    {"key": "trout", "name": "trout", "category": "trout", "authorityKey": "cdfw"},
+    {"key": "kokanee", "name": "kokanee salmon (landlocked salmon)", "category": "salmon", "authorityKey": "cdfw"}
+  ],
+  "sources": [
+    {"key": "ccr_5_85", "url": "https://govt.westlaw.com/calregs", "title": "CCR T14 §5.85 — Trout (General Statewide Regulations)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit."},
+    {"key": "ccr_5_41", "url": "https://govt.westlaw.com/calregs", "title": "CCR T14 §5.41 — Landlocked Salmon", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) Open season: All year. (b) Daily bag limit: Five. (c) Possession limit: Ten. (d) Size limit: None. Exceptions: Bucks Lake (Plumas Co.), Pardee Lake (Amador Co.), New Bullards Bar Reservoir (Yuba Co.), and Trinity Lake (Trinity Co.), which shall be subject to the following limits: (a) Daily bag limit: Ten. (b) Possession limit: Twenty."},
+    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Trout (T14 CCR §5.85) (a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds... are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit. Stampede Reservoir does not appear in the Alphabetical List of Trout Waters with Special Fishing Regulations (§7.50)."},
+    {"key": "wildlife_ca_kokanee", "url": "https://wildlife.ca.gov/Fishing/Inland/Kokanee", "title": "CDFW — Fishing for Kokanee", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "5.41. LANDLOCKED SALMON (a) Open season: All year (b) Daily bag limit: Five (c) Possession limit: Ten (d) Size limit: None. Exceptions: Bucks Lake (Plumas Co.), Pardee Lake (Amador Co.), New Bullards Bar Reservoir (Yuba Co.), and Trinity Lake (Trinity Co.), which shall be subject to the following limits: (a) Daily bag limit: Ten (b) Possession limit: Twenty."},
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "all_year", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}], "note": "General statewide lake default; Stampede Reservoir is not listed in CCR §7.50(b)."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
+      "humanSummary": "Open to fishing all year (general statewide lake default; not specially listed in §7.50(b))",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_85", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "relationship": "independent"},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout/day, 10 in possession (general statewide lake default — Stampede Reservoir has no §7.50(b) special listing)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_85", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "relationship": "independent", "counting_rule": "Kokanee (landlocked salmon) are regulated under §5.41, separately from trout under §5.85, and are not counted against the trout bag/possession limit."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "kokanee"}],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.41",
+      "humanSummary": "Kokanee (landlocked salmon): 5/day, 10 in possession — a distinct sub-limit from trout, not aggregated with the trout bag",
+      "verbatimText": "(a) Open season: All year. (b) Daily bag limit: Five. (c) Possession limit: Ten. (d) Size limit: None.",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_41", "corroborating": ["wildlife_ca_kokanee", "cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": {"min_length_in": null, "max_length_in": null, "protected_slot": null, "measurement": "total_length", "unit": "inch", "note": "No minimum or maximum size limit for kokanee (landlocked salmon)."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "asserts_none", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "kokanee"}],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.41(d)",
+      "humanSummary": "No size limit for kokanee (verified absence)",
+      "verbatimText": "(d) Size limit: None.",
+      "isParaphrase": true, "confidence": "high", "sourceKeys": {"primary": "ccr_5_41", "corroborating": ["wildlife_ca_kokanee"]}
+    },
+    {
+      "ruleType": "license",
+      "parameters": {"required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
+    }
+  ],
+  "reciprocity": []
+}

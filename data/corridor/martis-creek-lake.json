@@ -1,0 +1,62 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Martis Creek Lake",
+    "waterType": "reservoir",
+    "states": ["CA"],
+    "counties": ["Placer", "Nevada"],
+    "aliases": ["Martis Lake", "Martis Creek Reservoir"],
+    "gnisId": null,
+    "lon": -120.1140,
+    "lat": 39.2970,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]},
+    {"key": "usace", "name": "U.S. Army Corps of Engineers", "state": null, "type": "federal", "roles": ["land_management"]}
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [
+    {"key": "trout", "name": "trout", "category": "trout", "authorityKey": "cdfw"}
+  ],
+  "sources": [
+    {"key": "ccr_5_85", "url": "https://govt.westlaw.com/calregs", "title": "CCR T14 §5.85 — Trout (General Statewide Regulations)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit."},
+    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(87) Martis Creek from the Martis Lake dam downstream to the confluence with the Truckee River (Nevada Co.). All year. Only artificial lures with barbless hooks may be used. 0 trout. (88) Martis Lake tributaries (Nevada and Placer cos.). All year. Only artificial lures with barbless hooks may be used. 0 trout. [No separate 'Martis Lake' (the reservoir itself) entry appears in the current §7.50(b) list.]"},
+    {"key": "cdfw_rulemaking_record", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=175721", "title": "CDFW Sierra District trout regulation simplification — rulemaking analysis (Martis Lake)", "documentType": "pdf", "instrumentType": "admin_code", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(112) Martis Lake and tributaries (Nevada and Placer Cos.) (A) Martis Lake. Last Saturday in Apr. through Nov. 15. Only artificial lures with barbless hooks may be used. 0 [trout] -> Move to statewide reg / Move to statewide reg for lakes and reservoirs SL. (B) Martis Lake tributaries. Closed to all fishing all year -> All year."},
+    {"key": "usace_page", "url": "https://www.spk.usace.army.mil/Missions/Recreation/Martis-Creek-Lake", "title": "Martis Creek Lake | U.S. Army Corps of Engineers", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usace", "retrievedDate": "2026-07-01", "quotedText": "Martis Creek Lake was the first \"catch and release trophy trout\" lake established in California. Varieties include Rainbow, Brown and Lahonton Cutthroat trout. Anglers must use flies, barbless hooks and artificial lures only. Live bait is not permitted. No fishing is allowed in the streams above the lake."},
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "all_year", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}], "note": "Martis Creek Lake (the reservoir itself) no longer appears as its own entry in CCR §7.50(b); a CDFW rulemaking record documents its special listing being moved to the general statewide lake regulation. This conflicts with widely repeated secondary/tourism sources (e.g. USACE's own recreation page) describing it as a 0-limit catch-and-release trophy water — those sources may be outdated. NEEDS LIVE VERIFICATION before production use."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
+      "humanSummary": "Open to fishing all year (general statewide lake default — the reservoir itself is not currently listed by name in §7.50(b); verify before shipping)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
+      "isParaphrase": false, "confidence": "medium", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group"},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout/day, 10 in possession under the general statewide lake default. CAUTION: this appears to supersede the lake's former special 0-trout catch-and-release listing per a CDFW rulemaking record moving 'Martis Lake' to the statewide lake rule, and the current (06/01/2026) CDFW regulations booklet has no separate listing for the lake — but this contradicts strong, widely repeated secondary-source claims (USACE's own page, CalTrout, angling sites) that it remains a 0-limit trophy catch-and-release water. Confidence downgraded to medium pending a live govt.westlaw.com/calregs cross-check.",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
+      "isParaphrase": false, "confidence": "medium", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
+    },
+    {
+      "ruleType": "license",
+      "parameters": {"required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,158 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Truckee River",
+    "waterType": "river",
+    "states": ["CA"],
+    "counties": ["Placer", "Nevada", "Sierra"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.10,
+    "lat": 39.35,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "reach_a", "name": "Truckee River Reach A", "fromDesc": "Lake Tahoe outlet dam, Tahoe City", "toDesc": "1,000 feet below the Lake Tahoe outlet dam", "lon": -120.1427, "lat": 39.1666 },
+    { "key": "reach_b", "name": "Truckee River Reach B", "fromDesc": "Confluence of Trout Creek", "toDesc": "Mouth of Prosser Creek", "lon": -120.1738, "lat": 39.3350 },
+    { "key": "reach_c", "name": "Truckee River Reach C", "fromDesc": "Mouth of Prosser Creek", "toDesc": "Nevada State Line (near Farad)", "lon": -120.0500, "lat": 39.4200 }
+  ],
+  "species": [
+    { "commonName": "Rainbow Trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Brown Trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [
+    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    {
+      "key": "s_ca_regs", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf",
+      "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year. (B) Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout. (C) Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout. Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout."
+    },
+    {
+      "key": "s_ca_lii_750", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "Cal. Code Regs. Tit. 14, § 7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations", "documentType": "webpage",
+      "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam — Closed to all fishing all year. (B) confluence of Trout Creek downstream to the mouth of Prosser Creek — All year, artificial flies with barbless hooks only, 0 trout. (C) mouth of Prosser Creek downstream to the Nevada State Line — two-period season."
+    }
+  ],
+  "groups": [
+    {
+      "key": "g_reach_b", "authorityKey": "cdfw", "citation": "7.50(b)(154)(B)",
+      "humanSummary": "Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek: open all year, artificial flies with barbless hooks only, 0 trout (catch-and-release).",
+      "verbatimText": "Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "g_reach_c", "authorityKey": "cdfw", "citation": "7.50(b)(154)(C)",
+      "humanSummary": "Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line: two-period season — 2 trout with artificial lures (last Sat. Apr.–Nov. 15); 0 trout catch-and-release with artificial lures and barbless hooks (Nov. 16–Fri. preceding last Sat. Apr.).",
+      "verbatimText": "Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout. Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout"
+    }
+  ],
+  "seasonPeriods": [
+    {
+      "key": "sp_take", "groupKey": "g_reach_c", "label": "take_season", "status": "open",
+      "startSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April" },
+      "endSpec": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" }
+    },
+    {
+      "key": "sp_winter", "groupKey": "g_reach_c", "label": "winter_cr", "status": "open_catch_release",
+      "startSpec": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" },
+      "endSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" }
+    }
+  ],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed for 1,000 feet below the Lake Tahoe outlet dam." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(A)",
+      "humanSummary": "Closed to all fishing, year-round, for 1,000 feet below the Lake Tahoe outlet dam.",
+      "verbatimText": "Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "humanSummary": "Open all year (catch-and-release) between Trout Creek and Prosser Creek.",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "humanSummary": "0 trout, catch-and-release, between Trout Creek and Prosser Creek.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": true, "lures_allowed": false, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "humanSummary": "Artificial flies with barbless hooks only between Trout Creek and Prosser Creek; no bait, no other lure types.",
+      "verbatimText": "Only artificial flies with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "unit": "fish", "aggregation": "combined_group" },
+      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_take", "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "humanSummary": "2 trout during the take season (last Sat. April–Nov. 15) between Prosser Creek and the Nevada state line.",
+      "verbatimText": "Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false },
+      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_take", "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "humanSummary": "Artificial lures only (barbless not required) during the take season, Prosser Creek to the Nevada state line.",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_winter", "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "humanSummary": "0 trout, catch-and-release, during the winter window (Nov. 16–Fri. preceding last Sat. April), Prosser Creek to the Nevada state line.",
+      "verbatimText": "Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_winter", "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "humanSummary": "Artificial lures with barbless hooks required during the winter catch-and-release window, Prosser Creek to the Nevada state line.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,128 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Boca Reservoir",
+    "waterType": "reservoir",
+    "states": ["CA"],
+    "counties": ["Nevada", "Sierra"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.0940,
+    "lat": 39.3890,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Kokanee salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Smallmouth bass", "scientificName": "Micropterus dolomieu", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [
+    { "key": "trout", "name": "Trout", "category": "trout", "authorityKey": "cdfw" },
+    { "key": "kokanee", "name": "Kokanee (landlocked salmon)", "category": "salmon", "authorityKey": "cdfw" },
+    { "key": "black_bass", "name": "Black bass", "category": "bass", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_750", "url": "https://govt.westlaw.com/calregs/Document/I13E5B590A72311EFA8E7D644C32D1717?viewType=FullText&originationContext=documenttoc&transitionType=StatuteNavigator&contextData=%28sc.Default%29", "title": "14 CCR §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Every body of water listed in subsection (b) is closed to all fishing except during the open season as shown. Unless otherwise provided, waters shown as open to trout fishing in subsection (b), are open to fishing for other species." },
+    { "key": "ccr_trout", "url": "https://regulations.justia.com/states/california/title-14/division-1/subdivision-1/chapter-2/article-4/section-5-85/", "title": "14 CCR §5.85 — Trout, General Statewide Regulations", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_trout_corrob", "url": "http://adventuresportsjournal.com/california-trout-season-2026/", "title": "California Trout Season 2026 Opens April 25 Across State", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Most lakes, rivers and streams have a limit of five trout per day and a 10 trout possession limit." },
+    { "key": "ccr_bass", "url": "https://www.eregulations.com/california/fishing/special-black-bass-regulations", "title": "14 CCR §5.00 — Black Bass, General Statewide Restrictions", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Lakes/Reservoirs and the Sacramento-San Joaquin Delta: The following waters, except for those listed in subsection (b) Special Regulations (below), are open to fishing all year, with a 12-inch total length minimum size limit and a five-fish daily bag limit: All lakes and reservoirs in the State..." },
+    { "key": "ccr_kokanee", "url": "https://wildlife.ca.gov/Fishing/Inland/Kokanee", "title": "CDFW — Fishing for Kokanee (14 CCR §5.41)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "5.41. LANDLOCKED SALMON (a) Open season: All year (b) Daily bag limit: Five (c) Possession limit: Ten (d) Size limit: None" },
+    { "key": "fgc_license", "url": "https://www.ca.gov/departments/174/services/29/", "title": "CDFW — Get a Fishing or Hunting License (Fish & Game Code §7145)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who is 16 years of age or older must possess a valid sport fishing license when taking any fish, shell fish, reptile, or amphibian in California according to Fish and Game Code Section 7145." },
+    { "key": "fgc_license_statute", "url": "https://codes.findlaw.com/ca/fish-and-game-code/fgc-sect-7145/", "title": "California Fish & Game Code §7145", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "fgc_secondrod", "url": "https://law.justia.com/codes/california/2005/fgc/7145-7155.html", "title": "California Fish & Game Code §7149.4 — Second-Rod Sport Fishing Stamp", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "trout_season", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §5.85(a)(1)",
+      "humanSummary": "Open to trout fishing all year — Boca Reservoir itself is not on CCR §7.50(b)'s special-regulations list, so the statewide default for lakes and reservoirs applies (no closed season). Note: the Little Truckee River reach immediately upstream, from Stampede Dam down to Boca Reservoir, is separately listed (7.50(b)(80), 0 trout / artificial lures barbless only) — that rule governs the river reach, not the reservoir.",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_trout", "corroborating": ["ccr_750", "ccr_trout_corrob"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §5.85(a)(1)",
+      "humanSummary": "5 trout per day, 10 in possession — the statewide default limit for California lakes and reservoirs (rainbow, brown, golden, and cutthroat trout combined).",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_trout", "corroborating": ["ccr_750", "ccr_trout_corrob"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "kokanee" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §5.41",
+      "humanSummary": "5 kokanee salmon per day, 10 in possession — Boca Reservoir is not among the reduced-limit exception waters (Bucks, Pardee, New Bullards Bar, Trinity), so the statewide landlocked-salmon default applies. CDFW records a kokanee plant at Boca (June 2026), confirming an active fishery. Counted separately from the trout limit.",
+      "verbatimText": "5.41. LANDLOCKED SALMON (a) Open season: All year (b) Daily bag limit: Five (c) Possession limit: Ten (d) Size limit: None",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_kokanee", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "unit": "fish", "aggregation": "combined_group" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "black_bass" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §5.00(a)(1)",
+      "humanSummary": "5 black bass per day — statewide default for California lakes and reservoirs. Smallmouth bass presence at Boca Reservoir is reported by fishing-data sites but not directly confirmed via a CDFW stocking/survey page — treat species presence as medium confidence.",
+      "verbatimText": "Lakes/Reservoirs and the Sacramento-San Joaquin Delta: The following waters, except for those listed in subsection (b) Special Regulations (below), are open to fishing all year, with a 12-inch total length minimum size limit and a five-fish daily bag limit: All lakes and reservoirs in the State...",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_bass", "corroborating": ["ccr_750"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 12, "measurement": "total_length", "unit": "inch" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "black_bass" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §5.00(a)(1)",
+      "humanSummary": "12-inch total-length minimum for black bass — statewide default for lakes and reservoirs.",
+      "verbatimText": "...open to fishing all year, with a 12-inch total length minimum size limit and a five-fish daily bag limit: All lakes and reservoirs in the State...",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_bass", "corroborating": ["ccr_750"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16 },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Fish & Game Code §7145",
+      "humanSummary": "Anglers 16 and older must carry a valid California sport fishing license.",
+      "verbatimText": "Any person who is 16 years of age or older must possess a valid sport fishing license when taking any fish, shell fish, reptile, or amphibian in California according to Fish and Game Code Section 7145.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_license", "corroborating": ["fgc_license_statute"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "max_rods": 2, "requires_permit_note": "A valid second-rod stamp is required to fish with a second rod." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Fish & Game Code §7149.4",
+      "humanSummary": "No bait or lure restrictions. Anglers may fish with up to 2 rods at once if they hold a valid second-rod stamp.",
+      "verbatimText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "fgc_secondrod", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

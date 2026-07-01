@@ -1,0 +1,258 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Lake Tahoe",
+    "waterType": "lake",
+    "states": ["CA", "NV"],
+    "counties": ["El Dorado", "Placer", "Washoe", "Douglas"],
+    "aliases": ["Tahoe Lake"],
+    "gnisId": null,
+    "lon": -120.0324,
+    "lat": 39.0968,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "trpa", "name": "Tahoe Regional Planning Agency", "state": null, "type": "state_agency", "roles": ["land_management", "access"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow Trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Brown Trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Lahontan Cutthroat Trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Lake Trout (Mackinaw)", "scientificName": "Salvelinus namaycush", "category": "char", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Kokanee Salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [
+    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    {
+      "key": "s_ca_regs", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf",
+      "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "quotedText": "Anyone 16 years or older fishing anywhere in Lake Tahoe or Topaz Lake must possess either a California sport fishing license or a Nevada sport fishing license (Nevada also requires a trout stamp)."
+    },
+    {
+      "key": "s_ca_lii_750", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "Cal. Code Regs. Tit. 14, § 7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations", "documentType": "webpage",
+      "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."
+    },
+    {
+      "key": "s_ca_lii_300", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-3.00",
+      "title": "Cal. Code Regs. Tit. 14, § 3.00 — Fishing Hours", "documentType": "webpage",
+      "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "quotedText": "Tahoe Lake (Placer and El Dorado cos.): Fishing is prohibited from two hours after sunset to one hour before sunrise."
+    },
+    {
+      "key": "s_ndow_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf",
+      "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons (Jan. 1, 2026 – Dec. 31, 2027)", "documentType": "pdf",
+      "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01",
+      "quotedText": "Lake Tahoe and tributaries — Open year around [except for closed areas]. Daily: 5 game fish. Possession: 10 game fish. Hours: 1 hour before sunrise to 2 hours after sunset."
+    },
+    {
+      "key": "s_ndow_anglerguide", "url": "https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2025/06/Lake-Tahoe_Angler-Guide-2025_FINAL-1.pdf",
+      "title": "NDOW Lake Tahoe Angler and Fish Survey Information Guide (2025)", "documentType": "pdf",
+      "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-01",
+      "quotedText": "Season is open year-round, 1 hour before sunrise to 2 hours after sunset... Limits are 5 coldwater game fish of which not more than 2 may be Mackinaw (Lake Trout)... a Nevada fishing license or a Nevada Interstate Boundary Waters license; a Nevada short-term fishing permit, a \"Take Me Fishing\" Group permit, or a California fishing license to fish anywhere on the lake."
+    },
+    {
+      "key": "s_nac_502_084", "url": "https://www.law.cornell.edu/regulations/nevada/NAC-502-084",
+      "title": "Nev. Admin. Code § 502.084 — \"Nevada Interstate Boundary Waters License\" defined", "documentType": "webpage",
+      "instrumentType": "admin_code", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-01",
+      "quotedText": "an annual license to fish solely in the reciprocal waters of the Colorado River, Lake Mead, Lake Mohave, Lake Tahoe and Topaz Lake"
+    },
+    {
+      "key": "s_trpa_gov", "url": "https://www.trpa.gov/trpa-takes-action-to-strengthen-boat-inspections/",
+      "title": "TRPA Takes Action to Strengthen Boat Inspections — Tahoe Regional Planning Agency", "documentType": "webpage",
+      "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "trpa", "retrievedDate": "2026-07-01",
+      "quotedText": "The TRPA Governing Board on Wednesday approved a critical update to the Lake Tahoe Watercraft Inspection Program... Boats that were launched last in Lake Tahoe and have a Tahoe security seal can launch again without reinspection."
+    },
+    {
+      "key": "s_tahoeboatinsp_faq", "url": "https://tahoeboatinspections.com/faq/",
+      "title": "Frequently Asked Questions — Tahoe Boat Inspections (TRPA / Tahoe RCD)", "documentType": "webpage",
+      "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "trpa", "retrievedDate": "2026-07-01",
+      "quotedText": "Attempting to launch with a tampered seal is a violation of TRPA Code of Ordinances 63.4. Violators of TRPA Code of Ordinances 63.4 are subject to a minimum $5,000 monetary penalty for each offense."
+    },
+    {
+      "key": "s_tahoeboatinsp_prep", "url": "https://tahoeboatinspections.com/prepare-for-inspection/",
+      "title": "Prepare for Inspection and Decontamination — Tahoe Boat Inspections", "documentType": "webpage",
+      "instrumentType": "admin_code", "authorityLevel": "agency_mirror", "authorityKey": "trpa", "retrievedDate": "2026-07-01",
+      "quotedText": "After your vessel is inspected and decontaminated, you will receive a Tahoe sticker along with a wire seal that attaches your boat to your trailer. A seal is required to launch at any lake in the Tahoe Basin and is removed at the launch site."
+    }
+  ],
+  "groups": [
+    {
+      "key": "g_tahoe_trib", "authorityKey": "cdfw", "citation": "7.50(b)(152)",
+      "humanSummary": "Tahoe Lake tributaries (and within 300 ft of tributary mouths): catch-and-release season Sat. before Memorial Day–Sep. 30, artificial lures with barbless hooks only, 0 trout; closed the remainder of the year per §7.50(a)(1).",
+      "verbatimText": "(152) Tahoe Lake and tributaries (Placer and El Dorado cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."
+    }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "fishing_hours",
+      "parameters": {
+        "basis": "sunrise_sunset",
+        "allowed_from": { "anchor": "sunrise", "offset_minutes": -60, "verbatim": "1 hour before sunrise" },
+        "allowed_to": { "anchor": "sunset", "offset_minutes": 120, "verbatim": "2 hours after sunset" },
+        "note": "CA CCR T14 §3.00(b)(1)(D) frames this as fishing prohibited from 2 hours after sunset to 1 hour before sunrise; NDOW's CR 25-16 independently states the same window as open 1 hour before sunrise to 2 hours after sunset. The two states' hours match."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": null, "citation": "CCR T14 §3.00(b)(1)(D); NV CR 25-16",
+      "humanSummary": "Fishing hours on Lake Tahoe (both CA and NV waters): 1 hour before sunrise through 2 hours after sunset.",
+      "verbatimText": "Tahoe Lake (Placer and El Dorado cos.): Fishing is prohibited from two hours after sunset to one hour before sunrise.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_300", "s_ndow_cr2516"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "'Trout' for this statewide default means Rainbow, Golden, Brown, and Cutthroat trout combined (CCR §5.85); Mackinaw/Lake Trout are a different genus (Salvelinus) and are not included in this count." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "CCR T14 §5.85(a)(1) (general statewide default; Lake Tahoe's main body has no override in §7.50(b), only its tributaries do)",
+      "humanSummary": "California side: general statewide lake default applies to Lake Tahoe's main body — 5 trout/day, 10 in possession, open all year.",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_all", "counting_rule": "'Game fish' at Lake Tahoe = trout, mountain whitefish, kokanee salmon, and warmwater species combined; no species-specific sub-limit appears in the codified CR 25-16 table for Lake Tahoe." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Lake Tahoe and tributaries)",
+      "humanSummary": "Nevada side: 5 game fish/day, 10 in possession, open all year (no species sub-limit in the current codified regulation).",
+      "verbatimText": "Lake Tahoe and tributaries. Open year around. Daily: 5 game fish. Possession: 10 game fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ndow_anglerguide"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "unit": "fish", "aggregation": "combined_group", "relationship": "shared_aggregate", "possession_condition": "Counted within (not in addition to) the 5-game-fish daily limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesCommonName": "Lake Trout (Mackinaw)" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NDOW Lake Tahoe Angler Guide (2025) — not found in codified CR 25-16",
+      "humanSummary": "Unconfirmed: verify current regulations. NDOW's own angler guide states no more than 2 of the 5 game fish/day may be Mackinaw (Lake Trout), but this sub-limit does not appear in the current codified Commission Regulation (CR 25-16), which lists Lake Tahoe simply as '5 game fish' with no species breakdown.",
+      "verbatimText": "Limits are 5 coldwater game fish of which not more than 2 may be Mackinaw (Lake Trout).",
+      "isParaphrase": false, "confidence": "low",
+      "sourceKeys": { "primary": "s_ndow_anglerguide", "corroborating": ["s_ndow_cr2516"] }
+    },
+    {
+      "ruleType": "ais",
+      "parameters": {
+        "inspection_required": true, "decontamination_required": true, "seal_or_sticker_required": true, "drain_plug_out_required": true,
+        "applies_to": "all_watercraft",
+        "sticker_note": "Vessels receive a dated Tahoe inspection sticker and a numbered wire seal connecting boat and trailer; an intact seal from the last Tahoe launch allows direct launch without re-inspection.",
+        "status_source_url": "https://tahoeboatinspections.com",
+        "note": "Applies lake-wide (CA and NV waters). All motorized watercraft (including hand-launched electric watercraft like eFoils/eSUPs) and all trailered non-motorized watercraft require inspection before launch. Non-trailered hand-launched non-motorized craft (kayaks, canoes, paddleboards) are not automatically required to be inspected but may be subject to inspection/decontamination if determined necessary based on risk (TRPA Code 63.4.2). No fixed quarantine/drying period is used — Tahoe relies on mandatory decontamination instead. Program led jointly by TRPA and the Tahoe Resource Conservation District."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "trpa", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": null, "citation": "TRPA Code of Ordinances §63.4 (§63.4.2 for non-motorized risk-based inspection)",
+      "humanSummary": "Mandatory watercraft inspection program on Lake Tahoe: all motorized and trailered watercraft must be inspected (and decontaminated if needed) before launch, receiving a Tahoe inspection sticker and numbered seal; tampering with a seal or launching without a valid inspection is a code violation subject to a minimum $5,000 penalty.",
+      "verbatimText": "Attempting to launch with a tampered seal is a violation of TRPA Code of Ordinances 63.4. Violators of TRPA Code of Ordinances 63.4 are subject to a minimum $5,000 monetary penalty for each offense.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_tahoeboatinsp_faq", "corroborating": ["s_trpa_gov", "s_tahoeboatinsp_prep"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true, "min_age": 16, "under_min_age": "no_license_required", "replaces_state_license": false,
+        "required_product_note": "A California sport fishing license is required for anglers 16+. Per license reciprocity, a valid Nevada sport fishing license is also honored anywhere on Lake Tahoe (CDFW's own regulations text adds that Nevada also currently requires a trout stamp with its license — see the reciprocity rows for details and a flagged conflict with Nevada's own current materials)."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "2026 CA Freshwater Sport Fishing Regs — General Information / License Provisions (Lake Tahoe & Topaz Lake)",
+      "humanSummary": "Anglers 16+ fishing anywhere on Lake Tahoe (either state's waters) must hold a California sport fishing license or a Nevada sport fishing license.",
+      "verbatimText": "Anyone 16 years or older fishing anywhere in Lake Tahoe or Topaz Lake must possess either a California sport fishing license or a Nevada sport fishing license (Nevada also requires a trout stamp).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true, "min_age": 16, "under_min_age": "no_license_required", "replaces_state_license": false,
+        "required_product_note": "Satisfied by a Nevada resident/nonresident fishing license, a Nevada Interstate Boundary Waters License (NAC 502.084 — an annual license valid only on Lake Tahoe, Lake Mead, Lake Mohave, Topaz Lake, and the Colorado River; commonly cited nonresident price ~$30 per third-party aggregators, not independently verified against an NDOW fee schedule here), a Nevada short-term fishing permit, a 'Take Me Fishing' group permit, or a California sport fishing license (reciprocity)."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NDOW Lake Tahoe Angler Guide (2025); NAC 502.084",
+      "humanSummary": "Anglers 16+ on the Nevada side of Lake Tahoe must hold a Nevada fishing license (or Interstate Boundary Waters License / short-term or group permit) or a California sport fishing license.",
+      "verbatimText": "Persons 16 years of age or older must have either a Nevada fishing license or a Nevada Interstate Boundary Waters license; a Nevada short-term fishing permit, a \"Take Me Fishing\" Group permit, or a California fishing license to fish anywhere on the lake.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_anglerguide", "corroborating": ["s_nac_502_084"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "tributary_cr_season", "status": "open_catch_release",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -2, "verbatim": "Saturday preceding Memorial Day" },
+            "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } }
+        ],
+        "note": "Applies to Tahoe Lake tributaries upstream to the first lake, and to the lake within 300 feet of the mouth of its tributaries (CCR §7.50(b)(152)(A)-(B)). Per §7.50(a)(1), every water listed in (b) is closed to all fishing except during the shown open season — so this area is closed Oct. 1 through the Friday preceding the Saturday before Memorial Day. Date_spec encodes 'Saturday preceding Memorial Day' as the last Monday of May (Memorial Day) minus 2 days, since the resolver has no anchor_holiday implementation."
+      },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)-(B)",
+      "humanSummary": "Tahoe tributaries (and within 300 ft of their mouths): open catch-and-release only, Saturday before Memorial Day through Sept. 30; closed the rest of the year.",
+      "verbatimText": "Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)-(B)",
+      "humanSummary": "0 trout (catch-and-release) in Tahoe tributaries and within 300 ft of their mouths during the open window.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)-(B)",
+      "humanSummary": "Artificial lures with barbless hooks only in Tahoe tributaries during the open window; no bait.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "spatial", "boundary_definition": "radius",
+        "note": "Closed: within a 200-yard radius of the mouths of Third, Incline, and Wood (Woods) creeks; within a 500-yard radius of the Sand Harbor boat ramp; and within the enclosed boat-launch area inside the jetty at the Cave Rock boat ramp (north end)."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 — Washoe/Douglas Co. closed-waters listings",
+      "humanSummary": "Nevada-side spatial closures on Lake Tahoe: 200-yd radius around the mouths of Third, Incline, and Wood creeks; 500-yd radius around the Sand Harbor boat ramp; and the enclosed boat-launch area at Cave Rock (north end).",
+      "verbatimText": "Lake Tahoe within a 200-yard radius of the mouths of Third, Incline and Wood creeks. A 500-yard radius from Sand Harbor boat ramp. ... Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ndow_anglerguide"] }
+    }
+  ],
+  "reciprocity": [
+    {
+      "honoringAuthorityKey": "cdfw", "honoredAuthorityKey": "ndow", "honored": true, "replacesStateLicense": false,
+      "condition": { "nv_trout_stamp_required": true },
+      "sourceKey": "s_ca_regs",
+      "note": "California recognizes a valid Nevada sport fishing license anywhere on Lake Tahoe. CDFW's own 2026 regulations text states Nevada also requires a trout stamp. FLAGGED CONFLICT: NDOW's own current CR 25-16 fee/season schedule and its 2025 Lake Tahoe Angler Guide do not mention a separate trout stamp, and NRS 502.326 (the historical NV trout-stamp statute) does not appear in the current chapter's section listing we were able to check — this condition may be stale on the CA side. Verify current status."
+    },
+    {
+      "honoringAuthorityKey": "ndow", "honoredAuthorityKey": "cdfw", "honored": true, "replacesStateLicense": false,
+      "condition": null,
+      "sourceKey": "s_ndow_anglerguide",
+      "note": "NDOW's official Lake Tahoe Angler Guide states a California sport fishing license is accepted to fish anywhere on the lake, including the Nevada side. Reciprocity applies to fishing IN the water; anglers on NV shore/tributaries generally need Nevada-side authorization per general licensing guidance."
+    }
+  ]
+}

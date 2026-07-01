@@ -1,0 +1,145 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Pyramid Lake",
+    "waterType": "lake",
+    "states": ["NV"],
+    "counties": ["Washoe"],
+    "aliases": ["Pyramid Lake Indian Reservation"],
+    "gnisId": "856349",
+    "lon": -119.554,
+    "lat": 39.999,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["none"] },
+    { "key": "plpt", "name": "Pyramid Lake Paiute Tribe", "state": null, "type": "tribal", "roles": ["take_rules", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Cui-ui", "scientificName": "Chasmistes cujus", "category": "sucker", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Sacramento perch", "scientificName": "Archoplites interruptus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_plpt_web", "url": "https://pyramidlake.us/fishing", "title": "Fishing — Pyramid Lake Paiute Tribe (official site)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "plpt", "retrievedDate": "2026-07-01", "quotedText": "You do not need a State of Nevada Fishing License, just a Tribal Fishing and/or Boating Permit. Fishing Permits are available October 1 – June 30. The trout season officially closes on June 30th. Barb less hooks only. No Bait. No worms, eggs, scent, Power bait or like products, or any organic matter on your hooks. Keepers are 17 to 20 inches or over 24 inches. All other sizes must be returned to the water. You may keep 2 of the smaller sizes or 1 small and 1 large." },
+    { "key": "s_plpt_regs_brochure", "url": "https://pyramidlake.us/wp-content/uploads/2018/03/76509-Pyramid-Lake-Regulations-Book.pdf", "title": "Pyramid Lake Paiute Tribe Regulations Brochure (Camping, Boating, Fishing, Hunting)", "documentType": "pdf", "instrumentType": "tribal_ordinance", "authorityLevel": "primary_regulatory", "authorityKey": "plpt", "retrievedDate": "2026-07-01", "quotedText": "SECTION 16: FISHING SEASON. 16.1 PYRAMID LAKE. The open waters of Pyramid Lake will be open to trout fishing from October 1 through June 30 of each year. Trout season will be closed from July 1 through September 30. 16.1.1 From July 1 through September 30 the open waters of Pyramid Lake will be open to fishing to all species except trout and cui-ui, and will be limited to shore fishing only (wading permitted, but no boats, ladders or floatation devices may be used). Any trout or cui-ui caught must be immediately released. SECTION 19: SIZE, CATCH & POSSESSION LIMITS FOR NON-TRIBAL MEMBERS. 19.1.1 TROUT. Legal size is 17 to 20 inches, and 24 inches & longer. Only one trout over 24 inches is allowed in possession. No trout less than 17 inches, or between 20 and 24 inches allowed in possession. The lengths of all trout are determined by measuring the fork length. 19.2.1 TROUT. Two trout per day, not to exceed four in possession, and only one fish may be 24 inches or longer. 19.2.2 CUI-UI fishing is prohibited by federal law (Endangered Species). SECTION 15: FISHING. 15.1.2 Only one combination of rod, line and not more than two hooks (which may be single, double or treble) will be used under a single fishing permit. 15.1.3 All hooks actively being used for fishing will be barbless. 15.2 CHUMMING is prohibited. 15.3 SNAGGING is prohibited. 15.4 The use of bait for fishing is prohibited. SECTION 17: CLOSED WATERS. 17.1.2 MARBLE BLUFF FISHWAY closed (+1,000 ft radius). 17.2.2 SUTCLIFFE SPAWN CHANNEL (1,000 ft radius). 17.2.4 BOAT DOCKS (250 ft radius). SECTION 20: LICENSE REQUIREMENTS. 20.1 NON-TRIBAL MEMBERS. All non-Tribal members, except as set forth in Section 20.3 below, 12 years of age or older must have in their possession a valid Tribal Fishing Permit to fish in open waters within the exterior boundaries of the Reservation. Non-Tribal members under twelve (12) years can fish at no charge with an adult who possesses a current valid Tribal Fishing permit." }
+  ],
+  "groups": [
+    { "key": "plpt-trout-season", "authorityKey": "plpt", "citation": "PLPT Fishing Regulations §16", "humanSummary": "Pyramid Lake trout season: open Oct 1–Jun 30; Jul 1–Sep 30 all species except trout/cui-ui remain open (shore-only), trout/cui-ui must be released.", "verbatimText": "16.1 PYRAMID LAKE. The open waters of Pyramid Lake will be open to trout fishing from October 1 through June 30 of each year. Trout season will be closed from July 1 through September 30. 16.1.1 From July 1 through September 30 the open waters of Pyramid Lake will be open to fishing to all species except trout and cui-ui, and will be limited to shore fishing only (wading permitted, but no boats, ladders or floatation devices may be used). Any trout or cui-ui caught must be immediately released." }
+  ],
+  "seasonPeriods": [
+    { "key": "plpt-trout-open", "groupKey": "plpt-trout-season", "label": "Trout season (open, boat/shore)", "status": "open", "startSpec": { "type": "fixed", "month": 10, "day": 1, "verbatim": "October 1" }, "endSpec": { "type": "fixed", "month": 6, "day": 30, "verbatim": "June 30" } },
+    { "key": "plpt-trout-closed-cr", "groupKey": "plpt-trout-season", "label": "Trout season closed (shore-only; any trout/cui-ui caught must be released)", "status": "open_catch_release", "startSpec": { "type": "fixed", "month": 7, "day": 1, "verbatim": "July 1" }, "endSpec": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } }
+  ],
+  "regulations": [
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Of the 4 in possession, only 1 may be over 24 inches; see the size_limit rule for the 17-20in / 24in+ slot." },
+      "groupKey": "plpt-trout-season", "seasonPeriodKey": "plpt-trout-open", "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Lahontan cutthroat trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §19.2.1",
+      "humanSummary": "Trout season (Oct 1–Jun 30): 2 trout per day, not to exceed 4 in possession, of which only 1 may be 24 inches or longer.",
+      "verbatimText": "Two trout per day, not to exceed four in possession, and only one fish may be 24 inches or longer.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": ["s_plpt_web"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "Trout season is closed Jul 1–Sep 30; any trout caught (shore fishing only during this window) must be released immediately. Other species (e.g. Sacramento perch) remain open." },
+      "groupKey": "plpt-trout-season", "seasonPeriodKey": "plpt-trout-closed-cr", "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Lahontan cutthroat trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §16.1.1",
+      "humanSummary": "Jul 1–Sep 30: trout fishing is catch-and-release only, shore-fishing only (no boats/ladders/floatation).",
+      "verbatimText": "From July 1 through September 30 the open waters of Pyramid Lake will be open to fishing to all species except trout and cui-ui, and will be limited to shore fishing only (wading permitted, but no boats, ladders or floatation devices may be used). Any trout or cui-ui caught must be immediately released.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": ["s_plpt_web"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 17, "protected_slot": { "min_in": 20, "max_in": 24 }, "measurement": "fork_length", "unit": "inch", "over_slot_retention": { "max_daily": 1, "min_in": 24 }, "note": "Keep 17-20in and 24in+; 20-24in is a protected slot that must be released; at most one fish over 24in may be kept." },
+      "groupKey": "plpt-trout-season", "seasonPeriodKey": "plpt-trout-open", "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Lahontan cutthroat trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §19.1.1",
+      "humanSummary": "Lahontan cutthroat trout: keep 17-20in or 24in+ (fork length); 20-24in is a protected slot (must release); at most one fish over 24in.",
+      "verbatimText": "Legal size is 17 to 20 inches, and 24 inches & longer. Only one trout over 24 inches is allowed in possession. No trout less than 17 inches, or between 20 and 24 inches allowed in possession. The lengths of all trout are determined by measuring the fork length.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": ["s_plpt_web"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "Cui-ui is a federally endangered species; take is prohibited under the Endangered Species Act. Regulated separately by Tribal Council resolution." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Cui-ui" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §19.2.2",
+      "humanSummary": "Cui-ui may never be taken or kept — federally endangered; any caught must be released immediately.",
+      "verbatimText": "CUI-UI fishing is prohibited by federal law (Endangered Species). CUI-UI fishing by Tribal members is regulated by the Tribal Council under separate resolution.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": null, "possession": null, "unit": "fish", "aggregation": "per_species", "counting_rule": "No daily or possession limit stated for Sacramento perch at Pyramid Lake." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "plpt",
+      "rulePolarity": "asserts_none", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Sacramento perch" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations Brochure — Sacramento Perch",
+      "humanSummary": "No bag limit for Sacramento perch at Pyramid Lake (verified absence); open all year.",
+      "verbatimText": null,
+      "isParaphrase": true, "confidence": "medium",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "max_hooks": 2, "chumming_allowed": false, "snagging_allowed": false, "note": "Up to two hook combinations (each may be single, double, or treble) may be used per rod under a single fishing permit, but all actively-fished hooks must be barbless. No bait, scent, or organic matter of any kind. A second-rod permit is required to fish more than one rod combination." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "non_tribal", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §15",
+      "humanSummary": "Artificial lures only (no bait); all hooks must be barbless; up to 2 hook combinations per rod; chumming and snagging prohibited.",
+      "verbatimText": "Only one combination of rod, line and not more than two hooks (which may be single, double or treble) will be used under a single fishing permit. All hooks actively being used for fishing will be barbless. Chumming is prohibited within the exterior boundaries of the Reservation. Snagging is prohibited within the exterior boundaries of the Reservation. The use of bait for fishing in the waters of the Reservation is prohibited.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": ["s_plpt_web"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "spatial", "boundary_definition": "described", "note": "Permanently closed areas of Pyramid Lake: Needles Area, Anaho Island, Marble Bluff Fishway (+1,000 ft radius around its mouth), Bee Hives, the Sutcliffe Spawn Channel (1,000 ft radius), all boat docks (250 ft radius), and all fish-rearing facilities." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §17 / Regulations Brochure closed-areas notice",
+      "humanSummary": "Several Pyramid Lake areas are permanently closed to fishing: Needles Area, Anaho Island, Marble Bluff Fishway area, Bee Hives, Sutcliffe Spawn Channel (1,000 ft), boat docks (250 ft), and fish-rearing facilities.",
+      "verbatimText": "17.1.2 MARBLE BLUFF FISHWAY. The Marble Bluff Fishway for its entire length and that portion of Pyramid Lake within a 1,000 foot radius around the mouth of the Marble Bluff Fishway, will be closed to fishing. 17.2.2 SUTCLIFFE SPAWN CHANNEL. Fishing is prohibited within a 1,000 foot radius around the Sutcliffe Spawn Channel. 17.2.4 BOAT DOCKS. Fishing is prohibited within 250 foot radius of all boat docks.",
+      "isParaphrase": true, "confidence": "medium",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "replaces_state_license": true, "required_product_note": "Pyramid Lake Tribal Fishing Permit (1-day, 3-day, or season); boating/jet-ski permits are sold separately and are not modeled here." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "plpt",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "authority_territory", "authorityKey": "plpt" }, "appliesToClass": "non_tribal", "jurisdictionState": "NV",
+      "citation": "PLPT Fishing Regulations §20.1",
+      "humanSummary": "Non-tribal anglers 12+ must have a Pyramid Lake Tribal Fishing Permit; it replaces the Nevada state fishing license on the Reservation. Under-12s may fish free with a permitted adult.",
+      "verbatimText": "All non-Tribal members, except as set forth in Section 20.3 below, 12 years of age or older must have in their possession a valid Tribal Fishing Permit to fish in open waters within the exterior boundaries of the Reservation. Non-Tribal members under twelve (12) years can fish at no charge with an adult who possesses a current valid Tribal Fishing permit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_plpt_regs_brochure", "corroborating": ["s_plpt_web"] }
+    }
+  ],
+  "reciprocity": [
+    {
+      "honoringAuthorityKey": "plpt",
+      "honoredAuthorityKey": "ndow",
+      "honored": false,
+      "replacesStateLicense": true,
+      "condition": null,
+      "sourceKey": "s_plpt_web",
+      "note": "A Nevada state fishing license (NDOW) is not honored/accepted on Pyramid Lake; the PLPT tribal permit is required instead and replaces the state license for non-tribal anglers."
+    }
+  ]
+}
