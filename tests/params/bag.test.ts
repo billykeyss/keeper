@@ -14,4 +14,11 @@ describe("bagParams", () => {
     const v = bagParams.parse({ daily: 1, annual: 3, reset_basis: "calendar_year", unit: "fish", aggregation: "combined_group" });
     expect(v.annual).toBe(3);
   });
+  it("rejects an unknown key inside a sub_limit (nested strict)", () => {
+    const r = bagParams.safeParse({
+      daily: 5, unit: "fish", aggregation: "combined_group",
+      sub_limits: [{ target: { species_group: "trout" }, mode: "carve_out", bogus: 1 }],
+    });
+    expect(r.success).toBe(false);
+  });
 });

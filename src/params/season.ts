@@ -7,7 +7,7 @@ export const seasonParams = z.object({
     status: z.enum(["open", "closed", "open_catch_release"]),
     start: dateSpec,
     end: dateSpec,
-  })).min(1),
+  }).strict()).min(1),
   note: z.string().optional(),
 }).strict();
 

@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 const subLimit = z.object({
-  target: z.union([z.object({ species: z.string() }), z.object({ species_group: z.string() })]),
+  target: z.union([z.object({ species: z.string() }).strict(), z.object({ species_group: z.string() }).strict()]),
   mode: z.enum(["additive", "carve_out"]),
   max_daily: z.number().int().nonnegative().optional(),
   max_possession: z.number().int().nonnegative().optional(),
