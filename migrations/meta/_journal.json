@@ -15,6 +15,20 @@
       "when": 1782920734784,
       "tag": "0001_flowery_donald_blake",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1782925935498,
+      "tag": "0002_audit_trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1782925957664,
+      "tag": "0003_wild_charles_xavier",
+      "breakpoints": true
     }
   ]
 }

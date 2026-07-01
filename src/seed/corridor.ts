@@ -18,7 +18,7 @@ export const SEED_MARKER = "corridor-seed";
 
 // Internal helper — deliberately NOT exported so the acceptance sweep (which only calls
 // exports whose name starts with "seed") never invokes it with no arguments.
-async function ensureAuthority(name: string, state: string | null, type: typeof authorityTypeEnum.enumValues[number]) {
+async function createAuthority(name: string, state: string | null, type: typeof authorityTypeEnum.enumValues[number]) {
   const [row] = await db.insert(authority).values({ name, state, type }).returning();
   return row;
 }
@@ -46,7 +46,7 @@ function assertValidDateSpec(spec: unknown): unknown {
  * species-scoped ("listed") to the CDFW `trout` group via a `role:"target"` species row.
  */
 export async function seedLittleTruckee() {
-  const cdfw = await ensureAuthority("CDFW", "CA", "state_agency");
+  const cdfw = await createAuthority("CDFW", "CA", "state_agency");
   const [wb] = await db.insert(waterBody).values({
     name: "Little Truckee River", waterType: "river", states: ["CA"], counties: ["Sierra"],
   }).returning();
@@ -115,7 +115,7 @@ export async function seedLittleTruckee() {
  * NV-authored `warmwater game fish` group.
  */
 export async function seedTopazCompoundBag() {
-  const ndow = await ensureAuthority("NDOW", "NV", "state_agency");
+  const ndow = await createAuthority("NDOW", "NV", "state_agency");
   const [wb] = await db.insert(waterBody).values({
     name: "Topaz Lake", waterType: "reservoir", states: ["CA", "NV"], counties: ["Douglas", "Mono"],
   }).returning();
@@ -151,7 +151,7 @@ export async function seedTopazCompoundBag() {
  * slot 20–24" (fork length), ≤1 fish over 24". Species-scoped to the Lahontan cutthroat species.
  */
 export async function seedPyramidSlot() {
-  const tribe = await ensureAuthority("Pyramid Lake Paiute Tribe", null, "tribal");
+  const tribe = await createAuthority("Pyramid Lake Paiute Tribe", null, "tribal");
   const [wb] = await db.insert(waterBody).values({
     name: "Pyramid Lake", waterType: "lake", states: ["NV"], counties: ["Washoe"],
   }).returning();
@@ -189,7 +189,7 @@ export async function seedPyramidSlot() {
  * Not species-scoped → species_scope "all", no target species row.
  */
 export async function seedTruckeeReachClosure() {
-  const cdfw = await ensureAuthority("CDFW", "CA", "state_agency");
+  const cdfw = await createAuthority("CDFW", "CA", "state_agency");
   const [tahoe] = await db.insert(waterBody).values({
     name: "Lake Tahoe", waterType: "lake", states: ["CA", "NV"], counties: ["El Dorado", "Placer", "Washoe", "Douglas"],
   }).returning();
@@ -235,8 +235,8 @@ export async function seedTruckeeReachClosure() {
  * Two `license_reciprocity` rows (no `regulation` rows).
  */
 export async function seedReciprocity() {
-  const cdfw = await ensureAuthority("CDFW", "CA", "state_agency");
-  const ndow = await ensureAuthority("NDOW", "NV", "state_agency");
+  const cdfw = await createAuthority("CDFW", "CA", "state_agency");
+  const ndow = await createAuthority("NDOW", "NV", "state_agency");
   const [tahoeWb] = await db.insert(waterBody).values({
     name: "Lake Tahoe", waterType: "lake", states: ["CA", "NV"], counties: ["El Dorado", "Placer", "Washoe", "Douglas"],
   }).returning();
@@ -267,7 +267,7 @@ export async function seedReciprocity() {
  * `target_type=authority_territory` (enumerated). Not species-scoped → species_scope "all".
  */
 export async function seedPyramidTribalPermit() {
-  const tribe = await ensureAuthority("Pyramid Lake Paiute Tribe", null, "tribal");
+  const tribe = await createAuthority("Pyramid Lake Paiute Tribe", null, "tribal");
   const [src] = await db.insert(source).values({
     authorityId: tribe.id, documentType: "pdf", instrumentType: "tribal_ordinance",
     authorityLevel: "primary_regulatory", title: "Pyramid Lake Fishing Permit Ordinance", sectionRef: "PLPT Permit Ord §1",
@@ -299,7 +299,7 @@ export async function seedPyramidTribalPermit() {
 export async function seedTahoeAis() {
   // Bi-state Tahoe Regional Planning Agency exercises regulatory authority over the basin.
   // No perfect authority_type enum fit for a bi-state compact agency; "state_agency" is the closest.
-  const trpa = await ensureAuthority("Tahoe Regional Planning Agency", null, "state_agency");
+  const trpa = await createAuthority("Tahoe Regional Planning Agency", null, "state_agency");
   const [wb] = await db.insert(waterBody).values({
     name: "Lake Tahoe", waterType: "lake", states: ["CA", "NV"], counties: ["El Dorado", "Placer", "Washoe", "Douglas"],
   }).returning();
@@ -334,7 +334,7 @@ export async function seedTahoeAis() {
  * Species-scoped (still about trout) → species_scope "listed" with a target species-group row.
  */
 export async function seedNvTruckeeNoSizeLimit() {
-  const ndow = await ensureAuthority("NDOW", "NV", "state_agency");
+  const ndow = await createAuthority("NDOW", "NV", "state_agency");
   const [wb] = await db.insert(waterBody).values({
     name: "Truckee River", waterType: "river", states: ["NV"], counties: ["Washoe"],
   }).returning();
@@ -389,7 +389,7 @@ export async function seedNvTruckeeNoSizeLimit() {
  * Both bags are species-scoped ("listed") to the CDFW `trout` group via a `role:"target"` row.
  */
 export async function seedTruckeeReachC() {
-  const cdfw = await ensureAuthority("CDFW", "CA", "state_agency");
+  const cdfw = await createAuthority("CDFW", "CA", "state_agency");
   const [wb] = await db.insert(waterBody).values({
     name: "Truckee River", waterType: "river", states: ["CA"], counties: ["Nevada", "Placer"],
   }).returning();
