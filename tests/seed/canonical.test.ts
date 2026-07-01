@@ -12,7 +12,7 @@ describe("canonical corridor cases round-trip", () => {
     expect((bag.parameters as any).sub_limits[0].max_daily).toBe(5);
   });
   it("two-period season: Truckee Reach C take(2 trout)/winter(0 C&R) bind to season_period windows", async () => {
-    const { takePeriod, winterPeriod, takeBag, winterBag } = await seed.seedTruckeeReachC();
+    const { takePeriod, winterPeriod, takeBag, winterBag, reachC, takeBagTarget, winterBagTarget } = await seed.seedTruckeeReachC();
     // take-season bag: 2 trout, bound to the take window.
     expect((takeBag.parameters as any).daily).toBe(2);
     expect(takeBag.seasonPeriodId).toBe(takePeriod.id);
@@ -28,6 +28,11 @@ describe("canonical corridor cases round-trip", () => {
     // winter C&R ends the Friday preceding it (Apr 24).
     expect(resolveDateSpec(takePeriod.startSpec as DateSpec, 2026)).toBe("2026-04-25");
     expect(resolveDateSpec(winterPeriod.endSpec as DateSpec, 2026)).toBe("2026-04-24");
+    // bag regulations are scoped to the Reach C reach row (not the whole water body).
+    expect(takeBagTarget.targetType).toBe("reach");
+    expect(winterBagTarget.targetType).toBe("reach");
+    expect(takeBagTarget.targetId).toBe(reachC.id);
+    expect(winterBagTarget.targetId).toBe(reachC.id);
   });
   it("slot limit: Pyramid cutthroat protected 20–24in, fork length", async () => {
     const { size } = await seed.seedPyramidSlot();
@@ -52,6 +57,9 @@ describe("canonical corridor cases round-trip", () => {
   it("AIS gate: Tahoe inspection + decon + drain plug", async () => {
     const { ais } = await seed.seedTahoeAis();
     expect((ais.parameters as any).inspection_required).toBe(true);
+    expect((ais.parameters as any).decontamination_required).toBe(true);
+    expect((ais.parameters as any).seal_or_sticker_required).toBe(true);
+    expect((ais.parameters as any).drain_plug_out_required).toBe(true);
   });
   it("verified absence: NV Truckee size_limit asserts_none, disputed source refuted", async () => {
     const { size, source } = await seed.seedNvTruckeeNoSizeLimit();

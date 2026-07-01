@@ -4,6 +4,7 @@ import {
   regulationSpecies, regulationSource, regulationTarget,
   waterBody, waterBodyRelation, reach, licenseReciprocity,
 } from "../db/schema";
+import { authorityTypeEnum } from "../db/enums";
 import { validateParameters } from "../params";
 import { dateSpec } from "../params/shared";
 
@@ -17,7 +18,7 @@ export const SEED_MARKER = "corridor-seed";
 
 // Internal helper — deliberately NOT exported so the acceptance sweep (which only calls
 // exports whose name starts with "seed") never invokes it with no arguments.
-async function ensureAuthority(name: string, state: string | null, type: any) {
+async function ensureAuthority(name: string, state: string | null, type: typeof authorityTypeEnum.enumValues[number]) {
   const [row] = await db.insert(authority).values({ name, state, type }).returning();
   return row;
 }
@@ -392,6 +393,17 @@ export async function seedTruckeeReachC() {
   const [wb] = await db.insert(waterBody).values({
     name: "Truckee River", waterType: "river", states: ["CA"], counties: ["Nevada", "Placer"],
   }).returning();
+
+  // Reach C row — geographic anchor per CDFW §7.50(b)(154)(C): Glenshire Drive bridge
+  // downstream to the Nevada state line (near Farad). Geometry intentionally null.
+  const [reachC] = await db.insert(reach).values({
+    waterBodyId: wb.id,
+    name: "Truckee River Reach C",
+    fromDesc: "Glenshire Drive bridge, Truckee (downstream end of Reach B)",
+    toDesc: "Nevada state line (near Farad gauging station)",
+    county: "Nevada",
+  }).returning();
+
   const [troutGroup] = await db.insert(speciesGroup).values({
     name: "trout", category: "trout", authorityId: cdfw.id,
   }).returning();
@@ -437,7 +449,7 @@ export async function seedTruckeeReachC() {
     verbatimText: "From the last Saturday in April through November 15, 2 trout.",
   }).returning();
   await db.insert(regulationSpecies).values({ regulationId: takeBag.id, speciesGroupId: troutGroup.id, role: "target", mode: "include" });
-  await db.insert(regulationTarget).values({ regulationId: takeBag.id, targetType: "water_body", targetId: wb.id, mode: "include" });
+  const [takeBagTarget] = await db.insert(regulationTarget).values({ regulationId: takeBag.id, targetType: "reach", targetId: reachC.id, mode: "include" }).returning();
   await db.insert(regulationSource).values({ regulationId: takeBag.id, sourceId: src.id, role: "primary", sectionRef: "7.50(b)(154)(C)" });
 
   const winterBagParams = assertValid("bag", { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true });
@@ -447,8 +459,8 @@ export async function seedTruckeeReachC() {
     verbatimText: "From November 16 through the Friday preceding the last Saturday in April, 0 trout (catch-and-release).",
   }).returning();
   await db.insert(regulationSpecies).values({ regulationId: winterBag.id, speciesGroupId: troutGroup.id, role: "target", mode: "include" });
-  await db.insert(regulationTarget).values({ regulationId: winterBag.id, targetType: "water_body", targetId: wb.id, mode: "include" });
+  const [winterBagTarget] = await db.insert(regulationTarget).values({ regulationId: winterBag.id, targetType: "reach", targetId: reachC.id, mode: "include" }).returning();
   await db.insert(regulationSource).values({ regulationId: winterBag.id, sourceId: src.id, role: "primary", sectionRef: "7.50(b)(154)(C)" });
 
-  return { takePeriod, winterPeriod, takeBag, winterBag };
+  return { takePeriod, winterPeriod, takeBag, winterBag, reachC, takeBagTarget, winterBagTarget };
 }

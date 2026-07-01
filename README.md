@@ -47,10 +47,18 @@ all-species sentinel.
 ## Seed data
 
 `src/seed/corridor.ts` encodes the nine canonical corridor cases from the design spec (§7):
-compound bag (Topaz), relative season + zero-limit C&R gear stack (Little Truckee), slot limit
-(Pyramid), reach-scoped closure (Truckee Reach A), interstate reciprocity (Tahoe/Donner), tribal
-permit (Pyramid), AIS gate (Lake Tahoe), and a verified absence (NV Truckee, no size limit). Each
-seeded regulation is inserted at `status=verified` with a primary legal-instrument source and,
+
+1. **Compound bag** (Topaz Lake) — 25 warmwater game fish/day with a ≤5 black-bass carve-out sub-limit.
+2. **Two-period reach season** (Truckee River Reach C) — relative `last Saturday in April → Nov 15` take window (2 trout) and a `Nov 16 → Fri before last Sat Apr` catch-and-release winter window, both bags reach-scoped and bound to `season_period` rows rather than re-embedding dates.
+3. **Slot limit** (Pyramid Lake) — Lahontan cutthroat protected slot 20–24 in (fork length), keep 17–20 in and ≥1 fish over 24 in.
+4. **Reach-scoped closure** (Truckee River Reach A) — closed all year within 1,000 ft below the Lake Tahoe outlet dam; reach anchored by offset descriptor.
+5. **Interstate reciprocity** (Lake Tahoe / Donner Lake) — CA or NV license honored at Tahoe (NV side needs trout stamp); NV license explicitly not honored at Donner.
+6. **Tribal permit** (Pyramid Lake) — tribal fishing permit replaces the NV state license for non-tribal anglers 12+; reservation-wide `authority_territory` scope.
+7. **Little Truckee gear stack** (Little Truckee River, Stampede → Boca) — all-year open season, 0 trout catch-and-release bag, artificial-lures-with-barbless-hooks gear restriction, decomposed into three atomic typed rows sharing one provision.
+8. **AIS gate** (Lake Tahoe) — motorized watercraft require inspection, decontamination, Tahoe inspection seal, and drain-plug-out.
+9. **Verified absence** (NV Truckee River) — no trout size limit recorded as `rule_polarity=asserts_none`, with a refuted third-party "14-inch minimum" claim stored as a disputed source.
+
+Each seeded regulation is inserted at `status=verified` with a primary legal-instrument source and,
 where binding, verbatim text.
 
 ## Design docs
