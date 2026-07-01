@@ -9,10 +9,13 @@
     "db:migrate": "drizzle-kit migrate",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "ingest:corridor": "tsx src/ingest/cli.ts"
   },
   "dependencies": {
+    "@hono/node-server": "^1.13.0",
     "drizzle-orm": "^0.36.0",
+    "hono": "^4.6.0",
     "postgres": "^3.4.5",
     "zod": "^3.23.8"
   },
