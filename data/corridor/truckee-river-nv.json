@@ -30,6 +30,7 @@
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Truckee River: Open year around except for closed areas. Daily: 3 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is three game fish of which 1 may be trout. Possession: 6 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is 6 game fish of which 2 may be trout. CLOSED WATERS: Truckee River from Derby Dam downstream 1,000 feet." },
     { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/truckee-river/", "title": "Truckee River — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Rainbow trout, Brown trout, Cutthroat trout (Lahontan species), Mountain whitefish, Largemouth bass (lower sections only)." },
+    { "key": "s_nac_503_504", "url": "https://www.leg.state.nv.us/nac/NAC-503.html", "title": "Nev. Admin. Code § 503.504(3) — Restricted waters: artificial lures with single barbless hooks", "documentType": "webpage", "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "(b) Only artificial lures with single barbless hooks may be used in: ... (5) The portion of the Truckee River from the bridge on East Mustang Road downstream to the boundary of the Pyramid Lake Paiute Reservation." },
     { "key": "s_eregs_west", "url": "https://www.eregulations.com/nevada/fishing/western-region-regulations", "title": "Nevada Western Region Fishing Regulations (eRegulations digest of NDOW rules)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "In the stretch from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary: only artificial lures with single barbless hooks may be used." },
     { "key": "s_2news", "url": "https://www.2news.com/fish-catch-limit-changed-for-truckee-river/article_059ae43a-2068-52d3-a9da-3ad91bd4c0e5.html", "title": "Fish Catch Limit Changed for Truckee River — 2News", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Only artificial lures with single barbless hooks may be used in the Truckee River (Washoe and Storey County) in that portion from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary." }
   ],
@@ -74,15 +75,15 @@
     },
     {
       "ruleType": "gear_method",
-      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": true, "note": "Instituted around the Derby Dam fish-screen project to protect migrating Lahontan cutthroat trout; corroborated by two secondary sources but not independently confirmed by us in the primary CR 25-16 season table itself." },
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": true, "note": "Codified in NAC 503.504(3)(b)(5) as one continuous reach (E Mustang Road bridge to the reservation boundary) — no Derby Dam split appears in the NAC text; the separate CR 25-16 closed water at Derby Dam applies independently. Last amended by R082-23A, effective 2/9/2024." },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
       "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
       "scope": { "type": "reach", "reachKey": "truckee-nv-mustang-to-plpt-boundary" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NDOW regional regulations digest (eRegulations), corroborated by local news report",
+      "citation": "NAC 503.504(3)(b)(5)",
       "humanSummary": "In this reach, only artificial lures with a single barbless hook may be used (no bait).",
-      "verbatimText": "Only artificial lures with single barbless hooks may be used.",
-      "isParaphrase": true, "confidence": "medium",
-      "sourceKeys": { "primary": "s_eregs_west", "corroborating": ["s_2news"] }
+      "verbatimText": "Only artificial lures with single barbless hooks may be used in: ... The portion of the Truckee River from the bridge on East Mustang Road downstream to the boundary of the Pyramid Lake Paiute Reservation.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_nac_503_504", "corroborating": ["s_eregs_west", "s_2news"] }
     },
     {
       "ruleType": "closure",

@@ -162,7 +162,7 @@
       "ruleType": "license",
       "parameters": {
         "required": true, "min_age": 16, "under_min_age": "no_license_required", "replaces_state_license": false,
-        "required_product_note": "A California sport fishing license is required for anglers 16+. Per license reciprocity, a valid Nevada sport fishing license is also honored anywhere on Lake Tahoe (CDFW's own regulations text adds that Nevada also currently requires a trout stamp with its license — see the reciprocity rows for details and a flagged conflict with Nevada's own current materials)."
+        "required_product_note": "A California sport fishing license is required for anglers 16+. Per license reciprocity, a valid Nevada sport fishing license is also honored anywhere on Lake Tahoe. Note: CDFW's booklet still mentions a Nevada trout stamp, but that stamp was abolished in 2018 (NRS 502.326 repealed) — no stamp is required; see the reciprocity rows."
       },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
       "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
@@ -244,9 +244,9 @@
   "reciprocity": [
     {
       "honoringAuthorityKey": "cdfw", "honoredAuthorityKey": "ndow", "honored": true, "replacesStateLicense": false,
-      "condition": { "nv_trout_stamp_required": true },
+      "condition": null,
       "sourceKey": "s_ca_regs",
-      "note": "California recognizes a valid Nevada sport fishing license anywhere on Lake Tahoe. CDFW's own 2026 regulations text states Nevada also requires a trout stamp. FLAGGED CONFLICT: NDOW's own current CR 25-16 fee/season schedule and its 2025 Lake Tahoe Angler Guide do not mention a separate trout stamp, and NRS 502.326 (the historical NV trout-stamp statute) does not appear in the current chapter's section listing we were able to check — this condition may be stale on the CA side. Verify current status."
+      "note": "California recognizes a valid Nevada sport fishing license anywhere on Lake Tahoe. CDFW's 2026 booklet still prints '(Nevada also requires a trout stamp)', but that clause is a verified anachronism: Nevada's trout stamp was abolished effective Jan 1, 2018 (NRS 502.326 repealed by 2017 Stat. Nev. ch. 533; stamp fees folded into base license prices; no trout-stamp line on NDOW's current fee schedule). No stamp condition applies."
     },
     {
       "honoringAuthorityKey": "ndow", "honoredAuthorityKey": "cdfw", "honored": true, "replacesStateLicense": false,

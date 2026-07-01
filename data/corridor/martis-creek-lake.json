@@ -32,21 +32,21 @@
   "regulations": [
     {
       "ruleType": "season",
-      "parameters": {"periods": [{"label": "all_year", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}], "note": "Martis Creek Lake (the reservoir itself) no longer appears as its own entry in CCR §7.50(b); a CDFW rulemaking record documents its special listing being moved to the general statewide lake regulation. This conflicts with widely repeated secondary/tourism sources (e.g. USACE's own recreation page) describing it as a 0-limit catch-and-release trophy water — those sources may be outdated. NEEDS LIVE VERIFICATION before production use."},
+      "parameters": {"periods": [{"label": "all_year", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}], "note": "Verified against the live CCR §7.50(b) text (current through Register 2026, No. 25): there is NO standalone 'Martis Lake' entry — only (87) Martis Creek below the dam and (88) Martis Lake tributaries, both 0-trout. The reservoir itself follows the statewide lake default. Secondary/tourism sources (incl. USACE's recreation page) describing the lake as a 0-limit trophy water are outdated."},
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
       "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
-      "humanSummary": "Open to fishing all year (general statewide lake default — the reservoir itself is not currently listed by name in §7.50(b); verify before shipping)",
+      "humanSummary": "Open to fishing all year (general statewide lake default — the reservoir itself has no §7.50(b) special listing; verified against the current CCR text)",
       "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
-      "isParaphrase": false, "confidence": "medium", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
     },
     {
       "ruleType": "bag",
       "parameters": {"daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group"},
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
       "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(1)",
-      "humanSummary": "5 trout/day, 10 in possession under the general statewide lake default. CAUTION: this appears to supersede the lake's former special 0-trout catch-and-release listing per a CDFW rulemaking record moving 'Martis Lake' to the statewide lake rule, and the current (06/01/2026) CDFW regulations booklet has no separate listing for the lake — but this contradicts strong, widely repeated secondary-source claims (USACE's own page, CalTrout, angling sites) that it remains a 0-limit trophy catch-and-release water. Confidence downgraded to medium pending a live govt.westlaw.com/calregs cross-check.",
+      "humanSummary": "5 trout/day, 10 in possession under the general statewide lake default. The lake's former special 0-trout catch-and-release listing was moved to the statewide lake rule; verified against the live CCR §7.50(b) text (no 'Martis Lake' entry; only the creek below the dam and the tributaries remain specially listed at 0 trout). Widely repeated secondary-source claims that the lake remains a 0-limit trophy water (USACE's page, angling sites) are outdated.",
       "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit.",
-      "isParaphrase": false, "confidence": "medium", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
+      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "cdfw_booklet_2026", "corroborating": ["ccr_5_85", "cdfw_rulemaking_record"]}
     },
     {
       "ruleType": "license",
