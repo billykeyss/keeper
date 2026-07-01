@@ -11,7 +11,10 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "ingest:corridor": "tsx src/ingest/cli.ts",
-    "api": "tsx src/api/server.ts"
+    "api": "tsx src/api/server.ts",
+    "dev:web": "npm --prefix web run dev",
+    "build:web": "npm --prefix web run build",
+    "start": "npm run build:web && npm run api"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
