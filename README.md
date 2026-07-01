@@ -5,17 +5,36 @@ California and Nevada. It answers, for a given water and date: *Is it open? What
 How many? What size? Barbless? Do I need a special permit?* — with every answer traceable to an
 authoritative legal instrument and reconstructable as-of any past date.
 
-This repository is the **data model** slice: a PostgreSQL/PostGIS schema (Drizzle ORM), per-`rule_type`
-Zod parameter validators, correctness machinery (legal-instrument enforcement, explicit all-species
-sentinel, temporal integrity + clone-on-supersede versioning), a relative-season date resolver, and
-human-verified seed data encoding the nine canonical Truckee–Tahoe–Reno corridor cases.
+The repository contains the **data model** (PostgreSQL/PostGIS schema via Drizzle ORM, per-`rule_type`
+Zod parameter validators, correctness machinery, a relative-season date resolver), a
+**research-verified corridor dataset** (12 Truckee–Tahoe–Reno waters, 82 cited regulations in
+`data/corridor/`), an idempotent **ingest loader**, a **read API** (Hono: bbox water lookup +
+resolved-rules-for-a-date), and a **mobile-first map portal** (Vite/React/MapLibre).
 
 ## Prerequisites
 
 - **Docker** (Docker Desktop or a compatible engine) — runs the PostGIS database via Docker Compose.
 - **Node.js** LTS and npm.
 
-## Setup
+## Run the portal
+
+```bash
+npm install                # install dependencies (plus: npm --prefix web install)
+npm run db:up              # start the PostGIS 16-3.4 container (Postgres on localhost:5433)
+npm run db:migrate         # apply Drizzle migrations (creates all enums + tables)
+npm run ingest:corridor    # load the 12 corridor waters + regulations into the app DB
+npm start                  # build the web app and serve portal + API on http://localhost:8787
+```
+
+Then open **http://localhost:8787** — scroll the map around the Tahoe–Truckee–Reno corridor and
+tap a water to see its rules for today, with citations to the governing legal source. If port
+8787 is taken, run with `PORT=8791 npm start` (any free port). To use it from your phone, open
+`http://<your-computer's-LAN-IP>:8787` while on the same Wi-Fi.
+
+For development: `npm run api` (API only) + `npm run dev:web` (Vite dev server on :5173,
+proxying `/api`).
+
+## Setup (data platform only)
 
 ```bash
 npm install          # install dependencies
@@ -38,11 +57,23 @@ npm test         # run the full Vitest suite (schema, params, validation, resolv
 npm run typecheck  # tsc --noEmit
 ```
 
-Tests run against the live container (Vitest is configured with `fileParallelism: false`, so test
-files execute sequentially against the shared database). The acceptance sweep in
+Tests run against a dedicated `fishing_law_test` database (created and migrated automatically by
+`tests/globalSetup.ts`), so the app database stays pristine. The acceptance sweep in
 `tests/acceptance.test.ts` runs every canonical seed function and asserts that every seeded
 regulation's `parameters` blob validates against its Zod schema and satisfies the explicit
 all-species sentinel.
+
+## Corridor dataset & honesty rules
+
+`data/corridor/*.json` holds the portal's regulations — researched from official sources only
+(CDFW booklet + CCR Title 14, NDOW CR 25-16 + NAC 503, Pyramid Lake Paiute Tribe regulations)
+and cross-checked by an independent verification pass. Every rule carries a citation, source URL,
+retrieval date, and a `confidence` grade; unconfirmed values are marked `low`/`medium` with
+conservative summaries rather than invented numbers, and known agency-document conflicts are
+recorded in notes (e.g. CDFW's booklet still mentions Nevada's trout stamp, which was repealed
+in 2018). Waters whose status can change out-of-cycle carry `verifyCurrent: true` and the portal
+shows a "verify current conditions" banner. **The portal is a convenience summary, not legal
+advice — always confirm with the managing agency.**
 
 ## Seed data
 

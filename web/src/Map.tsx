@@ -124,6 +124,11 @@ export function MapView({ selectedId, selectedStatus, onSelect }: MapProps) {
           const marker = new maplibregl.Marker({ element: el, anchor: "center" })
             .setLngLat([pin.lon, pin.lat])
             .addTo(map);
+          // MapLibre's Marker overwrites the element's aria-label with "Map marker" — restore ours.
+          el.setAttribute(
+            "aria-label",
+            `${pin.name}${pin.verifyCurrent ? ", verify current conditions" : ""}, ${pin.ruleCount} rule${pin.ruleCount === 1 ? "" : "s"}`,
+          );
           existing.set(pin.id, { marker, el, pin });
         }
       }

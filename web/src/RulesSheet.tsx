@@ -129,13 +129,18 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
     drag.current.moved = Math.max(drag.current.moved, Math.abs(dy));
     setDragY(Math.min(sheetHeight + 60, Math.max(0, drag.current.base + dy)));
   };
-  const onPointerUp = () => {
+  const onPointerUp = (e: React.PointerEvent) => {
     if (!drag.current.active) return;
     drag.current.active = false;
     const t = dragY ?? base;
     setDragY(null);
     if (drag.current.moved < 6) {
-      setMode((m) => (m === "expanded" ? "peek" : "expanded")); // tap = toggle
+      // Tap = toggle — but taps on the handle button are handled by its own
+      // onClick (which also serves keyboard users); toggling here too would
+      // double-fire and net out to a no-op.
+      if (!(e.target as HTMLElement).closest("button")) {
+        setMode((m) => (m === "expanded" ? "peek" : "expanded"));
+      }
       return;
     }
     if (t > peekOffset + 60) onClose();
@@ -157,6 +162,7 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
         role="dialog"
         aria-modal="false"
         aria-label={name ? `${name} regulations` : "Water regulations"}
+        aria-hidden={!open}
         data-open={open}
         data-mode={mode}
         style={isDesktop ? undefined : { transform: `translateY(${translate}px)` }}
