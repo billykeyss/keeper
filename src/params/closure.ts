@@ -6,9 +6,9 @@ export const closureParams = z.object({
   trigger: z.object({
     kind: z.enum(["flow", "quota"]),
     gauge_station: z.string().optional(),
-    threshold_cfs: z.number().optional(),
+    threshold_cfs: z.number().nonnegative().optional(),
     comparison: z.enum(["below", "above"]).optional(),
-    quota_count: z.number().int().optional(),
+    quota_count: z.number().int().nonnegative().optional(),
     quota_area: z.string().optional(),
     status_source_url: z.string().optional(),
     hotline: z.string().optional(),

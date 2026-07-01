@@ -30,3 +30,16 @@ export function validateParameters(ruleType: string, params: unknown) {
 }
 
 export * from "./shared";
+export * from "./season";
+export * from "./bag";
+export * from "./sizeLimit";
+export * from "./gearMethod";
+export * from "./fishingHours";
+export * from "./closure";
+export * from "./handling";
+export * from "./vessel";
+export * from "./ais";
+export * from "./documentation";
+export * from "./license";
+export * from "./definition";
+export * from "./special";

@@ -13,4 +13,7 @@ describe("validateParameters", () => {
     expect(validateParameters("bag", { daily: -1, unit: "fish", aggregation: "combined_group" }).success).toBe(false);
     expect(validateParameters("bag", { daily: 5, unit: "fish", aggregation: "combined_group", bogus: 1 }).success).toBe(false);
   });
+  it("rejects an unknown rule_type", () => {
+    expect(validateParameters("unknown_rule", {}).success).toBe(false);
+  });
 });

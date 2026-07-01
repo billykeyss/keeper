@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+export const RULE_TYPES = ["season","bag","size_limit","gear_method","fishing_hours","closure","handling","vessel","ais","documentation","license","definition","special"] as const;
+
 export const dateSpec = z.object({
   type: z.enum(["fixed", "relative", "astronomical", "year_round"]),
   month: z.number().int().min(1).max(12).optional(),
