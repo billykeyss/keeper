@@ -1,10 +1,11 @@
 import { db } from "../db/client";
 import {
-  authority, source, species, speciesGroup, regulationGroup, regulation,
+  authority, source, species, speciesGroup, regulationGroup, regulation, seasonPeriod,
   regulationSpecies, regulationSource, regulationTarget,
   waterBody, waterBodyRelation, reach, licenseReciprocity,
 } from "../db/schema";
 import { validateParameters } from "../params";
+import { dateSpec } from "../params/shared";
 
 /**
  * Sentinel stamped on `reviewer` for every regulation these seeds insert. The acceptance
@@ -26,6 +27,14 @@ function assertValid(ruleType: string, parameters: unknown): unknown {
   const v = validateParameters(ruleType, parameters);
   if (!v.success) throw new Error(`seed param invalid for ${ruleType}: ${v.error}`);
   return parameters;
+}
+
+// Validate a season_period start/end blob against the shared `date_spec` Zod schema; throw
+// before insert on failure so a malformed window can never reach the resolver.
+function assertValidDateSpec(spec: unknown): unknown {
+  const r = dateSpec.safeParse(spec);
+  if (!r.success) throw new Error(`seed date_spec invalid: ${r.error.message}`);
+  return spec;
 }
 
 /**
@@ -363,4 +372,83 @@ export async function seedNvTruckeeNoSizeLimit() {
   await db.insert(regulationTarget).values({ regulationId: size.id, targetType: "water_body", targetId: wb.id, mode: "include" });
   await db.insert(regulationSource).values({ regulationId: size.id, sourceId: primarySrc.id, role: "primary", sectionRef: "NAC 503" });
   return { size, source: disputedSrc };
+}
+
+/**
+ * Canonical case 2 — Truckee River Reach C two-period trout season (CDFW §7.50(b)(154)(C)).
+ * The showcase for the `season_period` design: one `regulation_group` owns two dated windows that
+ * are the single source of truth for the season boundaries, and the `bag` rows bind to them by
+ * `season_period_id` instead of re-embedding dates.
+ *   - take_season (status `open`): relative last Saturday in April → fixed Nov 15.
+ *   - winter_cr  (status `open_catch_release`): fixed Nov 16 → the Friday *preceding* the last
+ *     Saturday in April (relative last Sat Apr, offset −1 day).
+ * Every start/end `date_spec` is validated against the shared `dateSpec` Zod schema before insert
+ * (so it round-trips through `resolveDateSpec`). Two season-conditional `bag` rows bind the windows:
+ * 2 trout in the take window, 0 trout (catch_and_release) in the winter window — no date duplication.
+ * Both bags are species-scoped ("listed") to the CDFW `trout` group via a `role:"target"` row.
+ */
+export async function seedTruckeeReachC() {
+  const cdfw = await ensureAuthority("CDFW", "CA", "state_agency");
+  const [wb] = await db.insert(waterBody).values({
+    name: "Truckee River", waterType: "river", states: ["CA"], counties: ["Nevada", "Placer"],
+  }).returning();
+  const [troutGroup] = await db.insert(speciesGroup).values({
+    name: "trout", category: "trout", authorityId: cdfw.id,
+  }).returning();
+  const [src] = await db.insert(source).values({
+    authorityId: cdfw.id, documentType: "webpage", instrumentType: "commission_reg",
+    authorityLevel: "primary_regulatory", url: "https://govt.westlaw.com/calregs",
+    title: "CCR T14 §7.50(b)(154)(C) — Truckee River Reach C", sectionRef: "7.50(b)(154)(C)",
+    quotedText: "From the last Saturday in April through November 15, 2 trout. From November 16 through the Friday preceding the last Saturday in April, 0 trout (catch-and-release).",
+  }).returning();
+  const [grp] = await db.insert(regulationGroup).values({
+    authorityId: cdfw.id, citation: "7.50(b)(154)(C)",
+    verbatimText: "From the last Saturday in April through November 15, 2 trout. From November 16 through the Friday preceding the last Saturday in April, 0 trout (catch-and-release).",
+    humanSummary: "Two-period trout season: 2 trout (last Sat Apr–Nov 15); 0 trout catch-and-release (Nov 16–Fri before last Sat Apr)",
+  }).returning();
+
+  // --- season_period windows: single source of truth for the boundary dates. Each start/end
+  // date_spec is validated against the shared `dateSpec` Zod schema before insert. ---
+  const takeStartSpec = assertValidDateSpec({ type: "relative", ordinal: "last", weekday: "sat", month: 4, verbatim: "last Saturday in April" });
+  const takeEndSpec = assertValidDateSpec({ type: "fixed", month: 11, day: 15, verbatim: "November 15" });
+  const winterStartSpec = assertValidDateSpec({ type: "fixed", month: 11, day: 16, verbatim: "November 16" });
+  const winterEndSpec = assertValidDateSpec({ type: "relative", ordinal: "last", weekday: "sat", month: 4, relation: "preceding", offset_days: -1, verbatim: "Friday preceding the last Saturday in April" });
+
+  const [takePeriod] = await db.insert(seasonPeriod).values({
+    regulationGroupId: grp.id, label: "take_season", status: "open",
+    startSpec: takeStartSpec, endSpec: takeEndSpec,
+  }).returning();
+  const [winterPeriod] = await db.insert(seasonPeriod).values({
+    regulationGroupId: grp.id, label: "winter_cr", status: "open_catch_release",
+    startSpec: winterStartSpec, endSpec: winterEndSpec,
+  }).returning();
+
+  // --- season-conditional bag bindings: reference each window by id (no date duplication). ---
+  const common = {
+    ruleType: "bag" as const, authorityId: cdfw.id, regulationGroupId: grp.id, jurisdictionState: "CA",
+    citation: "7.50(b)(154)(C)", speciesScope: "listed" as const,
+    status: "verified" as const, confidence: "high" as const, reviewer: SEED_MARKER,
+  };
+
+  const takeBagParams = assertValid("bag", { daily: 2, unit: "fish", aggregation: "combined_group" });
+  const [takeBag] = await db.insert(regulation).values({
+    ...common, seasonPeriodId: takePeriod.id, parameters: takeBagParams,
+    humanSummary: "2 trout during the take season (last Sat Apr–Nov 15)",
+    verbatimText: "From the last Saturday in April through November 15, 2 trout.",
+  }).returning();
+  await db.insert(regulationSpecies).values({ regulationId: takeBag.id, speciesGroupId: troutGroup.id, role: "target", mode: "include" });
+  await db.insert(regulationTarget).values({ regulationId: takeBag.id, targetType: "water_body", targetId: wb.id, mode: "include" });
+  await db.insert(regulationSource).values({ regulationId: takeBag.id, sourceId: src.id, role: "primary", sectionRef: "7.50(b)(154)(C)" });
+
+  const winterBagParams = assertValid("bag", { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true });
+  const [winterBag] = await db.insert(regulation).values({
+    ...common, seasonPeriodId: winterPeriod.id, parameters: winterBagParams,
+    humanSummary: "0 trout, catch-and-release during the winter window (Nov 16–Fri before last Sat Apr)",
+    verbatimText: "From November 16 through the Friday preceding the last Saturday in April, 0 trout (catch-and-release).",
+  }).returning();
+  await db.insert(regulationSpecies).values({ regulationId: winterBag.id, speciesGroupId: troutGroup.id, role: "target", mode: "include" });
+  await db.insert(regulationTarget).values({ regulationId: winterBag.id, targetType: "water_body", targetId: wb.id, mode: "include" });
+  await db.insert(regulationSource).values({ regulationId: winterBag.id, sourceId: src.id, role: "primary", sectionRef: "7.50(b)(154)(C)" });
+
+  return { takePeriod, winterPeriod, takeBag, winterBag };
 }
