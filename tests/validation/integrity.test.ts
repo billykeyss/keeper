@@ -24,4 +24,20 @@ describe("findOverlaps", () => {
     ];
     expect(findOverlaps(rows).length).toBe(0);
   });
+
+  it("flags a null-start (open-ended) row against a bounded range that intersects it", () => {
+    const rows = [
+      { id: 1, ...base, validFrom: null, validTo: "2026-12-31" },  // open start
+      { id: 2, ...base, validFrom: "2026-06-01", validTo: "2027-06-30" }, // overlaps
+    ];
+    expect(findOverlaps(rows)).toHaveLength(1);
+  });
+
+  it("flags two both-open rows (null validFrom and null validTo)", () => {
+    const rows = [
+      { id: 1, ...base, validFrom: null, validTo: null },
+      { id: 2, ...base, validFrom: null, validTo: null },
+    ];
+    expect(findOverlaps(rows)).toHaveLength(1);
+  });
 });

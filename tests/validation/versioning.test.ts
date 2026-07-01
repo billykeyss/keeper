@@ -39,4 +39,20 @@ describe("supersedeRegulation (clone-on-supersede)", () => {
     expect(reloadedOld.validTo).toBe("2025-12-31");
     expect(reloadedOld.status).toBe("superseded");
   });
+
+  it("rejects a second supersede on an already-superseded regulation", async () => {
+    const [a] = await db.insert(authority).values({ name: "CDFW", state: "CA", type: "state_agency" }).returning();
+    const [orig] = await db.insert(regulation).values({
+      ruleType: "bag", parameters: { daily: 3, unit: "fish", aggregation: "combined_group" },
+      authorityId: a.id, humanSummary: "3 bass", validFrom: "2025-01-01", validTo: null, status: "published",
+    }).returning();
+
+    // First supersede succeeds.
+    await supersedeRegulation(orig.id, { humanSummary: "2 bass", validFrom: "2026-01-01" });
+
+    // Second supersede on the same original id must be rejected.
+    await expect(
+      supersedeRegulation(orig.id, { humanSummary: "x", validFrom: "2027-01-01" }),
+    ).rejects.toThrow(/already superseded/);
+  });
 });

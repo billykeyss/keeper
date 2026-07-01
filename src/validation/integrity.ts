@@ -7,6 +7,12 @@ const hi = (d: string | null) => (d == null ? Infinity : Date.parse(d));
 function rangesOverlap(a: ActiveRule, b: ActiveRule): boolean {
   return lo(a.validFrom) <= hi(b.validTo) && lo(b.validFrom) <= hi(a.validTo);
 }
+/**
+ * O(n²) overlap detector intended for rows already scoped to one authority/regulation-group
+ * context (keep n small). Flags pairs of PUBLISHED rows that share the same ruleType,
+ * scopeKey, and speciesKey whose validity ranges overlap. A null validFrom means open-start
+ * (−∞) and a null validTo means open-end (+∞).
+ */
 export function findOverlaps(rows: ActiveRule[]): Array<[number, number]> {
   const pub = rows.filter((r) => r.status === "published");
   const out: Array<[number, number]> = [];

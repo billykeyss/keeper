@@ -14,17 +14,18 @@ export async function supersedeRegulation(
   changes: { parameters?: unknown; humanSummary?: string; verbatimText?: string | null; validFrom: string },
 ) {
   return await db.transaction(async (tx) => {
-    const [old] = await tx.select().from(regulation).where(eq(regulation.id, oldId));
+    const [old] = await tx.select().from(regulation).where(eq(regulation.id, oldId)).for("update");
     if (!old) throw new Error(`regulation ${oldId} not found`);
+    if (old.status === "superseded") throw new Error(`regulation ${oldId} is already superseded`);
 
     await tx.update(regulation).set({ validTo: dayBefore(changes.validFrom), status: "superseded" }).where(eq(regulation.id, oldId));
 
-    const { id: _drop, createdAt: _c, updatedAt: _u, ...carry } = old as any;
+    const { id: _drop, createdAt: _c, updatedAt: _u, ...carry } = old;
     const [next] = await tx.insert(regulation).values({
       ...carry,
       parameters: changes.parameters ?? old.parameters,
       humanSummary: changes.humanSummary ?? old.humanSummary,
-      verbatimText: changes.verbatimText ?? old.verbatimText,
+      verbatimText: "verbatimText" in changes ? changes.verbatimText : old.verbatimText,
       validFrom: changes.validFrom,
       validTo: null,
       status: "published",
