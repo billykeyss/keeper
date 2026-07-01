@@ -105,19 +105,39 @@ const water4: WaterDataset = {
   reciprocity: [],
 };
 
+// water5: an open season PLUS a genuine whole-water (non-spatial) closure → closure wins, scope closed.
+const water5: WaterDataset = {
+  asOf: "2026-07-01",
+  water: { name: "Fully Closed Lake", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.28, lat: 39.25, verifyCurrent: false },
+  authorities: [{ key: "cdfw", name: "California Department of Fish and Wildlife", state: "CA", type: "state_agency", roles: ["take_rules"] }],
+  reaches: [], species: [], speciesGroups: [],
+  sources: [{ ...src }],
+  groups: [],
+  seasonPeriods: [
+    { key: "yr", groupKey: null, label: "All year", status: "open", startSpec: jan1, endSpec: dec31 },
+  ],
+  regulations: [
+    { ruleType: "bag", parameters: { daily: 5, unit: "fish", aggregation: "combined_group" }, groupKey: null, seasonPeriodKey: "yr", authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "cr", humanSummary: "5/day", verbatimText: "5 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
+    { ruleType: "closure", parameters: { closure_kind: "year_round", boundary_definition: "described", note: "Entire lake closed to all fishing." }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "cr", humanSummary: "Closed to all fishing all year", verbatimText: "Closed to all fishing all year.", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
+  ],
+  reciprocity: [],
+};
+
 let water1Id: number;
 let water2Id: number;
 let water3Id: number;
 let water4Id: number;
+let water5Id: number;
 
 describe("GET /api/waters/:id/rules", () => {
   beforeAll(async () => {
-    await loadDatasets(db, [water1, water2, water3, water4]);
+    await loadDatasets(db, [water1, water2, water3, water4, water5]);
     const ws = await db.select().from(waterBody);
     water1Id = ws.find((w) => w.name === "Truckee Test River")!.id;
     water2Id = ws.find((w) => w.name === "No Season Lake")!.id;
     water3Id = ws.find((w) => w.name === "Mixed Bag Lake")!.id;
     water4Id = ws.find((w) => w.name === "Release Only Lake")!.id;
+    water5Id = ws.find((w) => w.name === "Fully Closed Lake")!.id;
   });
 
   it("on 2026-07-01: reach A has the take bag (not winter), closed reach is closed, license + asserts_none render", async () => {
@@ -178,6 +198,12 @@ describe("GET /api/waters/:id/rules", () => {
     const res = await app.request(`/api/waters/${water4Id}/rules?on=2026-07-01`);
     const body = await res.json();
     expect(body.status.overall).toBe("catch_and_release");
+  });
+
+  it("a genuine whole-water (non-spatial) closure closes the water despite an open season", async () => {
+    const res = await app.request(`/api/waters/${water5Id}/rules?on=2026-07-01`);
+    const body = await res.json();
+    expect(body.status.overall).toBe("closed");
   });
 
   it("404 for an unknown water id", async () => {

@@ -54,14 +54,14 @@ interface ResolvedRule {
 }
 
 /** Whether an active closure rule forces its whole scope to "closed".
- *  Reach-scope closures close their reach. Water-scope closure rules in this corpus are always
- *  partial-area geographic closures — spatial buffers around tributary mouths / swim areas, or
- *  year-round tributary-only closures (e.g. Independence Lake, whose closure covers only the
- *  tributaries and the water within 300 ft of their mouths). They render as informational cards
- *  but must NOT close the whole water; a genuine whole-water closure is modelled as a "closed"
- *  season period, which deriveStatus handles separately. */
-function closureClosesScope(isWaterScope: boolean): boolean {
-  return !isWaterScope;
+ *  Reach-scope closures always close their reach. Water-scope closures close the whole water
+ *  ONLY when they are not partial-area ('spatial') closures — spatial buffers around tributary
+ *  mouths / swim areas render as informational rule cards without flipping the water to closed.
+ *  Fail-closed: any non-spatial water-scoped closure (year_round/seasonal/emergency/…) closes. */
+function closureClosesScope(isWaterScope: boolean, params: unknown): boolean {
+  if (!isWaterScope) return true;
+  const kind = (params as { closure_kind?: string } | null)?.closure_kind;
+  return kind !== "spatial";
 }
 
 rules.get("/api/waters/:id/rules", async (c) => {
@@ -232,7 +232,7 @@ rules.get("/api/waters/:id/rules", async (c) => {
     // 1. Active closure that closes this whole scope, or an active "closed" season period.
     for (const rr of scopeRules) {
       if (!rr._inForce) continue;
-      if (rr.ruleType === "closure" && closureClosesScope(isWaterScope)) return "closed";
+      if (rr.ruleType === "closure" && closureClosesScope(isWaterScope, rr.detail)) return "closed";
       if (rr._activePeriodStatuses.includes("closed")) return "closed";
     }
 

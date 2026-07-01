@@ -46,7 +46,7 @@
     },
     {
       "ruleType": "closure",
-      "parameters": {"closure_kind": "year_round", "boundary_definition": "described", "note": "Independence Lake tributaries and Independence Lake within 300 feet of the mouths of all tributaries are closed to all fishing all year."},
+      "parameters": {"closure_kind": "spatial", "boundary_definition": "described", "note": "Partial-area closure, in effect all year: Independence Lake tributaries and Independence Lake within 300 feet of the mouths of all tributaries are closed to all fishing. The main body of the lake is not closed by this rule."},
       "groupKey": "independence_lake_63", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
       "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "7.50(b)(63)(A)",
       "humanSummary": "Closed all year: tributaries and within 300 ft of tributary mouths",
