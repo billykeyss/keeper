@@ -1,11 +1,10 @@
-import { pgTable, serial, integer, text, boolean, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, serial, integer, text, boolean } from "drizzle-orm/pg-core";
 import { geometry } from "../geometry";
 import {
   authorityTypeEnum, licenseYearBasisEnum, waterTypeEnum, mgmtCategoryEnum,
   hydroRelationEnum, wbaRoleEnum, flowDirEnum, zoneKindEnum, distUnitEnum,
 } from "../enums";
-
-const stamps = { createdAt: timestamp("created_at").defaultNow().notNull(), updatedAt: timestamp("updated_at").defaultNow().notNull() };
+import { stamps } from "../stamps";
 
 export const authority = pgTable("authority", {
   id: serial("id").primaryKey(),
@@ -28,7 +27,7 @@ export const waterBody = pgTable("water_body", {
   geom: geometry("geom", { type: "Geometry", srid: 4326 }),
   aliases: text("aliases").array().notNull().default([]),
   regulatoryLabel: text("regulatory_label"),
-  governingZoneId: integer("governing_zone_id"),
+  governingZoneId: integer("governing_zone_id"), // no FK: cycle with zone.waterBodyId; enforced in application layer
   managementCategory: mgmtCategoryEnum("management_category"),
   verifyCurrent: boolean("verify_current").notNull().default(false),
   ...stamps,

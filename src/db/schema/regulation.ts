@@ -1,33 +1,14 @@
-import { pgTable, serial, integer, text, boolean, jsonb, date, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, serial, integer, text, boolean, jsonb, date, timestamp, check } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 import {
   ruleTypeEnum, rulePolarityEnum, basisEnum, speciesScopeEnum, anglerClassEnum,
   confidenceEnum, statusEnum, speciesRoleEnum, speciesModeEnum, targetTypeEnum,
-  targetModeEnum, sourceRoleEnum, periodStatusEnum, documentTypeEnum,
-  instrumentTypeEnum, authorityLevelEnum, fetchStatusEnum,
+  targetModeEnum, sourceRoleEnum, periodStatusEnum,
 } from "../enums";
 import { authority, waterBody, zone } from "./geography";
-
-const stamps = { createdAt: timestamp("created_at").defaultNow().notNull(), updatedAt: timestamp("updated_at").defaultNow().notNull() };
-
-export const source = pgTable("source", {
-  id: serial("id").primaryKey(),
-  authorityId: integer("authority_id").references(() => authority.id),
-  documentType: documentTypeEnum("document_type").notNull(),
-  instrumentType: instrumentTypeEnum("instrument_type"),
-  authorityLevel: authorityLevelEnum("authority_level").notNull(),
-  isOfficial: boolean("is_official").notNull().default(true),
-  mirrorOfId: integer("mirror_of_id"),
-  fetchStatus: fetchStatusEnum("fetch_status"),
-  url: text("url"),
-  title: text("title"),
-  publishedDate: date("published_date"),
-  retrievedDate: date("retrieved_date"),
-  sectionRef: text("section_ref"),
-  quotedText: text("quoted_text"),
-  disputed: boolean("disputed").notNull().default(false),
-  refutationNote: text("refutation_note"),
-  ...stamps,
-});
+import { source } from "./source";
+import { species, speciesGroup } from "./species";
+import { stamps } from "../stamps";
 
 export const regulationGroup = pgTable("regulation_group", {
   id: serial("id").primaryKey(),
@@ -48,7 +29,7 @@ export const seasonPeriod = pgTable("season_period", {
   endSpec: jsonb("end_spec").notNull(),
   validFrom: date("valid_from"),
   validTo: date("valid_to"),
-  supersedesId: integer("supersedes_id"),
+  supersedesId: integer("supersedes_id"), // self-ref, intentionally not an FK (v2 may be inserted before v1); enforced in application layer
   ...stamps,
 });
 
@@ -82,19 +63,21 @@ export const regulation = pgTable("regulation", {
   lastVerifiedAt: date("last_verified_at"),
   validFrom: date("valid_from"),
   validTo: date("valid_to"),
-  supersedesId: integer("supersedes_id"),
+  supersedesId: integer("supersedes_id"), // self-ref, intentionally not an FK (v2 may be inserted before v1); enforced in application layer
   ...stamps,
 });
 
 export const regulationSpecies = pgTable("regulation_species", {
   id: serial("id").primaryKey(),
   regulationId: integer("regulation_id").notNull().references(() => regulation.id),
-  speciesId: integer("species_id"),
-  speciesGroupId: integer("species_group_id"),
+  speciesId: integer("species_id").references(() => species.id),
+  speciesGroupId: integer("species_group_id").references(() => speciesGroup.id),
   role: speciesRoleEnum("role").notNull().default("target"),
   mode: speciesModeEnum("mode").notNull().default("include"),
   ...stamps,
-});
+}, () => [
+  check("reg_species_target_present", sql`species_id IS NOT NULL OR species_group_id IS NOT NULL`),
+]);
 
 export const regulationTarget = pgTable("regulation_target", {
   id: serial("id").primaryKey(),
@@ -103,7 +86,9 @@ export const regulationTarget = pgTable("regulation_target", {
   targetId: integer("target_id"),
   mode: targetModeEnum("mode").notNull().default("include"),
   ...stamps,
-});
+}, () => [
+  check("reg_target_id_present", sql`target_type IN ('statewide','authority_territory') OR target_id IS NOT NULL`),
+]);
 
 export const regulationSource = pgTable("regulation_source", {
   id: serial("id").primaryKey(),

@@ -1,9 +1,8 @@
-import { pgTable, serial, integer, text, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, serial, integer, text } from "drizzle-orm/pg-core";
 import { speciesCategoryEnum, nativeStatusEnum, presenceEnum } from "../enums";
-import { waterBody } from "./geography";
-import { source } from "./regulation";
-
-const stamps = { createdAt: timestamp("created_at").defaultNow().notNull(), updatedAt: timestamp("updated_at").defaultNow().notNull() };
+import { authority, waterBody } from "./geography";
+import { source } from "./source";
+import { stamps } from "../stamps";
 
 export const species = pgTable("species", {
   id: serial("id").primaryKey(),
@@ -26,7 +25,7 @@ export const speciesGroup = pgTable("species_group", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   category: speciesCategoryEnum("category"),
-  authorityId: integer("authority_id"),
+  authorityId: integer("authority_id").references(() => authority.id),
   description: text("description"),
   ...stamps,
 });
