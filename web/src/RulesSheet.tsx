@@ -158,7 +158,7 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
       {!isDesktop && open && <div className="scrim" onClick={onClose} aria-hidden="true" />}
       <section
         ref={sheetRef}
-        className={`sheet contour${drag.current.active ? " dragging" : ""}`}
+        className={`sheet${drag.current.active ? " dragging" : ""}`}
         role="dialog"
         aria-modal="false"
         aria-label={name ? `${name} regulations` : "Water regulations"}
@@ -190,7 +190,7 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
             <h2 className="sheet-title">{name}</h2>
             <div className="sheet-meta">
               {data ? (
-                <StatusPill status={data.status.overall} />
+                <StatusPill status={data.status.overall} thunk key={data.water.id} />
               ) : (
                 <span className="pill-loading">Checking…</span>
               )}
@@ -206,7 +206,10 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
           {verify && (
             <div className="verify-banner" role="note">
               <WarnIcon size={17} />
-              <span>Conditions can change — verify current status with the managing agency.</span>
+              <span>
+                <span className="advisory-tag">Advisory</span>
+                Conditions can change — verify current status with the managing agency.
+              </span>
             </div>
           )}
         </div>
@@ -320,8 +323,8 @@ function RulesBody({ data }: { data: RulesResponse }) {
       )}
 
       <footer className="sheet-foot">
-        Regulations resolved for {data.asOf}. This is a convenience summary — always confirm with the
-        managing agency before you fish.
+        Regulations resolved for <span className="asof">{data.asOf}</span>. This is a convenience
+        summary — always confirm with the managing agency before you fish.
         {data.licenses[0]?.sourceUrl && (
           <>
             {" "}

@@ -8,7 +8,6 @@ function todayLabel(): string {
     weekday: "short",
     month: "short",
     day: "numeric",
-    year: "numeric",
   });
 }
 
@@ -40,8 +39,11 @@ export function App() {
       />
 
       <div className="brand-chip">
-        <span className="brand-name">CA/NV Fishing Rules</span>
-        <span className="brand-date">{todayLabel()}</span>
+        <span className="brand-wordmark">
+          Keeper
+          <span className="brand-seal" aria-hidden="true" />
+        </span>
+        <span className="brand-sub">CA·NV fishing rules — {todayLabel()}</span>
       </div>
 
       <RulesSheet pin={selected} onClose={handleClose} onStatus={handleStatus} />

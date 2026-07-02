@@ -1,9 +1,12 @@
-# fishing-law
+# Keeper
+
+*Know what you can keep — CA/NV fishing rules on a map.*
 
 Source-of-truth data platform for freshwater sport-fishing species and regulations across
-California and Nevada. It answers, for a given water and date: *Is it open? What can I keep?
-How many? What size? Barbless? Do I need a special permit?* — with every answer traceable to an
-authoritative legal instrument and reconstructable as-of any past date.
+California and Nevada (developed under the working name **fishing-law**). It answers, for a given
+water and date: *Is it open? What can I keep? How many? What size? Barbless? Do I need a special
+permit?* — with every answer traceable to an authoritative legal instrument and reconstructable
+as-of any past date.
 
 The repository contains the **data model** (PostgreSQL/PostGIS schema via Drizzle ORM, per-`rule_type`
 Zod parameter validators, correctness machinery, a relative-season date resolver), a

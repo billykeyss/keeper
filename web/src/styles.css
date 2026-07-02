@@ -1,42 +1,53 @@
 /* ============================================================================
-   CA/NV Fishing Rules — "Alpine field guide"
-   A calm paper-topo aesthetic: warm paper, deep pine ink, sharp status accents.
-   Display: Fraunces (serif w/ character). Body/UI: Atkinson Hyperlegible.
+   Keeper — "The Warden's Ledger"
+   A vintage fish-and-game license turned modern field tool: warm bone paper,
+   deep ledger-green ink, brass seals and sharp rubber-stamp status accents.
+   Display: Instrument Serif. Body/UI: Public Sans. Mono: Spline Sans Mono.
    ========================================================================== */
 
 :root {
   /* --- palette --- */
-  --paper: #f7f4ec;
-  --paper-2: #fdfbf5;
-  --ink: #1d2a26; /* deep pine, near-black green */
-  --pine: #2f5d50;
-  --lake: #2b6f8c;
+  --bone: #f3efe4; /* app paper */
+  --bone-2: #f8f5ec; /* lighter paper for insets */
+  --ink: #1a2b22; /* deep ledger green-black */
+  --warden: #23573f; /* primary green */
+  --brass: #a3792a; /* seals / accents (graphical / borders) */
+  --brass-ink: #7a5a1f; /* darker brass for text on light (AA-safe) */
+  --river: #2f5d78;
 
-  --open: #2e7d4f;
-  --cr: #2b6f8c; /* catch & release */
-  --closed: #b3402e;
-  --unknown: #6b7069;
+  /* stamp statuses */
+  --open: #217a44;
+  --cr: #2f5d78; /* catch & release */
+  --closed: #a63a24;
+  --unknown: #6f6a5c;
 
-  --warn: #b97d10; /* verify-current amber */
-  --warn-bg: #fdf3dd;
+  --warn: #a3792a; /* verify amber (= brass) */
+  --warn-bg: #f7ecd4;
 
-  /* derived */
-  --ink-12: rgba(29, 42, 38, 0.12);
-  --ink-08: rgba(29, 42, 38, 0.08);
-  --ink-64: rgba(29, 42, 38, 0.64);
-  --ink-48: rgba(29, 42, 38, 0.48);
-  --hairline: 1.5px solid var(--ink-12);
+  /* derived ink alphas (ink = rgb(26,43,34)) */
+  --ink-14: rgba(26, 43, 34, 0.14);
+  --ink-12: rgba(26, 43, 34, 0.12);
+  --ink-08: rgba(26, 43, 34, 0.08);
+  --ink-64: rgba(26, 43, 34, 0.64);
+  --ink-48: rgba(26, 43, 34, 0.5);
+  --hairline: 1px solid var(--ink-14);
 
-  --shadow-sheet: 0 -8px 32px rgba(29, 42, 38, 0.16);
-  --shadow-soft: 0 4px 16px rgba(29, 42, 38, 0.12);
-  --shadow-chip: 0 2px 10px rgba(29, 42, 38, 0.14);
+  /* extremely subtle paper grain (≤4% ink) */
+  --grain: radial-gradient(rgba(26, 43, 34, 0.04) 0.6px, transparent 0.7px);
+  --rule-2: color-mix(in srgb, var(--ink) 60%, var(--bone)); /* the thin ledger rule */
 
-  --radius-sheet: 20px;
-  --radius-card: 14px;
-  --radius-chip: 999px;
+  --shadow-sheet: 0 -10px 34px rgba(26, 43, 34, 0.2);
+  --shadow-soft: 0 3px 14px rgba(26, 43, 34, 0.12);
+  --shadow-chip: 0 2px 10px rgba(26, 43, 34, 0.16);
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+  --radius-sheet: 18px;
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --radius-tag: 6px;
+
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -44,6 +55,7 @@
   --safe-right: env(safe-area-inset-right, 0px);
 
   --ease-spring: cubic-bezier(0.16, 0.84, 0.34, 1.02);
+  --ease-stamp: cubic-bezier(0.2, 1.6, 0.4, 1);
 }
 
 * {
@@ -60,7 +72,7 @@ body,
 body {
   font-family: var(--font-body);
   color: var(--ink);
-  background: var(--paper);
+  background: var(--bone);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overscroll-behavior: none;
@@ -73,37 +85,13 @@ button {
 }
 
 a {
-  color: var(--lake);
+  color: var(--river);
 }
 
 :focus-visible {
-  outline: 2.5px solid var(--pine);
+  outline: 2.5px solid var(--warden);
   outline-offset: 2px;
   border-radius: 4px;
-}
-
-/* --- subtle topographic contour texture, used behind sheet header / panels --- */
-.contour {
-  position: relative;
-  isolation: isolate;
-}
-.contour::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'>\
-<g fill='none' stroke='%231d2a26' stroke-width='1'>\
-<path d='M-20 60 Q60 10 120 60 T260 60'/>\
-<path d='M-20 100 Q60 50 120 100 T260 100'/>\
-<path d='M-20 140 Q60 90 120 140 T260 140'/>\
-<path d='M-20 180 Q60 130 120 180 T260 180'/>\
-<path d='M-20 220 Q60 170 120 220 T260 220'/>\
-</g></svg>");
-  background-size: 240px 240px;
-  opacity: 0.05;
-  pointer-events: none;
 }
 
 /* ============================================================================
@@ -116,7 +104,7 @@ a {
   height: 100dvh;
   width: 100vw;
   overflow: hidden;
-  background: var(--paper);
+  background: var(--bone);
 }
 
 .map-root {
@@ -124,7 +112,7 @@ a {
   inset: 0;
 }
 
-/* Brand chip — floating top-left */
+/* Brand chip — a small "license header" pinned top-left */
 .brand-chip {
   position: absolute;
   z-index: 20;
@@ -132,27 +120,43 @@ a {
   left: calc(12px + var(--safe-left));
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  padding: 9px 14px;
-  background: color-mix(in srgb, var(--paper-2) 92%, transparent);
-  border: var(--hairline);
-  border-radius: var(--radius-chip);
+  gap: 2px;
+  padding: 8px 14px 9px;
+  background: color-mix(in srgb, var(--bone) 94%, transparent);
+  border: 1px solid var(--ink-14);
+  border-left: 3px solid var(--warden);
+  border-radius: 8px;
   box-shadow: var(--shadow-chip);
-  backdrop-filter: saturate(1.1) blur(3px);
+  backdrop-filter: saturate(1.05) blur(3px);
   pointer-events: none;
 }
-.brand-chip .brand-name {
+.brand-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.1px;
-  line-height: 1.05;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1;
+  letter-spacing: 0.3px;
   color: var(--ink);
 }
-.brand-chip .brand-date {
-  font-size: 11px;
+.brand-seal {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--brass);
+  box-shadow:
+    0 0 0 1.5px color-mix(in srgb, var(--brass) 40%, var(--bone)),
+    inset 0 0 0 1.5px color-mix(in srgb, var(--ink) 22%, transparent);
+}
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
   color: var(--ink-64);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
 }
 
 /* Empty / loading hints over the map */
@@ -165,36 +169,36 @@ a {
   max-width: min(86vw, 360px);
   text-align: center;
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--ink-64);
-  background: color-mix(in srgb, var(--paper-2) 90%, transparent);
-  border: var(--hairline);
-  border-radius: var(--radius-chip);
+  background: color-mix(in srgb, var(--bone) 92%, transparent);
+  border: 1px solid var(--ink-14);
+  border-radius: 8px;
   box-shadow: var(--shadow-chip);
 }
 
-/* Loading placeholder used by the scaffold before the map mounts */
 .boot {
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
   color: var(--ink-48);
-  font-size: 13px;
+  font-family: var(--font-mono);
+  font-size: 12px;
   letter-spacing: 0.3px;
 }
 
 /* ============================================================================
-   Status color mapping (shared by pins + status pills via --c)
+   Status color mapping (shared by pins + stamps via --c)
    ========================================================================== */
 [data-status="open"] { --c: var(--open); }
 [data-status="catch_and_release"] { --c: var(--cr); }
 [data-status="closed"] { --c: var(--closed); }
 [data-status="unknown"] { --c: var(--unknown); }
-[data-status="pine"] { --c: var(--pine); }
+[data-status="pine"] { --c: var(--warden); } /* default (unselected) pin */
 
 /* ============================================================================
-   Map pins (custom DOM markers) — roundel + white water glyph, ≥44px target
+   Map pins — brass-grommet roundels (ink ring, bone inner ring, glyph center)
    ========================================================================== */
 .pin {
   appearance: none;
@@ -212,38 +216,44 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--c, var(--pine));
-  border: 2px solid var(--paper);
-  color: #fff;
+  background: var(--c, var(--warden));
+  border: 2px solid var(--bone); /* bone inner ring */
+  color: var(--bone);
   display: grid;
   place-items: center;
-  box-shadow: 0 2px 6px rgba(29, 42, 38, 0.35);
+  box-shadow:
+    0 0 0 2px var(--ink), /* ink outer ring */
+    0 2px 6px rgba(26, 43, 34, 0.4);
   transition:
     transform 0.15s var(--ease-spring),
     box-shadow 0.15s ease,
     background 0.2s ease;
 }
 .pin-body svg {
-  color: #fff;
+  color: var(--bone);
 }
 .pin[data-verify="true"] .pin-body {
   box-shadow:
-    0 0 0 3px var(--warn),
-    0 2px 6px rgba(29, 42, 38, 0.35);
+    0 0 0 2px var(--ink),
+    0 0 0 5px color-mix(in srgb, var(--brass) 62%, transparent), /* amber halo */
+    0 2px 6px rgba(26, 43, 34, 0.4);
 }
 .pin[data-selected="true"] .pin-body {
-  transform: scale(1.15);
-  box-shadow: 0 6px 16px rgba(29, 42, 38, 0.42);
+  transform: scale(1.16);
+  box-shadow:
+    0 0 0 2px var(--ink),
+    0 6px 16px rgba(26, 43, 34, 0.45);
 }
 .pin[data-selected="true"][data-verify="true"] .pin-body {
   box-shadow:
-    0 0 0 3px var(--warn),
-    0 6px 16px rgba(29, 42, 38, 0.42);
+    0 0 0 2px var(--ink),
+    0 0 0 5px color-mix(in srgb, var(--brass) 62%, transparent),
+    0 6px 16px rgba(26, 43, 34, 0.45);
 }
 
-/* MapLibre chrome tuned to the paper palette */
+/* MapLibre chrome tuned to the ledger palette */
 .maplibregl-ctrl-attrib {
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   font-size: 10px;
 }
 .maplibregl-ctrl-bottom-right {
@@ -251,31 +261,49 @@ a {
 }
 
 /* ============================================================================
-   Status pill
+   Rubber-stamp status
    ========================================================================== */
-.status-pill {
+.status-stamp {
+  --stamp: var(--c, var(--warden));
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: var(--c);
-  color: #fff;
-  border-radius: var(--radius-chip);
+  font-family: var(--font-body);
   font-weight: 700;
-  letter-spacing: 0.2px;
-  padding: 5px 11px;
-  font-size: 13px;
-  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  color: var(--stamp);
+  background: transparent;
+  border: 2px solid var(--stamp);
+  border-radius: 4px;
+  transform: rotate(-2deg);
+  /* rough the inked edges: uneven inset shadows + a faint radial mask */
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--stamp) 30%, transparent),
+    inset 1.5px -1px 2px color-mix(in srgb, var(--stamp) 22%, transparent),
+    inset -1.5px 1px 2px color-mix(in srgb, var(--stamp) 16%, transparent);
+  -webkit-mask-image: radial-gradient(120% 150% at 50% 50%, #000 60%, rgba(0, 0, 0, 0.82) 100%);
+  mask-image: radial-gradient(120% 150% at 50% 50%, #000 60%, rgba(0, 0, 0, 0.82) 100%);
 }
-.status-pill--sm {
-  padding: 3px 9px;
-  font-size: 11.5px;
+.status-stamp--md {
+  font-size: 14.5px;
+  padding: 8px 14px 7px;
+  margin: 2px 0;
 }
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.92;
+.status-stamp--sm {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  padding: 4px 9px 3px;
+  transform: rotate(-1.5deg);
+}
+@keyframes stamp-thunk {
+  0% { transform: rotate(3deg) scale(1.6); opacity: 0; }
+  35% { opacity: 1; }
+  55% { transform: rotate(-3deg) scale(0.92); }
+  100% { transform: rotate(-2deg) scale(1); opacity: 1; }
+}
+.status-stamp--thunk {
+  animation: stamp-thunk 0.25s var(--ease-stamp) both;
 }
 
 /* ============================================================================
@@ -288,7 +316,7 @@ a {
   right: 0;
   height: 3px;
   z-index: 25;
-  background: linear-gradient(90deg, transparent, var(--pine), transparent);
+  background: linear-gradient(90deg, transparent, var(--warden), transparent);
   background-size: 40% 100%;
   animation: slide 1s infinite linear;
 }
@@ -306,9 +334,9 @@ a {
   align-items: center;
   gap: 12px;
   background: var(--ink);
-  color: var(--paper);
+  color: var(--bone);
   padding: 10px 12px 10px 16px;
-  border-radius: 14px;
+  border-radius: 10px;
   box-shadow: var(--shadow-soft);
   font-size: 13px;
 }
@@ -316,22 +344,22 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  border-radius: var(--radius-chip);
+  border-radius: 6px;
   padding: 6px 12px;
-  background: color-mix(in srgb, var(--paper) 22%, transparent);
-  color: var(--paper);
+  background: color-mix(in srgb, var(--bone) 20%, transparent);
+  color: var(--bone);
 }
 
 /* ============================================================================
-   Bottom sheet
+   Bottom sheet — a ledger page
    ========================================================================== */
 .scrim {
   position: fixed;
   inset: 0;
   z-index: 35;
-  background: rgba(29, 42, 38, 0.28);
+  background: rgba(26, 43, 34, 0.3);
   backdrop-filter: blur(1px);
   animation: fade 0.2s ease;
 }
@@ -350,16 +378,33 @@ a {
   z-index: 40;
   display: flex;
   flex-direction: column;
-  background: var(--paper);
-  border-top: var(--hairline);
+  color: var(--ink);
+  border-top: 3px solid var(--ink); /* thick ledger rule */
   border-top-left-radius: var(--radius-sheet);
   border-top-right-radius: var(--radius-sheet);
   box-shadow: var(--shadow-sheet);
   transition: transform 0.42s var(--ease-spring);
   will-change: transform;
+  /* thin second ledger rule + paper grain over bone */
+  background:
+    linear-gradient(var(--rule-2), var(--rule-2)) 0 5px / 100% 1px no-repeat,
+    var(--grain) 0 0 / 4px 4px,
+    var(--bone);
 }
+/* perforated-edge detail along the top (dotted, above the paper, below content) */
 .sheet::before {
-  border-radius: inherit;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 16px;
+  right: 16px;
+  height: 5px;
+  pointer-events: none;
+  background-image: radial-gradient(circle, var(--ink-14) 42%, transparent 44%);
+  background-size: 9px 5px;
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .sheet.dragging {
   transition: none;
@@ -372,16 +417,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 0 5px;
+  padding: 9px 0 5px;
   touch-action: none;
   cursor: grab;
 }
 .sheet-grab:active {
   cursor: grabbing;
 }
+/* drag handle styled as a brass grommet slot */
 .sheet-handle {
-  width: 60px;
-  height: 30px;
+  width: 58px;
+  height: 28px;
   border: none;
   background: transparent;
   position: relative;
@@ -390,23 +436,27 @@ a {
 .sheet-handle::before {
   content: "";
   position: absolute;
-  left: 6px;
-  right: 6px;
-  top: 12px;
-  height: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 13px;
   border-radius: 999px;
-  background: var(--ink-12);
+  background: var(--ink); /* the dark slot */
+  box-shadow:
+    0 0 0 2px var(--brass),
+    0 0 0 3px color-mix(in srgb, var(--brass) 45%, var(--bone));
 }
 .sheet-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   z-index: 4;
   width: 44px;
   height: 44px;
-  border: none;
+  border: 1px solid var(--ink-14);
   border-radius: 50%;
-  background: var(--ink-08);
+  background: color-mix(in srgb, var(--bone-2) 90%, transparent);
   color: var(--ink);
   display: inline-flex;
   align-items: center;
@@ -414,45 +464,59 @@ a {
 }
 
 .sheet-header {
-  padding: 2px 18px 12px;
+  padding: 4px 18px 12px;
 }
 .sheet-title {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(22px, 6vw, 28px);
-  line-height: 1.08;
-  margin: 0 44px 9px 0;
+  font-weight: 400;
+  font-size: clamp(27px, 7.5vw, 36px);
+  line-height: 1.02;
+  letter-spacing: 0.2px;
+  margin: 0 46px 10px 0;
   color: var(--ink);
 }
 .sheet-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 9px;
+  row-gap: 8px;
   align-items: center;
 }
 .pill-loading {
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   color: var(--ink-48);
-  font-style: italic;
+  letter-spacing: 0.02em;
 }
 
 .verify-banner {
   display: flex;
-  gap: 8px;
+  gap: 9px;
   align-items: flex-start;
-  margin: 0 14px 8px;
+  margin: 2px 14px 10px;
   padding: 9px 12px;
   background: var(--warn-bg);
-  color: var(--warn);
-  border: 1.5px solid color-mix(in srgb, var(--warn) 32%, transparent);
-  border-radius: 12px;
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--brass) 48%, transparent);
+  border-left: 3px solid var(--brass);
+  border-radius: 8px;
   font-size: 12.5px;
-  font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 .verify-banner svg {
   flex: none;
   margin-top: 1px;
+  color: var(--brass);
+}
+.advisory-tag {
+  display: inline-block;
+  margin-right: 6px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brass-ink);
 }
 
 .sheet-body {
@@ -468,81 +532,104 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 4px 9px;
-  border-radius: var(--radius-chip);
-  background: var(--ink-08);
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-tag);
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
   color: var(--ink-64);
 }
 .chip--type {
-  color: var(--pine);
-  background: color-mix(in srgb, var(--pine) 12%, var(--paper));
+  color: var(--warden);
+  background: color-mix(in srgb, var(--warden) 12%, var(--bone));
 }
 .chip--state {
-  color: var(--lake);
-  background: color-mix(in srgb, var(--lake) 12%, var(--paper));
-  letter-spacing: 0.5px;
+  color: var(--river);
+  background: color-mix(in srgb, var(--river) 12%, var(--bone));
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 10.5px;
 }
 .chip--unverified {
-  color: var(--warn);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brass-ink);
   background: var(--warn-bg);
+  border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
 }
 
 /* --- scopes --- */
 .scope {
-  padding: 15px 0;
+  padding: 16px 0;
   border-top: var(--hairline);
 }
 .scope:first-child {
   border-top: none;
+  padding-top: 6px;
 }
 .scope-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 .scope-titles {
   min-width: 0;
 }
 .scope-name {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.1;
   margin: 0;
   color: var(--ink);
 }
 .scope-sub {
   display: block;
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
   color: var(--ink-48);
-  margin-top: 2px;
+  letter-spacing: 0.01em;
+  margin-top: 3px;
 }
 .scope-empty {
   font-size: 13px;
+  font-style: italic;
   color: var(--ink-48);
   margin: 0;
 }
+
+/* --- rule entries: flat ledger rows divided by hairlines --- */
 .rule-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-
-/* --- rule cards --- */
 .rule-card {
-  background: var(--paper-2);
-  border: var(--hairline);
-  border-radius: var(--radius-card);
-  padding: 13px 14px;
-  box-shadow: var(--shadow-soft);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 14px 0;
+  border-top: 1px solid var(--ink-14);
+}
+.rule-card:first-child {
+  border-top: none;
+  padding-top: 4px;
 }
 .rule-card--none {
-  background: transparent;
-  box-shadow: none;
-  border: 1.5px solid color-mix(in srgb, var(--open) 42%, var(--ink-12));
+  border: 1.5px solid color-mix(in srgb, var(--brass) 45%, var(--ink-14));
+  border-radius: var(--radius-card);
+  background: color-mix(in srgb, var(--brass) 5%, transparent);
+  padding: 13px 14px;
+  margin: 10px 0;
+}
+.rule-card--none + .rule-card {
+  border-top: none;
 }
 .rule-head {
   display: flex;
@@ -551,53 +638,67 @@ a {
   flex-wrap: wrap;
 }
 .rule-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 9px;
-  background: color-mix(in srgb, var(--pine) 12%, var(--paper));
-  color: var(--pine);
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: var(--warden);
   display: grid;
   place-items: center;
-  flex: none;
 }
-.rule-icon--none {
-  background: color-mix(in srgb, var(--open) 15%, var(--paper));
-  color: var(--open);
+.rule-seal {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border-radius: 50%;
+  border: 1.5px solid var(--brass);
+  color: var(--brass);
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--brass) 14%, transparent);
 }
 .rule-type {
-  font-weight: 700;
-  font-size: 13.5px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--ink);
 }
 .rule-species {
   font-size: 12px;
   color: var(--ink-48);
 }
-.rule-confirm {
-  font-size: 12px;
-  color: var(--open);
-  font-weight: 700;
+.rule-none-tag {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brass-ink);
 }
 .rule-figure {
   display: flex;
   align-items: baseline;
   gap: 8px;
-  margin: 9px 0 2px;
+  margin: 10px 0 2px;
 }
 .rule-figure-value {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 0.9;
+  letter-spacing: 0.5px;
   color: var(--ink);
 }
 .rule-figure-caption {
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   color: var(--ink-48);
+  letter-spacing: 0.01em;
 }
 .rule-summary {
   font-size: 13.5px;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--ink-64);
   margin: 8px 0 0;
 }
@@ -620,7 +721,7 @@ a {
   gap: 10px;
   font-size: 12.5px;
   padding: 6px 0;
-  border-top: 1px dashed var(--ink-08);
+  border-top: 1px dashed var(--ink-12);
 }
 .period:first-child {
   border-top: none;
@@ -639,13 +740,14 @@ a {
 .period-status[data-pstatus="closed"] { color: var(--closed); }
 .period-status[data-pstatus="open_catch_release"] { color: var(--cr); }
 .period-now {
-  font-size: 10px;
+  font-family: var(--font-mono);
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
   background: var(--ink);
-  color: var(--paper);
-  padding: 1px 6px;
-  border-radius: var(--radius-chip);
+  color: var(--bone);
+  padding: 1px 5px;
+  border-radius: 3px;
 }
 .period--now .period-label {
   color: var(--ink);
@@ -657,32 +759,137 @@ a {
   justify-content: space-between;
   gap: 10px;
   margin-top: 10px;
-  padding-top: 8px;
-  border-top: 1px solid var(--ink-08);
-  font-size: 12px;
+  font-size: 11px;
 }
 .rule-citation {
+  font-family: var(--font-mono);
   color: var(--ink-48);
+  letter-spacing: 0.01em;
 }
 .rule-link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: var(--lake);
+  color: var(--river);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
 }
 .rule-link svg {
   flex: none;
 }
 
+/* --- the size-limit ruler (a CSS tape measure) --- */
+.ruler {
+  position: relative;
+  margin: 12px 0 6px;
+  padding: 0 8px;
+  user-select: none;
+}
+.ruler-band {
+  position: relative;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px solid var(--ink-14);
+  overflow: hidden;
+  background: var(--bone-2);
+}
+.ruler-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ruler-zone-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  padding: 0 2px;
+}
+.ruler-zone--keep {
+  background: color-mix(in srgb, var(--warden) 20%, var(--bone));
+  color: var(--warden);
+}
+.ruler-zone--release {
+  background: color-mix(in srgb, var(--closed) 13%, var(--bone));
+  color: color-mix(in srgb, var(--closed) 78%, var(--ink));
+}
+.ruler-zone--protected {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      color-mix(in srgb, var(--closed) 28%, transparent) 0 3px,
+      transparent 3px 7px
+    ),
+    color-mix(in srgb, var(--closed) 15%, var(--bone));
+  color: color-mix(in srgb, var(--closed) 80%, var(--ink));
+}
+.ruler-zone--over {
+  background: color-mix(in srgb, var(--brass) 24%, var(--bone));
+  color: var(--brass-ink);
+}
+.ruler-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  transform: translateX(-50%);
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+.ruler-scale {
+  position: relative;
+  height: 18px;
+  margin-top: 4px;
+}
+.ruler-tick {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ruler-tick::before {
+  content: "";
+  width: 1px;
+  height: 4px;
+  background: var(--ink-14);
+}
+.ruler-tick--major::before {
+  height: 6px;
+  background: var(--ink-48);
+}
+.ruler-tick--mark::before {
+  width: 1.5px;
+  height: 7px;
+  background: var(--ink);
+}
+.ruler-num {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--ink-64);
+  margin-top: 2px;
+}
+.ruler-tick--mark .ruler-num {
+  color: var(--ink);
+  font-weight: 500;
+}
+
 /* --- licenses / reciprocity / species / footer --- */
 .license-authority {
-  font-size: 12px;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--ink-64);
-  margin: 0 0 6px;
+  margin: 10px 0 4px;
 }
 .recip-list {
   list-style: none;
@@ -718,19 +925,20 @@ a {
   align-items: center;
   gap: 6px;
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
-  background: var(--paper-2);
-  border: var(--hairline);
-  border-radius: var(--radius-chip);
+  background: var(--bone-2);
+  border: 1px solid var(--ink-14);
+  border-radius: var(--radius-pill);
   padding: 4px 10px;
 }
 .species-presence {
-  font-size: 10.5px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
   font-weight: 400;
   color: var(--ink-48);
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.05em;
 }
 .sheet-foot {
   font-size: 11.5px;
@@ -738,11 +946,15 @@ a {
   line-height: 1.5;
   padding: 16px 0 6px;
   border-top: var(--hairline);
-  margin-top: 6px;
+  margin-top: 8px;
+}
+.sheet-foot .asof {
+  font-family: var(--font-mono);
+  color: var(--ink-64);
 }
 .sheet-foot a {
-  color: var(--lake);
-  font-weight: 700;
+  color: var(--river);
+  font-weight: 600;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -758,11 +970,11 @@ a {
 }
 .sk-line,
 .sk-card {
-  border-radius: 10px;
+  border-radius: 8px;
   background: linear-gradient(
     100deg,
     var(--ink-08) 30%,
-    color-mix(in srgb, var(--ink-08) 35%, var(--paper)) 50%,
+    color-mix(in srgb, var(--ink-08) 35%, var(--bone)) 50%,
     var(--ink-08) 70%
   );
   background-size: 200% 100%;
@@ -771,7 +983,7 @@ a {
 .sk-line { height: 16px; }
 .sk-lg { width: 68%; }
 .sk-md { width: 44%; }
-.sk-card { height: 92px; }
+.sk-card { height: 84px; }
 @keyframes shimmer {
   from { background-position: 200% 0; }
   to { background-position: -200% 0; }
@@ -785,12 +997,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  border-radius: var(--radius-chip);
+  border-radius: 8px;
   padding: 9px 16px;
-  background: var(--pine);
-  color: var(--paper);
+  background: var(--warden);
+  color: var(--bone);
 }
 
 /* --- content stagger (one orchestrated reveal) --- */
@@ -810,7 +1022,7 @@ a {
 .stagger > *:nth-child(n + 7) { animation-delay: 0.38s; }
 
 /* ============================================================================
-   Desktop ≥768px — sheet becomes a fixed right panel
+   Desktop ≥768px — sheet becomes a fixed right ledger panel
    ========================================================================== */
 @media (min-width: 768px) {
   .sheet {
@@ -822,12 +1034,20 @@ a {
     height: 100dvh;
     max-height: 100dvh;
     border-top: none;
-    border-left: var(--hairline);
+    border-left: 3px solid var(--ink);
     border-top-left-radius: var(--radius-sheet);
     border-bottom-left-radius: var(--radius-sheet);
     border-top-right-radius: 0;
-    box-shadow: -8px 0 32px rgba(29, 42, 38, 0.14);
+    box-shadow: -10px 0 34px rgba(26, 43, 34, 0.16);
     padding-top: var(--safe-top);
+    /* vertical second rule at the ledger spine */
+    background:
+      linear-gradient(var(--rule-2), var(--rule-2)) 5px 0 / 1px 100% no-repeat,
+      var(--grain) 0 0 / 4px 4px,
+      var(--bone);
+  }
+  .sheet::before {
+    display: none;
   }
   .sheet[data-open="false"] {
     transform: translateX(calc(100% + 28px));
@@ -836,7 +1056,7 @@ a {
     display: none;
   }
   .sheet-body {
-    padding-top: 4px;
+    padding-top: 6px;
   }
 }
 
@@ -853,6 +1073,9 @@ a {
   .sk-line,
   .sk-card,
   .map-loading {
+    animation: none;
+  }
+  .status-stamp--thunk {
     animation: none;
   }
   .pin-body {
