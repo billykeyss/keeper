@@ -94,5 +94,10 @@
       "sourceKeys": { "primary": "s_battle_born_guide", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1022, "sizeNote": "9.5 in", "date": "2024-05-14", "sourceKeys": { "primary": "s_ndow_waters_battleborn", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1500, "sizeNote": null, "date": "2025-05-29", "sourceKeys": { "primary": "s_ndow_waters_battleborn", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }
