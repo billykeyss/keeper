@@ -4,9 +4,12 @@ import { pathToFileURL } from "node:url";
 import { waters } from "./waters";
 import { rules } from "./rules";
 import { stocking } from "./stocking";
+import { keeperAuth, authRoutes } from "./auth";
 
 export const app = new Hono();
 
+app.use("/api/*", keeperAuth);
+app.route("/", authRoutes);
 app.route("/", waters);
 app.route("/", rules);
 app.route("/", stocking);
