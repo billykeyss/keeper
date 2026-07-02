@@ -38,4 +38,29 @@ describe("loadDatasets", () => {
     const waters = await db.select().from(waterBody); // previous good load still intact
     expect(waters).toHaveLength(1);
   });
+
+  it("persists stocking events and schedule with resolved species/source FKs", async () => {
+    const withStocking = structuredClone(ds);
+    withStocking.species = [{ commonName: "Rainbow trout", scientificName: "Oncorhynchus mykiss", category: "trout", nativeStatus: "stocked", presence: "stocked" }];
+    withStocking.stockingEvents = [{ speciesCommonName: "Rainbow trout", quantity: 1200, sizeNote: "9-10 in", date: "2026-05-14", sourceKeys: { primary: "s1", corroborating: [] } }];
+    withStocking.stockingSchedule = [{ speciesCommonName: "Rainbow trout", frequency: "seasonal", seasonStartMonth: 4, seasonEndMonth: 9, note: "Stocked through summer.", sourceKeys: { primary: "s1", corroborating: [] } }];
+
+    await loadDatasets(db, [withStocking]);
+
+    const { speciesStockingEvent, speciesStockingSchedule } = await import("../../src/db/schema");
+    const events = await db.select().from(speciesStockingEvent);
+    const schedules = await db.select().from(speciesStockingSchedule);
+    expect(events).toHaveLength(1);
+    expect(events[0].quantity).toBe(1200);
+    expect(events[0].sizeNote).toBe("9-10 in");
+    expect(schedules).toHaveLength(1);
+    expect(schedules[0].frequency).toBe("seasonal");
+    expect(schedules[0].seasonStartMonth).toBe(4);
+  });
+
+  it("throws when a stocking event references a species not in the water's species[] array", async () => {
+    const bad = structuredClone(ds);
+    bad.stockingEvents = [{ speciesCommonName: "Ghost Fish", quantity: 1, sizeNote: null, date: "2026-05-14", sourceKeys: { primary: "s1", corroborating: [] } }];
+    await expect(loadDatasets(db, [bad])).rejects.toThrow(/Ghost Fish/);
+  });
 });

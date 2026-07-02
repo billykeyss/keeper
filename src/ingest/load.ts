@@ -3,7 +3,7 @@ import { db } from "../db/client";
 import {
   authority, waterBody, waterBodyAuthority, reach, species, speciesGroup, speciesGroupMember,
   waterBodySpecies, source, regulationGroup, seasonPeriod, regulation, regulationSpecies,
-  regulationTarget, regulationSource, licenseReciprocity,
+  regulationTarget, regulationSource, licenseReciprocity, speciesStockingEvent, speciesStockingSchedule,
 } from "../db/schema";
 import { validateParameters } from "../params";
 import { dateSpec } from "../params/shared";
@@ -14,7 +14,8 @@ import type { WaterDataset } from "./datasetSchema";
 // order non-load-bearing, but this keeps the statement self-documenting and matches the
 // migration bookkeeping table's isolation: drizzle's `__drizzle_migrations` is untouched).
 const TRUNCATE_TABLES = [
-  "license_reciprocity", "regulation_source", "regulation_target", "regulation_species", "regulation",
+  "license_reciprocity", "species_stocking_event", "species_stocking_schedule", "regulation_source",
+  "regulation_target", "regulation_species", "regulation",
   "season_period", "regulation_group", "water_body_species", "species_group_member", "species_group",
   "species_alias", "species", "reach", "zone", "water_body_relation", "water_body_authority", "water_body",
   "source", "authority", "audit_log",
@@ -207,6 +208,33 @@ export async function loadDatasets(dbc: typeof db, datasets: WaterDataset[]): Pr
         await tx.insert(licenseReciprocity).values({
           waterBodyId: wb.id, honoringAuthorityId, honoredAuthorityId, honored: rec.honored,
           replacesStateLicense: rec.replacesStateLicense, condition: rec.condition, sourceId,
+        });
+      }
+
+      // --- stocking events + schedule (water-scoped) ---
+      for (const ev of ds.stockingEvents) {
+        const speciesId = speciesIdByCommonName.get(ev.speciesCommonName);
+        if (speciesId === undefined) throw new Error(`${ds.water.name}: stocking event references unknown species '${ev.speciesCommonName}' (add it to species[])`);
+        const sourceId = sourceIdByKey.get(ev.sourceKeys.primary);
+        if (sourceId === undefined) throw new Error(`${ds.water.name}: stocking event references unknown primary sourceKey '${ev.sourceKeys.primary}'`);
+        for (const ck of ev.sourceKeys.corroborating) {
+          if (!sourceIdByKey.has(ck)) throw new Error(`${ds.water.name}: stocking event references unknown corroborating sourceKey '${ck}'`);
+        }
+        await tx.insert(speciesStockingEvent).values({
+          waterBodyId: wb.id, speciesId, quantity: ev.quantity, sizeNote: ev.sizeNote, stockedOn: ev.date, sourceId,
+        });
+      }
+      for (const sch of ds.stockingSchedule) {
+        const speciesId = speciesIdByCommonName.get(sch.speciesCommonName);
+        if (speciesId === undefined) throw new Error(`${ds.water.name}: stocking schedule references unknown species '${sch.speciesCommonName}' (add it to species[])`);
+        const sourceId = sourceIdByKey.get(sch.sourceKeys.primary);
+        if (sourceId === undefined) throw new Error(`${ds.water.name}: stocking schedule references unknown primary sourceKey '${sch.sourceKeys.primary}'`);
+        for (const ck of sch.sourceKeys.corroborating) {
+          if (!sourceIdByKey.has(ck)) throw new Error(`${ds.water.name}: stocking schedule references unknown corroborating sourceKey '${ck}'`);
+        }
+        await tx.insert(speciesStockingSchedule).values({
+          waterBodyId: wb.id, speciesId, frequency: sch.frequency, seasonStartMonth: sch.seasonStartMonth,
+          seasonEndMonth: sch.seasonEndMonth, note: sch.note, sourceId,
         });
       }
     }
