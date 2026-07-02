@@ -344,7 +344,7 @@ rules.get("/api/waters/:id/rules", async (c) => {
   })
     .from(speciesStockingEvent)
     .innerJoin(species, eq(species.id, speciesStockingEvent.speciesId))
-    .leftJoin(source, eq(source.id, speciesStockingEvent.sourceId))
+    .innerJoin(source, eq(source.id, speciesStockingEvent.sourceId))
     .where(eq(speciesStockingEvent.waterBodyId, waterId))
     .orderBy(desc(speciesStockingEvent.stockedOn));
 
@@ -358,7 +358,7 @@ rules.get("/api/waters/:id/rules", async (c) => {
   })
     .from(speciesStockingSchedule)
     .innerJoin(species, eq(species.id, speciesStockingSchedule.speciesId))
-    .leftJoin(source, eq(source.id, speciesStockingSchedule.sourceId))
+    .innerJoin(source, eq(source.id, speciesStockingSchedule.sourceId))
     .where(eq(speciesStockingSchedule.waterBodyId, waterId));
 
   const overall: ScopeStatus = waterStatus;
