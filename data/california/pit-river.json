@@ -1,0 +1,164 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Pit River", "waterType": "river", "states": ["CA"], "counties": ["Shasta", "Modoc"], "aliases": [], "gnisId": null, "lon": -121.6083, "lat": 41.0140, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Pit River, South Fork and tributaries upstream of the Highway 395 bridge in Likely", "fromDesc": "Headwaters (South Fork Pit River canyon, Modoc Co.)", "toDesc": "Highway 395 bridge in Likely", "lon": -120.5300, "lat": 41.2300 },
+    { "key": "reach_b", "name": "Pit River, North Fork and tributaries, confluence with South Fork in Alturas upstream to and including Franklin Creek", "fromDesc": "Confluence with South Fork in Alturas", "toDesc": "Franklin Creek", "lon": -120.5100, "lat": 41.5500 },
+    { "key": "reach_c", "name": "Pit River, Pit No. 3 (Britton Dam) downstream to the outlet of the Pit No. 3 Powerhouse", "fromDesc": "Pit No. 3 Dam (Britton Dam)", "toDesc": "Outlet of the Pit No. 3 Powerhouse", "lon": -121.6500, "lat": 41.0050 },
+    { "key": "reach_d", "name": "Pit River, Pit No. 3 Powerhouse downstream to Shasta Lake", "fromDesc": "Pit No. 3 Powerhouse", "toDesc": "Shasta Lake", "lon": -121.9500, "lat": 40.9000 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_110", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(110) — Pit River (Shasta and Modoc Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Pit River (Shasta and Modoc Cos.). (A) Pit River, South Fork (Modoc Co.) and tributaries upstream of the Highway 395 bridge in Likely. Sat. preceding Memorial through the last day in Feb. 5 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "wikipedia_pit_river", "url": "https://en.wikipedia.org/wiki/Pit_River", "title": "Pit River — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "pit_river_110a", "authorityKey": "cdfw", "citation": "7.50(b)(110)(A)", "humanSummary": "Pit River, South Fork and tributaries upstream of the Highway 395 bridge in Likely: open Saturday preceding Memorial Day through the last day in February, 5 trout.", "verbatimText": "Pit River, South Fork (Modoc Co.) and tributaries upstream of the Highway 395 bridge in Likely. Sat. preceding Memorial through the last day in Feb. 5 trout" },
+    { "key": "pit_river_110b", "authorityKey": "cdfw", "citation": "7.50(b)(110)(B)", "humanSummary": "Pit River, North Fork and tributaries from the confluence with the South Fork in Alturas upstream to and including Franklin Creek: open Saturday preceding Memorial Day through the last day in February, artificial lures only, 2 trout.", "verbatimText": "Pit River, North Fork (Modoc Co.) and tributaries from the confluence with the South Fork in Alturas upstream to and including Franklin Creek. Sat. preceding Memorial Day through the last day in Feb. Only artificial lures may be used. 2 trout" },
+    { "key": "pit_river_110c", "authorityKey": "cdfw", "citation": "7.50(b)(110)(C)", "humanSummary": "From Pit No. 3 (Britton Dam) downstream to the outlet of the Pit No. 3 Powerhouse: open all year, artificial lures with barbless hooks only, 0 trout (catch-and-release).", "verbatimText": "From Pit No. 3 (Britton Dam) downstream to the outlet of the Pit No. 3 Powerhouse. All year. Only artificial lures with barbless hooks may be used. 0 trout" },
+    { "key": "pit_river_110d", "authorityKey": "cdfw", "citation": "7.50(b)(110)(D)", "humanSummary": "Pit River, from Pit No. 3 Powerhouse downstream to Shasta Lake: open all year, 2 trout daily, 4 trout in possession.", "verbatimText": "Pit River, from Pit No. 3 Powerhouse downstream to Shasta Lake. All year. 2 trout. 4 trout in possession." }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 2, "day": 28, "verbatim": "the last day in February" } } ] },
+      "groupKey": "pit_river_110a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(A)",
+      "humanSummary": "Open Saturday preceding Memorial Day through the last day in February, South Fork upstream of the Highway 395 bridge in Likely",
+      "verbatimText": "Sat. preceding Memorial through the last day in Feb.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": null, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag limit; this special regulation entry does not specify a distinct possession limit." },
+      "groupKey": "pit_river_110a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(A)",
+      "humanSummary": "5 trout daily bag limit, South Fork upstream of the Highway 395 bridge in Likely",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 2, "day": 28, "verbatim": "the last day in February" } } ] },
+      "groupKey": "pit_river_110b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(B)",
+      "humanSummary": "Open Saturday preceding Memorial Day through the last day in February, North Fork from Alturas confluence upstream to and including Franklin Creek",
+      "verbatimText": "Sat. preceding Memorial Day through the last day in Feb.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used." },
+      "groupKey": "pit_river_110b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(B)",
+      "humanSummary": "Only artificial lures may be used, North Fork from Alturas confluence upstream to and including Franklin Creek",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": null, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; this special regulation entry does not specify a distinct possession limit." },
+      "groupKey": "pit_river_110b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(B)",
+      "humanSummary": "2 trout daily bag limit, North Fork from Alturas confluence upstream to and including Franklin Creek",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "pit_river_110c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(C)",
+      "humanSummary": "Open all year (catch-and-release), Pit No. 3 (Britton Dam) downstream to outlet of the Pit No. 3 Powerhouse",
+      "verbatimText": "From Pit No. 3 (Britton Dam) downstream to the outlet of the Pit No. 3 Powerhouse. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": "pit_river_110c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(C)",
+      "humanSummary": "Artificial lures with barbless hooks only, Pit No. 3 (Britton Dam) downstream to outlet of the Pit No. 3 Powerhouse",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "pit_river_110c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(C)",
+      "humanSummary": "0 trout, catch-and-release, Pit No. 3 (Britton Dam) downstream to outlet of the Pit No. 3 Powerhouse",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "pit_river_110d", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_d" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(D)",
+      "humanSummary": "Open all year, Pit No. 3 Powerhouse downstream to Shasta Lake",
+      "verbatimText": "Pit River, from Pit No. 3 Powerhouse downstream to Shasta Lake. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; 4 trout in possession." },
+      "groupKey": "pit_river_110d", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_d" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(110)(D)",
+      "humanSummary": "2 trout daily bag, 4 trout in possession, Pit No. 3 Powerhouse downstream to Shasta Lake",
+      "verbatimText": "2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_110", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,57 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "San Juan Creek",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Orange"],
+    "aliases": ["San Juan Creek main stem"],
+    "gnisId": null,
+    "lon": -117.6628,
+    "lat": 33.5013,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_91", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(91) — San Juan Creek main stem (Orange Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(91) San Juan Creek main stem (Orange Co.). Closed to all fishing all year." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "noaa_socal_steelhead", "url": "https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/southern-california-steelhead", "title": "Southern California Steelhead — NOAA Fisheries", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "San Juan Creek main stem is closed to all fishing statewide, consistent with protection of endangered Southern California steelhead (Oncorhynchus mykiss), which still occasionally use the lower watershed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(91)",
+      "humanSummary": "Closed to all fishing year-round.",
+      "verbatimText": "Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_91", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

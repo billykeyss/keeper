@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Sagehen Creek", "waterType": "creek", "states": ["CA"], "counties": ["Nevada"], "aliases": [], "gnisId": null, "lon": -120.2320, "lat": 39.4380, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "station_closure", "name": "Sagehen Creek — closed reach at Station Headquarters", "fromDesc": "The stream gauging station, located about 1/8 mile below Sagehen Creek Station Headquarters", "toDesc": "About 1/8 mile above the station headquarters, at a point where the stream splits into two sections", "lon": -120.2411, "lat": 39.4322 },
+    { "key": "hwy89_to_gauge", "name": "Sagehen Creek — Highway 89 bridge to gauging station", "fromDesc": "The Highway 89 bridge", "toDesc": "Upstream to the gauging station at the east boundary of the Sagehen Creek Station", "lon": -120.2000, "lat": 39.4420 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_127", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(127) — Sagehen Creek (Nevada Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(127) Sagehen Creek (Nevada Co.). (A) From the stream gauging station (located about 1/8 mile below Sagehen Creek Station Headquarters) upstream to about 1/8 mile above the station headquarters at a point where the stream splits into two sections. Closed to all fishing all year. (B) From the Highway 89 bridge upstream to the gauging station at the east boundary of the Sagehen Creek Station. All year. Only artificial lures with barbless hooks may be used. 0 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "sagehen_ucnrs", "url": "https://sagehen.ucnrs.org/plan-your-visit/location/", "title": "Getting Here — Sagehen Creek Field Station (UC Natural Reserve System)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year from the stream gauging station (about 1/8 mile below Station Headquarters) upstream to about 1/8 mile above the headquarters, at the point where the stream splits into two sections. This protects the UC Berkeley Sagehen Creek Field Station research reach." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "station_closure" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(127)(A)",
+      "humanSummary": "Closed to all fishing all year around the Sagehen Creek Station Headquarters research reach",
+      "verbatimText": "From the stream gauging station (located about 1/8 mile below Sagehen Creek Station Headquarters) upstream to about 1/8 mile above the station headquarters at a point where the stream splits into two sections. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_127", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "hwy89_to_gauge" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(127)(B)",
+      "humanSummary": "Open all year, catch-and-release only, from the Highway 89 bridge upstream to the gauging station at the east boundary of the station",
+      "verbatimText": "From the Highway 89 bridge upstream to the gauging station at the east boundary of the Sagehen Creek Station. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_127", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "hwy89_to_gauge" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(127)(B)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, Highway 89 bridge to the gauging station",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_127", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "hwy89_to_gauge" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(127)(B)",
+      "humanSummary": "0 trout — catch-and-release only, Highway 89 bridge to the gauging station",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_127", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

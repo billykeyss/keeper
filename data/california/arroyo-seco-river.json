@@ -1,0 +1,69 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Arroyo Seco River", "waterType": "river", "states": ["CA"], "counties": ["Monterey"], "aliases": [], "gnisId": null, "lon": -121.4400, "lat": 36.2150, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_6", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(6) — Arroyo Seco River (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Also see Section 8.00(c) Low-Flow Restrictions. The main stem Arroyo Seco and tributaries above the waterfall located approximately 3.5 miles upstream from the U.S. Forest Service Ranger Station. Sat. preceding Memorial day through Sep. 30. 5 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "cdfw_low_flow", "url": "https://wildlife.ca.gov/Fishing/Inland/Low-Flow", "title": "CDFW — Low Flow Fishing Regulations", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Shall be closed to all fishing when the department determines that flows are impeding fish passage." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } } ], "note": "Applies to the main stem Arroyo Seco and tributaries above the waterfall located approximately 3.5 miles upstream from the U.S. Forest Service Ranger Station." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(6)",
+      "humanSummary": "Open Saturday preceding Memorial Day through September 30, on the main stem Arroyo Seco and tributaries above the waterfall roughly 3.5 miles upstream of the U.S. Forest Service Ranger Station",
+      "verbatimText": "The main stem Arroyo Seco and tributaries above the waterfall located approximately 3.5 miles upstream from the U.S. Forest Service Ranger Station. Sat. preceding Memorial day through Sep. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_6", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": null, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag limit; this special regulation entry does not specify a distinct possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(6)",
+      "humanSummary": "5 trout daily bag limit",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_6", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "flow_triggered", "boundary_definition": "described", "trigger": { "kind": "flow", "gauge_station": "USGS 11151870 Arroyo Seco River near Greenfield, CA (and USGS 11152500 Salinas River near Spreckels, CA)", "comparison": "below", "status_source_url": "https://wildlife.ca.gov/Fishing/Inland/Low-Flow" }, "note": "Per 14 CCR §8.00(c), the Arroyo Seco River is closed to all fishing when CDFW determines that flows are impeding fish passage, as evaluated at the referenced USGS gauging stations." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(6); 8.00(c)",
+      "humanSummary": "Also subject to low-flow closure: closed to all fishing when flows are determined to be impeding fish passage",
+      "verbatimText": "Also see Section 8.00(c) Low-Flow Restrictions.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_6", "corroborating": ["cdfw_low_flow"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

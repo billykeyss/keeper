@@ -1,0 +1,126 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Cottonwood Creek drainage lakes", "waterType": "lake", "states": ["CA"], "counties": ["Inyo"], "aliases": ["Cottonwood Lakes", "Cottonwood Lakes Basin"], "gnisId": null, "lon": -118.2203, "lat": 36.4959, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service (Inyo National Forest)", "state": null, "type": "federal", "roles": ["land_management"] }
+  ],
+  "reaches": [
+    { "key": "reach_a", "name": "Cottonwood Lakes 1, 2, 3 and 4 and tributaries", "fromDesc": "Cottonwood Lakes Basin (John Muir Wilderness, Inyo National Forest)", "toDesc": "Cottonwood Lakes Basin (John Muir Wilderness, Inyo National Forest)", "lon": -118.2203, "lat": 36.4959 },
+    { "key": "reach_b", "name": "All remaining Cottonwood Creek drainage lakes", "fromDesc": "Upper Cottonwood Creek drainage lakes above Cottonwood Lakes 1-4 (e.g. Long Lake, High Lake, near New Army Pass)", "toDesc": "Upper Cottonwood Creek drainage lakes above Cottonwood Lakes 1-4 (e.g. Long Lake, High Lake, near New Army Pass)", "lon": -118.2370, "lat": 36.4870 }
+  ],
+  "species": [
+    { "commonName": "California golden trout", "scientificName": "Oncorhynchus mykiss aguabonita", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_33", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(33) — Cottonwood Creek drainage lakes (Inyo Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(33) Cottonwood Creek drainage lakes (Inyo Co.). (A) Cottonwood Lakes 1, 2, 3 and 4 and their tributaries (Inyo Co.). Sep. 1 through Nov. 30. Only artificial lures may be used. Minimum size limit: 14 inches total length. 2 trout (B) All remaining Cottonwood Creek drainage lakes. All year. Only artificial lures may be used. 2 trout" },
+    { "key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "usfs_cottonwood_lakes_trail", "url": "https://www.fs.usda.gov/r05/inyo/recreation/trails/cottonwood-lakes-trail", "title": "Cottonwood Lakes Trail | Inyo National Forest | Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "cottonwood_lakes_33", "authorityKey": "cdfw", "citation": "7.50(b)(33)", "humanSummary": "Cottonwood Creek drainage lakes (Inyo Co.): Cottonwood Lakes 1-4 and tributaries open Sep. 1 - Nov. 30 only, artificial lures only, 14-inch minimum size, 2 trout; all remaining Cottonwood Creek drainage lakes open all year, artificial lures only, 2 trout.", "verbatimText": "(33) Cottonwood Creek drainage lakes (Inyo Co.). (A) Cottonwood Lakes 1, 2, 3 and 4 and their tributaries (Inyo Co.). Sep. 1 through Nov. 30. Only artificial lures may be used. Minimum size limit: 14 inches total length. 2 trout (B) All remaining Cottonwood Creek drainage lakes. All year. Only artificial lures may be used. 2 trout" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "fixed", "month": 9, "day": 1, "verbatim": "September 1" }, "end": { "type": "fixed", "month": 11, "day": 30, "verbatim": "November 30" } } ] },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(A)",
+      "humanSummary": "Cottonwood Lakes 1-4 and tributaries open September 1 through November 30 only",
+      "verbatimText": "Sep. 1 through Nov. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used." },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(A)",
+      "humanSummary": "Only artificial lures may be used at Cottonwood Lakes 1-4 and tributaries",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 14, "max_length_in": null, "measurement": "total_length", "unit": "inch" },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(A)",
+      "humanSummary": "14-inch minimum total length at Cottonwood Lakes 1-4 and tributaries",
+      "verbatimText": "Minimum size limit: 14 inches total length.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Possession limit equals the daily bag limit (1x) per the general provision at 14 CCR §7.50(a)(4): unless otherwise provided, no more than one daily bag limit may be possessed." },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "California golden trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(A)",
+      "humanSummary": "2 trout daily bag and possession limit at Cottonwood Lakes 1-4 and tributaries",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(B)",
+      "humanSummary": "All remaining Cottonwood Creek drainage lakes open to fishing all year",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used." },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(B)",
+      "humanSummary": "Only artificial lures may be used at all remaining Cottonwood Creek drainage lakes",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Possession limit equals the daily bag limit (1x) per the general provision at 14 CCR §7.50(a)(4): unless otherwise provided, no more than one daily bag limit may be possessed." },
+      "groupKey": "cottonwood_lakes_33", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "California golden trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(33)(B)",
+      "humanSummary": "2 trout daily bag and possession limit at all remaining Cottonwood Creek drainage lakes",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_33", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

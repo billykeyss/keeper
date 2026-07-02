@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Slinkard Creek and tributaries", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -119.567687, "lat": 38.606976, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "caltrout", "name": "California Trout", "state": null, "type": "ngo", "roles": ["none"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_139", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(139) — Slinkard Creek and tributaries", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Slinkard Creek and tributaries (Mono Co.) upstream from a department of Fish and Wildlife rock gabbion barrier (38.606976°N, 119.567687°W). The barrier is located approximately 5-6 miles upstream from the Hwy 89 and Hwy 395 junction." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "caltrout_slinkard", "url": "https://caltrout.org/regions/sierra-headwaters/slinkard-creek-restoration-key-to-preserving-native-lahontan-cutthroat-trout/", "title": "Slinkard Creek Restoration Key To Preserving Native Lahontan Cutthroat Trout | California Trout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "caltrout", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "slinkard_creek_139", "authorityKey": "cdfw", "citation": "7.50(b)(139)", "humanSummary": "Slinkard Creek and tributaries above a CDFW rock gabbion barrier: year-round catch-and-release, artificial flies with barbless hooks only, as part of Lahontan cutthroat trout restoration.", "verbatimText": "Slinkard Creek and tributaries (Mono Co.) upstream from a department of Fish and Wildlife rock gabbion barrier (38.606976°N, 119.567687°W). The barrier is located approximately 5-6 miles upstream from the Hwy 89 and Hwy 395 junction. All year. Only artificial flies with barbless hooks may be used. 0 trout" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "spatial", "boundary_definition": "geom", "note": "Special regulations apply only to Slinkard Creek and its tributaries upstream of a CDFW rock gabbion barrier at approximately 38.606976°N, 119.567687°W, about 5-6 miles upstream from the Hwy 89/Hwy 395 junction. Water downstream of the barrier is not covered by this listing." },
+      "groupKey": "slinkard_creek_139", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(139)",
+      "humanSummary": "Special regulations apply upstream of the CDFW rock gabbion barrier at 38.606976°N, 119.567687°W",
+      "verbatimText": "Slinkard Creek and tributaries (Mono Co.) upstream from a department of Fish and Wildlife rock gabbion barrier (38.606976°N, 119.567687°W). The barrier is located approximately 5-6 miles upstream from the Hwy 89 and Hwy 395 junction.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_139", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "slinkard_creek_139", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(139)",
+      "humanSummary": "Open all year, catch-and-release only",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_139", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": true, "lures_allowed": false, "barbless_required": true, "single_hook_required": false, "note": "Only artificial flies with barbless hooks may be used; no lures or bait." },
+      "groupKey": "slinkard_creek_139", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(139)",
+      "humanSummary": "Only artificial flies with barbless hooks may be used",
+      "verbatimText": "Only artificial flies with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_139", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "No trout may be kept from the regulated reach above the barrier; all trout caught must be released." },
+      "groupKey": "slinkard_creek_139", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Lahontan cutthroat trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(139)",
+      "humanSummary": "0 trout — catch-and-release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_139", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

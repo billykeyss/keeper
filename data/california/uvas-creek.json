@@ -1,0 +1,117 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Uvas Creek", "waterType": "creek", "states": ["CA"], "counties": ["Santa Clara"], "aliases": ["Carnadero Creek"], "gnisId": null, "lon": -121.57, "lat": 36.98, "verifyCurrent": true },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Highway 152 bridge to Uvas Dam", "fromDesc": "Highway 152 bridge", "toDesc": "Uvas Dam", "lon": -121.66, "lat": 37.03 },
+    { "key": "reach_b", "name": "Mouth to Highway 152 bridge", "fromDesc": "mouth (confluence with Pajaro River)", "toDesc": "Highway 152 bridge", "lon": -121.52, "lat": 36.93 }
+  ],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Hatchery steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [
+    { "key": "hatchery_trout_steelhead", "name": "Hatchery trout or hatchery steelhead", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_40_b_117", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(117) — Uvas or Carnadero Creek (Santa Clara Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Uvas or Carnadero Creek (Santa Clara Co.). Also see Section 8.00(c) Low-Flow Restrictions. From Highway 152 bridge to Uvas Dam. Closed to all fishing all year. From mouth to Highway 152 bridge. Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days. Only barbless hooks may be used." },
+    { "key": "ccr_7_40_footnote", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40 — hatchery trout/steelhead footnote (adipose fin clip requirement)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "** Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ccr_8_00", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-8.00", "title": "14 CCR §8.00 — Low-Flow Restrictions (South-Central Coast streams, subsection (c))", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year from the Highway 152 bridge upstream to Uvas Dam." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(117)(A)",
+      "humanSummary": "Closed to all fishing all year from the Highway 152 bridge to Uvas Dam",
+      "verbatimText": "From Highway 152 bridge to Uvas Dam. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_117", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 12, "day": 1, "verbatim": "Dec. 1" }, "end": { "type": "fixed", "month": 3, "day": 7, "verbatim": "Mar. 7" } }
+        ],
+        "note": "Within this open date range, fishing is permitted only on Saturdays, Sundays, Wednesdays, legal holidays, and opening and closing days of the season; all other days within the range are closed."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(117)(B)",
+      "humanSummary": "Open December 1 through March 7, but only on Saturdays, Sundays, Wednesdays, legal holidays, and opening/closing days, from the mouth to the Highway 152 bridge",
+      "verbatimText": "Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_117", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only barbless hooks may be used from the mouth to the Highway 152 bridge." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(117)(B)",
+      "humanSummary": "Only barbless hooks may be used from the mouth to the Highway 152 bridge",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_117", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined; 4 in possession, combined." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(117)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag, 4 in possession, from the mouth to the Highway 152 bridge",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_117", "corroborating": [] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "keep_in_water": false, "filleting_prohibited": false, "live_transport_prohibited": false, "counts_toward_bag_when_retained": false, "condition": "adipose fin present (unclipped)", "note": "Only trout/steelhead showing a healed adipose fin clip may be retained as \"hatchery\" fish; wild fish with the adipose fin intact must be released immediately and do not count toward the bag or possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40 footnote **",
+      "humanSummary": "Wild (adipose-fin-intact) steelhead and trout must be released unharmed; only adipose-fin-clipped hatchery fish may be kept",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_footnote", "corroborating": [] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "flow_triggered", "boundary_definition": "described", "note": "Uvas or Carnadero Creek is also subject to Section 8.00(c) Low-Flow Restrictions, which can close fishing when streamflow drops below a specified threshold; consult 14 CCR §8.00(c) and the CDFW Low-Flow Fishing Regulations page for current status." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(117); 8.00(c)",
+      "humanSummary": "Also subject to Section 8.00(c) low-flow closure restrictions",
+      "verbatimText": "Also see Section 8.00(c) Low-Flow Restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_117", "corroborating": ["ccr_8_00"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

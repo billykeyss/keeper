@@ -1,0 +1,94 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Freshwater Creek (Humboldt Co.)",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Humboldt"],
+    "aliases": ["Freshwater Creek"],
+    "gnisId": null,
+    "lon": -124.0800,
+    "lat": 40.7800,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Coastal cutthroat trout", "scientificName": "Oncorhynchus clarkii clarkii", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Coho salmon", "scientificName": "Oncorhynchus kisutch", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_44", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(44) — Freshwater Creek (Humboldt Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Fourth Sat. in May through Mar. 31. Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31." },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "Fourth Sat. in May" }, "end": { "type": "fixed", "month": 3, "day": 31, "verbatim": "Mar. 31" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(44)",
+      "humanSummary": "Open from the fourth Saturday in May through March 31 (closed April 1 through the fourth Friday in May), downstream from the bridge at \"3 Corners\" on Old Arcata Road, excluding tributaries.",
+      "verbatimText": "Freshwater Creek (Humboldt Co.) downstream from bridge at \"3 Corners\" on the Old Arcata Road, excluding tributaries. Fourth Sat. in May through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_44", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies from the fourth Saturday in May through October 31." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(44)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from the fourth Saturday in May through October 31.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_44", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies from November 1 through March 31." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(44)",
+      "humanSummary": "Only barbless hooks may be used from November 1 through March 31.",
+      "verbatimText": "Only barbless hooks may be used from Nov. 1 through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_44", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "annual": null, "unit": "fish", "aggregation": "combined_group", "catch_and_release": false, "counting_rule": "Limit applies to hatchery trout or hatchery steelhead only (denoted by ** in the regulation, i.e. fish with a healed adipose fin clip). Wild, unclipped trout and steelhead encountered on this reach are not part of this bag limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Coastal cutthroat trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(44)",
+      "humanSummary": "Daily bag limit of 2 hatchery trout or hatchery steelhead; 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_44", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

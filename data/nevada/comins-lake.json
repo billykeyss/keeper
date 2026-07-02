@@ -1,0 +1,96 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Comins Lake",
+    "waterType": "reservoir",
+    "states": ["NV"],
+    "counties": ["White Pine"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -114.8117,
+    "lat": 39.165,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Tiger trout", "scientificName": "Salmo trutta x Salvelinus fontinalis", "category": "hybrid", "nativeStatus": "stocked_hybrid", "presence": "stocked" },
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Northern pike", "scientificName": "Esox lucius", "category": "other", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/09/24-A-CR-25-16-Fishing-Seasons-and-Regulations-for-January-1-2026-through-December-31-2027.pdf", "title": "State of Nevada Board of Wildlife Commissioners — CR 25-16: Fishing Seasons and Regulations, January 1, 2026 – December 31, 2027", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Comins Lake: Open year around. Daily: 5 trout and 5 black bass. No limit on northern pike (unlimited possession). Possession: 10 trout and 10 black bass. Hours: Any hour of the day or night." },
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/comins-lake/", "title": "Comins Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Comins Lake is located 10 miles southeast of Ely, Nevada... Rainbow Trout, Brown Trout, and Tiger Trout are stocked into Comins Lake on an annual basis... Largemouth bass are self-sustaining. Northern Pike are an aquatic invasive species that negatively impact the Comins Lake fishery; NDOW encourages anglers to remove all pike caught." },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "Open season", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — White Pine County",
+      "humanSummary": "Comins Lake is open to fishing year-round.",
+      "verbatimText": "Season: Open year around.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "per_species", "counting_rule": "Daily limit is 5 trout and 5 black bass. Possession limit is 10 trout and 10 black bass. Northern pike have no daily or possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{ "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Brown trout" }, { "speciesCommonName": "Tiger trout" }, { "speciesCommonName": "Largemouth bass" }],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — White Pine County",
+      "humanSummary": "Daily limit: 5 trout and 5 black bass. Possession limit: 10 trout and 10 black bass.",
+      "verbatimText": "Limits — Daily: 5 trout and 5 black bass. No limit on northern pike (unlimited possession). Possession: 10 trout and 10 black bass.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": null, "possession": null, "unit": "fish", "aggregation": "per_species", "counting_rule": "No daily or possession limit on northern pike at Comins Lake; NDOW encourages harvest of all pike caught, as the species is an invasive predator that has been chemically removed twice (1989 and 2015) to protect the trout/bass fishery." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{ "speciesCommonName": "Northern pike" }],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — White Pine County",
+      "humanSummary": "No limit on northern pike at Comins Lake — unlimited daily take and possession.",
+      "verbatimText": "No limit on northern pike (unlimited possession).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": ["s_ndow_water"] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "No hour-of-day restriction; fishing permitted any hour of the day or night." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — White Pine County",
+      "humanSummary": "Fishing is permitted any hour of the day or night.",
+      "verbatimText": "Hours: Any hour of the day or night.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Standard Nevada resident/nonresident fishing license required for anglers 12 and older." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NDOW — Apply & Buy: Fishing Licenses",
+      "humanSummary": "A Nevada fishing license is required for anglers age 12 and older; no license required under age 12.",
+      "verbatimText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

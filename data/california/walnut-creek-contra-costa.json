@@ -1,0 +1,97 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Walnut Creek", "waterType": "creek", "states": ["CA"], "counties": ["Contra Costa"], "aliases": [], "gnisId": null, "lon": -122.0653, "lat": 37.9101, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "above_grayson_confluence", "name": "Walnut Creek upstream of the confluence with Grayson Creek", "fromDesc": "Confluence with Grayson Creek near Pacheco/Martinez", "toDesc": "Upstream through the city of Walnut Creek and its headwater tributaries", "lon": -122.0632, "lat": 37.9048 },
+    { "key": "below_grayson_confluence", "name": "Walnut Creek downstream of the confluence with Grayson Creek", "fromDesc": "Confluence with Grayson Creek near Pacheco/Martinez", "toDesc": "Downstream to Suisun Bay/Carquinez Strait near Martinez", "lon": -122.1150, "lat": 38.0100 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" }
+  ],
+  "speciesGroups": [ { "key": "hatchery_trout_steelhead", "name": "Hatchery trout or hatchery steelhead", "category": "trout", "authorityKey": "cdfw" } ],
+  "sources": [
+    { "key": "ccr_7_40_b_121", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(121) — Walnut Creek (Contra Costa Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Walnut Creek (Contra Costa Co.)." },
+    { "key": "ccr_7_40_footnote", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40 — Hatchery Trout/Steelhead Footnote (**) Definition", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "Fourth Sat. in May" }, "end": { "type": "fixed", "month": 3, "day": 31, "verbatim": "Mar. 31" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "above_grayson_confluence" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(121)(A)",
+      "humanSummary": "Walnut Creek upstream of the Grayson Creek confluence open fourth Saturday in May through March 31.",
+      "verbatimText": "Fourth Sat. in May through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_121", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies whenever this reach is open (fourth Saturday in May through March 31)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "above_grayson_confluence" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(121)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_121", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "above_grayson_confluence" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(121)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_121", "corroborating": ["ccr_7_40_footnote"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "below_grayson_confluence" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(121)(B)",
+      "humanSummary": "Walnut Creek downstream of the Grayson Creek confluence is open all year.",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_121", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "below_grayson_confluence" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(121)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_121", "corroborating": ["ccr_7_40_footnote"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,97 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Heenan Lake and tributaries", "waterType": "lake", "states": ["CA"], "counties": ["Alpine"], "aliases": ["Heenan Lake"], "gnisId": null, "lon": -119.6601, "lat": 38.6504, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "lake", "name": "Heenan Lake", "fromDesc": "Heenan Lake proper", "toDesc": "Heenan Lake proper", "lon": -119.6601, "lat": 38.6504 },
+    { "key": "tributaries", "name": "Heenan Lake tributaries", "fromDesc": "Tributary streams flowing into Heenan Lake", "toDesc": "Upstream extent of each tributary", "lon": -119.6550, "lat": 38.6560 }
+  ],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_56", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(56) — Heenan Lake and tributaries (Alpine Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(56) Heenan Lake and tributaries (Alpine Co.). (A) Heenan Lake. Sep. 1 through Nov. 30. Only artificial lures with barbless hooks may be used. Fishing hours are from sunrise to sunset. Night fishing is prohibited. 0 trout (B) Heenan Lake tributaries. Closed to all fishing all year." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_lct_page", "url": "https://wildlife.ca.gov/Fishing/Inland/Lahontan-Cutthroat-Trout", "title": "Fishing for Lahontan Cutthroat Trout — California Department of Fish and Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_heenan_creel_survey", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=154172", "title": "Heenan Lake, Alpine County 2017 Angler Survey Box Creel Summary — California Department of Fish and Wildlife", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open_catch_release", "start": { "type": "fixed", "month": 9, "day": 1, "verbatim": "September 1" }, "end": { "type": "fixed", "month": 11, "day": 30, "verbatim": "November 30" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(56)(A)",
+      "humanSummary": "Heenan Lake open September 1 through November 30, catch-and-release only",
+      "verbatimText": "Sep. 1 through Nov. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_56", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Lahontan cutthroat trout" } ],
+      "scope": { "type": "reach", "reachKey": "lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(56)(A)",
+      "humanSummary": "0 trout on Heenan Lake — catch-and-release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_56", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(56)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used on Heenan Lake",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_56", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "sunrise_sunset", "note": "Night fishing is prohibited." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(56)(A)",
+      "humanSummary": "Fishing hours on Heenan Lake run from sunrise to sunset; night fishing is prohibited",
+      "verbatimText": "Fishing hours are from sunrise to sunset. Night fishing is prohibited.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_56", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "All tributary streams flowing into Heenan Lake are closed to all fishing year-round; this protects Lahontan cutthroat trout broodstock spawning habitat." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "tributaries" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(56)(B)",
+      "humanSummary": "Heenan Lake tributaries are closed to all fishing, all year",
+      "verbatimText": "Heenan Lake tributaries. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_56", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,98 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Big River", "waterType": "river", "states": ["CA"], "counties": ["Mendocino"], "aliases": [], "gnisId": null, "lon": -123.7600, "lat": 39.2950, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Coho salmon", "scientificName": "Oncorhynchus kisutch", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_16", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(16) — Big River (Mendocino Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(16) Big River (Mendocino Co.). Also see Section 8.00(b) Low-Flow Restrictions. Main stem below the confluence of Two Log Creek. Fourth Sat. in May through Mar. 31. Only artificial lures with barbless hooks may be used from the fourth Sat. In May through Oct. 31. Only barbless hooks may be used from Nov. 1 through Mar. 31. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "usgs_two_log", "url": "https://waterdata.usgs.gov/monitoring-location/USGS-11468092/", "title": "USGS Monitoring Location 11468092 — Big River Below Two Log Creek near Comptche, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [
+    { "key": "sp_summer", "groupKey": null, "label": "artificial_barbless_window", "status": "open", "startSpec": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "fourth Saturday in May" }, "endSpec": { "type": "fixed", "month": 10, "day": 31, "verbatim": "October 31" } },
+    { "key": "sp_winter", "groupKey": null, "label": "barbless_window", "status": "open", "startSpec": { "type": "fixed", "month": 11, "day": 1, "verbatim": "November 1" }, "endSpec": { "type": "fixed", "month": 3, "day": 31, "verbatim": "March 31" } }
+  ],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "fourth Saturday in May" }, "end": { "type": "fixed", "month": 3, "day": 31, "verbatim": "March 31" } } ], "note": "Season spans the calendar year-end (opens the fourth Saturday in May and runs through March 31 of the following year); closed only in April and early May." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(16)",
+      "humanSummary": "Open fourth Saturday in May through March 31, on the main stem below the confluence of Two Log Creek",
+      "verbatimText": "Main stem below the confluence of Two Log Creek. Fourth Sat. in May through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used, fourth Sat. in May through Oct. 31." },
+      "groupKey": null, "seasonPeriodKey": "sp_summer", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(16)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, fourth Sat. in May through Oct. 31",
+      "verbatimText": "Only artificial lures with barbless hooks may be used from the fourth Sat. In May through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only barbless hooks may be used, Nov. 1 through Mar. 31; bait and lures are both permitted as long as the hook is barbless." },
+      "groupKey": null, "seasonPeriodKey": "sp_winter", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(16)",
+      "humanSummary": "Only barbless hooks may be used, Nov. 1 through Mar. 31",
+      "verbatimText": "Only barbless hooks may be used from Nov. 1 through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead daily; 4 hatchery trout or hatchery steelhead in possession. Limit applies to hatchery (adipose fin-clipped) fish only." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(16)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "flow_triggered", "boundary_definition": "described", "note": "Cross-referenced statewide low-flow closure provision (14 CCR §8.00(b)) may impose additional restrictions or closures on this water when streamflow drops below prescribed thresholds; exact trigger conditions are set annually and not reproduced here." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(16); see also 8.00(b)",
+      "humanSummary": "Additional low-flow fishing restrictions under 14 CCR §8.00(b) may apply to this water",
+      "verbatimText": "Also see Section 8.00(b) Low-Flow Restrictions.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_40_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

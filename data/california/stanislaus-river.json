@@ -1,0 +1,129 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Stanislaus River", "waterType": "river", "states": ["CA"], "counties": ["Stanislaus", "San Joaquin"], "aliases": [], "gnisId": null, "lon": -120.85, "lat": 37.79, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "reach_a", "name": "Goodwin Dam to Highway 120 bridge in Oakdale", "fromDesc": "Goodwin Dam", "toDesc": "Highway 120 bridge in Oakdale", "lon": -120.75, "lat": 37.80 },
+    { "key": "reach_b", "name": "Highway 120 bridge in Oakdale to the mouth", "fromDesc": "Highway 120 bridge in Oakdale", "toDesc": "mouth (confluence with the San Joaquin River)", "lon": -121.00, "lat": 37.75 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [
+    { "key": "hatchery_trout_steelhead", "name": "Hatchery trout or hatchery steelhead", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_40_b_108", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(108) — Stanislaus River", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(108) Stanislaus River. (A) From Goodwin Dam downstream to the Highway 120 bridge in Oakdale. Jan. 1 through Oct. 31. Only artificial lures with barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession. (B) From the Highway 120 bridge in Oakdale to the mouth. Jan. 1 through Oct. 31. Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "ccr_7_40_footnote", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40 — Hatchery Trout/Steelhead Footnote (**) Definition", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "stanislaus_108a", "authorityKey": "cdfw", "citation": "7.40(b)(108)(A)", "humanSummary": "Stanislaus River from Goodwin Dam downstream to the Highway 120 bridge in Oakdale: open Jan. 1 through Oct. 31, artificial lures with barbless hooks only, 2 hatchery trout/steelhead daily (4 in possession).", "verbatimText": "(A) From Goodwin Dam downstream to the Highway 120 bridge in Oakdale. Jan. 1 through Oct. 31. Only artificial lures with barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "stanislaus_108b", "authorityKey": "cdfw", "citation": "7.40(b)(108)(B)", "humanSummary": "Stanislaus River from the Highway 120 bridge in Oakdale to the mouth: open Jan. 1 through Oct. 31, bait allowed year-round but restricted to specific hook gap sizes Apr. 1 through the Friday preceding the fourth Saturday in May, 2 hatchery trout/steelhead daily (4 in possession).", "verbatimText": "(B) From the Highway 120 bridge in Oakdale to the mouth. Jan. 1 through Oct. 31. Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "Oct. 31" } } ] },
+      "groupKey": "stanislaus_108a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(A)",
+      "humanSummary": "Open January 1 through October 31, Goodwin Dam to the Highway 120 bridge in Oakdale",
+      "verbatimText": "Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": "stanislaus_108a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, Goodwin Dam to the Highway 120 bridge in Oakdale",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession." },
+      "groupKey": "stanislaus_108a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, Goodwin Dam to the Highway 120 bridge in Oakdale",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "Oct. 31" } } ] },
+      "groupKey": "stanislaus_108b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(B)",
+      "humanSummary": "Open January 1 through October 31, Highway 120 bridge in Oakdale to the mouth",
+      "verbatimText": "Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Bait may be used Jan. 1 through Oct. 31. However, from Apr. 1 through the Friday preceding the fourth Saturday in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch." },
+      "groupKey": "stanislaus_108b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(B)",
+      "humanSummary": "Bait allowed year-round in season, but restricted to specific hook-gap sizes from April 1 through the Friday preceding the fourth Saturday in May",
+      "verbatimText": "Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession." },
+      "groupKey": "stanislaus_108b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(108)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, Highway 120 bridge in Oakdale to the mouth",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_108", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "condition": "Trout or steelhead lacking a healed adipose fin clip (i.e. wild/unmarked fish)", "note": "Only hatchery-marked fish (healed adipose fin clip) may be retained; all other trout and steelhead must be released immediately unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40 (footnote **)",
+      "humanSummary": "Only adipose-fin-clipped hatchery trout/steelhead may be kept; unmarked wild fish must be released immediately.",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_footnote", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

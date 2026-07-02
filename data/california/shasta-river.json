@@ -1,0 +1,254 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Shasta River",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Siskiyou"
+    ],
+    "aliases": [
+      "Shasta River (anadromous reach)"
+    ],
+    "gnisId": null,
+    "lon": -122.62,
+    "lat": 41.85,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Chinook salmon",
+      "scientificName": "Oncorhynchus tshawytscha",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Coho salmon",
+      "scientificName": "Oncorhynchus kisutch",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Hatchery rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    }
+  ],
+  "speciesGroups": [
+    {
+      "key": "hatchery_trout_steelhead",
+      "name": "Hatchery trout or hatchery steelhead",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_50",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(50) — Klamath River Basin Regulations (Shasta River)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "All anadromous Waters of the Klamath River Basin and Trinity River downstream of Lewiston Dam. This subsection applies only to waters of the Klamath River Basin that are accessible to anadromous salmonids."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Applies basin-wide to all anadromous waters of the Klamath River Basin."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)1",
+      "humanSummary": "Only barbless hooks may be used anywhere on Shasta River",
+      "verbatimText": "Only barbless hooks may be used. (For definitions regarding legal hook types, hook gaps, and rigging see Section 2.10.)",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "relative",
+              "ordinal": "fourth",
+              "weekday": "sat",
+              "month": 5,
+              "verbatim": "fourth Sat. in May"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          }
+        ],
+        "note": "Second open window Nov. 16 through Feb. 28 also applies (see verbatim text); outside these windows closed to all fishing. This regulation covers only the anadromous Shasta River main stem downstream of the I-5 bridge — the Shasta River and tributaries upstream of Dwinnell Dam are excluded from the Klamath River Basin table."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)5",
+      "humanSummary": "Open the fourth Saturday in May through Aug. 31, and Nov. 16 through Feb. 28, from the Interstate 5 bridge north of Yreka downstream to the confluence with the Klamath River",
+      "verbatimText": "Fourth Sat. in May through Aug. 31 and Nov. 16 through Feb. 28.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)5",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit on Shasta River",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,70 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Cedar Creek", "waterType": "creek", "states": ["CA"], "counties": ["Lassen"], "aliases": ["Cedar Creek and tributaries upstream from Moon Lake access road"], "gnisId": null, "lon": -120.3650, "lat": 41.0950, "verifyCurrent": true },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_26", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(26) — Cedar Creek and tributaries upstream from Moon Lake access road", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(26) Cedar Creek and tributaries upstream from Moon Lake access road (Lassen Co.). Sat. preceding Memorial Day through the last Day in Feb. Only artificial lures may be used. 2 trout" },
+    { "key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "cedar_creek_26", "authorityKey": "cdfw", "citation": "7.50(b)(26)", "humanSummary": "Cedar Creek and tributaries upstream from the Moon Lake access road (Lassen Co.): open from the Saturday preceding Memorial Day through the last day of February, artificial lures only, 2-trout limit.", "verbatimText": "(26) Cedar Creek and tributaries upstream from Moon Lake access road (Lassen Co.). Sat. preceding Memorial Day through the last Day in Feb. Only artificial lures may be used. 2 trout" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 2, "day": 28, "verbatim": "the last Day in Feb." } } ], "note": "Season runs from the Saturday preceding Memorial Day through the last calendar day of the following February (Feb 28, or Feb 29 in leap years)." },
+      "groupKey": "cedar_creek_26", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(26)",
+      "humanSummary": "Open Saturday preceding Memorial Day through the last day of February",
+      "verbatimText": "Sat. preceding Memorial Day through the last Day in Feb.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_26", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false },
+      "groupKey": "cedar_creek_26", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(26)",
+      "humanSummary": "Only artificial lures may be used",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_26", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Possession limit equals the daily bag limit (1x) per the general provision at 14 CCR §7.50(a)(4): unless otherwise provided, no more than one daily bag limit may be possessed." },
+      "groupKey": "cedar_creek_26", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Brook trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(26)",
+      "humanSummary": "2 trout daily bag and possession limit",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_26", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

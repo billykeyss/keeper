@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Fall River Complex", "waterType": "river", "states": ["CA"], "counties": ["Shasta", "Siskiyou"], "aliases": ["Fall River"], "gnisId": null, "lon": -121.4350, "lat": 41.0300, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [
+    { "key": "trout", "name": "Trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_b_47", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(47) — Fall River Complex (Shasta and Siskiyou Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(47) Fall River Complex (Shasta and Siskiyou Cos.). (A) Fall River (from the confluence with Pit River upstream to origin at Thousand Springs). All year. Only artificial lures with barbless hooks may be used. 0 trout (B) Lava Creek (C) Little Tule River (D) Tule River (E) Horr Pond (F) Ja She Creek (G) Big Lake (H) Bear Creek (downstream of Pondosa Way bridge) (I) Spring Creek (J) Ahjumawi Lava Springs (K) Eastman Lake (L) Fall River Pond (M) Fall River Lake" },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "caltrout_fall_river", "url": "https://caltrout.org/article/the-current-fall-2020/spot-check-fall-river-the-gem-of-californias-natural-springs/", "title": "California Trout — Spot Check: Fall River, the Gem of California's Natural Springs", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "fall_river_47", "authorityKey": "cdfw", "citation": "7.50(b)(47)", "humanSummary": "Fall River Complex: the Fall River main stem (Pit River confluence upstream to Thousand Springs) is open all year, artificial lures with barbless hooks only, 0-trout (catch-and-release). The same regulation extends to the other waters that make up the complex: Lava Creek, Little Tule River, Tule River, Horr Pond, Ja She Creek, Big Lake, Bear Creek (downstream of the Pondosa Way bridge), Spring Creek, Ahjumawi Lava Springs, Eastman Lake, Fall River Pond, and Fall River Lake.", "verbatimText": "(47) Fall River Complex (Shasta and Siskiyou Cos.). (A) Fall River (from the confluence with Pit River upstream to origin at Thousand Springs). All year. Only artificial lures with barbless hooks may be used. 0 trout (B) Lava Creek (C) Little Tule River (D) Tule River (E) Horr Pond (F) Ja She Creek (G) Big Lake (H) Bear Creek (downstream of Pondosa Way bridge) (I) Spring Creek (J) Ahjumawi Lava Springs (K) Eastman Lake (L) Fall River Pond (M) Fall River Lake" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "special",
+      "parameters": { "description": "The Fall River Complex regulatory entry bundles the Fall River main stem together with a set of connected waters in the Fall River Valley (Lava Creek, Little Tule River, Tule River, Horr Pond, Ja She Creek, Big Lake, Bear Creek downstream of the Pondosa Way bridge, Spring Creek, Ahjumawi Lava Springs, Eastman Lake, Fall River Pond, and Fall River Lake). No separate season, gear, or bag text is given for these additional waters in 14 CCR §7.50(b)(47)(B)-(M); they are regulated under the same all-year, artificial-lures-with-barbless-hooks, 0-trout rule stated for the Fall River main stem in (A).", "raw": { "included_waters": ["Fall River", "Lava Creek", "Little Tule River", "Tule River", "Horr Pond", "Ja She Creek", "Big Lake", "Bear Creek (downstream of Pondosa Way bridge)", "Spring Creek", "Ahjumawi Lava Springs", "Eastman Lake", "Fall River Pond", "Fall River Lake"] } },
+      "groupKey": "fall_river_47", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(47)(B)-(M)",
+      "humanSummary": "The Fall River Complex includes twelve additional named waters (B-M) that share the Fall River main stem's all-year, artificial-lures-barbless-hooks, 0-trout regulation.",
+      "verbatimText": "(B) Lava Creek (C) Little Tule River (D) Tule River (E) Horr Pond (F) Ja She Creek (G) Big Lake (H) Bear Creek (downstream of Pondosa Way bridge) (I) Spring Creek (J) Ahjumawi Lava Springs (K) Eastman Lake (L) Fall River Pond (M) Fall River Lake",
+      "isParaphrase": true, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_47", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "fall_river_47", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(47)(A)",
+      "humanSummary": "Fall River Complex open to fishing all year (catch-and-release only).",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_47", "corroborating": ["cdfw_freshwater_booklet_2026", "caltrout_fall_river"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used throughout the Fall River Complex." },
+      "groupKey": "fall_river_47", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(47)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_47", "corroborating": ["cdfw_freshwater_booklet_2026", "caltrout_fall_river"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "Zero trout may be retained; all trout must be released unharmed." },
+      "groupKey": "fall_river_47", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(47)(A)",
+      "humanSummary": "Zero-trout bag limit (catch and release only) throughout the Fall River Complex.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_47", "corroborating": ["cdfw_freshwater_booklet_2026", "caltrout_fall_river"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

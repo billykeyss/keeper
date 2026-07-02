@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Bridgeport Reservoir", "waterType": "reservoir", "states": ["CA"], "counties": ["Mono"], "aliases": ["Bridgeport Reservoir and tributaries"], "gnisId": null, "lon": -119.2260, "lat": 38.2954, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_16", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(16) — Bridgeport Reservoir and tributaries", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(16) Bridgeport Reservoir and tributaries (Mono Co.) except Swauger Creek from Bridgeport Reservoir upstream to Highway 395, and Swauger Creek from Bridgeport Reservoir upstream to the private property fence line above the Forest Service campground. Last Sat. in Apr. through Nov. 15. 5 trout" },
+    { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General Provisions for waters listed in the special-regulations table", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "monocounty_bridgeport", "url": "https://www.monocounty.org/places-to-go/lakes-rivers-creeks/bridgeport-reservoir/", "title": "Bridgeport Reservoir | Visit Mono County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(16)",
+      "humanSummary": "Bridgeport Reservoir and tributaries open last Saturday in April through November 15",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "spatial", "boundary_definition": "described", "note": "Two segments of Swauger Creek are excluded from this water's regulations and are governed separately: Swauger Creek from Bridgeport Reservoir upstream to Highway 395, and Swauger Creek from Bridgeport Reservoir upstream to the private property fence line above the Forest Service campground." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "excludes", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(16)",
+      "humanSummary": "Excludes two Swauger Creek segments from Bridgeport Reservoir's regulation",
+      "verbatimText": "except Swauger Creek from Bridgeport Reservoir upstream to Highway 395, and Swauger Creek from Bridgeport Reservoir upstream to the private property fence line above the Forest Service campground.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_16", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "The table entry sets a 5-trout daily bag limit; per 14 CCR 7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit also equals 5." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Brown trout"}, {"speciesCommonName": "Lahontan cutthroat trout"}],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(16)",
+      "humanSummary": "5 trout daily bag and possession limit",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_16", "corroborating": ["ccr_7_50_a"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

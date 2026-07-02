@@ -1,0 +1,182 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Mokelumne River",
+    "waterType": "river",
+    "states": ["CA"],
+    "counties": ["San Joaquin"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -121.2911,
+    "lat": 38.1298,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "camanche_dam_to_elliot_road", "name": "Mokelumne River — Camanche Dam to Elliot Road", "fromDesc": "Camanche Dam", "toDesc": "Elliot Road bridge near Lockeford", "lon": -121.0900, "lat": 38.1950 },
+    { "key": "elliot_road_to_woodbridge_dam", "name": "Mokelumne River — Elliot Road to Woodbridge Irrigation District Dam (including Lodi Lake)", "fromDesc": "Elliot Road bridge near Lockeford", "toDesc": "Woodbridge Irrigation District Dam", "lon": -121.2911, "lat": 38.1298 },
+    { "key": "woodbridge_dam_to_lower_sacramento_road", "name": "Mokelumne River — Woodbridge Irrigation District Dam to Lower Sacramento Road bridge", "fromDesc": "Woodbridge Irrigation District Dam", "toDesc": "Lower Sacramento Road bridge", "lon": -121.3550, "lat": 38.1700 },
+    { "key": "lower_sacramento_road_to_mouth", "name": "Mokelumne River — Lower Sacramento Road bridge to the mouth", "fromDesc": "Lower Sacramento Road bridge", "toDesc": "mouth (Delta sloughs east of Hwy 160, north of Hwy 12, near Terminous)", "lon": -121.4700, "lat": 38.1400 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "ccr_lii_740", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "Cal. Code Regs. Tit. 14, § 7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "From Camanche Dam to Elliot Road. Jan. 1 through Mar. 31. 1 hatchery trout or hatchery steelhead" },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "winter", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 3, "day": 31, "verbatim": "Mar. 31" } },
+        { "label": "late_spring", "status": "open", "start": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "Fourth Sat. in May" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } },
+        { "label": "summer_fall", "status": "open", "start": { "type": "fixed", "month": 7, "day": 16, "verbatim": "Jul. 16" }, "end": { "type": "fixed", "month": 10, "day": 15, "verbatim": "Oct. 15" } }
+      ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "camanche_dam_to_elliot_road" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(A)",
+      "humanSummary": "Camanche Dam to Elliot Road: open Jan. 1–Mar. 31, fourth Sat. in May–Jul. 15, and Jul. 16–Oct. 15.",
+      "verbatimText": "From Camanche Dam to Elliot Road. Jan. 1 through Mar. 31. || Fourth Sat. in May through Jul. 15. || Jul. 16 through Oct. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 1, "possession": 1, "unit": "fish", "aggregation": "combined_group", "counting_rule": "1 hatchery trout or hatchery steelhead per day/in possession; only fish marked as hatchery-produced (adipose fin clipped, per the ** footnote) may be retained." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "camanche_dam_to_elliot_road" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(A)",
+      "humanSummary": "1 hatchery trout or hatchery steelhead daily and in possession, Camanche Dam to Elliot Road.",
+      "verbatimText": "1 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "counting_rule": "Closed to the take and possession of Chinook Salmon." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Chinook salmon" } ],
+      "scope": { "type": "reach", "reachKey": "camanche_dam_to_elliot_road" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(A)",
+      "humanSummary": "Chinook Salmon may not be taken or possessed, Camanche Dam to Elliot Road.",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "jan_to_mid_jul", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } },
+        { "label": "mid_jul_to_dec", "status": "open", "start": { "type": "fixed", "month": 7, "day": 16, "verbatim": "Jul. 16" }, "end": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" } }
+      ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "elliot_road_to_woodbridge_dam" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(B)",
+      "humanSummary": "Elliot Road to Woodbridge Irrigation District Dam (including Lodi Lake): open Jan. 1–Jul. 15 and Jul. 16–Dec. 31.",
+      "verbatimText": "From Elliot Road to the Woodbridge Irrigation District Dam including Lodi Lake. Jan. 1 through Jul. 15. || Jul. 16 through Dec. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 1, "possession": 1, "unit": "fish", "aggregation": "combined_group", "counting_rule": "1 hatchery trout or hatchery steelhead per day/in possession; only fish marked as hatchery-produced (adipose fin clipped, per the ** footnote) may be retained." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "elliot_road_to_woodbridge_dam" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(B)",
+      "humanSummary": "1 hatchery trout or hatchery steelhead daily and in possession, Elliot Road to Woodbridge Dam including Lodi Lake.",
+      "verbatimText": "1 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "counting_rule": "Closed to the take and possession of Chinook Salmon." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Chinook salmon" } ],
+      "scope": { "type": "reach", "reachKey": "elliot_road_to_woodbridge_dam" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(B)",
+      "humanSummary": "Chinook Salmon may not be taken or possessed, Elliot Road to Woodbridge Dam including Lodi Lake.",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Between the Woodbridge Irrigation District Dam and the Lower Sacramento Road bridge." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "woodbridge_dam_to_lower_sacramento_road" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(C)",
+      "humanSummary": "Closed to all fishing all year between the Woodbridge Irrigation District Dam and the Lower Sacramento Road bridge.",
+      "verbatimText": "Between the Woodbridge Irrigation District Dam and the Lower Sacramento Road bridge. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "jan_to_mid_jul", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } },
+        { "label": "mid_jul_to_dec16", "status": "open", "start": { "type": "fixed", "month": 7, "day": 16, "verbatim": "Jul. 16" }, "end": { "type": "fixed", "month": 12, "day": 16, "verbatim": "Dec. 16" } },
+        { "label": "dec17_to_dec31", "status": "open", "start": { "type": "fixed", "month": 12, "day": 17, "verbatim": "Dec. 17" }, "end": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" } }
+      ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "lower_sacramento_road_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(D)",
+      "humanSummary": "Lower Sacramento Road bridge to the mouth (including tributary sloughs east of Hwy 160, north of Hwy 12): open Jan. 1–Jul. 15, Jul. 16–Dec. 16, and Dec. 17–Dec. 31.",
+      "verbatimText": "From the Lower Sacramento Road bridge to the mouth. For purposes of this subsection, this river segment is defined as Mokelumne River and its tributary sloughs downstream of the Lower Sacramento Road bridge and east of Highway 160 and north of Highway 12. Jan. 1 through Jul. 15. || Jul. 16 through Dec. 16. || Dec. 17 through Dec. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 1, "possession": 1, "unit": "fish", "aggregation": "combined_group", "counting_rule": "1 hatchery trout or hatchery steelhead per day/in possession; only fish marked as hatchery-produced (adipose fin clipped, per the ** footnote) may be retained." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "lower_sacramento_road_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(D)",
+      "humanSummary": "1 hatchery trout or hatchery steelhead daily and in possession, Lower Sacramento Road bridge to the mouth.",
+      "verbatimText": "1 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "counting_rule": "Closed to the take and possession of Chinook Salmon." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Chinook salmon" } ],
+      "scope": { "type": "reach", "reachKey": "lower_sacramento_road_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(66)(D)",
+      "humanSummary": "Chinook Salmon may not be taken or possessed, Lower Sacramento Road bridge to the mouth.",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,205 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Feather River below Fish Barrier Dam",
+    "waterType": "river",
+    "states": ["CA"],
+    "counties": ["Butte", "Sutter", "Yuba"],
+    "aliases": ["Lower Feather River"],
+    "gnisId": null,
+    "lon": -121.5467,
+    "lat": 39.5217,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "fbd_to_table_mtn", "name": "Fish Barrier Dam to Table Mountain bicycle bridge in Oroville", "fromDesc": "Fish Barrier Dam", "toDesc": "Table Mountain bicycle bridge in Oroville", "lon": -121.5480, "lat": 39.5240 },
+    { "key": "table_mtn_to_hwy70", "name": "Table Mountain bicycle bridge to Highway 70 bridge", "fromDesc": "Table Mountain bicycle bridge", "toDesc": "Highway 70 bridge", "lon": -121.5580, "lat": 39.5130 },
+    { "key": "hwy70_to_thermalito_afterbay_outfall_ramp", "name": "Highway 70 bridge to unimproved boat ramp above the Thermalito Afterbay Outfall", "fromDesc": "Highway 70 bridge", "toDesc": "Unimproved boat ramp above the Thermalito Afterbay Outfall", "lon": -121.5900, "lat": 39.4700 },
+    { "key": "thermalito_afterbay_outfall_ramp_to_live_oak", "name": "Unimproved boat ramp above the Thermalito Afterbay Outfall to 200 yards above the Live Oak boat ramp", "fromDesc": "Unimproved boat ramp above the Thermalito Afterbay Outfall", "toDesc": "200 yards above the Live Oak boat ramp", "lon": -121.6500, "lat": 39.3500 },
+    { "key": "live_oak_to_mouth", "name": "200 yards above Live Oak boat ramp to the mouth (peninsula point to Verona Marine boat ramp line)", "fromDesc": "200 yards above Live Oak boat ramp", "toDesc": "Mouth, defined by a straight line from the peninsula point on the west bank to the Verona Marine boat ramp", "lon": -121.6150, "lat": 39.0500 }
+  ],
+  "species": [
+    { "commonName": "Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_43", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(43) — Feather River below Fish Barrier Dam (Butte, Sutter and Yuba cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "All year. 2 hatchery trout or hatchery steelhead. 4 hatchery trout or hatchery steelhead in possession." },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "cdfw_feather_hatchery", "url": "https://wildlife.ca.gov/Fishing/Hatcheries/Feather-River", "title": "CDFW — Feather River Fish Hatchery", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Fish Barrier Dam holds anadromous fish below it for hatchery operations; the reach immediately downstream to the Table Mountain bicycle bridge is closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "fbd_to_table_mtn" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(A)",
+      "humanSummary": "Closed to all fishing all year from Fish Barrier Dam to the Table Mountain bicycle bridge in Oroville.",
+      "verbatimText": "From Fish Barrier Dam to Table Mountain bicycle bridge in Oroville. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "table_mtn_to_hwy70" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(B)",
+      "humanSummary": "Open January 1 through July 15 from the Table Mountain bicycle bridge to the Highway 70 bridge (closed Jul. 16 - Dec. 31).",
+      "verbatimText": "From Table Mountain bicycle bridge to Highway 70 bridge. Jan. 1 through Jul. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "table_mtn_to_hwy70" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(B)",
+      "humanSummary": "Only barbless hooks may be used from the Table Mountain bicycle bridge to the Highway 70 bridge.",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "annual": null, "unit": "fish", "aggregation": "combined_group", "catch_and_release": false, "counting_rule": "Limit applies to hatchery trout or hatchery steelhead only (denoted by ** in the regulation, i.e. fish with a healed adipose fin clip). Wild, unclipped trout and steelhead are not part of this bag limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "table_mtn_to_hwy70" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(B)",
+      "humanSummary": "Daily bag limit of 2 hatchery trout or hatchery steelhead; 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "hwy70_to_thermalito_afterbay_outfall_ramp" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(C)",
+      "humanSummary": "Open all year from the Highway 70 bridge to the unimproved boat ramp above the Thermalito Afterbay Outfall.",
+      "verbatimText": "From Highway 70 bridge to the unimproved boat ramp above the Thermalito Afterbay Outfall. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "annual": null, "unit": "fish", "aggregation": "combined_group", "catch_and_release": false, "counting_rule": "Limit applies to hatchery trout or hatchery steelhead only (denoted by ** in the regulation, i.e. fish with a healed adipose fin clip). Wild, unclipped trout and steelhead are not part of this bag limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "hwy70_to_thermalito_afterbay_outfall_ramp" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(C)",
+      "humanSummary": "Daily bag limit of 2 hatchery trout or hatchery steelhead; 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "jan1_jul15", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } },
+        { "label": "jul16_oct31_no_chinook", "status": "open", "start": { "type": "fixed", "month": 7, "day": 16, "verbatim": "Jul. 16" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "Oct. 31" } },
+        { "label": "nov1_dec31", "status": "open", "start": { "type": "fixed", "month": 11, "day": 1, "verbatim": "Nov. 1" }, "end": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" } }
+      ], "note": "The source table lists this reach in three consecutive date ranges, each carrying the same open status and 2/4 hatchery trout-steelhead bag limit; combined they amount to a year-round open season, interrupted only by the mid-year Chinook salmon closure noted separately." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "thermalito_afterbay_outfall_ramp_to_live_oak" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(D)",
+      "humanSummary": "Open all year from the unimproved boat ramp above the Thermalito Afterbay Outfall to 200 yards above the Live Oak boat ramp (listed in the regulation as three back-to-back date ranges).",
+      "verbatimText": "From the unimproved boat ramp above the Thermalito Afterbay Outfall to 200 yards above the Live Oak boat ramp. Jan. 1 through Jul. 15. ... Jul. 16 through Oct. 31. ... Nov. 1 through Dec. 31.",
+      "isParaphrase": true, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "annual": null, "unit": "fish", "aggregation": "combined_group", "catch_and_release": false, "counting_rule": "Limit applies to hatchery trout or hatchery steelhead only (denoted by ** in the regulation, i.e. fish with a healed adipose fin clip). Wild, unclipped trout and steelhead are not part of this bag limit. Applies year-round on this reach." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "thermalito_afterbay_outfall_ramp_to_live_oak" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(D)",
+      "humanSummary": "Daily bag limit of 2 hatchery trout or hatchery steelhead; 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "seasonal", "boundary_definition": "described", "note": "Chinook salmon take and possession is closed from July 16 through October 31, even though the reach otherwise remains open to fishing for hatchery trout/steelhead." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Chinook salmon" } ],
+      "scope": { "type": "reach", "reachKey": "thermalito_afterbay_outfall_ramp_to_live_oak" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(D)",
+      "humanSummary": "Closed to the take and possession of Chinook salmon from July 16 through October 31.",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon. (Jul. 16 through Oct. 31)",
+      "isParaphrase": true, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "jan1_jul15", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 7, "day": 15, "verbatim": "Jul. 15" } },
+        { "label": "jul16_dec16_no_chinook", "status": "open", "start": { "type": "fixed", "month": 7, "day": 16, "verbatim": "Jul. 16" }, "end": { "type": "fixed", "month": 12, "day": 16, "verbatim": "Dec. 16" } },
+        { "label": "dec17_dec31", "status": "open", "start": { "type": "fixed", "month": 12, "day": 17, "verbatim": "Dec. 17" }, "end": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" } }
+      ], "note": "The source table lists this reach in three consecutive date ranges, each carrying the same open status and 2/4 hatchery trout-steelhead bag limit; combined they amount to a year-round open season, interrupted only by the mid-year Chinook salmon closure noted separately." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "live_oak_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(E)",
+      "humanSummary": "Open all year from 200 yards above the Live Oak boat ramp to the mouth (a line from the peninsula point on the west bank to the Verona Marine boat ramp), listed in the regulation as three back-to-back date ranges.",
+      "verbatimText": "From 200 yards above Live Oak boat ramp to the mouth. For purposes of this subsection, the lower boundary is defined as a straight line drawn from the peninsula point on the west bank to the Verona Marine boat ramp. Jan. 1 through Jul. 15. ... Jul. 16 through Dec. 16. ... Dec. 17 through Dec. 31.",
+      "isParaphrase": true, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "annual": null, "unit": "fish", "aggregation": "combined_group", "catch_and_release": false, "counting_rule": "Limit applies to hatchery trout or hatchery steelhead only (denoted by ** in the regulation, i.e. fish with a healed adipose fin clip). Wild, unclipped trout and steelhead are not part of this bag limit. Applies year-round on this reach." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "live_oak_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(E)",
+      "humanSummary": "Daily bag limit of 2 hatchery trout or hatchery steelhead; 4 in possession.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "seasonal", "boundary_definition": "described", "note": "Chinook salmon take and possession is closed from July 16 through December 16, even though the reach otherwise remains open to fishing for hatchery trout/steelhead." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Chinook salmon" } ],
+      "scope": { "type": "reach", "reachKey": "live_oak_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(43)(E)",
+      "humanSummary": "Closed to the take and possession of Chinook salmon from July 16 through December 16.",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon. (Jul. 16 through Dec. 16)",
+      "isParaphrase": true, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_43", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

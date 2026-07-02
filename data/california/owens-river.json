@@ -1,0 +1,213 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Owens River", "waterType": "river", "states": ["CA"], "counties": ["Inyo", "Mono"], "aliases": [], "gnisId": null, "lon": -118.4098, "lat": 37.3639, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Upper Owens River, Benton Bridge road crossing upstream to Big Springs", "fromDesc": "Benton Bridge (Benton Crossing) Road crossing", "toDesc": "Big Springs", "lon": -118.9300, "lat": 37.6800 },
+    { "key": "reach_b", "name": "Upper Owens River, Benton Bridge road crossing to Crowley Lake", "fromDesc": "Benton Bridge (Benton Crossing) Road crossing", "toDesc": "Crowley Lake", "lon": -118.7900, "lat": 37.6200 },
+    { "key": "reach_c", "name": "Owens River, Pleasant Valley Dam to Pleasant Valley Campground footbridge", "fromDesc": "Pleasant Valley Dam", "toDesc": "footbridge at lower end of Pleasant Valley Campground", "lon": -118.4150, "lat": 37.4020 },
+    { "key": "reach_d", "name": "Owens River, Pleasant Valley Campground footbridge downstream to Five Bridges Road", "fromDesc": "footbridge at lower end of Pleasant Valley Campground", "toDesc": "Five Bridges Road", "lon": -118.3800, "lat": 37.3700 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [
+    { "key": "trout", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_b_104", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(104) — Owens River (Inyo and Mono Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(104) Owens River (Inyo and Mono Cos.), except (A), (B), (C), and (D) below. All year. 5 trout (A) Upper Owens River from Benton Bridge road crossing upstream to Big Springs. Above Big Springs, see Deadman Creek (subsection (b)(41)). All year. Only artificial lures with barbless hooks may be used. 0 trout (B) Upper Owens River from Benton Bridge road crossing to Crowley Lake. Last Sat. in Apr. through Jul. 31. 5 trout (C) From Pleasant Valley Dam downstream to footbridge at lower end of Pleasant Valley Campground. Last Sat. in Apr. through Nov. 15. 2 trout. 4 trout in possession. Nov. 16 through the Fri. preceding the last Sat. in Apr. Only artificial lures with barbless hooks may be used. 0 trout (D) From footbridge at lower end of Pleasant Valley Campground east (downstream) to 5 Bridges Road. All year. Only artificial lures with barbless hooks may be used. 0 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ecoangler_lower_owens", "url": "https://www.ecoangler.com/habitat/Lower_Owens_River.html", "title": "Fly Fishing Lower Owens River Wild Trout Section — The Ecological Angler", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ccr_5_85", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85 — Trout (statewide daily bag and possession limits)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "daily bag and possession limits mean the total number of trout in combination" },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "General rule for the Owens River in Inyo and Mono counties, except the segments described in (A), (B), (C), and (D)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)",
+      "humanSummary": "Open all year on the Owens River generally, except the four described sub-segments",
+      "verbatimText": "Owens River (Inyo and Mono Cos.), except (A), (B), (C), and (D) below. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag; per CCR §7.50(a), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)",
+      "humanSummary": "5 trout daily bag and possession limit on the general river",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Above Big Springs, see Deadman Creek, CCR §7.50(b)(41)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(A)",
+      "humanSummary": "Open all year, catch-and-release, from Benton Bridge road crossing upstream to Big Springs",
+      "verbatimText": "Upper Owens River from Benton Bridge road crossing upstream to Big Springs. Above Big Springs, see Deadman Creek (subsection (b)(41)). All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, Benton Bridge road crossing upstream to Big Springs",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(A)",
+      "humanSummary": "0 trout — catch-and-release only, Benton Bridge road crossing upstream to Big Springs",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 7, "day": 31, "verbatim": "July 31" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(B)",
+      "humanSummary": "Open last Saturday in April through July 31, Benton Bridge road crossing to Crowley Lake",
+      "verbatimText": "Upper Owens River from Benton Bridge road crossing to Crowley Lake. Last Sat. in Apr. through Jul. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag; per CCR §7.50(a), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(B)",
+      "humanSummary": "5 trout daily bag and possession limit, Benton Bridge road crossing to Crowley Lake",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "general_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+        { "label": "winter_catch_and_release", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" } }
+      ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(C)",
+      "humanSummary": "Open last Saturday in April through November 15 (general season), and open catch-and-release November 16 through the Friday preceding the last Saturday in April, from Pleasant Valley Dam to the Pleasant Valley Campground footbridge",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15. ... Nov. 16 through the Fri. preceding the last Sat. in Apr.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies during the general season, last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(C)",
+      "humanSummary": "2 trout daily bag, 4 in possession, last Saturday in April through November 15, Pleasant Valley Dam to the campground footbridge",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15. 2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies only during the November 16 through Friday preceding the last Saturday in April catch-and-release period." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(C)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "Applies November 16 through the Friday preceding the last Saturday in April." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(C)",
+      "humanSummary": "0 trout — catch-and-release only, November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_d" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(D)",
+      "humanSummary": "Open all year, catch-and-release, from the Pleasant Valley Campground footbridge downstream to Five Bridges Road",
+      "verbatimText": "From footbridge at lower end of Pleasant Valley Campground east (downstream) to 5 Bridges Road. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026", "ecoangler_lower_owens"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_d" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(D)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, campground footbridge downstream to Five Bridges Road",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_d" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(104)(D)",
+      "humanSummary": "0 trout — catch-and-release only, campground footbridge downstream to Five Bridges Road",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_104", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,123 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Kern River", "waterType": "river", "states": ["CA"], "counties": ["Kern", "Tulare"], "aliases": [], "gnisId": null, "lon": -118.4246, "lat": 35.7552, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Kern River Reach A", "fromDesc": "Lake Isabella", "toDesc": "Johnsondale bridge", "lon": -118.4800, "lat": 35.8000 },
+    { "key": "reach_b", "name": "Kern River Reach B", "fromDesc": "Johnsondale bridge", "toDesc": "Sequoia National Park boundary near the Kern Canyon Ranger Station", "lon": -118.4750, "lat": 36.1600 },
+    { "key": "reach_c", "name": "Kern River Reach C", "fromDesc": "Downstream of Lake Isabella (Isabella Main Dam)", "toDesc": "Downstream through the lower Kern River Valley toward Bakersfield", "lon": -118.4840, "lat": 35.6464 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Kern River rainbow trout", "scientificName": "Oncorhynchus aguabonita gilberti", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_69", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(69) — Kern River (Kern and Tulare Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(69) Kern River (Kern and Tulare Cos.). (A) From Lake Isabella upstream to the Johnsondale bridge. All year. 5 trout (B) From Johnsondale bridge upstream to the Sequoia National Park boundary near the Kern Canyon Ranger Station. All year. Only artificial lures may be used. 2 trout (C) Downstream of Lake Isabella. All year. 5 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_kern_river_rainbow", "url": "https://wildlife.ca.gov/Conservation/Fishes/Kern-River-Rainbow-Trout", "title": "Kern River Rainbow Trout | California Department of Fish and Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(A)",
+      "humanSummary": "Open all year from Lake Isabella upstream to the Johnsondale bridge",
+      "verbatimText": "From Lake Isabella upstream to the Johnsondale bridge. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag; per CCR §7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(A)",
+      "humanSummary": "5 trout daily bag and possession limit, Lake Isabella to Johnsondale bridge",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(B)",
+      "humanSummary": "Open all year from the Johnsondale bridge upstream to the Sequoia National Park boundary near the Kern Canyon Ranger Station",
+      "verbatimText": "From Johnsondale bridge upstream to the Sequoia National Park boundary near the Kern Canyon Ranger Station. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(B)",
+      "humanSummary": "Only artificial lures may be used, Johnsondale bridge to the Sequoia National Park boundary",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag; per CCR §7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 2 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(B)",
+      "humanSummary": "2 trout daily bag and possession limit, Johnsondale bridge to the Sequoia National Park boundary",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(C)",
+      "humanSummary": "Open all year downstream of Lake Isabella",
+      "verbatimText": "Downstream of Lake Isabella. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag; per CCR §7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(69)(C)",
+      "humanSummary": "5 trout daily bag and possession limit, downstream of Lake Isabella",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_69", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,479 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Salinas River",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Monterey",
+      "San Luis Obispo"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -121.04,
+    "lat": 36.09,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "reach_a",
+      "name": "Salinas River main stem",
+      "fromDesc": "Headwaters near Santa Margarita (San Luis Obispo Co.)",
+      "toDesc": "Mouth at Monterey Bay, near Marina (Monterey Co.)",
+      "lon": -121.04,
+      "lat": 36.09
+    },
+    {
+      "key": "reach_b",
+      "name": "Salinas River tributaries upstream of the Arroyo Seco River confluence",
+      "fromDesc": "Upstream of the Arroyo Seco River confluence, near Soledad (Monterey Co.)",
+      "toDesc": "Includes the San Antonio River below San Antonio Reservoir and Dam, Paso Robles Creek and tributaries, Atascadero Creek, and Santa Margarita Creek and tributaries (San Luis Obispo Co.); excludes the Nacimiento River",
+      "lon": -120.68,
+      "lat": 35.55
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "stocked"
+    }
+  ],
+  "speciesGroups": [
+    {
+      "key": "hatchery_trout_steelhead",
+      "name": "Hatchery trout or hatchery steelhead",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_81",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(81) — Salinas River and tributaries (Monterey and San Luis Obispo Cos.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "(81) Salinas River and tributaries (Monterey and San Luis Obispo Cos.). Also see Section 8.00(c) Low-Flow Restrictions. (A) The main stem Salinas River. Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession. (B) All Salinas River tributaries upstream of Arroyo Seco River confluence (including the San Antonio River below San Antonio Reservoir and Dam, Paso Robles Creek and tributaries, Atascadero Creek, and Santa Margarita Creek and tributaries but excluding the Nacimiento River). See subsection (b)(67). Last Sat. in Apr. through Nov. 15. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession."
+    },
+    {
+      "key": "ccr_7_40_footnote",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40 — Hatchery Trout/Steelhead Footnote (**) Definition",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released."
+    },
+    {
+      "key": "ccr_8_00_c",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-8.00",
+      "title": "14 CCR §8.00(c) — South Central Coast Streams: Special Low Flow Closures",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [
+    {
+      "key": "g_81a",
+      "authorityKey": "cdfw",
+      "citation": "7.40(b)(81)(A)",
+      "humanSummary": "Salinas River main stem: open December 1 through March 7, but only on Saturdays, Sundays, Wednesdays, legal holidays, and the opening/closing days of the season; barbless hooks only; 2 hatchery trout/steelhead daily (4 in possession).",
+      "verbatimText": "(A) The main stem Salinas River. Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession."
+    },
+    {
+      "key": "g_81b",
+      "authorityKey": "cdfw",
+      "citation": "7.40(b)(81)(B)",
+      "humanSummary": "Salinas River tributaries upstream of the Arroyo Seco River confluence (San Antonio River below the dam, Paso Robles Creek, Atascadero Creek, Santa Margarita Creek and their tributaries; excludes the Nacimiento River): open last Saturday in April through November 15, barbless hooks only, 2 hatchery trout/steelhead daily (4 in possession).",
+      "verbatimText": "(B) All Salinas River tributaries upstream of Arroyo Seco River confluence (including the San Antonio River below San Antonio Reservoir and Dam, Paso Robles Creek and tributaries, Atascadero Creek, and Santa Margarita Creek and tributaries but excluding the Nacimiento River). See subsection (b)(67). Last Sat. in Apr. through Nov. 15. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession."
+    }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "This water is also subject to 14 CCR §8.00(c), the South Central Coast Streams special low-flow closure provision, under which fishing may be closed December 1 through March 7 when the Department determines that stream flows are inadequate to provide fish passage for migrating steelhead and salmon.",
+        "raw": {
+          "cross_reference": "8.00(c)"
+        }
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "8.00(c)",
+      "humanSummary": "Also subject to Section 8.00(c) low-flow stream closures.",
+      "verbatimText": "Also see Section 8.00(c) Low-Flow Restrictions.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_8_00_c",
+        "corroborating": [
+          "ccr_7_40_b_81"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 12,
+              "day": 1,
+              "verbatim": "Dec. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 3,
+              "day": 7,
+              "verbatim": "Mar. 7"
+            }
+          }
+        ],
+        "note": "Open only on Saturdays, Sundays, Wednesdays, legal holidays, and the opening and closing days of the season."
+      },
+      "groupKey": "g_81a",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(A)",
+      "humanSummary": "Open December 1 through March 7, but only on Saturdays, Sundays, Wednesdays, legal holidays, and opening/closing days, main stem Salinas River.",
+      "verbatimText": "Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only barbless hooks may be used, throughout the Dec. 1–Mar. 7 open season."
+      },
+      "groupKey": "g_81a",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(A)",
+      "humanSummary": "Only barbless hooks may be used, main stem Salinas River.",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 4,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession."
+      },
+      "groupKey": "g_81a",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, main stem Salinas River.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "relative",
+              "ordinal": "last",
+              "weekday": "sat",
+              "month": 4,
+              "verbatim": "Last Sat. in Apr."
+            },
+            "end": {
+              "type": "fixed",
+              "month": 11,
+              "day": 15,
+              "verbatim": "Nov. 15"
+            }
+          }
+        ]
+      },
+      "groupKey": "g_81b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(B)",
+      "humanSummary": "Open last Saturday in April through November 15, tributaries upstream of the Arroyo Seco River confluence.",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only barbless hooks may be used, throughout the last-Saturday-in-April–Nov. 15 open season."
+      },
+      "groupKey": "g_81b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(B)",
+      "humanSummary": "Only barbless hooks may be used, tributaries upstream of the Arroyo Seco River confluence.",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 4,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Combined limit of hatchery trout and/or hatchery steelhead (fish showing a healed adipose fin clip); 2 fish daily, 4 fish in possession."
+      },
+      "groupKey": "g_81b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(81)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, tributaries upstream of the Arroyo Seco River confluence.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_81",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": {
+        "must_release_unharmed": true,
+        "condition": "Trout or steelhead lacking a healed adipose fin clip (i.e. wild/unmarked fish)",
+        "note": "Only hatchery-marked fish (healed adipose fin clip) may be retained; all other trout and steelhead must be released immediately unharmed."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40 (footnote **)",
+      "humanSummary": "Only adipose-fin-clipped hatchery trout/steelhead may be kept; unmarked wild fish must be released immediately.",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_footnote",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

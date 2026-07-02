@@ -1,0 +1,183 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Tuolumne River", "waterType": "river", "states": ["CA"], "counties": ["Stanislaus", "Tuolumne"], "aliases": [], "gnisId": null, "lon": -120.4, "lat": 37.72, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_upper", "name": "O'Shaughnessy Dam (Hetch Hetchy Reservoir) to Clavey River Falls", "fromDesc": "O'Shaughnessy Dam (Hetch Hetchy Reservoir)", "toDesc": "Clavey River Falls", "lon": -119.925, "lat": 37.897 },
+    { "key": "reach_a", "name": "La Grange Dam to Hickman Bridge", "fromDesc": "La Grange Dam", "toDesc": "Hickman Bridge", "lon": -120.626, "lat": 37.631 },
+    { "key": "reach_b", "name": "Hickman Bridge to the mouth", "fromDesc": "Hickman Bridge", "toDesc": "mouth (confluence with the San Joaquin River)", "lon": -120.996, "lat": 37.604 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Hatchery steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [
+    { "key": "hatchery_trout_steelhead", "name": "Hatchery trout or hatchery steelhead", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_b_156", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(156) — Tuolumne River (Stanislaus and Tuolumne Cos.), O'Shaughnessy Dam to Clavey River Falls", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(156) Tuolumne River (Stanislaus and Tuolumne Cos.) from O'Shaughnessy Dam (Hetch Hetchy Reservoir) downstream to Clavey River Falls. All year. Only artificial lures may be used. 2 trout" },
+    { "key": "ccr_7_40_b_115", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(115) — Tuolumne River (Stanislaus and Tuolumne Cos.), La Grange Dam to the mouth", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(115) Tuolumne River (Stanislaus and Tuolumne Cos.). (A) From La Grange Dam downstream to Hickman Bridge. Jan. 1 through Oct. 31. Only artificial lures with barbless hooks may be used. 2 hatchery trout or hatchery steelhead. 4 hatchery trout or hatchery steelhead in possession. (B) From Hickman Bridge to the mouth. Jan. 1 through Oct. 31. Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch. 2 hatchery trout or hatchery steelhead. 4 hatchery trout or hatchery steelhead in possession." },
+    { "key": "ccr_7_40_footnote", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40 — hatchery trout/steelhead footnote (adipose fin clip requirement)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "** Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "caltrout_tuolumne", "url": "https://caltrout.org/news/field-note-floating-the-wild-and-scenic-tuolumne-river", "title": "Field Note: Floating the Wild and Scenic Tuolumne River — CalTrout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "calflyfisher_lower_tuolumne", "url": "https://calflyfisher.com/destinations/the-lower-tuolumne/", "title": "The Lower Tuolumne — California Fly Fisher", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "spatial", "boundary_definition": "described", "note": "This special regulation applies to the Tuolumne River from O'Shaughnessy Dam (Hetch Hetchy Reservoir) downstream to Clavey River Falls." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_upper" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(156)",
+      "humanSummary": "Special regulation applies from O'Shaughnessy Dam (Hetch Hetchy Reservoir) downstream to Clavey River Falls",
+      "verbatimText": "Tuolumne River (Stanislaus and Tuolumne Cos.) from O'Shaughnessy Dam (Hetch Hetchy Reservoir) downstream to Clavey River Falls.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_156", "corroborating": [] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_upper" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(156)",
+      "humanSummary": "Open all year from O'Shaughnessy Dam to Clavey River Falls",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_156", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used; live or dead bait is prohibited." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_upper" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(156)",
+      "humanSummary": "Artificial lures only, no bait, from O'Shaughnessy Dam to Clavey River Falls",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_156", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; possession limit equals one daily bag limit (2) per the general provision at 14 CCR §7.50(a) absent a separately stated possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_upper" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(156)",
+      "humanSummary": "2 trout daily bag and possession limit from O'Shaughnessy Dam to Clavey River Falls",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_156", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [ { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "Oct. 31" } } ],
+        "note": "Closed to fishing November 1 through December 31 from La Grange Dam downstream to Hickman Bridge."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(A)",
+      "humanSummary": "Open January 1 through October 31 from La Grange Dam downstream to Hickman Bridge",
+      "verbatimText": "Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies from La Grange Dam downstream to Hickman Bridge." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from La Grange Dam downstream to Hickman Bridge",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["calflyfisher_lower_tuolumne"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined; 4 in possession, combined." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag, 4 in possession, from La Grange Dam downstream to Hickman Bridge",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["calflyfisher_lower_tuolumne"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [ { "label": "open_season", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "Jan. 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "Oct. 31" } } ],
+        "note": "Closed to fishing November 1 through December 31 from Hickman Bridge to the mouth."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(B)",
+      "humanSummary": "Open January 1 through October 31 from Hickman Bridge to the mouth",
+      "verbatimText": "Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Bait may be used from Jan. 1 through Oct. 31. From Apr. 1 through the Friday preceding the fourth Saturday in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(B)",
+      "humanSummary": "Bait allowed Jan. 1–Oct. 31 from Hickman Bridge to the mouth; Apr. 1 through the Friday before the fourth Saturday in May, bait restricted to specific hook-gap sizes",
+      "verbatimText": "Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["calflyfisher_lower_tuolumne"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined; 4 in possession, combined." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(115)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag, 4 in possession, from Hickman Bridge to the mouth",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_115", "corroborating": ["calflyfisher_lower_tuolumne"] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "keep_in_water": false, "filleting_prohibited": false, "live_transport_prohibited": false, "counts_toward_bag_when_retained": false, "condition": "adipose fin present (unclipped)", "note": "Only trout/steelhead showing a healed adipose fin clip may be retained as \"hatchery\" fish; wild fish with the adipose fin intact must be released immediately and do not count toward the bag or possession limit. Applies to the lower river below La Grange Dam." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40 footnote **",
+      "humanSummary": "Wild (adipose-fin-intact) steelhead and trout must be released unharmed; only adipose-fin-clipped hatchery fish may be kept",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_footnote", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,99 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Carson River, East Fork", "waterType": "river", "states": ["CA"], "counties": ["Alpine"], "aliases": ["East Fork Carson River"], "gnisId": null, "lon": -119.7640, "lat": 38.6896, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "East Fork Carson River and tributaries above Carson Falls", "fromDesc": "Headwaters (Carson-Iceberg Wilderness, near Sonora Peak)", "toDesc": "Carson Falls", "lon": -119.6300, "lat": 38.4500 },
+    { "key": "reach_b", "name": "East Fork Carson River, Hangman's Bridge to Nevada State Line", "fromDesc": "Hangman's Bridge", "toDesc": "Nevada State Line", "lon": -119.7640, "lat": 38.6896 }
+  ],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_25", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(25) — Carson River, East Fork and tributaries", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(25) Carson River, East Fork and tributaries (Alpine Co.). (A) Carson River, East Fork and tributaries above Carson Falls. Closed to all fishing all year. (B) Carson River, East Fork from Hangman's Bridge downstream to Nevada State Line. All year. Only artificial lures may be used. Minimum size limit: 14 inches total length. 2 trout" },
+    { "key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "ecoangler_carson", "url": "https://www.ecoangler.com/habitat/Carson.html", "title": "Fly Fishing East Fork Carson River — Hangman's Bridge to Nevada Stateline", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "carson_river_ef_25", "authorityKey": "cdfw", "citation": "7.50(b)(25)", "humanSummary": "East Fork Carson River and tributaries (Alpine Co.): the headwaters above Carson Falls — a Lahontan cutthroat trout refuge — are closed to all fishing all year; the lower reach from Hangman's Bridge downstream to the Nevada state line is open all year, artificial-lures-only, with a 14-inch minimum size and a 2-trout limit.", "verbatimText": "(25) Carson River, East Fork and tributaries (Alpine Co.). (A) Carson River, East Fork and tributaries above Carson Falls. Closed to all fishing all year. (B) Carson River, East Fork from Hangman's Bridge downstream to Nevada State Line. All year. Only artificial lures may be used. Minimum size limit: 14 inches total length. 2 trout" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "River and tributaries above Carson Falls, protecting a pure remnant Lahontan cutthroat trout population, closed to all fishing all year." },
+      "groupKey": "carson_river_ef_25", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(25)(A)",
+      "humanSummary": "Closed to all fishing all year above Carson Falls (river and tributaries)",
+      "verbatimText": "Carson River, East Fork and tributaries above Carson Falls. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_25", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "carson_river_ef_25", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(25)(B)",
+      "humanSummary": "Open all year from Hangman's Bridge downstream to the Nevada state line",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_25", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false },
+      "groupKey": "carson_river_ef_25", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(25)(B)",
+      "humanSummary": "Only artificial lures may be used, Hangman's Bridge to Nevada state line",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_25", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 14, "max_length_in": null, "measurement": "total_length", "unit": "inch" },
+      "groupKey": "carson_river_ef_25", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(25)(B)",
+      "humanSummary": "14-inch minimum total length, Hangman's Bridge to Nevada state line",
+      "verbatimText": "Minimum size limit: 14 inches total length.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_25", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Possession limit equals the daily bag limit (1x) per the general provision at 14 CCR §7.50(a)(4): unless otherwise provided, no more than one daily bag limit may be possessed." },
+      "groupKey": "carson_river_ef_25", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Lahontan cutthroat trout" }, { "speciesCommonName": "Brown trout" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(25)(B)",
+      "humanSummary": "2 trout daily bag and possession limit, Hangman's Bridge to Nevada state line",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_25", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high", "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

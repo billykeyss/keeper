@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Scott Creek", "waterType": "creek", "states": ["CA"], "counties": ["Santa Cruz"], "aliases": [], "gnisId": null, "lon": -122.2170, "lat": 37.0530, "verifyCurrent": true },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Coho salmon", "scientificName": "Oncorhynchus kisutch", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_100", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(100) — Scott Creek (Santa Cruz Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Scott Creek (Santa Cruz Co.) from mouth to confluence with Big Creek. Also see Section 8.00(c) Low-Flow Restrictions. Dec. 1 through Mar. 7, but only Sat., Sun.,Wed., legal holidays and opening and closing days. Only barbless hooks may be used. 0 trout." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ucsc_scott_creek_program", "url": "https://fisheries.ucsc.edu/research/scott-creek-salmonid-research-and-monitoring-program/", "title": "Scott Creek Salmonid Research and Monitoring Program — UC Santa Cruz Fisheries Collaborative Program", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "winter_catch_release", "status": "open_catch_release", "start": { "type": "fixed", "month": 12, "day": 1, "verbatim": "Dec. 1" }, "end": { "type": "fixed", "month": 3, "day": 7, "verbatim": "Mar. 7" } } ], "note": "Open only Saturdays, Sundays, Wednesdays, legal holidays, and the opening and closing days of the season; closed to fishing all other days within this window. Catch-and-release only (0 trout may be kept). Also subject to Section 8.00(c) low-flow closure provisions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(100)",
+      "humanSummary": "Open Dec. 1 through Mar. 7, but only Saturdays, Sundays, Wednesdays, legal holidays, and opening/closing days, from the mouth to the confluence with Big Creek",
+      "verbatimText": "Dec. 1 through Mar. 7, but only Sat., Sun.,Wed., legal holidays and opening and closing days.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_100", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only barbless hooks may be used; no other gear-type restriction is specified in this entry." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(100)",
+      "humanSummary": "Only barbless hooks may be used",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_100", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "0 trout may be retained — steelhead fishing on this reach is catch-and-release only during the open season." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(100)",
+      "humanSummary": "0 trout — catch-and-release only",
+      "verbatimText": "0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_100", "corroborating": [] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "flow_triggered", "boundary_definition": "described", "note": "See 14 CCR §8.00(c) — fishing on qualifying low-flow streams closes when streamflow drops below the applicable gauge threshold; check CDFW's low-flow closure list before fishing." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(100); 8.00(c)",
+      "humanSummary": "Subject to low-flow closure provisions under 14 CCR §8.00(c); the creek can close to fishing when streamflow drops below the qualifying threshold",
+      "verbatimText": "Also see Section 8.00(c) Low-Flow Restrictions.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_40_b_100", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

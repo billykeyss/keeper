@@ -1,0 +1,73 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "San Gabriel River (upstream of Highway 22 bridge to start of concrete-lined channel)", "waterType": "river", "states": ["CA"], "counties": ["Los Angeles", "Orange"], "aliases": ["San Gabriel River"], "gnisId": null, "lon": -118.0950, "lat": 33.7900, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Bluegill", "scientificName": "Lepomis macrochirus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Channel catfish", "scientificName": "Ictalurus punctatus", "category": "catfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Common carp", "scientificName": "Cyprinus carpio", "category": "minnow", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "historical" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_88", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(88) — San Gabriel River (Los Angeles and Orange Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 11, "day": 30, "verbatim": "November 30" } } ], "note": "Applies to the segment of the San Gabriel River upstream of the Highway 22 bridge to the start of the concrete-lined portion of the river channel." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(88)",
+      "humanSummary": "Open Saturday preceding Memorial Day through November 30, upstream of the Highway 22 bridge to the start of the concrete-lined channel",
+      "verbatimText": "Sat. preceding Memorial Day through Nov. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_88", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(88)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_88", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "seasonal", "boundary_definition": "described", "note": "Open to fishing for non-salmonids only; closed to the take of trout and steelhead." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(88)",
+      "humanSummary": "Closed to the take of trout and steelhead; open to fishing for non-salmonids only",
+      "verbatimText": "Open to fishing for non-salmonids only. Closed to the take of trout and steelhead.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_88", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

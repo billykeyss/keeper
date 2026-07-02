@@ -1,0 +1,48 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "El Estero Lake", "waterType": "lake", "states": ["CA"], "counties": ["Monterey"], "aliases": ["Lake El Estero"], "gnisId": null, "lon": -121.8917, "lat": 36.6013, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Bluegill", "scientificName": "Lepomis macrochirus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Common carp", "scientificName": "Cyprinus carpio", "category": "other", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_46", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(46) — El Estero Lake (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(46) El Estero Lake (Monterey Co.) portions of the lake south of the Pearl Street bridge known as Camino Aquajito Arm and Camino El Estero finger. Closed to all fishing all year." },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "monterey_el_estero_park", "url": "https://monterey.gov/your_city_hall/departments/parks_and_recreation/parks/el_estero_park_complex.php", "title": "City of Monterey — El Estero Park Complex", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closure applies only to the portions of El Estero Lake south of the Pearl Street bridge known as the Camino Aquajito Arm and the Camino El Estero finger; the remainder of the lake is not covered by this entry." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(46)",
+      "humanSummary": "The Camino Aquajito Arm and Camino El Estero finger, south of the Pearl Street bridge, are closed to all fishing year-round.",
+      "verbatimText": "El Estero Lake (Monterey Co.) portions of the lake south of the Pearl Street bridge known as Camino Aquajito Arm and Camino El Estero finger. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_46", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license (applies to any portions of the lake that remain open to fishing)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

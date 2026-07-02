@@ -1,0 +1,85 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Big Sur River", "waterType": "river", "states": ["CA"], "counties": ["Monterey"], "aliases": [], "gnisId": null, "lon": -121.7590, "lat": 36.2410, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_park", "name": "Big Sur River within Pfeiffer Big Sur State Park", "fromDesc": "Highway 1 bridge (east side)", "toDesc": "Boundary of Pfeiffer Big Sur State Park within the Ventana Wilderness Area", "lon": -121.7768, "lat": 36.2467 },
+    { "key": "reach_wilderness", "name": "Big Sur River within the Ventana Wilderness Area", "fromDesc": "Upstream end of the gorge pool at the boundary of Pfeiffer Big Sur State Park", "toDesc": "Within the Ventana Wilderness Area (upper regulated extent)", "lon": -121.7400, "lat": 36.2250 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_11", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(11) — Big Sur River (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(11) Big Sur River (Monterey Co.). Big Sur river and tributaries above the upstream end of the gorge pool at the boundary of Pfeiffer Big Sur State Park within the Ventana Wilderness Area. Sat. preceding Memorial day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout" },
+    { "key": "ccr_7_40_b_17", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(17) — Big Sur River (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(17) Big Sur River (Monterey Co.). Big Sur River within Pfeiffer Big Sur State Park, east of the Highway 1 bridge, to its boundary within the Ventana Wilderness Area. Closed to all fishing all year." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open_catch_release", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } } ], "note": "Applies to Big Sur River and tributaries above the upstream end of the gorge pool at the boundary of Pfeiffer Big Sur State Park, within the Ventana Wilderness Area." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_wilderness" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(11)",
+      "humanSummary": "Open (catch-and-release only) Saturday preceding Memorial Day through September 30, on the Big Sur River and tributaries above the upstream end of the gorge pool at the Pfeiffer Big Sur State Park boundary, within the Ventana Wilderness Area",
+      "verbatimText": "Big Sur river and tributaries above the upstream end of the gorge pool at the boundary of Pfeiffer Big Sur State Park within the Ventana Wilderness Area. Sat. preceding Memorial day through Sep. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_11", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_wilderness" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(11)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_11", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "0 trout bag limit — catch-and-release only." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_wilderness" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(11)",
+      "humanSummary": "0 trout bag limit (catch-and-release only)",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_11", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year within Pfeiffer Big Sur State Park, from the Highway 1 bridge (east side) to the park's boundary within the Ventana Wilderness Area — the segment immediately downstream of the open, catch-and-release-only reach above the gorge pool at that same boundary." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_park" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(17)",
+      "humanSummary": "Closed to all fishing all year, within Pfeiffer Big Sur State Park from the Highway 1 bridge to the park's boundary within the Ventana Wilderness Area",
+      "verbatimText": "Big Sur River within Pfeiffer Big Sur State Park, east of the Highway 1 bridge, to its boundary within the Ventana Wilderness Area. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_17", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

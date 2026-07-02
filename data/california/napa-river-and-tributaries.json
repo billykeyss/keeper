@@ -1,0 +1,98 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Napa River",
+    "waterType": "river",
+    "states": ["CA"],
+    "counties": ["Napa"],
+    "aliases": ["Napa River and tributaries"],
+    "gnisId": null,
+    "lon": -122.3600,
+    "lat": 38.3800,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    { "key": "above_oakville_cross_road", "name": "Napa River main stem above Oakville Cross Road Bridge and all tributaries", "fromDesc": "headwaters and all Napa River tributaries", "toDesc": "Oakville Cross Road Bridge near Yountville", "lon": -122.4700, "lat": 38.5050 },
+    { "key": "oakville_cross_road_to_trancas", "name": "Napa River — Oakville Cross Road Bridge to Trancas Bridge", "fromDesc": "Oakville Cross Road Bridge near Yountville", "toDesc": "Trancas Bridge (Trancas St., city of Napa)", "lon": -122.3500, "lat": 38.3700 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "ccr_lii_740", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "Cal. Code Regs. Tit. 14, § 7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Main stem above the Oakville Cross Road Bridge near Yountville and all Napa River tributaries. Closed to all fishing all year." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Main stem above the Oakville Cross Road Bridge near Yountville, and all Napa River tributaries, are closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "above_oakville_cross_road" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(68)(A)",
+      "humanSummary": "Closed to all fishing all year on the main stem above the Oakville Cross Road Bridge near Yountville and on all Napa River tributaries.",
+      "verbatimText": "Main stem above the Oakville Cross Road Bridge near Yountville and all Napa River tributaries. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "open_season", "status": "open", "start": { "type": "relative", "ordinal": "fourth", "weekday": "sat", "month": 5, "verbatim": "Fourth Sat. in May" }, "end": { "type": "fixed", "month": 3, "day": 31, "verbatim": "Mar. 31" } }
+      ], "note": "This open period spans the calendar-year boundary: fourth Sat. in May of one year through Mar. 31 of the next." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "oakville_cross_road_to_trancas" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(68)(B)",
+      "humanSummary": "Open fourth Saturday in May through March 31, from the Oakville Cross Road Bridge near Yountville to the Trancas Bridge. Below the Trancas Bridge the river is tidewater and governed by the Ocean and San Francisco Bay District regulations (14 CCR §§1.53, 27.00).",
+      "verbatimText": "From the Oakville Cross Road Bridge near Yountville to the Trancas Bridge. Note: The Napa River below the Trancas Bridge is tidewater, and is under the regulations for the Ocean and San Francisco Bay District (see Sections 1.53 and 27.00). Fourth Sat. in May through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31. Only barbless hooks (bait permitted) may be used from Nov. 1 through Mar. 31." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "oakville_cross_road_to_trancas" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(68)(B)",
+      "humanSummary": "Artificial lures with barbless hooks only from the fourth Sat. in May through Oct. 31; barbless hooks only (bait allowed) from Nov. 1 through Mar. 31.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31. Only barbless hooks may be used from Nov. 1 through Mar. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead daily; 4 hatchery trout or hatchery steelhead in possession. Only fish marked as hatchery-produced (adipose fin clipped, per the ** footnote) may be retained." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "oakville_cross_road_to_trancas" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(68)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily; 4 in possession, Oakville Cross Road Bridge to Trancas Bridge.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_booklet_2026", "corroborating": ["ccr_lii_740"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

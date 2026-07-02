@@ -1,0 +1,83 @@
+{
+  "asOf": "2026-07-02",
+  "water": {"name": "Kirman Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": ["Carmen Lake", "Kirman (Carmen) Lake"], "gnisId": null, "lon": -119.4991, "lat": 38.34, "verifyCurrent": false},
+  "authorities": [{"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]}],
+  "reaches": [],
+  "species": [
+    {"commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked"},
+    {"commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "stocked"}
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {"key": "ccr_7_50_b_71", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(71) — Kirman (Carmen) Lake and all its tributaries (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Kirman (Carmen) Lake and all its tributaries (Mono Co.). Last Sat. in Apr. through Nov. 15. Only artificial lures may be used. Minimum size limit: 18 inches total length. 2 trout"},
+    {"key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit."},
+    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
+    {"key": "ecoangler_kirman", "url": "https://www.ecoangler.com/habitat/Kirman_Lake.html", "title": "The Ecological Angler — Kirman Lake", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open", "start": {"type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Sat. in Apr."}, "end": {"type": "fixed", "month": 11, "day": 15, "verbatim": "Nov. 15"}}]},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(71)",
+      "humanSummary": "Open the last Saturday in April through November 15",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_71", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {"bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(71)",
+      "humanSummary": "Only artificial lures may be used; no live or natural bait",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_71", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": {"min_length_in": 18, "max_length_in": null, "measurement": "total_length", "unit": "inch"},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(71)",
+      "humanSummary": "18-inch minimum total length to keep a trout",
+      "verbatimText": "Minimum size limit: 18 inches total length.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_71", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; possession limit equals one daily bag limit (2) per the general provision at 14 CCR §7.50(a)(4) absent a separately stated possession limit."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Lahontan cutthroat trout"}, {"speciesCommonName": "Brook trout"}],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(71)",
+      "humanSummary": "2 trout daily bag and possession limit, subject to the 18-inch minimum size",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_71", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "license",
+      "parameters": {"required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
+    }
+  ],
+  "reciprocity": []
+}

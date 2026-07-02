@@ -1,0 +1,125 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Big Chico Creek", "waterType": "creek", "states": ["CA"], "counties": ["Butte"], "aliases": [], "gnisId": null, "lon": -121.7524, "lat": 39.7779, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Big Chico Creek Reach A", "fromDesc": "Mouth (confluence with the Sacramento River)", "toDesc": "Bear Hole, approx. 1 mile downstream from the upper end of Bidwell Park", "lon": -121.83, "lat": 39.73 },
+    { "key": "reach_b", "name": "Big Chico Creek Reach B", "fromDesc": "Bear Hole", "toDesc": "Upper boundary of the Big Chico Creek Ecological Reserve", "lon": -121.73, "lat": 39.80 },
+    { "key": "reach_c", "name": "Big Chico Creek Reach C", "fromDesc": "Upper boundary of the Big Chico Creek Ecological Reserve", "toDesc": "Higgins Hole Falls, approx. 1/2 mile upstream of Ponderosa Way", "lon": -121.65, "lat": 39.85 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_14", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(14) — Big Chico Creek (Butte Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(14) Big Chico Creek (Butte Co.). (A) From mouth to Bear Hole, located approximately one mile downstream from the upper end of Bidwell Park. Jun. 16 through Feb. 15. (B) From Bear Hole to the upper boundary of the Big Chico Creek Ecological Reserve. Nov. 1 through Apr. 30. (C) From the upper boundary of the Big Chico Creek Ecological Reserve to Higgins Hole Falls, located about 1/2 mile upstream from Ponderosa Way. Closed to all fishing all year." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "bccer_watershed", "url": "https://www.csuchico.edu/bccer/natural-resources/watershed.shtml", "title": "Big Chico Creek Ecological Reserve — The Big Chico Creek Watershed (Chico State)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [
+    { "key": "sp_a_gear_window", "groupKey": null, "label": "barbless_artificial_window", "status": "open", "startSpec": { "type": "fixed", "month": 10, "day": 16, "verbatim": "October 16" }, "endSpec": { "type": "fixed", "month": 2, "day": 15, "verbatim": "February 15" } }
+  ],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "fixed", "month": 6, "day": 16, "verbatim": "June 16" }, "end": { "type": "fixed", "month": 2, "day": 15, "verbatim": "February 15" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(A)",
+      "humanSummary": "Open June 16 through February 15, from the mouth to Bear Hole",
+      "verbatimText": "From mouth to Bear Hole, located approximately one mile downstream from the upper end of Bidwell Park. Jun. 16 through Feb. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used from Oct. 16 through Feb. 15; no such gear restriction stated for Jun. 16–Oct. 15." },
+      "groupKey": null, "seasonPeriodKey": "sp_a_gear_window", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from Oct. 16 through Feb. 15, from the mouth to Bear Hole",
+      "verbatimText": "Only artificial lures with barbless hooks may be used from Oct. 16 through Feb. 15.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead daily; 4 hatchery trout or hatchery steelhead in possession. Limit applies to hatchery (adipose fin-clipped) fish only." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, from the mouth to Bear Hole",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "fixed", "month": 11, "day": 1, "verbatim": "November 1" }, "end": { "type": "fixed", "month": 4, "day": 30, "verbatim": "April 30" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(B)",
+      "humanSummary": "Open November 1 through April 30, from Bear Hole to the upper boundary of the Big Chico Creek Ecological Reserve",
+      "verbatimText": "From Bear Hole to the upper boundary of the Big Chico Creek Ecological Reserve. Nov. 1 through Apr. 30.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used throughout the open season." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(B)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, from Bear Hole to the upper boundary of the Big Chico Creek Ecological Reserve",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead daily; 4 hatchery trout or hatchery steelhead in possession. Limit applies to hatchery (adipose fin-clipped) fish only." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, from Bear Hole to the upper boundary of the Big Chico Creek Ecological Reserve",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year, from the upper boundary of the Big Chico Creek Ecological Reserve to Higgins Hole Falls." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(14)(C)",
+      "humanSummary": "Closed to all fishing all year, from the upper boundary of the Big Chico Creek Ecological Reserve to Higgins Hole Falls",
+      "verbatimText": "From the upper boundary of the Big Chico Creek Ecological Reserve to Higgins Hole Falls, located about 1/2 mile upstream from Ponderosa Way. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_14", "corroborating": ["cdfw_booklet_2026", "bccer_watershed"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

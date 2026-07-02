@@ -1,0 +1,77 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Convict Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -118.7930, "lat": 37.6250, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "ucnrs", "name": "University of California Natural Reserve System (SNARL)", "state": null, "type": "land_trust", "roles": ["land_management"] }
+  ],
+  "reaches": [
+    { "key": "uc_study_area", "name": "Convict Creek — U.C. study area (closed to all fishing)", "fromDesc": "About 1 mile above the Highway 395 bridge (upstream boundary of the U.C. study area, as posted)", "toDesc": "About 1/2 mile above the Highway 395 bridge (downstream boundary of the U.C. study area, as posted)", "lon": -118.8080, "lat": 37.6120 },
+    { "key": "downstream_of_study_area", "name": "Convict Creek downstream of the U.C. study area", "fromDesc": "Downstream boundary of the U.C. study area, about 1/2 mile above the Highway 395 bridge", "toDesc": "Confluence with Crowley Lake / the Owens River", "lon": -118.7900, "lat": 37.6280 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_29", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(29) — Convict Creek (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(29) Convict Creek (Mono Co.). (A) Convict Creek, including side channels and meanders, in the U.C. study area as posted. This area begins about 1/2 mile above the Highway 395 bridge and extends upstream about 1/2 mile. Closed to all fishing all year. (B) Convict Creek downstream of the U.C. study area. Sat. preceding Memorial Day through Sep. 30. 5 trout" },
+    { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General provisions for the §7.50(b) special-regulation waters list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "snarl_overview", "url": "https://snarl.nrs.ucsb.edu/about/overview/", "title": "Overview — Sierra Nevada Aquatic Research Laboratory (UC Natural Reserve System)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ucnrs", "retrievedDate": "2026-07-01", "quotedText": "Mono County, on eastern slope of Sierra Nevada; 13 km (8 mi) east of Mammoth Lakes just off U.S. Highway 395 on Mt. Morrison Road" },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "signs_buoys", "note": "The U.C. study area (Sierra Nevada Aquatic Research Laboratory reach), including side channels and meanders, begins about 1/2 mile above the Highway 395 bridge and extends upstream about 1/2 mile, as posted in the field." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "uc_study_area" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(29)(A)",
+      "humanSummary": "Closed to all fishing all year in the U.C. study area (as posted), from about 1/2 to 1 mile above the Highway 395 bridge",
+      "verbatimText": "Convict Creek, including side channels and meanders, in the U.C. study area as posted. This area begins about 1/2 mile above the Highway 395 bridge and extends upstream about 1/2 mile. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_29", "corroborating": ["cdfw_booklet_2026", "snarl_overview"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "downstream_of_study_area" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(29)(B)",
+      "humanSummary": "Downstream of the U.C. study area: open Saturday preceding Memorial Day through September 30",
+      "verbatimText": "Convict Creek downstream of the U.C. study area. Sat. preceding Memorial Day through Sep. 30. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_29", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag; per CCR §7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "downstream_of_study_area" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(29)(B)",
+      "humanSummary": "5 trout daily bag and possession limit downstream of the U.C. study area",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_29", "corroborating": ["ccr_7_50_a", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

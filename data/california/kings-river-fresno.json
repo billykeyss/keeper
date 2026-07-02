@@ -1,0 +1,239 @@
+{
+  "asOf": "2026-07-02",
+  "water": {"name": "Kings River", "waterType": "river", "states": ["CA"], "counties": ["Fresno"], "aliases": [], "gnisId": null, "lon": -119.15, "lat": 36.82, "verifyCurrent": false},
+  "authorities": [{"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]}],
+  "reaches": [
+    {"key": "reach_a", "name": "South Fork Kings River, Copper Creek confluence to Hwy 180 / Boyden Cave", "fromDesc": "South Fork Kings River at its trout confluence with Copper Creek (near Cedar Grove, Kings Canyon National Park)", "toDesc": "Highway 180 crossing at Boyden Cave", "lon": -118.7, "lat": 36.797},
+    {"key": "reach_b", "name": "South Fork below Boyden Cave / Middle Fork below KCNP boundary / main stem to Garnet Dike", "fromDesc": "South Fork: Hwy 180 crossing at Boyden Cave; Middle Fork: western boundary of Kings Canyon National Park; main stem: confluence of South and Middle forks", "toDesc": "Garnet Dike Campground", "lon": -118.96, "lat": 36.83},
+    {"key": "reach_c", "name": "Kings River, Garnet Dike Campground to Pine Flat Lake", "fromDesc": "Garnet Dike Campground", "toDesc": "Pine Flat Lake (reservoir inlet)", "lon": -119.12, "lat": 36.86},
+    {"key": "reach_d", "name": "Kings River, Pine Flat Dam to Corps of Engineers Bridge on Pine Flat Road", "fromDesc": "Pine Flat Dam", "toDesc": "U.S. Army Corps of Engineers Bridge on Pine Flat Road", "lon": -119.327, "lat": 36.829},
+    {"key": "reach_e1", "name": "Kings River, Corps of Engineers Bridge on Pine Flat Road to Cobbles (Alta) Weir", "fromDesc": "U.S. Army Corps of Engineers Bridge on Pine Flat Road", "toDesc": "Cobbles (Alta) Weir", "lon": -119.365, "lat": 36.81},
+    {"key": "reach_e2", "name": "Kings River Thorburn Spawning Channel and 200-foot radius of channel exit", "fromDesc": "Thorburn Spawning Channel entrance (approx. 5 miles below Pine Flat Dam)", "toDesc": "200-foot radius of the channel exit", "lon": -119.368, "lat": 36.818},
+    {"key": "reach_f", "name": "Kings River, Cobbles (Alta) Weir to Highway 180 crossing", "fromDesc": "Cobbles (Alta) Weir", "toDesc": "Highway 180 crossing (near Centerville)", "lon": -119.437, "lat": 36.764},
+    {"key": "reach_g", "name": "Kings River, below Highway 180 crossing", "fromDesc": "Highway 180 crossing (near Centerville)", "toDesc": "downstream through the San Joaquin Valley", "lon": -119.55, "lat": 36.71}
+  ],
+  "species": [
+    {"commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "stocked"},
+    {"commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced"}
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {"key": "ccr_7_50_b_70", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(70) — Kings River (Fresno Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Kings River (Fresno Co.). (A) Kings River, South Fork from its trout confluence with Copper Creek downstream to the Highway 180 crossing at Boyden Cave. All year. 2 trout. 4 trout in possession. (B) Kings River South Fork, from the Highway 180 crossing at Boyden Cave downstream to the main stem; Middle Fork, from the western boundary of Kings Canyon National Park downstream to the main stem; and main stem, from the confluence of the South and Middle forks downstream to Garnet Dike Campground. All year. Only artificial lures with barbless hooks may be used. 0 trout (C) Kings River, from Garnet Dike Campground downstream to Pine Flat Lake. All year. 2 trout. 4 trout in possession. (D) Kings River from Pine Flat Dam downstream to U. S. Army Corps of Engineers Bridge on Pine Flat Road. Closed to all fishing all year. (E) All year. 5 trout 1. Kings River from the U.S. Army Corps of Engineers Bridge on Pine Flat Road downstream to Cobles (Alta) Weir. 2. Kings River Thorburn Spawning Channel, the 2,200-foot-long channel located 5 miles downstream from Pine Flat Dam, and the reach of river within a 200-foot radius of the channel exit. Closed to all fishing all year. (F) Kings River, from Cobbles (Alta) Weir downstream to the Highway 180 crossing. All year. Only artificial lures with barbless hooks may be used. 0 trout (G) Kings River from the Highway 180 crossing downstream. All year. 5 trout"},
+    {"key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit."},
+    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
+    {"key": "krfmp_thorburn", "url": "https://krfmp.org/thorburn-spawning-channel/", "title": "Kings River Fisheries Management Program — Thorburn Spawning Channel", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
+    {"key": "ecoangler_lower_kings", "url": "https://www.ecoangler.com/habitat/Lower_Kings_River.html", "title": "The Ecological Angler — Lower Kings River", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+  ],
+  "groups": [
+    {"key": "kings_river_70", "authorityKey": "cdfw", "citation": "7.50(b)(70)", "humanSummary": "Kings River (Fresno Co.) is divided into seven lettered reaches from the South Fork's Copper Creek confluence down through the San Joaquin Valley, alternating between general trout water (2-5 trout), artificial-lures/barbless-hooks catch-and-release water (0 trout), and two year-round closures (the reach immediately below Pine Flat Dam, and the Thorburn Spawning Channel).", "verbatimText": "Kings River (Fresno Co.). (A) Kings River, South Fork from its trout confluence with Copper Creek downstream to the Highway 180 crossing at Boyden Cave. All year. 2 trout. 4 trout in possession. (B) Kings River South Fork, from the Highway 180 crossing at Boyden Cave downstream to the main stem; Middle Fork, from the western boundary of Kings Canyon National Park downstream to the main stem; and main stem, from the confluence of the South and Middle forks downstream to Garnet Dike Campground. All year. Only artificial lures with barbless hooks may be used. 0 trout (C) Kings River, from Garnet Dike Campground downstream to Pine Flat Lake. All year. 2 trout. 4 trout in possession. (D) Kings River from Pine Flat Dam downstream to U. S. Army Corps of Engineers Bridge on Pine Flat Road. Closed to all fishing all year. (E) All year. 5 trout 1. Kings River from the U.S. Army Corps of Engineers Bridge on Pine Flat Road downstream to Cobles (Alta) Weir. 2. Kings River Thorburn Spawning Channel, the 2,200-foot-long channel located 5 miles downstream from Pine Flat Dam, and the reach of river within a 200-foot radius of the channel exit. Closed to all fishing all year. (F) Kings River, from Cobbles (Alta) Weir downstream to the Highway 180 crossing. All year. Only artificial lures with barbless hooks may be used. 0 trout (G) Kings River from the Highway 180 crossing downstream. All year. 5 trout"}
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_a"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(A)",
+      "humanSummary": "Open all year, South Fork Kings River from the Copper Creek confluence downstream to the Highway 180 crossing at Boyden Cave",
+      "verbatimText": "Kings River, South Fork from its trout confluence with Copper Creek downstream to the Highway 180 crossing at Boyden Cave. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout per day; 4 trout in possession (as expressly stated, overriding the general 1x-daily-bag possession default)."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Brown trout"}],
+      "scope": {"type": "reach", "reachKey": "reach_a"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(A)",
+      "humanSummary": "2 trout daily bag, 4 trout in possession, South Fork above Boyden Cave",
+      "verbatimText": "2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open_catch_release", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_b"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(B)",
+      "humanSummary": "Open all year, catch-and-release, South Fork below Boyden Cave / Middle Fork below the Kings Canyon NP boundary / main stem to Garnet Dike Campground",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {"bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_b"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(B)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_b"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(B)",
+      "humanSummary": "0 trout, catch-and-release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_c"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(C)",
+      "humanSummary": "Open all year, Garnet Dike Campground downstream to Pine Flat Lake",
+      "verbatimText": "Kings River, from Garnet Dike Campground downstream to Pine Flat Lake. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout per day; 4 trout in possession (as expressly stated, overriding the general 1x-daily-bag possession default)."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Brown trout"}],
+      "scope": {"type": "reach", "reachKey": "reach_c"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(C)",
+      "humanSummary": "2 trout daily bag, 4 trout in possession, Garnet Dike Campground to Pine Flat Lake",
+      "verbatimText": "2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {"closure_kind": "year_round", "boundary_definition": "described", "note": "Kings River from Pine Flat Dam downstream to the U.S. Army Corps of Engineers Bridge on Pine Flat Road is closed to all fishing all year."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_d"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(D)",
+      "humanSummary": "Closed to all fishing all year, immediately below Pine Flat Dam",
+      "verbatimText": "Kings River from Pine Flat Dam downstream to U. S. Army Corps of Engineers Bridge on Pine Flat Road. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_e1"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(E)1.",
+      "humanSummary": "Open all year, Corps of Engineers Bridge on Pine Flat Road downstream to Cobbles (Alta) Weir",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026", "ecoangler_lower_kings"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag limit; possession limit equals one daily bag limit (5) per the general provision at 14 CCR §7.50(a)(4) absent a separately stated possession limit."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Brown trout"}],
+      "scope": {"type": "reach", "reachKey": "reach_e1"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(E)1.",
+      "humanSummary": "5 trout daily bag limit, Corps of Engineers Bridge on Pine Flat Road downstream to Cobbles (Alta) Weir",
+      "verbatimText": "Kings River from the U.S. Army Corps of Engineers Bridge on Pine Flat Road downstream to Cobles (Alta) Weir. All year. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026", "ecoangler_lower_kings"]}
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {"closure_kind": "year_round", "boundary_definition": "radius", "note": "Kings River Thorburn Spawning Channel (a 2,200-foot-long channel about 5 miles downstream of Pine Flat Dam) and the reach of river within a 200-foot radius of the channel exit are closed to all fishing all year."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_e2"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(E)2.",
+      "humanSummary": "Closed to all fishing all year, Thorburn Spawning Channel and the 200-foot radius around its exit",
+      "verbatimText": "Kings River Thorburn Spawning Channel, the 2,200-foot-long channel located 5 miles downstream from Pine Flat Dam, and the reach of river within a 200-foot radius of the channel exit. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026", "krfmp_thorburn"]}
+    },
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open_catch_release", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_f"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(F)",
+      "humanSummary": "Open all year, catch-and-release, Cobbles (Alta) Weir downstream to the Highway 180 crossing",
+      "verbatimText": "Kings River, from Cobbles (Alta) Weir downstream to the Highway 180 crossing. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026", "ecoangler_lower_kings"]}
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {"bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_f"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(F)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_f"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(F)",
+      "humanSummary": "0 trout, catch-and-release only, Cobbles (Alta) Weir to the Highway 180 crossing",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "season",
+      "parameters": {"periods": [{"label": "open_water", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "reach", "reachKey": "reach_g"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(G)",
+      "humanSummary": "Open all year, below the Highway 180 crossing",
+      "verbatimText": "Kings River from the Highway 180 crossing downstream. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {"daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag limit; possession limit equals one daily bag limit (5) per the general provision at 14 CCR §7.50(a)(4) absent a separately stated possession limit."},
+      "groupKey": "kings_river_70", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Brown trout"}],
+      "scope": {"type": "reach", "reachKey": "reach_g"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(70)(G)",
+      "humanSummary": "5 trout daily bag limit, below the Highway 180 crossing",
+      "verbatimText": "Kings River from the Highway 180 crossing downstream. All year. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "ccr_7_50_b_70", "corroborating": ["ccr_7_50_a4", "cdfw_booklet_2026"]}
+    },
+    {
+      "ruleType": "license",
+      "parameters": {"required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license."},
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
+    }
+  ],
+  "reciprocity": []
+}

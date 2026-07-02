@@ -1,0 +1,1324 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Klamath River",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Siskiyou",
+      "Humboldt",
+      "Del Norte"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -123.53,
+    "lat": 41.3,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "reach_a",
+      "name": "California-Oregon state line to Copco Road bridge at Copco",
+      "fromDesc": "California-Oregon state line",
+      "toDesc": "Copco Road bridge at Copco",
+      "lon": -122.21,
+      "lat": 41.98
+    },
+    {
+      "key": "reach_b",
+      "name": "Copco Road bridge at Copco to Lakeview Road bridge near Iron Gate",
+      "fromDesc": "Copco Road bridge at Copco",
+      "toDesc": "Lakeview Road bridge near Iron Gate",
+      "lon": -122.38,
+      "lat": 41.95
+    },
+    {
+      "key": "reach_c",
+      "name": "Lakeview Road bridge near Iron Gate to Interstate 5 bridge",
+      "fromDesc": "Lakeview Road bridge near Iron Gate",
+      "toDesc": "Interstate 5 bridge",
+      "lon": -122.49,
+      "lat": 41.93
+    },
+    {
+      "key": "reach_d",
+      "name": "Interstate 5 bridge to the Highway 96 bridge at Weitchpec",
+      "fromDesc": "Interstate 5 bridge",
+      "toDesc": "Highway 96 bridge at Weitchpec",
+      "lon": -123.3844,
+      "lat": 41.7968
+    },
+    {
+      "key": "reach_e",
+      "name": "Highway 96 bridge at Weitchpec to the mouth",
+      "fromDesc": "Highway 96 bridge at Weitchpec",
+      "toDesc": "mouth at the Pacific Ocean near Requa",
+      "lon": -123.95,
+      "lat": 41.43
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Chinook salmon",
+      "scientificName": "Oncorhynchus tshawytscha",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Coho salmon",
+      "scientificName": "Oncorhynchus kisutch",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Hatchery rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    }
+  ],
+  "speciesGroups": [
+    {
+      "key": "hatchery_trout_steelhead",
+      "name": "Hatchery trout or hatchery steelhead",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_50",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(50) — Klamath River Basin Regulations (anadromous waters, Klamath River main stem)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "All anadromous Waters of the Klamath River Basin and Trinity River downstream of Lewiston Dam. This subsection applies only to waters of the Klamath River Basin that are accessible to anadromous salmonids. This subsection does not apply to waters of the Klamath River Basin that are inaccessible to anadromous salmon and trout, portions of the Trinity River system upstream of Lewiston Dam, and the Shasta River and tributaries upstream of Dwinnel Dam."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_klamath_basin_2025",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=233000",
+      "title": "Klamath River Basin Sport Fishing Regulations 2025 (CDFW)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_news_klamath_reopen",
+      "url": "https://wildlife.ca.gov/News/Archive/chinook-fishing-to-reopen-on-klamath-trinity-and-sacramento-rivers-after-3-year-closure",
+      "title": "CDFW News — Chinook Fishing to Reopen on Klamath, Trinity and Sacramento Rivers After 3-Year Closure",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [
+    {
+      "key": "chinook_2026_late_spring",
+      "groupKey": null,
+      "label": "Late spring-run Chinook (2026 reopening)",
+      "status": "open",
+      "startSpec": { "type": "fixed", "month": 7, "day": 1, "verbatim": "Jul. 1" },
+      "endSpec": { "type": "fixed", "month": 8, "day": 14, "verbatim": "Aug. 14" }
+    },
+    {
+      "key": "chinook_2026_fall_run",
+      "groupKey": null,
+      "label": "Fall-run Chinook (2026 reopening)",
+      "status": "open",
+      "startSpec": { "type": "fixed", "month": 8, "day": 15, "verbatim": "Aug. 15" },
+      "endSpec": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" }
+    }
+  ],
+  "regulations": [
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Applies basin-wide to all anadromous waters of the Klamath River, including all main-stem reaches."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)1",
+      "humanSummary": "Only barbless hooks may be used anywhere on the Klamath River",
+      "verbatimText": "Only barbless hooks may be used. (For definitions regarding legal hook types, hook gaps, and rigging see Section 2.10.)",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026",
+          "cdfw_klamath_basin_2025"
+        ]
+      }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": {
+        "must_release_unharmed": true,
+        "condition": "during closures to the take of adult salmon",
+        "note": "During closures to the take of adult salmon, it is unlawful to remove any adult Chinook Salmon from the water by any means."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)2",
+      "humanSummary": "During adult-salmon closures, it is unlawful to remove any adult Chinook Salmon from the water by any means",
+      "verbatimText": "During closures to the take of adult salmon, it shall be unlawful to remove any adult Chinook Salmon from the water by any means.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "documentation",
+      "parameters": {
+        "report_card_required": true,
+        "card_name": "Sport fish report card (North Coast salmon/steelhead)",
+        "note": "See Section 1.74 for sport fish report card requirements."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        },
+        {
+          "speciesCommonName": "Steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)3",
+      "humanSummary": "A sport fish report card is required per 14 CCR §1.74 when fishing for salmon or steelhead",
+      "verbatimText": "See Section 1.74 for sport fish report card requirements.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "spatial",
+        "boundary_definition": "radius",
+        "note": "Applies basin-wide to all Klamath River Basin department fish-counting weirs."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(B)1",
+      "humanSummary": "No fishing within 750 feet of any CDFW fish-counting weir",
+      "verbatimText": "No fishing is allowed within 750 feet of any department fish-counting weir.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "described",
+        "note": "Exception: members of the Karuk Tribe listed on the current Karuk Tribal Roll may fish at Ishi Pishi Falls using hand-held dip nets."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_d"
+      },
+      "appliesToClass": "non_tribal",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(B)2",
+      "humanSummary": "No fishing from the Ishi Pishi Road bridge upstream to and including Ishi Pishi Falls, Aug. 15 through Dec. 31 (tribal dip-net exception for Karuk Tribal Roll members)",
+      "verbatimText": "No fishing is allowed from the Ishi Pishi Road bridge upstream to and including Ishi Pishi Falls from Aug. 15 through Dec. 31. Exception: members of the Karuk Tribe listed on the current Karuk Tribal Roll may fish at Ishi Pishi Falls using hand-held dip nets.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "radius",
+        "note": "Protects tributary-mouth staging areas for adult salmon."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(B)3",
+      "humanSummary": "No fishing Sep. 15 through Dec. 31 within 500 feet of the mouths of the Salmon, Shasta, and Scott rivers and Blue, Bogus, Fall and Shovel creeks",
+      "verbatimText": "No fishing is allowed from Sep. 15 through Dec. 31 in the Klamath River within 500 feet of the mouths of the Salmon, Shasta, and Scott rivers, and Blue, Bogus, Fall and Shovel creeks.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "radius"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(B)4",
+      "humanSummary": "No fishing Jun. 15 through Sep. 14 within 500 feet above or below the mouth of Blue Creek",
+      "verbatimText": "No fishing is allowed from Jun. 15 through Sep. 14 in the Klamath River from 500 feet above the mouth of Blue Creek to 500 feet downstream of the mouth of Blue Creek.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": null,
+        "possession": 20,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "counting_rule": "Basin-wide aggregate possession limit for Brown Trout on the Klamath River (in addition to, not instead of, any per-segment daily bag limits)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(C)1a",
+      "humanSummary": "Brown Trout possession limit of 20 on the Klamath River",
+      "verbatimText": "The Brown Trout possession limit is 20.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": null,
+        "possession": 4,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Aggregate possession limit for hatchery trout or hatchery steelhead on the Klamath River, in addition to per-segment daily bag limits."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(C)1b(i)",
+      "humanSummary": "Hatchery trout or hatchery steelhead possession limit of 4 on the Klamath River",
+      "verbatimText": "Klamath River: 4 hatchery trout or hatchery steelhead.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "Klamath River fall-run Chinook Salmon take is regulated by an annual basin-wide quota. The CCR text on file (citing a 2024 quota of 0 fish) is SUPERSEDED: CDFW's May 2026 announcement reopened Chinook fishing on the Klamath River after a 3-year closure, with a 2026 adult quota of 3,248 fish. See the 'bag' regulations below (sourced to that announcement) for the current season's bag/possession limits. CDFW publishes weekly in-season status reports at 1-800-564-6479 — verify current status before fishing, as quotas can trigger further closures mid-season.",
+        "raw": {
+          "quota_area": "Klamath River Basin (entire basin)",
+          "quota_year": 2026,
+          "adult_quota_count": 3248,
+          "hotline": "1-800-564-6479",
+          "superseded_2024_quota_count": 0
+        }
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(D)1 (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "Klamath River fall-run Chinook Salmon harvest is managed by an annual basin-wide quota — reopened for 2026 with an adult quota of 3,248 fish after a 3-year closure; verify current-year status via CDFW's weekly hotline",
+      "verbatimText": "The 2024 Klamath River Basin quota is 0 Klamath River fall-run Chinook Salmon. The department shall inform the commission, and the public via the news media, prior to any implementation of restrictions triggered by the quotas. (Note: A department status report on progress toward the quotas for the various river sections is updated weekly, and available by calling 1-800-564-6479.)",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "cdfw_news_klamath_reopen",
+        "corroborating": [
+          "ccr_7_40_b_50",
+          "cdfw_klamath_basin_2025"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 1,
+        "possession": 2,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Late spring-run Chinook Salmon, any size. Basin-wide, per CDFW's May 2026 reopening announcement (ending the 3-year closure)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "chinook_2026_late_spring",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "CDFW News 2026-05-12 — Klamath/Trinity/Sacramento Chinook Reopening",
+      "humanSummary": "Late spring-run Chinook Salmon (Jul. 1–Aug. 14, 2026): 1 fish/day of any size, 2 in possession — basin-wide, following the 2026 reopening after a 3-year closure",
+      "verbatimText": "Daily bag limit: one fish of any size. Possession limit: two fish.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "cdfw_news_klamath_reopen",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 6,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "sub_limits": [
+          {
+            "target": { "species": "Chinook salmon (adult, >23 in)" },
+            "mode": "carve_out",
+            "max_daily": 1,
+            "max_possession": 3
+          }
+        ],
+        "counting_rule": "Fall-run Chinook Salmon, basin-wide: 2/day total (of which at most 1 may be an adult over 23 in.); 6 in possession (of which at most 3 may be adults over 23 in.). Subject to the 2026 basin-wide adult quota of 3,248 fish, per CDFW's May 2026 reopening announcement — quota status is monitored weekly and can trigger further in-season restrictions."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "chinook_2026_fall_run",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "CDFW News 2026-05-12 — Klamath/Trinity/Sacramento Chinook Reopening",
+      "humanSummary": "Fall-run Chinook Salmon (Aug. 15–Dec. 31, 2026): 2 fish/day (max 1 adult >23 in.), 6 in possession (max 3 adult) — basin-wide, following the 2026 reopening; 2026 adult quota is 3,248 fish, verify current status before fishing",
+      "verbatimText": "Daily bag limit: two fish, only one of which can be an adult greater than 23 inches. Possession limit: six fish, of which only three may be adults greater than 23 inches.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "cdfw_news_klamath_reopen",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "fall_winter",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 11,
+              "day": 1,
+              "verbatim": "Nov. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 2,
+              "day": 28,
+              "verbatim": "Feb. 28"
+            }
+          },
+          {
+            "label": "late_spring_summer",
+            "status": "open",
+            "start": {
+              "type": "relative",
+              "ordinal": "fourth",
+              "weekday": "sat",
+              "month": 5,
+              "verbatim": "fourth Sat. in May"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          }
+        ],
+        "note": "Closed to all fishing outside these listed windows."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2a",
+      "humanSummary": "Open Nov. 1–Feb. 28 and fourth Saturday in May–Aug. 31 from the CA-OR state line to Copco Road bridge at Copco",
+      "verbatimText": "Nov. 1 through Feb. 28 and fourth Sat. in May through Aug. 31.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial lures with barbless hooks may be used in this reach."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2a",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from the CA-OR state line to Copco Road bridge at Copco",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true,
+        "counting_rule": "0 hatchery trout or hatchery steelhead may be kept — catch-and-release only for trout/steelhead in this reach."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2a",
+      "humanSummary": "0 hatchery trout or hatchery steelhead may be retained (catch-and-release only) from the CA-OR state line to Copco Road bridge at Copco",
+      "verbatimText": "0 hatchery trout or hatchery steelhead**.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "year_round",
+        "boundary_definition": "described"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2a",
+      "humanSummary": "Closed to the take and possession of Chinook Salmon from the CA-OR state line to Copco Road bridge at Copco",
+      "verbatimText": "Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "year_round",
+        "boundary_definition": "described"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2b",
+      "humanSummary": "Closed to all fishing all year from Copco Road bridge at Copco to Lakeview Road bridge near Iron Gate",
+      "verbatimText": "Closed to all fishing all year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "main_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 14,
+              "verbatim": "Aug. 14"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 8,
+              "day": 15,
+              "verbatim": "Aug. 15"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for hatchery trout/steelhead; Chinook Salmon closed Aug. 15 through Dec. 31 under the fall-run quota (see closure rule)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2c",
+      "humanSummary": "Open year-round from the Lakeview Road bridge near Iron Gate to Interstate 5 bridge; Chinook Salmon closed Aug. 15–Dec. 31 under the fall-run quota",
+      "verbatimText": "Jan. 1 to Aug. 14. ... Fall-run Quota: 0 Chinook Salmon Aug. 15 to Dec. 31, 2024.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2c",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Lakeview Road bridge near Iron Gate to Interstate 5 bridge",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Lakeview Road bridge near Iron Gate to Interstate 5 bridge",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 fall-run 0-quota closure is not currently in effect. CDFW's May 2026 announcement reopened Klamath River Chinook fishing basin-wide (see the fall-run bag regulation above, seasonPeriodKey chinook_2026_fall_run). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2c (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 fall-run closure (quota was 0 fish) has been superseded by the 2026 basin-wide reopening",
+      "verbatimText": "Fall-run Quota: 0 Chinook Salmon Aug. 15 to Dec. 31, 2024. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "main_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 14,
+              "verbatim": "Aug. 14"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 8,
+              "day": 15,
+              "verbatim": "Aug. 15"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for hatchery trout/steelhead; Chinook Salmon closed Aug. 15 through Dec. 31 under the fall-run quota (see closure rule)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_d"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2d",
+      "humanSummary": "Open year-round from the Interstate 5 bridge to the Highway 96 bridge at Weitchpec; Chinook Salmon closed Aug. 15–Dec. 31 under the fall-run quota",
+      "verbatimText": "Jan. 1 to Aug. 14. ... Fall-run Quota: 0 Chinook Salmon Aug. 15 to Dec. 31, 2024.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_d"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2d",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Interstate 5 bridge to the Highway 96 bridge at Weitchpec",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Interstate 5 bridge to the Highway 96 bridge at Weitchpec",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 fall-run 0-quota closure is not currently in effect. CDFW's May 2026 announcement reopened Klamath River Chinook fishing basin-wide (see the fall-run bag regulation above, seasonPeriodKey chinook_2026_fall_run). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_d"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2d (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 fall-run closure (quota was 0 fish) has been superseded by the 2026 basin-wide reopening",
+      "verbatimText": "Fall-run Quota: 0 Chinook Salmon Aug. 15 to Dec. 31, 2024. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "winter_spring",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 6,
+              "day": 30,
+              "verbatim": "Jun. 30"
+            }
+          },
+          {
+            "label": "early_summer",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 7,
+              "day": 1,
+              "verbatim": "Jul. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 14,
+              "verbatim": "Aug. 14"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 8,
+              "day": 15,
+              "verbatim": "Aug. 15"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for hatchery trout/steelhead; Chinook Salmon closed Jul. 1 through Dec. 31 (see closure rules). Spit area subject to an additional quota-triggered closure."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2e",
+      "humanSummary": "Open year-round downstream of the Highway 96 bridge at Weitchpec; Chinook Salmon closed Jul. 1–Dec. 31",
+      "verbatimText": "Jan. 1 through Jun. 30. ... Jul. 1 through Aug. 14. ... Fall-run Quota: 0 Chinook Salmon Aug. 15 through Dec. 31, 2024.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2e",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit downstream of the Highway 96 bridge at Weitchpec",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Klamath River downstream of Weitchpec",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 closure (both the Jul. 1–Aug. 14 window and the 0-quota fall-run window) is not currently in effect. CDFW's May 2026 announcement reopened Klamath River Chinook fishing basin-wide (see the late-spring and fall-run bag regulations above). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2e (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 closure (Jul. 1–Aug. 14 and the 0-fish fall-run quota window) has been superseded by the 2026 basin-wide reopening",
+      "verbatimText": "Jul. 1 through Aug. 14. Closed to the take and possession of Chinook Salmon. ... Fall-run Quota: 0 Chinook Salmon Aug. 15 through Dec. 31, 2024. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "radius",
+        "trigger": {
+          "kind": "quota",
+          "quota_area": "Spit area at the Klamath River mouth",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "Spit area (within 100 yards of the channel through the sand spit formed at the Klamath River mouth) closes to all fishing once 15% of the total Klamath River Basin fall-run quota has been taken downstream of the Highway 101 bridge."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(D)2b(i); (E)2e",
+      "humanSummary": "Spit area at the Klamath River mouth (within 100 yards of the sand-spit channel) closes to all fishing once 15% of the basin quota is taken",
+      "verbatimText": "The spit area (within 100 yards of the channel through the sand spit formed at the Klamath River mouth) will close when 15% of the total Klamath River Basin quota is taken downstream of the Highway 101 bridge.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025"
+        ]
+      }
+    },
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "In the spit area, all legally caught Chinook Salmon must be retained. Once the adult (greater than 23 inches) component of the total daily bag limit has been retained, anglers must cease fishing in the spit area.",
+        "raw": {
+          "min_adult_length_in": 23
+        }
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)2e",
+      "humanSummary": "In the spit area, all legally caught Chinook Salmon must be retained; anglers must stop fishing there once the adult (>23 in) portion of the daily bag is reached",
+      "verbatimText": "All legally caught Chinook Salmon must be retained. Once the adult (greater than 23 inches) component of the total daily bag limit has been retained, anglers must cease fishing in the spit area.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,1234 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Trinity River",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Trinity",
+      "Humboldt"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -123.2,
+    "lat": 40.85,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "reach_a",
+      "name": "250 feet below Lewiston Dam to the Old Lewiston Bridge",
+      "fromDesc": "250 feet downstream of Lewiston Dam",
+      "toDesc": "Old Lewiston Bridge",
+      "lon": -122.812,
+      "lat": 40.722
+    },
+    {
+      "key": "reach_b",
+      "name": "Old Lewiston Bridge to the Highway 299 West bridge at Cedar Flat",
+      "fromDesc": "Old Lewiston Bridge",
+      "toDesc": "Highway 299 West bridge at Cedar Flat",
+      "lon": -123.03,
+      "lat": 40.74
+    },
+    {
+      "key": "reach_c",
+      "name": "Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar",
+      "fromDesc": "Highway 299 West bridge at Cedar Flat",
+      "toDesc": "Denny Road bridge at Hawkins Bar",
+      "lon": -123.36,
+      "lat": 40.81
+    },
+    {
+      "key": "reach_e",
+      "name": "Denny Road bridge at Hawkins Bar to the mouth of the South Fork Trinity River",
+      "fromDesc": "Denny Road bridge at Hawkins Bar",
+      "toDesc": "mouth of the South Fork Trinity River",
+      "lon": -123.48,
+      "lat": 40.82
+    },
+    {
+      "key": "reach_f",
+      "name": "Mouth of the South Fork Trinity River to the confluence with the Klamath River",
+      "fromDesc": "mouth of the South Fork Trinity River",
+      "toDesc": "confluence with the Klamath River at Weitchpec",
+      "lon": -123.57,
+      "lat": 40.99
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Chinook salmon",
+      "scientificName": "Oncorhynchus tshawytscha",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Coho salmon",
+      "scientificName": "Oncorhynchus kisutch",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Hatchery rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    }
+  ],
+  "speciesGroups": [
+    {
+      "key": "hatchery_trout_steelhead",
+      "name": "Hatchery trout or hatchery steelhead",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_50",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(50) — Klamath River Basin Regulations (Trinity River main stem below Lewiston Dam)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "All anadromous Waters of the Klamath River Basin and Trinity River downstream of Lewiston Dam. This subsection applies only to waters of the Klamath River Basin that are accessible to anadromous salmonids. This subsection does not apply to waters of the Klamath River Basin that are inaccessible to anadromous salmon and trout, portions of the Trinity River system upstream of Lewiston Dam, and the Shasta River and tributaries upstream of Dwinnel Dam."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_klamath_basin_2025",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=233000",
+      "title": "Klamath River Basin Sport Fishing Regulations 2025 (CDFW)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_news_klamath_reopen",
+      "url": "https://wildlife.ca.gov/News/Archive/chinook-fishing-to-reopen-on-klamath-trinity-and-sacramento-rivers-after-3-year-closure",
+      "title": "CDFW News — Chinook Fishing to Reopen on Klamath, Trinity and Sacramento Rivers After 3-Year Closure",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [
+    {
+      "key": "chinook_2026_late_spring",
+      "groupKey": null,
+      "label": "Late spring-run Chinook (2026 reopening)",
+      "status": "open",
+      "startSpec": { "type": "fixed", "month": 7, "day": 1, "verbatim": "Jul. 1" },
+      "endSpec": { "type": "fixed", "month": 8, "day": 31, "verbatim": "Aug. 31" }
+    },
+    {
+      "key": "chinook_2026_fall_run",
+      "groupKey": null,
+      "label": "Fall-run Chinook (2026 reopening)",
+      "status": "open",
+      "startSpec": { "type": "fixed", "month": 9, "day": 1, "verbatim": "Sep. 1" },
+      "endSpec": { "type": "fixed", "month": 12, "day": 31, "verbatim": "Dec. 31" }
+    }
+  ],
+  "regulations": [
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 1,
+        "possession": 2,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Late spring-run Chinook Salmon, any size. Basin-wide (Klamath-Trinity system), per CDFW's May 2026 reopening announcement (ending the 3-year closure)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "chinook_2026_late_spring",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        { "speciesCommonName": "Chinook salmon" }
+      ],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "CDFW News 2026-05-12 — Klamath/Trinity/Sacramento Chinook Reopening",
+      "humanSummary": "Late spring-run Chinook Salmon (Jul. 1–Aug. 31, 2026): 1 fish/day of any size, 2 in possession — following the 2026 reopening after a 3-year closure",
+      "verbatimText": "Daily bag limit: one fish of any size. Possession limit: two fish.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": { "primary": "cdfw_news_klamath_reopen", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 6,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "sub_limits": [
+          { "target": { "species": "Chinook salmon (adult, >23 in)" }, "mode": "carve_out", "max_daily": 1, "max_possession": 3 }
+        ],
+        "counting_rule": "Fall-run Chinook Salmon: 2/day total (of which at most 1 may be an adult over 23 in.); 6 in possession (of which at most 3 may be adults over 23 in.). Per CDFW's May 2026 reopening announcement — verify current in-season status, as quotas can trigger further restrictions."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "chinook_2026_fall_run",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        { "speciesCommonName": "Chinook salmon" }
+      ],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "CDFW News 2026-05-12 — Klamath/Trinity/Sacramento Chinook Reopening",
+      "humanSummary": "Fall-run Chinook Salmon (Sep. 1–Dec. 31, 2026): 2 fish/day (max 1 adult >23 in.), 6 in possession (max 3 adult) — following the 2026 reopening; verify current status before fishing",
+      "verbatimText": "Daily bag limit: two fish, only one of which can be an adult greater than 23 inches. Possession limit: six fish, of which only three may be adults greater than 23 inches.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": { "primary": "cdfw_news_klamath_reopen", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Applies basin-wide to all anadromous waters of the Klamath River Basin, including the Trinity River."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)1",
+      "humanSummary": "Only barbless hooks may be used anywhere on the Trinity River",
+      "verbatimText": "Only barbless hooks may be used. (For definitions regarding legal hook types, hook gaps, and rigging see Section 2.10.)",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "documentation",
+      "parameters": {
+        "report_card_required": true,
+        "card_name": "Sport fish report card (North Coast salmon/steelhead)",
+        "note": "See Section 1.74 for sport fish report card requirements."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        },
+        {
+          "speciesCommonName": "Steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)3",
+      "humanSummary": "A sport fish report card is required per 14 CCR §1.74 when fishing for salmon or steelhead",
+      "verbatimText": "See Section 1.74 for sport fish report card requirements.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": null,
+        "possession": 4,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Aggregate possession limit for hatchery trout or hatchery steelhead on the Trinity River, in addition to per-segment daily bag limits."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(C)1b(ii)",
+      "humanSummary": "Hatchery trout or hatchery steelhead possession limit of 4 on the Trinity River",
+      "verbatimText": "Trinity River: 4 hatchery trout or hatchery steelhead.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 4,
+              "day": 1,
+              "verbatim": "Apr. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 9,
+              "day": 15,
+              "verbatim": "Sep. 15"
+            }
+          }
+        ],
+        "note": "Closed to all fishing outside Apr. 1 – Sep. 15."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6a",
+      "humanSummary": "Open Apr. 1 through Sep. 15 from 250 feet below Lewiston Dam to the Old Lewiston Bridge",
+      "verbatimText": "Apr. 1 through Sep. 15. Only artificial flies with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": true,
+        "lures_allowed": false,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial flies with barbless hooks may be used in this reach."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6a",
+      "humanSummary": "Only artificial flies with barbless hooks may be used from 250 feet below Lewiston Dam to the Old Lewiston Bridge",
+      "verbatimText": "Only artificial flies with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6a",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from 250 feet below Lewiston Dam to the Old Lewiston Bridge",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "winter_spring",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 6,
+              "day": 30,
+              "verbatim": "Jun. 30"
+            }
+          },
+          {
+            "label": "summer",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 7,
+              "day": 1,
+              "verbatim": "Jul. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 9,
+              "day": 1,
+              "verbatim": "Sep. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for Brown Trout and hatchery trout/steelhead; Chinook Salmon closed under the fall-run quota (see closure rule)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6b",
+      "humanSummary": "Open Jan. 1–Jun. 30 and Jul. 1–Aug. 31 from the Old Lewiston Bridge to the Highway 299 West bridge at Cedar Flat; open year-round for trout, Chinook closed Sep. 1–Dec. 31",
+      "verbatimText": "Jan. 1 through Jun. 30. ... Jul. 1 through Aug. 31. ... Sep. 1 through Dec. 31.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 10,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "counting_rule": "10 Brown Trout per day, counted separately from the hatchery trout/steelhead limit."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6b",
+      "humanSummary": "10 Brown Trout daily bag limit from the Old Lewiston Bridge to the Highway 299 West bridge at Cedar Flat",
+      "verbatimText": "10 Brown Trout.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6b",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Old Lewiston Bridge to the Highway 299 West bridge at Cedar Flat",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Old Lewiston Bridge to the Highway 299 West bridge at Cedar Flat",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 closure is not currently in effect. CDFW's May 2026 announcement reopened Trinity River Chinook fishing (see the bag regulations above). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6b (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 closure (quota was 0 fish) has been superseded by the 2026 reopening",
+      "verbatimText": "Jul. 1 through Aug. 31. Closed to the take and possession of Chinook Salmon. ... Fall-run Quota: 0 Chinook Salmon Sep. 1 through Dec. 31, 2024. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "winter_spring",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 6,
+              "day": 30,
+              "verbatim": "Jun. 30"
+            }
+          },
+          {
+            "label": "summer",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 7,
+              "day": 1,
+              "verbatim": "Jul. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          }
+        ],
+        "note": "Closed to all fishing Sep. 1 through Dec. 31 in this reach (no fall-run Chinook fishery here)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6c",
+      "humanSummary": "Open Jan. 1–Jun. 30 and Jul. 1–Aug. 31 from the Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar; closed all year Sep. 1–Dec. 31",
+      "verbatimText": "Jan. 1 through Jun. 30. ... Jul. 1 through Aug. 31. ... Sep. 1 through Dec. 31. Closed to all fishing.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 10,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "counting_rule": "10 Brown Trout per day, counted separately from the hatchery trout/steelhead limit."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6c",
+      "humanSummary": "10 Brown Trout daily bag limit from the Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar",
+      "verbatimText": "10 Brown Trout.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6c",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "described"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6c",
+      "humanSummary": "Closed to all fishing Sep. 1 through Dec. 31 from the Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar",
+      "verbatimText": "Sep. 1 through Dec. 31. Closed to all fishing.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "described"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6c",
+      "humanSummary": "Closed to take/possession of Chinook Salmon Jul. 1–Aug. 31 from the Highway 299 West bridge at Cedar Flat to the Denny Road bridge at Hawkins Bar",
+      "verbatimText": "Jul. 1 through Aug. 31. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "main_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 9,
+              "day": 1,
+              "verbatim": "Sep. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for Brown Trout and hatchery trout/steelhead; Chinook Salmon closed Sep. 1–Dec. 31 under a fall-run quota that is cumulative across reaches E and F."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6e",
+      "humanSummary": "Open year-round from the Denny Road bridge at Hawkins Bar to the mouth of the South Fork Trinity River; Chinook Salmon closed Sep. 1–Dec. 31 under a cumulative fall-run quota shared with the adjoining reach",
+      "verbatimText": "Jan. 1 through Aug. 31. ... Fall-run Quota: 0 Chinook Salmon Sep. 1 through Dec. 31, 2024. This is the cumulative quota for subsections 6.e. and 6.f. of this table.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 10,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "counting_rule": "10 Brown Trout per day, counted separately from the hatchery trout/steelhead limit."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6e",
+      "humanSummary": "10 Brown Trout daily bag limit from the Denny Road bridge at Hawkins Bar to the mouth of the South Fork Trinity River",
+      "verbatimText": "10 Brown Trout.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6e",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Denny Road bridge at Hawkins Bar to the mouth of the South Fork Trinity River",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Trinity River reaches E+F (cumulative)",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 closure is not currently in effect. CDFW's May 2026 announcement reopened Trinity River Chinook fishing (see the bag regulations above). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_e"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6e (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 cumulative closure (quota was 0 fish) has been superseded by the 2026 reopening",
+      "verbatimText": "Fall-run Quota: 0 Chinook Salmon Sep. 1 through Dec. 31, 2024. This is the cumulative quota for subsections 6.e. and 6.f. of this table. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "main_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 8,
+              "day": 31,
+              "verbatim": "Aug. 31"
+            }
+          },
+          {
+            "label": "fall_period",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 9,
+              "day": 1,
+              "verbatim": "Sep. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          }
+        ],
+        "note": "Open year-round for Brown Trout and hatchery trout/steelhead; Chinook Salmon closed Sep. 1–Dec. 31 under a fall-run quota that is cumulative across reaches E and F."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_f"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6f",
+      "humanSummary": "Open year-round from the mouth of the South Fork Trinity River to the confluence with the Klamath River; Chinook Salmon closed Sep. 1–Dec. 31 under a cumulative fall-run quota shared with the adjoining reach",
+      "verbatimText": "Jan. 1 through Aug. 31. ... Fall-run Quota: 0 Chinook Salmon Sep. 1 through Dec. 31, 2024. This is the cumulative quota for subsections 6.e. and 6.f. of this table.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 10,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "counting_rule": "10 Brown Trout per day, counted separately from the hatchery trout/steelhead limit."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_f"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6f",
+      "humanSummary": "10 Brown Trout daily bag limit from the mouth of the South Fork Trinity River to the confluence with the Klamath River",
+      "verbatimText": "10 Brown Trout.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_f"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6f",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the mouth of the South Fork Trinity River to the confluence with the Klamath River",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "quota_triggered",
+        "boundary_definition": "described",
+        "trigger": {
+          "kind": "quota",
+          "quota_count": 0,
+          "quota_area": "Trinity River reaches E+F (cumulative)",
+          "hotline": "1-800-564-6479"
+        },
+        "note": "SUPERSEDED: this 2024 closure is not currently in effect. CDFW's May 2026 announcement reopened Trinity River Chinook fishing (see the bag regulations above). Retained for reference; verify current in-season status via CDFW's hotline."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_f"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6f (2024 text, superseded); CDFW News 2026-05-12",
+      "humanSummary": "NOT currently in effect — this 2024 cumulative closure (quota was 0 fish) has been superseded by the 2026 reopening",
+      "verbatimText": "Fall-run Quota: 0 Chinook Salmon Sep. 1 through Dec. 31, 2024. This is the cumulative quota for subsections 6.e. and 6.f. of this table. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_klamath_basin_2025",
+          "cdfw_news_klamath_reopen"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

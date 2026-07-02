@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Mountain View Park Pond",
+    "waterType": "pond",
+    "states": ["NV"],
+    "counties": ["Lyon"],
+    "aliases": ["Mountain View Pond", "the Pond Park"],
+    "gnisId": null,
+    "lon": -119.167,
+    "lat": 38.9916,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Channel catfish", "scientificName": "Ictalurus punctatus", "category": "catfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Bluegill", "scientificName": "Lepomis macrochirus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Mountain View Park Pond. Season: Open year around. Daily: 3 game fish. Possession: 6 game fish. Hours: Hours park is open to public use." },
+    { "key": "s_ndow_waters_mvp", "url": "https://www.ndow.org/waters/mountain-view-pond/", "title": "Mountain View Pond- LY — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Mountain View Park Pond is about 4 feet deep and covers 1/3 of an acre... It is stocked with rainbow trout from Mason Valley Fish Hatchery that average about 9-inches. Most anglers use bait such as night crawlers, Power Bait, corn, or salmon eggs." },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "Open season", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — Lyon County — Mountain View Park Pond",
+      "humanSummary": "Mountain View Park Pond (Yerington, Lyon County) is open to fishing year-round.",
+      "verbatimText": "Open year around",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": ["s_ndow_waters_mvp"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 3, "possession": 6, "unit": "fish", "aggregation": "combined_all", "counting_rule": "No species-specific sub-limit is stated; limit applies to combined daily/possession total across all game fish species present (trout, catfish, bluegill)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — Lyon County — Mountain View Park Pond",
+      "humanSummary": "Daily limit 3 game fish; possession limit 6 game fish (all species combined) at Mountain View Park Pond.",
+      "verbatimText": "Daily: 3 game fish. Possession: 6 game fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "park_hours", "note": "NDOW's commission-regulation table lists hours as 'hours park is open to public use', with no fixed clock times; refer to City of Yerington park hours." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — Lyon County — Mountain View Park Pond",
+      "humanSummary": "Fishing is allowed during the hours the park is open to the public.",
+      "verbatimText": "Hours: Hours park is open to public use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Standard Nevada resident/nonresident fishing license required for anglers 12 and older." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NDOW — Apply & Buy: Fishing Licenses",
+      "humanSummary": "A Nevada fishing license is required for anglers age 12 and older; no license required under age 12.",
+      "verbatimText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

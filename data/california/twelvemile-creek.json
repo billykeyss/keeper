@@ -1,0 +1,224 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Twelvemile Creek",
+    "waterType": "creek",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Modoc"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.13,
+    "lat": 41.985,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Redband trout",
+      "scientificName": "Oncorhynchus mykiss newberrii",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_50_b_157",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "14 CCR \u00a77.50(b)(157) \u2014 Twelvemile Creek (Modoc Co.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(157) Twelvemile Creek (Modoc Co.). Sat. preceding Memorial Day through the last day in Feb. Only artificial lures with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_water",
+            "status": "open_catch_release",
+            "start": {
+              "type": "relative",
+              "ordinal": "last",
+              "weekday": "sat",
+              "month": 5,
+              "relation": "preceding",
+              "anchor_holiday": "memorial_day",
+              "verbatim": "Saturday preceding Memorial Day"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 2,
+              "day": 28,
+              "verbatim": "the last day in Feb."
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(157)",
+      "humanSummary": "Open Saturday preceding Memorial Day through the last day of February, catch-and-release only",
+      "verbatimText": "Sat. preceding Memorial Day through the last day in Feb.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_157",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial lures with barbless hooks may be used."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(157)",
+      "humanSummary": "Artificial lures with barbless hooks only",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_157",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "catch_and_release": true,
+        "counting_rule": "Zero daily bag and possession limit for trout; this native redband trout stream is managed as catch-and-release only during the open season."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Redband trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(157)",
+      "humanSummary": "Zero trout bag limit \u2014 all trout must be released",
+      "verbatimText": "0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_157",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

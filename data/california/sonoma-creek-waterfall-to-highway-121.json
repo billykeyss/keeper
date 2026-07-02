@@ -1,0 +1,48 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Sonoma Creek and tributaries (waterfall to Highway 121 bridge)", "waterType": "creek", "states": ["CA"], "counties": ["Sonoma"], "aliases": ["Sonoma Creek"], "gnisId": null, "lon": -122.478, "lat": 38.332, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_106", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(106) — Sonoma Creek and tributaries (Sonoma Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(106) Sonoma Creek and tributaries (Sonoma Co.). Sonoma Creek and tributaries between the Sonoma Creek seasonal waterfall in Sugarloaf Ridge State Park (located 0.2 miles upstream of the west end of the Canyon Trail) and the Highway 121 bridge. Note: Sonoma Creek below the Highway 121 bridge is tidewater, and is under regulations for the Ocean and San Francisco Bay District (see Sections 1.53 and 27.00). Closed to all fishing year." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ca_parks_sugarloaf", "url": "https://www.parks.ca.gov/?page_id=481", "title": "Sugarloaf Ridge State Park | California State Parks", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Sonoma Creek and tributaries between the Sonoma Creek seasonal waterfall in Sugarloaf Ridge State Park (0.2 miles upstream of the west end of the Canyon Trail) and the Highway 121 bridge are closed to all fishing year-round. Sonoma Creek below the Highway 121 bridge is tidewater and is governed instead by the Ocean and San Francisco Bay District rules (14 CCR §§1.53, 27.00). Sonoma Creek above the waterfall is a separately regulated catch-and-release reach under 14 CCR §7.50(b)(141)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(106)",
+      "humanSummary": "Closed to all fishing year-round between the Sugarloaf Ridge State Park seasonal waterfall and the Highway 121 bridge",
+      "verbatimText": "Closed to all fishing year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_106", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. This reach is closed to all fishing year-round, so the license requirement is moot here, but is included for statewide-standard completeness." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

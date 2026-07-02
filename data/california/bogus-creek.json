@@ -1,0 +1,48 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Bogus Creek", "waterType": "creek", "states": ["CA"], "counties": ["Siskiyou"], "aliases": [], "gnisId": null, "lon": -122.4396, "lat": 41.9292, "verifyCurrent": true },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Coho salmon", "scientificName": "Oncorhynchus kisutch", "category": "salmon", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_20", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(20) — Bogus Creek (Siskiyou Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(20) Bogus Creek (Siskiyou Co.). See Klamath River, subsection (b)(50)." },
+    { "key": "ccr_7_40_b_50", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(50) — Klamath River Basin anadromous waters special regulations table", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_bogus_creek_salmon_studies", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=38206", "title": "Bogus Creek Salmon Studies 2010 — Final Report (CDFW)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Bogus Creek (Siskiyou Co.), a Klamath River tributary near Hornbrook that is an important Chinook and coho salmon spawning stream, does not have its own listed season/bag table. Anglers must instead follow the special regulations set for the Klamath River in 14 CCR §7.40(b)(50), which governs anadromous waters of the Klamath River basin.", "raw": { "cross_reference": "7.40(b)(50)" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(20)",
+      "humanSummary": "Bogus Creek has no independent season/bag rule; it follows the Klamath River special regulations table at 7.40(b)(50)",
+      "verbatimText": "Bogus Creek (Siskiyou Co.). See Klamath River, subsection (b)(50).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_20", "corroborating": ["ccr_7_40_b_50", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

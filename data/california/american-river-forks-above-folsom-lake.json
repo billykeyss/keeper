@@ -1,0 +1,333 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Placer",
+      "El Dorado",
+      "Amador",
+      "Alpine"
+    ],
+    "aliases": [
+      "North Fork American River",
+      "Middle Fork American River",
+      "South Fork American River"
+    ],
+    "gnisId": null,
+    "lon": -121.067,
+    "lat": 38.907,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_50_b_4",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 \u00a77.50(b)(4) \u2014 American River, North Fork, Middle Fork, South Fork and tributaries above Folsom Lake",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(4) American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek) (See subsection (b)(24)). Sat. preceding Memorial Day through Sep. 30. 5 trout Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout"
+    },
+    {
+      "key": "cdfw_freshwater_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "This entry excludes Caples Creek, which is separately regulated under CCR \u00a77.50(b)(24).",
+        "raw": {
+          "excluded_water": "Caples Creek",
+          "excluded_water_citation": "7.50(b)(24)"
+        }
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "excludes",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Caples Creek is excluded from this entry and is regulated separately",
+      "verbatimText": "except Caples Creek) (See subsection (b)(24))",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_4",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "general_season",
+            "status": "open",
+            "start": {
+              "type": "relative",
+              "ordinal": "last",
+              "weekday": "sat",
+              "month": 5,
+              "relation": "preceding",
+              "anchor_holiday": "memorial_day",
+              "verbatim": "Saturday preceding Memorial Day"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 9,
+              "day": 30,
+              "verbatim": "September 30"
+            }
+          },
+          {
+            "label": "fall_winter_artificial_only",
+            "status": "open_catch_release",
+            "start": {
+              "type": "fixed",
+              "month": 10,
+              "day": 1,
+              "verbatim": "October 1"
+            },
+            "end": {
+              "type": "relative",
+              "ordinal": "last",
+              "weekday": "fri",
+              "month": 5,
+              "relation": "preceding",
+              "anchor_holiday": "memorial_day",
+              "verbatim": "Friday preceding Memorial Day"
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Open Saturday preceding Memorial Day through September 30 (5-trout limit); open October 1 through the Friday preceding Memorial Day for artificial-lure, barbless-hook catch-and-release only",
+      "verbatimText": "Sat. preceding Memorial Day through Sep. 30. 5 trout Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_4",
+        "corroborating": [
+          "cdfw_freshwater_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_all",
+        "counting_rule": "Daily limit of 5 trout, possession limit of 10 (twice the daily limit per statewide default \u00a75.85), during the Saturday preceding Memorial Day through September 30 season."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Rainbow trout"
+        },
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "5-trout daily bag limit, Saturday preceding Memorial Day through September 30",
+      "verbatimText": "5 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_4",
+        "corroborating": [
+          "cdfw_freshwater_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial lures with barbless hooks may be used, October 1 through the Friday preceding Memorial Day."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Artificial lures with barbless hooks only, October 1 through the Friday preceding Memorial Day",
+      "verbatimText": "Only artificial lures with barbless hook may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_4",
+        "corroborating": [
+          "cdfw_freshwater_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "catch_and_release": true,
+        "counting_rule": "Zero trout may be retained October 1 through the Friday preceding Memorial Day; all trout caught must be released unharmed."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Rainbow trout"
+        },
+        {
+          "speciesCommonName": "Brown trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Zero trout bag limit (catch and release only), October 1 through the Friday preceding Memorial Day",
+      "verbatimText": "0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_4",
+        "corroborating": [
+          "cdfw_freshwater_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

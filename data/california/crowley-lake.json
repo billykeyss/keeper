@@ -1,0 +1,115 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Crowley Lake", "waterType": "reservoir", "states": ["CA"], "counties": ["Mono"], "aliases": ["Lake Crowley"], "gnisId": null, "lon": -118.7370, "lat": 37.5810, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "outlet_dam_buffer", "name": "Crowley Lake within 1,800 feet of the outlet dam", "fromDesc": "buoy line 1,800 feet from the outlet (Long Valley) dam", "toDesc": "outlet (Long Valley) dam", "lon": -118.7180, "lat": 37.5860 },
+    { "key": "main_body", "name": "Crowley Lake, except the closed area near the outlet dam", "fromDesc": "buoy line 1,800 feet from the outlet dam", "toDesc": "main body of the lake", "lon": -118.7500, "lat": 37.5780 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [
+    { "key": "trout", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_b_38", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(38) — Crowley Lake (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(38) Crowley Lake (Mono Co.). (See individual listings for regulations on tributary waters which include: Convict, Crooked, Hilton, Hot, McGee, and Whiskey creeks and the upper Owens River). (A) Crowley Lake within 1,800 feet of the outlet dam (this area is marked with a series of buoys). Closed to all fishing all year for safety purposes. (B) Crowley Lake, except for the closed area near the outlet dam (see above). Last Sat. in Apr. through Jul. 31. 5 trout Aug. 1 through Nov. 15. Only artificial lures may be used. Minimum size limit: 18 inches total length. 2 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "mono_county_faq", "url": "https://www.monocounty.org/things-to-do/fishing/fishing-rules-regulations/faq/", "title": "Frequently Asked Fishing Questions | Mono County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "ccr_5_85", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85 — Trout (statewide daily bag and possession limits)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "daily bag and possession limits mean the total number of trout in combination" },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "signs_buoys", "note": "Closed to all fishing all year for safety purposes; area is marked with a series of buoys within 1,800 feet of the outlet dam." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "outlet_dam_buffer" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(A)",
+      "humanSummary": "Closed to all fishing all year within 1,800 feet of the outlet dam (buoy-marked, safety closure)",
+      "verbatimText": "Crowley Lake within 1,800 feet of the outlet dam (this area is marked with a series of buoys). Closed to all fishing all year for safety purposes.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "general_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 7, "day": 31, "verbatim": "July 31" } },
+        { "label": "fall_catch_and_release_lures", "status": "open", "start": { "type": "fixed", "month": 8, "day": 1, "verbatim": "August 1" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } }
+      ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "main_body" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(B)",
+      "humanSummary": "Open last Saturday in April through July 31 (general season), and August 1 through November 15 (artificial-lure-only period), on the main body of the lake outside the outlet-dam safety closure",
+      "verbatimText": "Last Sat. in Apr. through Jul. 31. ... Aug. 1 through Nov. 15. Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026", "mono_county_faq"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies during the general season, last Saturday in April through July 31. Possession limit of 10 is the statewide default (twice the daily bag) per CCR §5.85, since Crowley Lake's own listing states only the 5-trout daily bag." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "main_body" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(B)",
+      "humanSummary": "5 trout daily bag, last Saturday in April through July 31",
+      "verbatimText": "Last Sat. in Apr. through Jul. 31. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026", "ccr_5_85"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies during the fall artificial-lure-only period, August 1 through November 15. Possession limit of 4 is the statewide default (twice the daily bag) per CCR §5.85, since Crowley Lake's own listing states only the 2-trout daily bag." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "main_body" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(B)",
+      "humanSummary": "2 trout daily bag, August 1 through November 15 (minimum 18-inch fish, artificial lures only)",
+      "verbatimText": "Aug. 1 through Nov. 15. Only artificial lures may be used. Minimum size limit: 18 inches total length. 2 trout",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026", "ccr_5_85"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 18, "max_length_in": null, "measurement": "total_length", "unit": "inch", "note": "Applies only during the August 1 through November 15 period." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
+      "scope": { "type": "reach", "reachKey": "main_body" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(B)",
+      "humanSummary": "18-inch minimum total length, August 1 through November 15",
+      "verbatimText": "Minimum size limit: 18 inches total length.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Applies only during the August 1 through November 15 period; bait and natural bait are prohibited." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "main_body" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(38)(B)",
+      "humanSummary": "Only artificial lures may be used, August 1 through November 15",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_38", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

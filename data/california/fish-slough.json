@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Fish Slough", "waterType": "creek", "states": ["CA"], "counties": ["Mono", "Inyo"], "aliases": ["Fish Slough Ecological Reserve"], "gnisId": null, "lon": -118.4009, "lat": 37.4691, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "blm_springs", "name": "BLM Springs portion", "fromDesc": "The portions of Fish Slough which lie within the BLM Springs (BLM-managed spring pools within the Fish Slough Area of Critical Environmental Concern / Ecological Reserve)", "toDesc": "Same BLM Springs area", "lon": -118.4009, "lat": 37.4691 },
+    { "key": "other_portions", "name": "All other portions of Fish Slough", "fromDesc": "All portions of Fish Slough outside the BLM Springs closure area", "toDesc": "Same broader slough/wetland complex", "lon": -118.4130, "lat": 37.4800 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_49", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(49) — Fish Slough (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(49) Fish Slough (Mono Co.). (A) The portions of Fish Slough which lie within the BLM Springs. Closed to all fishing all year. (B) All other portions of Fish Slough. Also, see Section 5.00(b)(10) for black bass regulations. All year. 5 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "blm_fish_slough_acec", "url": "https://www.blm.gov/visit/fish-slough-area-critical-environmental-concern", "title": "BLM — Fish Slough Area of Critical Environmental Concern", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "cdfw_fish_slough_er", "url": "https://wildlife.ca.gov/Lands/Places-to-Visit/Fish-Slough-ER", "title": "CDFW — Fish Slough Ecological Reserve", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Portions of Fish Slough within the BLM Springs (protected spring pools managed by BLM/CDFW for the endangered Owens pupfish and other native fishes) are closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "blm_springs" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(49)(A)",
+      "humanSummary": "The portions of Fish Slough within the BLM Springs are closed to all fishing year-round.",
+      "verbatimText": "The portions of Fish Slough which lie within the BLM Springs. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_49", "corroborating": ["blm_fish_slough_acec", "cdfw_fish_slough_er"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Applies to all portions of Fish Slough outside the closed BLM Springs area." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "other_portions" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(49)(B)",
+      "humanSummary": "All other portions of Fish Slough are open to fishing year-round.",
+      "verbatimText": "All other portions of Fish Slough. Also, see Section 5.00(b)(10) for black bass regulations. All year. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_49", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 5, "unit": "fish", "aggregation": "combined_group", "counting_rule": "The table entry sets a 5-trout daily bag limit for the open (non-BLM-Springs) portions of Fish Slough; per 14 CCR 7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit also equals 5." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "other_portions" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(49)(B)",
+      "humanSummary": "5-trout daily bag and possession limit on the open portions of Fish Slough.",
+      "verbatimText": "All other portions of Fish Slough. Also, see Section 5.00(b)(10) for black bass regulations. All year. 5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_49", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Black bass on Fish Slough are governed separately by the statewide black bass regulations table at 14 CCR §5.00(b)(10), not by this trout-specific entry.", "raw": { "cross_reference": "14 CCR 5.00(b)(10)" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Largemouth bass" } ],
+      "scope": { "type": "reach", "reachKey": "other_portions" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(49)(B); see 14 CCR 5.00(b)(10)",
+      "humanSummary": "Black bass fishing on Fish Slough is governed by the separate statewide black bass table (§5.00(b)(10)), cross-referenced from this entry rather than restated here.",
+      "verbatimText": "Also, see Section 5.00(b)(10) for black bass regulations.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_49", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

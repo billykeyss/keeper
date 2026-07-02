@@ -1,0 +1,239 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "Laguna de Santa Rosa",
+    "waterType": "creek",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Sonoma"
+    ],
+    "aliases": [
+      "Santa Rosa Creek watershed slough"
+    ],
+    "gnisId": null,
+    "lon": -122.774,
+    "lat": 38.462,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Largemouth bass",
+      "scientificName": "Micropterus salmoides",
+      "category": "bass",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Bluegill",
+      "scientificName": "Lepomis macrochirus",
+      "category": "panfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Channel catfish",
+      "scientificName": "Ictalurus punctatus",
+      "category": "catfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Common carp",
+      "scientificName": "Cyprinus carpio",
+      "category": "minnow",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_52",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(52) — Laguna de Santa Rosa (Sonoma Co.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Laguna de Santa Rosa (Sonoma Co. tributary to Russian River) upstream from Guerneville Road bridge. Last Sat. in Apr. through Nov. 15. Open to fishing for non-salmonids only. Closed to the take of trout and steelhead."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "wikipedia_laguna_de_santa_rosa",
+      "url": "https://en.wikipedia.org/wiki/Laguna_de_Santa_Rosa",
+      "title": "Laguna de Santa Rosa — Wikipedia",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "relative",
+              "ordinal": "last",
+              "weekday": "sat",
+              "month": 4,
+              "verbatim": "last Sat. in Apr."
+            },
+            "end": {
+              "type": "fixed",
+              "month": 11,
+              "day": 15,
+              "verbatim": "Nov. 15"
+            }
+          }
+        ],
+        "note": "Open for non-salmonid species only during this window; closed to the take of trout and steelhead year-round."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(52)",
+      "humanSummary": "Open last Saturday in April through November 15, for non-salmonid species only, upstream of the Guerneville Road bridge",
+      "verbatimText": "Last Sat. in Apr. through Nov. 15.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_52",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "described",
+        "note": "Trout and steelhead may not be targeted or retained; only non-salmonid species may be taken during the open season."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Steelhead"
+        },
+        {
+          "speciesCommonName": "Rainbow trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(52)",
+      "humanSummary": "Closed to the take of trout and steelhead; open to fishing for non-salmonids only",
+      "verbatimText": "Open to fishing for non-salmonids only. Closed to the take of trout and steelhead.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_52",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,229 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Tule Reservoir",
+    "waterType": "reservoir",
+    "states": [
+      "NV"
+    ],
+    "counties": [
+      "Nye"
+    ],
+    "aliases": [
+      "Tule Field Reservoir",
+      "Tule Reservoir (Kirch WMA)"
+    ],
+    "gnisId": null,
+    "lon": -115.1833,
+    "lat": 38.3176,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {
+      "key": "ndow",
+      "name": "Nevada Department of Wildlife",
+      "state": "NV",
+      "type": "state_agency",
+      "roles": [
+        "take_rules",
+        "permit_issuer"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Largemouth bass",
+      "scientificName": "Micropterus salmoides",
+      "category": "bass",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Black bullhead",
+      "scientificName": "Ameiurus melas",
+      "category": "catfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "s_cr2516",
+      "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf",
+      "title": "State of Nevada Board of Wildlife Commissioners \u2014 Fishing Seasons CR 25-16 (Jan 1, 2026 \u2013 Dec 31, 2027)",
+      "documentType": "pdf",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Tule Reservoir: Season: Open August 16 through February 14. Limits \u2014 Daily: 5 trout and 15 warmwater game fish of which not more than 10 may be black bass. No limit on bullheads (unlimited possession). Possession: 10 trout and 30 warmwater game fish of which not more than 20 may be black bass. Hours: Any hour of the day or night."
+    },
+    {
+      "key": "s_ndow_kirch_brochure",
+      "url": "https://www.ndow.org/wp-content/uploads/2022/01/33874-NDOW-Kirch-WMA-Brochure-PROOF.pdf",
+      "title": "Wayne E. Kirch Wildlife Management Area \u2014 Nevada Department of Wildlife brochure",
+      "documentType": "pdf",
+      "instrumentType": "guide",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "s_ndow_apply_buy",
+      "url": "https://www.ndow.org/apply-buy/fishing/",
+      "title": "Apply & Buy \u2014 Nevada Fishing Licenses \u2014 NDOW",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "Open season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 8,
+              "day": 16,
+              "verbatim": "Open August 16 through February 14"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 2,
+              "day": 14,
+              "verbatim": "Open August 16 through February 14"
+            }
+          }
+        ],
+        "note": "Tule Reservoir, unlike most other Kirch WMA reservoirs, is entirely closed (not just its upper portion) February 15 through August 15 for waterfowl nesting season; it reopens to fishing August 16."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Nye County, Tule Reservoir",
+      "humanSummary": "Tule Reservoir is open to fishing August 16 through February 14 each year, and closed the rest of the year for waterfowl nesting protection.",
+      "verbatimText": "Season: Open August 16 through February 14.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": [
+          "s_ndow_kirch_brochure"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "Daily limit is 5 trout plus 15 warmwater game fish, of which not more than 10 may be black bass. No limit on bullheads (unlimited possession, not counted against the warmwater game fish limit). Possession limit is 10 trout plus 30 warmwater game fish, of which not more than 20 may be black bass."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Nye County, Tule Reservoir",
+      "humanSummary": "Daily limit: 5 trout and 15 warmwater game fish (no more than 10 black bass); bullheads unlimited. Possession limit: 10 trout and 30 warmwater game fish (no more than 20 black bass).",
+      "verbatimText": "Limits \u2014 Daily: 5 trout and 15 warmwater game fish of which not more than 10 may be black bass. No limit on bullheads (unlimited possession). Possession: 10 trout and 30 warmwater game fish of which not more than 20 may be black bass.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": {
+        "basis": "any_hour"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Nye County, Tule Reservoir",
+      "humanSummary": "Fishing is allowed any hour of the day or night.",
+      "verbatimText": "Hours: Any hour of the day or night.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 12,
+        "under_min_age": "no_license_required",
+        "note": "Standard Nevada resident/nonresident fishing license required for anglers 12 and older."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NDOW \u2014 Apply & Buy: Fishing Licenses",
+      "humanSummary": "A Nevada fishing license is required for anglers age 12 and older; no license required under age 12.",
+      "verbatimText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ndow_apply_buy",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

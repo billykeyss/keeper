@@ -1,0 +1,126 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Piru Creek", "waterType": "creek", "states": ["CA"], "counties": ["Los Angeles", "Ventura"], "aliases": [], "gnisId": null, "lon": -118.7768, "lat": 34.6564, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "reach_a", "name": "Piru Creek and tributaries upstream of Pyramid Lake", "fromDesc": "Headwaters (Los Padres National Forest, Lockwood Valley/Mutau Flat area)", "toDesc": "Pyramid Lake", "lon": -118.8300, "lat": 34.7500 },
+    { "key": "reach_b", "name": "Piru Creek, Pyramid Dam to bridge below the dam", "fromDesc": "Pyramid Dam", "toDesc": "Bridge approximately 300 yards below Pyramid Lake", "lon": -118.7770, "lat": 34.6540 },
+    { "key": "reach_c", "name": "Piru Creek, bridge below dam to falls above old Highway 99 bridge", "fromDesc": "Bridge approximately 300 yards below Pyramid Lake", "toDesc": "Falls about 1/2 mile above the old Highway 99 bridge", "lon": -118.7450, "lat": 34.6150 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_109", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(109) — Piru Creek (Los Angeles and Ventura Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Piru Creek (Los Angeles and Ventura Cos.). (A) Piru Creek and tributaries upstream of Pyramid Lake. All year. Only artificial lures may be used. 2 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "wikipedia_piru_creek", "url": "https://en.wikipedia.org/wiki/Piru_Creek", "title": "Piru Creek — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "piru_creek_109a", "authorityKey": "cdfw", "citation": "7.50(b)(109)(A)", "humanSummary": "Piru Creek and tributaries upstream of Pyramid Lake: open all year, artificial lures only, 2 trout.", "verbatimText": "Piru Creek and tributaries upstream of Pyramid Lake. All year. Only artificial lures may be used. 2 trout" },
+    { "key": "piru_creek_109b", "authorityKey": "cdfw", "citation": "7.50(b)(109)(B)", "humanSummary": "From Pyramid Dam downstream to the bridge approximately 300 yards below Pyramid Lake: closed to all fishing all year.", "verbatimText": "From Pyramid Dam downstream to the bridge approximately 300 yards below Pyramid Lake. Closed to all fishing all year." },
+    { "key": "piru_creek_109c", "authorityKey": "cdfw", "citation": "7.50(b)(109)(C)", "humanSummary": "From the bridge approximately 300 yards below Pyramid Lake downstream to the falls about 1/2 mile above the old Highway 99 bridge: open all year, artificial lures with barbless hooks only, 0 trout (catch-and-release).", "verbatimText": "From the bridge approximately 300 yards below Pyramid Lake downstream to the falls about 1/2 mile above the old Highway 99 bridge. All year. Only artificial lures with barbless hooks may be used. 0 trout" }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "piru_creek_109a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(A)",
+      "humanSummary": "Open all year, upstream of Pyramid Lake",
+      "verbatimText": "Piru Creek and tributaries upstream of Pyramid Lake. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used." },
+      "groupKey": "piru_creek_109a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(A)",
+      "humanSummary": "Only artificial lures may be used, upstream of Pyramid Lake",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": null, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; this special regulation entry does not specify a distinct possession limit." },
+      "groupKey": "piru_creek_109a", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(A)",
+      "humanSummary": "2 trout daily bag limit, upstream of Pyramid Lake",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed for the stretch from Pyramid Dam downstream to the bridge approximately 300 yards below Pyramid Lake." },
+      "groupKey": "piru_creek_109b", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(B)",
+      "humanSummary": "Closed to all fishing all year, Pyramid Dam to bridge ~300 yards below Pyramid Lake",
+      "verbatimText": "From Pyramid Dam downstream to the bridge approximately 300 yards below Pyramid Lake. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "piru_creek_109c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(C)",
+      "humanSummary": "Open all year (catch-and-release), bridge below dam to falls above the old Highway 99 bridge",
+      "verbatimText": "From the bridge approximately 300 yards below Pyramid Lake downstream to the falls about 1/2 mile above the old Highway 99 bridge. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": "piru_creek_109c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(C)",
+      "humanSummary": "Artificial lures with barbless hooks only, bridge below dam to falls above the old Highway 99 bridge",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "piru_creek_109c", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(109)(C)",
+      "humanSummary": "0 trout, catch-and-release, bridge below dam to falls above the old Highway 99 bridge",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_109", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

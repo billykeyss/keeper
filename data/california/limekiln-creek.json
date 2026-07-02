@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Limekiln Creek", "waterType": "creek", "states": ["CA"], "counties": ["Monterey"], "aliases": ["Limekiln Creek and tributaries above Highway 1"], "gnisId": null, "lon": -121.5160, "lat": 36.0075, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Hatchery rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_54", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(54) — Limekiln Creek and tributaries above Highway 1 (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(54) Limekiln Creek and tributaries above Highway 1 (Monterey Co.). Also see Section 8.00(c) Low-Flow Restrictions. Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "ccr_8_00_c", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-8.00", "title": "CCR T14 §8.00(c) — South Central Coast Streams, Special Low Flow Closures", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "South Central Coast Streams -- Special Low Flow Closures: During December 1 through March 7, the following streams (subsections (c)(1) through (5)) will be closed to fishing when the department determines that stream flows are inadequate to provide fish passage for migrating steelhead trout and salmon. Closed streams will be reopened when the department determines flows are adequate for fish passage." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "winter_season", "status": "open", "start": { "type": "fixed", "month": 12, "day": 1, "verbatim": "December 1" }, "end": { "type": "fixed", "month": 3, "day": 7, "verbatim": "March 7" } } ], "note": "Open only on Saturdays, Sundays, Wednesdays, legal holidays, and the opening and closing days of the season; closed all other days within the Dec. 1 - Mar. 7 window. Applies to Limekiln Creek and tributaries above Highway 1. Also subject to Low-Flow Restrictions, Section 8.00(c)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(54)",
+      "humanSummary": "Open December 1 through March 7, but only on Saturdays, Sundays, Wednesdays, legal holidays, and opening/closing days",
+      "verbatimText": "Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_54", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(54)",
+      "humanSummary": "Only barbless hooks may be used",
+      "verbatimText": "Only barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_54", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined; 4 hatchery trout or hatchery steelhead in possession, combined." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(54)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit; 4 in possession",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_54", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "flow_triggered", "boundary_definition": "described", "note": "During Dec. 1 through Mar. 7, closed to fishing when the department determines that stream flows are inadequate to provide fish passage for migrating steelhead and salmon; reopens when flows are determined adequate. Also see Section 8.00(c) Low-Flow Restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(54); 8.00(c)",
+      "humanSummary": "Also subject to low-flow closure: closed to fishing when flows are determined inadequate for fish passage",
+      "verbatimText": "Also see Section 8.00(c) Low-Flow Restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_54", "corroborating": ["ccr_8_00_c"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

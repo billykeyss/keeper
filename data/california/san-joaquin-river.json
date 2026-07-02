@@ -1,0 +1,126 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "San Joaquin River",
+    "waterType": "river",
+    "states": ["CA"],
+    "counties": ["Fresno", "Madera", "Merced", "San Joaquin", "Stanislaus"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.489,
+    "lat": 37.397,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [
+    {
+      "key": "reach_a",
+      "name": "San Joaquin River Reach A (Friant Dam to Highway 140 bridge)",
+      "fromDesc": "Friant Dam",
+      "toDesc": "Highway 140 bridge",
+      "lon": -119.7092,
+      "lat": 36.9975
+    },
+    {
+      "key": "reach_b",
+      "name": "San Joaquin River Reach B (Highway 140 bridge to Interstate Highway 5 bridge at Mossdale)",
+      "fromDesc": "Highway 140 bridge",
+      "toDesc": "Interstate Highway 5 bridge at Mossdale",
+      "lon": -121.2669,
+      "lat": 37.6768
+    }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [
+    { "key": "hatchery_trout_steelhead", "name": "Hatchery trout or hatchery steelhead", "category": "trout", "authorityKey": "cdfw" },
+    { "key": "trout_steelhead", "name": "Trout and steelhead", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_40_b_90", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(90) — San Joaquin River (Fresno, Madera, Merced, San Joaquin and Stanislaus Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(90) San Joaquin River (Fresno, Madera, Merced, San Joaquin and Stanislaus Cos.). (A) From Friant Dam downstream to the Highway 140 bridge. All year. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession. (B) From the Highway 140 bridge downstream to the Interstate Highway 5 bridge at Mossdale. All year. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "ccr_7_40_a_general", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(a) — General provisions and footnote definitions for the anadromous/hatchery special-regulations water list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(90)(A)",
+      "humanSummary": "Friant Dam downstream to the Highway 140 bridge: open all year.",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_90", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies only to hatchery trout or hatchery steelhead — fish with a healed, missing adipose fin. All other (unclipped/wild) trout and steelhead must be released unharmed per the statewide §7.40(a) hatchery-fish definition." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(90)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, Friant Dam to Highway 140 bridge.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_90", "corroborating": ["ccr_7_40_a_general", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(90)(B)",
+      "humanSummary": "Highway 140 bridge downstream to the Interstate Highway 5 bridge at Mossdale: open all year.",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_90", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies only to hatchery trout or hatchery steelhead — fish with a healed, missing adipose fin. All other (unclipped/wild) trout and steelhead must be released unharmed per the statewide §7.40(a) hatchery-fish definition." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "hatchery_trout_steelhead" } ],
+      "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(90)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily, 4 in possession, Highway 140 bridge to the I-5 bridge at Mossdale.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_90", "corroborating": ["ccr_7_40_a_general", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "condition": "Trout or steelhead without a healed adipose fin clip (wild/unmarked fish)", "note": "Only hatchery-marked (adipose fin-clipped) trout or steelhead may be retained; all other trout and steelhead must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout_steelhead" } ],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(a)",
+      "humanSummary": "Only adipose fin-clipped hatchery trout/steelhead may be kept; wild (unclipped) trout and steelhead must be released unharmed.",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_a_general", "corroborating": ["ccr_7_40_b_90"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

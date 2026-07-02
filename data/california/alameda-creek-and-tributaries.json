@@ -1,0 +1,160 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Alameda Creek and tributaries", "waterType": "creek", "states": ["CA"], "counties": ["Alameda", "Santa Clara"], "aliases": [], "gnisId": null, "lon": -121.8992, "lat": 37.5952, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "mainstem_downstream_closed", "name": "Alameda Creek mainstem and tributaries downstream of reservoirs (excl. Arroyo Del Valle segment)", "fromDesc": "Alameda Creek mainstem and all tributaries downstream of San Antonio, Calaveras, and Del Valle Reservoirs", "toDesc": "Confluence with San Francisco Bay near Niles Canyon / Fremont, excluding the Arroyo Del Valle segment between Bernal Ave. and Vineyard Ave.", "lon": -121.8992, "lat": 37.5952 },
+    { "key": "arroyo_del_valle_segment", "name": "Arroyo Del Valle (Bernal Ave. to Thiessen St./Vineyard Ave.)", "fromDesc": "Bernal Ave., Pleasanton", "toDesc": "Thiessen St. intersection with Vineyard Ave., Pleasanton", "lon": -121.8611, "lat": 37.6624 },
+    { "key": "tributaries_upstream", "name": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs", "fromDesc": "Headwater tributaries above San Antonio, Calaveras, and Del Valle Reservoirs", "toDesc": "Upper watershed streams in the Diablo Range, Alameda and Santa Clara counties", "lon": -121.7300, "lat": 37.5400 },
+    { "key": "san_antonio_calaveras_reservoirs", "name": "San Antonio and Calaveras Reservoirs", "fromDesc": "San Antonio Reservoir", "toDesc": "Calaveras Reservoir", "lon": -121.8340, "lat": 37.5394 }
+  ],
+  "species": [
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(2) — Alameda Creek and tributaries (Alameda and Santa Clara Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(2) Alameda Creek and tributaries (Alameda and Santa Clara Cos.). (A) Alameda Creek mainstem and all tributaries downstream of San Antonio, Calaveras, and Del Valle Reservoirs except for Arroyo Del Valle between Bernal Ave. and the Thiessen St. intersection with Vineyard Ave. Closed to all fishing all year." },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "sfpuc_alameda_creek_fish", "url": "https://www.sfpuc.gov/about-us/news/how-sfpuc-contributes-making-alameda-creek-haven-fish", "title": "How the SFPUC Contributes to Making Alameda Creek a Haven for Fish", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Alameda Creek mainstem and all tributaries downstream of San Antonio, Calaveras, and Del Valle Reservoirs are closed to all fishing year-round, except the Arroyo Del Valle segment between Bernal Ave. and the Thiessen St./Vineyard Ave. intersection, which is separately regulated." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "mainstem_downstream_closed" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(A)",
+      "humanSummary": "Alameda Creek mainstem and tributaries downstream of the major reservoirs are closed to all fishing year-round (protects listed steelhead)",
+      "verbatimText": "Alameda Creek mainstem and all tributaries downstream of San Antonio, Calaveras, and Del Valle Reservoirs except for Arroyo Del Valle between Bernal Ave. and the Thiessen St. intersection with Vineyard Ave. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026", "sfpuc_alameda_creek_fish"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "arroyo_del_valle_segment" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(A)1.",
+      "humanSummary": "Arroyo Del Valle segment between Bernal Ave. and Vineyard Ave. is open to fishing all year",
+      "verbatimText": "Arroyo Del Valle between Bernal Ave. and the Thiessen St. intersection with Vineyard Ave. All year. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "arroyo_del_valle_segment" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(A)1.",
+      "humanSummary": "Only artificial lures with barbless hooks may be used on this Arroyo Del Valle segment",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "catch_and_release": true, "counting_rule": "Zero trout may be retained; all trout caught must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Steelhead" }, { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "arroyo_del_valle_segment" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(A)1.",
+      "humanSummary": "Zero trout bag limit — catch and release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "tributaries_upstream" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(B)",
+      "humanSummary": "Tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs open Saturday preceding Memorial Day through September 30",
+      "verbatimText": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "tributaries_upstream" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(B)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used on upstream tributaries",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "catch_and_release": true, "counting_rule": "Zero trout may be retained; all trout caught must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "tributaries_upstream" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(B)",
+      "humanSummary": "Zero trout bag limit on upstream tributaries — catch and release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "san_antonio_calaveras_reservoirs" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(C)",
+      "humanSummary": "San Antonio and Calaveras Reservoirs open to fishing all year",
+      "verbatimText": "San Antonio and Calaveras Reservoirs. All year. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "san_antonio_calaveras_reservoirs" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(C)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used on San Antonio and Calaveras Reservoirs",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "per_species", "catch_and_release": true, "counting_rule": "Zero trout may be retained; all trout caught must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" } ],
+      "scope": { "type": "reach", "reachKey": "san_antonio_calaveras_reservoirs" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(2)(C)",
+      "humanSummary": "Zero trout bag limit on San Antonio and Calaveras Reservoirs — catch and release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_2", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

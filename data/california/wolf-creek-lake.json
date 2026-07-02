@@ -1,0 +1,45 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Wolf Creek Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -119.6730, "lat": 38.5990, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_168", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(168) — Wolf Creek Lake (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(168) Wolf Creek Lake (at the headwaters of Wolf Creek, tributary to the West Walker River) (Mono Co.). Closed to all fishing all year." },
+    { "key": "cdfw_wolf_creek_guidelines_2025", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=229648", "title": "Wolf Creek Fishery Management Guidelines (CDFW Heritage and Wild Trout Program, Region 6, 2025)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "The Wolf Creek drainage originates from the outflow of Wolf Creek Lake (10,108ft) and ends at its confluence with the West Walker River (6,827ft)." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Wolf Creek Lake sits at the headwaters (approx. 10,108 ft elevation) of Wolf Creek, a tributary of the West Walker River that CDFW manages as a Heritage Trout Water for its restored, self-sustaining Walker-strain Lahontan cutthroat trout population; the lake itself is closed to all fishing to protect this native population and its headwater refuge above the natural barrier that isolates the drainage from non-native fish." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(168)",
+      "humanSummary": "Wolf Creek Lake, at the headwaters of Wolf Creek, is closed to all fishing all year",
+      "verbatimText": "Wolf Creek Lake (at the headwaters of Wolf Creek, tributary to the West Walker River) (Mono Co.). Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_168", "corroborating": ["cdfw_wolf_creek_guidelines_2025", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. (This water is closed to all fishing; the statewide license requirement is included here as the standing background rule.)" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

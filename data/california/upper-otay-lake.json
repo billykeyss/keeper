@@ -1,0 +1,300 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Upper Otay Lake",
+    "waterType": "reservoir",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "San Diego"
+    ],
+    "aliases": [
+      "Upper Otay Reservoir"
+    ],
+    "gnisId": null,
+    "lon": -116.935,
+    "lat": 32.652,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [
+    {
+      "commonName": "Largemouth bass",
+      "scientificName": "Micropterus salmoides",
+      "category": "bass",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Bluegill",
+      "scientificName": "Lepomis macrochirus",
+      "category": "panfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Black crappie",
+      "scientificName": "Pomoxis nigromaculatus",
+      "category": "panfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Bullhead catfish",
+      "scientificName": "Ameiurus spp.",
+      "category": "catfish",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Common carp",
+      "scientificName": "Cyprinus carpio",
+      "category": "minnow",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Trout",
+      "scientificName": null,
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "historical"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_50_b_160",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "14 CCR \u00a77.50(b)(160) \u2014 Upper Otay Lake (San Diego Co.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(160) Upper Otay Lake (San Diego Co.). All year. Only artificial lures with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "sandiego_gov_upperotay",
+      "url": "https://www.sandiego.gov/reservoirs-lakes/upper-otay-reservoir",
+      "title": "Upper Otay Reservoir | City of San Diego Official Website",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Use artificial lures with barbless hooks only. Catch and release only."
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_water",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ],
+        "note": "State regulation is year-round; the reservoir operator (City of San Diego) separately restricts public pedestrian access to specific days and seasonal gate hours \u2014 see the sandiego.gov source for current access days/hours, which are an access policy, not a CDFW take-season restriction."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(160)",
+      "humanSummary": "Open all year",
+      "verbatimText": "All year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_160",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial lures with barbless hooks may be used."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(160)",
+      "humanSummary": "Artificial lures with barbless hooks only",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_160",
+        "corroborating": [
+          "sandiego_gov_upperotay"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "per_species",
+        "catch_and_release": true,
+        "counting_rule": "Zero daily bag and possession limit for trout at this water \u2014 Upper Otay Lake is managed as a Florida-strain largemouth bass fishery and is not stocked with trout; state regulation formally sets the trout take limit at zero. The reservoir operator additionally runs the lake as catch-and-release for all species."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "14 CCR 7.50(b)(160)",
+      "humanSummary": "Zero trout bag limit",
+      "verbatimText": "0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_160",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": {
+        "must_release_unharmed": true,
+        "keep_in_water": false,
+        "counts_toward_bag_when_retained": false,
+        "condition": "all_species",
+        "note": "The City of San Diego operates Upper Otay Reservoir on a catch-and-release (zero-kill) basis for all species, in addition to the state's barbless-artificial-lure and zero-trout rules."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "City of San Diego Reservoirs \u2014 Upper Otay Reservoir fishing rules",
+      "humanSummary": "Reservoir operator requires catch-and-release for all species",
+      "verbatimText": "Catch and release only.",
+      "isParaphrase": false,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "sandiego_gov_upperotay",
+        "corroborating": [
+          "ccr_7_50_b_160"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

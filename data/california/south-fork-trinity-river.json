@@ -1,0 +1,433 @@
+{
+  "asOf": "2026-07-02",
+  "water": {
+    "name": "South Fork Trinity River",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Trinity"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -123.45,
+    "lat": 40.62,
+    "verifyCurrent": true
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "reach_h",
+      "name": "Confluence of the East Fork to the South Fork Trinity River bridge at Hyampom",
+      "fromDesc": "confluence with the East Fork of the South Fork Trinity River",
+      "toDesc": "South Fork Trinity River bridge at Hyampom",
+      "lon": -123.42,
+      "lat": 40.5
+    },
+    {
+      "key": "reach_i",
+      "name": "South Fork Trinity River bridge at Hyampom to the confluence with the Trinity River",
+      "fromDesc": "South Fork Trinity River bridge at Hyampom",
+      "toDesc": "confluence with the Trinity River near Salyer",
+      "lon": -123.47,
+      "lat": 40.71
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Steelhead",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Chinook salmon",
+      "scientificName": "Oncorhynchus tshawytscha",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Coho salmon",
+      "scientificName": "Oncorhynchus kisutch",
+      "category": "salmon",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Hatchery rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    }
+  ],
+  "speciesGroups": [
+    {
+      "key": "hatchery_trout_steelhead",
+      "name": "Hatchery trout or hatchery steelhead",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
+  ],
+  "sources": [
+    {
+      "key": "ccr_7_40_b_50",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR §7.40(b)(50) — Klamath River Basin Regulations (South Fork Trinity River)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "All anadromous Waters of the Klamath River Basin and Trinity River downstream of Lewiston Dam. This subsection applies only to waters of the Klamath River Basin that are accessible to anadromous salmonids."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": true,
+        "artificial_only": false,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Applies basin-wide to all anadromous waters of the Klamath River Basin."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(A)1",
+      "humanSummary": "Only barbless hooks may be used anywhere on the South Fork Trinity River",
+      "verbatimText": "Only barbless hooks may be used. (For definitions regarding legal hook types, hook gaps, and rigging see Section 2.10.)",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_season",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 11,
+              "day": 1,
+              "verbatim": "Nov. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 3,
+              "day": 31,
+              "verbatim": "Mar. 31"
+            }
+          }
+        ],
+        "note": "Closed to all fishing outside Nov. 1 – Mar. 31."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_h"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6h",
+      "humanSummary": "Open Nov. 1 through Mar. 31 from the East Fork confluence to the Hyampom bridge",
+      "verbatimText": "Nov. 1 through Mar. 31. Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false,
+        "note": "Only artificial lures with barbless hooks may be used in this reach."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_h"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6h",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from the East Fork confluence to the Hyampom bridge",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_h"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6h",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the East Fork confluence to the Hyampom bridge",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "fall_winter",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 11,
+              "day": 1,
+              "verbatim": "Nov. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 12,
+              "day": 31,
+              "verbatim": "Dec. 31"
+            }
+          },
+          {
+            "label": "winter_spring",
+            "status": "open",
+            "start": {
+              "type": "fixed",
+              "month": 1,
+              "day": 1,
+              "verbatim": "Jan. 1"
+            },
+            "end": {
+              "type": "fixed",
+              "month": 3,
+              "day": 31,
+              "verbatim": "Mar. 31"
+            }
+          }
+        ],
+        "note": "Open Nov. 1 – Dec. 31 (closed to Chinook Salmon) and Jan. 1 – Mar. 31."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_i"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6i",
+      "humanSummary": "Open Nov. 1 through Dec. 31 and Jan. 1 through Mar. 31 from the Hyampom bridge to the confluence with the Trinity River",
+      "verbatimText": "Nov. 1 through Dec. 31. ... Jan. 1 through Mar. 31.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "seasonal",
+        "boundary_definition": "described"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesCommonName": "Chinook salmon"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_i"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6i",
+      "humanSummary": "Closed to take/possession of Chinook Salmon Nov. 1 through Dec. 31 from the Hyampom bridge to the confluence with the Trinity River",
+      "verbatimText": "Nov. 1 through Dec. 31. Closed to the take and possession of Chinook Salmon.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": null,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 hatchery trout or hatchery steelhead per day, combined."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "hatchery_trout_steelhead"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_i"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.40(b)(50)(E)6i",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag limit from the Hyampom bridge to the confluence with the Trinity River",
+      "verbatimText": "2 hatchery trout or hatchery steelhead**.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_40_b_50",
+        "corroborating": []
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

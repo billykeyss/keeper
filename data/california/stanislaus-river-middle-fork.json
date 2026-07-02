@@ -1,0 +1,97 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Stanislaus River, Middle Fork", "waterType": "river", "states": ["CA"], "counties": ["Tuolumne"], "aliases": ["Middle Fork Stanislaus River"], "gnisId": null, "lon": -120.1200, "lat": 38.1500, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "beardsley_to_spring_gap", "name": "Beardsley Dam downstream to Spring Gap footbridge (incl. Beardsley Afterbay)", "fromDesc": "Beardsley Dam", "toDesc": "U.S. Forest Service footbridge at Spring Gap", "lon": -120.0900, "lat": 38.1900 },
+    { "key": "spring_gap_to_new_melones", "name": "Spring Gap footbridge downstream to New Melones Reservoir", "fromDesc": "U.S. Forest Service footbridge at Spring Gap", "toDesc": "New Melones Reservoir", "lon": -120.2000, "lat": 38.0800 }
+  ],
+  "species": [
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_147", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(147) — Stanislaus River, Middle Fork (Tuolumne Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(147) Stanislaus River, Middle Fork (Tuolumne Co.). (A) From Beardsley Dam downstream to the U. S. Forest Service footbridge at Spring Gap (including the Beardsley Afterbay). All year. Only artificial lures may be used. 2 trout (B) From the U.S. Forest Service footbridge at Spring Gap to New Melones Reservoir. All year. 2 trout. 4 trout in possession." },
+    { "key": "cdfw_wild_trout_plan_mf_stanislaus", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=122049&inline=", "title": "Middle Fork Stanislaus River Wild Trout Management Plan", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "beardsley_to_spring_gap" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(147)(A)",
+      "humanSummary": "Beardsley Dam to Spring Gap footbridge (incl. Beardsley Afterbay) open to fishing all year",
+      "verbatimText": "From Beardsley Dam downstream to the U. S. Forest Service footbridge at Spring Gap (including the Beardsley Afterbay). All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_147", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used (barbless hooks not specifically required in this subsection)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "beardsley_to_spring_gap" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(147)(A)",
+      "humanSummary": "Only artificial lures may be used from Beardsley Dam to Spring Gap footbridge",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_147", "corroborating": ["cdfw_wild_trout_plan_mf_stanislaus"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": null, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout daily bag limit; this subsection does not separately state a distinct possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "beardsley_to_spring_gap" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(147)(A)",
+      "humanSummary": "2 trout daily bag limit from Beardsley Dam to Spring Gap footbridge",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_147", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "spring_gap_to_new_melones" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(147)(B)",
+      "humanSummary": "Spring Gap footbridge to New Melones Reservoir open to fishing all year",
+      "verbatimText": "From the U.S. Forest Service footbridge at Spring Gap to New Melones Reservoir. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_147", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "2 trout per day, 4 trout in possession." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "spring_gap_to_new_melones" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(147)(B)",
+      "humanSummary": "2 trout per day, 4 in possession from Spring Gap footbridge to New Melones Reservoir",
+      "verbatimText": "2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_147", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

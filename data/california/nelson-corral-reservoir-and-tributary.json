@@ -1,0 +1,74 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "Nelson Corral Reservoir and tributary", "waterType": "reservoir", "states": ["CA"], "counties": ["Lassen"], "aliases": ["Nelson Corral Lake"], "gnisId": null, "lon": -120.555393, "lat": 41.110446, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Eagle Lake trout", "scientificName": "Oncorhynchus mykiss aquilarum", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_101", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(101) — Nelson Corral Reservoir and tributary (Lassen Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(101) Nelson Corral Reservoir and tributary (Lassen Co.). (A) Nelson Corral Reservoir. All year. 2 trout. 4 trout in possession. (B) Nelson Corral Reservoir tributary (the unnamed tributary entering the reservoir at the north end). Closed to all fishing all year." },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fishcaddy_nelson_corral", "url": "https://fishcaddy.com/california/lassen-county/nelson-corral-reservoir", "title": "Nelson Corral Reservoir Fishing - Overview, Species & Conditions | Fishcaddy", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Surface Area: 193 acres" },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "nelson_corral_101", "authorityKey": "cdfw", "citation": "7.50(b)(101)", "humanSummary": "Nelson Corral Reservoir and tributary: the reservoir itself is open all year with a reduced 2-trout daily / 4-trout possession limit, while its unnamed inlet tributary at the north end is closed to all fishing all year.", "verbatimText": "Nelson Corral Reservoir and tributary (Lassen Co.). (A) Nelson Corral Reservoir. All year. 2 trout. 4 trout in possession. (B) Nelson Corral Reservoir tributary (the unnamed tributary entering the reservoir at the north end). Closed to all fishing all year." }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
+      "groupKey": "nelson_corral_101", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(101)(A)",
+      "humanSummary": "Nelson Corral Reservoir is open to fishing all year",
+      "verbatimText": "Nelson Corral Reservoir. All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_101", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Reduced limit of 2 trout daily, 4 trout in possession, applies to Nelson Corral Reservoir itself (lower than the statewide default 5-trout limit)." },
+      "groupKey": "nelson_corral_101", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(101)(A)",
+      "humanSummary": "2 trout daily bag limit, 4 trout in possession",
+      "verbatimText": "2 trout. 4 trout in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_101", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Applies to the unnamed tributary that enters Nelson Corral Reservoir at the north end; the reservoir itself is not closed by this provision." },
+      "groupKey": "nelson_corral_101", "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(101)(B)",
+      "humanSummary": "Nelson Corral Reservoir's unnamed north-end inlet tributary is closed to all fishing all year",
+      "verbatimText": "Nelson Corral Reservoir tributary (the unnamed tributary entering the reservoir at the north end). Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_101", "corroborating": ["cdfw_freshwater_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,134 @@
+{
+  "asOf": "2026-07-02",
+  "water": { "name": "Merced River", "waterType": "river", "states": ["CA"], "counties": ["Merced"], "aliases": [], "gnisId": null, "lon": -120.7500, "lat": 37.4000, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "crocker_huffman_to_schaffer", "name": "Merced River Reach A (Crocker-Huffman Dam to Schaffer Bridge)", "fromDesc": "Crocker-Huffman Dam (near Merced Falls)", "toDesc": "Schaffer Bridge on Oakdale Road", "lon": -120.3210, "lat": 37.5240 },
+    { "key": "schaffer_to_mouth", "name": "Merced River Reach B (Schaffer Bridge to the mouth)", "fromDesc": "Schaffer Bridge on Oakdale Road", "toDesc": "Mouth (confluence with the San Joaquin River, near Hills Ferry)", "lon": -120.7900, "lat": 37.4000 }
+  ],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Steelhead", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Fall-run Chinook salmon", "scientificName": "Oncorhynchus tshawytscha", "category": "salmon", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_40_b_63", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(63) — Merced River (Merced Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(63) Merced River (Merced Co.). (A) From Crocker-Huffman Dam downstream to the Schaffer Bridge on Oakdale Road. Jan. 1 through Oct. 31. Only artificial lures with barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession. (B) From the Schaffer Bridge on Oakdale Road downstream to the mouth. Jan. 1 through Oct. 31. Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
+    { "key": "ccr_7_40_footnote", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — footnote definition of hatchery trout/steelhead (**)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released. Wild trout or steelhead are those not showing a healed adipose fin clip (adipose fin is present)." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "January 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "October 31" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "crocker_huffman_to_schaffer" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(A)",
+      "humanSummary": "Open January 1 through October 31, from Crocker-Huffman Dam downstream to the Schaffer Bridge on Oakdale Road.",
+      "verbatimText": "From Crocker-Huffman Dam downstream to the Schaffer Bridge on Oakdale Road. Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "crocker_huffman_to_schaffer" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(A)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, from Crocker-Huffman Dam downstream to the Schaffer Bridge.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies only to hatchery (adipose-fin-clipped) trout or steelhead; combined daily bag of 2, combined possession limit of 4." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "crocker_huffman_to_schaffer" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(A)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag; 4 in possession, from Crocker-Huffman Dam downstream to the Schaffer Bridge.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "counts_toward_bag_when_retained": false, "condition": "wild (non-adipose-fin-clipped) trout or steelhead", "note": "Only hatchery trout or steelhead showing a healed adipose fin clip may be retained; wild (unclipped) trout or steelhead must be released immediately." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "crocker_huffman_to_schaffer" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40 footnote **",
+      "humanSummary": "Wild (unclipped) trout and steelhead must be released immediately; only adipose-fin-clipped hatchery fish count toward the bag.",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released. Wild trout or steelhead are those not showing a healed adipose fin clip (adipose fin is present).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_footnote", "corroborating": [] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "fixed", "month": 1, "day": 1, "verbatim": "January 1" }, "end": { "type": "fixed", "month": 10, "day": 31, "verbatim": "October 31" } } ] },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "schaffer_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(B)",
+      "humanSummary": "Open January 1 through October 31, from the Schaffer Bridge on Oakdale Road downstream to the mouth.",
+      "verbatimText": "From the Schaffer Bridge on Oakdale Road downstream to the mouth. Jan. 1 through Oct. 31.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Bait may be used January 1 through October 31. However, from April 1 through the Friday preceding the fourth Saturday in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "schaffer_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(B)",
+      "humanSummary": "Bait allowed Jan 1–Oct 31; from Apr 1 through the Friday before the fourth Saturday in May, bait may be used only with restricted hook-gap single or multiple hooks.",
+      "verbatimText": "Bait may be used from Jan. 1 through Oct. 31. However, from Apr. 1 through the Fri. preceding the fourth Sat. in May, bait may be used only with single hooks having a gap between 1/2 and 1 inch, or with multiple hooks having a gap between 1/4 and 1/2 inch.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 4, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Applies only to hatchery (adipose-fin-clipped) trout or steelhead; combined daily bag of 2, combined possession limit of 4." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "schaffer_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40(b)(63)(B)",
+      "humanSummary": "2 hatchery trout or hatchery steelhead daily bag; 4 in possession, from the Schaffer Bridge downstream to the mouth.",
+      "verbatimText": "2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_b_63", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "handling",
+      "parameters": { "must_release_unharmed": true, "counts_toward_bag_when_retained": false, "condition": "wild (non-adipose-fin-clipped) trout or steelhead", "note": "Only hatchery trout or steelhead showing a healed adipose fin clip may be retained; wild (unclipped) trout or steelhead must be released immediately." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "schaffer_to_mouth" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.40 footnote **",
+      "humanSummary": "Wild (unclipped) trout and steelhead must be released immediately; only adipose-fin-clipped hatchery fish count toward the bag.",
+      "verbatimText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released. Wild trout or steelhead are those not showing a healed adipose fin clip (adipose fin is present).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_40_footnote", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}

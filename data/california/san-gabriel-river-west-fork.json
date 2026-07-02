@@ -1,0 +1,352 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "San Gabriel River, West Fork and tributaries",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Los Angeles"
+    ],
+    "aliases": [
+      "West Fork San Gabriel River"
+    ],
+    "gnisId": null,
+    "lon": -117.92,
+    "lat": 34.24,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "above_cogswell",
+      "name": "West Fork San Gabriel River \u2014 above Cogswell Dam (incl. Cogswell Reservoir and tributaries)",
+      "fromDesc": "Cogswell Dam",
+      "toDesc": "Upstream through Cogswell Reservoir and its tributaries",
+      "lon": -117.965,
+      "lat": 34.26
+    },
+    {
+      "key": "below_cogswell",
+      "name": "West Fork San Gabriel River \u2014 Cogswell Dam to second bridge above Highway 39",
+      "fromDesc": "Cogswell Dam",
+      "toDesc": "Downstream to the second bridge upstream from the Highway 39 bridge",
+      "lon": -117.9,
+      "lat": 34.235
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_50_b_129",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 \u00a77.50(b)(129) \u2014 San Gabriel River, West Fork and tributaries (Los Angeles Co.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(129) San Gabriel River, West Fork and tributaries (Los Angeles Co.). (A) Upstream of Cogswell Dam (including Cogswell reservoir and its tributaries). All year. Only artificial lures may be used. 2 trout (B) From Cogswell Dam downstream to the second bridge upstream from the Highway 39 bridge. All year. Only artificial lures with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "all_year",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "above_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(A)",
+      "humanSummary": "Open all year, upstream of Cogswell Dam (including Cogswell Reservoir and its tributaries)",
+      "verbatimText": "Upstream of Cogswell Dam (including Cogswell reservoir and its tributaries). All year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": false,
+        "single_hook_required": false
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "above_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(A)",
+      "humanSummary": "Only artificial lures may be used, upstream of Cogswell Dam",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 2,
+        "unit": "fish",
+        "aggregation": "combined_group"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "above_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(A)",
+      "humanSummary": "2 trout daily bag limit, upstream of Cogswell Dam",
+      "verbatimText": "2 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "all_year",
+            "status": "open_catch_release",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "below_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(B)",
+      "humanSummary": "Open all year, catch-and-release only, from Cogswell Dam downstream to the second bridge above the Highway 39 bridge",
+      "verbatimText": "From Cogswell Dam downstream to the second bridge upstream from the Highway 39 bridge. All year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "below_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(B)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, Cogswell Dam to the second bridge above Highway 39",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "below_cogswell"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(129)(B)",
+      "humanSummary": "0 trout \u2014 catch-and-release only, Cogswell Dam to the second bridge above Highway 39",
+      "verbatimText": "0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_129",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

@@ -1,0 +1,527 @@
+{
+  "asOf": "2026-07-01",
+  "water": {
+    "name": "Sacramento River and tributaries above Keswick Dam",
+    "waterType": "river",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Siskiyou",
+      "Shasta"
+    ],
+    "aliases": [
+      "Upper Sacramento River"
+    ],
+    "gnisId": null,
+    "lon": -122.298,
+    "lat": 41.18,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
+  ],
+  "reaches": [
+    {
+      "key": "box_canyon_dam_to_dunsmuir",
+      "name": "Box Canyon Dam downstream to the Scarlett Way bridge in Dunsmuir",
+      "fromDesc": "Box Canyon Dam",
+      "toDesc": "Scarlett Way bridge, Dunsmuir",
+      "lon": -122.3002,
+      "lat": 41.2445
+    },
+    {
+      "key": "dunsmuir_to_sweetbriar",
+      "name": "Scarlett Way bridge downstream to the county bridge at Sweetbriar",
+      "fromDesc": "Scarlett Way bridge, Dunsmuir",
+      "toDesc": "County bridge at Sweetbriar (near Castella)",
+      "lon": -122.295,
+      "lat": 41.174
+    },
+    {
+      "key": "sweetbriar_to_shasta_lake",
+      "name": "County bridge at Sweetbriar downstream to Shasta Lake",
+      "fromDesc": "County bridge at Sweetbriar (near Castella)",
+      "toDesc": "Shasta Lake",
+      "lon": -122.35,
+      "lat": 41.04
+    }
+  ],
+  "species": [
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "native"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_7_50_b_126",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 \u00a77.50(b)(126) \u2014 Sacramento River and tributaries above Keswick Dam (Shasta and Siskiyou Cos.)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "ccr_7_50_a",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 \u00a77.50(a) \u2014 General provisions for the \u00a77.50(b) special-regulation waters list",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [
+    {
+      "key": "g_dunsmuir_to_sweetbriar",
+      "authorityKey": "cdfw",
+      "citation": "7.50(b)(126)(B)",
+      "humanSummary": "Sacramento River and tributaries from Scarlett Way bridge downstream to the county bridge at Sweetbriar: two-period season \u2014 5 trout, no gear restriction (Sat. preceding Memorial Day\u2013Sep. 30); 2 trout, artificial lures only (Oct. 1\u2013Fri. preceding Memorial Day).",
+      "verbatimText": "Sacramento River and tributaries from Scarlett Way bridge downstream to the county bridge at Sweetbriar. Sat. preceding Memorial Day through Sep. 30. 5 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures may be used. 2 trout"
+    }
+  ],
+  "seasonPeriods": [
+    {
+      "key": "sp_dunsmuir_sweetbriar_summer",
+      "groupKey": "g_dunsmuir_to_sweetbriar",
+      "label": "open_water",
+      "status": "open",
+      "startSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "sat",
+        "month": 5,
+        "relation": "preceding",
+        "anchor_holiday": "memorial_day",
+        "verbatim": "Saturday preceding Memorial Day"
+      },
+      "endSpec": {
+        "type": "fixed",
+        "month": 9,
+        "day": 30,
+        "verbatim": "September 30"
+      }
+    },
+    {
+      "key": "sp_dunsmuir_sweetbriar_fall",
+      "groupKey": "g_dunsmuir_to_sweetbriar",
+      "label": "artificial_only_season",
+      "status": "open",
+      "startSpec": {
+        "type": "fixed",
+        "month": 10,
+        "day": 1,
+        "verbatim": "October 1"
+      },
+      "endSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "fri",
+        "month": 5,
+        "relation": "preceding",
+        "anchor_holiday": "memorial_day",
+        "verbatim": "Friday preceding Memorial Day"
+      }
+    }
+  ],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "trout_season",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All Year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All Year"
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "box_canyon_dam_to_dunsmuir"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(A)",
+      "humanSummary": "Box Canyon Dam downstream to the Scarlett Way bridge in Dunsmuir: open to fishing all year",
+      "verbatimText": "Sacramento River and tributaries from Box Canyon Dam downstream to the Scarlett Way bridge in Dunsmuir. All Year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "box_canyon_dam_to_dunsmuir"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(A)",
+      "humanSummary": "Box Canyon Dam downstream to Dunsmuir: only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "box_canyon_dam_to_dunsmuir"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(A)",
+      "humanSummary": "Box Canyon Dam downstream to Dunsmuir: 0 trout \u2014 catch-and-release only",
+      "verbatimText": "0 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 5,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "5 trout daily bag; per CCR \u00a77.50(a), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 5 trout."
+      },
+      "groupKey": "g_dunsmuir_to_sweetbriar",
+      "seasonPeriodKey": "sp_dunsmuir_sweetbriar_summer",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "dunsmuir_to_sweetbriar"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(B)",
+      "humanSummary": "Scarlett Way bridge to Sweetbriar: 5 trout daily bag and possession limit, Saturday preceding Memorial Day through September 30",
+      "verbatimText": "Sat. preceding Memorial Day through Sep. 30. 5 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "ccr_7_50_a",
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 2,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 trout daily bag; per CCR \u00a77.50(a), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 2 trout."
+      },
+      "groupKey": "g_dunsmuir_to_sweetbriar",
+      "seasonPeriodKey": "sp_dunsmuir_sweetbriar_fall",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "dunsmuir_to_sweetbriar"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(B)",
+      "humanSummary": "Scarlett Way bridge to Sweetbriar: 2 trout daily bag and possession limit, October 1 through the Friday preceding Memorial Day, artificial lures only",
+      "verbatimText": "Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures may be used. 2 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "ccr_7_50_a",
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": false,
+        "single_hook_required": false
+      },
+      "groupKey": "g_dunsmuir_to_sweetbriar",
+      "seasonPeriodKey": "sp_dunsmuir_sweetbriar_fall",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "dunsmuir_to_sweetbriar"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(B)",
+      "humanSummary": "Scarlett Way bridge to Sweetbriar: only artificial lures may be used, October 1 through the Friday preceding Memorial Day (no gear restriction during the summer period)",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "trout_season",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ]
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "sweetbriar_to_shasta_lake"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(C)",
+      "humanSummary": "County bridge at Sweetbriar downstream to Shasta Lake: open to fishing all year",
+      "verbatimText": "Sacramento River and tributaries from the county bridge at Sweetbriar downstream to Shasta Lake. All year.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": false,
+        "single_hook_required": false
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "sweetbriar_to_shasta_lake"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(C)",
+      "humanSummary": "Sweetbriar downstream to Shasta Lake: only artificial lures may be used",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 2,
+        "possession": 2,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "2 trout daily bag; per CCR \u00a77.50(a), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit is also 2 trout."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "sweetbriar_to_shasta_lake"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(126)(C)",
+      "humanSummary": "Sweetbriar downstream to Shasta Lake: 2 trout daily bag and possession limit",
+      "verbatimText": "2 trout",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_126",
+        "corroborating": [
+          "ccr_7_50_a",
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": []
+}

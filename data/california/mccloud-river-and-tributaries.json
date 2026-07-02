@@ -1,0 +1,231 @@
+{
+  "asOf": "2026-07-01",
+  "water": { "name": "McCloud River and tributaries", "waterType": "river", "states": ["CA"], "counties": ["Shasta", "Siskiyou"], "aliases": [], "gnisId": null, "lon": -122.0804, "lat": 41.1350, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [
+    { "key": "moosehead_creek", "name": "Moosehead Creek and all tributaries", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River system", "lon": -121.900, "lat": 41.355 },
+    { "key": "edson_creek", "name": "Edson Creek", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River system", "lon": -121.880, "lat": 41.330 },
+    { "key": "swamp_creek", "name": "Swamp Creek and all tributaries", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River system", "lon": -121.850, "lat": 41.310 },
+    { "key": "sheepheaven_creek", "name": "Sheepheaven Creek", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River system", "lon": -121.870, "lat": 41.345 },
+    { "key": "bull_creek", "name": "Bull Creek and tributaries", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River system", "lon": -121.920, "lat": 41.260 },
+    { "key": "dry_creek", "name": "Dry Creek south of upper McCloud River", "fromDesc": "headwaters", "toDesc": "confluence with the upper McCloud River, south side", "lon": -121.960, "lat": 41.230 },
+    { "key": "mccloud_dam_to_ladybug", "name": "McCloud River, McCloud Dam to Ladybug Creek", "fromDesc": "McCloud Dam", "toDesc": "confluence of Ladybug Creek", "lon": -122.088, "lat": 41.128 },
+    { "key": "ladybug_to_shasta_lake", "name": "McCloud River, Ladybug Creek to Shasta Lake", "fromDesc": "confluence of Ladybug Creek", "toDesc": "Shasta Lake", "lon": -122.190, "lat": 41.020 }
+  ],
+  "species": [
+    { "commonName": "McCloud River redband trout", "scientificName": "Oncorhynchus mykiss stonei", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Bull trout", "scientificName": "Salvelinus confluentus", "category": "char", "nativeStatus": "native", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_90", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(90) — McCloud River and tributaries (Shasta and Siskiyou Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(90) McCloud River and tributaries (Shasta and Siskiyou Cos.). (A) Moosehead Creek and all tributaries. Closed to all fishing all year. (B) Edson Creek. Closed to all fishing all year. (C) Swamp Creek and all tributaries. Sat. preceding Memorial Day through the last day in Feb. Only artificial lures with barbless hooks may be used. 0 trout. (D) Sheepheaven Creek. Closed to all fishing all year. (E) Bull Creek and tributaries. Closed to all fishing all year. (F) Dry Creek south of upper McCloud River. Closed to all fishing all year. (G) McCloud River from McCloud Dam downstream to confluence of Ladybug Creek. Sat. preceding Memorial Day through Sep. 30. Only Artificial lures may be used. 2 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hooks may be used. 0 trout. (H) McCloud River from confluence of Ladybug Creek downstream to Shasta Lake. All year. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "cdfw_mccloud_redband", "url": "https://wildlife.ca.gov/Fishing/Inland/McCloud-River-Redband-Trout", "title": "McCloud River Redband Trout — California Department of Fish and Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "caltrout_bull_trout", "url": "https://caltrout.org/sos/species-accounts/trout/bull-trout/", "title": "Bull Trout | California Trout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [
+    { "key": "g_mccloud_dam_to_ladybug", "authorityKey": "cdfw", "citation": "7.50(b)(90)(G)", "humanSummary": "McCloud River from McCloud Dam downstream to the confluence of Ladybug Creek: two-period season — 2 trout with artificial lures only (Sat. preceding Memorial Day–Sep. 30); 0 trout catch-and-release with artificial lures and barbless hooks (Oct. 1–Fri. preceding Memorial Day).", "verbatimText": "McCloud River from McCloud Dam downstream to confluence of Ladybug Creek. Sat. preceding Memorial Day through Sep. 30. Only Artificial lures may be used. 2 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hooks may be used. 0 trout" }
+  ],
+  "seasonPeriods": [
+    { "key": "sp_dam_summer", "groupKey": "g_mccloud_dam_to_ladybug", "label": "summer_take_season", "status": "open", "startSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "endSpec": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } },
+    { "key": "sp_dam_fall_winter", "groupKey": "g_mccloud_dam_to_ladybug", "label": "fall_winter_catch_release", "status": "open_catch_release", "startSpec": { "type": "fixed", "month": 10, "day": 1, "verbatim": "October 1" }, "endSpec": { "type": "relative", "ordinal": "last", "weekday": "fri", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Friday preceding Memorial Day" } }
+  ],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "moosehead_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(A)",
+      "humanSummary": "Moosehead Creek and all tributaries closed to all fishing all year",
+      "verbatimText": "Moosehead Creek and all tributaries. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "edson_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(B)",
+      "humanSummary": "Edson Creek closed to all fishing all year",
+      "verbatimText": "Edson Creek. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "take_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 2, "day": 28, "verbatim": "the last day in February" } } ], "note": "Season spans the calendar year-end (opens in late May, runs through the last day of the following February); closed only in March, April, and early May." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "swamp_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(C)",
+      "humanSummary": "Open Saturday preceding Memorial Day through the last day in February",
+      "verbatimText": "Swamp Creek and all tributaries. Sat. preceding Memorial Day through the last day in Feb. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "swamp_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(C)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "0 trout — all trout caught must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "McCloud River redband trout" } ],
+      "scope": { "type": "reach", "reachKey": "swamp_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(C)",
+      "humanSummary": "0 trout — mandatory catch-and-release",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "sheepheaven_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(D)",
+      "humanSummary": "Sheepheaven Creek closed to all fishing all year",
+      "verbatimText": "Sheepheaven Creek. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "bull_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(E)",
+      "humanSummary": "Bull Creek and tributaries closed to all fishing all year",
+      "verbatimText": "Bull Creek and tributaries. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "closure",
+      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed to all fishing all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "dry_creek" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(F)",
+      "humanSummary": "Dry Creek south of upper McCloud River closed to all fishing all year",
+      "verbatimText": "Dry Creek south of upper McCloud River. Closed to all fishing all year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "unit": "fish", "aggregation": "combined_group" },
+      "groupKey": "g_mccloud_dam_to_ladybug", "seasonPeriodKey": "sp_dam_summer", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "McCloud River redband trout" } ],
+      "scope": { "type": "reach", "reachKey": "mccloud_dam_to_ladybug" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(G)",
+      "humanSummary": "2 trout during the take season (Sat. preceding Memorial Day–Sep. 30) between McCloud Dam and Ladybug Creek",
+      "verbatimText": "Sat. preceding Memorial Day through Sep. 30. Only Artificial lures may be used. 2 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used (barbless hooks not required during this period)." },
+      "groupKey": "g_mccloud_dam_to_ladybug", "seasonPeriodKey": "sp_dam_summer", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "mccloud_dam_to_ladybug" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(G)",
+      "humanSummary": "Artificial lures only during the take season, barbless not required",
+      "verbatimText": "Only Artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "0 trout — all trout caught must be released unharmed." },
+      "groupKey": "g_mccloud_dam_to_ladybug", "seasonPeriodKey": "sp_dam_fall_winter", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "McCloud River redband trout" } ],
+      "scope": { "type": "reach", "reachKey": "mccloud_dam_to_ladybug" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(G)",
+      "humanSummary": "0 trout, catch-and-release, Oct. 1 through Fri. preceding Memorial Day, between McCloud Dam and Ladybug Creek",
+      "verbatimText": "Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": "g_mccloud_dam_to_ladybug", "seasonPeriodKey": "sp_dam_fall_winter", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "mccloud_dam_to_ladybug" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(G)",
+      "humanSummary": "Artificial lures with barbless hooks required, Oct. 1 through Fri. preceding Memorial Day",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Open all year but effectively catch-and-release only: 0 trout may be kept and only artificial lures with barbless hooks are permitted." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "ladybug_to_shasta_lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(H)",
+      "humanSummary": "Open all year, catch-and-release only (0 trout), from Ladybug Creek downstream to Shasta Lake",
+      "verbatimText": "McCloud River from confluence of Ladybug Creek downstream to Shasta Lake. All year. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "reach", "reachKey": "ladybug_to_shasta_lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(H)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "0 trout — all trout caught must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [ { "speciesCommonName": "Rainbow trout" }, { "speciesCommonName": "Brown trout" }, { "speciesCommonName": "McCloud River redband trout" } ],
+      "scope": { "type": "reach", "reachKey": "ladybug_to_shasta_lake" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(90)(H)",
+      "humanSummary": "0 trout — mandatory catch-and-release from Ladybug Creek downstream to Shasta Lake",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_freshwater_booklet_2026", "corroborating": ["ccr_7_50_b_90"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": []
+}
