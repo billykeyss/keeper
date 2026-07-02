@@ -79,6 +79,10 @@ interface MapProps {
   selectedId: number | null;
   selectedStatus: ScopeStatus | null;
   onSelect: (pin: WaterPin, focusScope?: string) => void;
+  /** When set, only waters stocked with this species (and their reaches) are shown. */
+  stockedFilter: string | null;
+  /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
+  flyTo: { lon: number; lat: number } | null;
 }
 
 type MarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; pin: WaterPin };
@@ -126,7 +130,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -140,6 +144,8 @@ export function MapView({ selectedId, selectedStatus, onSelect }: MapProps) {
   onSelectRef.current = onSelect;
   const selectedIdRef = useRef<number | null>(selectedId);
   selectedIdRef.current = selectedId;
+  const stockedFilterRef = useRef<string | null>(stockedFilter);
+  stockedFilterRef.current = stockedFilter;
   const applySelectionRef = useRef<() => void>(() => {});
   const refreshRef = useRef<() => void>(() => {});
 
@@ -280,7 +286,7 @@ export function MapView({ selectedId, selectedStatus, onSelect }: MapProps) {
       const ac = new AbortController();
       abortRef.current = ac;
       setLoading(true);
-      fetchWaters(bbox, ac.signal)
+      fetchWaters(bbox, ac.signal, stockedFilterRef.current)
         .then(({ waters, reaches }) => {
           setError(false);
           setLoading(false);
@@ -326,6 +332,17 @@ export function MapView({ selectedId, selectedStatus, onSelect }: MapProps) {
       }
     }
   }, [selectedId, selectedStatus]);
+
+  // Refetch pins when the stocked-species filter changes.
+  useEffect(() => {
+    refreshRef.current();
+  }, [stockedFilter]);
+
+  // One-shot fly-to (picking a water from the stocked-fish panel).
+  useEffect(() => {
+    if (!flyTo || !mapRef.current) return;
+    mapRef.current.flyTo({ center: [flyTo.lon, flyTo.lat], zoom: 12, duration: 900 });
+  }, [flyTo]);
 
   return (
     <>

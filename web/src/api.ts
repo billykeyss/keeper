@@ -137,15 +137,51 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {
   return (await res.json()) as T;
 }
 
-/** Fetch water + reach pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat". */
+/** Fetch water + reach pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat".
+ *  `stocked` (optional) restricts pins to waters with stocking records for that species. */
 export async function fetchWaters(
   bbox: string,
   signal?: AbortSignal,
+  stocked?: string | null,
 ): Promise<{ waters: WaterPin[]; reaches: ReachPin[] }> {
+  const stockedQ = stocked ? `&stocked=${encodeURIComponent(stocked)}` : "";
   return getJson<{ waters: WaterPin[]; reaches: ReachPin[] }>(
-    `/api/waters?bbox=${encodeURIComponent(bbox)}`,
+    `/api/waters?bbox=${encodeURIComponent(bbox)}${stockedQ}`,
     signal,
   );
+}
+
+/** One row from GET /api/stocking/species. */
+export interface StockedSpeciesRow {
+  commonName: string;
+  watersCount: number;
+  eventCount: number;
+  scheduleCount: number;
+  lastStockedOn: string | null;
+}
+
+/** One row from GET /api/stocking/waters?species=. */
+export interface StockedWaterRow {
+  id: number;
+  name: string;
+  waterType: string;
+  states: string[];
+  lon: number;
+  lat: number;
+  lastStockedOn: string | null;
+}
+
+export async function fetchStockedSpecies(signal?: AbortSignal): Promise<StockedSpeciesRow[]> {
+  const res = await getJson<{ species: StockedSpeciesRow[] }>("/api/stocking/species", signal);
+  return res.species;
+}
+
+export async function fetchStockedWaters(species: string, signal?: AbortSignal): Promise<StockedWaterRow[]> {
+  const res = await getJson<{ waters: StockedWaterRow[] }>(
+    `/api/stocking/waters?species=${encodeURIComponent(species)}`,
+    signal,
+  );
+  return res.waters;
 }
 
 /** Fetch the resolved rules for a water on a date (defaults to the server's today). */

@@ -159,6 +159,122 @@ a {
   letter-spacing: 0.01em;
 }
 
+/* --- stocked-fish browser --- */
+.overlay-chips {
+  position: fixed;
+  top: calc(var(--safe-top, 0px) + 14px);
+  right: 14px;
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+}
+.stocked-chip {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bone) 94%, transparent);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--ink-14);
+  border-radius: var(--radius-pill);
+  padding: 7px 12px;
+  box-shadow: var(--shadow-chip);
+  cursor: pointer;
+}
+.stocked-chip--active {
+  background: var(--warden);
+  color: var(--bone);
+  border-color: var(--warden);
+}
+.stocked-panel {
+  position: fixed;
+  top: calc(var(--safe-top, 0px) + 56px);
+  right: 14px;
+  width: min(340px, calc(100vw - 28px));
+  max-height: min(60dvh, 520px);
+  overflow-y: auto;
+  background: var(--bone);
+  border: 1px solid var(--ink-14);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sheet);
+  z-index: 30;
+  padding: 12px 14px;
+}
+.stocked-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.stocked-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin: 0;
+}
+.stocked-close {
+  position: static;
+}
+.stocked-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stocked-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-top: 1px dashed var(--ink-12);
+  padding: 9px 2px;
+  cursor: pointer;
+}
+.stocked-list li:first-child .stocked-row {
+  border-top: none;
+}
+.stocked-species-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.stocked-meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink-48);
+}
+.stocked-back {
+  background: none;
+  border: none;
+  color: var(--ink-64);
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  padding: 2px 0 6px;
+  cursor: pointer;
+}
+.stocked-filter-note {
+  font-size: 12.5px;
+  color: var(--ink-64);
+  margin: 0 0 4px;
+}
+.stocked-empty {
+  font-size: 12.5px;
+  color: var(--ink-48);
+  padding: 8px 2px;
+  list-style: none;
+}
+.stocked-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--ink-64);
+  padding: 8px 2px;
+}
+
 /* Empty / loading hints over the map */
 .map-hint {
   position: absolute;
