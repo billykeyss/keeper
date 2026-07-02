@@ -1,11 +1,12 @@
 import { Hono } from "hono";
-import { and, eq, or, inArray, isNull, lte, gte } from "drizzle-orm";
+import { and, eq, or, inArray, isNull, lte, gte, desc } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import { db } from "../db/client";
 import {
   waterBody, reach, waterBodyAuthority, authority, regulation, regulationTarget,
   seasonPeriod, regulationGroup, regulationSource, source, regulationSpecies,
   species, speciesGroup, waterBodySpecies, licenseReciprocity,
+  speciesStockingEvent, speciesStockingSchedule,
 } from "../db/schema";
 import type { DateSpec } from "../params/shared";
 import { isDateInWindow, windowResolvable } from "./season";
@@ -333,6 +334,33 @@ rules.get("/api/waters/:id/rules", async (c) => {
     .innerJoin(species, eq(species.id, waterBodySpecies.speciesId))
     .where(eq(waterBodySpecies.waterBodyId, waterId));
 
+  // --- stocking events (newest first) + schedule ---
+  const stockingEventRows = await db.select({
+    species: species.commonName,
+    quantity: speciesStockingEvent.quantity,
+    sizeNote: speciesStockingEvent.sizeNote,
+    date: speciesStockingEvent.stockedOn,
+    sourceUrl: source.url,
+  })
+    .from(speciesStockingEvent)
+    .innerJoin(species, eq(species.id, speciesStockingEvent.speciesId))
+    .leftJoin(source, eq(source.id, speciesStockingEvent.sourceId))
+    .where(eq(speciesStockingEvent.waterBodyId, waterId))
+    .orderBy(desc(speciesStockingEvent.stockedOn));
+
+  const stockingScheduleRows = await db.select({
+    species: species.commonName,
+    frequency: speciesStockingSchedule.frequency,
+    seasonStartMonth: speciesStockingSchedule.seasonStartMonth,
+    seasonEndMonth: speciesStockingSchedule.seasonEndMonth,
+    note: speciesStockingSchedule.note,
+    sourceUrl: source.url,
+  })
+    .from(speciesStockingSchedule)
+    .innerJoin(species, eq(species.id, speciesStockingSchedule.speciesId))
+    .leftJoin(source, eq(source.id, speciesStockingSchedule.sourceId))
+    .where(eq(speciesStockingSchedule.waterBodyId, waterId));
+
   const overall: ScopeStatus = waterStatus;
 
   return c.json({
@@ -349,6 +377,7 @@ rules.get("/api/waters/:id/rules", async (c) => {
     licenses: licenseRules.map((r) => ({ ...serialize(r), authority: r._authorityName ?? null })),
     reciprocity: recRows,
     species: speciesRows,
+    stocking: { events: stockingEventRows, schedule: stockingScheduleRows },
     asOf: on,
   });
 });

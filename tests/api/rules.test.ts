@@ -58,15 +58,22 @@ const water2: WaterDataset = {
   asOf: "2026-07-01",
   water: { name: "No Season Lake", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.30, lat: 39.30, verifyCurrent: true },
   authorities: [{ key: "cdfw", name: "California Department of Fish and Wildlife", state: "CA", type: "state_agency", roles: ["take_rules"] }],
-  reaches: [], species: [], speciesGroups: [],
+  reaches: [],
+  species: [{ commonName: "Rainbow trout", scientificName: "Oncorhynchus mykiss", category: "trout", nativeStatus: "stocked", presence: "stocked" }],
+  speciesGroups: [],
   sources: [{ ...src }],
   groups: [], seasonPeriods: [],
   regulations: [
     { ruleType: "bag", parameters: { daily: 5, unit: "fish", aggregation: "combined_group" }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "7.50(b)", humanSummary: "5 trout/day", verbatimText: "5 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
-  stockingEvents: [],
-  stockingSchedule: [],
+  stockingEvents: [
+    { speciesCommonName: "Rainbow trout", quantity: 1000, sizeNote: "9 in", date: "2026-03-01", sourceKeys: { primary: "s1", corroborating: [] } },
+    { speciesCommonName: "Rainbow trout", quantity: 800, sizeNote: "10 in", date: "2026-05-14", sourceKeys: { primary: "s1", corroborating: [] } },
+  ],
+  stockingSchedule: [
+    { speciesCommonName: "Rainbow trout", frequency: "seasonal", seasonStartMonth: 4, seasonEndMonth: 9, note: "Stocked biweekly through summer.", sourceKeys: { primary: "s1", corroborating: [] } },
+  ],
 };
 
 // water3: an open (year-round) season with a period-bound *keepable* bag for one species PLUS an
@@ -191,6 +198,25 @@ describe("GET /api/waters/:id/rules", () => {
     const body = await res.json();
     expect(body.status.overall).toBe("unknown");
     expect(body.status.verifyCurrent).toBe(true);
+  });
+
+  it("surfaces stocking events (newest first) and schedule for a water that has them", async () => {
+    const res = await app.request(`/api/waters/${water2Id}/rules?on=2026-07-01`);
+    const body = await res.json();
+    expect(body.stocking.events).toHaveLength(2);
+    expect(body.stocking.events[0].date).toBe("2026-05-14"); // newest first
+    expect(body.stocking.events[0].quantity).toBe(800);
+    expect(body.stocking.events[0].species).toBe("Rainbow trout");
+    expect(body.stocking.events[0].sourceUrl).toBeTruthy();
+    expect(body.stocking.schedule).toHaveLength(1);
+    expect(body.stocking.schedule[0].frequency).toBe("seasonal");
+    expect(body.stocking.schedule[0].seasonStartMonth).toBe(4);
+  });
+
+  it("returns empty stocking arrays for a water with none", async () => {
+    const res = await app.request(`/api/waters/${water1Id}/rules?on=2026-07-01`);
+    const body = await res.json();
+    expect(body.stocking).toEqual({ events: [], schedule: [] });
   });
 
   it("open season + keepable bag is 'open' even when an unrelated-species C&R bag is in force", async () => {
