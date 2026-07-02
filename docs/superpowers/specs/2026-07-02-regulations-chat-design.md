@@ -118,10 +118,12 @@ Rationale for the sharp edges (verified against SDK 0.3.x docs):
 - `abortController` wired to client disconnect — otherwise the CLI subprocess
   keeps running (and billing) after the browser leaves.
 - **Runtime verification, fail closed:** on the init system message, assert
-  (a) `tools` contains exactly the three `mcp__keeper__*` names and nothing
-  else, and (b) `apiKeySource` is the API-key env var. On violation: abort the
-  query, return an error to the client, log loudly. This turns
-  misconfiguration into an outage instead of a leak or surprise bill.
+  `tools` contains exactly the three `mcp__keeper__*` names and nothing else —
+  on violation: abort the query, return an error to the client, log loudly.
+  `apiKeySource` is logged on every init and verified during the deploy smoke
+  test (not hard-asserted: its enum values are undocumented, and a wrong guess
+  would brick chat); the fail-closed key requirement is enforced upstream by
+  `chatConfigured()` refusing to run without `ANTHROPIC_API_KEY` set.
 - `.chat-sessions/` is added to `.gitignore`. SDK JSONL transcripts accumulate
   there; cleanup is a documented operational note (out of scope to automate in v1).
 - Known friction to verify at implementation time: the SDK peer-requires
