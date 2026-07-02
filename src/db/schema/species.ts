@@ -1,5 +1,5 @@
-import { pgTable, serial, integer, text } from "drizzle-orm/pg-core";
-import { speciesCategoryEnum, nativeStatusEnum, presenceEnum } from "../enums";
+import { pgTable, serial, integer, text, date } from "drizzle-orm/pg-core";
+import { speciesCategoryEnum, nativeStatusEnum, presenceEnum, stockingFrequencyEnum } from "../enums";
 import { authority, waterBody } from "./geography";
 import { source } from "./source";
 import { stamps } from "../stamps";
@@ -43,5 +43,28 @@ export const waterBodySpecies = pgTable("water_body_species", {
   speciesId: integer("species_id").notNull().references(() => species.id),
   presence: presenceEnum("presence").notNull(),
   sourceId: integer("source_id").references(() => source.id),
+  ...stamps,
+});
+
+export const speciesStockingEvent = pgTable("species_stocking_event", {
+  id: serial("id").primaryKey(),
+  waterBodyId: integer("water_body_id").notNull().references(() => waterBody.id),
+  speciesId: integer("species_id").notNull().references(() => species.id),
+  quantity: integer("quantity"),
+  sizeNote: text("size_note"),
+  stockedOn: date("stocked_on").notNull(),
+  sourceId: integer("source_id").notNull().references(() => source.id),
+  ...stamps,
+});
+
+export const speciesStockingSchedule = pgTable("species_stocking_schedule", {
+  id: serial("id").primaryKey(),
+  waterBodyId: integer("water_body_id").notNull().references(() => waterBody.id),
+  speciesId: integer("species_id").notNull().references(() => species.id),
+  frequency: stockingFrequencyEnum("frequency").notNull(),
+  seasonStartMonth: integer("season_start_month"),
+  seasonEndMonth: integer("season_end_month"),
+  note: text("note"),
+  sourceId: integer("source_id").notNull().references(() => source.id),
   ...stamps,
 });
