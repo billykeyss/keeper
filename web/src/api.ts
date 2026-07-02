@@ -96,7 +96,7 @@ export interface StockingScheduleRow {
   frequency: string;
   seasonStartMonth: number | null;
   seasonEndMonth: number | null;
-  note: string;
+  note: string | null;
   sourceUrl: string | null;
 }
 
