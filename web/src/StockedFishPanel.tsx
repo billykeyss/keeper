@@ -27,6 +27,10 @@ export function StockedFishPanel({ open, onClose, activeFilter, onFilter, onPick
   const [species, setSpecies] = useState<StockedSpeciesRow[] | null>(null);
   const [waters, setWaters] = useState<StockedWaterRow[] | null>(null);
   const [error, setError] = useState(false);
+  // Bumped by the Retry button so the fetch effects re-fire even when their other
+  // deps are unchanged (after a failure, `species` stays null — setting it to null
+  // again would be a no-op and never re-trigger the effect).
+  const [retryNonce, setRetryNonce] = useState(0);
 
   useEffect(() => {
     if (!open || species) return;
@@ -35,17 +39,17 @@ export function StockedFishPanel({ open, onClose, activeFilter, onFilter, onPick
       .then((rows) => { setSpecies(rows); setError(false); })
       .catch(() => { if (!ac.signal.aborted) setError(true); });
     return () => ac.abort();
-  }, [open, species]);
+  }, [open, species, retryNonce]);
 
   useEffect(() => {
     if (!activeFilter) { setWaters(null); return; }
     const ac = new AbortController();
     setWaters(null);
     fetchStockedWaters(activeFilter, ac.signal)
-      .then((rows) => setWaters(rows))
+      .then((rows) => { setWaters(rows); setError(false); })
       .catch(() => { if (!ac.signal.aborted) setError(true); });
     return () => ac.abort();
-  }, [activeFilter]);
+  }, [activeFilter, retryNonce]);
 
   useEffect(() => {
     if (!open) return;
@@ -68,7 +72,7 @@ export function StockedFishPanel({ open, onClose, activeFilter, onFilter, onPick
       {error && (
         <div className="stocked-error" role="alert">
           <span>Couldn’t load stocking data.</span>
-          <button className="btn-retry" onClick={() => { setError(false); setSpecies(null); }}>
+          <button className="btn-retry" onClick={() => { setError(false); setRetryNonce((n) => n + 1); }}>
             <RetryIcon size={15} /> Retry
           </button>
         </div>

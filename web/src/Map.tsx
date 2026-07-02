@@ -79,7 +79,10 @@ interface MapProps {
   selectedId: number | null;
   selectedStatus: ScopeStatus | null;
   onSelect: (pin: WaterPin, focusScope?: string) => void;
-  /** When set, only waters stocked with this species (and their reaches) are shown. */
+  /** When set, only waters stocked with this species (and their reaches) are shown —
+   *  with one deliberate exception: the currently selected water's pin is never removed
+   *  while its sheet is open (the map-wide keep-selected-visible rule), even if the
+   *  filter excludes it. */
   stockedFilter: string | null;
   /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
   flyTo: { lon: number; lat: number } | null;
