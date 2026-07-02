@@ -18,7 +18,8 @@ const baseReg: Regulation = { ruleType: "bag", parameters: { daily: 5, unit: "fi
 const rainbow: Species = { commonName: "Rainbow trout", scientificName: "Oncorhynchus mykiss", category: "trout", nativeStatus: "stocked", presence: "stocked" };
 const brown: Species = { commonName: "Brown trout", scientificName: "Salmo trutta", category: "trout", nativeStatus: "stocked", presence: "stocked" };
 
-// Water A: two rainbow events. Water B: rainbow schedule + brown event. Water C: no stocking.
+// Water A: two rainbow events. Water B: rainbow schedule (TITLE-CASE variant, exercising
+// cross-water casing variance seen in the real dataset) + brown event. Water C: no stocking.
 const waterA: WaterDataset = {
   asOf: "2026-07-01",
   water: { name: "Stocked Lake A", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.10, lat: 39.10, verifyCurrent: false },
@@ -33,13 +34,13 @@ const waterA: WaterDataset = {
 const waterB: WaterDataset = {
   asOf: "2026-07-01",
   water: { name: "Stocked Lake B", waterType: "lake", states: ["CA"], counties: ["Nevada"], aliases: [], gnisId: null, lon: -120.20, lat: 39.20, verifyCurrent: false },
-  authorities: [{ ...cdfw }], reaches: [], species: [{ ...rainbow }, { ...brown }], speciesGroups: [],
+  authorities: [{ ...cdfw }], reaches: [], species: [{ ...rainbow, commonName: "Rainbow Trout" }, { ...brown }], speciesGroups: [],
   sources: [{ ...src }], groups: [], seasonPeriods: [], regulations: [{ ...baseReg }], reciprocity: [],
   stockingEvents: [
     { speciesCommonName: "Brown trout", quantity: 100, sizeNote: null, date: "2026-05-01", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   stockingSchedule: [
-    { speciesCommonName: "Rainbow trout", frequency: "seasonal", seasonStartMonth: 4, seasonEndMonth: 9, note: "Stocked through summer.", sourceKeys: { primary: "s1", corroborating: [] } },
+    { speciesCommonName: "Rainbow Trout", frequency: "seasonal", seasonStartMonth: 4, seasonEndMonth: 9, note: "Stocked through summer.", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
 };
 const waterC: WaterDataset = {
@@ -53,12 +54,15 @@ const waterC: WaterDataset = {
 describe("stocking browse API", () => {
   beforeAll(async () => { await loadDatasets(db, [waterA, waterB, waterC]); });
 
-  it("GET /api/stocking/species aggregates by common name across waters", async () => {
+  it("GET /api/stocking/species aggregates by common name across waters, case-insensitively", async () => {
     const res = await app.request("/api/stocking/species");
     expect(res.status).toBe(200);
     const body = await res.json();
-    const rainbowRow = body.species.find((s: any) => s.commonName === "Rainbow trout");
+    // waterA says "Rainbow trout", waterB says "Rainbow Trout" — must merge into ONE row,
+    // displayed with the most frequent casing (waterA contributes 2 rows vs waterB's 1).
+    const rainbowRow = body.species.find((s: any) => s.commonName.toLowerCase() === "rainbow trout");
     const brownRow = body.species.find((s: any) => s.commonName === "Brown trout");
+    expect(body.species.filter((s: any) => s.commonName.toLowerCase() === "rainbow trout")).toHaveLength(1);
     expect(rainbowRow).toEqual({ commonName: "Rainbow trout", watersCount: 2, eventCount: 2, scheduleCount: 1, lastStockedOn: "2026-06-15" });
     expect(brownRow).toEqual({ commonName: "Brown trout", watersCount: 1, eventCount: 1, scheduleCount: 0, lastStockedOn: "2026-05-01" });
     // rainbow (2 waters) sorts before brown (1 water)

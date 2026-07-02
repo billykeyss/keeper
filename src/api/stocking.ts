@@ -6,10 +6,11 @@ export const stocking = new Hono();
 
 /** Species that have source-backed stocking records (events or schedules), aggregated by
  *  common name — the species table holds one row per (water, species), so identity here is
- *  the name, not the id. */
+ *  the name, not the id. Grouping is case-insensitive (files vary: "Rainbow trout" vs
+ *  "Rainbow Trout"); the displayed casing is the most frequent variant (mode()). */
 stocking.get("/api/stocking/species", async (c) => {
   const rows = (await db.execute(sql`
-    select sp.common_name as "commonName",
+    select mode() within group (order by sp.common_name) as "commonName",
            count(distinct x.water_body_id)::int as "watersCount",
            count(*) filter (where x.kind = 'event')::int as "eventCount",
            count(*) filter (where x.kind = 'schedule')::int as "scheduleCount",
@@ -22,8 +23,8 @@ stocking.get("/api/stocking/species", async (c) => {
         from species_stocking_schedule s
     ) x
     join species sp on sp.id = x.species_id
-    group by sp.common_name
-    order by count(distinct x.water_body_id) desc, sp.common_name
+    group by lower(sp.common_name)
+    order by count(distinct x.water_body_id) desc, lower(sp.common_name)
   `)) as unknown as Array<Record<string, unknown>>;
 
   return c.json({
