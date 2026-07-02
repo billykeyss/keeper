@@ -3,11 +3,13 @@ import { existsSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { waters } from "./waters";
 import { rules } from "./rules";
+import { stocking } from "./stocking";
 
 export const app = new Hono();
 
 app.route("/", waters);
 app.route("/", rules);
+app.route("/", stocking);
 
 // Statically serve the built SPA (web/dist) when present. Guarded so tests and the
 // API-only workflow don't require a web build to exist.

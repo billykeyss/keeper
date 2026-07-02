@@ -19,6 +19,9 @@ waters.get("/api/waters", async (c) => {
   const bbox = parseBbox(c.req.query("bbox"));
   if (!bbox) return c.json({ error: "bbox must be minLon,minLat,maxLon,maxLat with min < max" }, 400);
   const [minLon, minLat, maxLon, maxLat] = bbox;
+  // Optional stocked-species filter: restrict pins to waters with a source-backed stocking
+  // record (event or schedule) for this species, matched case-insensitively by common name.
+  const stocked = c.req.query("stocked")?.trim() || null;
 
   const rows = (await db.execute(sql`
     select w.id, w.name, w.water_type as "waterType", w.states, w.verify_current as "verifyCurrent",
@@ -33,6 +36,14 @@ waters.get("/api/waters", async (c) => {
     from water_body w
     where w.geom is not null
       and st_intersects(w.geom, st_makeenvelope(${minLon}, ${minLat}, ${maxLon}, ${maxLat}, 4326))
+      and (${stocked}::text is null or exists (
+        select 1 from (
+          select e.water_body_id, e.species_id from species_stocking_event e
+          union all
+          select s.water_body_id, s.species_id from species_stocking_schedule s
+        ) sx join species sp on sp.id = sx.species_id
+        where sx.water_body_id = w.id and lower(sp.common_name) = lower(${stocked})
+      ))
     order by w.name
   `)) as unknown as Array<Record<string, unknown>>;
 
@@ -63,6 +74,14 @@ waters.get("/api/waters", async (c) => {
        or (r.geom is null and r.lon is not null and r.lat is not null
            and st_intersects(st_setsrid(st_makepoint(r.lon, r.lat), 4326), st_makeenvelope(${minLon}, ${minLat}, ${maxLon}, ${maxLat}, 4326)))
     )
+      and (${stocked}::text is null or exists (
+        select 1 from (
+          select e.water_body_id, e.species_id from species_stocking_event e
+          union all
+          select s.water_body_id, s.species_id from species_stocking_schedule s
+        ) sx join species sp on sp.id = sx.species_id
+        where sx.water_body_id = w.id and lower(sp.common_name) = lower(${stocked})
+      ))
     order by w.name, r.id
   `)) as unknown as Array<Record<string, unknown>>;
 
