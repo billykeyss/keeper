@@ -8,6 +8,7 @@ import {
 import { StatusPill } from "./StatusPill";
 import { RuleCard, SpeciesLimitCard } from "./RuleCard";
 import { groupBagAndSize } from "./ruleFormat";
+import { StockingSection } from "./StockingSection";
 import { WarnIcon, RetryIcon, CloseIcon, ExternalIcon } from "./icons";
 
 function todayISO(): string {
@@ -339,6 +340,8 @@ function RulesBody({ data }: { data: RulesResponse }) {
           </div>
         </section>
       )}
+
+      <StockingSection events={data.stocking.events} schedule={data.stocking.schedule} />
 
       <footer className="sheet-foot">
         Regulations resolved for <span className="asof">{data.asOf}</span>. This is a convenience

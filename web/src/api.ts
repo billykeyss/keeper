@@ -83,6 +83,23 @@ export interface SpeciesRow {
   presence: string;
 }
 
+export interface StockingEventRow {
+  species: string;
+  quantity: number | null;
+  sizeNote: string | null;
+  date: string;
+  sourceUrl: string | null;
+}
+
+export interface StockingScheduleRow {
+  species: string;
+  frequency: string;
+  seasonStartMonth: number | null;
+  seasonEndMonth: number | null;
+  note: string;
+  sourceUrl: string | null;
+}
+
 export interface RulesResponse {
   water: {
     id: number;
@@ -101,6 +118,7 @@ export interface RulesResponse {
   licenses: LicenseRule[];
   reciprocity: ReciprocityRow[];
   species: SpeciesRow[];
+  stocking: { events: StockingEventRow[]; schedule: StockingScheduleRow[] };
   asOf: string;
 }
 
