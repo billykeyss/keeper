@@ -47,5 +47,40 @@ waters.get("/api/waters", async (c) => {
     ruleCount: Number(r.ruleCount),
   }));
 
-  return c.json({ waters: waterPins });
+  // Reaches carrying their own point (e.g. river segments with distinct regs) — plotted as
+  // a real line when we have traced path geometry (geom), else as a satellite marker at the
+  // representative point, so a multi-reach river doesn't collapse into one ambiguous water pin.
+  // Status is intentionally NOT resolved here (same lazy-status pattern as water pins above);
+  // it's only computed per-water, on demand, in /api/waters/:id/rules.
+  const reachRows = (await db.execute(sql`
+    select r.id, r.water_body_id as "waterBodyId", w.name as "waterName", r.name,
+           r.from_desc as "fromDesc", r.to_desc as "toDesc", r.lon, r.lat,
+           case when r.geom is not null then st_asgeojson(r.geom) end as "geomJson"
+    from reach r
+    join water_body w on w.id = r.water_body_id
+    where (
+          (r.geom is not null and st_intersects(r.geom, st_makeenvelope(${minLon}, ${minLat}, ${maxLon}, ${maxLat}, 4326)))
+       or (r.geom is null and r.lon is not null and r.lat is not null
+           and st_intersects(st_setsrid(st_makepoint(r.lon, r.lat), 4326), st_makeenvelope(${minLon}, ${minLat}, ${maxLon}, ${maxLat}, 4326)))
+    )
+    order by w.name, r.id
+  `)) as unknown as Array<Record<string, unknown>>;
+
+  const reachPins = reachRows.map((r) => {
+    const geomJson = r.geomJson ? (JSON.parse(r.geomJson as string) as { type: string; coordinates: number[][][] }) : null;
+    // MultiLineString -> flatten to the single line we store (one line per reach today).
+    const line = geomJson ? geomJson.coordinates[0].map(([lon, lat]) => [lon, lat] as [number, number]) : null;
+    return {
+      id: Number(r.id),
+      waterBodyId: Number(r.waterBodyId),
+      waterName: r.waterName as string,
+      name: r.name as string | null,
+      sublabel: r.fromDesc && r.toDesc ? `${r.fromDesc} → ${r.toDesc}` : null,
+      lon: Number(r.lon),
+      lat: Number(r.lat),
+      line,
+    };
+  });
+
+  return c.json({ waters: waterPins, reaches: reachPins });
 });

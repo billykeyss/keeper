@@ -1,4 +1,4 @@
-import { pgTable, serial, integer, text, boolean } from "drizzle-orm/pg-core";
+import { pgTable, serial, integer, text, boolean, doublePrecision } from "drizzle-orm/pg-core";
 import { geometry } from "../geometry";
 import {
   authorityTypeEnum, licenseYearBasisEnum, waterTypeEnum, mgmtCategoryEnum,
@@ -63,6 +63,10 @@ export const reach = pgTable("reach", {
   toOffsetFt: integer("to_offset_ft"),
   toDirection: flowDirEnum("to_direction"),
   geom: geometry("geom", { type: "MultiLineString", srid: 4326 }),
+  // A single representative point for the reach (v1 — not the full line path), so the map can
+  // plot a marker per reach instead of only the parent water's centroid.
+  lon: doublePrecision("lon"),
+  lat: doublePrecision("lat"),
   county: text("county"),
   authorityId: integer("authority_id").references(() => authority.id),
   ...stamps,

@@ -6,18 +6,24 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
 const waterInfo = z.object({
   name: z.string(), waterType: z.enum(["lake","reservoir","river","stream","creek","pond","marina","impoundment"]),
-  states: z.array(z.enum(["CA","NV"])).min(1), counties: z.array(z.string()), aliases: z.array(z.string()),
-  gnisId: z.string().nullable(), lon: z.number().min(-125).max(-114), lat: z.number().min(35).max(43),
+  states: z.array(z.enum(["CA","NV","OR"])).min(1), counties: z.array(z.string()), aliases: z.array(z.string()),
+  gnisId: z.string().nullable(), lon: z.number().min(-125).max(-114), lat: z.number().min(32).max(46.5),
   verifyCurrent: z.boolean(),
 }).strict();
 
 const authorityRow = z.object({
-  key, name: z.string(), state: z.enum(["CA","NV"]).nullable(),
+  key, name: z.string(), state: z.enum(["CA","NV","OR"]).nullable(),
   type: z.enum(["state_agency","tribal","federal","land_trust","ngo","private_landowner"]),
   roles: z.array(z.enum(["take_rules","access","land_management","permit_issuer","none"])),
 }).strict();
 
-const reachRow = z.object({ key, name: z.string(), fromDesc: z.string(), toDesc: z.string(), lon: z.number(), lat: z.number() }).strict();
+const reachRow = z.object({
+  key, name: z.string(), fromDesc: z.string(), toDesc: z.string(), lon: z.number(), lat: z.number(),
+  // Optional real path geometry (e.g. traced from OpenStreetMap and clipped to this reach's
+  // described boundaries) — [lon, lat] pairs in path order. Falls back to the lon/lat point
+  // above when absent.
+  line: z.array(z.tuple([z.number(), z.number()])).min(2).nullable().optional(),
+}).strict();
 
 const speciesRow = z.object({
   commonName: z.string(), scientificName: z.string().nullable(),
@@ -59,7 +65,7 @@ const regulationRow = z.object({
   rulePolarity: z.enum(["applies","asserts_none","excludes"]), speciesScope: z.enum(["all","listed"]),
   speciesTargets: z.array(speciesTarget), scope,
   appliesToClass: z.enum(["any","tribal_member","non_tribal","spouse_of_member","minor","senior","disabled","resident","nonresident","active_military","youth"]),
-  jurisdictionState: z.enum(["CA","NV"]).nullable(), citation: z.string(), humanSummary: z.string(),
+  jurisdictionState: z.enum(["CA","NV","OR"]).nullable(), citation: z.string(), humanSummary: z.string(),
   verbatimText: z.string().nullable(), isParaphrase: z.boolean(), confidence: z.enum(["low","medium","high"]),
   sourceKeys: z.object({ primary: key, corroborating: z.array(key) }).strict(),
 }).strict().refine((r) => r.speciesScope === "all" || r.speciesTargets.length > 0, { message: "listed regulation requires speciesTargets" });

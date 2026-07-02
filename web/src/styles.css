@@ -45,9 +45,9 @@
   --radius-pill: 999px;
   --radius-tag: 6px;
 
-  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
-  --font-body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Libre Franklin", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Courier Prime", ui-monospace, "SF Mono", Menlo, monospace;
 
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -195,7 +195,11 @@ a {
 [data-status="catch_and_release"] { --c: var(--cr); }
 [data-status="closed"] { --c: var(--closed); }
 [data-status="unknown"] { --c: var(--unknown); }
-[data-status="pine"] { --c: var(--warden); } /* default (unselected) pin */
+/* Default (unselected) pin — flowing waters (river/stream/creek) carry a per-water identity
+   hue via inline --water-hue (so a cluster of reaches reads as "same river" at a glance);
+   everything else (lakes/ponds/reservoirs) falls back to the plain warden green. Selecting a
+   pin always overrides this with its true status color above — identity hue is unselected-only. */
+[data-status="pine"] { --c: var(--water-hue, var(--warden)); }
 
 /* ============================================================================
    Map pins — brass-grommet roundels (ink ring, bone inner ring, glyph center)
@@ -249,6 +253,22 @@ a {
     0 0 0 2px var(--ink),
     0 0 0 5px color-mix(in srgb, var(--brass) 62%, transparent),
     0 6px 16px rgba(26, 43, 34, 0.45);
+}
+
+/* Reach pins — smaller satellite markers for a water's sub-segments (e.g. river reaches with
+   distinct regs), so a multi-reach water doesn't collapse into one ambiguous pin. */
+.pin-reach {
+  padding: 5px; /* 14px body + 5*2 = 24px touch target */
+}
+.pin-body--reach {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--c, var(--warden));
+  border: 1.5px solid var(--bone);
+  box-shadow:
+    0 0 0 1.5px var(--ink),
+    0 1px 4px rgba(26, 43, 34, 0.35);
 }
 
 /* MapLibre chrome tuned to the ledger palette */
@@ -630,6 +650,37 @@ a {
 }
 .rule-card--none + .rule-card {
   border-top: none;
+}
+
+/* --- merged bag+size card: one fish's limits together, not two disconnected rows --- */
+.rule-card-merged {
+  border: 1px solid var(--ink-14);
+  border-radius: var(--radius-card);
+  background: color-mix(in srgb, var(--warden) 4%, var(--bone-2));
+  padding: 12px 14px 13px;
+  margin: 12px 0;
+}
+.rule-list > .rule-card-merged:first-child {
+  margin-top: 4px;
+}
+.rule-card-species-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--ink-12);
+}
+.rule-card-species-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16.5px;
+  color: var(--ink);
+}
+.rule-subsection + .rule-subsection {
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px dashed var(--ink-12);
 }
 .rule-head {
   display: flex;

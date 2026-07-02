@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="31" fill="#a3792a"/>
+  <circle cx="32" cy="32" r="27" fill="#1a2b22"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#7a5a1f" stroke-width="1"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="600" font-size="30" fill="#f3efe4">K</text>
+  <circle cx="32" cy="32" r="31" fill="none" stroke="#1a2b22" stroke-opacity="0.25" stroke-width="1"/>
+</svg>

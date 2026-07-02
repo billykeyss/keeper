@@ -3,155 +3,1176 @@
   "water": {
     "name": "Truckee River",
     "waterType": "river",
-    "states": ["CA"],
-    "counties": ["Placer", "Nevada", "Sierra"],
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Placer",
+      "Nevada",
+      "Sierra"
+    ],
     "aliases": [],
     "gnisId": null,
-    "lon": -120.10,
+    "lon": -120.1,
     "lat": 39.35,
     "verifyCurrent": true
   },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
   ],
   "reaches": [
-    { "key": "reach_a", "name": "Truckee River Reach A", "fromDesc": "Lake Tahoe outlet dam, Tahoe City", "toDesc": "1,000 feet below the Lake Tahoe outlet dam", "lon": -120.1427, "lat": 39.1666 },
-    { "key": "reach_b", "name": "Truckee River Reach B", "fromDesc": "Confluence of Trout Creek", "toDesc": "Mouth of Prosser Creek", "lon": -120.1738, "lat": 39.3350 },
-    { "key": "reach_c", "name": "Truckee River Reach C", "fromDesc": "Mouth of Prosser Creek", "toDesc": "Nevada State Line (near Farad)", "lon": -120.0500, "lat": 39.4200 }
+    {
+      "key": "reach_a",
+      "name": "Truckee River Reach A",
+      "fromDesc": "Lake Tahoe outlet dam, Tahoe City",
+      "toDesc": "1,000 feet below the Lake Tahoe outlet dam",
+      "lon": -120.1427,
+      "lat": 39.1666,
+      "line": [
+        [
+          -120.14396,
+          39.167108
+        ],
+        [
+          -120.146439,
+          39.165978
+        ]
+      ]
+    },
+    {
+      "key": "reach_b",
+      "name": "Truckee River Reach B",
+      "fromDesc": "Confluence of Trout Creek",
+      "toDesc": "Mouth of Prosser Creek",
+      "lon": -120.1738,
+      "lat": 39.335,
+      "line": [
+        [
+          -120.172277,
+          39.32972
+        ],
+        [
+          -120.168313,
+          39.33058
+        ],
+        [
+          -120.16376,
+          39.332767
+        ],
+        [
+          -120.154739,
+          39.333079
+        ],
+        [
+          -120.152087,
+          39.33203
+        ],
+        [
+          -120.150027,
+          39.332827
+        ],
+        [
+          -120.146044,
+          39.332887
+        ],
+        [
+          -120.142937,
+          39.334978
+        ],
+        [
+          -120.137676,
+          39.33766
+        ],
+        [
+          -120.136671,
+          39.33772
+        ],
+        [
+          -120.134011,
+          39.338715
+        ],
+        [
+          -120.132775,
+          39.338231
+        ],
+        [
+          -120.128655,
+          39.340481
+        ],
+        [
+          -120.128226,
+          39.341809
+        ],
+        [
+          -120.125385,
+          39.345088
+        ],
+        [
+          -120.124999,
+          39.346422
+        ],
+        [
+          -120.122277,
+          39.347866
+        ],
+        [
+          -120.119977,
+          39.348383
+        ],
+        [
+          -120.118767,
+          39.349452
+        ],
+        [
+          -120.117479,
+          39.351297
+        ],
+        [
+          -120.118398,
+          39.352339
+        ],
+        [
+          -120.121419,
+          39.352585
+        ],
+        [
+          -120.125478,
+          39.354197
+        ],
+        [
+          -120.125925,
+          39.355279
+        ],
+        [
+          -120.126002,
+          39.356885
+        ],
+        [
+          -120.125221,
+          39.360768
+        ],
+        [
+          -120.123144,
+          39.362141
+        ],
+        [
+          -120.120904,
+          39.362453
+        ],
+        [
+          -120.113582,
+          39.359547
+        ],
+        [
+          -120.11263,
+          39.359454
+        ],
+        [
+          -120.109926,
+          39.362477
+        ],
+        [
+          -120.109703,
+          39.363309
+        ],
+        [
+          -120.109892,
+          39.36451
+        ],
+        [
+          -120.110956,
+          39.365904
+        ],
+        [
+          -120.116363,
+          39.369029
+        ],
+        [
+          -120.116698,
+          39.370071
+        ],
+        [
+          -120.116295,
+          39.37104
+        ],
+        [
+          -120.115144,
+          39.372227
+        ],
+        [
+          -120.111917,
+          39.374112
+        ],
+        [
+          -120.110372,
+          39.374589
+        ],
+        [
+          -120.108853,
+          39.374404
+        ],
+        [
+          -120.106965,
+          39.37303
+        ],
+        [
+          -120.105351,
+          39.37232
+        ],
+        [
+          -120.103317,
+          39.371617
+        ],
+        [
+          -120.102605,
+          39.371809
+        ],
+        [
+          -120.102236,
+          39.372639
+        ],
+        [
+          -120.103025,
+          39.373196
+        ],
+        [
+          -120.104004,
+          39.374875
+        ],
+        [
+          -120.103695,
+          39.37784
+        ],
+        [
+          -120.102433,
+          39.379074
+        ],
+        [
+          -120.100081,
+          39.380083
+        ],
+        [
+          -120.098262,
+          39.381403
+        ],
+        [
+          -120.096176,
+          39.382219
+        ],
+        [
+          -120.093893,
+          39.384766
+        ],
+        [
+          -120.092734,
+          39.384773
+        ],
+        [
+          -120.090983,
+          39.383984
+        ],
+        [
+          -120.087301,
+          39.385536
+        ],
+        [
+          -120.084271,
+          39.385204
+        ],
+        [
+          -120.082907,
+          39.384568
+        ],
+        [
+          -120.077782,
+          39.380945
+        ],
+        [
+          -120.07683,
+          39.37995
+        ],
+        [
+          -120.075027,
+          39.378995
+        ],
+        [
+          -120.074701,
+          39.37792
+        ],
+        [
+          -120.075208,
+          39.375306
+        ],
+        [
+          -120.073911,
+          39.373621
+        ],
+        [
+          -120.07422,
+          39.372605
+        ],
+        [
+          -120.074006,
+          39.371531
+        ],
+        [
+          -120.075748,
+          39.369958
+        ],
+        [
+          -120.075637,
+          39.365904
+        ],
+        [
+          -120.074692,
+          39.365114
+        ],
+        [
+          -120.072881,
+          39.365393
+        ],
+        [
+          -120.070993,
+          39.366202
+        ],
+        [
+          -120.06986,
+          39.366169
+        ],
+        [
+          -120.069053,
+          39.365711
+        ],
+        [
+          -120.0672,
+          39.366169
+        ],
+        [
+          -120.065963,
+          39.367138
+        ],
+        [
+          -120.0658,
+          39.368133
+        ],
+        [
+          -120.064384,
+          39.368518
+        ],
+        [
+          -120.063552,
+          39.369394
+        ],
+        [
+          -120.06035,
+          39.368664
+        ],
+        [
+          -120.056797,
+          39.368903
+        ],
+        [
+          -120.055192,
+          39.369368
+        ],
+        [
+          -120.051862,
+          39.369122
+        ],
+        [
+          -120.050729,
+          39.36885
+        ],
+        [
+          -120.050093,
+          39.368346
+        ],
+        [
+          -120.049321,
+          39.366574
+        ],
+        [
+          -120.047055,
+          39.366362
+        ],
+        [
+          -120.045416,
+          39.366972
+        ],
+        [
+          -120.043261,
+          39.368498
+        ],
+        [
+          -120.039802,
+          39.368631
+        ],
+        [
+          -120.038146,
+          39.3696
+        ],
+        [
+          -120.035159,
+          39.37029
+        ],
+        [
+          -120.03194,
+          39.372307
+        ],
+        [
+          -120.030421,
+          39.37506
+        ],
+        [
+          -120.029194,
+          39.375817
+        ],
+        [
+          -120.027151,
+          39.37654
+        ],
+        [
+          -120.023005,
+          39.377124
+        ],
+        [
+          -120.020988,
+          39.378995
+        ],
+        [
+          -120.01989,
+          39.381423
+        ],
+        [
+          -120.020722,
+          39.382856
+        ],
+        [
+          -120.022319,
+          39.383274
+        ],
+        [
+          -120.023898,
+          39.385981
+        ],
+        [
+          -120.022765,
+          39.390246
+        ],
+        [
+          -120.023846,
+          39.391712
+        ],
+        [
+          -120.02407,
+          39.393483
+        ],
+        [
+          -120.025228,
+          39.395499
+        ],
+        [
+          -120.02492,
+          39.396269
+        ],
+        [
+          -120.022885,
+          39.397987
+        ],
+        [
+          -120.022585,
+          39.399379
+        ],
+        [
+          -120.024698,
+          39.403294
+        ],
+        [
+          -120.025436,
+          39.408096
+        ],
+        [
+          -120.026569,
+          39.411279
+        ],
+        [
+          -120.026174,
+          39.414415
+        ],
+        [
+          -120.027453,
+          39.416451
+        ],
+        [
+          -120.029831,
+          39.418301
+        ],
+        [
+          -120.035144,
+          39.424229
+        ]
+      ]
+    },
+    {
+      "key": "reach_c",
+      "name": "Truckee River Reach C",
+      "fromDesc": "Mouth of Prosser Creek",
+      "toDesc": "Nevada State Line (near Farad)",
+      "lon": -120.05,
+      "lat": 39.42,
+      "line": [
+        [
+          -120.035144,
+          39.424229
+        ],
+        [
+          -120.033427,
+          39.428916
+        ],
+        [
+          -120.031642,
+          39.431422
+        ],
+        [
+          -120.02953,
+          39.431594
+        ],
+        [
+          -120.027289,
+          39.433189
+        ],
+        [
+          -120.025505,
+          39.433535
+        ],
+        [
+          -120.024123,
+          39.436016
+        ],
+        [
+          -120.022149,
+          39.437209
+        ],
+        [
+          -120.020329,
+          39.437799
+        ],
+        [
+          -120.016905,
+          39.440557
+        ],
+        [
+          -120.015334,
+          39.440954
+        ],
+        [
+          -120.013317,
+          39.440815
+        ],
+        [
+          -120.011137,
+          39.442307
+        ],
+        [
+          -120.009952,
+          39.442419
+        ],
+        [
+          -120.009772,
+          39.443082
+        ],
+        [
+          -120.008133,
+          39.443142
+        ],
+        [
+          -120.008304,
+          39.443646
+        ],
+        [
+          -120.009077,
+          39.444189
+        ],
+        [
+          -120.009085,
+          39.445243
+        ],
+        [
+          -120.008219,
+          39.446489
+        ],
+        [
+          -120.007069,
+          39.447424
+        ],
+        [
+          -120.00488,
+          39.451022
+        ],
+        [
+          -120.005069,
+          39.451937
+        ],
+        [
+          -120.006511,
+          39.45268
+        ],
+        [
+          -120.007446,
+          39.454462
+        ],
+        [
+          -120.007875,
+          39.455695
+        ],
+        [
+          -120.007841,
+          39.457454
+        ],
+        [
+          -120.006974,
+          39.457908
+        ],
+        [
+          -120.00657,
+          39.45862
+        ],
+        [
+          -120.005886,
+          39.461593
+        ],
+        [
+          -120.003361,
+          39.463375
+        ],
+        [
+          -120.002609,
+          39.466081
+        ],
+        [
+          -120.000399,
+          39.46971
+        ],
+        [
+          -119.999326,
+          39.470617
+        ],
+        [
+          -119.997694,
+          39.47081
+        ],
+        [
+          -119.99549,
+          39.472234
+        ],
+        [
+          -119.994666,
+          39.474142
+        ],
+        [
+          -119.994237,
+          39.474467
+        ],
+        [
+          -119.99373,
+          39.476454
+        ],
+        [
+          -119.993971,
+          39.47927
+        ],
+        [
+          -119.992992,
+          39.481257
+        ],
+        [
+          -119.993317,
+          39.482344
+        ],
+        [
+          -119.992572,
+          39.482768
+        ],
+        [
+          -119.991688,
+          39.484351
+        ],
+        [
+          -119.993505,
+          39.489395
+        ],
+        [
+          -119.993584,
+          39.491638
+        ],
+        [
+          -119.994572,
+          39.493419
+        ],
+        [
+          -119.995207,
+          39.495565
+        ],
+        [
+          -119.994294,
+          39.498166
+        ],
+        [
+          -119.996097,
+          39.501109
+        ],
+        [
+          -119.99682,
+          39.504175
+        ],
+        [
+          -119.996958,
+          39.506493
+        ],
+        [
+          -119.99573,
+          39.509175
+        ],
+        [
+          -119.995682,
+          39.509978
+        ],
+        [
+          -119.995936,
+          39.512691
+        ],
+        [
+          -119.997636,
+          39.514386
+        ],
+        [
+          -119.998159,
+          39.515697
+        ],
+        [
+          -119.997842,
+          39.517935
+        ],
+        [
+          -119.997212,
+          39.518835
+        ]
+      ]
+    }
   ],
   "species": [
-    { "commonName": "Rainbow Trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
-    { "commonName": "Brown Trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+    {
+      "commonName": "Rainbow Trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Brown Trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    }
   ],
   "speciesGroups": [
-    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+    {
+      "key": "trout_cdfw",
+      "name": "trout",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
   ],
   "sources": [
     {
-      "key": "s_ca_regs", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
-      "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf",
-      "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
+      "key": "s_ca_regs",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) \u2014 CDFW",
+      "documentType": "pdf",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
       "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year. (B) Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout. (C) Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout. Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout."
     },
     {
-      "key": "s_ca_lii_750", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
-      "title": "Cal. Code Regs. Tit. 14, § 7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations", "documentType": "webpage",
-      "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01",
-      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam — Closed to all fishing all year. (B) confluence of Trout Creek downstream to the mouth of Prosser Creek — All year, artificial flies with barbless hooks only, 0 trout. (C) mouth of Prosser Creek downstream to the Nevada State Line — two-period season."
+      "key": "s_ca_lii_750",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "Cal. Code Regs. Tit. 14, \u00a7 7.50 \u2014 Alphabetical List of Trout Waters with Special Fishing Regulations",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam \u2014 Closed to all fishing all year. (B) confluence of Trout Creek downstream to the mouth of Prosser Creek \u2014 All year, artificial flies with barbless hooks only, 0 trout. (C) mouth of Prosser Creek downstream to the Nevada State Line \u2014 two-period season."
     }
   ],
   "groups": [
     {
-      "key": "g_reach_b", "authorityKey": "cdfw", "citation": "7.50(b)(154)(B)",
+      "key": "g_reach_b",
+      "authorityKey": "cdfw",
+      "citation": "7.50(b)(154)(B)",
       "humanSummary": "Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek: open all year, artificial flies with barbless hooks only, 0 trout (catch-and-release).",
       "verbatimText": "Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout"
     },
     {
-      "key": "g_reach_c", "authorityKey": "cdfw", "citation": "7.50(b)(154)(C)",
-      "humanSummary": "Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line: two-period season — 2 trout with artificial lures (last Sat. Apr.–Nov. 15); 0 trout catch-and-release with artificial lures and barbless hooks (Nov. 16–Fri. preceding last Sat. Apr.).",
+      "key": "g_reach_c",
+      "authorityKey": "cdfw",
+      "citation": "7.50(b)(154)(C)",
+      "humanSummary": "Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line: two-period season \u2014 2 trout with artificial lures (last Sat. Apr.\u2013Nov. 15); 0 trout catch-and-release with artificial lures and barbless hooks (Nov. 16\u2013Fri. preceding last Sat. Apr.).",
       "verbatimText": "Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout. Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout"
     }
   ],
   "seasonPeriods": [
     {
-      "key": "sp_take", "groupKey": "g_reach_c", "label": "take_season", "status": "open",
-      "startSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April" },
-      "endSpec": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" }
+      "key": "sp_take",
+      "groupKey": "g_reach_c",
+      "label": "take_season",
+      "status": "open",
+      "startSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "sat",
+        "month": 4,
+        "verbatim": "last Saturday in April"
+      },
+      "endSpec": {
+        "type": "fixed",
+        "month": 11,
+        "day": 15,
+        "verbatim": "November 15"
+      }
     },
     {
-      "key": "sp_winter", "groupKey": "g_reach_c", "label": "winter_cr", "status": "open_catch_release",
-      "startSpec": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" },
-      "endSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" }
+      "key": "sp_winter",
+      "groupKey": "g_reach_c",
+      "label": "winter_cr",
+      "status": "open_catch_release",
+      "startSpec": {
+        "type": "fixed",
+        "month": 11,
+        "day": 16,
+        "verbatim": "November 16"
+      },
+      "endSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "sat",
+        "month": 4,
+        "relation": "preceding",
+        "offset_days": -1,
+        "verbatim": "Friday preceding the last Saturday in April"
+      }
     }
   ],
   "regulations": [
     {
       "ruleType": "closure",
-      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "Closed for 1,000 feet below the Lake Tahoe outlet dam." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "reach", "reachKey": "reach_a" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(A)",
+      "parameters": {
+        "closure_kind": "year_round",
+        "boundary_definition": "described",
+        "note": "Closed for 1,000 feet below the Lake Tahoe outlet dam."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_a"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(A)",
       "humanSummary": "Closed to all fishing, year-round, for 1,000 feet below the Lake Tahoe outlet dam.",
       "verbatimText": "Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "season",
-      "parameters": { "periods": [ { "label": "all_year", "status": "open_catch_release", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ] },
-      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "parameters": {
+        "periods": [
+          {
+            "label": "all_year",
+            "status": "open_catch_release",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ]
+      },
+      "groupKey": "g_reach_b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(B)",
       "humanSummary": "Open all year (catch-and-release) between Trout Creek and Prosser Creek.",
       "verbatimText": "All year.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
-      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": "g_reach_b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(B)",
       "humanSummary": "0 trout, catch-and-release, between Trout Creek and Prosser Creek.",
       "verbatimText": "0 trout",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": true, "lures_allowed": false, "barbless_required": true, "single_hook_required": false },
-      "groupKey": "g_reach_b", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_b" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(B)",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": true,
+        "lures_allowed": false,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": "g_reach_b",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_b"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(B)",
       "humanSummary": "Artificial flies with barbless hooks only between Trout Creek and Prosser Creek; no bait, no other lure types.",
       "verbatimText": "Only artificial flies with barbless hooks may be used.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 2, "unit": "fish", "aggregation": "combined_group" },
-      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_take", "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
-      "humanSummary": "2 trout during the take season (last Sat. April–Nov. 15) between Prosser Creek and the Nevada state line.",
+      "parameters": {
+        "daily": 2,
+        "unit": "fish",
+        "aggregation": "combined_group"
+      },
+      "groupKey": "g_reach_c",
+      "seasonPeriodKey": "sp_take",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(C)",
+      "humanSummary": "2 trout during the take season (last Sat. April\u2013Nov. 15) between Prosser Creek and the Nevada state line.",
       "verbatimText": "Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false },
-      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_take", "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": false,
+        "single_hook_required": false
+      },
+      "groupKey": "g_reach_c",
+      "seasonPeriodKey": "sp_take",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(C)",
       "humanSummary": "Artificial lures only (barbless not required) during the take season, Prosser Creek to the Nevada state line.",
       "verbatimText": "Only artificial lures may be used.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
-      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_winter", "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
-      "humanSummary": "0 trout, catch-and-release, during the winter window (Nov. 16–Fri. preceding last Sat. April), Prosser Creek to the Nevada state line.",
+      "parameters": {
+        "daily": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": "g_reach_c",
+      "seasonPeriodKey": "sp_winter",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(C)",
+      "humanSummary": "0 trout, catch-and-release, during the winter window (Nov. 16\u2013Fri. preceding last Sat. April), Prosser Creek to the Nevada state line.",
       "verbatimText": "Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
-      "groupKey": "g_reach_c", "seasonPeriodKey": "sp_winter", "authorityKey": "cdfw", "rulePolarity": "applies",
-      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "reach", "reachKey": "reach_c" }, "appliesToClass": "any",
-      "jurisdictionState": "CA", "citation": "7.50(b)(154)(C)",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": "g_reach_c",
+      "seasonPeriodKey": "sp_winter",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout_cdfw"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "reach_c"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(154)(C)",
       "humanSummary": "Artificial lures with barbless hooks required during the winter catch-and-release window, Prosser Creek to the Nevada state line.",
       "verbatimText": "Only artificial lures with barbless hooks may be used.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_ca_regs", "corroborating": ["s_ca_lii_750"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_ca_regs",
+        "corroborating": [
+          "s_ca_lii_750"
+        ]
+      }
     }
   ],
   "reciprocity": []

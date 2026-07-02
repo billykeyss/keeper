@@ -3,111 +3,449 @@
   "water": {
     "name": "Truckee River (Nevada)",
     "waterType": "river",
-    "states": ["NV"],
-    "counties": ["Washoe", "Storey"],
-    "aliases": ["Truckee River — Reno/Sparks reach", "Truckee River (Washoe/Storey County)"],
+    "states": [
+      "NV"
+    ],
+    "counties": [
+      "Washoe",
+      "Storey"
+    ],
+    "aliases": [
+      "Truckee River \u2014 Reno/Sparks reach",
+      "Truckee River (Washoe/Storey County)"
+    ],
     "gnisId": null,
     "lon": -119.78,
     "lat": 39.52,
     "verifyCurrent": true
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    {
+      "key": "ndow",
+      "name": "Nevada Department of Wildlife",
+      "state": "NV",
+      "type": "state_agency",
+      "roles": [
+        "take_rules",
+        "permit_issuer"
+      ]
+    }
   ],
   "reaches": [
-    { "key": "truckee-nv-derby-dam-1000ft", "name": "Truckee River at Derby Dam (closed 1,000 ft below dam)", "fromDesc": "Derby Dam", "toDesc": "1,000 feet downstream of Derby Dam", "lon": -119.441, "lat": 39.585 },
-    { "key": "truckee-nv-mustang-to-plpt-boundary", "name": "Truckee River — E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary", "fromDesc": "E Mustang Road bridge (I-80 Exit 23)", "toDesc": "Pyramid Lake Paiute Reservation boundary", "lon": -119.43, "lat": 39.6 }
+    {
+      "key": "truckee-nv-derby-dam-1000ft",
+      "name": "Truckee River at Derby Dam (closed 1,000 ft below dam)",
+      "fromDesc": "Derby Dam",
+      "toDesc": "1,000 feet downstream of Derby Dam",
+      "lon": -119.441,
+      "lat": 39.585,
+      "line": [
+        [
+          -119.441044,
+          39.585215
+        ],
+        [
+          -119.440023,
+          39.58562
+        ],
+        [
+          -119.439466,
+          39.587101
+        ]
+      ]
+    },
+    {
+      "key": "truckee-nv-mustang-to-plpt-boundary",
+      "name": "Truckee River \u2014 E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary",
+      "fromDesc": "E Mustang Road bridge (I-80 Exit 23)",
+      "toDesc": "Pyramid Lake Paiute Reservation boundary",
+      "lon": -119.43,
+      "lat": 39.6,
+      "line": [
+        [
+          -119.429289,
+          39.587522
+        ],
+        [
+          -119.421881,
+          39.587979
+        ],
+        [
+          -119.419114,
+          39.589177
+        ],
+        [
+          -119.416511,
+          39.589569
+        ],
+        [
+          -119.415539,
+          39.59025
+        ],
+        [
+          -119.412883,
+          39.590654
+        ],
+        [
+          -119.404276,
+          39.589666
+        ],
+        [
+          -119.400067,
+          39.587945
+        ],
+        [
+          -119.39749,
+          39.587281
+        ],
+        [
+          -119.395106,
+          39.585725
+        ],
+        [
+          -119.393878,
+          39.585485
+        ],
+        [
+          -119.392514,
+          39.585773
+        ],
+        [
+          -119.390641,
+          39.587322
+        ],
+        [
+          -119.388767,
+          39.588011
+        ],
+        [
+          -119.377973,
+          39.588372
+        ],
+        [
+          -119.372165,
+          39.586792
+        ],
+        [
+          -119.370146,
+          39.587057
+        ],
+        [
+          -119.369163,
+          39.587727
+        ]
+      ]
+    }
   ],
   "species": [
-    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
-    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
-    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
-    { "commonName": "Mountain whitefish", "scientificName": "Prosopium williamsoni", "category": "other", "nativeStatus": "native", "presence": "native" }
+    {
+      "commonName": "Rainbow trout",
+      "scientificName": "Oncorhynchus mykiss",
+      "category": "trout",
+      "nativeStatus": "stocked",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Brown trout",
+      "scientificName": "Salmo trutta",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "introduced"
+    },
+    {
+      "commonName": "Lahontan cutthroat trout",
+      "scientificName": "Oncorhynchus clarkii henshawi",
+      "category": "trout",
+      "nativeStatus": "native",
+      "presence": "stocked"
+    },
+    {
+      "commonName": "Mountain whitefish",
+      "scientificName": "Prosopium williamsoni",
+      "category": "other",
+      "nativeStatus": "native",
+      "presence": "native"
+    }
   ],
   "speciesGroups": [
-    { "key": "trout", "name": "Trout (Truckee River, NV)", "category": "trout", "authorityKey": "ndow" }
+    {
+      "key": "trout",
+      "name": "Trout (Truckee River, NV)",
+      "category": "trout",
+      "authorityKey": "ndow"
+    }
   ],
   "sources": [
-    { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Truckee River: Open year around except for closed areas. Daily: 3 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is three game fish of which 1 may be trout. Possession: 6 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is 6 game fish of which 2 may be trout. CLOSED WATERS: Truckee River from Derby Dam downstream 1,000 feet." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/truckee-river/", "title": "Truckee River — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Rainbow trout, Brown trout, Cutthroat trout (Lahontan species), Mountain whitefish, Largemouth bass (lower sections only)." },
-    { "key": "s_nac_503_504", "url": "https://www.leg.state.nv.us/nac/NAC-503.html", "title": "Nev. Admin. Code § 503.504(3) — Restricted waters: artificial lures with single barbless hooks", "documentType": "webpage", "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "(b) Only artificial lures with single barbless hooks may be used in: ... (5) The portion of the Truckee River from the bridge on East Mustang Road downstream to the boundary of the Pyramid Lake Paiute Reservation." },
-    { "key": "s_eregs_west", "url": "https://www.eregulations.com/nevada/fishing/western-region-regulations", "title": "Nevada Western Region Fishing Regulations (eRegulations digest of NDOW rules)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "In the stretch from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary: only artificial lures with single barbless hooks may be used." },
-    { "key": "s_2news", "url": "https://www.2news.com/fish-catch-limit-changed-for-truckee-river/article_059ae43a-2068-52d3-a9da-3ad91bd4c0e5.html", "title": "Fish Catch Limit Changed for Truckee River — 2News", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Only artificial lures with single barbless hooks may be used in the Truckee River (Washoe and Storey County) in that portion from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary." }
+    {
+      "key": "s_cr2516",
+      "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf",
+      "title": "State of Nevada Board of Wildlife Commissioners \u2014 Fishing Seasons CR 25-16 (Jan 1, 2026 \u2013 Dec 31, 2027)",
+      "documentType": "pdf",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Truckee River: Open year around except for closed areas. Daily: 3 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is three game fish of which 1 may be trout. Possession: 6 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is 6 game fish of which 2 may be trout. CLOSED WATERS: Truckee River from Derby Dam downstream 1,000 feet."
+    },
+    {
+      "key": "s_ndow_water",
+      "url": "https://www.ndow.org/waters/truckee-river/",
+      "title": "Truckee River \u2014 Nevada Department of Wildlife",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Rainbow trout, Brown trout, Cutthroat trout (Lahontan species), Mountain whitefish, Largemouth bass (lower sections only)."
+    },
+    {
+      "key": "s_nac_503_504",
+      "url": "https://www.leg.state.nv.us/nac/NAC-503.html",
+      "title": "Nev. Admin. Code \u00a7 503.504(3) \u2014 Restricted waters: artificial lures with single barbless hooks",
+      "documentType": "webpage",
+      "instrumentType": "admin_code",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(b) Only artificial lures with single barbless hooks may be used in: ... (5) The portion of the Truckee River from the bridge on East Mustang Road downstream to the boundary of the Pyramid Lake Paiute Reservation."
+    },
+    {
+      "key": "s_eregs_west",
+      "url": "https://www.eregulations.com/nevada/fishing/western-region-regulations",
+      "title": "Nevada Western Region Fishing Regulations (eRegulations digest of NDOW rules)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "In the stretch from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary: only artificial lures with single barbless hooks may be used."
+    },
+    {
+      "key": "s_2news",
+      "url": "https://www.2news.com/fish-catch-limit-changed-for-truckee-river/article_059ae43a-2068-52d3-a9da-3ad91bd4c0e5.html",
+      "title": "Fish Catch Limit Changed for Truckee River \u2014 2News",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Only artificial lures with single barbless hooks may be used in the Truckee River (Washoe and Storey County) in that portion from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary."
+    }
   ],
   "groups": [],
   "seasonPeriods": [],
   "regulations": [
     {
       "ruleType": "season",
-      "parameters": { "periods": [ { "label": "Open season", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Open year-round except for closed waters (see closure rule); fishing hours any hour of the day or night." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NBWC CR 25-16 — Washoe/Storey County, Truckee River",
+      "parameters": {
+        "periods": [
+          {
+            "label": "Open season",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "Open year around"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "Open year around"
+            }
+          }
+        ],
+        "note": "Open year-round except for closed waters (see closure rule); fishing hours any hour of the day or night."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Washoe/Storey County, Truckee River",
       "humanSummary": "Truckee River (NV) is open to fishing year-round, any hour of the day or night, except the closed area at Derby Dam.",
       "verbatimText": "Open year around except for closed areas.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 3, "possession": 6, "unit": "fish", "aggregation": "combined_all", "counting_rule": "Applies to the Truckee River generally (Washoe/Storey County), except the reach from E Mustang Road bridge downstream to the Pyramid Lake Paiute Reservation boundary, which carries a further trout sub-limit (see reach-scoped bag rule)." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NBWC CR 25-16 — Washoe/Storey County, Truckee River",
+      "parameters": {
+        "daily": 3,
+        "possession": 6,
+        "unit": "fish",
+        "aggregation": "combined_all",
+        "counting_rule": "Applies to the Truckee River generally (Washoe/Storey County), except the reach from E Mustang Road bridge downstream to the Pyramid Lake Paiute Reservation boundary, which carries a further trout sub-limit (see reach-scoped bag rule)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Washoe/Storey County, Truckee River",
       "humanSummary": "Daily limit 3 game fish; possession limit 6 game fish (species composition unrestricted) on the Truckee River (NV) outside the special reach below.",
       "verbatimText": "Daily: 3 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is three game fish of which 1 may be trout. Possession: 6 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is 6 game fish of which 2 may be trout.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 3, "possession": 6, "unit": "fish", "aggregation": "combined_all", "sub_limits": [ { "target": { "species_group": "trout" }, "mode": "carve_out", "max_daily": 1, "max_possession": 2, "note": "Of the daily/possession game-fish limit, only this many may be trout." } ], "counting_rule": "Applies in the reach from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": { "type": "reach", "reachKey": "truckee-nv-mustang-to-plpt-boundary" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NBWC CR 25-16 — Washoe/Storey County, Truckee River (special reach)",
+      "parameters": {
+        "daily": 3,
+        "possession": 6,
+        "unit": "fish",
+        "aggregation": "combined_all",
+        "sub_limits": [
+          {
+            "target": {
+              "species_group": "trout"
+            },
+            "mode": "carve_out",
+            "max_daily": 1,
+            "max_possession": 2,
+            "note": "Of the daily/possession game-fish limit, only this many may be trout."
+          }
+        ],
+        "counting_rule": "Applies in the reach from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "truckee-nv-mustang-to-plpt-boundary"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Washoe/Storey County, Truckee River (special reach)",
       "humanSummary": "In the reach from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary: daily limit 3 game fish of which only 1 may be trout; possession limit 6 game fish of which only 2 may be trout.",
       "verbatimText": "Daily: 3 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is three game fish of which 1 may be trout. Possession: 6 game fish except in that section from E Mustang Road bridge (I-80 Exit 23) downstream to the Pyramid Lake Paiute Reservation boundary, limit is 6 game fish of which 2 may be trout.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": true, "note": "Codified in NAC 503.504(3)(b)(5) as one continuous reach (E Mustang Road bridge to the reservation boundary) — no Derby Dam split appears in the NAC text; the separate CR 25-16 closed water at Derby Dam applies independently. Last amended by R082-23A, effective 2/9/2024." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": { "type": "reach", "reachKey": "truckee-nv-mustang-to-plpt-boundary" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": true,
+        "note": "Codified in NAC 503.504(3)(b)(5) as one continuous reach (E Mustang Road bridge to the reservation boundary) \u2014 no Derby Dam split appears in the NAC text; the separate CR 25-16 closed water at Derby Dam applies independently. Last amended by R082-23A, effective 2/9/2024."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "truckee-nv-mustang-to-plpt-boundary"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
       "citation": "NAC 503.504(3)(b)(5)",
       "humanSummary": "In this reach, only artificial lures with a single barbless hook may be used (no bait).",
       "verbatimText": "Only artificial lures with single barbless hooks may be used in: ... The portion of the Truckee River from the bridge on East Mustang Road downstream to the boundary of the Pyramid Lake Paiute Reservation.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_nac_503_504", "corroborating": ["s_eregs_west", "s_2news"] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_nac_503_504",
+        "corroborating": [
+          "s_eregs_west",
+          "s_2news"
+        ]
+      }
     },
     {
       "ruleType": "closure",
-      "parameters": { "closure_kind": "year_round", "boundary_definition": "described", "note": "No fishing within 1,000 feet downstream of Derby Dam." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": { "type": "reach", "reachKey": "truckee-nv-derby-dam-1000ft" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NBWC CR 25-16 — Washoe County closed waters",
+      "parameters": {
+        "closure_kind": "year_round",
+        "boundary_definition": "described",
+        "note": "No fishing within 1,000 feet downstream of Derby Dam."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "reach",
+        "reachKey": "truckee-nv-derby-dam-1000ft"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Washoe County closed waters",
       "humanSummary": "Truckee River closed to all fishing for 1,000 feet downstream of Derby Dam, year-round.",
       "verbatimText": "Truckee River from Derby Dam downstream 1,000 feet.",
-      "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
     },
     {
       "ruleType": "size_limit",
-      "parameters": { "min_length_in": null, "max_length_in": null, "protected_slot": null, "measurement": "total_length", "unit": "inch", "note": "No minimum or maximum size limit found for trout on the Truckee River (Washoe/Storey County) in NDOW's current fishing-seasons regulation; absence of a size-limit row for this water in that document is treated as a verified absence, not an oversight." },
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
-      "rulePolarity": "asserts_none", "speciesScope": "listed", "speciesTargets": [ { "speciesGroupKey": "trout" } ],
-      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
-      "citation": "NBWC CR 25-16 — Washoe/Storey County (no size-limit row for Truckee River trout)",
-      "humanSummary": "No minimum or maximum size limit for trout on the Truckee River (NV) — verified absence.",
+      "parameters": {
+        "min_length_in": null,
+        "max_length_in": null,
+        "protected_slot": null,
+        "measurement": "total_length",
+        "unit": "inch",
+        "note": "No minimum or maximum size limit found for trout on the Truckee River (Washoe/Storey County) in NDOW's current fishing-seasons regulation; absence of a size-limit row for this water in that document is treated as a verified absence, not an oversight."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "ndow",
+      "rulePolarity": "asserts_none",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 \u2014 Washoe/Storey County (no size-limit row for Truckee River trout)",
+      "humanSummary": "No minimum or maximum size limit for trout on the Truckee River (NV) \u2014 verified absence.",
       "verbatimText": null,
-      "isParaphrase": true, "confidence": "medium",
-      "sourceKeys": { "primary": "s_cr2516", "corroborating": [] }
+      "isParaphrase": true,
+      "confidence": "medium",
+      "sourceKeys": {
+        "primary": "s_cr2516",
+        "corroborating": []
+      }
     }
   ],
   "reciprocity": []

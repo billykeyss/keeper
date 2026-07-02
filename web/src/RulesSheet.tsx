@@ -6,7 +6,8 @@ import {
   type ScopeStatus,
 } from "./api";
 import { StatusPill } from "./StatusPill";
-import { RuleCard } from "./RuleCard";
+import { RuleCard, SpeciesLimitCard } from "./RuleCard";
+import { groupBagAndSize } from "./ruleFormat";
 import { WarnIcon, RetryIcon, CloseIcon, ExternalIcon } from "./icons";
 
 function todayISO(): string {
@@ -28,11 +29,12 @@ const WATER_TYPE_LABEL: Record<string, string> = {
 
 interface Props {
   pin: WaterPin | null;
+  focusScope?: string | null;
   onClose: () => void;
   onStatus: (id: number, status: ScopeStatus) => void;
 }
 
-export function RulesSheet({ pin, onClose, onStatus }: Props) {
+export function RulesSheet({ pin, focusScope, onClose, onStatus }: Props) {
   const open = pin != null;
 
   const [data, setData] = useState<RulesResponse | null>(null);
@@ -90,6 +92,18 @@ export function RulesSheet({ pin, onClose, onStatus }: Props) {
     const cancel = load(pin);
     return cancel;
   }, [pin, load]);
+
+  // Reach pins pass down which scope to land on (e.g. a river reach clicked on the map) — once
+  // its rules arrive, expand the sheet and scroll that scope's card into view.
+  useEffect(() => {
+    if (!data || !focusScope) return;
+    setMode("expanded");
+    const id = window.setTimeout(() => {
+      const el = sheetRef.current?.querySelector(`[data-scope="${CSS.escape(focusScope)}"]`);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60); // let the expand transition/layout settle first
+    return () => window.clearTimeout(id);
+  }, [data, focusScope]);
 
   // --- measure sheet + header to derive the peek offset ---
   useLayoutEffect(() => {
@@ -247,7 +261,7 @@ function RulesBody({ data }: { data: RulesResponse }) {
   return (
     <div className="stagger">
       {data.scopes.map((scope, i) => (
-        <section className="scope" key={`${scope.kind}:${scope.scope}:${i}`}>
+        <section className="scope" data-scope={scope.scope} key={`${scope.kind}:${scope.scope}:${i}`}>
           <div className="scope-head">
             <div className="scope-titles">
               <h3 className="scope-name">
@@ -261,9 +275,13 @@ function RulesBody({ data }: { data: RulesResponse }) {
             <p className="scope-empty">No specific rules recorded for this scope.</p>
           ) : (
             <div className="rule-list">
-              {scope.rules.map((r, j) => (
-                <RuleCard rule={r} key={j} />
-              ))}
+              {groupBagAndSize(scope.rules).map((item, j) =>
+                item.kind === "merged" ? (
+                  <SpeciesLimitCard species={item.species} bag={item.bag} size={item.size} key={j} />
+                ) : (
+                  <RuleCard rule={item.rule} key={j} />
+                ),
+              )}
             </div>
           )}
         </section>

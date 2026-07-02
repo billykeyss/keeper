@@ -19,6 +19,21 @@ export interface WaterPin {
   ruleCount: number;
 }
 
+/** One reach pin from `GET /api/waters?bbox=` — a sub-segment of a water (e.g. a river reach)
+ *  plotted separately so multi-reach waters don't collapse into one pin. `line` is the real
+ *  traced path ([lon, lat] pairs) when known; falls back to a point marker at lon/lat when null.
+ *  Like WaterPin, carries no resolved status (that's fetched per-water on selection). */
+export interface ReachPin {
+  id: number;
+  waterBodyId: number;
+  waterName: string;
+  name: string | null;
+  sublabel: string | null;
+  lon: number;
+  lat: number;
+  line: [number, number][] | null;
+}
+
 /** A season period annotation carried by `season`-type rules. */
 export interface RulePeriod {
   label: string;
@@ -104,13 +119,15 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {
   return (await res.json()) as T;
 }
 
-/** Fetch water pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat". */
-export async function fetchWaters(bbox: string, signal?: AbortSignal): Promise<WaterPin[]> {
-  const body = await getJson<{ waters: WaterPin[] }>(
+/** Fetch water + reach pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat". */
+export async function fetchWaters(
+  bbox: string,
+  signal?: AbortSignal,
+): Promise<{ waters: WaterPin[]; reaches: ReachPin[] }> {
+  return getJson<{ waters: WaterPin[]; reaches: ReachPin[] }>(
     `/api/waters?bbox=${encodeURIComponent(bbox)}`,
     signal,
   );
-  return body.waters;
 }
 
 /** Fetch the resolved rules for a water on a date (defaults to the server's today). */

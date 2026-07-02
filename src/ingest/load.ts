@@ -64,11 +64,13 @@ export async function loadDatasets(dbc: typeof db, datasets: WaterDataset[]): Pr
         }
       }
 
-      // --- reaches: descriptors only; geom stays null (v1 renders only the water pin) ---
+      // --- reaches: descriptors + a representative point, plus real path geometry when known ---
       const reachIdByKey = new Map<string, number>();
       for (const r of ds.reaches) {
+        const geom = r.line ? `SRID=4326;MULTILINESTRING((${r.line.map(([lon, lat]) => `${lon} ${lat}`).join(", ")}))` : null;
         const [row] = await tx.insert(reach).values({
           waterBodyId: wb.id, name: r.name, fromDesc: r.fromDesc, toDesc: r.toDesc,
+          lon: r.lon, lat: r.lat, geom,
         }).returning();
         reachIdByKey.set(r.key, row.id);
       }

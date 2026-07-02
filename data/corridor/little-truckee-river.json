@@ -3,100 +3,630 @@
   "water": {
     "name": "Little Truckee River",
     "waterType": "river",
-    "states": ["CA"],
-    "counties": ["Sierra", "Nevada"],
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "Sierra",
+      "Nevada"
+    ],
     "aliases": [],
     "gnisId": null,
-    "lon": -120.1350,
-    "lat": 39.4200,
+    "lon": -120.1033,
+    "lat": 39.4442,
     "verifyCurrent": false
   },
   "authorities": [
-    {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]}
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    }
   ],
   "reaches": [
-    {"key": "stampede_to_boca", "name": "Little Truckee River — Stampede Dam to Boca Reservoir", "fromDesc": "Stampede Reservoir Dam", "toDesc": "Boca Reservoir inlet", "lon": -120.1120, "lat": 39.4300}
+    {
+      "key": "stampede_to_boca",
+      "name": "Little Truckee River \u2014 Stampede Dam to Boca Reservoir",
+      "fromDesc": "Stampede Reservoir Dam",
+      "toDesc": "Boca Reservoir inlet",
+      "lon": -120.112,
+      "lat": 39.43,
+      "line": [
+        [
+          -120.103859,
+          39.471057
+        ],
+        [
+          -120.103569,
+          39.470705
+        ],
+        [
+          -120.104063,
+          39.469935
+        ],
+        [
+          -120.104043,
+          39.469335
+        ],
+        [
+          -120.103103,
+          39.46713
+        ],
+        [
+          -120.103912,
+          39.466079
+        ],
+        [
+          -120.105774,
+          39.464993
+        ],
+        [
+          -120.106413,
+          39.462474
+        ],
+        [
+          -120.106172,
+          39.462073
+        ],
+        [
+          -120.106292,
+          39.460244
+        ],
+        [
+          -120.105193,
+          39.459383
+        ],
+        [
+          -120.105125,
+          39.457746
+        ],
+        [
+          -120.103425,
+          39.457017
+        ],
+        [
+          -120.103134,
+          39.455897
+        ],
+        [
+          -120.10273,
+          39.455718
+        ],
+        [
+          -120.101623,
+          39.456043
+        ],
+        [
+          -120.100954,
+          39.455572
+        ],
+        [
+          -120.101039,
+          39.45487
+        ],
+        [
+          -120.102584,
+          39.453186
+        ],
+        [
+          -120.103228,
+          39.451702
+        ],
+        [
+          -120.105906,
+          39.450502
+        ],
+        [
+          -120.106369,
+          39.449912
+        ],
+        [
+          -120.105949,
+          39.448786
+        ],
+        [
+          -120.104756,
+          39.448521
+        ],
+        [
+          -120.104447,
+          39.447917
+        ],
+        [
+          -120.104352,
+          39.4474
+        ],
+        [
+          -120.104919,
+          39.445929
+        ],
+        [
+          -120.103331,
+          39.444782
+        ],
+        [
+          -120.103297,
+          39.444199
+        ],
+        [
+          -120.102215,
+          39.443092
+        ],
+        [
+          -120.102001,
+          39.441978
+        ],
+        [
+          -120.099889,
+          39.441263
+        ],
+        [
+          -120.098696,
+          39.440043
+        ],
+        [
+          -120.096645,
+          39.43989
+        ],
+        [
+          -120.095357,
+          39.43879
+        ],
+        [
+          -120.093315,
+          39.438817
+        ],
+        [
+          -120.092877,
+          39.437325
+        ],
+        [
+          -120.093126,
+          39.437014
+        ],
+        [
+          -120.091855,
+          39.436616
+        ],
+        [
+          -120.087667,
+          39.438399
+        ],
+        [
+          -120.084972,
+          39.436576
+        ],
+        [
+          -120.083804,
+          39.43415
+        ],
+        [
+          -120.085367,
+          39.432353
+        ],
+        [
+          -120.085204,
+          39.431664
+        ],
+        [
+          -120.08456,
+          39.431571
+        ],
+        [
+          -120.08383,
+          39.430961
+        ],
+        [
+          -120.083427,
+          39.429615
+        ],
+        [
+          -120.084156,
+          39.428495
+        ],
+        [
+          -120.085512,
+          39.427428
+        ],
+        [
+          -120.085401,
+          39.425531
+        ],
+        [
+          -120.085727,
+          39.423814
+        ],
+        [
+          -120.088317,
+          39.420903
+        ],
+        [
+          -120.089796,
+          39.41759
+        ],
+        [
+          -120.092899,
+          39.413535
+        ],
+        [
+          -120.094684,
+          39.410366
+        ],
+        [
+          -120.095251,
+          39.40632
+        ],
+        [
+          -120.09441,
+          39.390494
+        ]
+      ]
+    }
   ],
   "species": [],
   "speciesGroups": [
-    {"key": "trout", "name": "trout", "category": "trout", "authorityKey": "cdfw"}
+    {
+      "key": "trout",
+      "name": "trout",
+      "category": "trout",
+      "authorityKey": "cdfw"
+    }
   ],
   "sources": [
-    {"key": "ccr_7_50_b_80", "url": "https://govt.westlaw.com/calregs", "title": "CCR T14 §7.50(b)(80) — Little Truckee River", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(80) Little Truckee River (Sierra and Nevada cos.) from Stampede Reservoir Dam downstream to Boca Reservoir. All year. Only artificial lures with barbless hooks may be used. 0 trout."},
-    {"key": "ccr_5_85_stream", "url": "https://govt.westlaw.com/calregs", "title": "CCR T14 §5.85 — Trout (General Statewide Regulations, Streams/Rivers)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(2) All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water."},
-    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(80) Little Truckee River (Sierra and Nevada cos.) from Stampede Reservoir Dam downstream to Boca Reservoir. All year. Only artificial lures with barbless hooks may be used. 0 trout."},
-    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+    {
+      "key": "ccr_7_50_b_80",
+      "url": "https://govt.westlaw.com/calregs/Document/I13E5B590A72311EFA8E7D644C32D1717?viewType=FullText&originationContext=documenttoc&transitionType=StatuteNavigator&contextData=%28sc.Default%29",
+      "title": "CCR T14 \u00a77.50(b)(80) \u2014 Little Truckee River",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(80) Little Truckee River (Sierra and Nevada cos.) from Stampede Reservoir Dam downstream to Boca Reservoir. All year. Only artificial lures with barbless hooks may be used. 0 trout."
+    },
+    {
+      "key": "ccr_5_85_stream",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85",
+      "title": "CCR T14 \u00a75.85 \u2014 Trout (General Statewide Regulations, Streams/Rivers)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(2) All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "(80) Little Truckee River (Sierra and Nevada cos.) from Stampede Reservoir Dam downstream to Boca Reservoir. All year. Only artificial lures with barbless hooks may be used. 0 trout."
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code \u00a77145 \u2014 Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
   ],
   "groups": [
-    {"key": "little_truckee_stampede_boca", "authorityKey": "cdfw", "citation": "7.50(b)(80)", "humanSummary": "Stampede Dam to Boca Reservoir: year-round catch-and-release trout, artificial lures with barbless hooks only", "verbatimText": "All year. Only artificial lures with barbless hooks may be used. 0 trout."}
+    {
+      "key": "little_truckee_stampede_boca",
+      "authorityKey": "cdfw",
+      "citation": "7.50(b)(80)",
+      "humanSummary": "Stampede Dam to Boca Reservoir: year-round catch-and-release trout, artificial lures with barbless hooks only",
+      "verbatimText": "All year. Only artificial lures with barbless hooks may be used. 0 trout."
+    }
   ],
   "seasonPeriods": [
-    {"key": "lt_take_season", "groupKey": null, "label": "take_season", "status": "open", "startSpec": {"type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April"}, "endSpec": {"type": "fixed", "month": 11, "day": 15, "verbatim": "November 15"}},
-    {"key": "lt_winter_cr", "groupKey": null, "label": "winter_cr", "status": "open_catch_release", "startSpec": {"type": "fixed", "month": 11, "day": 16, "verbatim": "November 16"}, "endSpec": {"type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April"}}
+    {
+      "key": "lt_take_season",
+      "groupKey": null,
+      "label": "take_season",
+      "status": "open",
+      "startSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "sat",
+        "month": 4,
+        "verbatim": "last Saturday in April"
+      },
+      "endSpec": {
+        "type": "fixed",
+        "month": 11,
+        "day": 15,
+        "verbatim": "November 15"
+      }
+    },
+    {
+      "key": "lt_winter_cr",
+      "groupKey": null,
+      "label": "winter_cr",
+      "status": "open_catch_release",
+      "startSpec": {
+        "type": "fixed",
+        "month": 11,
+        "day": 16,
+        "verbatim": "November 16"
+      },
+      "endSpec": {
+        "type": "relative",
+        "ordinal": "last",
+        "weekday": "sat",
+        "month": 4,
+        "relation": "preceding",
+        "offset_days": -1,
+        "verbatim": "Friday preceding the last Saturday in April"
+      }
+    }
   ],
   "regulations": [
     {
       "ruleType": "season",
-      "parameters": {"periods": [{"label": "all_year", "status": "open", "start": {"type": "year_round", "verbatim": "All year"}, "end": {"type": "year_round", "verbatim": "All year"}}]},
-      "groupKey": "little_truckee_stampede_boca", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
-      "scope": {"type": "reach", "reachKey": "stampede_to_boca"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "7.50(b)(80)",
+      "parameters": {
+        "periods": [
+          {
+            "label": "all_year",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ]
+      },
+      "groupKey": "little_truckee_stampede_boca",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "stampede_to_boca"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(80)",
       "humanSummary": "Open all year",
       "verbatimText": "All year.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_7_50_b_80", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_80",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": {"daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true},
-      "groupKey": "little_truckee_stampede_boca", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
-      "scope": {"type": "reach", "reachKey": "stampede_to_boca"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "7.50(b)(80)",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": "little_truckee_stampede_boca",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "stampede_to_boca"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(80)",
       "humanSummary": "0 trout (catch-and-release)",
       "verbatimText": "0 trout.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_7_50_b_80", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_80",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": {"bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false},
-      "groupKey": "little_truckee_stampede_boca", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
-      "scope": {"type": "reach", "reachKey": "stampede_to_boca"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "7.50(b)(80)",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": "little_truckee_stampede_boca",
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "reach",
+        "reachKey": "stampede_to_boca"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "7.50(b)(80)",
       "humanSummary": "Artificial lures with barbless hooks; no bait",
       "verbatimText": "Only artificial lures with barbless hooks may be used.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_7_50_b_80", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_7_50_b_80",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": {"daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group"},
-      "groupKey": null, "seasonPeriodKey": "lt_take_season", "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
-      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(2)",
-      "humanSummary": "5 trout/day, 10 in possession during the take season (last Sat Apr–Nov 15) — Sierra District statewide stream default, elsewhere on the river outside the Stampede-Boca reach",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_group"
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "lt_take_season",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout/day, 10 in possession during the take season (last Sat Apr\u2013Nov 15) \u2014 Sierra District statewide stream default, elsewhere on the river outside the Stampede-Boca reach",
       "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_85_stream", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_5_85_stream",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "bag",
-      "parameters": {"daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true},
-      "groupKey": null, "seasonPeriodKey": "lt_winter_cr", "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesGroupKey": "trout"}],
-      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(2)",
-      "humanSummary": "0 trout, catch-and-release during the winter window (Nov 16–Fri before last Sat Apr) — statewide stream default",
+      "parameters": {
+        "daily": 0,
+        "possession": 0,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "catch_and_release": true
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "lt_winter_cr",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "listed",
+      "speciesTargets": [
+        {
+          "speciesGroupKey": "trout"
+        }
+      ],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "0 trout, catch-and-release during the winter window (Nov 16\u2013Fri before last Sat Apr) \u2014 statewide stream default",
       "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies... In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_85_stream", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_5_85_stream",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "gear_method",
-      "parameters": {"bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false},
-      "groupKey": null, "seasonPeriodKey": "lt_winter_cr", "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "5.85(a)(2)",
+      "parameters": {
+        "bait_allowed": false,
+        "artificial_only": true,
+        "flies_only": false,
+        "lures_allowed": true,
+        "barbless_required": true,
+        "single_hook_required": false
+      },
+      "groupKey": null,
+      "seasonPeriodKey": "lt_winter_cr",
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
       "humanSummary": "Only artificial lures with barbless hooks may be used (all species) during the winter window",
       "verbatimText": "...only artificial lures with barbless hooks may be used for all species of fish.",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "ccr_5_85_stream", "corroborating": ["cdfw_booklet_2026"]}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_5_85_stream",
+        "corroborating": [
+          "cdfw_booklet_2026"
+        ]
+      }
     },
     {
       "ruleType": "license",
-      "parameters": {"required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license."},
-      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
-      "scope": {"type": "water"}, "appliesToClass": "any", "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code \u00a77145",
       "humanSummary": "California sport fishing license required for anglers 16+",
       "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
-      "isParaphrase": false, "confidence": "high", "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
     }
   ],
   "reciprocity": []

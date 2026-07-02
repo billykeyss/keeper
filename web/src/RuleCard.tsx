@@ -116,7 +116,10 @@ function SourceRow({ citation, sourceUrl }: { citation: string | null; sourceUrl
   );
 }
 
-export function RuleCard({ rule }: { rule: Rule }) {
+/** Everything inside a rule card except the outer wrapper — shared by the standalone `RuleCard`
+ *  and by `SpeciesLimitCard`'s two stacked subsections. `hideSpecies` skips the species chip in
+ *  the head when a parent card already names the species once for both subsections. */
+function RuleBody({ rule, hideSpecies }: { rule: Rule; hideSpecies?: boolean }) {
   const isNone = rule.polarity === "asserts_none";
   const big = keyFigure(rule);
   const chips = detailChips(rule);
@@ -126,29 +129,30 @@ export function RuleCard({ rule }: { rule: Rule }) {
   // "none on record" — an outlined ledger entry sealed with a brass check.
   if (isNone) {
     return (
-      <article className="rule-card rule-card--none">
+      <>
         <div className="rule-head">
           <span className="rule-seal">
             <CheckIcon size={16} />
           </span>
           <span className="rule-type">No {label.toLowerCase()}</span>
           <span className="rule-none-tag">None on record</span>
+          {!hideSpecies && rule.species.length > 0 && <span className="rule-species">{rule.species.join(", ")}</span>}
           {lowConfidence && <span className="chip chip--unverified">Unverified</span>}
         </div>
         <p className="rule-summary">{rule.summary}</p>
         <SourceRow citation={rule.citation} sourceUrl={rule.sourceUrl} />
-      </article>
+      </>
     );
   }
 
   return (
-    <article className="rule-card">
+    <>
       <div className="rule-head">
         <span className="rule-icon">
           <RuleIcon type={rule.ruleType} size={17} />
         </span>
         <span className="rule-type">{label}</span>
-        {rule.species.length > 0 && (
+        {!hideSpecies && rule.species.length > 0 && (
           <span className="rule-species">{rule.species.join(", ")}</span>
         )}
         {lowConfidence && <span className="chip chip--unverified">Unverified</span>}
@@ -190,6 +194,34 @@ export function RuleCard({ rule }: { rule: Rule }) {
       )}
 
       <SourceRow citation={rule.citation} sourceUrl={rule.sourceUrl} />
+    </>
+  );
+}
+
+export function RuleCard({ rule }: { rule: Rule }) {
+  const isNone = rule.polarity === "asserts_none";
+  return (
+    <article className={isNone ? "rule-card rule-card--none" : "rule-card"}>
+      <RuleBody rule={rule} />
+    </article>
+  );
+}
+
+/** A fish's bag limit and size limit shown together as one card (instead of two disconnected
+ *  ones) — only used where a scope has exactly one bag and one size_limit rule for that species,
+ *  see `groupBagAndSize`. */
+export function SpeciesLimitCard({ species, bag, size }: { species: string; bag: Rule; size: Rule }) {
+  return (
+    <article className="rule-card-merged">
+      <div className="rule-card-species-head">
+        <span className="rule-card-species-name">{species}</span>
+      </div>
+      <div className="rule-subsection">
+        <RuleBody rule={bag} hideSpecies />
+      </div>
+      <div className="rule-subsection">
+        <RuleBody rule={size} hideSpecies />
+      </div>
     </article>
   );
 }

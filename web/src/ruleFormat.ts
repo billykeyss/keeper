@@ -65,6 +65,50 @@ export function keyFigure(rule: Rule): KeyFigure | null {
   return null;
 }
 
+export type RuleGroupItem = { kind: "single"; rule: Rule } | { kind: "merged"; species: string; bag: Rule; size: Rule };
+
+function speciesKey(species: string[]): string {
+  return [...species].sort().join("|");
+}
+
+/** Fold a `bag` rule together with its `size_limit` counterpart when a scope's rule list has
+ *  EXACTLY one of each for the same species (e.g. Stampede Reservoir's kokanee bag + "no size
+ *  limit" — currently two disconnected cards for the same fish). Left ungrouped whenever a
+ *  species has more than one bag or size rule in the same scope (e.g. Lake Tahoe's separate
+ *  CA-side/NV-side trout bag rules) — merging those would silently pick one arbitrarily. */
+export function groupBagAndSize(rules: Rule[]): RuleGroupItem[] {
+  const bagBySpecies = new Map<string, Rule[]>();
+  const sizeBySpecies = new Map<string, Rule[]>();
+  for (const r of rules) {
+    const key = speciesKey(r.species);
+    const bucket = r.ruleType === "bag" ? bagBySpecies : r.ruleType === "size_limit" ? sizeBySpecies : null;
+    bucket?.set(key, [...(bucket.get(key) ?? []), r]);
+  }
+
+  const mergeableSizeRules = new Set<Rule>();
+  const mergeableBySpecies = new Map<string, Rule>(); // bag rule -> keyed by species, for lookup while iterating
+  for (const [key, bags] of bagBySpecies) {
+    const sizes = sizeBySpecies.get(key);
+    if (bags.length === 1 && sizes?.length === 1) {
+      mergeableBySpecies.set(key, sizes[0]);
+      mergeableSizeRules.add(sizes[0]);
+    }
+  }
+
+  const items: RuleGroupItem[] = [];
+  for (const r of rules) {
+    if (mergeableSizeRules.has(r)) continue; // folded into its bag rule's merged card below
+    const key = speciesKey(r.species);
+    const sizeRule = r.ruleType === "bag" ? mergeableBySpecies.get(key) : undefined;
+    if (sizeRule) {
+      items.push({ kind: "merged", species: r.species.length ? r.species.join(", ") : "All species", bag: r, size: sizeRule });
+    } else {
+      items.push({ kind: "single", rule: r });
+    }
+  }
+  return items;
+}
+
 /** Short boolean/enum chips summarizing detail-heavy rule types. */
 export function detailChips(rule: Rule): string[] {
   const d = rule.detail as Detail;

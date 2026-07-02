@@ -14,10 +14,12 @@ function todayLabel(): string {
 export function App() {
   const [selected, setSelected] = useState<WaterPin | null>(null);
   const [selectedStatus, setSelectedStatus] = useState<ScopeStatus | null>(null);
+  const [focusScope, setFocusScope] = useState<string | null>(null);
 
-  const handleSelect = useCallback((pin: WaterPin) => {
+  const handleSelect = useCallback((pin: WaterPin, scope?: string) => {
     setSelected(pin);
     setSelectedStatus(null); // reset until rules resolve
+    setFocusScope(scope ?? null);
   }, []);
 
   const handleStatus = useCallback((_id: number, status: ScopeStatus) => {
@@ -46,7 +48,7 @@ export function App() {
         <span className="brand-sub">CA·NV fishing rules — {todayLabel()}</span>
       </div>
 
-      <RulesSheet pin={selected} onClose={handleClose} onStatus={handleStatus} />
+      <RulesSheet pin={selected} focusScope={focusScope} onClose={handleClose} onStatus={handleStatus} />
     </div>
   );
 }
