@@ -53,9 +53,18 @@ npm run build:web          # builds the web app into web/dist
 
 Sanity check: `npm test` should be all green (uses a separate `fishing_law_test` DB).
 
-## 4. Run Keeper as a launchd service
+## 4. Run Keeper as a launchd service inside a tmux session
 
-Pick a port (below: **8791**; use anything free). Create the LaunchAgent:
+At login/boot, launchd runs `scripts/keeper-tmux.sh`, which starts a detached **tmux** session
+named `keeper` containing a supervisor loop that runs the server and auto-restarts it if it
+crashes. You get boot-start *and* a live console you can attach to anytime.
+
+> Why not `KeepAlive`? tmux daemonizes, so the launchd job exits as soon as the session is up —
+> `KeepAlive` would relaunch it in a loop. Instead the plist uses `RunAtLoad` +
+> `AbandonProcessGroup` (so launchd doesn't kill the detached tmux server), and crash-restarts
+> happen inside the tmux pane.
+
+One-time: `brew install tmux`. Then create the LaunchAgent (port **8791**; change `PORT` if needed):
 
 ```bash
 mkdir -p ~/Library/LaunchAgents ~/keeper/logs
@@ -65,45 +74,45 @@ cat > ~/Library/LaunchAgents/com.keeper.portal.plist <<EOF
 <plist version="1.0">
 <dict>
   <key>Label</key><string>com.keeper.portal</string>
-  <key>WorkingDirectory</key><string>$HOME/keeper</string>
   <key>ProgramArguments</key>
   <array>
-    <string>$(command -v npx)</string>
-    <string>tsx</string>
-    <string>src/api/server.ts</string>
+    <string>/bin/bash</string>
+    <string>$HOME/keeper/scripts/keeper-tmux.sh</string>
   </array>
   <key>EnvironmentVariables</key>
   <dict>
     <key>PORT</key><string>8791</string>
-    <key>PATH</key><string>$(dirname "$(command -v node)"):/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PATH</key><string>$(dirname "$(command -v node)"):/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
   </dict>
   <key>RunAtLoad</key><true/>
-  <key>KeepAlive</key><true/>
-  <key>StandardOutPath</key><string>$HOME/keeper/logs/keeper.log</string>
-  <key>StandardErrorPath</key><string>$HOME/keeper/logs/keeper.err.log</string>
+  <key>AbandonProcessGroup</key><true/>
+  <key>StandardOutPath</key><string>$HOME/keeper/logs/keeper-launchd.log</string>
+  <key>StandardErrorPath</key><string>$HOME/keeper/logs/keeper-launchd.err.log</string>
 </dict>
 </plist>
 EOF
 launchctl load ~/Library/LaunchAgents/com.keeper.portal.plist
 ```
 
-`KeepAlive` restarts the server if it crashes; `RunAtLoad` starts it at login/boot.
-
 Verify:
 
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8791/          # → 200
-curl -s "http://localhost:8791/api/waters?bbox=-120.6,38.8,-119.2,40.2" | head -c 200
-tail -f ~/keeper/logs/keeper.log                                          # "Keeper API listening..."
+tmux ls                                                           # → keeper: 1 windows ...
+curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8791/   # → 200
+tmux attach -t keeper                                             # live server logs; detach: Ctrl-b then d
 ```
 
-Service management:
+Day-to-day management (the tmux session, not launchd, is the thing that runs):
 
 ```bash
-launchctl unload ~/Library/LaunchAgents/com.keeper.portal.plist   # stop
-launchctl load   ~/Library/LaunchAgents/com.keeper.portal.plist   # start
-launchctl kickstart -k gui/$(id -u)/com.keeper.portal             # restart
+tmux attach -t keeper              # watch logs / interact (detach with Ctrl-b d — do NOT Ctrl-C unless stopping)
+tmux kill-session -t keeper        # stop the server + supervisor
+~/keeper/scripts/keeper-tmux.sh    # start it again by hand (idempotent — no-op if already running)
+launchctl kickstart gui/$(id -u)/com.keeper.portal   # same as running the script, via launchd
 ```
+
+The supervisor restarts the server ~3s after any crash. Killing the `node`/`tsx` process does
+NOT stop Keeper (that's the supervisor doing its job) — use `tmux kill-session -t keeper`.
 
 ## 5. Reach it from your phone
 
@@ -129,14 +138,16 @@ npm install && npm --prefix web install     # in case deps changed
 npm run db:migrate                          # applies any new migrations (no-op otherwise)
 npm run ingest:corridor                     # reloads regulations if data/ changed (idempotent)
 npm run build:web                           # rebuild the web app
-launchctl kickstart -k gui/$(id -u)/com.keeper.portal
+tmux kill-session -t keeper && ./scripts/keeper-tmux.sh   # restart the server session
 ```
 
 ## 7. Troubleshooting
 
 | Symptom | Fix |
 |---|---|
-| `EADDRINUSE` in `keeper.err.log` | Another process owns the port — change `PORT` in the plist, `launchctl unload` + `load`. |
+| `tmux ls` shows no `keeper` session after boot | Run `~/keeper/scripts/keeper-tmux.sh` by hand and read its output; check `~/keeper/logs/keeper-launchd.err.log` (usually a PATH problem — tmux/node not found by launchd). |
+| `EADDRINUSE` repeating in the tmux pane | Another process owns the port — change `PORT` in the plist AND restart: `tmux kill-session -t keeper && launchctl kickstart gui/$(id -u)/com.keeper.portal`. |
+| Server keeps restarting every 3s | Attach (`tmux attach -t keeper`) and read the crash output — most often the DB is down (below). |
 | API 500s / "connection refused" to Postgres | Docker isn't running or the container is down: open Docker Desktop, then `cd ~/keeper && npm run db:up`. The `restart: unless-stopped` override (step 3) prevents this after reboots once Docker itself is running. |
 | Map loads but no pins | DB is empty — run `npm run ingest:corridor`. |
 | Blank page at `/` | `web/dist` missing — run `npm run build:web`. |
