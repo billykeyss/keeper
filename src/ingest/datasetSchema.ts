@@ -75,11 +75,30 @@ const reciprocityRow = z.object({
   replacesStateLicense: z.boolean(), condition: z.record(z.unknown()).nullable(), sourceKey: key, note: z.string().nullable(),
 }).strict();
 
+const stockingEventRow = z.object({
+  speciesCommonName: z.string(),
+  quantity: z.number().int().nonnegative().nullable(),
+  sizeNote: z.string().nullable(),
+  date: isoDate,
+  sourceKeys: z.object({ primary: key, corroborating: z.array(key) }).strict(),
+}).strict();
+
+const stockingScheduleRow = z.object({
+  speciesCommonName: z.string(),
+  frequency: z.enum(["weekly","biweekly","monthly","seasonal","annual","as_available"]),
+  seasonStartMonth: z.number().int().min(1).max(12).nullable(),
+  seasonEndMonth: z.number().int().min(1).max(12).nullable(),
+  note: z.string(),
+  sourceKeys: z.object({ primary: key, corroborating: z.array(key) }).strict(),
+}).strict();
+
 export const waterDataset = z.object({
   asOf: isoDate, water: waterInfo, authorities: z.array(authorityRow).min(1),
   reaches: z.array(reachRow), species: z.array(speciesRow), speciesGroups: z.array(speciesGroupRow),
   sources: z.array(sourceRow).min(1), groups: z.array(groupRow), seasonPeriods: z.array(seasonPeriodRow),
   regulations: z.array(regulationRow), reciprocity: z.array(reciprocityRow),
+  stockingEvents: z.array(stockingEventRow).default([]),
+  stockingSchedule: z.array(stockingScheduleRow).default([]),
 }).strict();
 
 export type WaterDataset = z.infer<typeof waterDataset>;

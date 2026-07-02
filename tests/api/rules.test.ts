@@ -50,6 +50,8 @@ const water1: WaterDataset = {
     { ruleType: "closure", parameters: { closure_kind: "year_round", boundary_definition: "described" }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "reach", reachKey: "reachB" }, appliesToClass: "any", jurisdictionState: "CA", citation: "7.50(closed)", humanSummary: "Closed to fishing all year", verbatimText: "Closed all year", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 const water2: WaterDataset = {
@@ -63,6 +65,8 @@ const water2: WaterDataset = {
     { ruleType: "bag", parameters: { daily: 5, unit: "fish", aggregation: "combined_group" }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "7.50(b)", humanSummary: "5 trout/day", verbatimText: "5 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 // water3: an open (year-round) season with a period-bound *keepable* bag for one species PLUS an
@@ -86,6 +90,8 @@ const water3: WaterDataset = {
     { ruleType: "bag", parameters: { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "spB", humanSummary: "0 species-B, catch-and-release (protected)", verbatimText: "0 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 // water4: open season, and the ONLY active bag is catch-and-release → scope stays catch_and_release.
@@ -103,6 +109,8 @@ const water4: WaterDataset = {
     { ruleType: "bag", parameters: { daily: 0, unit: "fish", aggregation: "combined_group", catch_and_release: true }, groupKey: null, seasonPeriodKey: "yr", authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "cr", humanSummary: "0/day, catch-and-release only", verbatimText: "0 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 // water5: an open season PLUS a genuine whole-water (non-spatial) closure → closure wins, scope closed.
@@ -121,6 +129,8 @@ const water5: WaterDataset = {
     { ruleType: "closure", parameters: { closure_kind: "year_round", boundary_definition: "described", note: "Entire lake closed to all fishing." }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "cr", humanSummary: "Closed to all fishing all year", verbatimText: "Closed to all fishing all year.", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } },
   ],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 let water1Id: number;

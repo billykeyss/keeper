@@ -16,6 +16,8 @@ const ds: WaterDataset = {
   groups: [], seasonPeriods: [],
   regulations: [{ ruleType: "bag", parameters: { daily: 5, unit: "fish", aggregation: "combined_group" }, groupKey: null, seasonPeriodKey: null, authorityKey: "cdfw", rulePolarity: "applies", speciesScope: "all", speciesTargets: [], scope: { type: "water" }, appliesToClass: "any", jurisdictionState: "CA", citation: "7.50(b)", humanSummary: "5 trout/day", verbatimText: "5 per day", isParaphrase: false, confidence: "high", sourceKeys: { primary: "s1", corroborating: [] } }],
   reciprocity: [],
+  stockingEvents: [],
+  stockingSchedule: [],
 };
 
 describe("loadDatasets", () => {
