@@ -4,3 +4,4 @@ export * from "./source";
 export * from "./species";
 export * from "./regulation";
 export * from "./audit";
+export * from "./chat";

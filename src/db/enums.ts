@@ -31,3 +31,4 @@ export const periodStatusEnum = pgEnum("period_status", ["open","closed","open_c
 export const licenseYearBasisEnum = pgEnum("license_year_basis", ["fixed_calendar","rolling_12mo","regulation_year"]);
 export const auditActionEnum = pgEnum("audit_action", ["insert","update","delete"]);
 export const stockingFrequencyEnum = pgEnum("stocking_frequency", ["weekly","biweekly","monthly","seasonal","annual","as_available"]);
+export const chatRoleEnum = pgEnum("chat_role", ["user", "assistant"]);

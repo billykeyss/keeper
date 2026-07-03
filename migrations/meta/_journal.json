@@ -43,6 +43,13 @@
       "when": 1783005719461,
       "tag": "0005_sharp_robbie_robertson",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1783037274466,
+      "tag": "0006_tranquil_starfox",
+      "breakpoints": true
     }
   ]
 }
