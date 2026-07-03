@@ -215,3 +215,89 @@ export async function fetchRules(
   const q = on ? `?on=${encodeURIComponent(on)}` : "";
   return getJson<RulesResponse>(`/api/waters/${id}/rules${q}`, signal);
 }
+
+// --- chat ---
+
+export interface ChatSessionRow {
+  id: number;
+  title: string;
+  updatedAt: string;
+  messageCount: number;
+}
+export interface ChatMessageRow {
+  id: number;
+  role: "user" | "assistant";
+  content: string;
+  createdAt: string;
+}
+
+export async function fetchChatSessions(signal?: AbortSignal): Promise<ChatSessionRow[]> {
+  return (await getJson<{ sessions: ChatSessionRow[] }>("/api/chat/sessions", signal)).sessions;
+}
+
+export async function createChatSession(): Promise<{ id: number; title: string }> {
+  const res = await fetch("/api/chat/sessions", {
+    method: "POST",
+    headers: apiHeaders({ "content-type": "application/json" }),
+    body: "{}",
+  });
+  if (!res.ok) throw new Error(`Request failed (${res.status})`);
+  return (await res.json()) as { id: number; title: string };
+}
+
+export async function fetchChatMessages(id: number, signal?: AbortSignal): Promise<ChatMessageRow[]> {
+  return (await getJson<{ messages: ChatMessageRow[] }>(`/api/chat/sessions/${id}/messages`, signal)).messages;
+}
+
+export interface ChatStreamHandlers {
+  onTool: (name: string) => void;
+  onDelta: (text: string) => void;
+  onDone: () => void;
+  onError: (message: string) => void;
+}
+
+/** POST a chat message and consume the SSE reply stream (fetch + reader — EventSource can't POST). */
+export async function streamChatMessage(
+  sessionId: number,
+  text: string,
+  handlers: ChatStreamHandlers,
+  signal?: AbortSignal,
+): Promise<void> {
+  const res = await fetch(`/api/chat/sessions/${sessionId}/messages`, {
+    method: "POST",
+    headers: apiHeaders({ "content-type": "application/json" }),
+    body: JSON.stringify({ text }),
+    signal,
+  });
+  if (res.status === 401) {
+    clearPassword();
+    window.dispatchEvent(new Event("keeper:unauthorized"));
+    throw new Error("unauthorized");
+  }
+  if (!res.ok || !res.body) {
+    const body = (await res.json().catch(() => null)) as { error?: string } | null;
+    handlers.onError(body?.error ?? `Request failed (${res.status})`);
+    return;
+  }
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    let sep: number;
+    while ((sep = buf.indexOf("\n\n")) !== -1) {
+      const frame = buf.slice(0, sep);
+      buf = buf.slice(sep + 2);
+      const event = /event: (.+)/.exec(frame)?.[1]?.trim();
+      const dataRaw = /data: (.+)/.exec(frame)?.[1];
+      if (!event || !dataRaw) continue;
+      const data = JSON.parse(dataRaw) as Record<string, unknown>;
+      if (event === "tool") handlers.onTool(String(data.name));
+      else if (event === "delta") handlers.onDelta(String(data.text));
+      else if (event === "done") handlers.onDone();
+      else if (event === "error") handlers.onError(String(data.message));
+    }
+  }
+}

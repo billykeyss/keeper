@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import { ChatPanel } from "./ChatPanel";
 import { MapView } from "./Map";
 import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
@@ -20,6 +21,7 @@ export function App() {
   const [stockedOpen, setStockedOpen] = useState(false);
   const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
+  const [chatOpen, setChatOpen] = useState(false);
 
   const handleSelect = useCallback((pin: WaterPin, scope?: string) => {
     setSelected(pin);
@@ -87,6 +89,11 @@ export function App() {
           onFilter={setStockedFilter}
           onPickWater={handlePickStockedWater}
         />
+
+        <button className="chat-fab" onClick={() => setChatOpen((v) => !v)} aria-expanded={chatOpen} aria-label="Open regulations chat">
+          Ask
+        </button>
+        <ChatPanel open={chatOpen} onClose={() => setChatOpen(false)} />
 
         <RulesSheet pin={selected} focusScope={focusScope} onClose={handleClose} onStatus={handleStatus} />
       </div>
