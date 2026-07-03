@@ -196,6 +196,16 @@ export const TreesIcon = (p: IconProps) =>
     p.className,
   );
 
+export const MountainIcon = (p: IconProps) =>
+  svg(
+    <>
+      <path d="M3 18.5h18" />
+      <path d="M4.5 18.5 9 9.5l3.2 5.6 2.3-3.6 5 7" />
+    </>,
+    p.size,
+    p.className,
+  );
+
 export const ChatIcon = (p: IconProps) =>
   svg(
     <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9.5l-4 3.3c-.6.5-1.5.1-1.5-.7z" />,

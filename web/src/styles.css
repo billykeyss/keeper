@@ -186,6 +186,26 @@ a {
   color: var(--bone);
   border-color: var(--warden);
 }
+/* BLM toggle active state — the map layer's pale-yellow, in a readable brass tone. */
+.stocked-chip--blm {
+  background: var(--brass);
+  color: var(--bone);
+  border-color: var(--brass);
+}
+/* Desktop "Land" grouping: label + the two adjacent land-layer chips. */
+.lands-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.lands-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-64);
+  padding-left: 2px;
+}
 .stocked-panel {
   position: fixed;
   top: calc(var(--safe-top, 0px) + 56px);

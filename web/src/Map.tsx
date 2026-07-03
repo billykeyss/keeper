@@ -86,8 +86,10 @@ interface MapProps {
   stockedFilter: string | null;
   /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
   flyTo: { lon: number; lat: number } | null;
-  /** Optional public-lands overlay: USDA national-forest (green) + BLM (yellow). */
-  publicLands: boolean;
+  /** USDA national-forest lands overlay (green). */
+  forestLands: boolean;
+  /** BLM-managed lands overlay (yellow). */
+  blmLands: boolean;
 }
 
 type MarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; pin: WaterPin };
@@ -158,7 +160,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, publicLands }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, forestLands, blmLands }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -174,8 +176,10 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   selectedIdRef.current = selectedId;
   const stockedFilterRef = useRef<string | null>(stockedFilter);
   stockedFilterRef.current = stockedFilter;
-  const publicLandsRef = useRef(publicLands);
-  publicLandsRef.current = publicLands;
+  const forestLandsRef = useRef(forestLands);
+  forestLandsRef.current = forestLands;
+  const blmLandsRef = useRef(blmLands);
+  blmLandsRef.current = blmLands;
   const applySelectionRef = useRef<() => void>(() => {});
   const refreshRef = useRef<() => void>(() => {});
 
@@ -225,7 +229,7 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
         id: FOREST_LAYER,
         type: "raster",
         source: FOREST_SOURCE,
-        layout: { visibility: publicLandsRef.current ? "visible" : "none" },
+        layout: { visibility: forestLandsRef.current ? "visible" : "none" },
         paint: { "raster-opacity": 0.62 },
       });
       map.addSource(BLM_SOURCE, {
@@ -239,7 +243,7 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
         id: BLM_LAYER,
         type: "raster",
         source: BLM_SOURCE,
-        layout: { visibility: publicLandsRef.current ? "visible" : "none" },
+        layout: { visibility: blmLandsRef.current ? "visible" : "none" },
         paint: { "raster-opacity": 0.55 },
       });
 
@@ -399,15 +403,20 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
     refreshRef.current();
   }, [stockedFilter]);
 
-  // Toggle the public-lands overlays (layers exist once the style has loaded; the
-  // load handler applies the initial state from the ref for toggles racing map creation).
+  // Toggle each land overlay independently (layers exist once the style has loaded;
+  // the load handler applies the initial state from the refs for toggles racing map creation).
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return;
-    const vis = publicLands ? "visible" : "none";
-    if (map.getLayer(FOREST_LAYER)) map.setLayoutProperty(FOREST_LAYER, "visibility", vis);
-    if (map.getLayer(BLM_LAYER)) map.setLayoutProperty(BLM_LAYER, "visibility", vis);
-  }, [publicLands]);
+    if (map?.getLayer(FOREST_LAYER)) {
+      map.setLayoutProperty(FOREST_LAYER, "visibility", forestLands ? "visible" : "none");
+    }
+  }, [forestLands]);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (map?.getLayer(BLM_LAYER)) {
+      map.setLayoutProperty(BLM_LAYER, "visibility", blmLands ? "visible" : "none");
+    }
+  }, [blmLands]);
 
   // One-shot fly-to (picking a water from the stocked-fish panel).
   useEffect(() => {

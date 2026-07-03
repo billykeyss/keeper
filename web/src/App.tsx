@@ -5,7 +5,7 @@ import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
 import { StockedFishPanel } from "./StockedFishPanel";
 import { WaterSearch } from "./WaterSearch";
-import { ChatIcon, FishIcon, SearchIcon, TreesIcon } from "./icons";
+import { ChatIcon, FishIcon, MountainIcon, SearchIcon, TreesIcon } from "./icons";
 import type { WaterPin, ScopeStatus, StockedWaterRow, WaterSearchRow } from "./api";
 
 function todayLabel(): string {
@@ -28,7 +28,8 @@ export function App() {
   const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
   const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
-  const [publicLands, setPublicLands] = useState(false);
+  const [forestLands, setForestLands] = useState(false);
+  const [blmLands, setBlmLands] = useState(false);
 
   const togglePanel = useCallback((panel: OpenPanel) => {
     setOpenPanel((p) => (p === panel ? null : panel));
@@ -76,7 +77,8 @@ export function App() {
           onSelect={handleSelect}
           stockedFilter={stockedFilter}
           flyTo={flyTo}
-          publicLands={publicLands}
+          forestLands={forestLands}
+          blmLands={blmLands}
         />
 
         <div className="brand-chip">
@@ -97,14 +99,25 @@ export function App() {
           >
             Stocked fish
           </button>
-          <button
-            className={`stocked-chip${publicLands ? " stocked-chip--active" : ""}`}
-            onClick={() => setPublicLands((v) => !v)}
-            aria-pressed={publicLands}
-            title="Show public lands: national forests (green) + BLM (yellow)"
-          >
-            Public lands
-          </button>
+          <span className="lands-group" role="group" aria-label="Land layers">
+            <span className="lands-label">Land</span>
+            <button
+              className={`stocked-chip${forestLands ? " stocked-chip--active" : ""}`}
+              onClick={() => setForestLands((v) => !v)}
+              aria-pressed={forestLands}
+              title="USDA national forest lands (green)"
+            >
+              Forests
+            </button>
+            <button
+              className={`stocked-chip${blmLands ? " stocked-chip--blm" : ""}`}
+              onClick={() => setBlmLands((v) => !v)}
+              aria-pressed={blmLands}
+              title="BLM-managed lands (yellow)"
+            >
+              BLM
+            </button>
+          </span>
           {stockedFilter && (
             <button
               className="stocked-chip stocked-chip--active"
@@ -148,9 +161,13 @@ export function App() {
             <FishIcon size={19} />
             {stockedFilter ? "Stocked •" : "Stocked"}
           </button>
-          <button className="dock-btn" data-active={publicLands} onClick={() => setPublicLands((v) => !v)}>
+          <button className="dock-btn" data-active={forestLands} onClick={() => setForestLands((v) => !v)}>
             <TreesIcon size={19} />
-            Lands
+            Forest
+          </button>
+          <button className="dock-btn" data-active={blmLands} onClick={() => setBlmLands((v) => !v)}>
+            <MountainIcon size={19} />
+            BLM
           </button>
           <button className="dock-btn" data-active={openPanel === "chat"} onClick={() => togglePanel("chat")}>
             <ChatIcon size={19} />
