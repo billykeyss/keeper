@@ -139,4 +139,39 @@ describe("chat API", () => {
     expect(third.status).toBe(200);
     await third.text();
   });
+
+  it("retries with a fresh SDK session when resuming a stale one fails", async () => {
+    const { runChatTurn } = await import("../../src/chat/agent");
+
+    const created = await app.request("/api/chat/sessions", { method: "POST", headers: JSON_HDRS, body: "{}" });
+    const { id } = await created.json();
+
+    // First turn (default mock): succeeds and stores sdkSessionId "sdk-abc".
+    const first = await app.request(`/api/chat/sessions/${id}/messages`, {
+      method: "POST", headers: JSON_HDRS, body: JSON.stringify({ text: "first turn" }),
+    });
+    await first.text();
+    let [sess] = await db.select().from(chatSession).where(eq(chatSession.id, id));
+    expect(sess.sdkSessionId).toBe("sdk-abc");
+
+    // Second turn: the resume attempt dies (stale transcript), the fresh-session retry succeeds.
+    (runChatTurn as ReturnType<typeof vi.fn>)
+      .mockImplementationOnce(async () => { throw new Error("No conversation found with session ID sdk-abc"); })
+      .mockImplementationOnce(async (_text: string, opts: any) => {
+        expect(opts.resumeSessionId).toBeNull(); // retry must NOT resume
+        await opts.events.onDelta("fresh reply");
+        return { text: "fresh reply", sdkSessionId: "sdk-fresh", costUsd: 0.002 };
+      });
+
+    const second = await app.request(`/api/chat/sessions/${id}/messages`, {
+      method: "POST", headers: JSON_HDRS, body: JSON.stringify({ text: "second turn" }),
+    });
+    const frames = parseSSE(await second.text());
+    expect(frames.filter((f) => f.event === "delta").map((f) => f.data.text).join("")).toBe("fresh reply");
+    expect(frames.some((f) => f.event === "done")).toBe(true);
+    expect(frames.some((f) => f.event === "error")).toBe(false);
+
+    [sess] = await db.select().from(chatSession).where(eq(chatSession.id, id));
+    expect(sess.sdkSessionId).toBe("sdk-fresh"); // stale id overwritten
+  });
 });

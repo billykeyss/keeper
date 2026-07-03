@@ -241,6 +241,12 @@ export async function createChatSession(): Promise<{ id: number; title: string }
     headers: apiHeaders({ "content-type": "application/json" }),
     body: "{}",
   });
+  if (res.status === 401) {
+    // Same contract as getJson/streamChatMessage: re-lock the app on auth failure.
+    clearPassword();
+    window.dispatchEvent(new Event("keeper:unauthorized"));
+    throw new Error("Request failed (401): unauthorized");
+  }
   if (!res.ok) throw new Error(`Request failed (${res.status})`);
   return (await res.json()) as { id: number; title: string };
 }

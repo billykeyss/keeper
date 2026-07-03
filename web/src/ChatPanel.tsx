@@ -85,10 +85,16 @@ export function ChatPanel({ open, onClose }: Props) {
   }, [open, onClose]);
 
   const startNew = useCallback(async () => {
-    const s = await createChatSession();
-    setSessions(null);
-    setActive(s.id);
-    setMessages([]);
+    setError(null);
+    try {
+      const s = await createChatSession();
+      setSessions(null);
+      setActive(s.id);
+      setMessages([]);
+    } catch {
+      // 401 already re-locks the app via keeper:unauthorized; anything else surfaces here.
+      setError("Couldn’t start a new chat — try again.");
+    }
   }, []);
 
   const send = useCallback(async () => {
@@ -137,6 +143,7 @@ export function ChatPanel({ open, onClose }: Props) {
       {active == null && (
         <>
           <button className="chat-new" onClick={startNew}>+ New chat</button>
+          {error && <div className="chat-error" role="alert">{error}</div>}
           <ul className="stocked-list">
             {(sessions ?? []).map((s) => (
               <li key={s.id}>

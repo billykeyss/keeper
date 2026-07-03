@@ -104,14 +104,22 @@ chat.post("/api/chat/sessions/:id/messages", async (c) => {
     const ac = new AbortController();
     stream.onAbort(() => ac.abort());
     try {
-      const result = await runChatTurn(text, {
-        resumeSessionId: sess.sdkSessionId,
-        abortController: ac,
-        events: {
-          onTool: async (name) => { await stream.writeSSE({ event: "tool", data: JSON.stringify({ name }) }); },
-          onDelta: async (t) => { await stream.writeSSE({ event: "delta", data: JSON.stringify({ text: t }) }); },
-        },
-      });
+      const events = {
+        onTool: async (name: string) => { await stream.writeSSE({ event: "tool", data: JSON.stringify({ name }) }); },
+        onDelta: async (t: string) => { await stream.writeSSE({ event: "delta", data: JSON.stringify({ text: t }) }); },
+      };
+      let result;
+      try {
+        result = await runChatTurn(text, { resumeSessionId: sess.sdkSessionId, abortController: ac, events });
+      } catch (e) {
+        // A stored SDK session can go stale (transcript cleanup, repo move) — per the
+        // design spec, degrade transparently: retry once as a fresh session and let the
+        // success path overwrite the stored id. Resume failures happen at subprocess
+        // init, before any deltas stream, so a retry can't duplicate output.
+        if (!sess.sdkSessionId || ac.signal.aborted) throw e;
+        console.warn("[chat] resume failed — retrying with a fresh SDK session:", e);
+        result = await runChatTurn(text, { resumeSessionId: null, abortController: ac, events });
+      }
       const saved = await db.transaction(async (tx) => {
         const [row] = await tx
           .insert(chatMessage)
