@@ -122,8 +122,30 @@ export interface RulesResponse {
   asOf: string;
 }
 
+const PASSWORD_KEY = "keeper:password";
+export function getStoredPassword(): string | null {
+  return localStorage.getItem(PASSWORD_KEY);
+}
+export function storePassword(pw: string): void {
+  localStorage.setItem(PASSWORD_KEY, pw);
+}
+export function clearPassword(): void {
+  localStorage.removeItem(PASSWORD_KEY);
+}
+
+/** Headers every API call must carry: JSON accept + the app password when we have one. */
+export function apiHeaders(extra?: Record<string, string>): Record<string, string> {
+  const pw = getStoredPassword();
+  return { accept: "application/json", ...(pw ? { "x-keeper-password": pw } : {}), ...extra };
+}
+
 async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {
-  const res = await fetch(url, { signal, headers: { accept: "application/json" } });
+  const res = await fetch(url, { signal, headers: apiHeaders() });
+  if (res.status === 401) {
+    clearPassword();
+    window.dispatchEvent(new Event("keeper:unauthorized"));
+    throw new Error("Request failed (401): unauthorized");
+  }
   if (!res.ok) {
     let detail = "";
     try {
