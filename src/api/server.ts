@@ -5,6 +5,7 @@ import { waters } from "./waters";
 import { rules } from "./rules";
 import { stocking } from "./stocking";
 import { keeperAuth, authRoutes } from "./auth";
+import { chat } from "./chat";
 
 export const app = new Hono();
 
@@ -13,6 +14,7 @@ app.route("/", authRoutes);
 app.route("/", waters);
 app.route("/", rules);
 app.route("/", stocking);
+app.route("/", chat);
 
 // Statically serve the built SPA (web/dist) when present. Guarded so tests and the
 // API-only workflow don't require a web build to exist.
