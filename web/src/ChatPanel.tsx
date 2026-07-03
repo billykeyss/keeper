@@ -51,13 +51,20 @@ export function ChatPanel({ open, onClose }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
+  // Monotonic temp ids for optimistic bubbles — negative so they can never collide
+  // with real (positive, serial) DB ids, and counter-based so two turns can never
+  // collide with each other (Date.now() can repeat under coarse timers).
+  const tempIdRef = useRef(-1);
 
+  // Refetch whenever the list view is showing (open, no active chat) and we don't
+  // have a loaded list — "← Chats" and startNew() set sessions to null to land here,
+  // so returning from a conversation always reflects fresh updatedAt ordering.
   useEffect(() => {
-    if (!open) return;
+    if (!open || active != null || sessions !== null) return;
     const ac = new AbortController();
-    fetchChatSessions(ac.signal).then(setSessions).catch(() => setSessions([]));
+    fetchChatSessions(ac.signal).then(setSessions).catch(() => { if (!ac.signal.aborted) setSessions([]); });
     return () => ac.abort();
-  }, [open]);
+  }, [open, active, sessions]);
 
   useEffect(() => {
     if (active == null) return;
@@ -90,7 +97,7 @@ export function ChatPanel({ open, onClose }: Props) {
     setDraft("");
     setError(null);
     setBusy(true);
-    setMessages((m) => [...m, { id: -Date.now(), role: "user", content: text, createdAt: "" }]);
+    setMessages((m) => [...m, { id: tempIdRef.current--, role: "user", content: text, createdAt: "" }]);
     setLive("");
     let acc = "";
     try {
@@ -98,7 +105,7 @@ export function ChatPanel({ open, onClose }: Props) {
         onTool: (name) => setToolNote(TOOL_LABEL[name] ?? "Looking that up…"),
         onDelta: (t) => { acc += t; setToolNote(null); setLive(acc); },
         onDone: () => {
-          setMessages((m) => [...m, { id: -Date.now() - 1, role: "assistant", content: acc, createdAt: "" }]);
+          setMessages((m) => [...m, { id: tempIdRef.current--, role: "assistant", content: acc, createdAt: "" }]);
           setLive(null);
         },
         onError: (message) => { setError(message); setLive(null); },
