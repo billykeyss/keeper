@@ -86,6 +86,8 @@ interface MapProps {
   stockedFilter: string | null;
   /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
   flyTo: { lon: number; lat: number } | null;
+  /** Optional USDA national-forest lands overlay. */
+  forestOverlay: boolean;
 }
 
 type MarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; pin: WaterPin };
@@ -94,6 +96,19 @@ type ReachMarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; reac
 const REACH_LINES_SOURCE = "reach-lines";
 const REACH_LINES_CASING_LAYER = "reach-lines-casing";
 const REACH_LINES_LAYER = "reach-lines-line";
+
+// USDA Forest Service proclaimed National Forest/Grassland lands (public domain).
+// The EDW MapServers publish no XYZ tile cache, so this uses MapLibre's export-based
+// raster source: each tile is a live 256px render from the ArcGIS export endpoint
+// (layers 3+0 = filled proclaimed-forest polygons + grassland units). The fill pixels
+// come back fully opaque — blending with the basemap happens via raster-opacity.
+// Zoom range is capped so panning doesn't hammer the (uncached, government) server;
+// past maxzoom MapLibre overzooms the last tiles, which is fine for coarse boundaries.
+const FOREST_SOURCE = "usfs-forests";
+const FOREST_LAYER = "usfs-forests-fill";
+const FOREST_TILES_URL =
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ProclaimedForestsAndGrasslands_01/MapServer/export" +
+  "?bbox={bbox-epsg-3857}&bboxSR=3857&imageSR=3857&size=256,256&format=png32&transparent=true&f=image&layers=show:3,0";
 
 function reachToWaterPin(reach: ReachPin): WaterPin {
   return {
@@ -133,7 +148,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, forestOverlay }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -149,6 +164,8 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   selectedIdRef.current = selectedId;
   const stockedFilterRef = useRef<string | null>(stockedFilter);
   stockedFilterRef.current = stockedFilter;
+  const forestOverlayRef = useRef(forestOverlay);
+  forestOverlayRef.current = forestOverlay;
   const applySelectionRef = useRef<() => void>(() => {});
   const refreshRef = useRef<() => void>(() => {});
 
@@ -185,6 +202,23 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
     // dot — an ink "casing" underneath a slightly narrower colored line, echoing the pins' ink-ring
     // styling. Reaches without known path geometry still fall back to the satellite marker dots.
     map.on("load", () => {
+      // Forest overlay sits directly above the basemap so reach lines/pins stay on top.
+      map.addSource(FOREST_SOURCE, {
+        type: "raster",
+        tiles: [FOREST_TILES_URL],
+        tileSize: 256,
+        minzoom: 6,
+        maxzoom: 13,
+        attribution: "USDA Forest Service",
+      });
+      map.addLayer({
+        id: FOREST_LAYER,
+        type: "raster",
+        source: FOREST_SOURCE,
+        layout: { visibility: forestOverlayRef.current ? "visible" : "none" },
+        paint: { "raster-opacity": 0.4 },
+      });
+
       map.addSource(REACH_LINES_SOURCE, { type: "geojson", data: { type: "FeatureCollection", features: [] } });
       map.addLayer({
         id: REACH_LINES_CASING_LAYER, type: "line", source: REACH_LINES_SOURCE,
@@ -340,6 +374,14 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   useEffect(() => {
     refreshRef.current();
   }, [stockedFilter]);
+
+  // Toggle the forest overlay (layer exists once the style has loaded; the load
+  // handler applies the initial state from the ref for toggles racing map creation).
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !map.getLayer(FOREST_LAYER)) return;
+    map.setLayoutProperty(FOREST_LAYER, "visibility", forestOverlay ? "visible" : "none");
+  }, [forestOverlay]);
 
   // One-shot fly-to (picking a water from the stocked-fish panel).
   useEffect(() => {

@@ -23,6 +23,7 @@ export function App() {
   const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
   const [chatOpen, setChatOpen] = useState(false);
+  const [forestOverlay, setForestOverlay] = useState(false);
 
   const handleSelect = useCallback((pin: WaterPin, scope?: string) => {
     setSelected(pin);
@@ -60,6 +61,7 @@ export function App() {
           onSelect={handleSelect}
           stockedFilter={stockedFilter}
           flyTo={flyTo}
+          forestOverlay={forestOverlay}
         />
 
         <div className="brand-chip">
@@ -74,6 +76,14 @@ export function App() {
           <WaterSearch onPick={handlePickWater} />
           <button className="stocked-chip" onClick={() => setStockedOpen((v) => !v)} aria-expanded={stockedOpen}>
             Stocked fish
+          </button>
+          <button
+            className={`stocked-chip${forestOverlay ? " stocked-chip--active" : ""}`}
+            onClick={() => setForestOverlay((v) => !v)}
+            aria-pressed={forestOverlay}
+            title="Show USDA national forest lands"
+          >
+            Forests
           </button>
           {stockedFilter && (
             <button
