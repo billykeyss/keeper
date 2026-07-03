@@ -17,6 +17,7 @@
     "start": "npm run build:web && npm run api"
   },
   "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.199",
     "@hono/node-server": "^1.13.0",
     "drizzle-orm": "^0.36.0",
     "hono": "^4.6.0",
