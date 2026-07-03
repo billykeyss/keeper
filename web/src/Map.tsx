@@ -216,7 +216,7 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
         type: "raster",
         source: FOREST_SOURCE,
         layout: { visibility: forestOverlayRef.current ? "visible" : "none" },
-        paint: { "raster-opacity": 0.4 },
+        paint: { "raster-opacity": 0.62 },
       });
 
       map.addSource(REACH_LINES_SOURCE, { type: "geojson", data: { type: "FeatureCollection", features: [] } });
