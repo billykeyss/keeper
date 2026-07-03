@@ -162,6 +162,47 @@ export const RetryIcon = (p: IconProps) =>
 export const CloseIcon = (p: IconProps) =>
   svg(<path d="M6 6l12 12M18 6 6 18" />, p.size, p.className);
 
+export const SearchIcon = (p: IconProps) =>
+  svg(
+    <>
+      <circle cx="10.5" cy="10.5" r="6.2" />
+      <path d="m15.3 15.3 5.2 5.2" />
+    </>,
+    p.size,
+    p.className,
+  );
+
+// The same fish glyph used for bag-limit rule cards, exported for the mobile dock.
+export const FishIcon = (p: IconProps) =>
+  svg(
+    <>
+      <path d="M15.5 12c-1.9 3-5 5-8.5 5-1.4 0-2.8-.3-4-1 .9-1.2 1.4-2.5 1.4-4s-.5-2.8-1.4-4c1.2-.7 2.6-1 4-1 3.5 0 6.6 2 8.5 5z" />
+      <path d="M15.5 12 21 8v8z" />
+      <circle cx="7" cy="10.5" r=".7" fill="currentColor" stroke="none" />
+    </>,
+    p.size,
+    p.className,
+  );
+
+export const TreesIcon = (p: IconProps) =>
+  svg(
+    <>
+      <path d="M9 4 4 12h3l-3.5 6H15L11.5 12h3z" />
+      <path d="M9 18v3.5" />
+      <path d="M17.5 8.5 14.8 13h1.7l-2 4h6l-2-4h1.7z" />
+      <path d="M17.5 17v3" />
+    </>,
+    p.size,
+    p.className,
+  );
+
+export const ChatIcon = (p: IconProps) =>
+  svg(
+    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9.5l-4 3.3c-.6.5-1.5.1-1.5-.7z" />,
+    p.size,
+    p.className,
+  );
+
 const RULE_ICONS: Record<string, (p: IconProps) => React.ReactElement> = {
   season: Calendar,
   bag: Fish,

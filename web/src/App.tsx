@@ -5,6 +5,7 @@ import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
 import { StockedFishPanel } from "./StockedFishPanel";
 import { WaterSearch } from "./WaterSearch";
+import { ChatIcon, FishIcon, SearchIcon, TreesIcon } from "./icons";
 import type { WaterPin, ScopeStatus, StockedWaterRow, WaterSearchRow } from "./api";
 
 function todayLabel(): string {
@@ -15,20 +16,32 @@ function todayLabel(): string {
   });
 }
 
+// Exactly one of these floating panels is open at a time — panel pile-ups were the
+// main source of mobile overlap. "search" is only reachable from the mobile dock
+// (the desktop search box is always inline in the overlay-chips row).
+type OpenPanel = null | "search" | "stocked" | "chat";
+
 export function App() {
   const [selected, setSelected] = useState<WaterPin | null>(null);
   const [selectedStatus, setSelectedStatus] = useState<ScopeStatus | null>(null);
   const [focusScope, setFocusScope] = useState<string | null>(null);
-  const [stockedOpen, setStockedOpen] = useState(false);
+  const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
   const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
-  const [chatOpen, setChatOpen] = useState(false);
   const [forestOverlay, setForestOverlay] = useState(false);
+
+  const togglePanel = useCallback((panel: OpenPanel) => {
+    setOpenPanel((p) => (p === panel ? null : panel));
+  }, []);
 
   const handleSelect = useCallback((pin: WaterPin, scope?: string) => {
     setSelected(pin);
     setSelectedStatus(null); // reset until rules resolve
     setFocusScope(scope ?? null);
+    // Diving into a water: clear panel clutter. On desktop, an open chat stays
+    // (it floats beside the sheet); on mobile everything yields to the rules sheet.
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    setOpenPanel((p) => (isDesktop && p === "chat" ? p : null));
   }, []);
 
   const handleStatus = useCallback((_id: number, status: ScopeStatus) => {
@@ -45,12 +58,14 @@ export function App() {
   // (stocked-fish panel rows, name-search results).
   const handlePickWater = useCallback((w: StockedWaterRow | WaterSearchRow) => {
     setFlyTo({ lon: w.lon, lat: w.lat });
-    setStockedOpen(false);
+    setOpenPanel(null);
     handleSelect({
       id: w.id, name: w.name, waterType: w.waterType, states: w.states,
       lon: w.lon, lat: w.lat, verifyCurrent: false, ruleCount: 0,
     });
   }, [handleSelect]);
+
+  const sheetOpen = selected != null;
 
   return (
     <PasswordGate>
@@ -72,9 +87,14 @@ export function App() {
           <span className="brand-sub">CA·NV fishing rules — {todayLabel()}</span>
         </div>
 
+        {/* Desktop control row (hidden on mobile — the dock takes over there). */}
         <div className="overlay-chips">
           <WaterSearch onPick={handlePickWater} />
-          <button className="stocked-chip" onClick={() => setStockedOpen((v) => !v)} aria-expanded={stockedOpen}>
+          <button
+            className="stocked-chip"
+            onClick={() => togglePanel("stocked")}
+            aria-expanded={openPanel === "stocked"}
+          >
             Stocked fish
           </button>
           <button
@@ -96,18 +116,47 @@ export function App() {
           )}
         </div>
 
+        {openPanel === "search" && (
+          <WaterSearch asSheet onPick={handlePickWater} onClose={() => setOpenPanel(null)} />
+        )}
+
         <StockedFishPanel
-          open={stockedOpen}
-          onClose={() => setStockedOpen(false)}
+          open={openPanel === "stocked"}
+          onClose={() => setOpenPanel(null)}
           activeFilter={stockedFilter}
           onFilter={setStockedFilter}
           onPickWater={handlePickWater}
         />
 
-        <button className="chat-fab" onClick={() => setChatOpen((v) => !v)} aria-expanded={chatOpen} aria-label="Open regulations chat">
+        <button
+          className="chat-fab"
+          onClick={() => togglePanel("chat")}
+          aria-expanded={openPanel === "chat"}
+          aria-label="Open regulations chat"
+        >
           Ask
         </button>
-        <ChatPanel open={chatOpen} onClose={() => setChatOpen(false)} />
+        <ChatPanel open={openPanel === "chat"} onClose={() => setOpenPanel(null)} />
+
+        {/* Mobile dock (hidden on desktop). Yields entirely to an open rules sheet. */}
+        <nav className="dock" data-hidden={sheetOpen} aria-label="Map tools">
+          <button className="dock-btn" data-active={openPanel === "search"} onClick={() => togglePanel("search")}>
+            <SearchIcon size={19} />
+            Search
+          </button>
+          <button className="dock-btn" data-active={openPanel === "stocked" || stockedFilter != null} onClick={() => togglePanel("stocked")}>
+            <FishIcon size={19} />
+            {stockedFilter ? "Stocked •" : "Stocked"}
+          </button>
+          <button className="dock-btn" data-active={forestOverlay} onClick={() => setForestOverlay((v) => !v)}>
+            <TreesIcon size={19} />
+            Forests
+          </button>
+          <button className="dock-btn" data-active={openPanel === "chat"} onClick={() => togglePanel("chat")}>
+            <ChatIcon size={19} />
+            Ask
+          </button>
+        </nav>
 
         <RulesSheet pin={selected} focusScope={focusScope} onClose={handleClose} onStatus={handleStatus} />
       </div>

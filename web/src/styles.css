@@ -1524,3 +1524,117 @@ a {
     height: min(70dvh, 560px);
   }
 }
+
+/* --- mobile dock + bottom-sheet panel layout --- */
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 38;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 6px 8px calc(var(--safe-bottom, 0px) + 6px);
+  background: color-mix(in srgb, var(--bone) 96%, transparent);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--ink-14);
+  transition: transform 0.28s var(--ease-spring);
+}
+.dock[data-hidden="true"] {
+  transform: translateY(115%);
+  pointer-events: none;
+}
+.dock-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink-64);
+  padding: 4px 0 2px;
+  cursor: pointer;
+}
+.dock-btn[data-active="true"] {
+  color: var(--warden);
+}
+
+/* Search bottom sheet (mobile dock variant of WaterSearch) */
+.search-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--safe-bottom, 0px) + 58px);
+  max-height: 60dvh;
+  overflow-y: auto;
+  z-index: 39;
+  background: var(--bone);
+  border-top: 1px solid var(--ink-14);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  box-shadow: var(--shadow-sheet);
+  padding: 12px 16px 14px;
+}
+.search-sheet-input {
+  width: 100%;
+  box-shadow: none;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.search-sheet-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Desktop: dock and its sheets never render; mobile: the desktop control row and
+ * floating Ask button never render — one control system per breakpoint. */
+@media (min-width: 768px) {
+  .dock,
+  .search-sheet {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .overlay-chips,
+  .chat-fab {
+    display: none;
+  }
+
+  /* Keep MapLibre's zoom/attribution above the dock. */
+  .maplibregl-ctrl-bottom-right,
+  .maplibregl-ctrl-bottom-left {
+    bottom: calc(var(--safe-bottom, 0px) + 60px);
+  }
+
+  /* Panels become full-width bottom sheets stacked just above the dock. */
+  .stocked-panel {
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: calc(var(--safe-bottom, 0px) + 58px);
+    width: auto;
+    max-height: 60dvh;
+    border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .chat-panel {
+    right: 0;
+    left: 0;
+    bottom: calc(var(--safe-bottom, 0px) + 58px);
+    width: auto;
+    height: min(62dvh, 560px);
+    border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+}
