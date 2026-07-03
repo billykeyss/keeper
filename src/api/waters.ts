@@ -15,6 +15,40 @@ function parseBbox(raw: string | undefined): [number, number, number, number] | 
   return [minLon, minLat, maxLon, maxLat];
 }
 
+/** Name/alias/county search for the map's search box: case-insensitive substring match,
+ *  name matches ranked above alias/county-only matches, ≤8 rows, centroid included for
+ *  fly-to. (Static path — never shadowed by /api/waters/:id/rules.) */
+waters.get("/api/waters/search", async (c) => {
+  const q = c.req.query("q")?.trim();
+  if (!q) return c.json({ error: "q query param is required" }, 400);
+  const like = `%${q}%`;
+
+  const rows = (await db.execute(sql`
+    select w.id, w.name, w.water_type as "waterType", w.states, w.counties,
+           st_x(st_centroid(w.geom)) as lon, st_y(st_centroid(w.geom)) as lat
+    from water_body w
+    where w.geom is not null and (
+          w.name ilike ${like}
+       or exists (select 1 from unnest(w.aliases) a where a ilike ${like})
+       or exists (select 1 from unnest(w.counties) ct where ct ilike ${like})
+    )
+    order by (w.name ilike ${like}) desc, w.name
+    limit 8
+  `)) as unknown as Array<Record<string, unknown>>;
+
+  return c.json({
+    waters: rows.map((r) => ({
+      id: Number(r.id),
+      name: r.name as string,
+      waterType: r.waterType as string,
+      states: (r.states as string[]) ?? [],
+      counties: (r.counties as string[]) ?? [],
+      lon: Number(r.lon),
+      lat: Number(r.lat),
+    })),
+  });
+});
+
 waters.get("/api/waters", async (c) => {
   const bbox = parseBbox(c.req.query("bbox"));
   if (!bbox) return c.json({ error: "bbox must be minLon,minLat,maxLon,maxLat with min < max" }, 400);

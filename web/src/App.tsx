@@ -4,7 +4,8 @@ import { MapView } from "./Map";
 import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
 import { StockedFishPanel } from "./StockedFishPanel";
-import type { WaterPin, ScopeStatus, StockedWaterRow } from "./api";
+import { WaterSearch } from "./WaterSearch";
+import type { WaterPin, ScopeStatus, StockedWaterRow, WaterSearchRow } from "./api";
 
 function todayLabel(): string {
   return new Date().toLocaleDateString(undefined, {
@@ -39,7 +40,9 @@ export function App() {
     setSelectedStatus(null);
   }, []);
 
-  const handlePickStockedWater = useCallback((w: StockedWaterRow) => {
+  // Shared fly-to-and-open flow for anything that hands us a water with coordinates
+  // (stocked-fish panel rows, name-search results).
+  const handlePickWater = useCallback((w: StockedWaterRow | WaterSearchRow) => {
     setFlyTo({ lon: w.lon, lat: w.lat });
     setStockedOpen(false);
     handleSelect({
@@ -68,6 +71,7 @@ export function App() {
         </div>
 
         <div className="overlay-chips">
+          <WaterSearch onPick={handlePickWater} />
           <button className="stocked-chip" onClick={() => setStockedOpen((v) => !v)} aria-expanded={stockedOpen}>
             Stocked fish
           </button>
@@ -87,7 +91,7 @@ export function App() {
           onClose={() => setStockedOpen(false)}
           activeFilter={stockedFilter}
           onFilter={setStockedFilter}
-          onPickWater={handlePickStockedWater}
+          onPickWater={handlePickWater}
         />
 
         <button className="chat-fab" onClick={() => setChatOpen((v) => !v)} aria-expanded={chatOpen} aria-label="Open regulations chat">

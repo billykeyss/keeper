@@ -193,6 +193,25 @@ export interface StockedWaterRow {
   lastStockedOn: string | null;
 }
 
+/** One row from GET /api/waters/search?q=. */
+export interface WaterSearchRow {
+  id: number;
+  name: string;
+  waterType: string;
+  states: string[];
+  counties: string[];
+  lon: number;
+  lat: number;
+}
+
+export async function searchWatersByName(q: string, signal?: AbortSignal): Promise<WaterSearchRow[]> {
+  const res = await getJson<{ waters: WaterSearchRow[] }>(
+    `/api/waters/search?q=${encodeURIComponent(q)}`,
+    signal,
+  );
+  return res.waters;
+}
+
 export async function fetchStockedSpecies(signal?: AbortSignal): Promise<StockedSpeciesRow[]> {
   const res = await getJson<{ species: StockedSpeciesRow[] }>("/api/stocking/species", signal);
   return res.species;
