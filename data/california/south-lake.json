@@ -14,7 +14,8 @@
     { "key": "ccr_7_50_b_145", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(145) — South Lake", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(145) South Lake (Inyo Co.). Last Sat. in Apr. through Nov. 15. 5 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "inyo_fishing_map", "url": "https://bishopvisitor.com/wp-content/uploads/2024/10/inyoCountyFishingMap.pdf", "title": "Fishing Regulations for Inyo County — Visit Bishop", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_stocking_plan_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Table 1)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R6 Inyo South Lake Rainbow Trout Catchable Put and Take April-November" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -55,6 +56,10 @@
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
+  ],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 11, "note": "CDFW's 2026 Provisional Stocking Document (Table 1) lists South Lake (Inyo Co., Region R6) for Catchable-size Rainbow Trout under the Put and Take program, with a release month range of April-November.", "sourceKeys": { "primary": "cdfw_stocking_plan_2026", "corroborating": [] } }
   ],
   "reciprocity": []
 }

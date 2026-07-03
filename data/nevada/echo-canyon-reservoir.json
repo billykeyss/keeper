@@ -25,7 +25,7 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/09/24-A-CR-25-16-Fishing-Seasons-and-Regulations-for-January-1-2026-through-December-31-2027.pdf", "title": "State of Nevada Board of Wildlife Commissioners — CR 25-16: Fishing Seasons and Regulations, January 1, 2026 – December 31, 2027", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Echo Canyon Reservoir: Open year around. Daily: 5 trout and 15 warmwater game fish of which not more than 10 may be black bass. Possession: 10 trout and 30 warmwater game fish of which not more than 20 may be black bass. Hours: Any hour of the day or night." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/echo-canyon-reservoir/", "title": "Echo Canyon Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Echo Canyon Reservoir was constructed in 1969 in the Meadow Valley Wash, approximately 10 miles downstream from Eagle Valley Reservoir in Lincoln County... Rainbow trout, Brown trout, White crappie, Largemouth bass, Black bullhead... 70 surface acres with a maximum depth of 27 feet." },
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/echo-canyon-reservoir/", "title": "Echo Canyon Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Echo Canyon Reservoir was constructed in 1969 in the Meadow Valley Wash, approximately 10 miles downstream from Eagle Valley Reservoir in Lincoln County... Rainbow trout, Brown trout, White crappie, Largemouth bass, Black bullhead... 70 surface acres with a maximum depth of 27 feet. ... Stocking Updates: 4960 Rainbow Trout, 9.1 in, 03-24-2026; 5519 Rainbow Trout, 9.0 in, 04-12-2024; 5500 Rainbow Trout, 9.0 in, 04-11-2024; 4264 Rainbow Trout, 9.9 in, 10-17-2023; 5390 Rainbow Trout, 8.7 in, 04-12-2023; 5620 Rainbow Trout, 8.7 in, 04-11-2023." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],
   "groups": [],
@@ -80,5 +80,14 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 4960, "sizeNote": "9.1 in", "date": "2026-03-24", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5519, "sizeNote": "9.0 in", "date": "2024-04-12", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5500, "sizeNote": "9.0 in", "date": "2024-04-11", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4264, "sizeNote": "9.9 in", "date": "2023-10-17", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5390, "sizeNote": "8.7 in", "date": "2023-04-12", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5620, "sizeNote": "8.7 in", "date": "2023-04-11", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

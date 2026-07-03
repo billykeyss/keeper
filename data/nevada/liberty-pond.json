@@ -82,8 +82,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": "Trout are managed for put-and-take and are stocked in the spring. Rainbow trout, channel catfish, bluegill, and largemouth bass."
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Trout are managed for put-and-take and are stocked in the spring. Rainbow trout, channel catfish, bluegill, and largemouth bass. Stocking Updates (selected): 613 Rainbow Trout, 10.2 in, 05-29-2026; 1000 Channel Catfish, 4.0 in, 05-13-2026; 507 Rainbow Trout, 9.7 in, 05-05-2026; 762 Rainbow Trout, 9.6 in, 04-16-2026; 1000 Channel Catfish, 4 in, 05-29-2025; 499 Rainbow Trout, 9.6 in, 04-29-2025."
     },
     {
       "key": "s_ndow_aig",
@@ -236,5 +236,16 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 613, "sizeNote": "10.2 in", "date": "2026-05-29", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1000, "sizeNote": "4.0 in", "date": "2026-05-13", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 507, "sizeNote": "9.7 in", "date": "2026-05-05", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 762, "sizeNote": "9.6 in", "date": "2026-04-16", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1000, "sizeNote": "4 in", "date": "2025-05-29", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 499, "sizeNote": "9.6 in", "date": "2025-04-29", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "Trout are managed for put-and-take and are stocked in the spring.", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ]
 }

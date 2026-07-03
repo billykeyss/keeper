@@ -6,14 +6,16 @@
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
     { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
-    { "commonName": "Kokanee salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "introduced" }
+    { "commonName": "Kokanee salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Eagle Lake trout", "scientificName": "Oncorhynchus mykiss aquilarum", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" }
   ],
   "speciesGroups": [],
   "sources": [
     { "key": "ccr_7_50_b_86", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(86) — Mammoth Pool (Fresno and Madera Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Mammoth Pool (Fresno and Madera Cos.). All year. 5 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "wiki_mammoth_pool", "url": "https://en.wikipedia.org/wiki/Mammoth_Pool_Reservoir", "title": "Mammoth Pool Reservoir — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R4 Fresno Mammoth Pool Lake Brown Trout Sub-catchable Put and Grow October-December; R4 Fresno Mammoth Pool Lake Eagle Lake Trout Sub-catchable Put and Grow October-December" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -55,5 +57,10 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Brown trout", "frequency": "seasonal", "seasonStartMonth": 10, "seasonEndMonth": 12, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Mammoth Pool Lake (Region 4, Fresno Co.) for sub-catchable-size Brown Trout under the Put and Grow program, with a stated release month range of October-December. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } },
+    { "speciesCommonName": "Eagle Lake trout", "frequency": "seasonal", "seasonStartMonth": 10, "seasonEndMonth": 12, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Mammoth Pool Lake (Region 4, Fresno Co.) for sub-catchable-size Eagle Lake Trout under the Put and Grow program, with a stated release month range of October-December. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

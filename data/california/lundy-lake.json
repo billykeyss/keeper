@@ -13,7 +13,8 @@
     { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General provisions for the §7.50(b) special-regulation waters list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "monocounty_lundy_lake", "url": "https://www.monocounty.org/places-to-go/lakes-rivers-creeks/lundy-lake/", "title": "Lundy Lake | Visit Mono County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon | CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "RELEASE WATER: Lundy Lake — SPECIES: Rainbow Trout, RELEASE SIZE: Catchable, RELEASE PROGRAM: Put and Take, RELEASE MONTH RANGE: April-November. The Department's execution of these plans is not guaranteed." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -55,5 +56,9 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 11, "note": "CDFW's 2026 Provisional Stocking Document lists Lundy Lake (Region 6, Mono Co.) as receiving Catchable-size Rainbow Trout under the Put and Take program, release month range April-November. This is a provisional plan; CDFW's execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

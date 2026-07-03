@@ -13,6 +13,8 @@
     { "key": "ccr_7_40_b_74", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(74) — Pescadero Creek tributaries and main stem above the Stage Road bridge at Pescadero (Santa Clara and San Mateo Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(74) Pescadero Creek tributaries and main stem above the Stage Road bridge at Pescadero (Santa Clara and San Mateo Cos.). Closed to all fishing all year." },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "wiki_pescadero_creek", "url": "https://en.wikipedia.org/wiki/Pescadero_Creek", "title": "Pescadero Creek — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
+    { "key": "cbs_pescadero_coho_release_2020", "url": "https://www.cbsnews.com/sanfrancisco/news/pescadero-creek-coho-salmon-restoration-project-10000-fish-released/", "title": "Thousands Of Coho Salmon Released Into Pescadero Creek In Restoration Project — CBS News San Francisco (KPIX)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Baby Coho salmon being introduced into Pescadero Creek in San Mateo County, November 17, 2020. (CBS) ... Ten thousand baby Coho, released in different spots. ... of the 10,000 baby salmon released today, just 2%, or only 200 may survive and return to spawn." },
+    { "key": "noaa_pescadero_coho_release", "url": "https://www.fisheries.noaa.gov/feature-story/endangered-coho-salmon-released-pescadero-creek", "title": "Endangered Coho Salmon Released into Pescadero Creek — NOAA Fisheries", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "After years of habitat restoration, in collaboration with local landowners, 10,000 juvenile coho salmon were released into Pescadero Creek in northern California in November 2020. ... When released, the coho are less than a year old and approximately two inches long." },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
   ],
   "groups": [],
@@ -43,5 +45,9 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Coho salmon", "quantity": 10000, "sizeNote": "approximately two inches long (less than a year old)", "date": "2020-11-17", "sourceKeys": { "primary": "cbs_pescadero_coho_release_2020", "corroborating": ["noaa_pescadero_coho_release"] } }
+  ],
+  "stockingSchedule": []
 }

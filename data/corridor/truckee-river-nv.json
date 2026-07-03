@@ -196,7 +196,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
-      "quotedText": "Rainbow trout, Brown trout, Cutthroat trout (Lahontan species), Mountain whitefish, Largemouth bass (lower sections only)."
+      "quotedText": "Anglers can fish for rainbow trout, brown trout, cutthroat trout, mountain whitefish, and largemouth bass (in lower sections). Stocking table (selected rows, all recorded as \"Cutthroat Trout\"): 4998 Cutthroat Trout, 8.2 in, 05-19-2026; 5000 Cutthroat Trout, 8.1 in, 05-14-2026; 5000 Cutthroat Trout, 8.1 in, 05-12-2026."
     },
     {
       "key": "s_nac_503_504",
@@ -448,5 +448,11 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Lahontan cutthroat trout", "quantity": 4998, "sizeNote": "8.2 in", "date": "2026-05-19", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Lahontan cutthroat trout", "quantity": 5000, "sizeNote": "8.1 in", "date": "2026-05-14", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Lahontan cutthroat trout", "quantity": 5000, "sizeNote": "8.1 in", "date": "2026-05-12", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

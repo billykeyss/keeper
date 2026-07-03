@@ -21,7 +21,7 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Washoe County Community Fishing Ponds: Battle Born Pond, Davis Creek Pond, Idlewild Ponds, Marilyn's Pond, Paradise Ponds, Rancho San Rafael Pond, Sparks Marina Pond, Verdi Pond, Virginia Lake and Wilson Common. Open year around. Daily: 3 game fish. Possession: 6 game fish. Hours parks are open to public use." },
-    { "key": "s_ndow_waters_wilsoncommon", "url": "https://www.ndow.org/waters/wilson-common-pond/", "title": "Wilson Common Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "The pond covers approximately one surface acre, is 15 feet deep, and receives water from Franktown Creek. The fishery is managed for put-and-take and fish are stocked and caught quickly by anglers. It is a great place for kids to fish since few trees interfere with casting." },
+    { "key": "s_ndow_waters_wilsoncommon", "url": "https://www.ndow.org/waters/wilson-common-pond/", "title": "Wilson Common Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "The pond covers approximately one surface acre, is 15 feet deep, and receives water from Franktown Creek. The fishery is managed for put-and-take and fish are stocked and caught quickly by anglers. It is a great place for kids to fish since few trees interfere with casting. Stocking Updates: 303 Rainbow Trout, 10.1 in, 04-27-2026; 498 Rainbow Trout, 10.1 in, 04-08-2026; 501 Rainbow Trout, 9.3 in, 03-26-2026; 151 Rainbow Trout, 9.0 in, 03-10-2026; 49 Rainbow Trout, 9.2 in, 03-10-2026; 488 Rainbow Trout, 10.0 in, 10-06-2025; 509 Rainbow Trout, 10.0 in, 09-25-2025; 493 Rainbow Trout, 9.7 in, 05-16-2025; 490 Rainbow Trout, 9.6 in, 04-25-2025; 500 Rainbow Trout, 9.7 in, 03-06-2025; 502 Rainbow Trout, 9.6 in, 10-23-2024; 438 Rainbow Trout, 11.3 in, 09-26-2024; 630 Rainbow Trout, 10.3 in, 05-29-2024; 396 Rainbow Trout, 9.8 in, 05-16-2024; 417 Rainbow Trout, 9.7 in, 04-16-2024; 270 Rainbow Trout, 9.7 in, 04-01-2024; 508 Rainbow Trout, 9.5 in, 10-10-2023; 507 Rainbow Trout, 9.2 in, 09-27-2023; 506 Rainbow Trout, 10 in, 05-16-2023; 511 Rainbow Trout, 9.7 in, 05-02-2023; 500 Rainbow Trout, 10.2 in, 04-20-2023; 503 Rainbow Trout, 9.7 in, 04-11-2023." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],
   "groups": [],
@@ -76,5 +76,30 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 303, "sizeNote": "10.1 in", "date": "2026-04-27", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 498, "sizeNote": "10.1 in", "date": "2026-04-08", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 501, "sizeNote": "9.3 in", "date": "2026-03-26", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 151, "sizeNote": "9.0 in", "date": "2026-03-10", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 49, "sizeNote": "9.2 in", "date": "2026-03-10", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 488, "sizeNote": "10.0 in", "date": "2025-10-06", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 509, "sizeNote": "10.0 in", "date": "2025-09-25", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 493, "sizeNote": "9.7 in", "date": "2025-05-16", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 490, "sizeNote": "9.6 in", "date": "2025-04-25", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 500, "sizeNote": "9.7 in", "date": "2025-03-06", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 502, "sizeNote": "9.6 in", "date": "2024-10-23", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 438, "sizeNote": "11.3 in", "date": "2024-09-26", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 630, "sizeNote": "10.3 in", "date": "2024-05-29", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 396, "sizeNote": "9.8 in", "date": "2024-05-16", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 417, "sizeNote": "9.7 in", "date": "2024-04-16", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 270, "sizeNote": "9.7 in", "date": "2024-04-01", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 508, "sizeNote": "9.5 in", "date": "2023-10-10", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 507, "sizeNote": "9.2 in", "date": "2023-09-27", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 506, "sizeNote": "10 in", "date": "2023-05-16", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 511, "sizeNote": "9.7 in", "date": "2023-05-02", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 500, "sizeNote": "10.2 in", "date": "2023-04-20", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 503, "sizeNote": "9.7 in", "date": "2023-04-11", "sourceKeys": { "primary": "s_ndow_waters_wilsoncommon", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

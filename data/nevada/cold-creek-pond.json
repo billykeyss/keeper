@@ -59,7 +59,18 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": null
+      "quotedText": "Stocking Updates: 996 Rainbow Trout, 8.8 in, 03-30-2026; 1008 Rainbow Trout, 8.9 in, 03-03-2026; 992 Rainbow Trout, 10.0 in, 11-10-2025; 1445 Rainbow Trout, 9.2 in, 03-17-2025; 987 Rainbow Trout, 9.6 in, 11-06-2024; 1000 Rainbow Trout, 9.4 in, 03-13-2024; 998 Rainbow Trout, 9.3 in, 11-06-2023; 1001 Rainbow Trout, 9.8 in, 04-19-2023; 1020 Rainbow Trout, 9 in, 04-06-2023."
+    },
+    {
+      "key": "s_coldcreek_pond_guide",
+      "url": "https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2025/06/Cold-Creek-Pond_Angler-Guide-2025_FINAL-1.pdf",
+      "title": "Cold Creek Pond \u2014 Fishery and Stocking Information (Angler Guide 2025) \u2014 NDOW",
+      "documentType": "pdf",
+      "instrumentType": "guide",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Cold Creek is stocked in the spring and then again in the fall with Rainbow Trout. 2024 Rainbow Trout Stocking: 3/13/2024, 1,000, 9.4 inches; 11/6/2024, 987, 9.6 inches."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -204,5 +215,116 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 996,
+      "sizeNote": "8.8 in",
+      "date": "2026-03-30",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1008,
+      "sizeNote": "8.9 in",
+      "date": "2026-03-03",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 992,
+      "sizeNote": "10.0 in",
+      "date": "2025-11-10",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1445,
+      "sizeNote": "9.2 in",
+      "date": "2025-03-17",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 987,
+      "sizeNote": "9.6 in",
+      "date": "2024-11-06",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": [
+          "s_coldcreek_pond_guide"
+        ]
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1000,
+      "sizeNote": "9.4 in",
+      "date": "2024-03-13",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": [
+          "s_coldcreek_pond_guide"
+        ]
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 998,
+      "sizeNote": "9.3 in",
+      "date": "2023-11-06",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1001,
+      "sizeNote": "9.8 in",
+      "date": "2023-04-19",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1020,
+      "sizeNote": "9 in",
+      "date": "2023-04-06",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_coldcreek",
+        "corroborating": []
+      }
+    }
+  ],
+  "stockingSchedule": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "seasonal",
+      "seasonStartMonth": null,
+      "seasonEndMonth": null,
+      "note": "NDOW's Cold Creek Pond Angler Information Guide states the pond is stocked in the spring and then again in the fall with Rainbow Trout.",
+      "sourceKeys": {
+        "primary": "s_coldcreek_pond_guide",
+        "corroborating": [
+          "s_ndow_waters_coldcreek"
+        ]
+      }
+    }
+  ]
 }

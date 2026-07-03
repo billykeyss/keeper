@@ -171,6 +171,28 @@
       "quotedText": null
     },
     {
+      "key": "s_fws_coleman_species",
+      "url": "https://www.fws.gov/fish-hatchery/coleman/species",
+      "title": "USFWS — Coleman National Fish Hatchery: Species",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "The hatchery spawns steelhead during January and February of each year and releases juveniles (from the previous spawning season) in Janaury. Steelhead juveniles are released directly into the Sacramento River."
+    },
+    {
+      "key": "s_fws_coleman_main",
+      "url": "https://www.fws.gov/fish-hatchery/coleman",
+      "title": "USFWS — Coleman National Fish Hatchery",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Each year Coleman NFH releases approximately 12,000,000 fall Chinook Salmon, 1,000,000 late-fall Chinook Salmon, and 600,000 steelhead trout."
+    },
+    {
       "key": "fgc_7145",
       "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
       "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
@@ -1049,6 +1071,10 @@
         "corroborating": []
       }
     }
+  ],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Steelhead", "frequency": "annual", "seasonStartMonth": 1, "seasonEndMonth": 1, "note": "Coleman National Fish Hatchery (on Battle Creek near Anderson, a Sacramento River tributary) spawns steelhead in January and February and releases the resulting juveniles directly into the Sacramento River in January; USFWS states the hatchery releases approximately 600,000 steelhead trout annually (alongside ~12,000,000 fall Chinook and 1,000,000 late-fall Chinook, which are released into Battle Creek rather than the mainstem).", "sourceKeys": { "primary": "s_fws_coleman_species", "corroborating": ["s_fws_coleman_main"] } }
   ],
   "reciprocity": []
 }

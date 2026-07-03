@@ -28,6 +28,15 @@
         "take_rules",
         "permit_issuer"
       ]
+    },
+    {
+      "key": "fws",
+      "name": "U.S. Fish and Wildlife Service",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
+      ]
     }
   ],
   "reaches": [],
@@ -127,6 +136,28 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "s_usfws_willow_beach_hatchery",
+      "url": "https://www.fws.gov/fish-hatchery/willow-beach",
+      "title": "Willow Beach National Fish Hatchery — U.S. Fish & Wildlife Service",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "fws",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Stocking report 1080 Rainbow Trout at the Willow Beach fishing pier, Willow Beach, AZ. March 27, 2025. 1000 rainbow trout at the Bullhead City Community Park, Bullhead City, AZ. March 25, 2025. 1200 rainbow trout stocked at the Willow Beach Fishing Pier, Willow Beach, AZ. March 20, 2025. 1000 rainbow trout at the Bullhead City Community Park, Bullhead City, AZ. March 18, 2025. 820 rainbow trout at the Willow Beach Marina, Willow Beach, AZ. March 13, 2025."
+    },
+    {
+      "key": "s_usfws_willow_beach_whatwedo",
+      "url": "https://www.fws.gov/fish-hatchery/willow-beach/what-we-do",
+      "title": "Willow Beach National Fish Hatchery — What We Do — U.S. Fish & Wildlife Service",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "fws",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Biologists stagger the growth of these rainbow trout throughout the year in order to annually produce catchable sized 10-12 inch fish for weekly stockings at Willow Beach."
     }
   ],
   "groups": [],
@@ -257,5 +288,13 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1080, "sizeNote": null, "date": "2025-03-27", "sourceKeys": { "primary": "s_usfws_willow_beach_hatchery", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1200, "sizeNote": null, "date": "2025-03-20", "sourceKeys": { "primary": "s_usfws_willow_beach_hatchery", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 820, "sizeNote": null, "date": "2025-03-13", "sourceKeys": { "primary": "s_usfws_willow_beach_hatchery", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "weekly", "seasonStartMonth": null, "seasonEndMonth": null, "note": "USFWS Willow Beach National Fish Hatchery raises catchable-sized 10-12 inch rainbow trout for weekly stockings at Willow Beach on upper Lake Mohave.", "sourceKeys": { "primary": "s_usfws_willow_beach_whatwedo", "corroborating": ["s_usfws_willow_beach_hatchery"] } }
+  ]
 }

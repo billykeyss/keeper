@@ -21,6 +21,7 @@
     { "commonName": "Rainbow Trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
     { "commonName": "Brown Trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
     { "commonName": "Lahontan Cutthroat Trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Cutthroat Trout", "scientificName": "Oncorhynchus clarkii", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
     { "commonName": "Lake Trout (Mackinaw)", "scientificName": "Salvelinus namaycush", "category": "char", "nativeStatus": "introduced", "presence": "introduced" },
     { "commonName": "Kokanee Salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "introduced" }
   ],
@@ -81,6 +82,12 @@
       "title": "Prepare for Inspection and Decontamination — Tahoe Boat Inspections", "documentType": "webpage",
       "instrumentType": "admin_code", "authorityLevel": "agency_mirror", "authorityKey": "trpa", "retrievedDate": "2026-07-01",
       "quotedText": "After your vessel is inspected and decontaminated, you will receive a Tahoe sticker along with a wire seal that attaches your boat to your trailer. A seal is required to launch at any lake in the Tahoe Basin and is removed at the launch site."
+    },
+    {
+      "key": "s_ndow_waters_tahoe_sandharbor", "url": "https://www.ndow.org/waters/lake-tahoe/",
+      "title": "Lake Tahoe – Sand Harbor — Nevada Department of Wildlife", "documentType": "webpage",
+      "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02",
+      "quotedText": "Stocking Updates (selected): 4554 Rainbow Trout, 9.8 in, 05-19-2026; 4522 Rainbow Trout, 10.2 in, 05-05-2026; 1452 Cutthroat Trout, 9.7 in, 08-14-2025; 3002 Cutthroat Trout, 10.4 in, 08-14-2025. At times, Lahontan cutthroat trout have been stocked, but they are rare. Cave Rock and Sand Harbor State Parks produce the best catches for small rainbow trout since they are stocked from these locations."
     }
   ],
   "groups": [
@@ -265,5 +272,12 @@
       "sourceKey": "s_ndow_anglerguide",
       "note": "NDOW's official Lake Tahoe Angler Guide states a California sport fishing license is accepted to fish anywhere on the lake, including the Nevada side. Reciprocity applies to fishing IN the water; anglers on NV shore/tributaries generally need Nevada-side authorization per general licensing guidance."
     }
-  ]
+  ],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow Trout", "quantity": 4554, "sizeNote": "9.8 in", "date": "2026-05-19", "sourceKeys": { "primary": "s_ndow_waters_tahoe_sandharbor", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow Trout", "quantity": 4522, "sizeNote": "10.2 in", "date": "2026-05-05", "sourceKeys": { "primary": "s_ndow_waters_tahoe_sandharbor", "corroborating": [] } },
+    { "speciesCommonName": "Cutthroat Trout", "quantity": 1452, "sizeNote": "9.7 in", "date": "2025-08-14", "sourceKeys": { "primary": "s_ndow_waters_tahoe_sandharbor", "corroborating": [] } },
+    { "speciesCommonName": "Cutthroat Trout", "quantity": 3002, "sizeNote": "10.4 in", "date": "2025-08-14", "sourceKeys": { "primary": "s_ndow_waters_tahoe_sandharbor", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

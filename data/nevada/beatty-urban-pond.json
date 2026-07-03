@@ -25,7 +25,8 @@
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Beatty Urban Pond (Nye County): Open year around. Daily: 3 game fish. Possession: 6 game fish. Hours: any hour of the day or night." },
     { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/beatty-urban-pond/", "title": "Beatty Urban Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Located south of Beatty on BLM land (also known as Bombo's Pond), approximately 3 surface acres, spring fed. Stocked with rainbow trout; also contains resident largemouth bass and catfish from historical stockings." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "s_ndow_beatty_anglerguide", "url": "https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2025/06/Beatty-Pond_Angler-Guide-2025_FINAL-1.pdf", "title": "Beatty Pond — Fishery and Stocking Information (NDOW Angler Guide, 2025)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "It is stocked with Rainbow Trout during the winter months." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -79,5 +80,17 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1499, "sizeNote": "9.5 in", "date": "2023-03-06", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1533, "sizeNote": "9.5 in", "date": "2023-11-20", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1335, "sizeNote": "9.6 in", "date": "2024-02-07", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1465, "sizeNote": "9.5 in", "date": "2024-11-25", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1392, "sizeNote": "10.0 in", "date": "2025-01-28", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1515, "sizeNote": "8.5 in", "date": "2025-11-24", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1342, "sizeNote": "8.5 in", "date": "2026-02-25", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "NDOW manages Beatty Urban Pond as a Cold Water Put-and-Take Fishery, stocking rainbow trout during the winter months (exact calendar months not specified by the source).", "sourceKeys": { "primary": "s_ndow_beatty_anglerguide", "corroborating": [] } }
+  ]
 }

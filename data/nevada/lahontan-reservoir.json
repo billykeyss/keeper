@@ -110,8 +110,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": "Lahontan Reservoir is located along the Carson River as part of the Bureau of Reclamation's Newlands Irrigation Project, approximately 20 miles southwest of Fallon. Primary game fish include walleye, white bass, wipers, channel catfish, white catfish, largemouth bass and crappie."
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Lahontan Reservoir is located along the Carson River as part of the Bureau of Reclamation's Newlands Irrigation Project, approximately 20 miles southwest of Fallon. Primary game fish include walleye, white bass, wipers, channel catfish, white catfish, largemouth bass and crappie. Stocking Updates: 350000 Walleye, 0.5 in, 04-28-2026; 482 Wiper, 3.0 in, 10-08-2025; 2000 Wiper, 7 in, 05-29-2025; 1000000 Walleye, 1.0 in, 04-25-2025; 1019 Wiper, 3.84 in, 09-30-2024; 2400 Wiper, 8-10 in, 05-23-2024; 1950 Wiper, 8 in, 06-07-2023."
     },
     {
       "key": "s_ndow_aig_lahontan",
@@ -338,5 +338,15 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Walleye", "quantity": 350000, "sizeNote": "0.5 in", "date": "2026-04-28", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Wiper (white bass x striped bass hybrid)", "quantity": 482, "sizeNote": "3.0 in", "date": "2025-10-08", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Wiper (white bass x striped bass hybrid)", "quantity": 2000, "sizeNote": "7 in", "date": "2025-05-29", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Walleye", "quantity": 1000000, "sizeNote": "1.0 in", "date": "2025-04-25", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Wiper (white bass x striped bass hybrid)", "quantity": 1019, "sizeNote": "3.84 in", "date": "2024-09-30", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Wiper (white bass x striped bass hybrid)", "quantity": 2400, "sizeNote": "8-10 in", "date": "2024-05-23", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } },
+    { "speciesCommonName": "Wiper (white bass x striped bass hybrid)", "quantity": 1950, "sizeNote": "8 in", "date": "2023-06-07", "sourceKeys": { "primary": "s_ndow_waters_lahontan", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

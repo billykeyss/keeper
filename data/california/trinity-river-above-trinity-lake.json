@@ -12,7 +12,9 @@
     { "key": "ccr_7_50_b_153", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(153) — Trinity River, above Trinity Lake (Trinity Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(153) Trinity River, above Trinity Lake (Trinity Co.) from the confluence with Tangle Blue Creek (Hwy. 3), downstream (south) to the mouth of Trinity Lake, approximately 13.8 miles. Sat. preceding Memorial Day through Sep. 30. 5 trout Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hooks may be used. 0 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "fs_trinity_river", "url": "https://www.fs.usda.gov/r05/shasta-trinity/recreation/trinity-river", "title": "Shasta-Trinity National Forest: Recreation Site — Trinity River", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_stocking_plan_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon (CDFW)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R1 Trinity Trinity River, above Clair Engle Lake Rainbow Trout Catchable Put and Take June-August" },
+    { "key": "cdfw_fishplants_search", "url": "https://nrm.dfg.ca.gov/FishPlants/PublicPlantSearch", "title": "Fish Planting Schedule — CDFW Data Portal", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Week of Plant: 7/13/2025-7/19/2025; Water Name: Trinity River, above Clair Engle Lake; Counties: Trinity; Species: Trout" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -93,5 +95,9 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 6, "seasonEndMonth": 8, "note": "CDFW's 2026 Provisional Stocking Document lists this reach (Trinity River, above Clair Engle Lake) for catchable-size Rainbow Trout under the Put and Take program, with a release month range of June through August; the live CDFW Fish Planting Schedule corroborates actual weekly plants of trout on this water during 2025.", "sourceKeys": { "primary": "cdfw_stocking_plan_2026", "corroborating": ["cdfw_fishplants_search"] } }
+  ]
 }

@@ -15,7 +15,8 @@
     { "key": "ccr_7_50_b_147", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(147) — Stanislaus River, Middle Fork (Tuolumne Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(147) Stanislaus River, Middle Fork (Tuolumne Co.). (A) From Beardsley Dam downstream to the U. S. Forest Service footbridge at Spring Gap (including the Beardsley Afterbay). All year. Only artificial lures may be used. 2 trout (B) From the U.S. Forest Service footbridge at Spring Gap to New Melones Reservoir. All year. 2 trout. 4 trout in possession." },
     { "key": "cdfw_wild_trout_plan_mf_stanislaus", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=122049&inline=", "title": "Middle Fork Stanislaus River Wild Trout Management Plan", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R4 Tuolumne Stanislaus River Middle Fork Rainbow Trout Catchable Put and Take April-September" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -93,5 +94,9 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 9, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Stanislaus River Middle Fork (Region 4, Tuolumne Co.) for catchable-size Rainbow Trout under the Put and Take program, with a stated release month range of April-September. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

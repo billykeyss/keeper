@@ -217,5 +217,13 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1020, "sizeNote": "13.2 in", "date": "2022-03-18", "sourceKeys": { "primary": "s_ndow_bilk", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 3956, "sizeNote": "9.5 in", "date": "2022-04-20", "sourceKeys": { "primary": "s_ndow_bilk", "corroborating": [] } },
+    { "speciesCommonName": "Brown trout", "quantity": 504, "sizeNote": "10.0 in", "date": "2022-06-13", "sourceKeys": { "primary": "s_ndow_bilk", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1946, "sizeNote": "9.7 in", "date": "2022-11-10", "sourceKeys": { "primary": "s_ndow_bilk", "corroborating": [] } },
+    { "speciesCommonName": "Largemouth bass", "quantity": 267, "sizeNote": "7 in", "date": "2024-09-23", "sourceKeys": { "primary": "s_ndow_bilk", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

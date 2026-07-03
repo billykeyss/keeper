@@ -12,7 +12,8 @@
     { "key": "ccr_7_50_b_171", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(171) — Yuba River, North Fork (Sierra and Yuba Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(171) Yuba River, North Fork (Sierra and Yuba Cos.) from the western boundary of Sierra City to the confluence with Ladies Canyon Creek. All year. Only artificial lures may be used. 2 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "northyubaguide", "url": "https://northyubaguide.com/the-north-fork-of-the-yuba-river-guide/", "title": "The North Fork of The Yuba River Guide", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R2 Sierra Yuba River North Fork Rainbow Trout Sub-catchable Put and Grow April-October; R2 Sierra Yuba River North Fork, Downieville Rainbow Trout Catchable Put and Take April-November" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -66,5 +67,10 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 10, "note": "CDFW's 2026 Provisional Stocking Document lists 'Yuba River North Fork' (Region 2, Sierra Co.) as receiving Sub-catchable Rainbow Trout under the Put and Grow program, release month range April-October. This is a provisional plan; CDFW's execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 11, "note": "CDFW's 2026 Provisional Stocking Document separately lists 'Yuba River North Fork, Downieville' (Region 2, Sierra Co.) as receiving Catchable-size Rainbow Trout under the Put and Take program, release month range April-November. This is a provisional plan; CDFW's execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

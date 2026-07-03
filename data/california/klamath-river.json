@@ -170,6 +170,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "cdfw_news_klamath_chinook_release_2024",
+      "url": "https://wildlife.ca.gov/News/Archive/cdfw-releases-more-than-2-million-chinook-salmon-into-klamath-river",
+      "title": "CDFW News — CDFW Releases More Than 2 Million Chinook Salmon into Klamath River",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "The California Department of Fish and Wildlife (CDFW) this week successfully completed the release of more than 2 million fall-run Chinook salmon smolts into the Klamath River. On Wednesday, May 15, CDFW released approximately 1.3 million fall-run Chinook salmon smolts below the Iron Gate Dam and carried out another release of approximately 800,000 fish from the same location on Wednesday, May 22. The salmon smolts were trucked about 7 miles to the release point from CDFW's new, state-of-the-art Fall Creek Fish Hatchery."
     }
   ],
   "groups": [],
@@ -1320,5 +1331,10 @@
       }
     }
   ],
+  "stockingEvents": [
+    { "speciesCommonName": "Chinook salmon", "quantity": 1300000, "sizeNote": "Smolts, about six months old, averaging just under 3 inches in length", "date": "2024-05-15", "sourceKeys": { "primary": "cdfw_news_klamath_chinook_release_2024", "corroborating": [] } },
+    { "speciesCommonName": "Chinook salmon", "quantity": 800000, "sizeNote": "Smolts, about six months old, averaging just under 3 inches in length", "date": "2024-05-22", "sourceKeys": { "primary": "cdfw_news_klamath_chinook_release_2024", "corroborating": [] } }
+  ],
+  "stockingSchedule": [],
   "reciprocity": []
 }

@@ -60,8 +60,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": null
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Stocking Updates: 4001 Rainbow Trout, 10.2 in, 06-05-2026; 4002 Rainbow Trout, 9.7 in, 06-06-2025; 4063 Rainbow Trout, 10.2 in, 05-30-2024."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -208,5 +208,11 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 4001, "sizeNote": "10.2 in", "date": "2026-06-05", "sourceKeys": { "primary": "s_ndow_waters_lampe", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4002, "sizeNote": "9.7 in", "date": "2025-06-06", "sourceKeys": { "primary": "s_ndow_waters_lampe", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4063, "sizeNote": "10.2 in", "date": "2024-05-30", "sourceKeys": { "primary": "s_ndow_waters_lampe", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

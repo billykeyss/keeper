@@ -24,7 +24,7 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Fort Churchill Cooling Pond Cooperative Management Area, fishing prohibited from the center dike and posted areas. Season: Second Saturday in February through September 30. Limits — Daily: 5 trout and 15 warmwater game fish of which not more than 2 may be black bass. Minimum size for black bass is 14 inches total length. Possession: 10 trout and 30 warmwater game fish of which not more than 4 may be black bass. Hours: 1 hour before sunrise to 2 hours after sunset." },
-    { "key": "s_ndow_waters_ftchurchill", "url": "https://www.ndow.org/waters/fort-churchill-cooling-pond/", "title": "Fort Churchill Cooling Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Fort Churchill Cooling Pond is the primary cooling pond for the steam-generated power plant operated by NV Energy. This is a warmwater fishery with self-sustaining largemouth bass, bluegill, and channel catfish populations; however, trout is stocked during the winter when the power plant operation is suspended. Fishing is only allowed from shore." },
+    { "key": "s_ndow_waters_ftchurchill", "url": "https://www.ndow.org/waters/fort-churchill-cooling-pond/", "title": "Fort Churchill Cooling Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Fort Churchill Cooling Pond is the primary cooling pond for the steam-generated power plant operated by NV Energy. This is a warmwater fishery with self-sustaining largemouth bass, bluegill, and channel catfish populations; however, trout is stocked during the winter when the power plant operation is suspended and channel catfish is stocked when available. Fishing is only allowed from shore. Stocking Updates: 1034 Rainbow Trout, 7.8 in, 02-12-2026; 1500 Channel Catfish, 4 in, 05-29-2025; 1032 Rainbow Trout, 9.0 in, 02-06-2025; 3000 Channel Catfish, 4.1 in, 05-23-2024; 1136 Rainbow Trout, 9.6 in, 02-07-2024; 983 Rainbow Trout, 9.8 in, 03-24-2023; 1033 Rainbow Trout, 10.1 in, 02-07-2023." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],
   "groups": [],
@@ -115,5 +115,18 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1034, "sizeNote": "7.8 in", "date": "2026-02-12", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1500, "sizeNote": "4 in", "date": "2025-05-29", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1032, "sizeNote": "9.0 in", "date": "2025-02-06", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 3000, "sizeNote": "4.1 in", "date": "2024-05-23", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1136, "sizeNote": "9.6 in", "date": "2024-02-07", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 983, "sizeNote": "9.8 in", "date": "2023-03-24", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1033, "sizeNote": "10.1 in", "date": "2023-02-07", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "NDOW states trout is stocked during the winter when the power plant operation is suspended; recorded stocking dates cluster in February (and once in March).", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "frequency": "as_available", "seasonStartMonth": null, "seasonEndMonth": null, "note": "NDOW states channel catfish is stocked when available, with no fixed schedule.", "sourceKeys": { "primary": "s_ndow_waters_ftchurchill", "corroborating": [] } }
+  ]
 }

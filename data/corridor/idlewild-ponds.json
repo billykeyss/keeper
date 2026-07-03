@@ -76,5 +76,9 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 999, "sizeNote": "10.0 in", "date": "2026-06-12", "sourceKeys": { "primary": "s_ndow_waters_idlewild", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

@@ -84,6 +84,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "cdfw_provisional_stocking_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=",
+      "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-01",
+      "quotedText": "Region: R2; County: El Dorado; Release Water: American River Silver Fork; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: June-September. Region: R2; County: El Dorado; Release Water: American River, South Fork, Camp Sacramento; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: May-August. Region: R2; County: El Dorado; Release Water: American River, South Fork, Chili Bar; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: April-May & September-October."
     }
   ],
   "groups": [],
@@ -329,5 +340,40 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "seasonal",
+      "seasonStartMonth": 6,
+      "seasonEndMonth": 9,
+      "note": "CDFW's 2026 Provisional Stocking Document lists catchable Rainbow Trout stocked into 'American River Silver Fork' (El Dorado Co., a South Fork American River tributary) under the Put and Take program, release month range June-September. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.",
+      "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "seasonal",
+      "seasonStartMonth": 5,
+      "seasonEndMonth": 8,
+      "note": "CDFW's 2026 Provisional Stocking Document lists catchable Rainbow Trout stocked into 'American River, South Fork, Camp Sacramento' (El Dorado Co.) under the Put and Take program, release month range May-August. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.",
+      "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "seasonal",
+      "seasonStartMonth": 4,
+      "seasonEndMonth": 5,
+      "note": "CDFW's 2026 Provisional Stocking Document lists catchable Rainbow Trout stocked into 'American River, South Fork, Chili Bar' (El Dorado Co.) under the Put and Take program, release month range April-May & September-October (spring window shown here). This is CDFW's provisional plan for 2026, not a guaranteed annual constant.",
+      "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "seasonal",
+      "seasonStartMonth": 9,
+      "seasonEndMonth": 10,
+      "note": "CDFW's 2026 Provisional Stocking Document lists catchable Rainbow Trout stocked into 'American River, South Fork, Chili Bar' (El Dorado Co.) under the Put and Take program, release month range April-May & September-October (fall window shown here). This is CDFW's provisional plan for 2026, not a guaranteed annual constant.",
+      "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] }
+    }
+  ]
 }

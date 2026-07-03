@@ -21,7 +21,7 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Sportsman's Park Pond (Nye County): Open year around. Daily: 3 game fish. Possession: 6 game fish. Hours: hours park is open to public use." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/sportsmans-park-rye-patch-pond/", "title": "Sportsman's Park/Rye Patch Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Community pond, Nye County, Southern region. Regularly stocked with rainbow trout." },
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/sportsmans-park-rye-patch-pond/", "title": "Sportsman's Park/Rye Patch Pond — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Region Southern. County Nye. Type of water Community Pond. Stocking Updates: 809 Rainbow Trout, 10.2 in, 06-18-2026; 750 Rainbow Trout, 10.1 in, 05-15-2026; 757 Rainbow Trout, 10.1 in, 04-09-2026; 1555 Rainbow Trout, 9.3 in, 04-15-2025; 650 Rainbow Trout, 9.2 in, 05-18-2023; 854 Rainbow Trout, 10.1 in, 04-14-2023" },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],
   "groups": [],
@@ -76,5 +76,14 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 809, "sizeNote": "10.2 in", "date": "2026-06-18", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 750, "sizeNote": "10.1 in", "date": "2026-05-15", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 757, "sizeNote": "10.1 in", "date": "2026-04-09", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1555, "sizeNote": "9.3 in", "date": "2025-04-15", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 650, "sizeNote": "9.2 in", "date": "2023-05-18", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 854, "sizeNote": "10.1 in", "date": "2023-04-14", "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

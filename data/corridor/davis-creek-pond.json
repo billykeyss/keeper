@@ -78,5 +78,14 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1032, "sizeNote": "9.0 in", "date": "2026-03-11", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 390, "sizeNote": "9.9 in", "date": "2026-04-01", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 304, "sizeNote": "10.1 in", "date": "2026-04-08", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 600, "sizeNote": "10.1 in", "date": "2026-04-27", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 708, "sizeNote": "10.3 in", "date": "2026-05-11", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 958, "sizeNote": "9.8 in", "date": "2026-06-08", "sourceKeys": { "primary": "s_ndow_waters_daviscreek", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

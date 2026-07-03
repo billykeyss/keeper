@@ -14,7 +14,8 @@
     { "key": "ccr_7_50_b_46", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(46) — El Estero Lake (Monterey Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(46) El Estero Lake (Monterey Co.) portions of the lake south of the Pearl Street bridge known as Camino Aquajito Arm and Camino El Estero finger. Closed to all fishing all year." },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "monterey_el_estero_park", "url": "https://monterey.gov/your_city_hall/departments/parks_and_recreation/parks/el_estero_park_complex.php", "title": "City of Monterey — El Estero Park Complex", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R4 Monterey El Estero Lake Rainbow Trout Catchable Put and Take January-April & December" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -44,5 +45,10 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 1, "seasonEndMonth": 4, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists El Estero Lake (Monterey Co.) for catchable-size Rainbow Trout under the Put and Take program, with a stated release month range of January-April & December (this entry covers the January-April window). Plans are provisional; execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": 12, "seasonEndMonth": 12, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists El Estero Lake (Monterey Co.) for catchable-size Rainbow Trout under the Put and Take program, with a stated release month range of January-April & December (this entry covers the December window). Plans are provisional; execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

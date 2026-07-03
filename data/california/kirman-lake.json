@@ -13,7 +13,8 @@
     {"key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit."},
     {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
     {"key": "ecoangler_kirman", "url": "https://www.ecoangler.com/habitat/Kirman_Lake.html", "title": "The Ecological Angler — Kirman Lake", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null},
-    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."},
+    {"key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R6 Mono Kirman Lake Lahontan Cutthroat Trout Fingerling Put and Grow August-September"}
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -78,6 +79,10 @@
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": {"primary": "fgc_7145", "corroborating": []}
     }
+  ],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Lahontan cutthroat trout", "frequency": "seasonal", "seasonStartMonth": 8, "seasonEndMonth": 9, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Kirman Lake (Region 6, Mono Co.) for fingerling-size Lahontan Cutthroat Trout under the Put and Grow program, with a stated release month range of August-September. Plans are provisional; execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
   ],
   "reciprocity": []
 }

@@ -69,7 +69,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": null
+      "quotedText": "Game fish include rainbow trout and channel catfish, which are stocked seasonally depending on water temperature. ... Stocking Updates (selected): 1411 Rainbow Trout, 8.2 in, 02-03-2026; 1445 Rainbow Trout, 9.0 in, 12-02-2025; 42 Channel Catfish, 18.6 in, 10-03-2025; 86 Channel Catfish, 16 in, 04-11-2025; 711 Rainbow Trout, 9.9 in, 01-30-2023."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -216,5 +216,27 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 1411, "sizeNote": "8.2 in", "date": "2026-02-03", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1445, "sizeNote": "9.0 in", "date": "2025-12-02", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 42, "sizeNote": "18.6 in", "date": "2025-10-03", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 51, "sizeNote": "18 in", "date": "2025-08-26", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 50, "sizeNote": "17.8 in", "date": "2025-06-03", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 86, "sizeNote": "16 in", "date": "2025-04-11", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1392, "sizeNote": "10.0 in", "date": "2025-01-28", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1420, "sizeNote": "9.6 in", "date": "2024-11-25", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 57, "sizeNote": "18.0 in", "date": "2024-10-19", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 44, "sizeNote": "19 in", "date": "2024-08-24", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 63, "sizeNote": "17 in", "date": "2024-07-05", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 77, "sizeNote": "16.4 in", "date": "2024-04-24", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 395, "sizeNote": "8.7 in", "date": "2024-03-27", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 996, "sizeNote": "9.1 in", "date": "2023-12-18", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 705, "sizeNote": "10.2 in", "date": "2023-03-02", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 711, "sizeNote": "9.9 in", "date": "2023-01-30", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "NDOW states game fish include rainbow trout and channel catfish, which are stocked seasonally depending on water temperature; recorded rainbow trout plants fall in the cool months (November through March).", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "NDOW states game fish include rainbow trout and channel catfish, which are stocked seasonally depending on water temperature; recorded channel catfish plants fall in the warm months (April through October).", "sourceKeys": { "primary": "s_ndow_waters_mesquite", "corroborating": [] } }
+  ]
 }

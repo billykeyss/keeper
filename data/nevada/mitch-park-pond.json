@@ -67,8 +67,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": null
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Stocking Updates (selected): 750 Rainbow Trout, 10.1 in, 05-28-2026; 450 Rainbow Trout, 9.2 in, 03-09-2026; 1000 Channel Catfish, 4.0 in, 05-29-2025; 1600 Channel Catfish, 4.1 in, 05-23-2024; 900 Channel Catfish, 4.5 in, 06-07-2023; 593 Rainbow Trout, 10.2 in, 03-23-2023."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -215,5 +215,50 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 750, "sizeNote": "10.1 in", "date": "2026-05-28", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 693, "sizeNote": "9.7 in", "date": "2026-05-02", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 393, "sizeNote": "10.4 in", "date": "2026-04-20", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 428, "sizeNote": "10.1 in", "date": "2026-04-10", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 464, "sizeNote": "9.8 in", "date": "2026-03-30", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 450, "sizeNote": "9.2 in", "date": "2026-03-09", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1736, "sizeNote": "10.0 in", "date": "2025-10-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1037, "sizeNote": "10.1 in", "date": "2025-10-16", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 816, "sizeNote": "9.7 in", "date": "2025-10-01", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 422, "sizeNote": "10.0 in", "date": "2025-09-17", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1000, "sizeNote": "4.0 in", "date": "2025-05-29", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 479, "sizeNote": "9.9 in", "date": "2025-05-21", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 502, "sizeNote": "10.0 in", "date": "2025-05-01", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 501, "sizeNote": "9.6 in", "date": "2025-04-16", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 473, "sizeNote": "9.3 in", "date": "2025-04-04", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 548, "sizeNote": "9.7 in", "date": "2025-03-19", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 510, "sizeNote": "9.9 in", "date": "2025-03-05", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 478, "sizeNote": "10.9 in", "date": "2024-10-31", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 700, "sizeNote": "9.8 in", "date": "2024-10-16", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 455, "sizeNote": "11.1 in", "date": "2024-10-01", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 425, "sizeNote": "11.4 in", "date": "2024-09-20", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 1600, "sizeNote": "4.1 in", "date": "2024-05-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 490, "sizeNote": "9.6 in", "date": "2024-05-20", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 494, "sizeNote": "10.0 in", "date": "2024-05-13", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 357, "sizeNote": "10.2 in", "date": "2024-04-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 422, "sizeNote": "9.6 in", "date": "2024-04-10", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 743, "sizeNote": "9.7 in", "date": "2024-04-03", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 504, "sizeNote": "9.5 in", "date": "2024-03-19", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 692, "sizeNote": "10.0 in", "date": "2023-10-31", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 738, "sizeNote": "9.5 in", "date": "2023-10-18", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 711, "sizeNote": "9.2 in", "date": "2023-10-11", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 702, "sizeNote": "9.2 in", "date": "2023-10-04", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 389, "sizeNote": "9.2 in", "date": "2023-09-22", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 505, "sizeNote": "9 in", "date": "2023-06-08", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 900, "sizeNote": "4.5 in", "date": "2023-06-07", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 190, "sizeNote": "10.4 in", "date": "2023-05-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 316, "sizeNote": "10 in", "date": "2023-05-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 484, "sizeNote": "10.4 in", "date": "2023-05-11", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 400, "sizeNote": "9.7 in", "date": "2023-05-01", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 500, "sizeNote": "9.8 in", "date": "2023-04-20", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 515, "sizeNote": "10.3 in", "date": "2023-04-06", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 593, "sizeNote": "10.2 in", "date": "2023-03-23", "sourceKeys": { "primary": "s_ndow_waters_mitch", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

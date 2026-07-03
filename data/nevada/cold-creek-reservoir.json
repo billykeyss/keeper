@@ -81,8 +81,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": null
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Along with a wild, spawning population of rainbow trout, hatchery rainbow trout are stocked annually to augment angling. Stocking Updates: 1000 Rainbow Trout, 9.0 in, 05-15-2026; 1517 Tiger Trout, 9.5 in, 05-15-2026; 5000 Tiger Trout, 3.7 in, 07-24-2025; 2024 Rainbow Trout, 10 in, 04-15-2025; 200 Largemouth Bass, 5.0 in, 05-23-2024; 1002 Rainbow Trout, 9.0 in, 04-23-2024; 1517 Tiger Trout, 9.1 in, 05-17-2023; 2050 Rainbow Trout, 8.5 in, 05-10-2023."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -259,5 +259,100 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1000,
+      "sizeNote": "9.0 in",
+      "date": "2026-05-15",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Tiger trout",
+      "quantity": 1517,
+      "sizeNote": "9.5 in",
+      "date": "2026-05-15",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Tiger trout",
+      "quantity": 5000,
+      "sizeNote": "3.7 in",
+      "date": "2025-07-24",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2024,
+      "sizeNote": "10 in",
+      "date": "2025-04-15",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Largemouth bass",
+      "quantity": 200,
+      "sizeNote": "5.0 in",
+      "date": "2024-05-23",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1002,
+      "sizeNote": "9.0 in",
+      "date": "2024-04-23",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Tiger trout",
+      "quantity": 1517,
+      "sizeNote": "9.1 in",
+      "date": "2023-05-17",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2050,
+      "sizeNote": "8.5 in",
+      "date": "2023-05-10",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    }
+  ],
+  "stockingSchedule": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "frequency": "annual",
+      "seasonStartMonth": null,
+      "seasonEndMonth": null,
+      "note": "NDOW's Cold Creek Reservoir waters page states that, along with a wild spawning population of rainbow trout, hatchery rainbow trout are stocked annually to augment angling.",
+      "sourceKeys": {
+        "primary": "s_ndow_water",
+        "corroborating": []
+      }
+    }
+  ]
 }

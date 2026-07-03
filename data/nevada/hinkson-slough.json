@@ -96,8 +96,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": null
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Management emphasis is generally toward quality largemouth bass angling, however, trout are stocked in North Pond and Hinkson Slough. Stocking Updates (Stocked, Species, Inches, Date Stocked, Year to Date): 1477 Rainbow Trout 9.0 02-12-2026 3201; 1549 Rainbow Trout 9.2 02-12-2026 1559; 1508 Rainbow Trout 10.8 09-17-2025 4446; 2938 Rainbow Trout 9.3 02-06-2025 2938; 1694 Rainbow Trout 11.8 10-16-2024 2635; 941 Rainbow Trout 8.4 10-16-2024 941; 544 Rainbow Trout 9.7 04-10-2023 3591; 257 Rainbow Trout 11.9 02-07-2023 3047; 2790 Rainbow Trout 11 02-07-2023 2790"
     },
     {
       "key": "s_ndow_apply_buy",
@@ -368,5 +368,98 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2790,
+      "sizeNote": "11 in",
+      "date": "2023-02-07",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 257,
+      "sizeNote": "11.9 in",
+      "date": "2023-02-07",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 544,
+      "sizeNote": "9.7 in",
+      "date": "2023-04-10",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 941,
+      "sizeNote": "8.4 in",
+      "date": "2024-10-16",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1694,
+      "sizeNote": "11.8 in",
+      "date": "2024-10-16",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2938,
+      "sizeNote": "9.3 in",
+      "date": "2025-02-06",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1508,
+      "sizeNote": "10.8 in",
+      "date": "2025-09-17",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1549,
+      "sizeNote": "9.2 in",
+      "date": "2026-02-12",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 1477,
+      "sizeNote": "9.0 in",
+      "date": "2026-02-12",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_hinkson",
+        "corroborating": []
+      }
+    }
+  ],
+  "stockingSchedule": []
 }

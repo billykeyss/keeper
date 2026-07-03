@@ -22,7 +22,10 @@
     { "commonName": "Smallmouth bass", "scientificName": "Micropterus dolomieu", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
     { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
     { "commonName": "Wiper", "scientificName": "Morone chrysops x Morone saxatilis", "category": "hybrid", "nativeStatus": "stocked_hybrid", "presence": "stocked" },
-    { "commonName": "Channel catfish", "scientificName": "Ictalurus punctatus", "category": "catfish", "nativeStatus": "introduced", "presence": "stocked" }
+    { "commonName": "Channel catfish", "scientificName": "Ictalurus punctatus", "category": "catfish", "nativeStatus": "introduced", "presence": "stocked" },
+    { "commonName": "Cutthroat trout", "scientificName": "Oncorhynchus clarkii", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Tiger trout", "scientificName": "Salmo trutta x Salvelinus fontinalis", "category": "hybrid", "nativeStatus": "stocked_hybrid", "presence": "stocked" },
+    { "commonName": "Bluegill", "scientificName": "Lepomis macrochirus", "category": "panfish", "nativeStatus": "introduced", "presence": "stocked" }
   ],
   "speciesGroups": [
     { "key": "sfr-trout", "name": "Trout (South Fork Reservoir)", "category": "trout", "authorityKey": "ndow" },
@@ -30,7 +33,7 @@
   ],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/09/24-A-CR-25-16-Fishing-Seasons-and-Regulations-for-January-1-2026-through-December-31-2027.pdf", "title": "State of Nevada Board of Wildlife Commissioners — CR 25-16: Fishing Seasons and Regulations, January 1, 2026 – December 31, 2027", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "South Fork Reservoir and the South Fork of the Humboldt River from the Lucky Nugget Subdivision causeway downstream to its confluence with the Humboldt River: Season: Open year around. Exception: March 1 through June 30, catch and release fishing only for black bass. Limits — Daily: 5 trout, 1 black bass, 1 white bass hybrid (wiper) and 5 channel catfish. Minimum size for black bass and white bass hybrids (wiper) is 15 inches total length. Possession: 10 trout, 2 black bass, 2 white bass hybrid (wiper) and 10 channel catfish. Hours: Any hour of the day or night." },
-    { "key": "s_ndow_sfr", "url": "https://www.ndow.org/waters/south-fork-reservoir/", "title": "South Fork Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Species present: Rainbow trout, Brown trout, Bowcutt trout/hybrid (rainbow x cutthroat), Smallmouth bass (up to 21 inches), Largemouth bass, Wipers/striped bass hybrids, Channel catfish." },
+    { "key": "s_ndow_sfr", "url": "https://www.ndow.org/waters/south-fork-reservoir/", "title": "South Fork Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Species present: Rainbow trout, Brown trout, Bowcutt trout/hybrid (rainbow x cutthroat), Smallmouth bass (up to 21 inches), Largemouth bass, Wipers/striped bass hybrids, Channel catfish. ... Stocking Updates (2025-2026 rows; table extends back to 2023): 11500 Channel Catfish, 4.5 in, 05-13-2026; 500 Wiper, 8.8 in, 05-13-2026; 20000 Bluegill, 3.2 in, 05-13-2026; 1413 Brown Trout, 9.3 in, 05-12-2026; 5066 Brown Trout, 9.4 in, 05-07-2026; 2158 Rainbow Trout, 9.1 in, 04-08-2026; 3240 Rainbow Trout, 9.0 in, 04-08-2026; 6192 Rainbow Trout, 9.0 in, 04-06-2026; 6030 Rainbow Trout, 9.1 in, 04-01-2026; 6084 Rainbow Trout, 9.0 in, 03-31-2026; 6372 Rainbow Trout, 8.9 in, 03-30-2026; 17800 Rainbow Trout, 3.4 in, 03-27-2026; 24605 Rainbow Trout, 3.3 in, 03-27-2026; 5328 Rainbow Trout, 9.5 in, 03-26-2026; 4864 Rainbow Trout, 9.4 in, 11-26-2025; 5472 Rainbow Trout, 9.4 in, 11-26-2025; 2050 Rainbow Trout, 8.5 in, 10-24-2025; 2870 Rainbow Trout, 8.5 in, 10-23-2025; 4337 Rainbow Trout, 8.5 in, 10-22-2025; 2503 Rainbow Trout, 8.7 in, 10-22-2025; 3465 Rainbow Trout, 8.7 in, 10-22-2025; 7038 Rainbow Trout, 8.5 in, 10-21-2025; 3248 Rainbow Trout, 8.5 in, 10-21-2025; 4455 Rainbow Trout, 9.7 in, 10-21-2025; 4446 Rainbow Trout, 10.0 in, 10-20-2025; 2223 Rainbow Trout, 10.0 in, 10-20-2025; 1106 Cutthroat Trout, 8.5 in, 10-17-2025; 3700 Cutthroat Trout, 8.8 in, 10-08-2025; 4927 Cutbow Trout, 8.7 in, 10-01-2025; 14151 Cutthroat Trout, 2.3 in, 08-19-2025; 2674 Tiger Trout, 4.0 in, 08-19-2025; 5726 Tiger Trout, 4.0 in, 08-18-2025; 6000 Wiper, 2.0 in, 08-11-2025; 6439 Cutbow Trout, 8.7 in, 07-09-2025; 2535 Rainbow Trout, 9.9 in, 06-10-2025; 6462 Rainbow Trout, 8.9 in, 04-24-2025; 5838 Rainbow Trout, 9.2 in, 04-23-2025; 5557 Rainbow Trout, 9.3 in, 04-21-2025; 5478 Rainbow Trout, 9.3 in, 04-18-2025; 5238 Rainbow Trout, 9.5 in, 04-08-2025." },
     { "key": "s_ndow_sf_humboldt_river", "url": "https://www.ndow.org/waters/humboldt-river-south-fork/", "title": "Humboldt River, South Fork — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Game fish include bowcutt trout (rainbow x cutthroat hybrid), rainbow trout, brown trout, smallmouth bass, and channel catfish." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],
@@ -146,5 +149,48 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Channel catfish", "quantity": 11500, "sizeNote": "4.5 in", "date": "2026-05-13", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Wiper", "quantity": 500, "sizeNote": "8.8 in", "date": "2026-05-13", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Bluegill", "quantity": 20000, "sizeNote": "3.2 in", "date": "2026-05-13", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Brown trout", "quantity": 1413, "sizeNote": "9.3 in", "date": "2026-05-12", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Brown trout", "quantity": 5066, "sizeNote": "9.4 in", "date": "2026-05-07", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2158, "sizeNote": "9.1 in", "date": "2026-04-08", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 3240, "sizeNote": "9.0 in", "date": "2026-04-08", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 6192, "sizeNote": "9.0 in", "date": "2026-04-06", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 6030, "sizeNote": "9.1 in", "date": "2026-04-01", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 6084, "sizeNote": "9.0 in", "date": "2026-03-31", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 6372, "sizeNote": "8.9 in", "date": "2026-03-30", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 17800, "sizeNote": "3.4 in", "date": "2026-03-27", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 24605, "sizeNote": "3.3 in", "date": "2026-03-27", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5328, "sizeNote": "9.5 in", "date": "2026-03-26", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4864, "sizeNote": "9.4 in", "date": "2025-11-26", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5472, "sizeNote": "9.4 in", "date": "2025-11-26", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2050, "sizeNote": "8.5 in", "date": "2025-10-24", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2870, "sizeNote": "8.5 in", "date": "2025-10-23", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4337, "sizeNote": "8.5 in", "date": "2025-10-22", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2503, "sizeNote": "8.7 in", "date": "2025-10-22", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 3465, "sizeNote": "8.7 in", "date": "2025-10-22", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 7038, "sizeNote": "8.5 in", "date": "2025-10-21", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 3248, "sizeNote": "8.5 in", "date": "2025-10-21", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4455, "sizeNote": "9.7 in", "date": "2025-10-21", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 4446, "sizeNote": "10.0 in", "date": "2025-10-20", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2223, "sizeNote": "10.0 in", "date": "2025-10-20", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Cutthroat trout", "quantity": 1106, "sizeNote": "8.5 in", "date": "2025-10-17", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Cutthroat trout", "quantity": 3700, "sizeNote": "8.8 in", "date": "2025-10-08", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Bowcutt trout", "quantity": 4927, "sizeNote": "8.7 in", "date": "2025-10-01", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Cutthroat trout", "quantity": 14151, "sizeNote": "2.3 in", "date": "2025-08-19", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Tiger trout", "quantity": 2674, "sizeNote": "4.0 in", "date": "2025-08-19", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Tiger trout", "quantity": 5726, "sizeNote": "4.0 in", "date": "2025-08-18", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Wiper", "quantity": 6000, "sizeNote": "2.0 in", "date": "2025-08-11", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Bowcutt trout", "quantity": 6439, "sizeNote": "8.7 in", "date": "2025-07-09", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2535, "sizeNote": "9.9 in", "date": "2025-06-10", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 6462, "sizeNote": "8.9 in", "date": "2025-04-24", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5838, "sizeNote": "9.2 in", "date": "2025-04-23", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5557, "sizeNote": "9.3 in", "date": "2025-04-21", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5478, "sizeNote": "9.3 in", "date": "2025-04-18", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 5238, "sizeNote": "9.5 in", "date": "2025-04-08", "sourceKeys": { "primary": "s_ndow_sfr", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

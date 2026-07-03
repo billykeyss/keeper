@@ -1,7 +1,7 @@
 {
   "asOf": "2026-07-02",
   "water": { "name": "Silver King Creek and Tributaries", "waterType": "creek", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": null, "lon": -119.7350, "lat": 38.6250, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }, { "key": "usfs", "name": "USDA Forest Service (Humboldt-Toiyabe National Forest, Carson-Iceberg Wilderness)", "state": null, "type": "federal", "roles": ["land_management"] } ],
   "reaches": [],
   "species": [
     { "commonName": "Paiute cutthroat trout", "scientificName": "Oncorhynchus clarkii seleniris", "category": "trout", "nativeStatus": "native", "presence": "native" }
@@ -11,7 +11,10 @@
     { "key": "ccr_7_50_b_137", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(137) — Silver King Creek and tributaries (Alpine Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(137) Silver King Creek and tributaries (Alpine Co.) upstream of the confluence with Snodgrass Creek. Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "wikipedia_paiute_cutthroat", "url": "https://en.wikipedia.org/wiki/Paiute_cutthroat_trout", "title": "Wikipedia — Paiute cutthroat trout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "yubanet_paiute_2017", "url": "https://yubanet.com/california/paiute-cutthroat-trout-return-to-silver-king-creek-for-first-time-in-71-years/", "title": "Yubanet — Paiute Cutthroat Trout Return to Silver King Creek for First Time in 71 Years", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-02", "quotedText": "On Aug. 24, 2017, U.S. Fish and Wildlife Service biologists, in conjunction with members of the U.S. Forest Service (USFS) and the California Department of Fish and Wildlife (CDFW), released 86 Paiute cutthroat trout in Silver King Creek above Llewellyn Falls" },
+    { "key": "carsonnow_paiute_2019", "url": "https://www.carsonnow.org/09/23/2019/paiute-cutthroat-trout-reintroduced-high-sierra-wilderness-native-habitat", "title": "Carson Now — Paiute Cutthroat Trout Reintroduced to High Sierra Wilderness Native Habitat", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "30 Paiute cutthroat trout of varying sizes were released into Silver King Creek in Alpine County, Calif., Sept. 18, 2019." },
+    { "key": "usfs_paiute_recovery", "url": "https://www.fs.usda.gov/inside-fs/delivering-mission/sustain/paiute-cutthroat-trout-recovery-effort-continues", "title": "Paiute cutthroat trout recovery effort continues | US Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-02", "quotedText": "translocation efforts into the mainstem of Silver King Creek will need to continue yearly until a self-sustaining population has been established." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -41,5 +44,12 @@
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Paiute cutthroat trout", "quantity": 86, "sizeNote": null, "date": "2017-08-24", "sourceKeys": { "primary": "yubanet_paiute_2017", "corroborating": [] } },
+    { "speciesCommonName": "Paiute cutthroat trout", "quantity": 30, "sizeNote": null, "date": "2019-09-18", "sourceKeys": { "primary": "carsonnow_paiute_2019", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Paiute cutthroat trout", "frequency": "annual", "seasonStartMonth": null, "seasonEndMonth": null, "note": "USFS/CDFW/USFWS translocate Paiute cutthroat trout from donor populations (e.g. North Fork Cottonwood Creek, Coyote Valley Creek, Corral Valley Creek) into Silver King Creek as an ongoing native-species restoration effort; the forest's fisheries biologist states translocations 'will need to continue yearly until a self-sustaining population has been established.'", "sourceKeys": { "primary": "usfs_paiute_recovery", "corroborating": [] } }
+  ]
 }

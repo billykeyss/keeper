@@ -69,7 +69,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
-      "quotedText": "Baily Fishing Pond is a 1-acre pond about 15 ft deep in the southeast area of the Carson City Fairgrounds (Fuji Park). Water is diverted from Clear Creek, keeping the pond cool and allowing for trout fishing most of the year."
+      "quotedText": "Baily Fishing Pond is a 1-acre pond about 15 ft deep in the southeast area of the Carson City Fairgrounds (Fuji Park). Water is diverted from Clear Creek, keeping the pond cool and allowing for trout fishing most of the year. Stocking Updates: 499 Rainbow Trout, 10.3 in, 05-11-2026; 401 Rainbow Trout, 10.1 in, 04-27-2026; 663 Rainbow Trout, 9.9 in, 04-17-2026; 501 Rainbow Trout, 9.3 in, 03-26-2026; 450 Rainbow Trout, 9.2 in, 03-09-2026; 793 Rainbow Trout, 10.1 in, 10-16-2025; 200 Rainbow Trout, 10.0 in, 10-06-2025; 680 Rainbow Trout, 9.7 in, 10-01-2025; 375 Rainbow Trout, 10.5 in, 09-19-2025; 513 Rainbow Trout, 10.3 in, 05-28-2025; 493 Rainbow Trout, 9.7 in, 05-16-2025; 501 Rainbow Trout, 9.6 in, 04-16-2025; 551 Rainbow Trout, 9.3 in, 04-04-2025; 480 Rainbow Trout, 9.7 in, 03-19-2025; 510 Rainbow Trout, 9.9 in, 03-05-2025; 502 Rainbow Trout, 9.6 in, 10-23-2024; 501 Rainbow Trout, 11.8 in, 10-10-2024; 438 Rainbow Trout, 11.3 in, 09-28-2024; 618 Rainbow Trout, 10.0 in, 05-13-2024; 756 Rainbow Trout, 9.7 in, 05-02-2024; 487 Rainbow Trout, 9.7 in, 04-16-2024; 540 Rainbow Trout, 9.7 in, 04-01-2024; 504 Rainbow Trout, 9.5 in, 03-19-2024; 519 Rainbow Trout, 10 in, 10-31-2023; 516 Rainbow Trout, 9.5 in, 10-18-2023; 399 Rainbow Trout, 9.2 in, 10-04-2023; 486 Rainbow Trout, 9.2 in, 09-22-2023; 624 Rainbow Trout, 10.4 in, 05-23-2023; 506 Rainbow Trout, 10 in, 05-16-2023; 534 Rainbow Trout, 9.7 in, 05-02-2023; 770 Rainbow Trout, 10.2 in, 04-20-2023."
     },
     {
       "key": "s_ndow_aig_baily",
@@ -224,5 +224,39 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 499, "sizeNote": "10.3 in", "date": "2026-05-11", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 401, "sizeNote": "10.1 in", "date": "2026-04-27", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 663, "sizeNote": "9.9 in", "date": "2026-04-17", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 501, "sizeNote": "9.3 in", "date": "2026-03-26", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 450, "sizeNote": "9.2 in", "date": "2026-03-09", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 793, "sizeNote": "10.1 in", "date": "2025-10-16", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 200, "sizeNote": "10.0 in", "date": "2025-10-06", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 680, "sizeNote": "9.7 in", "date": "2025-10-01", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 375, "sizeNote": "10.5 in", "date": "2025-09-19", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 513, "sizeNote": "10.3 in", "date": "2025-05-28", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 493, "sizeNote": "9.7 in", "date": "2025-05-16", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 501, "sizeNote": "9.6 in", "date": "2025-04-16", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 551, "sizeNote": "9.3 in", "date": "2025-04-04", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 480, "sizeNote": "9.7 in", "date": "2025-03-19", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 510, "sizeNote": "9.9 in", "date": "2025-03-05", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 502, "sizeNote": "9.6 in", "date": "2024-10-23", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 501, "sizeNote": "11.8 in", "date": "2024-10-10", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 438, "sizeNote": "11.3 in", "date": "2024-09-28", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 618, "sizeNote": "10.0 in", "date": "2024-05-13", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 756, "sizeNote": "9.7 in", "date": "2024-05-02", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 487, "sizeNote": "9.7 in", "date": "2024-04-16", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 540, "sizeNote": "9.7 in", "date": "2024-04-01", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 504, "sizeNote": "9.5 in", "date": "2024-03-19", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 519, "sizeNote": "10 in", "date": "2023-10-31", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 516, "sizeNote": "9.5 in", "date": "2023-10-18", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 399, "sizeNote": "9.2 in", "date": "2023-10-04", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 486, "sizeNote": "9.2 in", "date": "2023-09-22", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 624, "sizeNote": "10.4 in", "date": "2023-05-23", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 506, "sizeNote": "10 in", "date": "2023-05-16", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 534, "sizeNote": "9.7 in", "date": "2023-05-02", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 770, "sizeNote": "10.2 in", "date": "2023-04-20", "sourceKeys": { "primary": "s_ndow_waters_baily", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
 }

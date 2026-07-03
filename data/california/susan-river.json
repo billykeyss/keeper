@@ -41,6 +41,13 @@
       "category": "trout",
       "nativeStatus": "introduced",
       "presence": "introduced"
+    },
+    {
+      "commonName": "Eagle Lake rainbow trout",
+      "scientificName": "Oncorhynchus mykiss aquilarum",
+      "category": "trout",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
     }
   ],
   "speciesGroups": [],
@@ -77,6 +84,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "cdfw_provisional_stocking_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=",
+      "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW",
+      "documentType": "pdf",
+      "instrumentType": "guide",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-02",
+      "quotedText": "R1 Lassen Susan River Lower Eagle Lake Trout Catchable Put and Take April-June | R1 Lassen Susan River Upper Eagle Lake Trout Catchable Put and Take May-June"
     }
   ],
   "groups": [],
@@ -192,5 +210,10 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Eagle Lake rainbow trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 6, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Susan River Lower (Lassen Co.) for catchable-size Eagle Lake Trout under the Put and Take program, with a stated release month range of April-June. Plans are provisional; execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } },
+    { "speciesCommonName": "Eagle Lake rainbow trout", "frequency": "seasonal", "seasonStartMonth": 5, "seasonEndMonth": 6, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Susan River Upper (Lassen Co.) for catchable-size Eagle Lake Trout under the Put and Take program, with a stated release month range of May-June. Plans are provisional; execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

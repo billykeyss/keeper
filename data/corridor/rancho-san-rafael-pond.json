@@ -76,5 +76,12 @@
       "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
     }
   ],
+  "stockingEvents": [
+    { "speciesCommonName": "Rainbow trout", "quantity": 510, "sizeNote": "9.9 in", "date": "2026-04-13", "sourceKeys": { "primary": "s_ndow_waters_rancho", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 490, "sizeNote": "9.6 in", "date": "2025-04-25", "sourceKeys": { "primary": "s_ndow_waters_rancho", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 492, "sizeNote": "9.6 in", "date": "2024-03-22", "sourceKeys": { "primary": "s_ndow_waters_rancho", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 500, "sizeNote": "9.8 in", "date": "2023-03-24", "sourceKeys": { "primary": "s_ndow_waters_rancho", "corroborating": [] } }
+  ],
+  "stockingSchedule": [],
   "reciprocity": []
 }

@@ -19,7 +19,8 @@
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
     { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
     { "commonName": "Kokanee salmon", "scientificName": "Oncorhynchus nerka", "category": "salmon", "nativeStatus": "introduced", "presence": "stocked" },
-    { "commonName": "Smallmouth bass", "scientificName": "Micropterus dolomieu", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" }
+    { "commonName": "Smallmouth bass", "scientificName": "Micropterus dolomieu", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
   ],
   "speciesGroups": [
     { "key": "trout", "name": "Trout", "category": "trout", "authorityKey": "cdfw" },
@@ -34,7 +35,8 @@
     { "key": "ccr_kokanee", "url": "https://wildlife.ca.gov/Fishing/Inland/Kokanee", "title": "CDFW — Fishing for Kokanee (14 CCR §5.41)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "5.41. LANDLOCKED SALMON (a) Open season: All year (b) Daily bag limit: Five (c) Possession limit: Ten (d) Size limit: None" },
     { "key": "fgc_license", "url": "https://www.ca.gov/departments/174/services/29/", "title": "CDFW — Get a Fishing or Hunting License (Fish & Game Code §7145)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who is 16 years of age or older must possess a valid sport fishing license when taking any fish, shell fish, reptile, or amphibian in California according to Fish and Game Code Section 7145." },
     { "key": "fgc_license_statute", "url": "https://codes.findlaw.com/ca/fish-and-game-code/fgc-sect-7145/", "title": "California Fish & Game Code §7145", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
-    { "key": "fgc_secondrod", "url": "https://law.justia.com/codes/california/2005/fgc/7145-7155.html", "title": "California Fish & Game Code §7149.4 — Second-Rod Sport Fishing Stamp", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling." }
+    { "key": "fgc_secondrod", "url": "https://law.justia.com/codes/california/2005/fgc/7145-7155.html", "title": "California Fish & Game Code §7149.4 — Second-Rod Sport Fishing Stamp", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R2 Nevada Boca Reservoir Lahontan Cutthroat Trout Sub-catchable Put and Grow April-September; R2 Nevada Boca Reservoir Kokanee Salmon Fingerling Put and Grow April-June" }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -124,5 +126,10 @@
       "sourceKeys": { "primary": "fgc_secondrod", "corroborating": [] }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Lahontan cutthroat trout", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 9, "note": "CDFW's 2026 Provisional Stocking Document lists Boca Reservoir (Region 2, Nevada Co.) as receiving Sub-catchable Lahontan Cutthroat Trout under the Put and Grow program, release month range April-September. This is a provisional plan; CDFW's execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } },
+    { "speciesCommonName": "Kokanee salmon", "frequency": "seasonal", "seasonStartMonth": 4, "seasonEndMonth": 6, "note": "CDFW's 2026 Provisional Stocking Document lists Boca Reservoir (Region 2, Nevada Co.) as receiving Fingerling Kokanee Salmon under the Put and Grow program, release month range April-June. This is a provisional plan; CDFW's execution is not guaranteed.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
 }

@@ -82,8 +82,8 @@
       "instrumentType": "webpage",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
-      "retrievedDate": "2026-07-01",
-      "quotedText": null
+      "retrievedDate": "2026-07-02",
+      "quotedText": "Stocking Updates: 2068 Rainbow Trout, 7.8 in, 02-12-2026; 1500 Channel Catfish, 4 in, 05-29-2025; 2038 Rainbow Trout, 9.2 in, 04-18-2025; 3032 Rainbow Trout, 11 in, 02-10-2023."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -308,5 +308,48 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2068,
+      "sizeNote": "7.8 in",
+      "date": "2026-02-12",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_northpond",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Channel catfish",
+      "quantity": 1500,
+      "sizeNote": "4 in",
+      "date": "2025-05-29",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_northpond",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 2038,
+      "sizeNote": "9.2 in",
+      "date": "2025-04-18",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_northpond",
+        "corroborating": []
+      }
+    },
+    {
+      "speciesCommonName": "Rainbow trout",
+      "quantity": 3032,
+      "sizeNote": "11 in",
+      "date": "2023-02-10",
+      "sourceKeys": {
+        "primary": "s_ndow_waters_northpond",
+        "corroborating": []
+      }
+    }
+  ],
+  "stockingSchedule": []
 }

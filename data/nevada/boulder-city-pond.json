@@ -45,6 +45,13 @@
       "category": "catfish",
       "nativeStatus": "introduced",
       "presence": "stocked"
+    },
+    {
+      "commonName": "Bluegill",
+      "scientificName": "Lepomis macrochirus",
+      "category": "panfish",
+      "nativeStatus": "introduced",
+      "presence": "stocked"
     }
   ],
   "speciesGroups": [],
@@ -69,7 +76,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": null
+      "quotedText": "Rainbow trout and channel catfish are stocked, which occurs seasonally and depends on water temperature. Stocking Updates (selected): 286 Channel Catfish, 19 in, 06-12-2026; 1000 Bluegill, 5.7 in, 06-12-2026; 333 Channel Catfish, 17.5 in, 05-23-2026; 150 Bluegill, 5.7 in, 04-01-2026; 1446 Rainbow Trout, 8.5 in, 02-25-2026; 1442 Rainbow Trout, 8.5 in, 02-10-2026; 1593 Rainbow Trout, 8.2 in, 02-03-2026; 1614 Rainbow Trout, 8.2 in, 01-26-2026; 1161 Rainbow Trout, 8.6 in, 01-07-2026; 1215 Rainbow Trout, 8.5 in, 12-22-2025; 1388 Rainbow Trout, 9.0 in, 12-16-2025; 1493 Rainbow Trout, 8.6 in, 12-10-2025; 1616 Rainbow Trout, 8.5 in, 11-24-2025; 2728 Rainbow Trout, 10.0 in, 11-10-2025."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -216,5 +223,25 @@
       }
     }
   ],
-  "reciprocity": []
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Channel catfish", "quantity": 286, "sizeNote": "19 in", "date": "2026-06-12", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Bluegill", "quantity": 1000, "sizeNote": "5.7 in", "date": "2026-06-12", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "quantity": 333, "sizeNote": "17.5 in", "date": "2026-05-23", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Bluegill", "quantity": 150, "sizeNote": "5.7 in", "date": "2026-04-01", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1446, "sizeNote": "8.5 in", "date": "2026-02-25", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1442, "sizeNote": "8.5 in", "date": "2026-02-10", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1593, "sizeNote": "8.2 in", "date": "2026-02-03", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1614, "sizeNote": "8.2 in", "date": "2026-01-26", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1161, "sizeNote": "8.6 in", "date": "2026-01-07", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1215, "sizeNote": "8.5 in", "date": "2025-12-22", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1388, "sizeNote": "9.0 in", "date": "2025-12-16", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1493, "sizeNote": "8.6 in", "date": "2025-12-10", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 1616, "sizeNote": "8.5 in", "date": "2025-11-24", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Rainbow trout", "quantity": 2728, "sizeNote": "10.0 in", "date": "2025-11-10", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } }
+  ],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "Rainbow trout and channel catfish are stocked, which occurs seasonally and depends on water temperature.", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } },
+    { "speciesCommonName": "Channel catfish", "frequency": "seasonal", "seasonStartMonth": null, "seasonEndMonth": null, "note": "Rainbow trout and channel catfish are stocked, which occurs seasonally and depends on water temperature.", "sourceKeys": { "primary": "s_ndow_waters_bcp", "corroborating": [] } }
+  ]
 }
