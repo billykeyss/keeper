@@ -86,8 +86,8 @@ interface MapProps {
   stockedFilter: string | null;
   /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
   flyTo: { lon: number; lat: number } | null;
-  /** Optional USDA national-forest lands overlay. */
-  forestOverlay: boolean;
+  /** Optional public-lands overlay: USDA national-forest (green) + BLM (yellow). */
+  publicLands: boolean;
 }
 
 type MarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; pin: WaterPin };
@@ -109,6 +109,16 @@ const FOREST_LAYER = "usfs-forests-fill";
 const FOREST_TILES_URL =
   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ProclaimedForestsAndGrasslands_01/MapServer/export" +
   "?bbox={bbox-epsg-3857}&bboxSR=3857&imageSR=3857&size=256,256&format=png32&transparent=true&f=image&layers=show:3,0";
+
+// BLM-managed surface estate (public domain, BLM Enterprise GIS). Unlike the USFS
+// service this one has a real pre-rendered tile cache (fast), populated through z14 —
+// maxzoom lets MapLibre overzoom beyond that instead of requesting 404 tiles. Renders
+// BLM parcels as pale yellow (254,230,121), everything else transparent — visually
+// distinct from the USFS pale green so both can show at once under one toggle.
+const BLM_SOURCE = "blm-lands";
+const BLM_LAYER = "blm-lands-fill";
+const BLM_TILES_URL =
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_BLM_Only/MapServer/tile/{z}/{y}/{x}";
 
 function reachToWaterPin(reach: ReachPin): WaterPin {
   return {
@@ -148,7 +158,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, forestOverlay }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, publicLands }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -164,8 +174,8 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   selectedIdRef.current = selectedId;
   const stockedFilterRef = useRef<string | null>(stockedFilter);
   stockedFilterRef.current = stockedFilter;
-  const forestOverlayRef = useRef(forestOverlay);
-  forestOverlayRef.current = forestOverlay;
+  const publicLandsRef = useRef(publicLands);
+  publicLandsRef.current = publicLands;
   const applySelectionRef = useRef<() => void>(() => {});
   const refreshRef = useRef<() => void>(() => {});
 
@@ -215,8 +225,22 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
         id: FOREST_LAYER,
         type: "raster",
         source: FOREST_SOURCE,
-        layout: { visibility: forestOverlayRef.current ? "visible" : "none" },
+        layout: { visibility: publicLandsRef.current ? "visible" : "none" },
         paint: { "raster-opacity": 0.62 },
+      });
+      map.addSource(BLM_SOURCE, {
+        type: "raster",
+        tiles: [BLM_TILES_URL],
+        tileSize: 256,
+        maxzoom: 14,
+        attribution: "Bureau of Land Management",
+      });
+      map.addLayer({
+        id: BLM_LAYER,
+        type: "raster",
+        source: BLM_SOURCE,
+        layout: { visibility: publicLandsRef.current ? "visible" : "none" },
+        paint: { "raster-opacity": 0.55 },
       });
 
       map.addSource(REACH_LINES_SOURCE, { type: "geojson", data: { type: "FeatureCollection", features: [] } });
@@ -375,13 +399,15 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
     refreshRef.current();
   }, [stockedFilter]);
 
-  // Toggle the forest overlay (layer exists once the style has loaded; the load
-  // handler applies the initial state from the ref for toggles racing map creation).
+  // Toggle the public-lands overlays (layers exist once the style has loaded; the
+  // load handler applies the initial state from the ref for toggles racing map creation).
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.getLayer(FOREST_LAYER)) return;
-    map.setLayoutProperty(FOREST_LAYER, "visibility", forestOverlay ? "visible" : "none");
-  }, [forestOverlay]);
+    if (!map) return;
+    const vis = publicLands ? "visible" : "none";
+    if (map.getLayer(FOREST_LAYER)) map.setLayoutProperty(FOREST_LAYER, "visibility", vis);
+    if (map.getLayer(BLM_LAYER)) map.setLayoutProperty(BLM_LAYER, "visibility", vis);
+  }, [publicLands]);
 
   // One-shot fly-to (picking a water from the stocked-fish panel).
   useEffect(() => {

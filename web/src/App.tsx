@@ -28,7 +28,7 @@ export function App() {
   const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
   const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
-  const [forestOverlay, setForestOverlay] = useState(false);
+  const [publicLands, setPublicLands] = useState(false);
 
   const togglePanel = useCallback((panel: OpenPanel) => {
     setOpenPanel((p) => (p === panel ? null : panel));
@@ -76,7 +76,7 @@ export function App() {
           onSelect={handleSelect}
           stockedFilter={stockedFilter}
           flyTo={flyTo}
-          forestOverlay={forestOverlay}
+          publicLands={publicLands}
         />
 
         <div className="brand-chip">
@@ -98,12 +98,12 @@ export function App() {
             Stocked fish
           </button>
           <button
-            className={`stocked-chip${forestOverlay ? " stocked-chip--active" : ""}`}
-            onClick={() => setForestOverlay((v) => !v)}
-            aria-pressed={forestOverlay}
-            title="Show USDA national forest lands"
+            className={`stocked-chip${publicLands ? " stocked-chip--active" : ""}`}
+            onClick={() => setPublicLands((v) => !v)}
+            aria-pressed={publicLands}
+            title="Show public lands: national forests (green) + BLM (yellow)"
           >
-            Forests
+            Public lands
           </button>
           {stockedFilter && (
             <button
@@ -148,9 +148,9 @@ export function App() {
             <FishIcon size={19} />
             {stockedFilter ? "Stocked •" : "Stocked"}
           </button>
-          <button className="dock-btn" data-active={forestOverlay} onClick={() => setForestOverlay((v) => !v)}>
+          <button className="dock-btn" data-active={publicLands} onClick={() => setPublicLands((v) => !v)}>
             <TreesIcon size={19} />
-            Forests
+            Lands
           </button>
           <button className="dock-btn" data-active={openPanel === "chat"} onClick={() => togglePanel("chat")}>
             <ChatIcon size={19} />
