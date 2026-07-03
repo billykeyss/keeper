@@ -125,7 +125,9 @@ NOT stop Keeper (that's the supervisor doing its job) — use `tmux kill-session
   your phone, sign in to the same tailnet, then `http://<mini-tailscale-name>:8791` works from
   anywhere, encrypted, with zero router changes.
 - **Do NOT port-forward** the raw port on your router — the app has no authentication; exposing
-  it to the open internet also exposes your regulations DB API to the world.
+  it to the open internet also exposes your regulations DB API to the world. Update: the app now
+  supports an app-wide password gate — set KEEPER_PASSWORD in ~/keeper/.env (chmod 600) and every
+  /api route requires it.
 
 Add to Home Screen (iOS Safari: Share → Add to Home Screen) for an app-like launcher.
 

@@ -24,6 +24,12 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 if [[ "${1:-}" == "--serve" ]]; then
   # Supervisor loop, running inside the tmux pane.
   cd "$DIR"
+  # Secrets (ANTHROPIC_API_KEY, KEEPER_PASSWORD, CHAT_MODEL) live in a chmod-600 .env —
+  # sourced here rather than the launchd plist, because a pre-existing tmux server would
+  # not inherit plist EnvironmentVariables.
+  set -a
+  [ -f .env ] && . ./.env
+  set +a
   while true; do
     PORT="$PORT" npx tsx src/api/server.ts && rc=0 || rc=$?
     echo "[keeper] server exited (code $rc) — restarting in 3s (Ctrl-C twice to stop)"
