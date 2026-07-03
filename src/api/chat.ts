@@ -76,15 +76,28 @@ chat.post("/api/chat/sessions/:id/messages", async (c) => {
   if (!parsed.success) return c.json({ error: "text is required (max 2000 chars)" }, 400);
   const { text } = parsed.data;
 
-  const ip = c.req.header("x-forwarded-for")?.split(",")[0]?.trim() || "local";
+  // CF-Connecting-IP is set authoritatively by the Cloudflare tunnel in front of the
+  // public deployment; X-Forwarded-For's first hop is client-forgeable, so it's only a
+  // fallback. Direct LAN/localhost access has neither and shares the "local" bucket —
+  // acceptable for password-holders; the global cap backstops everything.
+  const ip =
+    c.req.header("cf-connecting-ip") ??
+    c.req.header("x-forwarded-for")?.split(",")[0]?.trim() ??
+    "local";
   if (overLimit(ip)) return c.json({ error: "rate limit exceeded — slow down" }, 429);
   if (inFlight.has(id)) return c.json({ error: "a reply is already in progress for this session" }, 409);
   sends.push({ ip, at: Date.now() });
   inFlight.add(id);
 
-  await db.insert(chatMessage).values({ sessionId: id, role: "user", content: text });
-  if (sess.title === "New chat") {
-    await db.update(chatSession).set({ title: text.slice(0, 60) }).where(eq(chatSession.id, id));
+  try {
+    await db.insert(chatMessage).values({ sessionId: id, role: "user", content: text });
+    if (sess.title === "New chat") {
+      await db.update(chatSession).set({ title: text.slice(0, 60) }).where(eq(chatSession.id, id));
+    }
+  } catch (e) {
+    inFlight.delete(id);
+    console.error("[chat] failed to persist user message:", e);
+    return c.json({ error: "failed to save your message — try again" }, 500);
   }
 
   return streamSSE(c, async (stream) => {
@@ -99,12 +112,17 @@ chat.post("/api/chat/sessions/:id/messages", async (c) => {
           onDelta: async (t) => { await stream.writeSSE({ event: "delta", data: JSON.stringify({ text: t }) }); },
         },
       });
-      const [saved] = await db.insert(chatMessage)
-        .values({ sessionId: id, role: "assistant", content: result.text })
-        .returning();
-      await db.update(chatSession)
-        .set({ sdkSessionId: result.sdkSessionId, updatedAt: new Date() })
-        .where(eq(chatSession.id, id));
+      const saved = await db.transaction(async (tx) => {
+        const [row] = await tx
+          .insert(chatMessage)
+          .values({ sessionId: id, role: "assistant", content: result.text })
+          .returning();
+        await tx
+          .update(chatSession)
+          .set({ sdkSessionId: result.sdkSessionId, updatedAt: new Date() })
+          .where(eq(chatSession.id, id));
+        return row;
+      });
       await stream.writeSSE({ event: "done", data: JSON.stringify({ messageId: saved.id, costUsd: result.costUsd }) });
     } catch (e) {
       console.error("[chat] turn error:", e);

@@ -106,4 +106,37 @@ describe("chat API", () => {
     });
     expect(eleventh.status).toBe(429);
   });
+
+  it("409s while a turn is in flight, then recovers after it drains", async () => {
+    const { runChatTurn } = await import("../../src/chat/agent");
+    let release!: () => void;
+    const gate = new Promise<void>((r) => { release = r; });
+    (runChatTurn as ReturnType<typeof vi.fn>).mockImplementationOnce(async (_text: string, opts: any) => {
+      await gate;
+      await opts.events.onDelta("slow reply");
+      return { text: "slow reply", sdkSessionId: "sdk-slow", costUsd: 0.001 };
+    });
+
+    const created = await app.request("/api/chat/sessions", { method: "POST", headers: JSON_HDRS, body: "{}" });
+    const { id } = await created.json();
+
+    const first = await app.request(`/api/chat/sessions/${id}/messages`, {
+      method: "POST", headers: JSON_HDRS, body: JSON.stringify({ text: "slow one" }),
+    });
+    expect(first.status).toBe(200); // headers ready; stream still open, in-flight held
+
+    const second = await app.request(`/api/chat/sessions/${id}/messages`, {
+      method: "POST", headers: JSON_HDRS, body: JSON.stringify({ text: "too soon" }),
+    });
+    expect(second.status).toBe(409);
+
+    release();
+    await first.text(); // drain the stream — finally releases in-flight
+
+    const third = await app.request(`/api/chat/sessions/${id}/messages`, {
+      method: "POST", headers: JSON_HDRS, body: JSON.stringify({ text: "after drain" }),
+    });
+    expect(third.status).toBe(200);
+    await third.text();
+  });
 });
