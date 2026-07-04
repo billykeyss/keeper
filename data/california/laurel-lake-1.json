@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Laurel Lake #1", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": ["Laurel Lakes", "Laurel Lakes and tributaries"], "gnisId": null, "lon": -118.9140, "lat": 37.5764, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "reaches": [],
+  "species": [
+    { "commonName": "California golden trout", "scientificName": "Oncorhynchus mykiss aguabonita", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_7_50_b_77", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(77) — Laurel Lakes and tributaries", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "(77) Laurel Lakes and tributaries (Mono Co.). All year. Only artificial lures may be used. Minimum size limit: 14 inches total length. 2 trout" },
+    { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General Provisions for waters listed in the special-regulations table", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "R6 Mono Laurel Lake #1 Golden Trout Fingerling Put and Grow August-September" }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Laurel Lake #1 is one of the Laurel Lakes basins (Mono Co.), which are listed as a special-regulation water in CCR §7.50(b)(77) — open all year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(77)",
+      "humanSummary": "Open to fishing all year",
+      "verbatimText": "All year.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_77", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "Only artificial lures may be used at Laurel Lakes and tributaries." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(77)",
+      "humanSummary": "Only artificial lures may be used",
+      "verbatimText": "Only artificial lures may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_77", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "size_limit",
+      "parameters": { "min_length_in": 14, "max_length_in": null, "measurement": "total_length", "unit": "inch", "note": "14-inch total-length minimum size limit for trout under the Laurel Lakes and tributaries special regulation." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(77)",
+      "humanSummary": "14-inch minimum total length size limit",
+      "verbatimText": "Minimum size limit: 14 inches total length.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_77", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "The table entry sets a 2-trout daily bag limit; per 14 CCR 7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit also equals 2." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(77)",
+      "humanSummary": "2 trout daily bag and possession limit",
+      "verbatimText": "2 trout",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "ccr_7_50_b_77", "corroborating": ["ccr_7_50_a"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "California golden trout", "frequency": "seasonal", "seasonStartMonth": 8, "seasonEndMonth": 9, "note": "CDFW's 2026 Provisional Stocking Document for Trout and Inland Salmon lists Laurel Lake #1 (Region 6, Mono Co.) for fingerling-size Golden Trout under the Put and Grow program, with a stated release month range of August-September. Laurel Lake #1 is one of the two Laurel Lakes basins at the head of Laurel Canyon southeast of Mammoth Lakes; CDFW's numeric #1/#2 designations are not publicly mapped to a specific basin, so this record is placed in the larger, lower (southwest) basin by convention. This is CDFW's provisional plan for 2026, not a guaranteed annual constant.", "sourceKeys": { "primary": "cdfw_provisional_stocking_2026", "corroborating": [] } }
+  ]
+}
