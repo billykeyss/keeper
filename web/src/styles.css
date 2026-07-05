@@ -231,8 +231,12 @@ a {
   font-size: 18px;
   margin: 0;
 }
-.stocked-close {
+/* Higher specificity than .sheet-close (which is defined later and forces position:absolute) —
+ *  keep the panel's close button inline in the header so it never overlaps the first row. */
+.stocked-head .stocked-close {
   position: static;
+  width: 30px;
+  height: 30px;
 }
 .stocked-list {
   list-style: none;
