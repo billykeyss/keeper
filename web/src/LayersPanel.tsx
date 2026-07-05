@@ -46,6 +46,7 @@ export function LayersPanel({
   const [waters, setWaters] = useState<WaterItem[] | null>(null);
   const [error, setError] = useState(false);
   const [retry, setRetry] = useState(0);
+  const [speciesQuery, setSpeciesQuery] = useState(""); // client-side filter over the species list
 
   // Species list — reloads when the panel opens, the mode flips, or Retry is hit.
   useEffect(() => {
@@ -86,6 +87,11 @@ export function LayersPanel({
 
   if (!open) return null;
 
+  const speciesQ = speciesQuery.trim().toLowerCase();
+  const shownSpecies = species && (speciesQ
+    ? species.filter((s) => s.commonName.toLowerCase().includes(speciesQ))
+    : species);
+
   return (
     <section className="stocked-panel layers-panel" role="dialog" aria-modal="false" aria-label="Map layers">
       <div className="stocked-head">
@@ -114,9 +120,9 @@ export function LayersPanel({
         <h3 className="layer-section-title">Filter by fish</h3>
         <div className="seg" role="tablist" aria-label="Fish filter mode">
           <button role="tab" aria-selected={fishMode === "stocked"} className={`seg-btn${fishMode === "stocked" ? " on" : ""}`}
-            onClick={() => { onFishMode("stocked"); onFishFilter(null); }}>Stocked</button>
+            onClick={() => { onFishMode("stocked"); onFishFilter(null); setSpeciesQuery(""); }}>Stocked</button>
           <button role="tab" aria-selected={fishMode === "all"} className={`seg-btn${fishMode === "all" ? " on" : ""}`}
-            onClick={() => { onFishMode("all"); onFishFilter(null); }}>All present</button>
+            onClick={() => { onFishMode("all"); onFishFilter(null); setSpeciesQuery(""); }}>All present</button>
         </div>
       </div>
 
@@ -129,9 +135,20 @@ export function LayersPanel({
         </div>
       )}
 
+      {!fishFilter && species && species.length > 0 && (
+        <input
+          className="fish-search"
+          type="search"
+          value={speciesQuery}
+          onChange={(e) => setSpeciesQuery(e.target.value)}
+          placeholder="Search fish…"
+          aria-label="Search fish species"
+        />
+      )}
+
       {!fishFilter && species && (
         <ul className="stocked-list">
-          {species.map((s) => (
+          {(shownSpecies ?? []).map((s) => (
             <li key={s.commonName}>
               <button className="stocked-row" onClick={() => onFishFilter(s.commonName)}>
                 <span className="stocked-species-name">{s.commonName}</span>
@@ -140,6 +157,9 @@ export function LayersPanel({
             </li>
           ))}
           {species.length === 0 && <li className="stocked-empty">No species recorded yet.</li>}
+          {species.length > 0 && shownSpecies && shownSpecies.length === 0 && (
+            <li className="stocked-empty">No fish match “{speciesQuery.trim()}”.</li>
+          )}
         </ul>
       )}
 
