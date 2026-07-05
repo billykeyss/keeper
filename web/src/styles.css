@@ -873,6 +873,67 @@ a {
   margin: 0;
 }
 
+/* --- multi-reach rivers: each stretch is a bounded, numbered card so boundaries are obvious --- */
+.scope-overview {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink-64);
+  background: color-mix(in srgb, var(--warden) 6%, transparent);
+  border-left: 2px solid color-mix(in srgb, var(--warden) 55%, var(--ink-14));
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  padding: 9px 12px;
+  margin: 12px 0 2px;
+}
+.scope-overview strong { color: var(--ink); }
+.scope--reach {
+  padding: 0;
+  border: 1px solid var(--ink-14);
+  border-top: 1px solid var(--ink-14);
+  border-radius: var(--radius-card);
+  background: var(--bone-2);
+  margin: 12px 0;
+  overflow: hidden;
+}
+.scope--reach .scope-head {
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding: 11px 14px;
+  background: color-mix(in srgb, var(--warden) 5%, transparent);
+  border-bottom: 1px solid var(--ink-12);
+}
+.reach-overline {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--warden);
+  margin-bottom: 3px;
+}
+.scope--reach .scope-name {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.reach-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 7px;
+}
+.reach-arrow {
+  color: var(--warden);
+  font-weight: 700;
+  font-family: var(--font-body);
+}
+.scope--reach .rule-list {
+  padding: 2px 14px 12px;
+}
+.scope--reach .scope-empty {
+  padding: 10px 14px 12px;
+}
+
 /* --- rule entries: flat ledger rows divided by hairlines --- */
 .rule-list {
   display: flex;

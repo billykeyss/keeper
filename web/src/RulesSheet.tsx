@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   fetchRules,
   type RulesResponse,
@@ -15,6 +15,13 @@ function todayISO(): string {
   const d = new Date();
   const p = (n: number) => String(n).padStart(2, "0");
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+// The server builds a reach sublabel as "{from} → {to}". Split it back so the two endpoints can
+// be styled distinctly with the arrow between them; fall back to the whole string if it isn't a pair.
+function splitExtent(sublabel: string): [string, string] | null {
+  const parts = sublabel.split(" → ");
+  return parts.length === 2 && parts[0] && parts[1] ? [parts[0], parts[1]] : null;
 }
 
 const WATER_TYPE_LABEL: Record<string, string> = {
@@ -259,34 +266,71 @@ function SheetSkeleton() {
 }
 
 function RulesBody({ data }: { data: RulesResponse }) {
+  // A river/stream split into reaches reads as one undifferentiated wall of rows unless each
+  // reach is a bounded, numbered block. Count + number them so boundaries are obvious.
+  const reachCount = data.scopes.filter((s) => s.kind === "reach").length;
+  let reachNum = 0;
+
   return (
     <div className="stagger">
-      {data.scopes.map((scope, i) => (
-        <section className="scope" data-scope={scope.scope} key={`${scope.kind}:${scope.scope}:${i}`}>
-          <div className="scope-head">
-            <div className="scope-titles">
-              <h3 className="scope-name">
-                {scope.kind === "water" ? "This water" : scope.scope}
-              </h3>
-              {scope.sublabel && <span className="scope-sub">{scope.sublabel}</span>}
-            </div>
-            <StatusPill status={scope.status} size="sm" />
-          </div>
-          {scope.rules.length === 0 ? (
-            <p className="scope-empty">No specific rules recorded for this scope.</p>
-          ) : (
-            <div className="rule-list">
-              {groupBagAndSize(scope.rules).map((item, j) =>
-                item.kind === "merged" ? (
-                  <SpeciesLimitCard species={item.species} bag={item.bag} size={item.size} key={j} />
-                ) : (
-                  <RuleCard rule={item.rule} key={j} />
-                ),
+      {data.scopes.map((scope, i) => {
+        const isReach = scope.kind === "reach";
+        const n = isReach ? ++reachNum : 0;
+        const extent = isReach && scope.sublabel ? splitExtent(scope.sublabel) : null;
+        return (
+          <Fragment key={`${scope.kind}:${scope.scope}:${i}`}>
+            {isReach && n === 1 && reachCount > 1 && (
+              <p className="scope-overview">
+                This water is split into <strong>{reachCount}</strong> regulated sections — each stretch
+                below carries its own rules.
+              </p>
+            )}
+            <section
+              className={`scope${isReach ? " scope--reach" : " scope--water"}`}
+              data-scope={scope.scope}
+            >
+              <div className="scope-head">
+                <div className="scope-titles">
+                  {isReach ? (
+                    <>
+                      <span className="reach-overline">Section {n} of {reachCount}</span>
+                      {/* The from → to extent IS the reach's identity; lead with it (the prose
+                          name is almost always the same span restated, so don't repeat it). */}
+                      <h3 className="scope-name reach-title">
+                        {extent ? (
+                          <>
+                            <span className="reach-endpoint">{extent[0]}</span>
+                            <span className="reach-arrow" aria-hidden="true">→</span>
+                            <span className="reach-endpoint">{extent[1]}</span>
+                          </>
+                        ) : (
+                          scope.sublabel ?? scope.scope
+                        )}
+                      </h3>
+                    </>
+                  ) : (
+                    <h3 className="scope-name">This water</h3>
+                  )}
+                </div>
+                <StatusPill status={scope.status} size="sm" />
+              </div>
+              {scope.rules.length === 0 ? (
+                <p className="scope-empty">No specific rules recorded for this scope.</p>
+              ) : (
+                <div className="rule-list">
+                  {groupBagAndSize(scope.rules).map((item, j) =>
+                    item.kind === "merged" ? (
+                      <SpeciesLimitCard species={item.species} bag={item.bag} size={item.size} key={j} />
+                    ) : (
+                      <RuleCard rule={item.rule} key={j} />
+                    ),
+                  )}
+                </div>
               )}
-            </div>
-          )}
-        </section>
-      ))}
+            </section>
+          </Fragment>
+        );
+      })}
 
       {data.licenses.length > 0 && (
         <section className="scope">
