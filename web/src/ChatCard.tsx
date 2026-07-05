@@ -7,10 +7,17 @@ function fmtDate(iso: string): string {
   return `${MONTH_ABBR[m]} ${d}, ${y}`;
 }
 
+/** Only ever render http(s) links — tool/web data is untrusted, so a javascript:/data:
+ *  URL must never reach an href (defense in depth with the backend's own filter). */
+function safeHref(url: string | null | undefined): string | null {
+  return typeof url === "string" && /^https?:\/\//i.test(url) ? url : null;
+}
+
 function SourceLink({ url }: { url: string | null }) {
-  if (!url) return null;
+  const href = safeHref(url);
+  if (!href) return null;
   return (
-    <a className="rule-link cc-src" href={url} target="_blank" rel="noreferrer noopener">
+    <a className="rule-link cc-src" href={href} target="_blank" rel="noreferrer noopener">
       Source <ExternalIcon />
     </a>
   );
@@ -182,9 +189,9 @@ function WebCard({ data }: { data: unknown }) {
   return (
     <CardShell kind="web" title="From the web · not Keeper-verified">
       <ul className="cc-weblist">
-        {results.slice(0, 8).map((r, i) => (
+        {results.map((r) => ({ r, href: safeHref(r.url) })).filter((x) => x.href).slice(0, 8).map(({ r, href }, i) => (
           <li key={i}>
-            <a className="cc-weblink" href={r.url} target="_blank" rel="noreferrer noopener">
+            <a className="cc-weblink" href={href!} target="_blank" rel="noreferrer noopener">
               {r.title} <ExternalIcon />
             </a>
           </li>

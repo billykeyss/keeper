@@ -36,7 +36,11 @@ function extractWebResults(toolUseResult: unknown): Array<{ title: string; url: 
     for (const c of content) {
       const url = (c as { url?: unknown })?.url;
       const title = (c as { title?: unknown })?.title;
-      if (typeof url === "string") out.push({ title: typeof title === "string" ? title : url, url });
+      // Web results are untrusted — only accept http(s) URLs so a javascript:/data: URL
+      // can never reach an href downstream.
+      if (typeof url === "string" && /^https?:\/\//i.test(url)) {
+        out.push({ title: typeof title === "string" ? title : url, url });
+      }
     }
   }
   return out;
