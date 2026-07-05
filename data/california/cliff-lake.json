@@ -1,0 +1,91 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Cliff Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.14816, "lat": 38.97598, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Desolation Wilderness (Lake Tahoe Basin Management Unit / Eldorado National Forest)", "state": null, "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Brook Trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Cliff Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_tahoe_trib", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Cliff Lake not individually listed; the general Lake Tahoe tributaries rule (b)(152) governs its outlet stream, Meeks Creek, only up to the first lake)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Cliff Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "usfs_deso_overnight", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_deso_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Desolation Day Use Permits & Parking — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Day use is not subject to fees nor limited by quota at any time of the year." },
+    { "key": "sierrafish_cliff", "url": "https://sierrafish.com/lakes/cliff-lake-dw/cliff-lake-dw.php", "title": "Cliff Lake | El Dorado County | Desolation Wilderness — Sierrafish.com", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Cliff Lake is listed as a Brook Trout water in northeastern Desolation Wilderness." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Cliff Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). It is a high lake in the Meeks Creek chain of northeastern Desolation Wilderness (Lake Tahoe basin), above Lake Genevieve. The general Lake Tahoe tributaries rule §7.50(b)(152) closes Tahoe tributaries seasonally (catch-and-release Sat. before Memorial Day–Sep. 30) only 'upstream to the first lake' — i.e. Meeks Creek below Lake Genevieve — so it does not reach Cliff Lake; the lake itself follows the general lake regulation." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_tahoe_trib", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Cliff Lake lies inside Desolation Wilderness (Meeks Bay Trailhead access). A USDA Forest Service wilderness permit is required year-round for overnight use; a quota applies to overnight destination zones from the Friday before Memorial Day through September 30. Day use is free and unlimited by quota, with a self-issue permit required only when permit boxes are installed at the trailheads (day-use permits are not required in winter, roughly October–March). Bear canisters are required for all overnight visitors.", "raw": { "overnight_permit": "required year-round", "overnight_quota_season": "Friday before Memorial Day through September 30", "day_use": "free, no quota; self-issue permit when trailhead boxes installed" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Desolation Wilderness permit program",
+      "humanSummary": "Desolation Wilderness permit: required year-round for overnight use (quota Fri. before Memorial Day–Sep. 30); day use free and un-quota'd, self-issue permit when trailhead boxes are installed.",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_deso_overnight", "corroborating": ["usfs_deso_dayuse"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Fishery note. A Sierra Nevada lake-fishing database (Sierrafish.com) reports Cliff Lake as 'a Brook Trout water in northeastern Desolation Wilderness'; the same trip report rated fishing 1/10 and described it as 'very lifeless', so brook trout, if present, appear to be at low density. CDFW does not list Cliff Lake in its 2026 Provisional Stocking plan and ended aerial stocking of Desolation Wilderness lakes; any brook trout are a self-sustaining remnant of historical plantings, not a current put-and-take fishery. This is a third-party angler report, not a CDFW fish survey.", "raw": { "reported_species": "Brook Trout", "current_stocking": "none (not in CDFW 2026 provisional plan)", "source_type": "third-party angler database" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{ "speciesCommonName": "Brook Trout" }],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Sierrafish.com — Cliff Lake (Desolation Wilderness); CDFW 2026 Provisional Stocking Document (Cliff Lake not listed)",
+      "humanSummary": "Reported as a brook-trout water by a third-party angler database (fishing rated poor); not currently stocked by CDFW.",
+      "verbatimText": "Cliff Lake is listed as a Brook Trout water in northeastern Desolation Wilderness.",
+      "isParaphrase": false, "confidence": "low",
+      "sourceKeys": { "primary": "sierrafish_cliff", "corroborating": ["cdfw_stocking_2026"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

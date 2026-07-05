@@ -1,0 +1,85 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Lyons Creek", "waterType": "creek", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.20987, "lat": 38.82221, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Lyons Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "ccr_7_50_b_4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(4) — American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Lyons Creek is a South Fork American River tributary above Folsom Lake, covered via the 'and their tributaries' catch-all; it is not the sole named exception, Caples Creek)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "(4) American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek) (See subsection (b)(24)). Sat. preceding Memorial Day through Sep. 30. 5 trout Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout" },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Lyons Creek not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "general_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } }, { "label": "fall_winter_artificial_only", "status": "open_catch_release", "start": { "type": "fixed", "month": 10, "day": 1, "verbatim": "October 1" }, "end": { "type": "relative", "ordinal": "last", "weekday": "fri", "month": 5, "relation": "preceding", "anchor_holiday": "memorial_day", "verbatim": "Friday preceding Memorial Day" } } ], "note": "Lyons Creek is a west-slope tributary of the South Fork American River (its headwaters are Lyons Lake and Lake Sylvia in Desolation Wilderness; it flows generally southwest/west toward the South Fork American River, joining above Folsom Lake), NOT a Lake Tahoe tributary — so although it lies in El Dorado County near the Tahoe region, the Lake Tahoe tributary special regulation §7.50(b)(152) does not apply to it. Lyons Creek is not listed by its own name in §7.40(b), but CCR §7.50(b)(4) covers 'American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek' — Lyons Creek is a South Fork American River tributary above Folsom Lake and is not the sole named exception (Caples Creek), so it IS covered by this special regulation via the 'and their tributaries above Folsom Lake' catch-all, which supersedes the general statewide stream regulation §5.85(a)(2) (itself excepting waters listed in §7.50(b))." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Open Saturday preceding Memorial Day through September 30, 5-trout bag limit (special regulation — Lyons Creek is a South Fork American River tributary above Folsom Lake under CCR §7.50(b)(4)); October 1 through the Friday preceding Memorial Day is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "(4) American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek) (See subsection (b)(24)). Sat. preceding Memorial Day through Sep. 30. 5 trout Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": ["ccr_5_85_a_2", "ccr_7_40_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Daily limit of 5 trout, possession limit of 10, under CCR §7.50(b)(4), in effect from the Saturday preceding Memorial Day through September 30." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, Saturday preceding Memorial Day through September 30",
+      "verbatimText": "5 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit (catch and release only) from October 1 through the Friday preceding Memorial Day, under CCR §7.50(b)(4)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release), October 1 through the Friday preceding Memorial Day",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from October 1 through the Friday preceding Memorial Day, for all species of fish, under CCR §7.50(b)(4). During the regular season (Saturday preceding Memorial Day through September 30) this entry imposes no gear restriction." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "7.50(b)(4)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used, October 1 through the Friday preceding Memorial Day",
+      "verbatimText": "Only artificial lures with barbless hook may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. Lyons Creek is wholly within California (El Dorado Co.); no Nevada reciprocity applies." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

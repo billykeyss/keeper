@@ -1,0 +1,73 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Sheridan Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": null, "lon": -119.8380524, "lat": 38.8965524, "verifyCurrent": false },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ndow_waters_sheridan", "url": "https://www.ndow.org/waters/sheridan-creek/", "title": "Sheridan Creek — Nevada Department of Wildlife (waters database entry; no fishing report, species, or stocking listed)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Sheridan Creek    Region Western    County Douglas    Type of water Creek or Stream" },
+    { "key": "osm_sheridan_creek", "url": "https://www.openstreetmap.org/way/824749664", "title": "OpenStreetMap — Sheridan Creek (way 824749664): an east-slope Carson Range stream near the community of Sheridan in Carson Valley, Douglas County, Nevada, draining east away from the Lake Tahoe basin toward the Carson River system (East Fork Carson River drainage) — not a Lake Tahoe tributary", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "s_ndow_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County general (\"All waters\") regulation; Sheridan Creek not separately listed", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "DOUGLAS COUNTY. OPEN WATERS: All waters. (Except as noted below) Open year around. Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye. Hours: Any hour of the day or night." },
+    { "key": "s_ndow_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "CR 25-16 — Douglas County CLOSED WATERS (Sheridan Creek not among the listed closures)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "DOUGLAS COUNTY. CLOSED WATERS: Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
+    { "key": "s_ndow_cr2516_possession", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "CR 25-16 — general possession-limit rule (twice the daily limit)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "The \"Possession Limit\" is two times the daily limit for the water in which the fish were caught." },
+    { "key": "s_nrs_502_010", "url": "https://www.leg.state.nv.us/nrs/nrs-502.html", "title": "NRS 502.010 — License or permit required for hunting or fishing; exceptions; limitations", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "A person who hunts or fishes any wildlife without having first procured a license or permit to do so, as provided in this title, is guilty of a misdemeanor, except that: (a) A license to hunt or fish is not required of a resident of this State who is under 12 years of age, unless required for the issuance of tags as prescribed in this title or by the regulations of the Commission. (b) A license to fish is not required of a nonresident of this State who is under 12 years of age, but the number of fish taken by the nonresident must not exceed 50 percent of the daily creel and possession limits as provided by law." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_year_round", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Sheridan Creek is a small east-slope Carson Range stream near the community of Sheridan in Carson Valley, Douglas County, Nevada (OSM way 824749664; NDOW waters database lists it as Region Western, County Douglas, Type of water Creek or Stream). It drains east — away from the Lake Tahoe basin, over the Carson Range crest — into the Carson River system, so it is NOT a Lake Tahoe tributary and the California §7.50(b) Tahoe-tributary closure and the CR 25-16 'Lake Tahoe and tributaries' listing do not apply. It is a Nevada water governed by NDOW. Sheridan Creek is not separately named in CR 25-16's Douglas County listing (only Lake Tahoe, Spooner Lake, Topaz Lake, and the Douglas County Community Fishing Ponds are broken out) and is not among the Douglas County closed waters, so NDOW's Douglas County general 'All waters' rule applies: open year around." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "Open year-round (Nevada Western Region / Douglas County general 'All waters' regulation; Sheridan Creek is not a separately listed exception or a closed water).",
+      "verbatimText": "OPEN WATERS: All waters. (Except as noted below) Open year around.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ndow_cr2516_douglas_closed", "ndow_waters_sheridan"] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "Douglas County general 'All waters' rule allows fishing any hour of the day or night. (The restricted 1-hour-before-sunrise-to-2-hours-after-sunset window in CR 25-16 applies to Lake Tahoe, Spooner Lake, and Topaz Lake specifically — not to this creek.)" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "Fishing permitted any hour of the day or night.",
+      "verbatimText": "Any hour of the day or night",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Douglas County general limit: for trout, 5 daily and 10 in possession (possession = two times the daily limit). The full 'All waters' row also allows 5 mountain whitefish and 15 warmwater game fish per day (of which not more than 5 black bass and 5 walleye), but NDOW documents no fishery or fish species for Sheridan Creek, so no water-specific sub-limit applies." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "Nevada Douglas County general limit: 5 trout per day / 10 in possession (plus 5 mountain whitefish and 15 warmwater game fish per day under the general 'All waters' row).",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ndow_cr2516_possession"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for anglers 12 years of age and older (residents and nonresidents); a nonresident under 12 may fish without a license but is limited to 50% of the daily creel and possession limits. Because this is a Nevada water and not Lake Tahoe, the Lake Tahoe CA/NV license reciprocity does not apply — a Nevada fishing license is required." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NRS 502.010",
+      "humanSummary": "Nevada fishing license required for anglers 12 and older.",
+      "verbatimText": "A person who hunts or fishes any wildlife without having first procured a license or permit to do so, as provided in this title, is guilty of a misdemeanor, except that: (a) A license to hunt or fish is not required of a resident of this State who is under 12 years of age... (b) A license to fish is not required of a nonresident of this State who is under 12 years of age, but the number of fish taken by the nonresident must not exceed 50 percent of the daily creel and possession limits as provided by law.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_nrs_502_010", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

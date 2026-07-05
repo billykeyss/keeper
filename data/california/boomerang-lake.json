@@ -1,0 +1,90 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Boomerang Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.19402, "lat": 38.87258, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Desolation Wilderness (Eldorado National Forest)", "state": null, "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Boomerang Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Boomerang Lake not listed; the Lake Tahoe tributaries rule (b)(152) does not apply — Boomerang Lake is on the Pacific slope, not a Lake Tahoe tributary)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Boomerang Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "usfs_deso_overnight", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_deso_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Desolation Day Use Permits & Parking — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Day use is not subject to fees nor limited by quota at any time of the year." },
+    { "key": "hikingtales_boomerang", "url": "https://hikingtales.com/sierra-nevada/desolation-wilderness-september-2023/twin-lakes/day-2-twin-lakes-basin/", "title": "Day 2: Twin Lakes Basin — hikingtales.com (trip report identifying Boomerang Lake)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "The main trail passed by a small lake, and when I checked my GPS it said that it was called Boomerang Lake. As you might expect, it was shaped roughly like a boomerang." },
+    { "key": "sierrarec_backcountry_fishing", "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/backcountry-fishing-in-desolation-wilderness/", "title": "Backcountry Fishing in Desolation Wilderness — Sierra Rec Magazine", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "biologists with the Lake Tahoe Basin Management Unit, along with the California Department of Fish and Game, used gill nets to remove the various trout species from selected lakes." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Boomerang Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). It is a small lake in the Twin Lakes basin above Wrights Lake, in Desolation Wilderness (Eldorado National Forest, El Dorado Co.), on the trail between Twin Lakes and Island Lake. It drains west via Wrights Lake to the American River watershed on the Pacific slope — not into the Lake Tahoe basin — so the Lake Tahoe tributaries special regulation §7.50(b)(152), which closes Tahoe tributaries seasonally 'upstream to the first lake,' does not reach it; the lake follows the general lake regulation." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Boomerang Lake lies inside Desolation Wilderness (Twin Lakes / Rockbound Trailhead access near Wrights Lake). A USDA Forest Service wilderness permit is required year-round for overnight use; an overnight quota applies from the Friday before Memorial Day through September 30. Day use is free and not limited by quota. Bear canisters are required for all overnight visitors.", "raw": { "overnight_permit": "required year-round", "overnight_quota_season": "Friday before Memorial Day through September 30", "day_use": "free, no quota", "bear_canister": "required for overnight visitors" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Desolation Wilderness permit program",
+      "humanSummary": "Desolation Wilderness permit: required year-round for overnight use (quota Fri. before Memorial Day–Sep. 30); day use free and un-quota'd.",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_deso_overnight", "corroborating": ["usfs_deso_dayuse"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Fishery note. No fish species are recorded for Boomerang Lake here because no authoritative source documents a current fishery in it: CDFW does not list Boomerang Lake in its 2026 Provisional Stocking plan, and no CDFW fish survey or reliable angler report reviewed names a species for this specific lake (trip reports describe it only as a small boomerang-shaped lake on the Twin Lakes–Island Lake trail). The surrounding Twin Lakes basin is an active Sierra Nevada yellow-legged frog restoration area — adjacent Island Lake has been gill-netted to remove trout — so historical trout, if ever present, may have been removed or reduced. Species and stocking are intentionally left empty rather than inferred from the general 'Desolation lakes hold brook/rainbow trout' statements.", "raw": { "reported_species": "none documented for this lake", "current_stocking": "none (not in CDFW 2026 provisional plan)", "basin_note": "Twin Lakes / Island Lake basin — Sierra Nevada yellow-legged frog restoration; adjacent Island Lake gill-netted" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Sierra Rec Magazine — Backcountry Fishing in Desolation Wilderness; CDFW 2026 Provisional Stocking Document (Boomerang Lake not listed)",
+      "humanSummary": "No fishery documented for Boomerang Lake specifically; not stocked, and its Twin Lakes/Island Lake basin is under yellow-legged-frog trout-removal management.",
+      "verbatimText": "biologists with the Lake Tahoe Basin Management Unit, along with the California Department of Fish and Game, used gill nets to remove the various trout species from selected lakes.",
+      "isParaphrase": false, "confidence": "low",
+      "sourceKeys": { "primary": "sierrarec_backcountry_fishing", "corroborating": ["cdfw_stocking_2026", "hikingtales_boomerang"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

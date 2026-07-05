@@ -1,0 +1,96 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Burton Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": null, "lon": -120.14339, "lat": 39.19383, "verifyCurrent": true },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "castateparks", "name": "California State Parks — Sierra District (Burton Creek State Park)", "state": "CA", "type": "state_agency", "roles": ["land_management", "access"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [
+    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_tahoe_trib", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "Cal. Code Regs. Tit. 14, § 7.50(b)(152) — Alphabetical List of Trout Waters with Special Fishing Regulations (Tahoe Lake and tributaries)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "ccr_7_50_a1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "Cal. Code Regs. Tit. 14, § 7.50(a)(1) — General Provisions (waters listed in subsection (b) closed except during the open season shown)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Every body of water listed in subsection (b) is closed to all fishing except during the open season as shown." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Burton Creek not listed by name)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "osm_burton_creek", "url": "https://www.openstreetmap.org/way/508309291", "title": "OpenStreetMap way 508309291 — named waterway \"Burton Creek\" (waterway=stream), traced flowing southeast through Burton Creek State Park toward Lake Tahoe near Lake Forest / Tahoe City, wholly within Placer County, CA (verified via Overpass; state/county confirmed by Nominatim reverse geocoding)", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "castateparks_burton", "url": "https://www.parks.ca.gov/?page_id=512", "title": "Burton Creek State Park — California State Parks (park identity and use rules)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "castateparks", "retrievedDate": "2026-07-04", "quotedText": "Undeveloped park on the outskirts of Tahoe City, with 6 miles of trails for hiking, mountain biking, cross-country skiing and snowshoeing. Park Hours Sunrise to Sunset. No Motorized Vehicles allowed in the park." }
+  ],
+  "groups": [
+    {
+      "key": "g_tahoe_trib", "authorityKey": "cdfw", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "Burton Creek is a north-shore Lake Tahoe tributary (it runs southeast through Burton Creek State Park to Lake Tahoe near Lake Forest / Tahoe City, Placer Co.). It is not listed under its own name in §7.40(b) or §7.50(b), but as a Tahoe Lake tributary it is governed by the special Tahoe-tributary regulation §7.50(b)(152)(A): catch-and-release open season Sat. before Memorial Day–Sep. 30, artificial lures with barbless hooks only, 0 trout; closed the remainder of the year per §7.50(a)(1). There is no lake on Burton Creek's main stem, so 'upstream to the first lake' covers the entire creek.",
+      "verbatimText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."
+    }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "tributary_cr_season", "status": "open_catch_release",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -2, "verbatim": "Saturday preceding Memorial Day" },
+            "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } }
+        ],
+        "note": "Burton Creek is a tributary of Lake Tahoe (it flows southeast through Burton Creek State Park into Lake Tahoe near Lake Forest / Tahoe City). It is not listed by its own name in §7.40(b) or §7.50(b), but it falls under the Lake Tahoe tributaries entry §7.50(b)(152)(A), which applies to 'Tahoe Lake tributaries upstream to the first lake.' Per §7.50(a)(1), waters listed in subsection (b) are closed to all fishing except during the shown open season — so the creek is closed Oct. 1 through the Friday preceding the Saturday before Memorial Day. Date_spec encodes 'Saturday preceding Memorial Day' as the last Monday of May (Memorial Day) minus 2 days, since the resolver has no anchor_holiday implementation."
+      },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A); 7.50(a)(1)",
+      "humanSummary": "Open catch-and-release only, Saturday before Memorial Day through Sept. 30; closed the rest of the year (Lake Tahoe tributary special regulation).",
+      "verbatimText": "Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": ["ccr_7_50_a1", "osm_burton_creek"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "0 trout (catch-and-release) during the open window.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A); 7.50(a)(1)",
+      "humanSummary": "Artificial lures with barbless hooks only during the open window; no bait (gear restriction applies to all species per §7.50(a)(1)).",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": ["ccr_7_50_a1"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. Burton Creek is wholly within California (Placer Co.); no Nevada reciprocity applies to the creek." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+.",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "The lower/most-accessible reach of Burton Creek runs through Burton Creek State Park (California State Parks — Sierra District), an undeveloped day-use park on the outskirts of Tahoe City open sunrise to sunset with no motorized vehicles allowed. This is a park land-use rule, not a fishing regulation.", "raw": { "hours": "sunrise to sunset", "motor_vehicles": "prohibited in the park" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "castateparks", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "California State Parks — Burton Creek State Park (park hours / use rules)",
+      "humanSummary": "Within Burton Creek State Park: day-use only, sunrise to sunset; no motorized vehicles in the park.",
+      "verbatimText": "Park Hours Sunrise to Sunset. No Motorized Vehicles allowed in the park.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "castateparks_burton", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

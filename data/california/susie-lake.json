@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Susie Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.1268714, "lat": 38.8817144, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Desolation Wilderness (Eldorado National Forest)", "state": "CA", "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Susie Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Susie Lake not listed; only 'Tahoe Lake and tributaries' (b)(152) appears, and it reaches flowing tributaries only upstream to the first lake)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "(a) General Provisions: (1) Every body of water listed in subsection (b) is closed to all fishing except during the open season as shown." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Susie Lake not listed among El Dorado Co. release waters)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "usfs_desolation_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Desolation Day Use Permits & Parking — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-04", "quotedText": "Day users may obtain a free Day Use permit from the Placerville Ranger Station or may issue themselves a day use permit at most major trailheads in the summer. During the winter, day use permits are not required (roughly October to March depending on weather conditions). Day use is not subject to fees nor limited by quota at any time of the year. Permits are only required when the permit boxes are installed at the trailheads." },
+    { "key": "usfs_desolation_overnight", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-04", "quotedText": "Permits are required year-round for overnight use." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Susie Lake is a high alpine lake in the Desolation Wilderness (El Dorado Co.), in the Glen Alpine Creek / Fallen Leaf Lake drainage within the Lake Tahoe basin (Lake Tahoe Basin Management Unit) — but it sits well upstream of the 'first lake', so the special Lake Tahoe tributary closure (§7.50(b)(152), which reaches only flowing tributaries upstream to the first lake, and within 300 ft of their mouths) does not apply to the lake body itself. The lake is not listed by name in §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation §5.85(a)(1): open all year, 5/10." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Susie Lake lies inside the Desolation Wilderness (Eldorado National Forest management), where a wilderness permit is required to visit. Day use: a free self-issued permit is required at trailheads during the summer quota season; day use is never subject to a fee or quota. In winter (roughly October–March) no day-use permit is required.", "raw": { "access_type": "day use", "permit": "free self-issue at trailhead during summer", "fee": "none for day use" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Eldorado National Forest — Desolation Day Use Permits & Parking",
+      "humanSummary": "Free Desolation Wilderness day-use permit required (self-issue at trailheads in summer); no day-use fee or quota",
+      "verbatimText": "Day users may obtain a free Day Use permit from the Placerville Ranger Station or may issue themselves a day use permit at most major trailheads in the summer. During the winter, day use permits are not required (roughly October to March depending on weather conditions). Day use is not subject to fees nor limited by quota at any time of the year. Permits are only required when the permit boxes are installed at the trailheads.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_desolation_dayuse", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Overnight camping in the Desolation Wilderness requires a wilderness permit year-round; a per-day, per-zone quota is in place from the Friday before Memorial Day through September 30 (70% reservable online at recreation.gov, 30% walk-in). Fees apply to overnight permits only.", "raw": { "access_type": "overnight", "permit": "required year-round", "quota_season": "Friday before Memorial Day through September 30", "overnight_fee_verbatim": "Overnight Wilderness Permit Fee - $5/person for one night, $10/person for 2 to 14 nights. The cost of a single permit will not exceed $100. Children 12 and under are free.", "quota_verbatim": "A quota in place from the Friday before Memorial Day through September 30 of each year." } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Eldorado National Forest — Desolation Wilderness Permits",
+      "humanSummary": "Overnight Desolation Wilderness permit required year-round; quota (Fri before Memorial Day–Sept 30) and per-person fees apply",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_desolation_overnight", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

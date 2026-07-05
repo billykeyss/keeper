@@ -1,0 +1,90 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Jabu Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.1225376, "lat": 38.8654907, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Lake Tahoe Basin Management Unit / Eldorado National Forest (Desolation Wilderness)", "state": "CA", "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Jabu Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Jabu Lake not listed; only 'Tahoe Lake and tributaries' (152) special listing appears, and it reaches flowing tributaries upstream to the first lake — not this lake)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Jabu Lake not listed among El Dorado Co. release waters)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "usfs_frog_project", "url": "https://www.fs.usda.gov/r05/laketahoebasin/projects/archive/24336", "title": "USFS Lake Tahoe Basin Management Unit — Sierra Nevada Yellow-Legged Frog Habitat Restoration, Desolation Wilderness (Project #24336; Status: Completed)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "A combination of gill netting and electrofishing to remove introduced brook trout and rainbow trout will occur within selected lakes in Desolation Wilderness to restore habitat for mountain yellow-legged frog (Rana muscosa). Project Summary ... Location Summary: LTBMU Desolation Wilderness, Ralston, Tamarack, Cagwin, Magerery, Lucille, Le Conte, Jabu Lakes." },
+    { "key": "tahoe_quarterly_deso", "url": "https://tahoequarterly.com/outdoors/desolation-wilderness-cherished-and-guarded", "title": "Desolation Wilderness: Cherished and Guarded — Tahoe Quarterly", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Plans are under way this summer to use gillnetting and electrofishing in the same lakes that were previously treated—Tamarack, Ralston, Cagwin, Lake Margery and Lake Lucille, plus Le Conte and Jabu, according to U.S. Forest Service reports." },
+    { "key": "usfs_deso_permit", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Eldorado National Forest — Desolation Wilderness Permits — USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_deso_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Eldorado National Forest — Desolation Day Use Permits & Parking — USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Day users may obtain a free Day Use permit from the Placerville Ranger Station or may issue themselves a day use permit at most major trailheads in the summer. During the winter, day use permits are not required (roughly October to March depending on weather conditions)." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Jabu Lake is a high alpine lake in the Desolation Wilderness (El Dorado Co.), within the Lake Tahoe basin (administered by the USFS Lake Tahoe Basin Management Unit) but is a standing lake, not a flowing tributary — so the special Lake Tahoe tributary rule (§7.50(b)(152), which reaches only 'tributaries upstream to the first lake' and the lake within 300 ft of their mouths) does not apply to it. The lake is not listed by name in §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation §5.85(a)(1): open all year, 5/10. Note the lake is currently fishless by design (see the frog-restoration entry) — the season/limit apply de jure, but no fishery remains." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Jabu Lake was intentionally rendered fishless. Under the USFS Sierra Nevada Yellow-Legged Frog Habitat Restoration Project in Desolation Wilderness (decision 2008; Lake Tahoe Basin Management Unit with the California Department of Fish and Game), introduced trout were removed by gill netting and electrofishing to restore habitat for the mountain yellow-legged frog (Rana muscosa/sierrae); Jabu is one of the named treated lakes and a frog-reintroduction site. No sport fishery currently remains, which is why the species list is empty.", "raw": { "management": "fishless by design", "method": "gill netting and electrofishing", "agencies": "USFS LTBMU + CDFG", "decision_year": 2008, "status": "Completed" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": null,
+      "citation": "USFS LTBMU Project #24336 — Sierra Nevada Yellow-Legged Frog Habitat Restoration, Desolation Wilderness",
+      "humanSummary": "Managed fishless: USFS removed introduced trout by gill netting/electrofishing to restore mountain yellow-legged frog habitat; no fishery remains.",
+      "verbatimText": "A combination of gill netting and electrofishing to remove introduced brook trout and rainbow trout will occur within selected lakes in Desolation Wilderness to restore habitat for mountain yellow-legged frog (Rana muscosa).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_frog_project", "corroborating": ["tahoe_quarterly_deso"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Jabu Lake lies inside the Desolation Wilderness (USDA Forest Service, Lake Tahoe Basin Management Unit / Eldorado National Forest). A wilderness permit is required to enter: overnight use requires a permit year-round (with a quota system from the Friday before Memorial Day through Sept. 30, reserved via Recreation.gov), and day-use permits are required in summer (free, self-issued at major trailheads); day-use permits are not required in winter (roughly October–March).", "raw": { "overnight_permit": "required year-round", "day_use_permit": "required in summer (free, self-issue at trailheads); not required in winter" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": null,
+      "citation": "Eldorado National Forest — Desolation Wilderness Permits (USDA Forest Service)",
+      "humanSummary": "Inside Desolation Wilderness: wilderness permit required — overnight year-round, day-use in summer (free self-issue at trailheads)",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_deso_permit", "corroborating": ["usfs_deso_dayuse"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Waca Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": "268722", "lon": -120.1413116, "lat": 38.8547679, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Eldorado National Forest (Desolation Wilderness)", "state": "CA", "type": "federal", "roles": ["land_management", "access", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Waca Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Waca Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_desolation_abmp_2012", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=59961", "title": "Aquatic Biodiversity Management Plan for the Desolation Wilderness — California Department of Fish and Wildlife (12/19/2012)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "It had been stocked with brook trout since 1931 but was known to have little to no natural reproduction. Stocking was halted in 1998 and the lake had few fish by 2003 when it was surveyed by CDFG HML personnel. CDFG subsequently identified Waca Lake as a fish removal site. ... In 2008, CDFG gill net surveys indicated the lake is fishless and SNYLF have subsequently established breeding in the lake. The lake will be managed as an amphibian resource and CDFG will continue to monitor for any remaining fish." },
+    { "key": "usfs_desolation_permits", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-04", "quotedText": "Permits are required year-round for overnight use. ... HIGH USE SEASON A quota in place from the Friday before Memorial Day through September 30 of each year." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Waca Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1) (open all year). Although in the Lake Tahoe Basin region, it is NOT a Lake Tahoe tributary: CDFW records place it in the Pyramid Creek planning watershed — 'Waca Lake flows ephemerally to Pyramid Lake', which drains via Pyramid Creek to the South Fork American River (west of the Sierra crest). The §7.50(b)(152) Tahoe-tributary catch-and-release closure therefore does not apply." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water and not a Lake Tahoe tributary)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Fishery status: Waca Lake was stocked with brook trout from 1931 through 1998 but had little to no natural reproduction. CDFW identified it as a fish-removal site to protect Sierra Nevada yellow-legged frogs; Eldorado National Forest set over-winter gill nets in 2006 and 2007, and by 2008 CDFW gill-net surveys found the lake fishless. It is now managed as an amphibian (Rana sierrae) resource. This is a fishery-management status, not a take restriction — general statewide lake take rules still legally apply, but the lake is fishless.", "raw": { "stocking_status": "halted 1998; fish removed", "last_planted_year": 1998, "current_management": "amphibian resource — Sierra Nevada yellow-legged frog", "fish_status": "fishless as of 2008 gill-net surveys" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Aquatic Biodiversity Management Plan for the Desolation Wilderness (2012) — Pyramid Creek PWS",
+      "humanSummary": "Historically a stocked brook trout lake (1931–1998); CDFW removed the fish to protect Sierra Nevada yellow-legged frogs and the lake was found fishless by 2008 — now managed as an amphibian resource.",
+      "verbatimText": "In 2008, CDFG gill net surveys indicated the lake is fishless and SNYLF have subsequently established breeding in the lake. The lake will be managed as an amphibian resource and CDFG will continue to monitor for any remaining fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_desolation_abmp_2012", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Waca Lake lies within the Desolation Wilderness (Eldorado National Forest). A USDA Forest Service wilderness permit is required for overnight use year-round; during the high-use quota season (Friday before Memorial Day through September 30) overnight visits are subject to a zone quota and day-use permits are required at the trailheads.", "raw": { "overnight_permit": "required year-round", "quota_season": "Friday before Memorial Day through September 30", "issuer": "USDA Forest Service / Recreation.gov" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS Eldorado National Forest — Desolation Wilderness Permits",
+      "humanSummary": "Access is inside the Desolation Wilderness: a Forest Service wilderness permit is required year-round for overnight use, with an overnight zone quota in effect from the Friday before Memorial Day through September 30.",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_desolation_permits", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

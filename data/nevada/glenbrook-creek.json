@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Glenbrook Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": null, "lon": -119.922, "lat": 39.086, "verifyCurrent": false },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ndow_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County CLOSED WATERS", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "CLOSED WATERS: Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
+    { "key": "ndow_cr2516_douglas_tahoe", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16 — Douglas County, Lake Tahoe and tributaries", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Lake Tahoe and tributaries    Open year around    Daily: 5 game fish    Possession: 10 game fish    1 hour before sunrise to 2 hours after sunset" },
+    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "spatial", "boundary_definition": "described",
+        "note": "Glenbrook Creek from its mouth at Lake Tahoe (Glenbrook Bay, Douglas Co., NV) upstream to the U.S. Highway 50 crossing is a CR 25-16 Douglas County closed water — closed to all fishing. The Highway 50 crossing is at roughly 39.0892, -119.9116; the closed reach runs from there down to the lake. This lower reach is the main, accessible portion of the creek through Glenbrook. Above Highway 50, the reach is not named in the closed-waters list and falls under the general Douglas County 'Lake Tahoe and tributaries' listing (see the season/bag/hours rules)."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Douglas Co. — Closed Waters)",
+      "humanSummary": "Glenbrook Creek is closed to all fishing from Lake Tahoe upstream to Highway 50 (Douglas County closed-waters listing).",
+      "verbatimText": "Glenbrook Creek from Lake Tahoe to Highway 50.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_closed", "corroborating": [] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_year_round", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Glenbrook Creek flows into Lake Tahoe at Glenbrook Bay in Douglas County, Nevada, so it is a Lake Tahoe tributary governed by NDOW's Douglas County 'Lake Tahoe and tributaries' listing in CR 25-16: open year-round. IMPORTANT: this open-year-round season applies only to the reach ABOVE Highway 50 — the reach from Lake Tahoe up to Highway 50 is a named closed water (see the closure rule) and is closed to all fishing. This is the Nevada rule and differs from the California §7.50(b)(152) seasonal catch-and-release regime that governs Tahoe tributaries on the California side." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "Open year-round as a Lake Tahoe tributary — but only above Highway 50; the Lake Tahoe-to-Highway 50 reach is a closed water.",
+      "verbatimText": "Lake Tahoe and tributaries    Open year around",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_tahoe", "corroborating": ["ndow_cr2516_douglas_closed"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_all", "counting_rule": "The Douglas County 'Lake Tahoe and tributaries' listing sets 5 game fish daily and 10 in possession, with no species sub-limit. Applies to the open reach above Highway 50; the Lake Tahoe-to-Highway 50 reach is closed to all fishing." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "5 game fish daily, 10 in possession (Lake Tahoe and tributaries listing; applies above Highway 50).",
+      "verbatimText": "Daily: 5 game fish    Possession: 10 game fish",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_tahoe", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": {
+        "basis": "sunrise_sunset",
+        "allowed_from": { "anchor": "sunrise", "offset_minutes": -60, "verbatim": "1 hour before sunrise" },
+        "allowed_to": { "anchor": "sunset", "offset_minutes": 120, "verbatim": "2 hours after sunset" },
+        "note": "The Douglas County 'Lake Tahoe and tributaries' listing restricts fishing hours to 1 hour before sunrise through 2 hours after sunset (unlike most other Douglas waters, which are open any hour of the day or night). Applies to the open reach above Highway 50."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "Fishing hours: 1 hour before sunrise to 2 hours after sunset.",
+      "verbatimText": "1 hour before sunrise to 2 hours after sunset",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_tahoe", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for residents and nonresidents 12 years of age or older; anglers under 12 need no license. The California/Nevada Lake Tahoe license reciprocity (and the Nevada Interstate Boundary Waters License) applies to fishing IN Lake Tahoe itself, so it does NOT extend to Glenbrook Creek above the lake — a Nevada fishing license is required to fish the open (above-Highway-50) reach of this tributary." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "Nevada General Statewide Fishing Regulations (NDOW)",
+      "humanSummary": "Nevada fishing license required for anglers 12+ (lake license reciprocity does not extend to the tributary).",
+      "verbatimText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_license_req", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

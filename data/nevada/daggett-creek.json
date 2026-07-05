@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Daggett Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": null, "lon": -119.85915, "lat": 38.96543, "verifyCurrent": true },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ndow_cr2516_douglas_open", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County OPEN WATERS (general 'All waters' regulation)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "OPEN WATERS: All waters. (Except as noted below)    Open year around    Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye    Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye    Any hour of the day or night" },
+    { "key": "ndow_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16 — Douglas County CLOSED WATERS (Daggett Creek not listed)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "CLOSED WATERS: Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
+    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." },
+    { "key": "wiki_daggett_pass_divide", "url": "https://en.wikipedia.org/wiki/Daggett_Pass", "title": "Daggett Pass — Wikipedia (Carson Range divide, Douglas Co. NV; Lake Tahoe Basin to the west, Humboldt-Toiyabe / Carson Valley to the east)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Daggett Pass is a road mountain pass located in the Carson Range, a spur of the Sierra Nevada. It sits at an elevation of 7,343 ft (2,238 m) in Douglas County, Nevada, on the border between the Lake Tahoe Basin Management Unit to the west and the Humboldt-Toiyabe National Forest to the east." },
+    { "key": "osm_daggett_creek", "url": "https://www.openstreetmap.org/way/832968545", "title": "OpenStreetMap — Daggett Creek (way 832968545): intermittent creek on the east slope of the Carson Range, flowing east from below Daggett Pass (~-119.860) down toward the Carson Valley floor (~-119.840); the Carson River watershed, not the Lake Tahoe basin", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_year_round", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Daggett Creek is an intermittent east-slope creek in the Carson Range that flows EAST — from just below Daggett Pass (Kingsbury Grade, NV 207) down toward the Carson Valley floor in Douglas County, Nevada. Daggett Pass is the drainage divide 'on the border between the Lake Tahoe Basin Management Unit to the west and the Humboldt-Toiyabe National Forest to the east' (Wikipedia), so Daggett Creek drains to the Carson River watershed (Carson Valley), NOT to Lake Tahoe. It is therefore NOT covered by NDOW's Douglas County 'Lake Tahoe and tributaries' listing (which is restricted to Tahoe-basin waters and imposes 1-hour-before-sunrise-to-2-hours-after-sunset hours). Daggett Creek is not named in the Douglas County CLOSED WATERS list (Topaz Marina jetties, the Cave Rock boat-launch area, and Glenbrook Creek from Lake Tahoe to Highway 50), so it falls under the Douglas County OPEN WATERS general regulation: 'All waters (Except as noted below) — Open year around', with the county's general limits and any-hour fishing. Because the creek is intermittent, its fishery is limited; no source names any fish species or stocking for it, so species and stocking are left empty." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Open year-round under the Douglas County general open-waters regulation. Daggett Creek drains east of Daggett Pass to the Carson Valley (Carson River watershed) and is NOT a Lake Tahoe tributary, so the 'Lake Tahoe and tributaries' listing does not apply; it is also not among the county's closed waters.",
+      "verbatimText": "All waters. (Except as noted below)    Open year around",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": ["ndow_cr2516_douglas_closed", "wiki_daggett_pass_divide"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Douglas County general open-waters limit: daily 5 trout, 5 mountain whitefish, and 15 warmwater game fish (of which not more than 5 may be black bass and 5 may be walleye); possession 10 trout, 10 mountain whitefish, and 30 warmwater game fish (of which not more than 10 may be black bass and 10 may be walleye). The 5/10 shown here is the trout component of that combined structure." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Douglas County general limits: 5 trout, 5 mountain whitefish, and 15 warmwater game fish daily (max 5 black bass, 5 walleye); possession 10 trout, 10 mountain whitefish, 30 warmwater game fish (max 10 black bass, 10 walleye).",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye    Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "The Douglas County general open-waters regulation allows fishing 'Any hour of the day or night' — unlike the county's 'Lake Tahoe and tributaries' listing, which restricts hours to 1 hour before sunrise through 2 hours after sunset. Daggett Creek, being an east-slope Carson Valley water rather than a Tahoe tributary, follows the any-hour general rule." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Fishing allowed any hour of the day or night (Douglas County general open-waters rule; no time-of-day restriction).",
+      "verbatimText": "Any hour of the day or night",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for residents and nonresidents 12 years of age or older; anglers under 12 need no license (nonresidents under 12 are limited to 50% of the daily bag). Daggett Creek is a Carson Valley drainage water, not part of Lake Tahoe, so no Lake Tahoe California/Nevada license reciprocity applies — a Nevada fishing license is required." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "Nevada General Statewide Fishing Regulations (NDOW)",
+      "humanSummary": "Nevada fishing license required for anglers 12+.",
+      "verbatimText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_license_req", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

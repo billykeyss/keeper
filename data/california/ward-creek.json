@@ -1,0 +1,84 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Ward Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": null, "lon": -120.19973, "lat": 39.14039, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "historical" }
+  ],
+  "speciesGroups": [
+    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_152", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(152) — Alphabetical List of Trout Waters with Special Fishing Regulations (Tahoe Lake and tributaries)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout" },
+    { "key": "ccr_7_50_a1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(1) — General Provisions (closed except during the shown open season)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Every body of water listed in subsection (b) is closed to all fishing except during the open season as shown. Unless otherwise provided, waters shown as open to trout fishing in subsection (b), are open to fishing for other species. Gear restrictions listed in this section apply to the take of all species of fish unless otherwise noted." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_ward_restoration", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=245363", "title": "California Department of Fish and Wildlife Director's Concurrence — Ward Creek Restoration Project (California Tahoe Conservancy, Placer Co.)", "documentType": "pdf", "instrumentType": "directors_order", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "The Ward Creek Restoration Project (Project) is approximately 36.1 acres in size and is located on public land in Placer County, centered approximately at 39.138869, -120.187658. ... Ward Creek is one of the largest sediment producers, on a unit area basis, of all the tributaries flowing into Lake Tahoe. ... Restored instream habitat is expected to benefit a range of aquatic species within the watershed, including Lahontan cutthroat trout (listed as threatened under the federal ESA and a CDFW SCC). Aquatic species that have the potential to benefit from the Project include mountain whitefish (Prosopium williamsoni) and Lahontan lake tui chub (Siphateles bicolor pectinifer)." }
+  ],
+  "groups": [
+    {
+      "key": "g_tahoe_trib", "authorityKey": "cdfw", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "Ward Creek is a Lake Tahoe tributary — it flows east into Lake Tahoe about 2.7 miles south of Tahoe City (Placer Co.) — so it is governed by the Tahoe Lake tributary special regulation rather than the general trout stream season: catch-and-release only from the Saturday preceding Memorial Day through Sep. 30, artificial lures with barbless hooks only, 0 trout, and closed to all fishing the rest of the year per §7.50(a)(1). There is no lake on Ward Creek's main stem, so 'upstream to the first lake' covers essentially the entire creek.",
+      "verbatimText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout"
+    }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "tributary_cr_season", "status": "open_catch_release",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -2, "verbatim": "Saturday preceding Memorial Day" },
+            "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "Sep. 30" } }
+        ],
+        "note": "Ward Creek is a direct Lake Tahoe tributary and is therefore subject to §7.50(b)(152)(A) ('Tahoe Lake tributaries upstream to the first lake'), NOT the general last-Sat-April–Nov-15 trout stream season. Open catch-and-release only from the Saturday preceding Memorial Day through Sep. 30; closed to all fishing Oct. 1 through the Friday before that Saturday per §7.50(a)(1). 'Saturday preceding Memorial Day' is encoded as the last Monday of May (Memorial Day) minus 2 days."
+      },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A); 7.50(a)(1)",
+      "humanSummary": "Open catch-and-release only, Saturday before Memorial Day through Sept. 30; closed to all fishing the rest of the year (Tahoe tributary special regulation).",
+      "verbatimText": "(A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_152", "corroborating": ["ccr_7_50_a1"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "0 trout (catch-and-release) during the open catch-and-release window.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_152", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A); 7.50(a)(1)",
+      "humanSummary": "Artificial lures with barbless hooks only during the open window; no bait (gear restriction applies to all species per §7.50(a)(1)).",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_152", "corroborating": ["ccr_7_50_a1"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. Ward Creek is wholly within California (Placer Co.); the Lake Tahoe CA/NV license reciprocity applies to fishing in the lake itself, not to its tributary creeks." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+.",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

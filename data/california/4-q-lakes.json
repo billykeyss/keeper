@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "4-Q Lakes", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": ["Four-Q Lakes"], "gnisId": null, "lon": -120.20618, "lat": 38.94278, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Desolation Wilderness (Eldorado National Forest / Lake Tahoe Basin Management Unit)", "state": null, "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (4-Q Lakes not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (4-Q Lakes not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (4-Q Lakes not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_deso_abmp_memo", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=191668", "title": "CDFW Memorandum (23 March 2021) — Native amphibian monitoring in Desolation Wilderness; Rana sierrae monitoring at Lake Zitella (cites 2012 Desolation Wilderness Aquatic Biodiversity Management Plan)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "The Aquatic Biodiversity Management Plan (ABMP) for the Desolation Wilderness Management Unit identifies Lake Zitella, Horseshoe Lake, McConnell Lake, Leland Lakes, and 4-Q Lakes as a Native Species Reserve (NSR) for SNYLF (CDFG 2012)." },
+    { "key": "usfs_deso_overnight", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_deso_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Desolation Day Use Permits & Parking — Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-03", "quotedText": "Day use is not subject to fees nor limited by quota at any time of the year." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "4-Q Lakes is a cluster of small lakes in Rockbound Valley, upper Rubicon River drainage (American River basin) on the west side of the Sierra crest in Desolation Wilderness — not the Lake Tahoe basin, so no Lake Tahoe tributary special regulation applies. It is not listed in CCR §7.40(b) or §7.50(b); by default the general statewide lake regulation §5.85(a)(1) governs the take of any fish present. However, CDFW manages 4-Q Lakes as a Native Species Reserve for the Sierra Nevada yellow-legged frog (see the special rule) and does not stock it." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit. Applies only if fish are present; 4-Q Lakes is managed as a fishless native species reserve (see special rule)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit (general statewide default)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "CDFW's 2012 Aquatic Biodiversity Management Plan (ABMP) for the Desolation Wilderness Management Unit designates 4-Q Lakes (together with Lake Zitella, Horseshoe Lake, McConnell Lake, and Leland Lakes) as a Native Species Reserve for the Sierra Nevada yellow-legged frog (Rana sierrae). CDFW does not stock 4-Q Lakes and manages the basin for native amphibians rather than a trout fishery, consistent with the agency's decision to end aerial trout stocking in Desolation Wilderness. Accordingly no fish are listed for this water.", "raw": { "designation": "Native Species Reserve (NSR) for Sierra Nevada yellow-legged frog", "plan": "Desolation Wilderness Aquatic Biodiversity Management Plan (CDFG 2012)", "stocking": "none" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Desolation Wilderness ABMP (CDFG 2012), per CDFW memo dated 23 March 2021",
+      "humanSummary": "Managed as a Native Species Reserve for the Sierra Nevada yellow-legged frog under CDFW's 2012 Desolation Wilderness plan; not stocked, managed for native amphibians rather than fish.",
+      "verbatimText": "The Aquatic Biodiversity Management Plan (ABMP) for the Desolation Wilderness Management Unit identifies Lake Zitella, Horseshoe Lake, McConnell Lake, Leland Lakes, and 4-Q Lakes as a Native Species Reserve (NSR) for SNYLF (CDFG 2012).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_deso_abmp_memo", "corroborating": ["cdfw_stocking_2026"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "4-Q Lakes lies inside Desolation Wilderness (accessed via Rockbound Pass from Wrights Lake). A USDA Forest Service wilderness permit is required year-round for overnight use; a quota applies to overnight destination zones from the Friday before Memorial Day through September 30. Day use is free and unlimited by quota, with a self-issue permit required only when permit boxes are installed at the trailheads (day-use permits are not required in winter, roughly October–March). Bear canisters are required for all overnight visitors.", "raw": { "overnight_permit": "required year-round", "overnight_quota_season": "Friday before Memorial Day through September 30", "day_use": "free, no quota; self-issue permit when trailhead boxes installed" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Desolation Wilderness permit program",
+      "humanSummary": "Desolation Wilderness permit: required year-round for overnight use (quota Fri. before Memorial Day–Sep. 30); day use free and un-quota'd, self-issue permit when trailhead boxes are installed.",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_deso_overnight", "corroborating": ["usfs_deso_dayuse"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

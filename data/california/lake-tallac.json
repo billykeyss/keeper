@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Lake Tallac", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": ["Lake Tallac Lagoon"], "gnisId": null, "lon": -120.011291, "lat": 38.927524, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "tkpoa", "name": "Tahoe Keys Property Owners Association", "state": "CA", "type": "private_landowner", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Largemouth bass", "scientificName": "Micropterus salmoides", "category": "bass", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Bluegill", "scientificName": "Lepomis macrochirus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Black crappie", "scientificName": "Pomoxis nigromaculatus", "category": "panfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown bullhead", "scientificName": "Ameiurus nebulosus", "category": "catfish", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Goldfish", "scientificName": "Carassius auratus", "category": "other", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Lake Tallac not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Lake Tallac not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Lake Tallac not listed among El Dorado Co. release waters)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "nv_warmwater_fish", "url": "https://lands.nv.gov/uploads/documents/License_Invasive_Invasive_Fish_Final_Report.pdf", "title": "Warm-Water Non-Native Fishes in Lake Tahoe — prepared for Nevada Division of State Lands (Nevada Tahoe Resource Team)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Warmer, lentic waters with abundant vegetation provides habitat for warm-water non-native fishes including: largemouth bass, bluegill, black crappie (Pomoxis nigromaculatus), brown bullhead (Ameiurus nebulosus), and goldfish (Carassius auratus)." },
+    { "key": "tahoekeys_weeds", "url": "https://tahoekeysweeds.org/history-background/", "title": "History + Background — Tahoe Keys Weeds (Tahoe Keys aquatic-weed control program)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tkpoa", "retrievedDate": "2026-07-03", "quotedText": "The Tahoe Keys and surrounding lagoons were constructed in the 1960s on the Upper Truckee River Marsh by excavating the lagoons and capping the soil with sand to form stable building sites." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Lake Tallac (Lake Tallac Lagoon) is one of three man-made Tahoe Keys lagoons in South Lake Tahoe (El Dorado Co.), excavated in the 1960s from the Upper Truckee River Marsh and connected to Lake Tahoe by a single boating channel. It is a still-water lagoon, not a flowing tributary, so the Lake Tahoe tributary closure (§7.50(b)(152), which covers Tahoe tributaries upstream to the first lake and within 300 ft of their mouths) does not apply. Lake Tallac is not listed by name in §7.40(b) or §7.50(b), so the general statewide lake regulation §5.85(a)(1) governs: open all year, 5/10 for trout. The lagoon's actual fishery is warm-water species (see species/bag notes)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "This is the general statewide TROUT limit for inland lakes (five daily / ten in possession). Lake Tallac's fishery is predominantly non-native warm-water species (largemouth bass, bluegill, black crappie, brown bullhead, goldfish); those are governed by California's separate statewide black-bass and panfish limits, which are not overridden for this water — no water-specific numeric limit is set in §7.40/§7.50 for Lake Tallac." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit (statewide trout default; warm-water species follow separate statewide limits)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. (Lake Tallac connects to Lake Tahoe; the CA/NV Lake Tahoe license reciprocity is documented for Lake Tahoe itself and is not asserted here for the Tahoe Keys lagoon.)" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Lake Tallac is a private residential lagoon — one of the man-made Tahoe Keys lagoons (Tahoe Keys Property Owners Association), a network of boating channels and waterways built for residents on the former Upper Truckee River Marsh. Its only connection to the main body of Lake Tahoe is a single boating channel. The lagoon is heavily infested with invasive aquatic weeds (Eurasian watermilfoil, curlyleaf pondweed, coontail) and is subject to an ongoing aquatic-weed control program; it provides habitat for non-native warm-water fish.", "raw": { "type": "man-made residential lagoon", "development": "Tahoe Keys", "connection_to_lake_tahoe": "single boating channel", "access": "private residential (Tahoe Keys community)" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "tkpoa",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Tahoe Keys lagoon description — Warm-Water Non-Native Fishes in Lake Tahoe (NV Div. of State Lands report); Tahoe Keys Weeds history",
+      "humanSummary": "Lake Tallac is a private man-made Tahoe Keys residential lagoon connected to Lake Tahoe by one boating channel; it holds non-native warm-water fish and is under active invasive-weed management.",
+      "verbatimText": "One boating channel each for the marina and the homeowner section of Tahoe Keys is the only site for surface water exchange with the main body of the lake.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "nv_warmwater_fish", "corroborating": ["tahoekeys_weeds"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

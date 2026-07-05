@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Sierra Creek", "waterType": "creek", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.12652, "lat": 39.01719, "verifyCurrent": true },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [
+    { "key": "trout_cdfw", "name": "trout", "category": "trout", "authorityKey": "cdfw" }
+  ],
+  "sources": [
+    { "key": "ccr_7_50_tahoe_trib", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (§7.50(a)(1) general closure; §7.50(b)(152) Tahoe Lake and tributaries). Sierra Creek is a Lake Tahoe tributary governed by the generic §7.50(b)(152)(A) tributary provision; it is not separately named.", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "(a) General Provisions: (1) Every body of water listed in subsection (b) is closed to all fishing except during the open season as shown. ... (152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Sierra Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Sierra Creek not listed as a stocked water)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null }
+  ],
+  "groups": [
+    {
+      "key": "g_tahoe_trib", "authorityKey": "cdfw", "citation": "7.50(b)(152)",
+      "humanSummary": "Sierra Creek flows directly into Lake Tahoe (west shore, between Meeks Bay and Rubicon Point, El Dorado Co.), so it is a Lake Tahoe tributary. Per CCR §7.50(b)(152)(A) all Tahoe Lake tributaries (upstream to the first lake) are open only Sat. before Memorial Day–Sep. 30, artificial lures with barbless hooks only, 0 trout (catch-and-release); per §7.50(a)(1) they are closed to all fishing the remainder of the year. The lake within 300 ft of the mouth follows the identical rule per (152)(B).",
+      "verbatimText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."
+    }
+  ],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "tributary_cr_season", "status": "open_catch_release",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -2, "verbatim": "Saturday preceding Memorial Day" },
+            "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } }
+        ],
+        "note": "Sierra Creek is a direct Lake Tahoe tributary (its mouth sits on the Lake Tahoe shoreline near Rubicon Bay). It is not individually named in §7.50, but the generic §7.50(b)(152)(A) provision governs all Tahoe Lake tributaries upstream to the first lake — and Sierra Creek has no lake above it, so the whole creek is covered. Open catch-and-release only Sat. before Memorial Day through Sep. 30. Per §7.50(a)(1) the water is closed to ALL fishing (not just trout) the rest of the year — Oct. 1 through the Friday before the Saturday preceding Memorial Day. Date_spec encodes 'Saturday preceding Memorial Day' as the last Monday of May (Memorial Day) minus 2 days."
+      },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "Open catch-and-release only, Saturday before Memorial Day through Sept. 30; closed to all fishing the rest of the year (Lake Tahoe tributary special regulation).",
+      "verbatimText": "Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "Artificial lures with barbless hooks only during the open window; no bait.",
+      "verbatimText": "Only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": "g_tahoe_trib", "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "listed", "speciesTargets": [{ "speciesGroupKey": "trout_cdfw" }], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "7.50(b)(152)(A)",
+      "humanSummary": "0 trout — catch-and-release only during the open window.",
+      "verbatimText": "0 trout",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_tahoe_trib", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. The California/Nevada reciprocal-license arrangement is specific to fishing 'anywhere in Lake Tahoe' (the lake body); it does not extend to CA tributaries such as Sierra Creek, which require a California license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+.",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

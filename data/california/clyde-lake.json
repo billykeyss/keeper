@@ -1,0 +1,75 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "Clyde Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.169043, "lat": 38.8756001, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Clyde Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Clyde Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Clyde Lake not listed among El Dorado Co. release waters)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
+    { "key": "cdfw_clyde_fishremoval_2018", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=156670", "title": "CDFW Memorandum (4/18/2018) — Native amphibian restoration and monitoring in Desolation Wilderness; Clyde Lake fish removal and Rana sierrae monitoring", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Fish removal activities are complete in the Clyde Lake drainage (Figure 1); California Department of Fish and Wildlife (CDFW) staff removed 96 golden trout to benefit Sierra Nevada yellow-legged frogs (Rana sierrae, SNYLF)." },
+    { "key": "cdfw_clyde_rana_2022", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=199309", "title": "CDFW Memorandum (16 March 2022) — Native amphibian monitoring in Desolation Wilderness; Rana sierrae monitoring in the Clyde Lake drainage: 2021 update", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Clyde Lake is a small, high mountain lake in Desolation Wilderness, El Dorado County, which forms the headwaters of the Rubicon River drainage (Figure 1). California Department of Fish and Wildlife (CDFW) staff removed introduced trout from 2012–2016 to benefit a small, extant population of Sierra Nevada Yellow-legged Frogs (Rana sierrae, SNYLF; Figure 2)." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Clyde Lake is a small high-alpine lake in the Desolation Wilderness (El Dorado Co., ~8,000 ft). Despite lying within Desolation Wilderness, it is NOT in the Lake Tahoe basin: it forms the headwaters of the Rubicon River, which drains north/west to Hell Hole Reservoir and the Middle Fork American River (Sacramento drainage), so the special Lake Tahoe tributary closure (§7.50(b)(152)) does not apply. Clyde Lake is not listed by name in §7.40(b) or §7.50(b), so the general statewide lake regulation §5.85(a)(1) governs: open all year, 5/10. NOTE: the lake is managed by CDFW as fishless Sierra Nevada Yellow-legged Frog habitat (see the advisory rule below) — the open-season regulation nominally applies to the water, but no fishery is present." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit. Clyde Lake currently holds no fish (managed fishless), so the limit is nominal." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit (nominal — the lake is managed fishless)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Clyde Lake is managed by CDFW (North Central Region, High Mountain Lakes) as fishless Sierra Nevada Yellow-legged Frog (Rana sierrae) breeding habitat. CDFW removed introduced golden trout from the lake, its outlet stream, and associated ponds (2012–2016; 96 golden trout removed) and maintains the water fishless. General inland-lake take rules nominally apply to the water, but there is no sport fishery present.", "raw": { "status": "fishless", "managed_as": "Sierra Nevada Yellow-legged Frog (Rana sierrae) breeding habitat", "removal_years": "2012-2016", "prior_species_removed": "golden trout" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW North Central Region Fisheries — Clyde Lake fish removal / Rana sierrae monitoring memoranda (2018; 2022 update)",
+      "humanSummary": "Advisory: Clyde Lake is intentionally kept fishless and managed as Sierra Nevada Yellow-legged Frog habitat after removal of introduced golden trout — no fishery is present, though general open-water regulations nominally apply.",
+      "verbatimText": "Once fishless, CDFW will manage Clyde Lake, the outlet stream, and associated ponds as SNYLF breeding habitat.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_clyde_fishremoval_2018", "corroborating": ["cdfw_clyde_rana_2022"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

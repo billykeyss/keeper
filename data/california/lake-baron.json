@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Lake Baron", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.02605, "lat": 38.85548, "verifyCurrent": true },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "tprpd", "name": "Tahoe Paradise Recreation and Park District", "state": "CA", "type": "state_agency", "roles": ["land_management", "access"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Lake Baron not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Lake Baron not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Lake Baron not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "tpp_faq", "url": "https://www.tahoeparadisepark.com/faq", "title": "What are the rules to fishing at Lake Baron? — FAQ, Tahoe Paradise Park", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "tprpd", "retrievedDate": "2026-07-04", "quotedText": "Rules & Regulations Fishing is year-round Fishing hours is legal one hour prior to sunrise to one hour after sunset (Parking rules to be outside of gate before posted closing time must also be observed) Barbless, artificial lures only. No bait. Licenses for any person, 16 years of age or older, must have a valid California fishing license Catch & release is suggested at Lake Baron and has a two fish limit per day during the months of July and August only. Catch & release only from September to June with the exception of the Fishing Derby day. Fishing licenses can be obtained from local sporting goods stores. Failure to obtain a fishing license or to follow rules and regulations can result in stiff fines Lake is patrolled by Fishing and Game. Paradise Park reserves the right to call sheriff or Fish and Game on any who break these rules." },
+    { "key": "tpp_master_plan", "url": "https://www.tahoeparadisepark.com/about-4", "title": "Master Plan for Tahoe Paradise Recreation and Park District (formerly Tahoe Paradise Resort Improvement District) and Tahoe Paradise Park — Approved 3/31/2016", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "tprpd", "retrievedDate": "2026-07-04", "quotedText": "The park shall seek to maintain and enhance Lake Baron as a fishing resource, including year-around fishing." },
+    { "key": "stt_derby_2018", "url": "http://southtahoenow.com/story/09/13/2018/lake-baron-be-stocked-trout-16th-annual-fishing-derby", "title": "Lake Baron to be stocked with trout for 16th annual Fishing Derby — South Tahoe Now (Sept. 13, 2018)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tprpd", "retrievedDate": "2026-07-04", "quotedText": "Hundreds of pounds of trout will be stocked in Lake Baron for the 16th annual Kids' Fishing Derby hosted by the Moose Lodge of South Lake Tahoe on Sunday, September 16. ... For the event, the Lodge will be planting the Lake with hundreds of pounds of catchable trout ranging from one to five pounds." },
+    { "key": "fishbrain_lake_baron", "url": "https://fishbrain.com/fishing-waters/i7jZ87z5/lake-baron", "title": "Lake Baron fishing reports — Fishbrain (angler-reported species)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Lake Baron is a ~9-acre lake in Tahoe Paradise Park (Meyers, El Dorado County), managed by the Tahoe Paradise Recreation and Park District. It is not listed in CCR §7.40(b) or §7.50(b), so the general statewide lake regulation §5.85(a)(1) — open all year — applies as a matter of state law. The park district additionally posts its own, stricter on-site fishing rules (catch-and-release only September–June, a two-fish/day limit in July and August only, barbless artificial lures only); those are captured in the separate 'special' rule below and control what an angler may actually do at the lake." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year under state law (general statewide lake regulation; not a special-regulation water) — but note the park district's stricter on-site catch-and-release rules below",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit. NOTE: the Tahoe Paradise Recreation and Park District posts a stricter on-site limit at Lake Baron — a two-fish daily limit in July and August only, and catch-and-release the rest of the year (except Fishing Derby day). See the 'special' rule for the park's posted rules." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "State statewide limit is 5 trout/day, 10 in possession; the park district's own posted on-site limit is stricter (2 fish/day July–August only, catch-and-release otherwise)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. The park district independently restates this requirement in its posted Lake Baron rules." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Tahoe Paradise Recreation and Park District's own posted rules for fishing Lake Baron (the district is a California recreation-and-park special district that owns and manages the park; these on-site rules are stricter than the state's general lake regulation). Fishing is year-round; legal fishing hours are one hour before sunrise to one hour after sunset (and vehicles/anglers must be outside the gate before the posted closing time); barbless artificial lures only, no bait; anglers 16+ need a valid California fishing license; catch-and-release only from September through June (except on Fishing Derby day), and a two-fish daily limit only in July and August; the lake is patrolled by Fish and Wildlife.", "raw": { "fishing": "year-round", "hours": "one hour before sunrise to one hour after sunset", "gear": "barbless artificial lures only, no bait", "catch_release": "catch-and-release only September–June (except Fishing Derby day)", "harvest_window": "two fish per day, July and August only", "license": "valid California fishing license required, age 16+", "enforcement": "patrolled by Fish and Wildlife; park may call the sheriff or Fish and Wildlife on violators" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "tprpd",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Tahoe Paradise Recreation and Park District — Lake Baron Rules & Regulations (park FAQ)",
+      "humanSummary": "Park district's posted Lake Baron rules: year-round; one hour before sunrise to one hour after sunset; barbless artificial lures only, no bait; CA license required (16+); catch-and-release only September–June (except Derby day), two-fish daily limit in July and August only; patrolled by Fish and Wildlife",
+      "verbatimText": "Rules & Regulations Fishing is year-round Fishing hours is legal one hour prior to sunrise to one hour after sunset (Parking rules to be outside of gate before posted closing time must also be observed) Barbless, artificial lures only. No bait. Licenses for any person, 16 years of age or older, must have a valid California fishing license Catch & release is suggested at Lake Baron and has a two fish limit per day during the months of July and August only. Catch & release only from September to June with the exception of the Fishing Derby day. Fishing licenses can be obtained from local sporting goods stores. Failure to obtain a fishing license or to follow rules and regulations can result in stiff fines Lake is patrolled by Fishing and Game. Paradise Park reserves the right to call sheriff or Fish and Game on any who break these rules.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "tpp_faq", "corroborating": ["tpp_master_plan"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow trout", "frequency": "annual", "seasonStartMonth": 9, "seasonEndMonth": 9, "note": "Lake Baron is not stocked by CDFW (it does not appear in CDFW's 2026 Provisional Stocking Document). It is stocked instead by the community: the Moose Lodge of South Lake Tahoe plants 'hundreds of pounds of catchable trout ranging from one to five pounds' for its annual Kids' Fishing Derby (the 16th annual was held Sept. 16, 2018 per South Tahoe Now; the park's current FAQ still lists 'Fishing Derby day' as the sole exception to its September–June catch-and-release rule, indicating the derby stocking is ongoing). The derby source describes the fish generically as 'catchable trout'; the species is identified as rainbow trout from angler reports (Fishbrain). Angler reports also list yellow bullhead and channel catfish in the lake, but no authoritative source confirms those, so they are omitted from the species list.", "sourceKeys": { "primary": "stt_derby_2018", "corroborating": ["tpp_faq", "fishbrain_lake_baron"] } }
+  ]
+}

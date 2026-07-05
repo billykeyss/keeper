@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-07-04",
+  "water": { "name": "Incline Creek", "waterType": "creek", "states": ["NV"], "counties": ["Washoe"], "aliases": [], "gnisId": null, "lon": -119.94069, "lat": 39.24418, "verifyCurrent": true },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ndow_cr2516_tahoe", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Washoe County, Lake Tahoe and tributaries", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Lake Tahoe and tributaries    Open year around except for closed areas    Daily: 5 game fish    Possession: 10 game fish    1 hour before sunrise to 2 hours after sunset" },
+    { "key": "ndow_cr2516_washoe_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16 — Washoe County CLOSED WATERS (Incline Creek and its tributaries closed from Lake Tahoe to Ski Way and Mt. Rose Highway No. 431)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Third Creek and its tributaries from Lake Tahoe to the Mt. Rose Highway No. 431. Incline Creek and its tributaries from Lake Tahoe to Ski Way and the Mt. Rose Highway No. 431. Wood Creek from Lake Tahoe to the Mt. Rose Highway No. 431. Lake Tahoe within a 200-yard radius of the mouths of Third, Incline and Wood creeks. A 500-yard radius from Sand Harbor boat ramp." },
+    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." },
+    { "key": "ndow_incline_water", "url": "https://www.ndow.org/waters/incline-creek/", "title": "Incline Creek — Nevada Department of Wildlife (directory entry: Region Western, County Washoe, Type Creek or Stream; no species, stocking, or regulation content shown)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "wiki_tahoe_inflow", "url": "https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_inflow_streams", "title": "List of Lake Tahoe inflow streams — Wikipedia (Incline Creek, east shore)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "flows through Diamond Peak Ski Resort to Crystal Bay, Lake Tahoe at Incline Village" },
+    { "key": "osm_incline_creek", "url": "https://www.openstreetmap.org/relation/19058880", "title": "OpenStreetMap — Incline Creek (relation 19058880): the named creek in Washoe Co., NV, draining past Diamond Peak to Lake Tahoe at Incline Village on the east/north shore; representative lower-reach point ~39.24418, -119.94069", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "closure",
+      "parameters": {
+        "closure_kind": "spatial",
+        "boundary_definition": "described",
+        "note": "Incline Creek and its tributaries are closed to all fishing on the lower reach from Lake Tahoe upstream to Ski Way and Mt. Rose Highway No. 431 (SR 431) — the segment running through Incline Village. This is a specific Washoe County closed-waters listing in CR 25-16 (Incline is one of only three named closed Tahoe creeks, alongside Third and Wood). Separately, Lake Tahoe within a 200-yard radius of the mouth of Incline Creek is also closed. Only the reach above Ski Way / Mt. Rose Highway is open, under the general 'Lake Tahoe and tributaries' listing (open year-round). The representative point for this record (~39.244, -119.941, in Incline Village) lies within the closed lower reach."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Washoe Co. — CLOSED WATERS)",
+      "humanSummary": "Closed to all fishing on the lower reach from Lake Tahoe up to Ski Way and Mt. Rose Highway No. 431 (through Incline Village); the lake within a 200-yard radius of the creek mouth is also closed.",
+      "verbatimText": "Incline Creek and its tributaries from Lake Tahoe to Ski Way and the Mt. Rose Highway No. 431.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_washoe_closed", "corroborating": ["ndow_cr2516_tahoe"] }
+    },
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_year_round_above_closure", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Incline Creek flows into Lake Tahoe at Incline Village on the east/north (Nevada) shore in Washoe County, so it is a Lake Tahoe tributary governed by NDOW's Washoe County 'Lake Tahoe and tributaries' listing in CR 25-16: open year-round, except for closed areas. For Incline Creek the 'closed areas' are substantial — the entire lower reach from Lake Tahoe up to Ski Way and Mt. Rose Highway No. 431 is closed to all fishing year-round (see the closure rule). This open-year-round season therefore applies only to the reach ABOVE Ski Way / Mt. Rose Highway. This is the Nevada rule and differs from the California §7.50(b)(152) seasonal catch-and-release closure that applies to Tahoe tributaries on the California side of the lake." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Washoe Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "Above the Ski Way / Mt. Rose Highway closure, Incline Creek is open year-round as a Lake Tahoe tributary.",
+      "verbatimText": "Lake Tahoe and tributaries. Open year around except for closed areas.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_tahoe", "corroborating": ["ndow_cr2516_washoe_closed"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_all", "counting_rule": "The Washoe County 'Lake Tahoe and tributaries' listing sets 5 game fish daily and 10 in possession, with no species sub-limit. 'Game fish' in Nevada includes trout, mountain whitefish, kokanee salmon, bass, and other listed game species combined. Applies only to the open reach above Ski Way / Mt. Rose Highway; the lower reach is closed to all fishing." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Washoe Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "5 game fish daily, 10 in possession (Lake Tahoe and tributaries listing; open reach above the closure only; no species sub-limit).",
+      "verbatimText": "Daily: 5 game fish    Possession: 10 game fish",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_tahoe", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": {
+        "basis": "sunrise_sunset",
+        "allowed_from": { "anchor": "sunrise", "offset_minutes": -60, "verbatim": "1 hour before sunrise" },
+        "allowed_to": { "anchor": "sunset", "offset_minutes": 120, "verbatim": "2 hours after sunset" },
+        "note": "The Washoe County 'Lake Tahoe and tributaries' listing restricts fishing hours to 1 hour before sunrise through 2 hours after sunset (unlike most other Washoe waters, which are open any hour of the day or night). Applies to the open reach above the closure."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "NV CR 25-16 (Washoe Co. — Lake Tahoe and tributaries)",
+      "humanSummary": "Fishing hours: 1 hour before sunrise to 2 hours after sunset.",
+      "verbatimText": "1 hour before sunrise to 2 hours after sunset",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_tahoe", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for residents and nonresidents 12 years of age or older; anglers under 12 need no license (nonresidents under 12 are limited to 50% of the daily bag). The California/Nevada Lake Tahoe license reciprocity applies to fishing IN Lake Tahoe itself (and the Nevada Interstate Boundary Waters License is valid only on the lake), so it does NOT extend to Incline Creek above the lake — a Nevada fishing license is required to fish the open reach of this tributary." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "NV", "citation": "Nevada General Statewide Fishing Regulations (NDOW)",
+      "humanSummary": "Nevada fishing license required for anglers 12+ (lake license reciprocity does not extend to the tributary).",
+      "verbatimText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_license_req", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

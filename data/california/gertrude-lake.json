@@ -1,0 +1,225 @@
+{
+  "asOf": "2026-07-03",
+  "water": {
+    "name": "Gertrude Lake",
+    "waterType": "lake",
+    "states": [
+      "CA"
+    ],
+    "counties": [
+      "El Dorado"
+    ],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.2012019,
+    "lat": 38.8843366,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    {
+      "key": "cdfw",
+      "name": "California Department of Fish and Wildlife",
+      "state": "CA",
+      "type": "state_agency",
+      "roles": [
+        "take_rules"
+      ]
+    },
+    {
+      "key": "usfs",
+      "name": "USDA Forest Service — Eldorado National Forest (Desolation Wilderness)",
+      "state": "CA",
+      "type": "federal",
+      "roles": [
+        "access",
+        "land_management",
+        "permit_issuer"
+      ]
+    }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "ccr_5_85_a_1",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85",
+      "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit."
+    },
+    {
+      "key": "ccr_7_40_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Gertrude Lake not listed)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": null
+    },
+    {
+      "key": "ccr_7_50_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Gertrude Lake not listed; no Lake Tahoe tributary entry applies)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": null
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit."
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "cdfw_provisional_stocking_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=",
+      "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Gertrude Lake not listed; no planned 2026 stocking)",
+      "documentType": "pdf",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-03",
+      "quotedText": null
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_water",
+            "status": "open",
+            "start": {
+              "type": "year_round",
+              "verbatim": "All year"
+            },
+            "end": {
+              "type": "year_round",
+              "verbatim": "All year"
+            }
+          }
+        ],
+        "note": "Gertrude Lake is a high alpine lake in the Desolation Wilderness (El Dorado Co.), on the west side of the Sierra crest in the South Fork American River drainage — NHD reach code 18020129002642, California hydrologic region 18 (Sacramento/San Joaquin), NOT the Lake Tahoe / Truckee basin (Great Basin region 16). It is therefore not a Lake Tahoe tributary, so the Lake Tahoe tributary catch-and-release closure in CCR §7.50(b)(152) does not apply. Gertrude Lake is not listed in CCR §7.40(b) or §7.50(b), so the general statewide lake regulation §5.85(a)(1) governs (open all year, 5-trout daily / 10-trout possession)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not a special-regulation water and not a Lake Tahoe tributary)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_5_85_a_1",
+        "corroborating": [
+          "ccr_7_40_no_listing",
+          "ccr_7_50_no_listing",
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit. No trout stocking or self-sustaining fishery is documented for this lake in current CDFW sources; the limit is the governing legal maximum, not an indication that fish are present."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit (general statewide default)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "ccr_5_85_a_1",
+        "corroborating": [
+          "ccr_7_40_no_listing",
+          "ccr_7_50_no_listing",
+          "cdfw_booklet_2026"
+        ]
+      }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": {
+        "type": "water"
+      },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": {
+        "primary": "fgc_7145",
+        "corroborating": []
+      }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-07-03",
+  "water": { "name": "East Peak Lake", "waterType": "lake", "states": ["NV"], "counties": ["Douglas"], "aliases": ["East Peak Private Lake"], "gnisId": null, "lon": -119.8947716, "lat": 38.9411073, "verifyCurrent": true },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "heavenly", "name": "Heavenly Mountain Resort — East Peak Lake (private)", "state": "NV", "type": "private_landowner", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow Trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_ndow_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County general (\"All waters\") regulation; East Peak Lake not separately listed", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-03", "quotedText": "DOUGLAS COUNTY. OPEN WATERS: All waters. (Except as noted below) Open year around. Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye. Hours: Any hour of the day or night." },
+    { "key": "s_ndow_cr2516_possession", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "CR 25-16 — general possession-limit rule (twice the daily limit)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-03", "quotedText": "The \"Possession Limit\" is two times the daily limit for the water in which the fish were caught." },
+    { "key": "s_nrs_502_010", "url": "https://www.leg.state.nv.us/nrs/nrs-502.html", "title": "NRS 502.010 — License or permit required for hunting or fishing; exceptions; limitations on hunting by minors", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-03", "quotedText": "A person who hunts or fishes any wildlife without having first procured a license or permit to do so, as provided in this title, is guilty of a misdemeanor, except that: (a) A license to hunt or fish is not required of a resident of this State who is under 12 years of age, unless required for the issuance of tags as prescribed in this title or by the regulations of the Commission. (b) A license to fish is not required of a nonresident of this State who is under 12 years of age, but the number of fish taken by the nonresident must not exceed 50 percent of the daily creel and possession limits as provided by law." },
+    { "key": "s_tahoeflyfishing", "url": "https://tahoeflyfishing.com/heavenly-east-peak", "title": "Heavenly / East Peak Private Lake — Tahoe Fly Fishing Outfitters", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "heavenly", "retrievedDate": "2026-07-03", "quotedText": "This 12-acre lake is stocked with trophy size rainbow trout offering great chances at big fish! ... private East Peak Lake ... Nevada One-Day Fishing License (purchase here before the trip)." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "East Peak Lake is a small (~12-acre) private lake within Heavenly Mountain Resort in Douglas County, Nevada. It is not separately named in CR 25-16's Douglas County listing (only Lake Tahoe, Spooner Lake, Topaz Lake, and the Douglas County Community Fishing Ponds are broken out as exceptions), so NDOW's Douglas County general rule for 'All waters' applies: open year around. This is a Nevada water governed by NDOW — the Lake Tahoe CA/NV reciprocal-license arrangement does not apply here (it is not Lake Tahoe)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "Open year-round (Nevada Western Region / Douglas County general regulation; East Peak Lake is not a separately listed exception).",
+      "verbatimText": "OPEN WATERS: All waters. (Except as noted below) Open year around.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "Douglas County general 'All waters' rule allows fishing any hour of the day or night. (The restricted 1-hour-before-sunrise-to-2-hours-after-sunset window in CR 25-16 applies to Lake Tahoe, Spooner Lake, and Topaz Lake specifically — not to this water.)" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "Fishing permitted any hour of the day or night.",
+      "verbatimText": "Any hour of the day or night",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": [] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Douglas County general limit: 5 trout daily, 10 trout in possession (possession = two times the daily limit). The full 'All waters' row also allows 5 mountain whitefish and 15 warmwater game fish per day, but East Peak Lake's documented fishery is stocked rainbow trout, for which the 5-trout/10-possession limit governs." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas County — All waters)",
+      "humanSummary": "5 trout per day, 10 trout in possession (Nevada Douglas County general limit).",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_cr2516", "corroborating": ["s_ndow_cr2516_possession"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for anglers 12 years of age and older (residents and nonresidents); a nonresident under 12 may fish without a license but is limited to 50% of the daily creel and possession limits. A Nevada One-Day Fishing License (or any valid Nevada fishing license) satisfies this; because this is a Nevada water and not Lake Tahoe, the Lake Tahoe CA/NV reciprocity does not apply and a California license alone would not suffice." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NRS 502.010",
+      "humanSummary": "Nevada fishing license required for anglers 12 and older.",
+      "verbatimText": "A person who hunts or fishes any wildlife without having first procured a license or permit to do so, as provided in this title, is guilty of a misdemeanor, except that: (a) A license to hunt or fish is not required of a resident of this State who is under 12 years of age... (b) A license to fish is not required of a nonresident of this State who is under 12 years of age, but the number of fish taken by the nonresident must not exceed 50 percent of the daily creel and possession limits as provided by law.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_nrs_502_010", "corroborating": ["s_tahoeflyfishing"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "East Peak Lake is a private ~12-acre lake within Heavenly Mountain Resort, accessed by gondola and off-road vehicle; public fishing is only via booked guided trips through the resort's licensed outfitter. The lake is privately stocked with trophy-size rainbow trout.", "raw": { "access_type": "private, guided only", "size": "~12 acres" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "heavenly",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "Tahoe Fly Fishing Outfitters — Heavenly / East Peak Private Lake",
+      "humanSummary": "Private lake within Heavenly Mountain Resort; access is guided-trip only, privately stocked with trophy rainbow trout.",
+      "verbatimText": "This 12-acre lake is stocked with trophy size rainbow trout offering great chances at big fish!",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "s_tahoeflyfishing", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": [
+    { "speciesCommonName": "Rainbow Trout", "frequency": "as_available", "seasonStartMonth": null, "seasonEndMonth": null, "note": "East Peak Lake is privately stocked with trophy-size rainbow trout by the resort/outfitter (not an NDOW public stocking program), so no dated NDOW stocking events are available; frequency and quantities are not published. Source: Tahoe Fly Fishing Outfitters' East Peak Private Lake page.", "sourceKeys": { "primary": "s_tahoeflyfishing", "corroborating": [] } }
+  ]
+}
