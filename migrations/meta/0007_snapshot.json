@@ -1,0 +1,2810 @@
+{
+  "id": "ab9564eb-6c66-493b-867f-ede135776149",
+  "prevId": "7edaff49-3107-4e8c-98cd-af95beb709a7",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.authority": {
+      "name": "authority",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "state": {
+          "name": "state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "type": {
+          "name": "type",
+          "type": "authority_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "territory": {
+          "name": "territory",
+          "type": "geometry(MultiPolygon,4326)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "regulation_year_start": {
+          "name": "regulation_year_start",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "license_year_basis": {
+          "name": "license_year_basis",
+          "type": "license_year_basis",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.reach": {
+      "name": "reach",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "from_desc": {
+          "name": "from_desc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "to_desc": {
+          "name": "to_desc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "from_anchor_feature": {
+          "name": "from_anchor_feature",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "from_offset_ft": {
+          "name": "from_offset_ft",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "from_direction": {
+          "name": "from_direction",
+          "type": "flow_dir",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "to_anchor_feature": {
+          "name": "to_anchor_feature",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "to_offset_ft": {
+          "name": "to_offset_ft",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "to_direction": {
+          "name": "to_direction",
+          "type": "flow_dir",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "geom": {
+          "name": "geom",
+          "type": "geometry(MultiLineString,4326)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lon": {
+          "name": "lon",
+          "type": "double precision",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lat": {
+          "name": "lat",
+          "type": "double precision",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "county": {
+          "name": "county",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "reach_water_body_id_water_body_id_fk": {
+          "name": "reach_water_body_id_water_body_id_fk",
+          "tableFrom": "reach",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "reach_authority_id_authority_id_fk": {
+          "name": "reach_authority_id_authority_id_fk",
+          "tableFrom": "reach",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.water_body": {
+      "name": "water_body",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "water_type": {
+          "name": "water_type",
+          "type": "water_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "gnis_id": {
+          "name": "gnis_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "states": {
+          "name": "states",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'{}'"
+        },
+        "counties": {
+          "name": "counties",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'{}'"
+        },
+        "geom": {
+          "name": "geom",
+          "type": "geometry(Geometry,4326)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "aliases": {
+          "name": "aliases",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'{}'"
+        },
+        "regulatory_label": {
+          "name": "regulatory_label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "governing_zone_id": {
+          "name": "governing_zone_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "management_category": {
+          "name": "management_category",
+          "type": "mgmt_category",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verify_current": {
+          "name": "verify_current",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.water_body_authority": {
+      "name": "water_body_authority",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "wba_role",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "jurisdiction_note": {
+          "name": "jurisdiction_note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "water_body_authority_water_body_id_water_body_id_fk": {
+          "name": "water_body_authority_water_body_id_water_body_id_fk",
+          "tableFrom": "water_body_authority",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "water_body_authority_authority_id_authority_id_fk": {
+          "name": "water_body_authority_authority_id_authority_id_fk",
+          "tableFrom": "water_body_authority",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.water_body_relation": {
+      "name": "water_body_relation",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "from_water_body_id": {
+          "name": "from_water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "to_water_body_id": {
+          "name": "to_water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "relation": {
+          "name": "relation",
+          "type": "hydro_relation",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "water_body_relation_from_water_body_id_water_body_id_fk": {
+          "name": "water_body_relation_from_water_body_id_water_body_id_fk",
+          "tableFrom": "water_body_relation",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "from_water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "water_body_relation_to_water_body_id_water_body_id_fk": {
+          "name": "water_body_relation_to_water_body_id_water_body_id_fk",
+          "tableFrom": "water_body_relation",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "to_water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.zone": {
+      "name": "zone",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "kind": {
+          "name": "kind",
+          "type": "zone_kind",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "geom": {
+          "name": "geom",
+          "type": "geometry(Geometry,4326)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "anchor_feature_ref": {
+          "name": "anchor_feature_ref",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "anchor_water_body_id": {
+          "name": "anchor_water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "buffer_distance": {
+          "name": "buffer_distance",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "buffer_unit": {
+          "name": "buffer_unit",
+          "type": "dist_unit",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "marker_defined": {
+          "name": "marker_defined",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "counties": {
+          "name": "counties",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "zone_water_body_id_water_body_id_fk": {
+          "name": "zone_water_body_id_water_body_id_fk",
+          "tableFrom": "zone",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "zone_authority_id_authority_id_fk": {
+          "name": "zone_authority_id_authority_id_fk",
+          "tableFrom": "zone",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "zone_anchor_water_body_id_water_body_id_fk": {
+          "name": "zone_anchor_water_body_id_water_body_id_fk",
+          "tableFrom": "zone",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "anchor_water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.source": {
+      "name": "source",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "document_type": {
+          "name": "document_type",
+          "type": "document_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "instrument_type": {
+          "name": "instrument_type",
+          "type": "instrument_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authority_level": {
+          "name": "authority_level",
+          "type": "authority_level",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_official": {
+          "name": "is_official",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "mirror_of_id": {
+          "name": "mirror_of_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fetch_status": {
+          "name": "fetch_status",
+          "type": "fetch_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "url": {
+          "name": "url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "published_date": {
+          "name": "published_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "retrieved_date": {
+          "name": "retrieved_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "section_ref": {
+          "name": "section_ref",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "quoted_text": {
+          "name": "quoted_text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "disputed": {
+          "name": "disputed",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "refutation_note": {
+          "name": "refutation_note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "source_authority_id_authority_id_fk": {
+          "name": "source_authority_id_authority_id_fk",
+          "tableFrom": "source",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species": {
+      "name": "species",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "common_name": {
+          "name": "common_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scientific_name": {
+          "name": "scientific_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "category": {
+          "name": "category",
+          "type": "species_category",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "native_status": {
+          "name": "native_status",
+          "type": "native_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "parent_species_ids": {
+          "name": "parent_species_ids",
+          "type": "integer[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species_alias": {
+      "name": "species_alias",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "species_alias_species_id_species_id_fk": {
+          "name": "species_alias_species_id_species_id_fk",
+          "tableFrom": "species_alias",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species_group": {
+      "name": "species_group",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "species_category",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "species_group_authority_id_authority_id_fk": {
+          "name": "species_group_authority_id_authority_id_fk",
+          "tableFrom": "species_group",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species_group_member": {
+      "name": "species_group_member",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "group_id": {
+          "name": "group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "species_group_member_group_id_species_group_id_fk": {
+          "name": "species_group_member_group_id_species_group_id_fk",
+          "tableFrom": "species_group_member",
+          "tableTo": "species_group",
+          "columnsFrom": [
+            "group_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "species_group_member_species_id_species_id_fk": {
+          "name": "species_group_member_species_id_species_id_fk",
+          "tableFrom": "species_group_member",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species_stocking_event": {
+      "name": "species_stocking_event",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quantity": {
+          "name": "quantity",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "size_note": {
+          "name": "size_note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "stocked_on": {
+          "name": "stocked_on",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "species_stocking_event_water_body_id_water_body_id_fk": {
+          "name": "species_stocking_event_water_body_id_water_body_id_fk",
+          "tableFrom": "species_stocking_event",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "species_stocking_event_species_id_species_id_fk": {
+          "name": "species_stocking_event_species_id_species_id_fk",
+          "tableFrom": "species_stocking_event",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "species_stocking_event_source_id_source_id_fk": {
+          "name": "species_stocking_event_source_id_source_id_fk",
+          "tableFrom": "species_stocking_event",
+          "tableTo": "source",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.species_stocking_schedule": {
+      "name": "species_stocking_schedule",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "frequency": {
+          "name": "frequency",
+          "type": "stocking_frequency",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "season_start_month": {
+          "name": "season_start_month",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "season_end_month": {
+          "name": "season_end_month",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "note": {
+          "name": "note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "species_stocking_schedule_water_body_id_water_body_id_fk": {
+          "name": "species_stocking_schedule_water_body_id_water_body_id_fk",
+          "tableFrom": "species_stocking_schedule",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "species_stocking_schedule_species_id_species_id_fk": {
+          "name": "species_stocking_schedule_species_id_species_id_fk",
+          "tableFrom": "species_stocking_schedule",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "species_stocking_schedule_source_id_source_id_fk": {
+          "name": "species_stocking_schedule_source_id_source_id_fk",
+          "tableFrom": "species_stocking_schedule",
+          "tableTo": "source",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.water_body_species": {
+      "name": "water_body_species",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "presence": {
+          "name": "presence",
+          "type": "presence",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "water_body_species_water_body_id_water_body_id_fk": {
+          "name": "water_body_species_water_body_id_water_body_id_fk",
+          "tableFrom": "water_body_species",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "water_body_species_species_id_species_id_fk": {
+          "name": "water_body_species_species_id_species_id_fk",
+          "tableFrom": "water_body_species",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "water_body_species_source_id_source_id_fk": {
+          "name": "water_body_species_source_id_source_id_fk",
+          "tableFrom": "water_body_species",
+          "tableTo": "source",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.license_reciprocity": {
+      "name": "license_reciprocity",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "water_body_id": {
+          "name": "water_body_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "zone_id": {
+          "name": "zone_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "honoring_authority_id": {
+          "name": "honoring_authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "honored_authority_id": {
+          "name": "honored_authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "honored_state": {
+          "name": "honored_state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "honored": {
+          "name": "honored",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "replaces_state_license": {
+          "name": "replaces_state_license",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "condition": {
+          "name": "condition",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "license_reciprocity_water_body_id_water_body_id_fk": {
+          "name": "license_reciprocity_water_body_id_water_body_id_fk",
+          "tableFrom": "license_reciprocity",
+          "tableTo": "water_body",
+          "columnsFrom": [
+            "water_body_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "license_reciprocity_zone_id_zone_id_fk": {
+          "name": "license_reciprocity_zone_id_zone_id_fk",
+          "tableFrom": "license_reciprocity",
+          "tableTo": "zone",
+          "columnsFrom": [
+            "zone_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "license_reciprocity_honoring_authority_id_authority_id_fk": {
+          "name": "license_reciprocity_honoring_authority_id_authority_id_fk",
+          "tableFrom": "license_reciprocity",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "honoring_authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "license_reciprocity_honored_authority_id_authority_id_fk": {
+          "name": "license_reciprocity_honored_authority_id_authority_id_fk",
+          "tableFrom": "license_reciprocity",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "honored_authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "license_reciprocity_source_id_source_id_fk": {
+          "name": "license_reciprocity_source_id_source_id_fk",
+          "tableFrom": "license_reciprocity",
+          "tableTo": "source",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.regulation": {
+      "name": "regulation",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "rule_type": {
+          "name": "rule_type",
+          "type": "rule_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "parameters": {
+          "name": "parameters",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "regulation_group_id": {
+          "name": "regulation_group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "season_period_id": {
+          "name": "season_period_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "origin_authority_id": {
+          "name": "origin_authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "required_permit_authority_id": {
+          "name": "required_permit_authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rule_polarity": {
+          "name": "rule_polarity",
+          "type": "rule_polarity",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'applies'"
+        },
+        "basis": {
+          "name": "basis",
+          "type": "basis",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'explicit'"
+        },
+        "precedence": {
+          "name": "precedence",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "species_scope": {
+          "name": "species_scope",
+          "type": "species_scope",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'listed'"
+        },
+        "applies_to_class": {
+          "name": "applies_to_class",
+          "type": "angler_class",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'any'"
+        },
+        "applies_min_age": {
+          "name": "applies_min_age",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "applies_max_age": {
+          "name": "applies_max_age",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "jurisdiction_state": {
+          "name": "jurisdiction_state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scope_condition": {
+          "name": "scope_condition",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_binding": {
+          "name": "is_binding",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "confidence": {
+          "name": "confidence",
+          "type": "confidence",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'high'"
+        },
+        "citation": {
+          "name": "citation",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "human_summary": {
+          "name": "human_summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "verbatim_text": {
+          "name": "verbatim_text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_paraphrase": {
+          "name": "is_paraphrase",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "status": {
+          "name": "status",
+          "type": "status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'draft'"
+        },
+        "reviewer": {
+          "name": "reviewer",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reviewed_at": {
+          "name": "reviewed_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_verified_at": {
+          "name": "last_verified_at",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "valid_from": {
+          "name": "valid_from",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "valid_to": {
+          "name": "valid_to",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "supersedes_id": {
+          "name": "supersedes_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "regulation_regulation_group_id_regulation_group_id_fk": {
+          "name": "regulation_regulation_group_id_regulation_group_id_fk",
+          "tableFrom": "regulation",
+          "tableTo": "regulation_group",
+          "columnsFrom": [
+            "regulation_group_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_season_period_id_season_period_id_fk": {
+          "name": "regulation_season_period_id_season_period_id_fk",
+          "tableFrom": "regulation",
+          "tableTo": "season_period",
+          "columnsFrom": [
+            "season_period_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_authority_id_authority_id_fk": {
+          "name": "regulation_authority_id_authority_id_fk",
+          "tableFrom": "regulation",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_origin_authority_id_authority_id_fk": {
+          "name": "regulation_origin_authority_id_authority_id_fk",
+          "tableFrom": "regulation",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "origin_authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_required_permit_authority_id_authority_id_fk": {
+          "name": "regulation_required_permit_authority_id_authority_id_fk",
+          "tableFrom": "regulation",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "required_permit_authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.regulation_group": {
+      "name": "regulation_group",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "authority_id": {
+          "name": "authority_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "citation": {
+          "name": "citation",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verbatim_text": {
+          "name": "verbatim_text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "human_summary": {
+          "name": "human_summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "note": {
+          "name": "note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "regulation_group_authority_id_authority_id_fk": {
+          "name": "regulation_group_authority_id_authority_id_fk",
+          "tableFrom": "regulation_group",
+          "tableTo": "authority",
+          "columnsFrom": [
+            "authority_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.regulation_source": {
+      "name": "regulation_source",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "regulation_id": {
+          "name": "regulation_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "source_role",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "section_ref": {
+          "name": "section_ref",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "regulation_source_regulation_id_regulation_id_fk": {
+          "name": "regulation_source_regulation_id_regulation_id_fk",
+          "tableFrom": "regulation_source",
+          "tableTo": "regulation",
+          "columnsFrom": [
+            "regulation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_source_source_id_source_id_fk": {
+          "name": "regulation_source_source_id_source_id_fk",
+          "tableFrom": "regulation_source",
+          "tableTo": "source",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.regulation_species": {
+      "name": "regulation_species",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "regulation_id": {
+          "name": "regulation_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "species_id": {
+          "name": "species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "species_group_id": {
+          "name": "species_group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "role": {
+          "name": "role",
+          "type": "species_role",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'target'"
+        },
+        "mode": {
+          "name": "mode",
+          "type": "species_mode",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'include'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "regulation_species_regulation_id_regulation_id_fk": {
+          "name": "regulation_species_regulation_id_regulation_id_fk",
+          "tableFrom": "regulation_species",
+          "tableTo": "regulation",
+          "columnsFrom": [
+            "regulation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_species_species_id_species_id_fk": {
+          "name": "regulation_species_species_id_species_id_fk",
+          "tableFrom": "regulation_species",
+          "tableTo": "species",
+          "columnsFrom": [
+            "species_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "regulation_species_species_group_id_species_group_id_fk": {
+          "name": "regulation_species_species_group_id_species_group_id_fk",
+          "tableFrom": "regulation_species",
+          "tableTo": "species_group",
+          "columnsFrom": [
+            "species_group_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "reg_species_target_present": {
+          "name": "reg_species_target_present",
+          "value": "species_id IS NOT NULL OR species_group_id IS NOT NULL"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.regulation_target": {
+      "name": "regulation_target",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "regulation_id": {
+          "name": "regulation_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "target_type": {
+          "name": "target_type",
+          "type": "target_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "target_id": {
+          "name": "target_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mode": {
+          "name": "mode",
+          "type": "target_mode",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'include'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "regulation_target_regulation_id_regulation_id_fk": {
+          "name": "regulation_target_regulation_id_regulation_id_fk",
+          "tableFrom": "regulation_target",
+          "tableTo": "regulation",
+          "columnsFrom": [
+            "regulation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "reg_target_id_present": {
+          "name": "reg_target_id_present",
+          "value": "target_type IN ('statewide','authority_territory') OR target_id IS NOT NULL"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.season_period": {
+      "name": "season_period",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "regulation_group_id": {
+          "name": "regulation_group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "label": {
+          "name": "label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "period_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "start_spec": {
+          "name": "start_spec",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "end_spec": {
+          "name": "end_spec",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "valid_from": {
+          "name": "valid_from",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "valid_to": {
+          "name": "valid_to",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "supersedes_id": {
+          "name": "supersedes_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "season_period_regulation_group_id_regulation_group_id_fk": {
+          "name": "season_period_regulation_group_id_regulation_group_id_fk",
+          "tableFrom": "season_period",
+          "tableTo": "regulation_group",
+          "columnsFrom": [
+            "regulation_group_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.audit_log": {
+      "name": "audit_log",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "table_name": {
+          "name": "table_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "row_id": {
+          "name": "row_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "action": {
+          "name": "action",
+          "type": "audit_action",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "actor": {
+          "name": "actor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "at": {
+          "name": "at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "diff": {
+          "name": "diff",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.chat_message": {
+      "name": "chat_message",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "session_id": {
+          "name": "session_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "chat_role",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "content": {
+          "name": "content",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cards": {
+          "name": "cards",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "chat_message_session_id_chat_session_id_fk": {
+          "name": "chat_message_session_id_chat_session_id_fk",
+          "tableFrom": "chat_message",
+          "tableTo": "chat_session",
+          "columnsFrom": [
+            "session_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.chat_session": {
+      "name": "chat_session",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sdk_session_id": {
+          "name": "sdk_session_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "public.angler_class": {
+      "name": "angler_class",
+      "schema": "public",
+      "values": [
+        "any",
+        "tribal_member",
+        "non_tribal",
+        "spouse_of_member",
+        "minor",
+        "senior",
+        "disabled",
+        "resident",
+        "nonresident",
+        "active_military",
+        "youth"
+      ]
+    },
+    "public.audit_action": {
+      "name": "audit_action",
+      "schema": "public",
+      "values": [
+        "insert",
+        "update",
+        "delete"
+      ]
+    },
+    "public.authority_level": {
+      "name": "authority_level",
+      "schema": "public",
+      "values": [
+        "primary_regulatory",
+        "agency_mirror",
+        "third_party"
+      ]
+    },
+    "public.authority_type": {
+      "name": "authority_type",
+      "schema": "public",
+      "values": [
+        "state_agency",
+        "tribal",
+        "federal",
+        "land_trust",
+        "ngo",
+        "private_landowner"
+      ]
+    },
+    "public.basis": {
+      "name": "basis",
+      "schema": "public",
+      "values": [
+        "explicit",
+        "statewide_default",
+        "inherited"
+      ]
+    },
+    "public.chat_role": {
+      "name": "chat_role",
+      "schema": "public",
+      "values": [
+        "user",
+        "assistant"
+      ]
+    },
+    "public.confidence": {
+      "name": "confidence",
+      "schema": "public",
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "public.dist_unit": {
+      "name": "dist_unit",
+      "schema": "public",
+      "values": [
+        "ft",
+        "yd",
+        "m"
+      ]
+    },
+    "public.document_type": {
+      "name": "document_type",
+      "schema": "public",
+      "values": [
+        "webpage",
+        "pdf",
+        "booklet",
+        "gis",
+        "api"
+      ]
+    },
+    "public.fetch_status": {
+      "name": "fetch_status",
+      "schema": "public",
+      "values": [
+        "ok",
+        "failed_binary",
+        "failed_404",
+        "manual"
+      ]
+    },
+    "public.flow_dir": {
+      "name": "flow_dir",
+      "schema": "public",
+      "values": [
+        "upstream",
+        "downstream"
+      ]
+    },
+    "public.hydro_relation": {
+      "name": "hydro_relation",
+      "schema": "public",
+      "values": [
+        "outlet",
+        "tributary_of"
+      ]
+    },
+    "public.instrument_type": {
+      "name": "instrument_type",
+      "schema": "public",
+      "values": [
+        "commission_reg",
+        "admin_code",
+        "statute",
+        "booklet",
+        "guide",
+        "webpage",
+        "gis",
+        "tribal_ordinance",
+        "emergency_order",
+        "directors_order",
+        "hotline"
+      ]
+    },
+    "public.license_year_basis": {
+      "name": "license_year_basis",
+      "schema": "public",
+      "values": [
+        "fixed_calendar",
+        "rolling_12mo",
+        "regulation_year"
+      ]
+    },
+    "public.mgmt_category": {
+      "name": "mgmt_category",
+      "schema": "public",
+      "values": [
+        "community_fishing_pond",
+        "trophy_water",
+        "general"
+      ]
+    },
+    "public.native_status": {
+      "name": "native_status",
+      "schema": "public",
+      "values": [
+        "native",
+        "introduced",
+        "stocked",
+        "stocked_hybrid"
+      ]
+    },
+    "public.period_status": {
+      "name": "period_status",
+      "schema": "public",
+      "values": [
+        "open",
+        "closed",
+        "open_catch_release"
+      ]
+    },
+    "public.presence": {
+      "name": "presence",
+      "schema": "public",
+      "values": [
+        "native",
+        "stocked",
+        "introduced",
+        "historical"
+      ]
+    },
+    "public.rule_polarity": {
+      "name": "rule_polarity",
+      "schema": "public",
+      "values": [
+        "applies",
+        "asserts_none",
+        "excludes"
+      ]
+    },
+    "public.rule_type": {
+      "name": "rule_type",
+      "schema": "public",
+      "values": [
+        "season",
+        "bag",
+        "size_limit",
+        "gear_method",
+        "fishing_hours",
+        "closure",
+        "handling",
+        "vessel",
+        "ais",
+        "documentation",
+        "license",
+        "definition",
+        "special"
+      ]
+    },
+    "public.source_role": {
+      "name": "source_role",
+      "schema": "public",
+      "values": [
+        "primary",
+        "corroborating",
+        "spatial",
+        "text",
+        "verification",
+        "superseded"
+      ]
+    },
+    "public.species_category": {
+      "name": "species_category",
+      "schema": "public",
+      "values": [
+        "trout",
+        "char",
+        "salmon",
+        "bass",
+        "warmwater",
+        "panfish",
+        "catfish",
+        "sucker",
+        "minnow",
+        "sculpin",
+        "hybrid",
+        "other"
+      ]
+    },
+    "public.species_mode": {
+      "name": "species_mode",
+      "schema": "public",
+      "values": [
+        "include",
+        "exclude"
+      ]
+    },
+    "public.species_role": {
+      "name": "species_role",
+      "schema": "public",
+      "values": [
+        "target",
+        "bait",
+        "prohibited"
+      ]
+    },
+    "public.species_scope": {
+      "name": "species_scope",
+      "schema": "public",
+      "values": [
+        "all",
+        "listed"
+      ]
+    },
+    "public.status": {
+      "name": "status",
+      "schema": "public",
+      "values": [
+        "draft",
+        "needs_review",
+        "verified",
+        "published",
+        "proposed",
+        "superseded",
+        "rejected"
+      ]
+    },
+    "public.stocking_frequency": {
+      "name": "stocking_frequency",
+      "schema": "public",
+      "values": [
+        "weekly",
+        "biweekly",
+        "monthly",
+        "seasonal",
+        "annual",
+        "as_available"
+      ]
+    },
+    "public.target_mode": {
+      "name": "target_mode",
+      "schema": "public",
+      "values": [
+        "include",
+        "exclude"
+      ]
+    },
+    "public.target_type": {
+      "name": "target_type",
+      "schema": "public",
+      "values": [
+        "water_body",
+        "reach",
+        "zone",
+        "statewide",
+        "authority_territory"
+      ]
+    },
+    "public.water_type": {
+      "name": "water_type",
+      "schema": "public",
+      "values": [
+        "lake",
+        "reservoir",
+        "river",
+        "stream",
+        "creek",
+        "pond",
+        "marina",
+        "impoundment"
+      ]
+    },
+    "public.wba_role": {
+      "name": "wba_role",
+      "schema": "public",
+      "values": [
+        "take_rules",
+        "access",
+        "land_management",
+        "permit_issuer",
+        "none"
+      ]
+    },
+    "public.zone_kind": {
+      "name": "zone_kind",
+      "schema": "public",
+      "values": [
+        "district",
+        "region",
+        "county",
+        "tributary_group",
+        "closed_area",
+        "swim_area",
+        "jurisdiction",
+        "named_area",
+        "buffer"
+      ]
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

@@ -32,6 +32,56 @@ export async function getWaterRules(waterId: number): Promise<unknown> {
   return await res.json();
 }
 
+/** Full stocking history for one water — every recorded dated plant (newest first) plus any
+ *  stated recurring schedule, each with its source URL. Distinct from getWaterRules so the
+ *  agent (and the chat's interactive stocking-timeline card) can pull just the history. */
+export async function getStockingHistory(waterId: number) {
+  const [water] = (await db.execute(sql`
+    select id, name, states from water_body where id = ${waterId}
+  `)) as unknown as Array<Record<string, unknown>>;
+  if (!water) throw new Error(`no water with id ${waterId}`);
+
+  const events = (await db.execute(sql`
+    select sp.common_name as "species", e.quantity, e.size_note as "sizeNote",
+           e.stocked_on::text as "date", s.url as "sourceUrl"
+    from species_stocking_event e
+    join species sp on sp.id = e.species_id
+    join source s on s.id = e.source_id
+    where e.water_body_id = ${waterId}
+    order by e.stocked_on desc
+  `)) as unknown as Array<Record<string, unknown>>;
+
+  const schedule = (await db.execute(sql`
+    select sp.common_name as "species", sc.frequency,
+           sc.season_start_month as "seasonStartMonth", sc.season_end_month as "seasonEndMonth",
+           sc.note, s.url as "sourceUrl"
+    from species_stocking_schedule sc
+    join species sp on sp.id = sc.species_id
+    join source s on s.id = sc.source_id
+    where sc.water_body_id = ${waterId}
+  `)) as unknown as Array<Record<string, unknown>>;
+
+  return {
+    waterId: Number(water.id),
+    waterName: water.name as string,
+    events: events.map((e) => ({
+      species: e.species as string,
+      quantity: e.quantity == null ? null : Number(e.quantity),
+      sizeNote: (e.sizeNote as string | null) ?? null,
+      date: e.date as string,
+      sourceUrl: (e.sourceUrl as string | null) ?? null,
+    })),
+    schedule: schedule.map((s) => ({
+      species: s.species as string,
+      frequency: s.frequency as string,
+      seasonStartMonth: s.seasonStartMonth == null ? null : Number(s.seasonStartMonth),
+      seasonEndMonth: s.seasonEndMonth == null ? null : Number(s.seasonEndMonth),
+      note: (s.note as string | null) ?? null,
+      sourceUrl: (s.sourceUrl as string | null) ?? null,
+    })),
+  };
+}
+
 /** Keyword search over regulation text (summary, verbatim, citation), joined to the water
  *  and the primary source URL. Water-body and reach targets only (statewide
  *  authority-territory rules are intentionally excluded — they aren't water-specific). */

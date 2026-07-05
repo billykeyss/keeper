@@ -1,12 +1,16 @@
 import { query } from "@anthropic-ai/claude-agent-sdk";
-import { keeperMcpServer, KEEPER_TOOL_NAMES } from "./mcp";
+import { createKeeperMcpServer, KEEPER_TOOL_NAMES, type ToolCard } from "./mcp";
 import { buildSystemPrompt } from "./prompt";
 
 const KEEPER_ROOT = process.cwd();
+// The model may see exactly our Keeper MCP tools plus the built-in WebSearch — nothing else.
+const ALLOWED_TOOL_SET = [...KEEPER_TOOL_NAMES, "WebSearch"];
 
 export interface ChatTurnEvents {
   onDelta: (text: string) => void | Promise<void>;
   onTool: (name: string) => void | Promise<void>;
+  /** A structured tool result to render as an interactive card (Keeper tools + WebSearch). */
+  onCard: (card: ToolCard) => void | Promise<void>;
 }
 export interface ChatTurnResult {
   text: string;
@@ -20,20 +24,40 @@ export function chatConfigured(): boolean {
   return Boolean(process.env.ANTHROPIC_API_KEY && process.env.KEEPER_PASSWORD);
 }
 
-/** One user turn through the Agent SDK in the spec's lean lockdown configuration.
- *  Streams text deltas / tool-start events through `events`; resolves with the final
- *  text + SDK session id (pass back as resumeSessionId on the next turn). */
+/** Pull {title,url} web citations out of a WebSearch tool result (WebSearchOutput shape:
+ *  { query, results: (string | { content: {title,url}[] })[] }). Tolerant of shape drift. */
+function extractWebResults(toolUseResult: unknown): Array<{ title: string; url: string }> {
+  const out: Array<{ title: string; url: string }> = [];
+  const results = (toolUseResult as { results?: unknown } | null)?.results;
+  if (!Array.isArray(results)) return out;
+  for (const r of results) {
+    const content = (r as { content?: unknown })?.content;
+    if (!Array.isArray(content)) continue;
+    for (const c of content) {
+      const url = (c as { url?: unknown })?.url;
+      const title = (c as { title?: unknown })?.title;
+      if (typeof url === "string") out.push({ title: typeof title === "string" ? title : url, url });
+    }
+  }
+  return out;
+}
+
+/** One user turn through the Agent SDK in the locked-down configuration, now with the built-in
+ *  WebSearch tool available as a fallback. Streams text deltas, tool-start events, and structured
+ *  tool-result cards through `events`; resolves with the final text + SDK session id. */
 export async function runChatTurn(
   userText: string,
   opts: { resumeSessionId: string | null; abortController: AbortController; events: ChatTurnEvents },
 ): Promise<ChatTurnResult> {
+  const keeperMcpServer = createKeeperMcpServer((card) => { void opts.events.onCard(card); });
+
   const q = query({
     prompt: userText,
     options: {
       model: process.env.CHAT_MODEL ?? "claude-haiku-4-5",
       systemPrompt: buildSystemPrompt(new Date().toISOString().slice(0, 10)),
-      tools: [],
-      allowedTools: [...KEEPER_TOOL_NAMES],
+      tools: ["WebSearch"], // enable ONLY WebSearch among built-ins; Bash/Read/Write/etc. stay off
+      allowedTools: [...ALLOWED_TOOL_SET],
       permissionMode: "dontAsk",
       strictMcpConfig: true,
       settingSources: [],
@@ -58,14 +82,14 @@ export async function runChatTurn(
   for await (const msg of q as AsyncIterable<any>) {
     if (msg.type === "system" && msg.subtype === "init") {
       sdkSessionId = msg.session_id;
-      // Lockdown assertion (fail closed): the model must see EXACTLY our three tools.
+      // Lockdown assertion (fail closed): the model may see EXACTLY our Keeper tools + WebSearch.
       const tools: string[] = msg.tools ?? [];
-      const unexpected = tools.filter((t) => !KEEPER_TOOL_NAMES.includes(t));
-      if (unexpected.length > 0 || tools.length !== KEEPER_TOOL_NAMES.length) {
+      const unexpected = tools.filter((t) => !ALLOWED_TOOL_SET.includes(t));
+      if (unexpected.length > 0 || tools.length !== ALLOWED_TOOL_SET.length) {
         opts.abortController.abort();
         throw new Error(`chat lockdown violated — visible tools: [${tools.join(", ")}]`);
       }
-      console.log(`[chat] init ok — model=${msg.model} apiKeySource=${msg.apiKeySource}`);
+      console.log(`[chat] init ok — model=${msg.model} apiKeySource=${msg.apiKeySource} tools=${tools.length}`);
       continue;
     }
     if (msg.type === "stream_event") {
@@ -76,6 +100,13 @@ export async function runChatTurn(
       } else if (ev?.type === "content_block_start" && ev.content_block?.type === "tool_use") {
         await opts.events.onTool(ev.content_block.name);
       }
+      continue;
+    }
+    // WebSearch results arrive as a tool result on a user message — Keeper MCP tool results are
+    // already emitted in-process by createKeeperMcpServer, so only web results are pulled here.
+    if (msg.type === "user" && msg.tool_use_result) {
+      const web = extractWebResults(msg.tool_use_result);
+      if (web.length) await opts.events.onCard({ tool: "WebSearch", data: { results: web } });
       continue;
     }
     if (msg.type === "result") {

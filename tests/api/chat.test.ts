@@ -7,6 +7,7 @@ vi.mock("../../src/chat/agent", () => ({
   chatConfigured: () => Boolean(process.env.ANTHROPIC_API_KEY && process.env.KEEPER_PASSWORD),
   runChatTurn: vi.fn(async (_text: string, opts: any) => {
     await opts.events.onTool("mcp__keeper__search_waters");
+    await opts.events.onCard({ tool: "search_waters", data: [{ id: 1, name: "Donner Lake" }] });
     await opts.events.onDelta("Hello ");
     await opts.events.onDelta("world.");
     return { text: "Hello world.", sdkSessionId: "sdk-abc", costUsd: 0.012 };
@@ -73,6 +74,7 @@ describe("chat API", () => {
     expect(res.headers.get("content-type")).toContain("text/event-stream");
     const frames = parseSSE(await res.text());
     expect(frames.find((f) => f.event === "tool")?.data).toEqual({ name: "mcp__keeper__search_waters" });
+    expect(frames.find((f) => f.event === "card")?.data).toEqual({ tool: "search_waters", data: [{ id: 1, name: "Donner Lake" }] });
     expect(frames.filter((f) => f.event === "delta").map((f) => f.data.text).join("")).toBe("Hello world.");
     const done = frames.find((f) => f.event === "done");
     expect(done?.data.costUsd).toBe(0.012);
@@ -80,6 +82,10 @@ describe("chat API", () => {
     const stored = await db.select().from(chatMessage).where(eq(chatMessage.sessionId, id));
     expect(stored.map((m) => m.role)).toEqual(["user", "assistant"]);
     expect(stored[1].content).toBe("Hello world.");
+    // cards persist with the assistant message and reload with history
+    expect(stored[1].cards).toEqual([{ tool: "search_waters", data: [{ id: 1, name: "Donner Lake" }] }]);
+    const reloaded = await (await app.request(`/api/chat/sessions/${id}/messages`, { headers: HDRS })).json();
+    expect(reloaded.messages[1].cards).toEqual([{ tool: "search_waters", data: [{ id: 1, name: "Donner Lake" }] }]);
     const [sess] = await db.select().from(chatSession).where(eq(chatSession.id, id));
     expect(sess.sdkSessionId).toBe("sdk-abc");
     expect(sess.title).toBe("What are the rules at Big Blue Lake?");

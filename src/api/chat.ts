@@ -59,11 +59,11 @@ chat.get("/api/chat/sessions/:id/messages", async (c) => {
   const [sess] = await db.select().from(chatSession).where(eq(chatSession.id, id));
   if (!sess) return c.json({ error: "unknown session" }, 404);
   const rows = await db
-    .select({ id: chatMessage.id, role: chatMessage.role, content: chatMessage.content, createdAt: chatMessage.createdAt })
+    .select({ id: chatMessage.id, role: chatMessage.role, content: chatMessage.content, cards: chatMessage.cards, createdAt: chatMessage.createdAt })
     .from(chatMessage)
     .where(eq(chatMessage.sessionId, id))
     .orderBy(chatMessage.id);
-  return c.json({ messages: rows });
+  return c.json({ messages: rows.map((m) => ({ ...m, cards: m.cards ?? [] })) });
 });
 
 chat.post("/api/chat/sessions/:id/messages", async (c) => {
@@ -103,10 +103,15 @@ chat.post("/api/chat/sessions/:id/messages", async (c) => {
   return streamSSE(c, async (stream) => {
     const ac = new AbortController();
     stream.onAbort(() => ac.abort());
+    const cards: Array<{ tool: string; data: unknown }> = [];
     try {
       const events = {
         onTool: async (name: string) => { await stream.writeSSE({ event: "tool", data: JSON.stringify({ name }) }); },
         onDelta: async (t: string) => { await stream.writeSSE({ event: "delta", data: JSON.stringify({ text: t }) }); },
+        onCard: async (card: { tool: string; data: unknown }) => {
+          cards.push(card);
+          await stream.writeSSE({ event: "card", data: JSON.stringify(card) });
+        },
       };
       let result;
       try {
@@ -118,12 +123,13 @@ chat.post("/api/chat/sessions/:id/messages", async (c) => {
         // init, before any deltas stream, so a retry can't duplicate output.
         if (!sess.sdkSessionId || ac.signal.aborted) throw e;
         console.warn("[chat] resume failed — retrying with a fresh SDK session:", e);
+        cards.length = 0; // the retry re-emits its own cards
         result = await runChatTurn(text, { resumeSessionId: null, abortController: ac, events });
       }
       const saved = await db.transaction(async (tx) => {
         const [row] = await tx
           .insert(chatMessage)
-          .values({ sessionId: id, role: "assistant", content: result.text })
+          .values({ sessionId: id, role: "assistant", content: result.text, cards: cards.length ? cards : null })
           .returning();
         await tx
           .update(chatSession)

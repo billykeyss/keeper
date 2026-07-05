@@ -1,4 +1,4 @@
-import { pgTable, serial, integer, text } from "drizzle-orm/pg-core";
+import { pgTable, serial, integer, text, jsonb } from "drizzle-orm/pg-core";
 import { chatRoleEnum } from "../enums";
 import { stamps } from "../stamps";
 
@@ -16,5 +16,9 @@ export const chatMessage = pgTable("chat_message", {
   sessionId: integer("session_id").notNull().references(() => chatSession.id),
   role: chatRoleEnum("role").notNull(),
   content: text("content").notNull(),
+  // Interactive tool-result cards emitted during an assistant turn (search_waters /
+  // get_water_rules / get_stocking_history / search_regulations / WebSearch), rendered
+  // beside the prose and persisted so a reopened conversation keeps its components.
+  cards: jsonb("cards").$type<Array<{ tool: string; data: unknown }>>(),
   ...stamps,
 });

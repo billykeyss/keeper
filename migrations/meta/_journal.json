@@ -50,6 +50,13 @@
       "when": 1783037274466,
       "tag": "0006_tranquil_starfox",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1783226991971,
+      "tag": "0007_quiet_lester",
+      "breakpoints": true
     }
   ]
 }
