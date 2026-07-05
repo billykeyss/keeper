@@ -133,10 +133,21 @@ export function clearPassword(): void {
   localStorage.removeItem(PASSWORD_KEY);
 }
 
-/** Headers every API call must carry: JSON accept + the app password when we have one. */
+/** Headers every API call carries: JSON accept + the chat password when we have one. The
+ *  map/rules/stocking API is public and ignores the header; only /api/chat/* enforces it. */
 export function apiHeaders(extra?: Record<string, string>): Record<string, string> {
   const pw = getStoredPassword();
   return { accept: "application/json", ...(pw ? { "x-keeper-password": pw } : {}), ...extra };
+}
+
+/** Probe the chat password gate — 204 iff the stored password is accepted (or none required). */
+export async function checkChatAuth(signal?: AbortSignal): Promise<boolean> {
+  try {
+    const res = await fetch("/api/chat/auth/check", { headers: apiHeaders(), signal });
+    return res.status === 204;
+  } catch {
+    return false;
+  }
 }
 
 async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {

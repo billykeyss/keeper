@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react";
 import { ChatPanel } from "./ChatPanel";
 import { MapView } from "./Map";
-import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
 import { LayersPanel, type FishMode, type PickedWater } from "./LayersPanel";
 import { WaterSearch } from "./WaterSearch";
@@ -84,8 +83,7 @@ export function App() {
   const speciesFilter = fishMode === "all" ? fishFilter : null;
 
   return (
-    <PasswordGate>
-      <div className="app">
+    <div className="app">
         <MapView
           selectedId={selected?.id ?? null}
           selectedStatus={selectedStatus}
@@ -176,6 +174,5 @@ export function App() {
 
         <RulesSheet pin={selected} focusScope={focusScope} onClose={handleClose} onStatus={handleStatus} />
       </div>
-    </PasswordGate>
   );
 }

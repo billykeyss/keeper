@@ -1,8 +1,12 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import {
+  checkChatAuth,
+  clearPassword,
   createChatSession,
   fetchChatMessages,
   fetchChatSessions,
+  getStoredPassword,
+  storePassword,
   streamChatMessage,
   type ChatCard as ChatCardData,
   type ChatMessageRow,
@@ -96,8 +100,36 @@ export function ChatPanel({ open, onClose, onOpenWater }: Props) {
   const [toolNote, setToolNote] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  // Chat is the one password-gated feature (the rest of the app is public). null = checking.
+  const [authed, setAuthed] = useState<boolean | null>(null);
+  const [pwWrong, setPwWrong] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
   const tempIdRef = useRef(-1);
+
+  // Verify the chat password when the panel opens (probe the gate with any stored value).
+  useEffect(() => {
+    if (!open) return;
+    if (!getStoredPassword()) { setAuthed(false); return; }
+    const ac = new AbortController();
+    checkChatAuth(ac.signal).then((ok) => setAuthed(ok));
+    return () => ac.abort();
+  }, [open]);
+
+  // A 401 from any chat request re-locks (api.ts clears the password + dispatches this).
+  useEffect(() => {
+    const relock = () => { setAuthed(false); setPwWrong(false); };
+    window.addEventListener("keeper:unauthorized", relock);
+    return () => window.removeEventListener("keeper:unauthorized", relock);
+  }, []);
+
+  const unlock = useCallback(async (pw: string) => {
+    if (!pw) return;
+    storePassword(pw);
+    setPwWrong(false);
+    const ok = await checkChatAuth();
+    if (ok) setAuthed(true);
+    else { clearPassword(); setPwWrong(true); }
+  }, []);
 
   useEffect(() => {
     if (!open || active != null || sessions !== null) return;
@@ -170,6 +202,38 @@ export function ChatPanel({ open, onClose, onOpenWater }: Props) {
   }, [draft, busy, active]);
 
   if (!open) return null;
+
+  // Chat password gate — the only locked feature. Shown until the password validates.
+  if (authed !== true) {
+    return (
+      <section className="chat-screen" role="dialog" aria-modal="true" aria-label="Unlock chat">
+        <header className="chat-topbar">
+          <span className="chat-brand">Ask Keeper</span>
+          <button className="chat-x" aria-label="Close chat" onClick={onClose}><CloseIcon size={20} /></button>
+        </header>
+        <div className="chat-lock">
+          <form
+            className="chat-lock-card"
+            onSubmit={(e) => { e.preventDefault(); void unlock(new FormData(e.currentTarget).get("cpw") as string); }}
+          >
+            <p className="chat-lock-title">The chat is password-protected.</p>
+            <p className="chat-lock-sub">The rest of Keeper is open — chat needs a password because it uses a paid AI service.</p>
+            <input
+              className="gate-input"
+              type="password"
+              name="cpw"
+              autoFocus
+              autoComplete="current-password"
+              aria-label="Chat password"
+              placeholder="Password"
+            />
+            {pwWrong && <p className="gate-error" role="alert">That’s not it — try again.</p>}
+            <button className="gate-submit" type="submit">Unlock chat</button>
+          </form>
+        </div>
+      </section>
+    );
+  }
 
   const inConversation = active != null;
 

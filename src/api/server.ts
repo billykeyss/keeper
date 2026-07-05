@@ -9,7 +9,9 @@ import { chat } from "./chat";
 
 export const app = new Hono();
 
-app.use("/api/*", keeperAuth);
+// The map/rules/stocking/species API is public. Only the chat (which spends API money)
+// sits behind the shared password — the gate is scoped to /api/chat/* here.
+app.use("/api/chat/*", keeperAuth);
 app.route("/", authRoutes);
 app.route("/", waters);
 app.route("/", rules);

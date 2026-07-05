@@ -1455,6 +1455,18 @@ a {
   z-index: 30;
 }
 
+/* --- chat password lock (the only gated feature) --- */
+.chat-lock { flex: 1; display: grid; place-items: center; padding: 24px; }
+.chat-lock-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(340px, 100%);
+  text-align: center;
+}
+.chat-lock-title { font-family: var(--font-display); font-size: 18px; color: var(--ink); margin: 0; }
+.chat-lock-sub { font-size: 13px; color: var(--ink-64); margin: 0 0 4px; }
+
 /* --- app password gate --- */
 .gate {
   position: fixed;

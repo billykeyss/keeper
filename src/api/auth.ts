@@ -9,9 +9,10 @@ function safeEqual(a: string, b: string): boolean {
   return timingSafeEqual(ab, bb);
 }
 
-/** App-wide password gate. Active only when KEEPER_PASSWORD is set in the environment
- *  (read per-request so tests can toggle it): every /api/* request must carry a matching
- *  X-Keeper-Password header. Constant-time comparison; 401 otherwise. */
+/** Chat password gate. Active only when KEEPER_PASSWORD is set in the environment (read
+ *  per-request so tests can toggle it): a gated request must carry a matching
+ *  X-Keeper-Password header. Constant-time comparison; 401 otherwise. Mounted on
+ *  /api/chat/* only — the rest of the API is public. */
 export const keeperAuth: MiddlewareHandler = async (c, next) => {
   const expected = process.env.KEEPER_PASSWORD;
   if (!expected) return next();
@@ -20,6 +21,7 @@ export const keeperAuth: MiddlewareHandler = async (c, next) => {
   return next();
 };
 
-/** Cheap probe endpoint for the frontend's PasswordGate: 204 iff the request passes the gate. */
+/** Cheap probe the chat panel uses to verify its password: 204 iff the request passes the
+ *  chat gate. Under /api/chat/* so it inherits keeperAuth (and NOT chatConfigured). */
 export const authRoutes = new Hono();
-authRoutes.get("/api/auth/check", (c) => c.body(null, 204));
+authRoutes.get("/api/chat/auth/check", (c) => c.body(null, 204));
