@@ -277,10 +277,18 @@ export interface ChatSessionRow {
   updatedAt: string;
   messageCount: number;
 }
+/** An interactive tool-result card attached to an assistant message. `tool` selects the
+ *  renderer (search_waters / get_water_rules / get_stocking_history / search_regulations /
+ *  WebSearch); `data` is that tool's raw JSON result. */
+export interface ChatCard {
+  tool: string;
+  data: unknown;
+}
 export interface ChatMessageRow {
   id: number;
   role: "user" | "assistant";
   content: string;
+  cards?: ChatCard[];
   createdAt: string;
 }
 
@@ -310,6 +318,7 @@ export async function fetchChatMessages(id: number, signal?: AbortSignal): Promi
 
 export interface ChatStreamHandlers {
   onTool: (name: string) => void;
+  onCard: (card: ChatCard) => void;
   onDelta: (text: string) => void;
   onDone: () => void;
   onError: (message: string) => void;
@@ -354,6 +363,7 @@ export async function streamChatMessage(
       if (!event || !dataRaw) continue;
       const data = JSON.parse(dataRaw) as Record<string, unknown>;
       if (event === "tool") handlers.onTool(String(data.name));
+      else if (event === "card") handlers.onCard(data as unknown as ChatCard);
       else if (event === "delta") handlers.onDelta(String(data.text));
       else if (event === "done") handlers.onDone();
       else if (event === "error") handlers.onError(String(data.message));

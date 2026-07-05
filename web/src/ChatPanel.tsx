@@ -4,61 +4,101 @@ import {
   fetchChatMessages,
   fetchChatSessions,
   streamChatMessage,
+  type ChatCard as ChatCardData,
   type ChatMessageRow,
   type ChatSessionRow,
 } from "./api";
+import { ChatCard } from "./ChatCard";
 import { CloseIcon, ExternalIcon } from "./icons";
 
-/** Render assistant text with ONLY [label](https://…) markdown links converted to anchors —
- *  everything else stays plain text (no markdown lib, no innerHTML). */
-function renderWithLinks(text: string): ReactNode[] {
+/** Inline markdown: **bold** and [label](https://…) links only — no lib, no innerHTML. */
+function renderInline(text: string, keyBase: string): ReactNode[] {
   const out: ReactNode[] = [];
-  const re = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  // Alternate on bold spans, then linkify each plain segment.
+  const boldRe = /\*\*([^*]+)\*\*/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let k = 0;
-  while ((m = re.exec(text)) !== null) {
-    if (m.index > last) out.push(text.slice(last, m.index));
-    out.push(
-      <a key={k++} className="rule-link" href={m[2]} target="_blank" rel="noreferrer noopener">
-        {m[1]} <ExternalIcon />
-      </a>,
-    );
+  const pushLinked = (s: string) => {
+    const re = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+    let l = 0;
+    let lm: RegExpExecArray | null;
+    while ((lm = re.exec(s)) !== null) {
+      if (lm.index > l) out.push(s.slice(l, lm.index));
+      out.push(
+        <a key={`${keyBase}-a${k++}`} className="rule-link" href={lm[2]} target="_blank" rel="noreferrer noopener">
+          {lm[1]} <ExternalIcon />
+        </a>,
+      );
+      l = lm.index + lm[0].length;
+    }
+    if (l < s.length) out.push(s.slice(l));
+  };
+  while ((m = boldRe.exec(text)) !== null) {
+    if (m.index > last) pushLinked(text.slice(last, m.index));
+    out.push(<strong key={`${keyBase}-b${k++}`}>{renderInline(m[1], `${keyBase}-b${k}`)}</strong>);
     last = m.index + m[0].length;
   }
-  if (last < text.length) out.push(text.slice(last));
+  if (last < text.length) pushLinked(text.slice(last));
   return out;
+}
+
+/** Light markdown → React: headings (#), bullet lists (- / *), bold, links, paragraphs.
+ *  Deliberately small — the heavy structured data renders as its own cards, not as markdown. */
+function renderMarkdown(text: string): ReactNode[] {
+  const lines = text.split("\n");
+  const blocks: ReactNode[] = [];
+  let list: ReactNode[] = [];
+  const flushList = () => {
+    if (list.length) { blocks.push(<ul key={`ul${blocks.length}`} className="chat-md-ul">{list}</ul>); list = []; }
+  };
+  lines.forEach((raw, i) => {
+    const line = raw.trimEnd();
+    const h = /^\s{0,3}#{1,4}\s+(.*)$/.exec(line);
+    const b = /^\s*[-*]\s+(.*)$/.exec(line);
+    if (h) { flushList(); blocks.push(<div key={i} className="chat-md-h">{renderInline(h[1], `h${i}`)}</div>); }
+    else if (b) { list.push(<li key={i}>{renderInline(b[1], `li${i}`)}</li>); }
+    else if (line.trim() === "") { flushList(); }
+    else { flushList(); blocks.push(<p key={i} className="chat-md-p">{renderInline(line, `p${i}`)}</p>); }
+  });
+  flushList();
+  return blocks;
 }
 
 const TOOL_LABEL: Record<string, string> = {
   mcp__keeper__search_waters: "Searching waters…",
   mcp__keeper__get_water_rules: "Reading the regulations…",
+  mcp__keeper__get_stocking_history: "Pulling stocking history…",
   mcp__keeper__search_regulations: "Searching regulation text…",
+  WebSearch: "Searching the web…",
 };
 
 interface Props {
   open: boolean;
   onClose: () => void;
+  /** Fly the map to a water by name and open its rules sheet (also closes the chat). */
+  onOpenWater: (name: string) => void;
 }
 
-export function ChatPanel({ open, onClose }: Props) {
+const SUGGESTIONS = [
+  "Can I keep trout at Donner Lake right now?",
+  "What's been stocked at Sparks Marina, and when?",
+  "Which waters near Truckee are catch-and-release only?",
+];
+
+export function ChatPanel({ open, onClose, onOpenWater }: Props) {
   const [sessions, setSessions] = useState<ChatSessionRow[] | null>(null);
   const [active, setActive] = useState<number | null>(null);
   const [messages, setMessages] = useState<ChatMessageRow[]>([]);
   const [draft, setDraft] = useState("");
   const [live, setLive] = useState<string | null>(null); // streaming assistant text
+  const [liveCards, setLiveCards] = useState<ChatCardData[]>([]);
   const [toolNote, setToolNote] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
-  // Monotonic temp ids for optimistic bubbles — negative so they can never collide
-  // with real (positive, serial) DB ids, and counter-based so two turns can never
-  // collide with each other (Date.now() can repeat under coarse timers).
   const tempIdRef = useRef(-1);
 
-  // Refetch whenever the list view is showing (open, no active chat) and we don't
-  // have a loaded list — "← Chats" and startNew() set sessions to null to land here,
-  // so returning from a conversation always reflects fresh updatedAt ordering.
   useEffect(() => {
     if (!open || active != null || sessions !== null) return;
     const ac = new AbortController();
@@ -75,7 +115,7 @@ export function ChatPanel({ open, onClose }: Props) {
 
   useEffect(() => {
     bodyRef.current?.scrollTo({ top: bodyRef.current.scrollHeight });
-  }, [messages, live]);
+  }, [messages, live, liveCards]);
 
   useEffect(() => {
     if (!open) return;
@@ -92,33 +132,37 @@ export function ChatPanel({ open, onClose }: Props) {
       setActive(s.id);
       setMessages([]);
     } catch {
-      // 401 already re-locks the app via keeper:unauthorized; anything else surfaces here.
       setError("Couldn’t start a new chat — try again.");
     }
   }, []);
 
-  const send = useCallback(async () => {
-    const text = draft.trim();
+  const send = useCallback(async (textIn?: string) => {
+    const text = (textIn ?? draft).trim();
     if (!text || busy || active == null) return;
     setDraft("");
     setError(null);
     setBusy(true);
     setMessages((m) => [...m, { id: tempIdRef.current--, role: "user", content: text, createdAt: "" }]);
     setLive("");
+    setLiveCards([]);
     let acc = "";
+    const cards: ChatCardData[] = [];
     try {
       await streamChatMessage(active, text, {
         onTool: (name) => setToolNote(TOOL_LABEL[name] ?? "Looking that up…"),
+        onCard: (card) => { cards.push(card); setLiveCards([...cards]); },
         onDelta: (t) => { acc += t; setToolNote(null); setLive(acc); },
         onDone: () => {
-          setMessages((m) => [...m, { id: tempIdRef.current--, role: "assistant", content: acc, createdAt: "" }]);
+          setMessages((m) => [...m, { id: tempIdRef.current--, role: "assistant", content: acc, cards: [...cards], createdAt: "" }]);
           setLive(null);
+          setLiveCards([]);
         },
-        onError: (message) => { setError(message); setLive(null); },
+        onError: (message) => { setError(message); setLive(null); setLiveCards([]); },
       });
     } catch {
       setError("Couldn’t reach the chat service.");
       setLive(null);
+      setLiveCards([]);
     } finally {
       setToolNote(null);
       setBusy(false);
@@ -127,63 +171,93 @@ export function ChatPanel({ open, onClose }: Props) {
 
   if (!open) return null;
 
-  return (
-    <section className="chat-panel" role="dialog" aria-modal="false" aria-label="Regulations chat">
-      <div className="chat-head">
-        {active != null ? (
-          <button className="stocked-back" onClick={() => { setActive(null); setSessions(null); }}>← Chats</button>
-        ) : (
-          <h2 className="stocked-title">Ask Keeper</h2>
-        )}
-        <button className="sheet-close stocked-close" aria-label="Close chat" onClick={onClose}>
-          <CloseIcon size={16} />
-        </button>
-      </div>
+  const inConversation = active != null;
 
-      {active == null && (
-        <>
-          <button className="chat-new" onClick={startNew}>+ New chat</button>
+  return (
+    <section className="chat-screen" role="dialog" aria-modal="true" aria-label="Keeper chat">
+      <header className="chat-topbar">
+        {inConversation ? (
+          <button className="chat-back" onClick={() => { setActive(null); setSessions(null); }}>← Chats</button>
+        ) : (
+          <span className="chat-brand">Ask Keeper</span>
+        )}
+        {inConversation && <button className="chat-newbtn" onClick={startNew}>+ New</button>}
+        <button className="chat-x" aria-label="Close chat" onClick={onClose}><CloseIcon size={20} /></button>
+      </header>
+
+      {!inConversation && (
+        <div className="chat-home">
+          <button className="chat-new-primary" onClick={startNew}>Start a new chat</button>
           {error && <div className="chat-error" role="alert">{error}</div>}
-          <ul className="stocked-list">
+          <h3 className="chat-home-h">Recent</h3>
+          <ul className="chat-sessions">
             {(sessions ?? []).map((s) => (
               <li key={s.id}>
-                <button className="stocked-row" onClick={() => setActive(s.id)}>
-                  <span className="stocked-species-name">{s.title}</span>
-                  <span className="stocked-meta">{s.messageCount} message{s.messageCount === 1 ? "" : "s"}</span>
+                <button className="chat-session-row" onClick={() => setActive(s.id)}>
+                  <span className="chat-session-title">{s.title}</span>
+                  <span className="chat-session-meta">{s.messageCount} message{s.messageCount === 1 ? "" : "s"}</span>
                 </button>
               </li>
             ))}
-            {sessions?.length === 0 && <li className="stocked-empty">No chats yet — start one.</li>}
-            {sessions === null && <li className="stocked-empty">Loading…</li>}
+            {sessions?.length === 0 && <li className="chat-muted">No chats yet — start one above.</li>}
+            {sessions === null && <li className="chat-muted">Loading…</li>}
           </ul>
-        </>
+        </div>
       )}
 
-      {active != null && (
+      {inConversation && (
         <>
           <div className="chat-body" ref={bodyRef}>
-            {messages.map((m) => (
-              <div key={m.id} className={`chat-msg chat-msg--${m.role}`}>
-                {m.role === "assistant" ? renderWithLinks(m.content) : m.content}
-              </div>
-            ))}
-            {toolNote && <div className="chat-tool-note">{toolNote}</div>}
-            {live !== null && <div className="chat-msg chat-msg--assistant">{renderWithLinks(live)}</div>}
-            {error && <div className="chat-error" role="alert">{error}</div>}
-            {messages.length === 0 && live === null && (
-              <p className="stocked-empty">Ask about seasons, limits, licenses, or stocking — answers cite the actual regulation.</p>
-            )}
+            <div className="chat-col">
+              {messages.length === 0 && live === null && (
+                <div className="chat-welcome">
+                  <p>Ask about seasons, limits, licenses, or stocking. Answers come from Keeper's verified data first, with sources — and fall back to a web search when we don't have the water.</p>
+                  <div className="chat-suggests">
+                    {SUGGESTIONS.map((s) => (
+                      <button key={s} className="chat-suggest" onClick={() => void send(s)}>{s}</button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {messages.map((m) => (
+                <div key={m.id} className={`chat-turn chat-turn--${m.role}`}>
+                  {m.role === "assistant" && (m.cards ?? []).map((c, i) => (
+                    <ChatCard key={i} card={c} onOpenWater={onOpenWater} />
+                  ))}
+                  <div className={`chat-msg chat-msg--${m.role}`}>
+                    {m.role === "assistant" ? renderMarkdown(m.content) : m.content}
+                  </div>
+                </div>
+              ))}
+
+              {(live !== null || liveCards.length > 0 || toolNote) && (
+                <div className="chat-turn chat-turn--assistant">
+                  {liveCards.map((c, i) => <ChatCard key={i} card={c} onOpenWater={onOpenWater} />)}
+                  {toolNote && <div className="chat-tool-note">{toolNote}</div>}
+                  {live !== null && live !== "" && (
+                    <div className="chat-msg chat-msg--assistant">{renderMarkdown(live)}</div>
+                  )}
+                </div>
+              )}
+
+              {error && <div className="chat-error" role="alert">{error}</div>}
+            </div>
           </div>
+
           <form className="chat-compose" onSubmit={(e) => { e.preventDefault(); void send(); }}>
-            <input
-              className="chat-input"
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              placeholder="e.g. Can I keep trout at Donner Lake?"
-              maxLength={2000}
-              aria-label="Chat message"
-            />
-            <button className="chat-send" type="submit" disabled={busy || !draft.trim()}>Send</button>
+            <div className="chat-col chat-compose-col">
+              <input
+                className="chat-input"
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                placeholder="Ask about any CA or NV water…"
+                maxLength={2000}
+                aria-label="Chat message"
+                autoFocus
+              />
+              <button className="chat-send" type="submit" disabled={busy || !draft.trim()}>Send</button>
+            </div>
           </form>
         </>
       )}

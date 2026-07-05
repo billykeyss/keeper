@@ -6,7 +6,7 @@ import { RulesSheet } from "./RulesSheet";
 import { LayersPanel, type FishMode, type PickedWater } from "./LayersPanel";
 import { WaterSearch } from "./WaterSearch";
 import { ChatIcon, LayersIcon, SearchIcon } from "./icons";
-import type { WaterPin, ScopeStatus, WaterSearchRow } from "./api";
+import { searchWatersByName, type WaterPin, type ScopeStatus, type WaterSearchRow } from "./api";
 
 function todayLabel(): string {
   return new Date().toLocaleDateString(undefined, {
@@ -64,6 +64,18 @@ export function App() {
       lon: w.lon, lat: w.lat, verifyCurrent: false, ruleCount: 0,
     });
   }, [handleSelect]);
+
+  // Chat cards fly-to by name (the card data doesn't carry coordinates) — resolve the exact
+  // water via search, then fly + open its rules sheet.
+  const handleOpenWaterByName = useCallback(async (name: string) => {
+    try {
+      const rows = await searchWatersByName(name);
+      const hit = rows.find((r) => r.name.toLowerCase() === name.toLowerCase()) ?? rows[0];
+      if (hit) handlePickWater(hit);
+    } catch {
+      /* best-effort: a failed lookup just doesn't navigate */
+    }
+  }, [handlePickWater]);
 
   const sheetOpen = selected != null;
   const layersActive = forestLands || blmLands || fishFilter != null;
@@ -140,7 +152,7 @@ export function App() {
         >
           Ask
         </button>
-        <ChatPanel open={openPanel === "chat"} onClose={() => setOpenPanel(null)} />
+        <ChatPanel open={openPanel === "chat"} onClose={() => setOpenPanel(null)} onOpenWater={handleOpenWaterByName} />
 
         {/* Mobile dock (hidden on desktop). Yields entirely to an open rules sheet. */}
         <nav className="dock" data-hidden={sheetOpen} aria-label="Map tools">
