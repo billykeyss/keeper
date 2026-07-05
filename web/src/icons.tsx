@@ -206,6 +206,17 @@ export const MountainIcon = (p: IconProps) =>
     p.className,
   );
 
+export const LayersIcon = (p: IconProps) =>
+  svg(
+    <>
+      <path d="M12 3.5 3 8l9 4.5L21 8z" />
+      <path d="M3 12l9 4.5L21 12" />
+      <path d="M3 16l9 4.5L21 16" />
+    </>,
+    p.size,
+    p.className,
+  );
+
 export const ChatIcon = (p: IconProps) =>
   svg(
     <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9.5l-4 3.3c-.6.5-1.5.1-1.5-.7z" />,

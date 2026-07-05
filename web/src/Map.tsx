@@ -84,7 +84,9 @@ interface MapProps {
    *  while its sheet is open (the map-wide keep-selected-visible rule), even if the
    *  filter excludes it. */
   stockedFilter: string | null;
-  /** One-shot fly request (e.g. picking a water from the stocked-fish panel). */
+  /** When set, only waters where this species is present are shown (same keep-selected rule). */
+  speciesFilter: string | null;
+  /** One-shot fly request (e.g. picking a water from the layers/search panels). */
   flyTo: { lon: number; lat: number } | null;
   /** USDA national-forest lands overlay (green). */
   forestLands: boolean;
@@ -160,7 +162,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, flyTo, forestLands, blmLands }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, speciesFilter, flyTo, forestLands, blmLands }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -176,6 +178,8 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   selectedIdRef.current = selectedId;
   const stockedFilterRef = useRef<string | null>(stockedFilter);
   stockedFilterRef.current = stockedFilter;
+  const speciesFilterRef = useRef<string | null>(speciesFilter);
+  speciesFilterRef.current = speciesFilter;
   const forestLandsRef = useRef(forestLands);
   forestLandsRef.current = forestLands;
   const blmLandsRef = useRef(blmLands);
@@ -351,7 +355,7 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
       const ac = new AbortController();
       abortRef.current = ac;
       setLoading(true);
-      fetchWaters(bbox, ac.signal, stockedFilterRef.current)
+      fetchWaters(bbox, ac.signal, { stocked: stockedFilterRef.current, species: speciesFilterRef.current })
         .then(({ waters, reaches }) => {
           setError(false);
           setLoading(false);
@@ -401,7 +405,7 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, f
   // Refetch pins when the stocked-species filter changes.
   useEffect(() => {
     refreshRef.current();
-  }, [stockedFilter]);
+  }, [stockedFilter, speciesFilter]);
 
   // Toggle each land overlay independently (layers exist once the style has loaded;
   // the load handler applies the initial state from the refs for toggles racing map creation).

@@ -56,6 +56,9 @@ waters.get("/api/waters", async (c) => {
   // Optional stocked-species filter: restrict pins to waters with a source-backed stocking
   // record (event or schedule) for this species, matched case-insensitively by common name.
   const stocked = c.req.query("stocked")?.trim() || null;
+  // Optional present-species filter: restrict pins to waters where this species is recorded
+  // present (native/introduced/stocked/historical), matched case-insensitively by common name.
+  const species = c.req.query("species")?.trim() || null;
 
   const rows = (await db.execute(sql`
     select w.id, w.name, w.water_type as "waterType", w.states, w.verify_current as "verifyCurrent",
@@ -77,6 +80,10 @@ waters.get("/api/waters", async (c) => {
           select s.water_body_id, s.species_id from species_stocking_schedule s
         ) sx join species sp on sp.id = sx.species_id
         where sx.water_body_id = w.id and lower(sp.common_name) = lower(${stocked})
+      ))
+      and (${species}::text is null or exists (
+        select 1 from water_body_species wbs join species sp on sp.id = wbs.species_id
+        where wbs.water_body_id = w.id and lower(sp.common_name) = lower(${species})
       ))
     order by w.name
   `)) as unknown as Array<Record<string, unknown>>;
@@ -115,6 +122,10 @@ waters.get("/api/waters", async (c) => {
           select s.water_body_id, s.species_id from species_stocking_schedule s
         ) sx join species sp on sp.id = sx.species_id
         where sx.water_body_id = w.id and lower(sp.common_name) = lower(${stocked})
+      ))
+      and (${species}::text is null or exists (
+        select 1 from water_body_species wbs join species sp on sp.id = wbs.species_id
+        where wbs.water_body_id = w.id and lower(sp.common_name) = lower(${species})
       ))
     order by w.name, r.id
   `)) as unknown as Array<Record<string, unknown>>;

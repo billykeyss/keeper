@@ -159,18 +159,52 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {
   return (await res.json()) as T;
 }
 
-/** Fetch water + reach pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat".
- *  `stocked` (optional) restricts pins to waters with stocking records for that species. */
+/** Optional pin filters for the map. `stocked` = waters with a stocking record for that
+ *  species; `species` = waters where that species is present (any presence). At most one is set. */
+export interface WaterFilters {
+  stocked?: string | null;
+  species?: string | null;
+}
+
+/** Fetch water + reach pins inside a bbox. `bbox` is "minLon,minLat,maxLon,maxLat". */
 export async function fetchWaters(
   bbox: string,
   signal?: AbortSignal,
-  stocked?: string | null,
+  filters?: WaterFilters,
 ): Promise<{ waters: WaterPin[]; reaches: ReachPin[] }> {
-  const stockedQ = stocked ? `&stocked=${encodeURIComponent(stocked)}` : "";
-  return getJson<{ waters: WaterPin[]; reaches: ReachPin[] }>(
-    `/api/waters?bbox=${encodeURIComponent(bbox)}${stockedQ}`,
+  const parts = [`bbox=${encodeURIComponent(bbox)}`];
+  if (filters?.stocked) parts.push(`stocked=${encodeURIComponent(filters.stocked)}`);
+  if (filters?.species) parts.push(`species=${encodeURIComponent(filters.species)}`);
+  return getJson<{ waters: WaterPin[]; reaches: ReachPin[] }>(`/api/waters?${parts.join("&")}`, signal);
+}
+
+/** One row from GET /api/species — every species present at any water. */
+export interface PresentSpeciesRow {
+  commonName: string;
+  waterCount: number;
+  stockedCount: number;
+}
+
+/** One row from GET /api/species/waters?name= — a water where the species is present. */
+export interface SpeciesWaterRow {
+  id: number;
+  name: string;
+  waterType: string;
+  states: string[];
+  lon: number;
+  lat: number;
+  stocked: boolean;
+}
+
+export async function fetchAllSpecies(signal?: AbortSignal): Promise<PresentSpeciesRow[]> {
+  return (await getJson<{ species: PresentSpeciesRow[] }>("/api/species", signal)).species;
+}
+
+export async function fetchSpeciesWaters(name: string, signal?: AbortSignal): Promise<SpeciesWaterRow[]> {
+  return (await getJson<{ waters: SpeciesWaterRow[] }>(
+    `/api/species/waters?name=${encodeURIComponent(name)}`,
     signal,
-  );
+  )).waters;
 }
 
 /** One row from GET /api/stocking/species. */

@@ -3,10 +3,10 @@ import { ChatPanel } from "./ChatPanel";
 import { MapView } from "./Map";
 import { PasswordGate } from "./PasswordGate";
 import { RulesSheet } from "./RulesSheet";
-import { StockedFishPanel } from "./StockedFishPanel";
+import { LayersPanel, type FishMode, type PickedWater } from "./LayersPanel";
 import { WaterSearch } from "./WaterSearch";
-import { ChatIcon, FishIcon, MountainIcon, SearchIcon, TreesIcon } from "./icons";
-import type { WaterPin, ScopeStatus, StockedWaterRow, WaterSearchRow } from "./api";
+import { ChatIcon, LayersIcon, SearchIcon } from "./icons";
+import type { WaterPin, ScopeStatus, WaterSearchRow } from "./api";
 
 function todayLabel(): string {
   return new Date().toLocaleDateString(undefined, {
@@ -16,20 +16,22 @@ function todayLabel(): string {
   });
 }
 
-// Exactly one of these floating panels is open at a time — panel pile-ups were the
-// main source of mobile overlap. "search" is only reachable from the mobile dock
-// (the desktop search box is always inline in the overlay-chips row).
-type OpenPanel = null | "search" | "stocked" | "chat";
+// One floating panel open at a time — panel pile-ups were the main source of overlap.
+// "search" is only reachable from the mobile dock (desktop search is inline).
+type OpenPanel = null | "search" | "layers" | "chat";
 
 export function App() {
   const [selected, setSelected] = useState<WaterPin | null>(null);
   const [selectedStatus, setSelectedStatus] = useState<ScopeStatus | null>(null);
   const [focusScope, setFocusScope] = useState<string | null>(null);
   const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
-  const [stockedFilter, setStockedFilter] = useState<string | null>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
+
+  // Map layers (all live in the Layers panel now).
   const [forestLands, setForestLands] = useState(false);
   const [blmLands, setBlmLands] = useState(false);
+  const [fishMode, setFishMode] = useState<FishMode>("stocked");
+  const [fishFilter, setFishFilter] = useState<string | null>(null);
 
   const togglePanel = useCallback((panel: OpenPanel) => {
     setOpenPanel((p) => (p === panel ? null : panel));
@@ -39,14 +41,13 @@ export function App() {
     setSelected(pin);
     setSelectedStatus(null); // reset until rules resolve
     setFocusScope(scope ?? null);
-    // Diving into a water: clear panel clutter. On desktop, an open chat stays
-    // (it floats beside the sheet); on mobile everything yields to the rules sheet.
+    // Diving into a water clears panel clutter; on desktop an open chat stays (it floats
+    // beside the sheet), on mobile everything yields to the rules sheet.
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
     setOpenPanel((p) => (isDesktop && p === "chat" ? p : null));
   }, []);
 
   const handleStatus = useCallback((_id: number, status: ScopeStatus) => {
-    // RulesSheet aborts superseded fetches, so any status that arrives is current.
     setSelectedStatus(status);
   }, []);
 
@@ -55,9 +56,7 @@ export function App() {
     setSelectedStatus(null);
   }, []);
 
-  // Shared fly-to-and-open flow for anything that hands us a water with coordinates
-  // (stocked-fish panel rows, name-search results).
-  const handlePickWater = useCallback((w: StockedWaterRow | WaterSearchRow) => {
+  const handlePickWater = useCallback((w: PickedWater | WaterSearchRow) => {
     setFlyTo({ lon: w.lon, lat: w.lat });
     setOpenPanel(null);
     handleSelect({
@@ -67,6 +66,10 @@ export function App() {
   }, [handleSelect]);
 
   const sheetOpen = selected != null;
+  const layersActive = forestLands || blmLands || fishFilter != null;
+  // The map takes both filters; only the active-mode one is non-null.
+  const stockedFilter = fishMode === "stocked" ? fishFilter : null;
+  const speciesFilter = fishMode === "all" ? fishFilter : null;
 
   return (
     <PasswordGate>
@@ -76,6 +79,7 @@ export function App() {
           selectedStatus={selectedStatus}
           onSelect={handleSelect}
           stockedFilter={stockedFilter}
+          speciesFilter={speciesFilter}
           flyTo={flyTo}
           forestLands={forestLands}
           blmLands={blmLands}
@@ -93,38 +97,19 @@ export function App() {
         <div className="overlay-chips">
           <WaterSearch onPick={handlePickWater} />
           <button
-            className="stocked-chip"
-            onClick={() => togglePanel("stocked")}
-            aria-expanded={openPanel === "stocked"}
+            className={`stocked-chip${layersActive ? " stocked-chip--active" : ""}`}
+            onClick={() => togglePanel("layers")}
+            aria-expanded={openPanel === "layers"}
           >
-            Stocked fish
+            Layers
           </button>
-          <span className="lands-group" role="group" aria-label="Land layers">
-            <span className="lands-label">Land</span>
-            <button
-              className={`stocked-chip${forestLands ? " stocked-chip--active" : ""}`}
-              onClick={() => setForestLands((v) => !v)}
-              aria-pressed={forestLands}
-              title="USDA national forest lands (green)"
-            >
-              Forests
-            </button>
-            <button
-              className={`stocked-chip${blmLands ? " stocked-chip--blm" : ""}`}
-              onClick={() => setBlmLands((v) => !v)}
-              aria-pressed={blmLands}
-              title="BLM-managed lands (yellow)"
-            >
-              BLM
-            </button>
-          </span>
-          {stockedFilter && (
+          {fishFilter && (
             <button
               className="stocked-chip stocked-chip--active"
-              onClick={() => setStockedFilter(null)}
-              aria-label={`Clear stocked filter: ${stockedFilter}`}
+              onClick={() => setFishFilter(null)}
+              aria-label={`Clear fish filter: ${fishFilter}`}
             >
-              {stockedFilter} ×
+              {fishFilter} ×
             </button>
           )}
         </div>
@@ -133,11 +118,17 @@ export function App() {
           <WaterSearch asSheet onPick={handlePickWater} onClose={() => setOpenPanel(null)} />
         )}
 
-        <StockedFishPanel
-          open={openPanel === "stocked"}
+        <LayersPanel
+          open={openPanel === "layers"}
           onClose={() => setOpenPanel(null)}
-          activeFilter={stockedFilter}
-          onFilter={setStockedFilter}
+          forestLands={forestLands}
+          blmLands={blmLands}
+          onToggleForest={() => setForestLands((v) => !v)}
+          onToggleBlm={() => setBlmLands((v) => !v)}
+          fishMode={fishMode}
+          onFishMode={setFishMode}
+          fishFilter={fishFilter}
+          onFishFilter={setFishFilter}
           onPickWater={handlePickWater}
         />
 
@@ -157,17 +148,13 @@ export function App() {
             <SearchIcon size={19} />
             Search
           </button>
-          <button className="dock-btn" data-active={openPanel === "stocked" || stockedFilter != null} onClick={() => togglePanel("stocked")}>
-            <FishIcon size={19} />
-            {stockedFilter ? "Stocked •" : "Stocked"}
-          </button>
-          <button className="dock-btn" data-active={forestLands} onClick={() => setForestLands((v) => !v)}>
-            <TreesIcon size={19} />
-            Forest
-          </button>
-          <button className="dock-btn" data-active={blmLands} onClick={() => setBlmLands((v) => !v)}>
-            <MountainIcon size={19} />
-            BLM
+          <button
+            className="dock-btn"
+            data-active={openPanel === "layers" || layersActive}
+            onClick={() => togglePanel("layers")}
+          >
+            <LayersIcon size={19} />
+            Layers
           </button>
           <button className="dock-btn" data-active={openPanel === "chat"} onClick={() => togglePanel("chat")}>
             <ChatIcon size={19} />
