@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { and, eq, or, inArray, isNull, lte, gte, desc } from "drizzle-orm";
+import { and, eq, or, inArray, isNull, lte, gte, desc, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import { db } from "../db/client";
 import {
@@ -293,19 +293,39 @@ rules.get("/api/waters/:id/rules", async (c) => {
   const licenseRules = resolved.filter((r) => r.ruleType === "license");
   const scopeableRules = resolved.filter((r) => r.ruleType !== "license");
 
+  // Reach path geometry, for the map's "tap a section to highlight it" affordance. One lookup,
+  // converted to the same [lon,lat][] line shape the map already uses for reach pins.
+  const reachLineById = new Map<number, [number, number][]>();
+  if (reaches.length) {
+    const geomRows = (await db.execute(sql`
+      select id, st_asgeojson(geom) as "geomJson"
+      from reach
+      where geom is not null and id in (${sql.join(reaches.map((r) => sql`${r.id}`), sql`, `)})
+    `)) as unknown as Array<{ id: number | string; geomJson: string }>;
+    for (const g of geomRows) {
+      const gj = JSON.parse(g.geomJson) as { coordinates: number[][][] };
+      // MultiLineString -> the single stored line (one line per reach today).
+      const coords = gj?.coordinates?.[0];
+      if (coords) reachLineById.set(Number(g.id), coords.map(([lon, lat]) => [lon, lat] as [number, number]));
+    }
+  }
+
   // --- assemble scopes: water first, then each reach in id order ---
-  const scopes: Array<{ scope: string; kind: "water" | "reach"; sublabel: string | null; status: ScopeStatus; rules: ReturnType<typeof serialize>[] }> = [];
+  // `line` is the traced path when known (few reaches have it); `point` is the always-present
+  // representative marker — the map spotlights the line if it has one, else zooms to the point.
+  const scopes: Array<{ scope: string; kind: "water" | "reach"; reachId: number | null; line: [number, number][] | null; point: [number, number] | null; sublabel: string | null; status: ScopeStatus; rules: ReturnType<typeof serialize>[] }> = [];
 
   const waterScopeRules = scopeableRules.filter((r) => r._scopeKey === "water");
   const waterStatus = deriveStatus(waterScopeRules, true);
-  scopes.push({ scope: "water", kind: "water", sublabel: null, status: waterStatus, rules: waterScopeRules.map(serialize) });
+  scopes.push({ scope: "water", kind: "water", reachId: null, line: null, point: null, sublabel: null, status: waterStatus, rules: waterScopeRules.map(serialize) });
 
   for (const rc of reaches) {
     const scopeRules = scopeableRules.filter((r) => r._scopeKey === `reach:${rc.id}`);
     if (scopeRules.length === 0) continue; // omit reaches with no applicable rules
     const status = deriveStatus(scopeRules, false);
     const sublabel = rc.fromDesc && rc.toDesc ? `${rc.fromDesc} → ${rc.toDesc}` : null;
-    scopes.push({ scope: rc.name ?? `Reach ${rc.id}`, kind: "reach", sublabel, status, rules: scopeRules.map(serialize) });
+    const point: [number, number] | null = rc.lon != null && rc.lat != null ? [rc.lon, rc.lat] : null;
+    scopes.push({ scope: rc.name ?? `Reach ${rc.id}`, kind: "reach", reachId: rc.id, line: reachLineById.get(rc.id) ?? null, point, sublabel, status, rules: scopeRules.map(serialize) });
   }
 
   // --- reciprocity (joined authority names) ---

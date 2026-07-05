@@ -25,6 +25,10 @@ export function App() {
   const [focusScope, setFocusScope] = useState<string | null>(null);
   const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
   const [flyTo, setFlyTo] = useState<{ lon: number; lat: number } | null>(null);
+  // A river section (reach) the user tapped in the rules sheet — highlighted + zoomed on the map.
+  const [highlightReach, setHighlightReach] = useState<
+    { id: number; line: [number, number][] | null; point: [number, number] | null } | null
+  >(null);
 
   // Map layers (all live in the Layers panel now).
   const [forestLands, setForestLands] = useState(false);
@@ -40,6 +44,7 @@ export function App() {
     setSelected(pin);
     setSelectedStatus(null); // reset until rules resolve
     setFocusScope(scope ?? null);
+    setHighlightReach(null); // a new water clears any prior section highlight
     // Diving into a water clears panel clutter; on desktop an open chat stays (it floats
     // beside the sheet), on mobile everything yields to the rules sheet.
     const isDesktop = window.matchMedia("(min-width: 768px)").matches;
@@ -53,7 +58,16 @@ export function App() {
   const handleClose = useCallback(() => {
     setSelected(null);
     setSelectedStatus(null);
+    setHighlightReach(null);
   }, []);
+
+  // Tapping a river section toggles its highlight; tapping the same one again clears it.
+  const handleSelectReach = useCallback(
+    (reachId: number, geom: { line: [number, number][] | null; point: [number, number] | null }) => {
+      setHighlightReach((cur) => (cur?.id === reachId ? null : { id: reachId, ...geom }));
+    },
+    [],
+  );
 
   const handlePickWater = useCallback((w: PickedWater | WaterSearchRow) => {
     setFlyTo({ lon: w.lon, lat: w.lat });
@@ -93,6 +107,7 @@ export function App() {
           flyTo={flyTo}
           forestLands={forestLands}
           blmLands={blmLands}
+          highlightReach={highlightReach}
         />
 
         <div className="brand-chip">
@@ -172,7 +187,14 @@ export function App() {
           </button>
         </nav>
 
-        <RulesSheet pin={selected} focusScope={focusScope} onClose={handleClose} onStatus={handleStatus} />
+        <RulesSheet
+          pin={selected}
+          focusScope={focusScope}
+          onClose={handleClose}
+          onStatus={handleStatus}
+          onSelectReach={handleSelectReach}
+          selectedReachId={highlightReach?.id ?? null}
+        />
       </div>
   );
 }

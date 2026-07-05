@@ -92,6 +92,8 @@ interface MapProps {
   forestLands: boolean;
   /** BLM-managed lands overlay (yellow). */
   blmLands: boolean;
+  /** A river section (reach) tapped in the rules sheet — highlighted + zoomed on the map. */
+  highlightReach: { id: number; line: [number, number][] | null; point: [number, number] | null } | null;
 }
 
 type MarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; pin: WaterPin };
@@ -100,6 +102,12 @@ type ReachMarkerEntry = { marker: maplibregl.Marker; el: HTMLButtonElement; reac
 const REACH_LINES_SOURCE = "reach-lines";
 const REACH_LINES_CASING_LAYER = "reach-lines-casing";
 const REACH_LINES_LAYER = "reach-lines-line";
+
+// A single reach the user tapped in the rules sheet, spotlit in amber over its identity-hue line.
+const HIGHLIGHT_SOURCE = "reach-highlight";
+const HIGHLIGHT_GLOW_LAYER = "reach-highlight-glow";
+const HIGHLIGHT_LINE_LAYER = "reach-highlight-line";
+const HIGHLIGHT_POINT_LAYER = "reach-highlight-point"; // reaches with no traced line: a spotlight dot
 
 // USDA Forest Service proclaimed National Forest/Grassland lands (public domain).
 // The EDW MapServers publish no XYZ tile cache, so this uses MapLibre's export-based
@@ -162,7 +170,7 @@ function hueForWaterId(id: number): string {
   return WATER_HUES[h];
 }
 
-export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, speciesFilter, flyTo, forestLands, blmLands }: MapProps) {
+export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, speciesFilter, flyTo, forestLands, blmLands, highlightReach }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, MarkerEntry>>(new Map());
@@ -263,6 +271,28 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, s
         // Per-feature identity hue (see WATER_HUES) — same water always gets the same color.
         paint: { "line-color": ["get", "color"], "line-width": 4 },
       });
+
+      // Selected-section spotlight, drawn above the identity lines so it always reads on top.
+      map.addSource(HIGHLIGHT_SOURCE, { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+      map.addLayer({
+        id: HIGHLIGHT_GLOW_LAYER, type: "line", source: HIGHLIGHT_SOURCE,
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#f4a91e", "line-width": 16, "line-opacity": 0.28, "line-blur": 4 },
+      });
+      map.addLayer({
+        id: HIGHLIGHT_LINE_LAYER, type: "line", source: HIGHLIGHT_SOURCE,
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#f4a91e", "line-width": 5 },
+      });
+      map.addLayer({
+        id: HIGHLIGHT_POINT_LAYER, type: "circle", source: HIGHLIGHT_SOURCE,
+        filter: ["==", ["geometry-type"], "Point"],
+        paint: {
+          "circle-radius": 12, "circle-color": "#f4a91e", "circle-opacity": 0.32,
+          "circle-stroke-color": "#e0961b", "circle-stroke-width": 3,
+        },
+      });
+
       map.on("mouseenter", REACH_LINES_LAYER, () => { map.getCanvas().style.cursor = "pointer"; });
       map.on("mouseleave", REACH_LINES_LAYER, () => { map.getCanvas().style.cursor = ""; });
       map.on("click", REACH_LINES_LAYER, (e) => {
@@ -427,6 +457,54 @@ export function MapView({ selectedId, selectedStatus, onSelect, stockedFilter, s
     if (!flyTo || !mapRef.current) return;
     mapRef.current.flyTo({ center: [flyTo.lon, flyTo.lat], zoom: 12, duration: 900 });
   }, [flyTo]);
+
+  // Spotlight (and zoom to) the river section tapped in the rules sheet; clear it when deselected.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const apply = () => {
+      const src = map.getSource(HIGHLIGHT_SOURCE) as maplibregl.GeoJSONSource | undefined;
+      if (!src) return;
+      const line = highlightReach?.line;
+      const point = highlightReach?.point;
+      let bounds: maplibregl.LngLatBounds;
+      let maxZoom: number;
+      if (line && line.length > 0) {
+        src.setData({
+          type: "FeatureCollection",
+          features: [{ type: "Feature", properties: {}, geometry: { type: "LineString", coordinates: line } }],
+        });
+        bounds = line.reduce(
+          (b, c) => b.extend(c as [number, number]),
+          new maplibregl.LngLatBounds(line[0] as [number, number], line[0] as [number, number]),
+        );
+        maxZoom = 14;
+      } else if (point) {
+        src.setData({
+          type: "FeatureCollection",
+          features: [{ type: "Feature", properties: {}, geometry: { type: "Point", coordinates: point } }],
+        });
+        // No traced line — frame a small box around the representative point instead.
+        const [lon, lat] = point;
+        bounds = new maplibregl.LngLatBounds([lon - 0.03, lat - 0.03], [lon + 0.03, lat + 0.03]);
+        maxZoom = 12.5;
+      } else {
+        src.setData({ type: "FeatureCollection", features: [] });
+        return;
+      }
+      // Keep the section clear of the sheet: the 420px right panel on desktop, the peek sheet on mobile.
+      const desktop = window.matchMedia("(min-width: 768px)").matches;
+      map.fitBounds(bounds, {
+        padding: desktop
+          ? { top: 70, bottom: 70, left: 70, right: 460 }
+          : { top: 90, bottom: 200, left: 50, right: 50 },
+        maxZoom,
+        duration: 700,
+      });
+    };
+    if (map.isStyleLoaded()) apply();
+    else map.once("load", apply);
+  }, [highlightReach]);
 
   return (
     <>

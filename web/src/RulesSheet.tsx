@@ -40,9 +40,13 @@ interface Props {
   focusScope?: string | null;
   onClose: () => void;
   onStatus: (id: number, status: ScopeStatus) => void;
+  /** Tap a river section → highlight it on the map (toggles). */
+  onSelectReach: (reachId: number, geom: { line: [number, number][] | null; point: [number, number] | null }) => void;
+  /** The section currently highlighted on the map, if any. */
+  selectedReachId: number | null;
 }
 
-export function RulesSheet({ pin, focusScope, onClose, onStatus }: Props) {
+export function RulesSheet({ pin, focusScope, onClose, onStatus, onSelectReach, selectedReachId }: Props) {
   const open = pin != null;
 
   const [data, setData] = useState<RulesResponse | null>(null);
@@ -170,6 +174,16 @@ export function RulesSheet({ pin, focusScope, onClose, onStatus }: Props) {
     else setMode("expanded");
   };
 
+  const handleTapReach = useCallback(
+    (reachId: number, geom: { line: [number, number][] | null; point: [number, number] | null }) => {
+      const willSelect = selectedReachId !== reachId;
+      onSelectReach(reachId, geom);
+      // On mobile the expanded sheet covers the map — drop to peek so the highlight is visible.
+      if (willSelect && !isDesktop) setMode("peek");
+    },
+    [onSelectReach, selectedReachId, isDesktop],
+  );
+
   const verify = pin?.verifyCurrent || data?.status.verifyCurrent;
   const waterType = data?.water.waterType ?? pin?.waterType ?? "";
   const states = data?.water.states ?? pin?.states ?? [];
@@ -246,7 +260,7 @@ export function RulesSheet({ pin, focusScope, onClose, onStatus }: Props) {
               </button>
             </div>
           )}
-          {data && <RulesBody data={data} />}
+          {data && <RulesBody data={data} onTapReach={handleTapReach} selectedReachId={selectedReachId} />}
         </div>
       </section>
     </>
@@ -265,7 +279,15 @@ function SheetSkeleton() {
   );
 }
 
-function RulesBody({ data }: { data: RulesResponse }) {
+function RulesBody({
+  data,
+  onTapReach,
+  selectedReachId,
+}: {
+  data: RulesResponse;
+  onTapReach: (reachId: number, geom: { line: [number, number][] | null; point: [number, number] | null }) => void;
+  selectedReachId: number | null;
+}) {
   // A river/stream split into reaches reads as one undifferentiated wall of rows unless each
   // reach is a bounded, numbered block. Count + number them so boundaries are obvious.
   const reachCount = data.scopes.filter((s) => s.kind === "reach").length;
@@ -277,43 +299,68 @@ function RulesBody({ data }: { data: RulesResponse }) {
         const isReach = scope.kind === "reach";
         const n = isReach ? ++reachNum : 0;
         const extent = isReach && scope.sublabel ? splitExtent(scope.sublabel) : null;
+        // A reach is selectable if we can place it on the map — its traced line or its point.
+        const hasGeom = (!!scope.line && scope.line.length > 0) || scope.point != null;
+        const selectable = isReach && scope.reachId != null && hasGeom;
+        const isSelected = selectable && scope.reachId === selectedReachId;
+        // Overline + title, shared between the interactive (button) and static header variants.
+        const titles = (
+          <div className="scope-titles">
+            {isReach ? (
+              <>
+                <span className="reach-overline">Section {n} of {reachCount}</span>
+                {/* The from → to extent IS the reach's identity; lead with it (the prose
+                    name is almost always the same span restated, so don't repeat it). */}
+                <span className="scope-name reach-title">
+                  {extent ? (
+                    <>
+                      <span className="reach-endpoint">{extent[0]}</span>
+                      <span className="reach-arrow" aria-hidden="true">→</span>
+                      <span className="reach-endpoint">{extent[1]}</span>
+                    </>
+                  ) : (
+                    scope.sublabel ?? scope.scope
+                  )}
+                </span>
+              </>
+            ) : (
+              <h3 className="scope-name">This water</h3>
+            )}
+          </div>
+        );
         return (
           <Fragment key={`${scope.kind}:${scope.scope}:${i}`}>
             {isReach && n === 1 && reachCount > 1 && (
               <p className="scope-overview">
-                This water is split into <strong>{reachCount}</strong> regulated sections — each stretch
-                below carries its own rules.
+                This water is split into <strong>{reachCount}</strong> regulated sections — tap any
+                section to highlight it on the map.
               </p>
             )}
             <section
               className={`scope${isReach ? " scope--reach" : " scope--water"}`}
               data-scope={scope.scope}
+              data-selected={isSelected || undefined}
             >
-              <div className="scope-head">
-                <div className="scope-titles">
-                  {isReach ? (
-                    <>
-                      <span className="reach-overline">Section {n} of {reachCount}</span>
-                      {/* The from → to extent IS the reach's identity; lead with it (the prose
-                          name is almost always the same span restated, so don't repeat it). */}
-                      <h3 className="scope-name reach-title">
-                        {extent ? (
-                          <>
-                            <span className="reach-endpoint">{extent[0]}</span>
-                            <span className="reach-arrow" aria-hidden="true">→</span>
-                            <span className="reach-endpoint">{extent[1]}</span>
-                          </>
-                        ) : (
-                          scope.sublabel ?? scope.scope
-                        )}
-                      </h3>
-                    </>
-                  ) : (
-                    <h3 className="scope-name">This water</h3>
-                  )}
+              {selectable ? (
+                <button
+                  type="button"
+                  className="scope-head reach-head"
+                  aria-pressed={isSelected}
+                  aria-label={`Section ${n} of ${reachCount}${scope.sublabel ? `, ${scope.sublabel}` : ""} — ${isSelected ? "highlighted on the map, tap to clear" : "tap to show on the map"}`}
+                  onClick={() => onTapReach(scope.reachId!, { line: scope.line, point: scope.point })}
+                >
+                  {titles}
+                  <span className="reach-head-right">
+                    <StatusPill status={scope.status} size="sm" />
+                    <span className="reach-map-cue">{isSelected ? "On map ✓" : "Show on map"}</span>
+                  </span>
+                </button>
+              ) : (
+                <div className="scope-head">
+                  {titles}
+                  <StatusPill status={scope.status} size="sm" />
                 </div>
-                <StatusPill status={scope.status} size="sm" />
-              </div>
+              )}
               {scope.rules.length === 0 ? (
                 <p className="scope-empty">No specific rules recorded for this scope.</p>
               ) : (

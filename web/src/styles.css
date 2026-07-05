@@ -933,6 +933,43 @@ a {
 .scope--reach .scope-empty {
   padding: 10px 14px 12px;
 }
+/* Tappable reach header — the whole band selects the section and spotlights it on the map. */
+.reach-head {
+  width: 100%;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.reach-head:hover { background: color-mix(in srgb, var(--warden) 9%, transparent); }
+.reach-head:focus-visible { outline: 2px solid var(--warden); outline-offset: -2px; }
+.reach-head-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex: none;
+}
+.reach-map-cue {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-48);
+  white-space: nowrap;
+}
+/* Selected section — amber ring + header tint, matching the map spotlight. */
+.scope--reach[data-selected] {
+  border-color: #e0961b;
+  box-shadow: 0 0 0 1px #e0961b;
+}
+.scope--reach[data-selected] .scope-head {
+  background: color-mix(in srgb, #f4a91e 15%, transparent);
+}
+.scope--reach[data-selected] .reach-map-cue { color: #a4650a; }
 
 /* --- rule entries: flat ledger rows divided by hairlines --- */
 .rule-list {

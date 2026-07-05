@@ -63,6 +63,12 @@ export interface LicenseRule extends Rule {
 export interface Scope {
   scope: string;
   kind: "water" | "reach";
+  /** Reach primary key (null for the whole-water scope) — keys the map "highlight this section". */
+  reachId: number | null;
+  /** Traced path of the reach as [lon,lat] pairs, when known — spotlit as a line on the map. */
+  line: [number, number][] | null;
+  /** Representative [lon,lat] point for the reach — used to zoom/mark when there's no line. */
+  point: [number, number] | null;
   sublabel: string | null;
   status: ScopeStatus;
   rules: Rule[];
