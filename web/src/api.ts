@@ -195,6 +195,20 @@ export async function fetchWaters(
   return getJson<{ waters: WaterPin[]; reaches: ReachPin[] }>(`/api/waters?${parts.join("&")}`, signal);
 }
 
+/** Resolve a water by id — used to restore a shared deep link (`?water=<id>`). Returns null if
+ *  the id is unknown/invalid so a stale link degrades gracefully instead of throwing. */
+export async function getWaterById(id: number, signal?: AbortSignal): Promise<WaterPin | null> {
+  try {
+    const w = await getJson<{ id: number; name: string; waterType: string; states: string[]; lon: number; lat: number }>(
+      `/api/waters/${id}`,
+      signal,
+    );
+    return { ...w, verifyCurrent: false, ruleCount: 0 };
+  } catch {
+    return null;
+  }
+}
+
 /** One row from GET /api/species — every species present at any water. */
 export interface PresentSpeciesRow {
   commonName: string;

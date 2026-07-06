@@ -49,6 +49,31 @@ waters.get("/api/waters/search", async (c) => {
   });
 });
 
+/** Single water by id → the pin (with centroid) needed to restore a shared deep link
+ *  (`?water=<id>`): open its rules sheet and centre the map. Static `/search` is registered
+ *  above, so it is never shadowed by this param route. */
+waters.get("/api/waters/:id", async (c) => {
+  const id = Number(c.req.param("id"));
+  if (!Number.isInteger(id) || id <= 0) return c.json({ error: "id must be a positive integer" }, 400);
+  const rows = (await db.execute(sql`
+    select w.id, w.name, w.water_type as "waterType", w.states,
+           st_x(st_centroid(w.geom)) as lon, st_y(st_centroid(w.geom)) as lat
+    from water_body w
+    where w.id = ${id} and w.geom is not null
+    limit 1
+  `)) as unknown as Array<Record<string, unknown>>;
+  const r = rows[0];
+  if (!r) return c.json({ error: "not found" }, 404);
+  return c.json({
+    id: Number(r.id),
+    name: r.name as string,
+    waterType: r.waterType as string,
+    states: (r.states as string[]) ?? [],
+    lon: Number(r.lon),
+    lat: Number(r.lat),
+  });
+});
+
 waters.get("/api/waters", async (c) => {
   const bbox = parseBbox(c.req.query("bbox"));
   if (!bbox) return c.json({ error: "bbox must be minLon,minLat,maxLon,maxLat with min < max" }, 400);

@@ -1,11 +1,12 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ChatPanel } from "./ChatPanel";
 import { MapView } from "./Map";
 import { RulesSheet } from "./RulesSheet";
 import { LayersPanel, type FishMode, type PickedWater } from "./LayersPanel";
 import { WaterSearch } from "./WaterSearch";
 import { ChatIcon, LayersIcon, SearchIcon } from "./icons";
-import { searchWatersByName, type WaterPin, type ScopeStatus, type WaterSearchRow } from "./api";
+import { fetchRules, getWaterById, searchWatersByName, type WaterPin, type ScopeStatus, type WaterSearchRow } from "./api";
+import { parseUrlState, serializeUrlState } from "./urlState";
 
 function todayLabel(): string {
   return new Date().toLocaleDateString(undefined, {
@@ -13,6 +14,12 @@ function todayLabel(): string {
     month: "short",
     day: "numeric",
   });
+}
+
+function todayISO(): string {
+  const d = new Date();
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 }
 
 // One floating panel open at a time — panel pile-ups were the main source of overlap.
@@ -89,6 +96,57 @@ export function App() {
       /* best-effort: a failed lookup just doesn't navigate */
     }
   }, [handlePickWater]);
+
+  // Gates the URL-sync effect so it never overwrites the incoming deep link before restore runs.
+  const didInitRef = useRef(false);
+
+  // Restore shareable state from the URL on first load (deep link → view).
+  useEffect(() => {
+    const s = parseUrlState(window.location.search);
+    if (s.forest) setForestLands(true);
+    if (s.blm) setBlmLands(true);
+    if (s.fish) { setFishMode(s.mode); setFishFilter(s.fish); }
+    if (s.water == null) { didInitRef.current = true; return; }
+    const waterId = s.water;
+    const sectionId = s.section;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const pin = await getWaterById(waterId);
+        if (cancelled || !pin) return;
+        handlePickWater(pin); // opens the rules sheet + centres the map
+        if (sectionId != null) {
+          const rules = await fetchRules(waterId, todayISO());
+          if (cancelled) return;
+          const sc = rules.scopes.find(
+            (sp) => sp.reachId === sectionId && (((sp.line?.length ?? 0) > 0) || sp.point != null),
+          );
+          if (sc) setHighlightReach({ id: sectionId, line: sc.line, point: sc.point });
+        }
+      } catch {
+        /* stale/invalid link — degrade gracefully */
+      } finally {
+        if (!cancelled) didInitRef.current = true;
+      }
+    })();
+    return () => { cancelled = true; };
+    // Mount-only restore; handlePickWater is stable.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Keep the URL in sync with the view so every state is a shareable link.
+  useEffect(() => {
+    if (!didInitRef.current) return;
+    const url = serializeUrlState({
+      water: selected?.id ?? null,
+      section: highlightReach?.id ?? null,
+      fish: fishFilter,
+      mode: fishMode,
+      forest: forestLands,
+      blm: blmLands,
+    });
+    window.history.replaceState(null, "", url);
+  }, [selected, highlightReach, fishFilter, fishMode, forestLands, blmLands]);
 
   const sheetOpen = selected != null;
   const layersActive = forestLands || blmLands || fishFilter != null;
