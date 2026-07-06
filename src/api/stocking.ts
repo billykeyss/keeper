@@ -136,3 +136,47 @@ stocking.get("/api/stocking/waters", async (c) => {
     })),
   });
 });
+
+/** Statewide recent-stocking feed: dated stocking EVENTS across all waters, newest first, with the
+ *  water, species, quantity/size, and source. Optional `species` filter (exact common-name match);
+ *  paginated via `limit`/`offset` (one extra row is fetched to derive `hasMore`). */
+stocking.get("/api/stocking/recent", async (c) => {
+  const species = c.req.query("species")?.trim() || null;
+  const limit = Math.min(Math.max(Math.trunc(Number(c.req.query("limit")) || 50), 1), 100);
+  const offset = Math.max(Math.trunc(Number(c.req.query("offset")) || 0), 0);
+
+  const rows = (await db.execute(sql`
+    select e.id, e.stocked_on::text as "date", e.quantity, e.size_note as "sizeNote",
+           sp.common_name as "species",
+           w.id as "waterId", w.name as "waterName", w.water_type as "waterType", w.states,
+           st_x(st_centroid(w.geom)) as lon, st_y(st_centroid(w.geom)) as lat,
+           src.url as "sourceUrl"
+    from species_stocking_event e
+    join species sp on sp.id = e.species_id
+    join water_body w on w.id = e.water_body_id
+    join source src on src.id = e.source_id
+    where w.geom is not null
+      and (${species}::text is null or lower(sp.common_name) = lower(${species}))
+    order by e.stocked_on desc, e.id desc
+    limit ${limit + 1} offset ${offset}
+  `)) as unknown as Array<Record<string, unknown>>;
+
+  const hasMore = rows.length > limit;
+  return c.json({
+    hasMore,
+    events: rows.slice(0, limit).map((r) => ({
+      id: Number(r.id),
+      date: r.date as string,
+      quantity: r.quantity == null ? null : Number(r.quantity),
+      sizeNote: (r.sizeNote as string | null) ?? null,
+      species: r.species as string,
+      waterId: Number(r.waterId),
+      waterName: r.waterName as string,
+      waterType: r.waterType as string,
+      states: (r.states as string[]) ?? [],
+      lon: Number(r.lon),
+      lat: Number(r.lat),
+      sourceUrl: (r.sourceUrl as string | null) ?? null,
+    })),
+  });
+});

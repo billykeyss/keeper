@@ -290,6 +290,38 @@ export async function fetchStockedWaters(species: string, signal?: AbortSignal):
   return res.waters;
 }
 
+/** One dated stocking event in the statewide recent-stocking feed (GET /api/stocking/recent). */
+export interface RecentStockingRow {
+  id: number;
+  date: string;
+  quantity: number | null;
+  sizeNote: string | null;
+  species: string;
+  waterId: number;
+  waterName: string;
+  waterType: string;
+  states: string[];
+  lon: number;
+  lat: number;
+  sourceUrl: string | null;
+}
+
+/** Fetch a page of the statewide recent-stocking feed. `species` filters to one common name. */
+export async function fetchRecentStocking(
+  opts: { species?: string | null; limit?: number; offset?: number },
+  signal?: AbortSignal,
+): Promise<{ events: RecentStockingRow[]; hasMore: boolean }> {
+  const p = new URLSearchParams();
+  if (opts.species) p.set("species", opts.species);
+  if (opts.limit != null) p.set("limit", String(opts.limit));
+  if (opts.offset != null) p.set("offset", String(opts.offset));
+  const qs = p.toString();
+  return getJson<{ events: RecentStockingRow[]; hasMore: boolean }>(
+    `/api/stocking/recent${qs ? `?${qs}` : ""}`,
+    signal,
+  );
+}
+
 /** Fetch the resolved rules for a water on a date (defaults to the server's today). */
 export async function fetchRules(
   id: number,

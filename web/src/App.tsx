@@ -3,8 +3,9 @@ import { ChatPanel } from "./ChatPanel";
 import { MapView } from "./Map";
 import { RulesSheet } from "./RulesSheet";
 import { LayersPanel, type FishMode, type PickedWater } from "./LayersPanel";
+import { StockingPage } from "./StockingPage";
 import { WaterSearch } from "./WaterSearch";
-import { ChatIcon, LayersIcon, SearchIcon } from "./icons";
+import { ChatIcon, FishIcon, LayersIcon, SearchIcon } from "./icons";
 import { fetchRules, getWaterById, searchWatersByName, type WaterPin, type ScopeStatus, type WaterSearchRow } from "./api";
 import { parseUrlState, serializeUrlState } from "./urlState";
 
@@ -24,7 +25,8 @@ function todayISO(): string {
 
 // One floating panel open at a time — panel pile-ups were the main source of overlap.
 // "search" is only reachable from the mobile dock (desktop search is inline).
-type OpenPanel = null | "search" | "layers" | "chat";
+// "stock" is the full-screen statewide stocking-history feed.
+type OpenPanel = null | "search" | "layers" | "chat" | "stock";
 
 export function App() {
   const [selected, setSelected] = useState<WaterPin | null>(null);
@@ -42,6 +44,8 @@ export function App() {
   const [blmLands, setBlmLands] = useState(false);
   const [fishMode, setFishMode] = useState<FishMode>("stocked");
   const [fishFilter, setFishFilter] = useState<string | null>(null);
+  // Species filter inside the full-screen stocking feed (null = all species).
+  const [stockSpecies, setStockSpecies] = useState<string | null>(null);
 
   const togglePanel = useCallback((panel: OpenPanel) => {
     setOpenPanel((p) => (p === panel ? null : panel));
@@ -106,6 +110,7 @@ export function App() {
     if (s.forest) setForestLands(true);
     if (s.blm) setBlmLands(true);
     if (s.fish) { setFishMode(s.mode); setFishFilter(s.fish); }
+    if (s.stock) { setStockSpecies(s.stockFish); setOpenPanel("stock"); }
     if (s.water == null) { didInitRef.current = true; return; }
     const waterId = s.water;
     const sectionId = s.section;
@@ -144,9 +149,11 @@ export function App() {
       mode: fishMode,
       forest: forestLands,
       blm: blmLands,
+      stock: openPanel === "stock",
+      stockFish: stockSpecies,
     });
     window.history.replaceState(null, "", url);
-  }, [selected, highlightReach, fishFilter, fishMode, forestLands, blmLands]);
+  }, [selected, highlightReach, fishFilter, fishMode, forestLands, blmLands, openPanel, stockSpecies]);
 
   const sheetOpen = selected != null;
   const layersActive = forestLands || blmLands || fishFilter != null;
@@ -185,6 +192,13 @@ export function App() {
             aria-expanded={openPanel === "layers"}
           >
             Layers
+          </button>
+          <button
+            className={`stocked-chip${openPanel === "stock" ? " stocked-chip--active" : ""}`}
+            onClick={() => togglePanel("stock")}
+            aria-expanded={openPanel === "stock"}
+          >
+            Stocking
           </button>
           {fishFilter && (
             <button
@@ -225,6 +239,14 @@ export function App() {
         </button>
         <ChatPanel open={openPanel === "chat"} onClose={() => setOpenPanel(null)} onOpenWater={handleOpenWaterByName} />
 
+        <StockingPage
+          open={openPanel === "stock"}
+          onClose={() => setOpenPanel(null)}
+          species={stockSpecies}
+          onSpeciesChange={setStockSpecies}
+          onOpenWater={handlePickWater}
+        />
+
         {/* Mobile dock (hidden on desktop). Yields entirely to an open rules sheet. */}
         <nav className="dock" data-hidden={sheetOpen} aria-label="Map tools">
           <button className="dock-btn" data-active={openPanel === "search"} onClick={() => togglePanel("search")}>
@@ -238,6 +260,10 @@ export function App() {
           >
             <LayersIcon size={19} />
             Layers
+          </button>
+          <button className="dock-btn" data-active={openPanel === "stock"} onClick={() => togglePanel("stock")}>
+            <FishIcon size={19} />
+            Stock
           </button>
           <button className="dock-btn" data-active={openPanel === "chat"} onClick={() => togglePanel("chat")}>
             <ChatIcon size={19} />

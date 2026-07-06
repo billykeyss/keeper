@@ -11,6 +11,10 @@ export interface UrlState {
   mode: FishFilterMode;
   forest: boolean;
   blm: boolean;
+  /** The full-screen stocking-history feed is open. */
+  stock: boolean;
+  /** Species filter within the stocking feed (only meaningful with `stock`). */
+  stockFish: string | null;
 }
 
 function posInt(v: string | null): number | null {
@@ -23,6 +27,7 @@ function posInt(v: string | null): number | null {
 export function parseUrlState(search: string): UrlState {
   const p = new URLSearchParams(search);
   const water = posInt(p.get("water"));
+  const stock = p.get("stock") === "1";
   return {
     water,
     // A section without a water makes no sense — drop it.
@@ -31,6 +36,8 @@ export function parseUrlState(search: string): UrlState {
     mode: p.get("mode") === "all" ? "all" : "stocked",
     forest: p.get("forest") === "1",
     blm: p.get("blm") === "1",
+    stock,
+    stockFish: stock ? (p.get("stockfish")?.trim() || null) : null,
   };
 }
 
@@ -47,6 +54,10 @@ export function serializeUrlState(s: UrlState): string {
   }
   if (s.forest) p.set("forest", "1");
   if (s.blm) p.set("blm", "1");
+  if (s.stock) {
+    p.set("stock", "1");
+    if (s.stockFish) p.set("stockfish", s.stockFish);
+  }
   const qs = p.toString();
   return qs ? `?${qs}` : "/";
 }
