@@ -12,7 +12,8 @@
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [],
@@ -24,7 +25,8 @@
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
     { "key": "s_ndow_ophir_creek_page", "url": "https://www.ndow.org/waters/ophir-creek-2/", "title": "Ophir Creek — Nevada Department of Wildlife (water listing: Western Region, Washoe County, Creek or Stream)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": null },
     { "key": "s_wikipedia_ophir_creek", "url": "https://en.wikipedia.org/wiki/Ophir_Creek_(Lake_Washoe)", "title": "Ophir Creek (Lake Washoe) — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Ophir Creek is a 7.7-mile-long (12.4 km) eastward flowing stream in Washoe County in western Nevada in the United States. It originates in Tahoe Meadows just south of Tamarack Peak and southeast of Mount Rose Summit, and it flows to Washoe Lake shortly after passing under U.S. Route 395." },
-    { "key": "s_washoe_county_davis_creek_park", "url": "https://www.washoecounty.gov/parks/trails/trail_directory_pages/south_region/davis_ophir_creek_trails.php", "title": "Davis Creek Regional Park Trails and Ophir Creek Trailhead — Washoe County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Ophir Creek Trail - 7.5 miles to Tahoe Rim Trail at Tahoe Meadows" }
+    { "key": "s_washoe_county_davis_creek_park", "url": "https://www.washoecounty.gov/parks/trails/trail_directory_pages/south_region/davis_ophir_creek_trails.php", "title": "Davis Creek Regional Park Trails and Ophir Creek Trailhead — Washoe County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Ophir Creek Trail - 7.5 miles to Tahoe Rim Trail at Tahoe Meadows" },
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Ophir+Creek%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 860841, \"Ophir Creek\", Stream, NV, Washoe Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":860841,\"gaz_name\":\"Ophir Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Washoe\"} — geometry multipoint; first point (Web Mercator -13337705.0477, 4763045.2013) converts to lon -119.81464, lat 39.28825, matching the file's recorded coordinate (-119.8147, 39.2883) to within ~8m. The second point (-119.92826, 39.30408) traces the creek further upstream toward its source near Tahoe Meadows." }
   ],
   "groups": [],
   "seasonPeriods": [],

@@ -6,7 +6,7 @@
     "states": ["CA"],
     "counties": ["Nevada"],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "256256",
     "lon": -120.326437,
     "lat": 39.324077,
     "verifyCurrent": false
@@ -26,7 +26,8 @@
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
     { "key": "dspud_lake_angela_page", "url": "https://www.dspud.org/lake-angela", "title": "Lake Angela — Donner Summit Public Utility District", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "dspud", "retrievedDate": "2026-07-13", "quotedText": "Using the lake for recreation is not allowed. Impact from recreational use by humans introduces harmful pollutants, which causes algae bloom and dangerous bacteria, including E. Coli, that adds stress to the water treatment process. The District encourages the community to respect this drinking water source and refrain from using the lake for recreation." },
     { "key": "dspud_water_page", "url": "https://www.dspud.org/water", "title": "Water — Donner Summit Public Utility District", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "dspud", "retrievedDate": "2026-07-13", "quotedText": "The District owns and operates its sole water source, Lake Angela, as well as all related facilities including the Lake Angela dam and water delivery infrastructure." },
-    { "key": "wikipedia_yuba_river", "url": "https://en.wikipedia.org/wiki/Yuba_River", "title": "Yuba River — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "The 65.3-mile-long (105.1 km) South Yuba River originates at Lake Angela in Nevada County (California) about three quarters of a mile north of Donner Pass." }
+    { "key": "wikipedia_yuba_river", "url": "https://en.wikipedia.org/wiki/Yuba_River", "title": "Yuba River — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "The 65.3-mile-long (105.1 km) South Yuba River originates at Lake Angela in Nevada County (California) about three quarters of a mile north of Donner Pass." },
+    { "key": "gnis_arcgis_256256", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D256256&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 256256, \"Lake Angela\", Reservoir, Nevada County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":256256,\"gaz_name\":\"Lake Angela\",\"gaz_featureclass\":\"Reservoir\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"} geometry x=-13394679.092 y=4768200.4531999975 (Web Mercator) -> lon=-120.326450, lat=39.324082" }
   ],
   "groups": [],
   "seasonPeriods": [],

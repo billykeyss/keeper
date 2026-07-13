@@ -20,6 +20,17 @@
   "speciesGroups": [],
   "sources": [
     {
+      "key": "gnis_arcgis_264019",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D264019&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 264019, \"Needle Lake\", Lake, Placer County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":264019,\"gaz_name\":\"Needle Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Placer\"} geometry x=-13391436.7468 y=4750480.8914000019 (Web Mercator) -> lon=-120.297323, lat=39.200838"
+    },
+    {
       "key": "topozone_needle_lake",
       "url": "https://www.topozone.com/california/placer-ca/lake/needle-lake-2/",
       "title": "Needle Lake Topo Map, Placer County, CA (Granite Chief Area) — TopoZone (GNIS record)",

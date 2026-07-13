@@ -6,7 +6,7 @@
     "states": ["CA"],
     "counties": ["Nevada"],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "260212",
     "lon": -120.326056,
     "lat": 39.332208,
     "verifyCurrent": false
@@ -28,7 +28,8 @@
     { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Flora Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
     { "key": "tedmuller_flora_azalea", "url": "https://tedmuller.us/Outdoor/Hiking/2014/140622-FloraAndAzaleaLakes.htm", "title": "Flora & Azalea Lakes, Tahoe NF — Ted's Outdoor World", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
     { "key": "zuzuforkids_trail", "url": "https://zuzuforkids.com/places/us/ca/tahoe-national-forest/azalea-lake-and-flora-lake-via-donner-summit-lakes-trail", "title": "Azalea Lake and Flora Lake via Donner Summit Lakes Trail — Tahoe National Forest, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Azalea and Flora lakes are popular summer swimming spots, and the area is also a great spot for winter snow-play and snowshoeing." },
-    { "key": "fishbrain_flora_lake", "url": "https://fishbrain.com/fishing-waters/fG0jO-WD/flora-lake", "title": "Flora Lake — Fishbrain community fishing reports", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "It is most popular for fishing Tui chub." }
+    { "key": "fishbrain_flora_lake", "url": "https://fishbrain.com/fishing-waters/fG0jO-WD/flora-lake", "title": "Flora Lake — Fishbrain community fishing reports", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "It is most popular for fishing Tui chub." },
+    { "key": "gnis_arcgis_260212", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D260212&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 260212, \"Flora Lake\", Lake, Nevada County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":260212,\"gaz_name\":\"Flora Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"} geometry x=-13394636.7401 y=4769370.5462 (Web Mercator) -> lon=-120.326069, lat=39.332213" }
   ],
   "groups": [],
   "seasonPeriods": [],

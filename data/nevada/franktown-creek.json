@@ -96,6 +96,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-13",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_streams_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Franktown+Creek%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 859761, \"Franktown Creek\", Stream, NV, Washoe Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":859761,\"gaz_name\":\"Franktown Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Washoe\"} — geometry multipoint; first point (Web Mercator -13337921.4749, 4761167.5998) converts to lon -119.81659, lat 39.27519, matching the file's recorded coordinate (-119.8167, 39.2753) to within ~15m. Remaining points (-119.88159, 39.24964 and -119.85603, 39.18325) trace the creek further downstream toward Washoe Lake."
     }
   ],
   "groups": [],

@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Placer"],
     "aliases": ["Five Lakes Basin"],
-    "gnisId": null,
-    "lon": -120.245,
-    "lat": 39.17,
+    "gnisId": "223566",
+    "lon": -120.2502,
+    "lat": 39.1759,
     "verifyCurrent": false
   },
   "authorities": [
@@ -33,7 +33,8 @@
     { "key": "truckee_trails_five_lakes", "url": "https://truckeetrails.org/trails/five-lakes-trail/", "title": "Five Lakes Trail — Truckee Trails Foundation", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Camping is not allowed in the 5 Lakes Basin and please refrain from campfires during peak fire season." },
     { "key": "flyfishingthesierra_granite_chief", "url": "https://flyfishingthesierra.com/granite-chief-wilderness/", "title": "Granite Chief Wilderness — primitive and natural beauty | Fly Fishing the Sierra", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "The lakes were stocked with both Brookies and Rainbows up until the mid 1990's... The largest lake still contains a nice population of Rainbows. Brookies in the other smaller lakes. Five Lakes form the headwaters of Five Lakes creek which flows into the Rubicon and Hells Hole Reservoir." },
     { "key": "peakvisor_granite_chief", "url": "https://peakvisor.com/park/granite-chief-wilderness.html", "title": "Granite Chief Wilderness — PeakVisor", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
-    { "key": "hometownlocator_five_lakes_trailhead", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,2,fid,274934,n,five%20lakes%20trailhead.cfm", "title": "Five Lakes Trailhead (in Placer County, CA) — HomeTownLocator", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null }
+    { "key": "hometownlocator_five_lakes_trailhead", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,2,fid,274934,n,five%20lakes%20trailhead.cfm", "title": "Five Lakes Trailhead (in Placer County, CA) — HomeTownLocator", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "gnis_arcgis_nhd_waterbody_layer", "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12/query?where=GNIS_ID%3D%2700223566%27&outFields=GNIS_ID,GNIS_NAME,AREASQKM,FTYPE,PERMANENT_IDENTIFIER,REACHCODE&returnGeometry=true&f=json", "title": "USGS National Hydrography Dataset (NHD) Waterbody layer — 5 lake polygons sharing GNIS_ID 00223566, \"Five Lakes\", Placer Co., CA", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "primary_regulatory", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "{\"GNIS_ID\":\"00223566\",\"GNIS_NAME\":\"Five Lakes\",\"AREASQKM\":0.015,\"FTYPE\":390,\"PERMANENT_IDENTIFIER\":\"61231591\"} / {...\"AREASQKM\":0.007,...\"PERMANENT_IDENTIFIER\":\"61231553\"} / {...\"AREASQKM\":0.006,...\"PERMANENT_IDENTIFIER\":\"61231555\"} / {...\"AREASQKM\":0.027,...\"PERMANENT_IDENTIFIER\":\"61223949\"} / {...\"AREASQKM\":0.012,...\"PERMANENT_IDENTIFIER\":\"61231589\"}. All 5 polygons carry GNIS_ID 00223566 / GNIS_NAME 'Five Lakes'; centroid lon/lat used here (-120.2502, 39.1759) is the simple mean of the 5 polygon centroids (39.17468/-120.25032, 39.17761/-120.24998, 39.17623/-120.25032, 39.17491/-120.25264, 39.17615/-120.24763). Replaces the file's prior lon/lat (-120.245, 39.17), which had no cited GNIS/NHD source and sits ~795 m from this GNIS-linked centroid; the geonames.MapServer point gazetteer (layer 7) has no separate point record for gaz_id 223566 in Placer Co. — a distinct, unrelated 'Five Lakes Basin' (gaz_id 260178) exists ~38 km northwest in Nevada Co. near English Mountain and must not be confused with this one." }
   ],
   "groups": [],
   "seasonPeriods": [],

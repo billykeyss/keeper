@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Placer"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.24,
-    "lat": 39.09,
+    "gnisId": "231012",
+    "lon": -120.2908,
+    "lat": 39.1085,
     "verifyCurrent": false
   },
   "authorities": [
@@ -29,7 +29,8 @@
     { "key": "fs_five_lakes_creek_trail_page", "url": "https://www.fs.usda.gov/r05/tahoe/recreation/trails/five-lakes-creek-trail", "title": "Five Lakes Creek Trail — Tahoe National Forest (identifies Diamond Crossing as the intersection of the Hellhole and Powderhorn trails, at the head of the separate Five Lakes Creek drainage)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "The Five Lakes Creek Trail is 4.5 miles long and follows the creek through the heart of Granite Chief Wilderness. ... beginning at Diamond Crossing (the intersection of Hellhole and Powderhorn trails) on the south." },
     { "key": "alltrails_powder_horn_trail", "url": "https://www.alltrails.com/trail/us/california/powder-horn-trail", "title": "Diamond Crossing via Powder Horn Trail — AllTrails (trail begins on Barker Pass Road and descends via Powderhorn Canyon into Granite Chief Wilderness toward Diamond Crossing; user review notes water in \"Powderhorn creek\" by name)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "the wildflowers were all in bloom and plenty of water in Powderhorn creek, even all the way at the top of the valley" },
     { "key": "osm_powderhorn_creek", "url": "https://www.openstreetmap.org/way/303823825", "title": "Powderhorn Creek — OpenStreetMap waterway feature, Placer County, CA (community-verified stream name, distinct from and roughly 5 miles east of Five Lakes Creek)", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
-    { "key": "fs_granite_chief_wilderness_page", "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness", "title": "Granite Chief Wilderness — USDA Forest Service (Lake Tahoe Basin Management Unit)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use." }
+    { "key": "fs_granite_chief_wilderness_page", "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness", "title": "Granite Chief Wilderness — USDA Forest Service (Lake Tahoe Basin Management Unit)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use." },
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Powderhorn+Creek%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 231012, \"Powderhorn Creek\", Stream, CA, Placer Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":231012,\"gaz_name\":\"Powderhorn Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Placer\"} — geometry first point (Web Mercator -13390706.5563, 4737228.4492) converts to lon -120.29076, lat 39.10852, correcting the file's prior recorded coordinate (-120.24, 39.09), which was off by roughly 4.8km and appears to have been drawn from the Barker Pass Road trailhead area rather than from GNIS. Second point (Web Mercator -13388211.0731, 4732699.9462) converts to lon -120.26835, lat 39.07695, corresponding to the creek's opposite (downstream/confluence) end." }
   ],
   "groups": [],
   "seasonPeriods": [],

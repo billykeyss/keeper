@@ -7,8 +7,8 @@
     "counties": ["Placer"],
     "aliases": [],
     "gnisId": "218868",
-    "lon": -120.283,
-    "lat": 39.108,
+    "lon": -120.288,
+    "lat": 39.113,
     "verifyCurrent": false
   },
   "authorities": [
@@ -24,6 +24,7 @@
   "speciesGroups": [],
   "sources": [
     { "key": "gnis_bear_pen_creek", "url": "https://www.wikidata.org/wiki/Q49849211", "title": "Bear Pen Creek — GNIS Feature ID 218868 (Placer Co., CA; 39°6'48\"N 120°17'17\"W)", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "gnis_arcgis_218868", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D218868&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 218868, \"Bear Pen Creek\", Stream, Placer County, CA", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":218868,\"gaz_name\":\"Bear Pen Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Placer\"}; multipoint geometry endpoint (EPSG:3857) [-13390397.3331,4737905.9268999994] converts to 39.11324°N, 120.28799°W" },
     { "key": "wiki_granite_chief_wilderness", "url": "https://en.wikipedia.org/wiki/Granite_Chief_Wilderness", "title": "Granite Chief Wilderness — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Fish such as rainbow, brook and brown trout can be seen in Whiskey, Picayune, and Bear Pen creeks as well as the largest lake of the Five Lakes group. ... The principal drainages are the Middle Fork of the American River and Five Lakes Creek." },
     { "key": "trailforks_bear_pen", "url": "https://www.trailforks.com/trails/bear-pen-577447/", "title": "Bear Pen Hiking Trail — Trailforks (trailhead at 39.11266, -120.28254, Granite Chief Wilderness, Tahoe City, CA)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
     { "key": "granitechief_blog_bear_pen", "url": "https://granitechief.blog/tag/bear-pen-canyon/", "title": "Bear Pen Canyon — Granite Chief Wilderness (trip-report blog)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Bear Pen trail which I'd not been on in several years. It is in decent shape, not too hard to follow, but where it crosses Bear Pen Creek before the meadow, eroded banks make it necessary to climb down and back up, awkward with a pack." },

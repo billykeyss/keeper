@@ -24,6 +24,17 @@
   "speciesGroups": [],
   "sources": [
     {
+      "key": "gnis_arcgis_valley_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Picayune+Valley%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Valleys/Basins layer record for gaz_id 264695, \"Picayune Valley\", Basin, CA, Placer Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usfs_tahoe",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":264695,\"gaz_name\":\"Picayune Valley\",\"gaz_featureclass\":\"Basin\",\"fcode\":15010,\"state_alpha\":\"CA\",\"county_name\":\"Placer\"} — geometry point (Web Mercator -13393056.857, 4744962.3445) converts to lon -120.311877, lat 39.162411, matching the file's recorded coordinate (-120.3118637, 39.1624059) to within ~2m. GNIS has no separate 'Picayune Creek' stream entry for Placer County (only unrelated Picayune Creek entries in Madera and Trinity counties), so this Picayune Valley basin point — the valley the creek flows through — is used as the best available GNIS anchor for the creek's location."
+    },
+    {
       "key": "granitechief_blog_picayune_valley",
       "url": "https://granitechief.blog/2008/09/15/picayune-valley/",
       "title": "Picayune Valley 2008-09 — Granite Chief Wilderness (granitechief.blog)",

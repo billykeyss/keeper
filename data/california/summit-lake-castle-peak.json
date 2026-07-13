@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-13",
-  "water": { "name": "Summit Lake (Castle Peak)", "waterType": "lake", "states": ["CA"], "counties": ["Nevada"], "aliases": ["Summit Lake"], "gnisId": null, "lon": -120.35, "lat": 39.361, "verifyCurrent": false },
+  "water": { "name": "Summit Lake (Castle Peak)", "waterType": "lake", "states": ["CA"], "counties": ["Nevada"], "aliases": ["Summit Lake"], "gnisId": "267929", "lon": -120.32395, "lat": 39.34984, "verifyCurrent": false },
   "authorities": [
     { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
     { "key": "usfs_tahoe", "name": "USDA Forest Service — Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
@@ -9,6 +9,7 @@
   "species": [],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_267929", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D267929&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Other Hydrographic Features layer record for gaz_id 267929, \"Summit Lake\", Lake, Nevada County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":267929,\"gaz_name\":\"Summit Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"}" },
     { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
     { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Summit Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
     { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Summit Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },

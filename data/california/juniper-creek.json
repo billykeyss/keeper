@@ -49,7 +49,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-13",
-      "quotedText": "{\"gaz_id\":262050,\"gaz_name\":\"Juniper Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"}"
+      "quotedText": "{\"gaz_id\":262050,\"gaz_name\":\"Juniper Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"} geometry (EPSG:3857 multipoint, converted to WGS84): mouth ~(-120.0724, 39.3654), headwaters ~(-120.0013, 39.2873); mouth point is ~73 m from this record's water.lon/water.lat (-120.0716, 39.3655), consistent with the USGS NWIS gauge coordinate used for that field"
     },
     {
       "key": "lahontan_truckee_basin_assessment",
