@@ -1,0 +1,80 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Round Top Lake", "waterType": "lake", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": null, "lon": -120.0125, "lat": 38.6674, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service (Eldorado National Forest, Mokelumne Wilderness)", "state": null, "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
+    { "commonName": "Golden trout", "scientificName": "Oncorhynchus mykiss aguabonita", "category": "trout", "nativeStatus": "stocked", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Round Top Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Round Top Lake not listed; list runs directly from Roosevelt Lake (Mono Co.) to Rush Creek (Mono Co.))", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license" },
+    { "key": "cdfw_asb_2018_2020", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=192662", "title": "Frog Lake, Winnemucca Lake, Round Top Lake, and Fourth of July Lake, Alpine County — 2018-2020 Angler Survey Box Analysis (Ben Ewing, CDFW North Central Region, April 2021)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Round Top Lake is a six-acre lake in Alpine County (38°40'01.84\" N, 120°00'44.46\" W), situated at 9,358 feet above mean sea level. ... CDFW historically stocked Round Top Lake with fingerling-sized Golden Trout (Oncorhynchus mykiss aguabonita; GT), RT, and LCT, with the last recorded stocking of LCT in September 2020. Prior to stocking in 2020, the most recent stocking at Round Top Lake was an allotment of RT in 2018. CDFW currently manages Round Top Lake as a \"put and grow\" fishery." },
+    { "key": "usfs_lost_cabin_mine_trail", "url": "https://www.fs.usda.gov/r05/eldorado/recreation/trails/lost-cabin-mine-trail-round-top-lake", "title": "Eldorado National Forest — Lost Cabin Mine Trail (Round Top Lake), Trail 17E47", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Campfires are NOT allowed anywhere in the Mokelumne Wilderness. ... There is a 12 person group size limit for day users and an 8 person limit to overnight users. ... Pets must be leashed. A Wilderness Permit is required for overnight camping in the Mokelumne Wilderness." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Round Top Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). Access is seasonal in practice (limited by snow), but there is no regulatory closed season." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Round Top Lake is within the Mokelumne Wilderness (Eldorado National Forest), reached via the Lost Cabin Mine Trail (17E47) from the Woods Lake trailhead off Highway 88. Campfires are prohibited anywhere in the wilderness, group size is limited (12 day-use / 8 overnight), pets must be leashed, and a Wilderness Permit is required for overnight camping.", "raw": { "campfires": "prohibited", "day_use_group_limit": 12, "overnight_group_limit": 8, "pets": "must be leashed", "overnight_permit": "Wilderness Permit required" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Eldorado NF — Lost Cabin Mine Trail (Round Top Lake), Trail 17E47 — Rules",
+      "humanSummary": "Wilderness access rules apply: no campfires anywhere in the Mokelumne Wilderness, leashed pets only, day-use/overnight group size limits, and a Wilderness Permit is required for overnight camping.",
+      "verbatimText": "Campfires are NOT allowed anywhere in the Mokelumne Wilderness. ... There is a 12 person group size limit for day users and an 8 person limit to overnight users. ... Pets must be leashed. A Wilderness Permit is required for overnight camping in the Mokelumne Wilderness.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_lost_cabin_mine_trail", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [
+    { "speciesCommonName": "Lahontan cutthroat trout", "quantity": 500, "sizeNote": "Fingerling-sized. CDFW's 2018-2020 Angler Survey Box Analysis reports this as the last recorded stocking at Round Top Lake, in September 2020 — half the quantity of the prior (2018) allotment, a reduction CDFW made given the lake's limited overwintering habitat (measured depth of only 2.1 m/6.9 ft in a 2012 gill-net survey) and resources available for fish. This is a historical, documented event, not a confirmed recurring annual stocking — Round Top Lake does not appear in CDFW's current (2026) Provisional Stocking Document.", "date": "2020-09-01", "sourceKeys": { "primary": "cdfw_asb_2018_2020", "corroborating": [] } }
+  ],
+  "stockingSchedule": []
+}

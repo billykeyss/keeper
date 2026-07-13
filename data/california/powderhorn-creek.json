@@ -1,0 +1,119 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Powderhorn Creek",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Placer"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.24,
+    "lat": 39.09,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tahoe", "name": "USDA Forest Service — Tahoe National Forest (Granite Chief Wilderness)", "state": "CA", "type": "federal", "roles": ["land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Powderhorn Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Powderhorn Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Powderhorn Creek not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "usfs_powderhorn_five_lakes_trails", "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd511149.pdf", "title": "Powderhorn and Five Lakes Trails — USDA Forest Service (Tahoe National Forest / Truckee Ranger District trail guide, references the Powderhorn Trail descending from Barker Pass Road into Granite Chief Wilderness toward Diamond Crossing)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fs_five_lakes_creek_trail_page", "url": "https://www.fs.usda.gov/r05/tahoe/recreation/trails/five-lakes-creek-trail", "title": "Five Lakes Creek Trail — Tahoe National Forest (identifies Diamond Crossing as the intersection of the Hellhole and Powderhorn trails, at the head of the separate Five Lakes Creek drainage)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "The Five Lakes Creek Trail is 4.5 miles long and follows the creek through the heart of Granite Chief Wilderness. ... beginning at Diamond Crossing (the intersection of Hellhole and Powderhorn trails) on the south." },
+    { "key": "alltrails_powder_horn_trail", "url": "https://www.alltrails.com/trail/us/california/powder-horn-trail", "title": "Diamond Crossing via Powder Horn Trail — AllTrails (trail begins on Barker Pass Road and descends via Powderhorn Canyon into Granite Chief Wilderness toward Diamond Crossing; user review notes water in \"Powderhorn creek\" by name)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "the wildflowers were all in bloom and plenty of water in Powderhorn creek, even all the way at the top of the valley" },
+    { "key": "osm_powderhorn_creek", "url": "https://www.openstreetmap.org/way/303823825", "title": "Powderhorn Creek — OpenStreetMap waterway feature, Placer County, CA (community-verified stream name, distinct from and roughly 5 miles east of Five Lakes Creek)", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fs_granite_chief_wilderness_page", "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness", "title": "Granite Chief Wilderness — USDA Forest Service (Lake Tahoe Basin Management Unit)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+          { "label": "winter_zero_trout_bag", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" } }
+        ],
+        "note": "Powderhorn Creek is a Sierra-crest headwater stream in Placer County, followed by the USFS-documented Powderhorn Trail as it descends from Barker Pass Road into the Granite Chief Wilderness toward Diamond Crossing (the trail junction with the separate Five Lakes Creek/Hellhole Trail corridor, roughly five miles west). It is not listed by name in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation §5.85(a)(2): open with a five-trout bag from the last Saturday in April through November 15, then a zero-trout catch-and-release period with gear restrictions from November 16 through the Friday preceding the last Saturday in April."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation; not listed as a special-regulation water); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "osm_powderhorn_creek"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit, in effect from the last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, last Saturday in April through November 15",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release for trout), November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from November 16 through the Friday preceding the last Saturday in April, for all species of fish. During the regular season (last Saturday in April through November 15) the general stream regulation imposes no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Powderhorn Creek lies within the Granite Chief Wilderness (Tahoe National Forest). No wilderness permit or fee is presently required for day or overnight use; group size is limited to 12 people for day and overnight use.", "raw": { "permit_required": false, "fee_required": false, "max_group_size": 12 } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_tahoe",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS Lake Tahoe Basin Management Unit — Granite Chief Wilderness page",
+      "humanSummary": "No wilderness permit or fee required for day/overnight use in Granite Chief Wilderness; group size capped at 12",
+      "verbatimText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fs_granite_chief_wilderness_page", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

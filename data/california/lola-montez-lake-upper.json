@@ -1,0 +1,78 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Lola Montez Lake (Upper)", "waterType": "lake", "states": ["CA"], "counties": ["Nevada"], "aliases": ["Upper Lola Montez Lake"], "gnisId": null, "lon": -120.431093, "lat": 39.350773, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "tnf", "name": "Tahoe National Forest, USDA Forest Service", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "historical" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Lola Montez Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Lola Montez Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_prestocking_memo_2020", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=184733", "title": "CDFW Memorandum — Pre-Stocking Evaluation at Lola Montez Lakes, Nevada County (November 9, 2020)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Upper and Lower Lola Montez Lakes (Lake IDs 13202 and 13212), Nevada County, are day hiking destinations accessible from the Lola Montez Trailhead. The trailhead is located north of the Interstate-80 Soda Springs exit, just past the fire station. The California Department of Fish and Wildlife (CDFW) has been stocking Upper Lola Montez Lake with Rainbow Trout (Oncorhynchus mykiss; RT) since at least 1967 and most recently stocked Lower Lola Montez Lake with RT in 2018. ... Upper Lola Montez Lake is extremely difficult to access on foot from Lower Lola Montez Lake and currently does not support a sport fishery. CDFW most recently planted the lake with Brook Trout (Salvelinus fontinalis; BK) in 1999. Surveys conducted by CDFW in 2001 and 2012 found evidence of persistent trout populations. However, current data suggest the lake may be fishless. Regardless, due to access issues alone, Upper Lola Montez should not be aerially planted by CDFW." },
+    { "key": "cdfw_provisional_stocking_2026_no_listing", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Lola Montez Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "topozone_upper_lola_montez", "url": "https://www.topozone.com/california/nevada-ca/lake/upper-lola-montez-lake/", "title": "Upper Lola Montez Lake Topo Map, CA, Nevada County (Soda Springs USGS quad)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tnf", "retrievedDate": "2026-07-13", "quotedText": "Upper Lola Montez Lake is a lake in Nevada County, Gold Country, California ... displayed on the Soda Springs USGS topo map." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Lola Montez Lake (Upper) is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Upper Lola Montez Lake is difficult to reach on foot from Lower Lola Montez Lake and, per CDFW's 2020 pre-stocking evaluation, currently does not support a reliable sport fishery: it was last planted with Brook Trout in 1999, and a 2020 gill-net survey caught zero fish. CDFW concluded the lake should not be aerially planted going forward due to access issues, and it does not appear in CDFW's 2026 Provisional Stocking Document. Anglers should not expect an actively maintained fishery here, in contrast to nearby Lower Lola Montez Lake.", "raw": {} },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Memorandum — Pre-Stocking Evaluation at Lola Montez Lakes, Nevada County (Nov. 9, 2020)",
+      "humanSummary": "No longer actively stocked; access is difficult and a 2020 survey found the lake likely fishless",
+      "verbatimText": "Upper Lola Montez Lake is extremely difficult to access on foot from Lower Lola Montez Lake and currently does not support a sport fishery. CDFW most recently planted the lake with Brook Trout (Salvelinus fontinalis; BK) in 1999. Surveys conducted by CDFW in 2001 and 2012 found evidence of persistent trout populations. However, current data suggest the lake may be fishless. Regardless, due to access issues alone, Upper Lola Montez should not be aerially planted by CDFW.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_prestocking_memo_2020", "corroborating": ["cdfw_provisional_stocking_2026_no_listing"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,94 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Rockbound Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.23753, "lat": 38.99648, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "U.S. Forest Service, Eldorado National Forest (Desolation Wilderness)", "state": null, "type": "federal", "roles": ["access", "land_management", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "historical" },
+    { "commonName": "Golden trout", "scientificName": "Oncorhynchus aguabonita", "category": "trout", "nativeStatus": "introduced", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Rockbound Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Rockbound Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_resource_assessment_2020", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=177111", "title": "CDFW Memorandum — Resource Assessment at Rockbound Lake, El Dorado County (January 28, 2020)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Due to the robust, self-sustaining populations of RT and BN in Rockbound Lake and the current or future presence of SNYLF migrations from Highland Lake source populations, CDFW will no longer aerially plant Rockbound Lake. The reservoir will be managed as a self-sustaining fishery. Monitoring the fishery every five to ten years will be necessary to detect dramatic shifts in trout abundance and the need for additional trout plants." },
+    { "key": "cdfw_provisional_stocking_2026_no_listing", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Rockbound Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "usfs_desolation_overnight_permits", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Eldorado National Forest — Desolation Wilderness Permits (overnight)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_desolation_day_use_permits", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Eldorado National Forest — Desolation Day Use Permits & Parking", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Day users may obtain a free Day Use permit from the Placerville Ranger Station or may issue themselves a day use permit at most major trailheads in the summer." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Rockbound Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Rockbound Lake supports robust, naturally-reproducing rainbow trout and brown trout populations. Following a 2019 gill-net survey and herpetofauna assessment (conducted partly to protect Sierra Nevada yellow-legged frog critical habitat fed by an inlet from Highland Lake), CDFW ended aerial stocking of the lake in 2020 and manages it as a self-sustaining fishery, re-monitored roughly every five to ten years.", "raw": { "last_ct_stocked": 2013, "last_bn_stocked": "at least 1950", "management_status": "self-sustaining fishery, no active CDFW stocking" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Resource Assessment at Rockbound Lake, El Dorado County (memo, Jan. 28, 2020)",
+      "humanSummary": "No longer stocked by CDFW; managed as a self-sustaining wild rainbow/brown trout fishery since 2020",
+      "verbatimText": "Due to the robust, self-sustaining populations of RT and BN in Rockbound Lake and the current or future presence of SNYLF migrations from Highland Lake source populations, CDFW will no longer aerially plant Rockbound Lake. The reservoir will be managed as a self-sustaining fishery. Monitoring the fishery every five to ten years will be necessary to detect dramatic shifts in trout abundance and the need for additional trout plants.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_resource_assessment_2020", "corroborating": ["cdfw_provisional_stocking_2026_no_listing"] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Rockbound Lake lies within Desolation Wilderness on the Eldorado National Forest. Overnight visits require a wilderness permit year-round (quota system in effect late May through September). Day use requires a free self-issued or ranger-station-issued permit and is not subject to quota or fee.", "raw": { "overnight_permit_required": true, "day_use_permit_required": true, "day_use_quota": false } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS Eldorado National Forest — Desolation Wilderness Permits",
+      "humanSummary": "Wilderness permit required year-round for overnight camping at Rockbound Lake; free self-issued day-use permit required but unlimited/unquota'd",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_desolation_overnight_permits", "corroborating": ["usfs_desolation_day_use_permits"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

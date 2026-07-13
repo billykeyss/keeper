@@ -1,0 +1,83 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Ophir Creek",
+    "waterType": "creek",
+    "states": ["NV"],
+    "counties": ["Washoe"],
+    "aliases": [],
+    "gnisId": "860841",
+    "lon": -119.8147,
+    "lat": 39.2883,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_cr2516_washoe_general", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027), Washoe County — All waters (except as noted below)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "All waters. (Except as noted below). Open year around. Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye. Any hour of the day or night." },
+    { "key": "s_cr2516_washoe_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16, Washoe County — Closed Waters (Ophir Creek not listed)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Third Creek and its tributaries from Lake Tahoe to the Mt. Rose Highway No. 431. Incline Creek and its tributaries from Lake Tahoe to Ski Way and the Mt. Rose Highway No. 431. Wood Creek from Lake Tahoe to the Mt. Rose Highway No. 431. Lake Tahoe within a 200-yard radius of the mouths of Third, Incline and Wood creeks. A 500-yard radius from Sand Harbor boat ramp. Truckee River from Derby Dam downstream 1,000 feet." },
+    { "key": "s_cr2516_washoe_special_list", "url": "https://www.eregulations.com/nevada/fishing/western-region-regulations", "title": "Nevada Western Region Fishing Regulations — Washoe County special-regulation waters list (Ophir Creek not listed)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "s_ndow_ophir_creek_page", "url": "https://www.ndow.org/waters/ophir-creek-2/", "title": "Ophir Creek — Nevada Department of Wildlife (water listing: Western Region, Washoe County, Creek or Stream)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "s_wikipedia_ophir_creek", "url": "https://en.wikipedia.org/wiki/Ophir_Creek_(Lake_Washoe)", "title": "Ophir Creek (Lake Washoe) — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Ophir Creek is a 7.7-mile-long (12.4 km) eastward flowing stream in Washoe County in western Nevada in the United States. It originates in Tahoe Meadows just south of Tamarack Peak and southeast of Mount Rose Summit, and it flows to Washoe Lake shortly after passing under U.S. Route 395." },
+    { "key": "s_washoe_county_davis_creek_park", "url": "https://www.washoecounty.gov/parks/trails/trail_directory_pages/south_region/davis_ophir_creek_trails.php", "title": "Davis Creek Regional Park Trails and Ophir Creek Trailhead — Washoe County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Ophir Creek Trail - 7.5 miles to Tahoe Rim Trail at Tahoe Meadows" }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "Open season", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } }
+        ],
+        "note": "Ophir Creek is not named in the Washoe County 'Closed Waters' list nor in the Washoe County special-regulation waters (Catnip Reservoir, Washoe Lake, Hobart Reservoir, Lake Tahoe, Marlette Lake, Truckee River, Twelvemile Creek, Washoe County Community Fishing Ponds), so it falls under the general 'All waters (Except as noted below)' provision for Washoe County."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — Washoe County (All waters, except as noted)",
+      "humanSummary": "Ophir Creek is open to fishing year-round, any hour of the day or night, under Washoe County's general open-waters provision.",
+      "verbatimText": "Open year around. Any hour of the day or night.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516_washoe_general", "corroborating": ["s_cr2516_washoe_closed", "s_cr2516_washoe_special_list"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "General Washoe County limit: 5 trout, 5 mountain whitefish and 15 warmwater game fish daily (of which not more than 5 may be black bass and 5 may be walleye); possession is 10 trout, 10 mountain whitefish and 30 warmwater game fish (of which not more than 10 may be black bass and 10 may be walleye)."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NBWC CR 25-16 — Washoe County (All waters, except as noted)",
+      "humanSummary": "5 trout, 5 mountain whitefish, and 15 warmwater game fish daily (max 5 black bass, 5 walleye); possession is double the daily limit.",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516_washoe_general", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Standard Nevada resident/nonresident fishing license required for anglers 12 and older." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NDOW — Apply & Buy: Fishing Licenses",
+      "humanSummary": "A Nevada fishing license is required for anglers age 12 and older; no license required under 12.",
+      "verbatimText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,73 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Genoa Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": ["Mill Creek"], "gnisId": null, "lon": -119.8483, "lat": 39.0006, "verifyCurrent": true },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ndow_genoa_creek_page", "url": "https://www.ndow.org/waters/genoa-creek/", "title": "Genoa Creek — Nevada Department of Wildlife (water profile)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Region: Western    County: Douglas    Type of water: Creek or Stream" },
+    { "key": "ndow_cr2516_douglas_open", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County OPEN WATERS (general 'All waters' regulation; Genoa Creek not individually listed)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "OPEN WATERS: All waters. (Except as noted below)    Open year around    Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye    Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye    Any hour of the day or night" },
+    { "key": "ndow_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16 — Douglas County CLOSED WATERS (Genoa Creek not listed)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "CLOSED WATERS: Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
+    { "key": "usgs_gauge_genoa_creek", "url": "https://waterdata.usgs.gov/monitoring-location/USGS-390002119505401/", "title": "USGS Water Data for the Nation — 'Genoa CK at Genoa, NV' monitoring location (site no. 390002119505401)", "documentType": "webpage", "instrumentType": "gis", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Genoa CK at Genoa, NV" },
+    { "key": "shpo_mpdf_genoa_creek", "url": "https://shpo.nv.gov/uploads/documents/NV_Agriculture_on_the_Carson_River_in_Douglas_and_Ormsby_Counties_MPDF.pdf", "title": "Agriculture on the Carson River in Douglas and Ormsby Counties — Nevada SHPO Multiple Property Documentation Form", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Knott also built a mill in Mill Creek Canyon (later known as Genoa Creek) in Genoa in 1854." },
+    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_year_round", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Genoa Creek is a small east-slope Carson Range stream (historically the site of an 1854 grist mill in what was then called 'Mill Creek Canyon', later renamed Genoa Creek) that flows down through the town of Genoa, Douglas County, Nevada, into the Carson Valley — the Carson River watershed, not the Lake Tahoe basin. NDOW's own water page classifies it simply as 'Region: Western, County: Douglas, Type of water: Creek or Stream' with no water-specific regulation entry. It is not named in NBWC CR 25-16's Douglas County CLOSED WATERS list (Topaz Marina jetties, the Cave Rock boat-launch area, and Glenbrook Creek from Lake Tahoe to Highway 50) or in any of the county's individually-listed OPEN WATERS (Lake Tahoe and tributaries, Spooner Lake, Topaz Lake), so it falls under the Douglas County general OPEN WATERS regulation: 'All waters (Except as noted below) — Open year around.'" },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Open year-round under the Douglas County general open-waters regulation. Genoa Creek drains the east slope of the Carson Range through the town of Genoa into Carson Valley (Carson River watershed) and is not a Lake Tahoe tributary, so it is not covered by the county's 'Lake Tahoe and tributaries' listing; it is also absent from the county's closed-waters list.",
+      "verbatimText": "All waters. (Except as noted below)    Open year around",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": ["ndow_cr2516_douglas_closed", "ndow_genoa_creek_page", "usgs_gauge_genoa_creek"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Douglas County general open-waters limit: daily 5 trout, 5 mountain whitefish, and 15 warmwater game fish (of which not more than 5 may be black bass and 5 may be walleye); possession 10 trout, 10 mountain whitefish, and 30 warmwater game fish (of which not more than 10 may be black bass and 10 may be walleye). The 5/10 shown here is the trout component of that combined structure." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Douglas County general limits: 5 trout, 5 mountain whitefish, and 15 warmwater game fish daily (max 5 black bass, 5 walleye); possession 10 trout, 10 mountain whitefish, 30 warmwater game fish (max 10 black bass, 10 walleye).",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye    Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "The Douglas County general open-waters regulation allows fishing 'Any hour of the day or night' — unlike the county's 'Lake Tahoe and tributaries' listing, which restricts hours to 1 hour before sunrise through 2 hours after sunset. Genoa Creek, being a Carson Valley water rather than a Tahoe tributary, follows the any-hour general rule." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Douglas Co. — OPEN WATERS: All waters)",
+      "humanSummary": "Fishing allowed any hour of the day or night (Douglas County general open-waters rule; no time-of-day restriction).",
+      "verbatimText": "Any hour of the day or night",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_cr2516_douglas_open", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "Nevada requires a fishing license for residents and nonresidents 12 years of age or older; anglers under 12 need no license (nonresidents under 12 are limited to 50% of the daily bag). Genoa Creek is a Carson Valley drainage water, not part of Lake Tahoe, so no Lake Tahoe California/Nevada license reciprocity applies — a Nevada fishing license is required." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "Nevada General Statewide Fishing Regulations (NDOW)",
+      "humanSummary": "Nevada fishing license required for anglers 12+.",
+      "verbatimText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ndow_license_req", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

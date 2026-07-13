@@ -1,0 +1,103 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Duncan Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": "1701155", "lon": -120.5455, "lat": 39.0388, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tahoe", "name": "USDA Forest Service — Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["land_management", "access"] },
+    { "key": "pcwa", "name": "Placer County Water Agency", "state": "CA", "type": "ngo", "roles": ["land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Duncan Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Duncan Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Duncan Creek not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "wiki_mfar", "url": "https://en.wikipedia.org/wiki/Middle_Fork_American_River", "title": "Middle Fork American River — Wikipedia (Duncan Creek confluence at 3,379 ft; Duncan Creek is a named right-bank tributary joining below French Meadows Reservoir)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "It turns south-southwest, flowing through an extremely steep canyon, descending about 1,600-foot (490 m) in 10 miles (16 km) to its confluence with Duncan Creek at 3,379 ft (1,030 m) above sea level." },
+    { "key": "waterboards_mfp_ferc2079", "url": "https://www.waterboards.ca.gov/waterrights/water_issues/programs/water_quality_cert/middlefork_american_river_ferc2079.html", "title": "Middle Fork American River Project (FERC No. 2079) — California State Water Resources Control Board", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "pcwa", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ceqanet_duncan_creek_diversion", "url": "https://ceqanet.lci.ca.gov/2012082046/12", "title": "Duncan Creek Diversion Improvement Project — CEQAnet (Placer County Water Agency)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "pcwa", "retrievedDate": "2026-07-13", "quotedText": "The Duncan Creek Diversion Dam is located on Duncan Creek in Placer County on lands within the Tahoe National Forest, approximately 36 miles northeast of Auburn... approximately 1.5 miles north of French Meadows Reservoir." },
+    { "key": "granite_duncan_creek_dam", "url": "https://www.graniteconstruction.com/newsroom/granite-secures-17-million-duncan-creek-diversion-dam-improvement-project", "title": "Granite Secures $17 Million Duncan Creek Diversion Dam Improvement Project — Granite Construction", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "pcwa", "retrievedDate": "2026-07-13", "quotedText": "Duncan Creek Diversion Dam near Foresthill, California... building a new concrete structure and intake bay consisting of a fish screening facility to prevent entrainment and provide downstream fish stream passage." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } }, { "label": "winter_zero_trout_bag", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" } } ], "note": "Duncan Creek is a named right-bank (north-side) tributary of the Middle Fork American River, joining it at 3,379 ft elevation below French Meadows Reservoir, and is one of the primary named streams of the Middle Fork American River Project (Placer County Water Agency, FERC No. 2079). It is not listed by name in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation §5.85(a)(2): open with a five-trout bag from the last Saturday in April through November 15, then a zero-trout catch-and-release period with gear restrictions from November 16 through the Friday preceding the last Saturday in April." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation; not listed as a special-regulation water); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "wiki_mfar"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit, in effect from the last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, last Saturday in April through November 15",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release for trout), November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from November 16 through the Friday preceding the last Saturday in April, for all species of fish. During the regular season (last Saturday in April through November 15) the general stream regulation imposes no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Duncan Creek carries a Placer County Water Agency (PCWA) diversion dam (the Duncan Creek Diversion Dam, part of the Middle Fork American River Project, FERC No. 2079) located on Tahoe National Forest land about 1.5 miles above the creek's confluence area, roughly 1.5 miles north of French Meadows Reservoir. PCWA completed dam improvements including a new fish-screening facility to prevent entrainment and provide downstream fish passage, and new gates/piping to manage instream flows below the diversion.", "raw": { "operator": "Placer County Water Agency", "facility": "Duncan Creek Diversion Dam", "ferc_project": "2079 — Middle Fork American River Project", "improvements": "fish screening facility (entrainment prevention, downstream fish passage); new gates and piping for instream-flow management" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "pcwa",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CEQAnet — Duncan Creek Diversion Improvement Project; Granite Construction — Duncan Creek Diversion Dam Improvement Project",
+      "humanSummary": "Duncan Creek is regulated by a PCWA diversion dam (Middle Fork American River Project, FERC No. 2079) on Tahoe National Forest land upstream of the creek's lower reach; the dam was upgraded with a fish-screening facility for downstream fish passage and new instream-flow controls.",
+      "verbatimText": "Duncan Creek Diversion Dam near Foresthill, California... building a new concrete structure and intake bay consisting of a fish screening facility to prevent entrainment and provide downstream fish stream passage.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "granite_duncan_creek_dam", "corroborating": ["ceqanet_duncan_creek_diversion", "waterboards_mfp_ferc2079"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

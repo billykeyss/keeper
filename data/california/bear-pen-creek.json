@@ -1,0 +1,122 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Bear Pen Creek",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Placer"],
+    "aliases": [],
+    "gnisId": "218868",
+    "lon": -120.283,
+    "lat": 39.108,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tahoe", "name": "USDA Forest Service — Tahoe National Forest / Lake Tahoe Basin Management Unit (Granite Chief Wilderness)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "gnis_bear_pen_creek", "url": "https://www.wikidata.org/wiki/Q49849211", "title": "Bear Pen Creek — GNIS Feature ID 218868 (Placer Co., CA; 39°6'48\"N 120°17'17\"W)", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "wiki_granite_chief_wilderness", "url": "https://en.wikipedia.org/wiki/Granite_Chief_Wilderness", "title": "Granite Chief Wilderness — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Fish such as rainbow, brook and brown trout can be seen in Whiskey, Picayune, and Bear Pen creeks as well as the largest lake of the Five Lakes group. ... The principal drainages are the Middle Fork of the American River and Five Lakes Creek." },
+    { "key": "trailforks_bear_pen", "url": "https://www.trailforks.com/trails/bear-pen-577447/", "title": "Bear Pen Hiking Trail — Trailforks (trailhead at 39.11266, -120.28254, Granite Chief Wilderness, Tahoe City, CA)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "granitechief_blog_bear_pen", "url": "https://granitechief.blog/tag/bear-pen-canyon/", "title": "Bear Pen Canyon — Granite Chief Wilderness (trip-report blog)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Bear Pen trail which I'd not been on in several years. It is in decent shape, not too hard to follow, but where it crosses Bear Pen Creek before the meadow, eroded banks make it necessary to climb down and back up, awkward with a pack." },
+    { "key": "usfs_ltbmu_granite_chief", "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness", "title": "Granite Chief Wilderness — Lake Tahoe Basin Management Unit, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs_tahoe", "retrievedDate": "2026-07-13", "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. ... Fees are not presently required for day or overnight use in the Granite Chief Wilderness. ... Group size is limited to 12 people for day and overnight use." },
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Bear Pen Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Bear Pen Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+          { "label": "winter_zero_trout_bag", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" } }
+        ],
+        "note": "Bear Pen Creek (GNIS ID 218868, Placer Co.) is a named tributary of Five Lakes Creek in the Granite Chief Wilderness, reached via the Bear Pen Trail (trailhead 39.11266, -120.28254) out of the Barker Pass/Tahoe City area. It is not listed by its own name in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation §5.85(a)(2): open with a five-trout bag from the last Saturday in April through November 15, then a zero-trout catch-and-release period with gear restrictions from November 16 through the Friday preceding the last Saturday in April."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation; not listed as a special-regulation water); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "gnis_bear_pen_creek"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit, in effect from the last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, last Saturday in April through November 15",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release for trout), November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from November 16 through the Friday preceding the last Saturday in April, for all species of fish. During the regular season (last Saturday in April through November 15) the general stream regulation imposes no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Bear Pen Creek lies within the Granite Chief Wilderness (Tahoe National Forest / Lake Tahoe Basin Management Unit). No wilderness permit or fee is presently required for day or overnight use, but group size is capped at 12 people.", "raw": { "permit_required": false, "fee_required": false, "max_group_size": 12 } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_tahoe",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS LTBMU — Granite Chief Wilderness webpage",
+      "humanSummary": "No wilderness permit or fee currently required for day or overnight use; group size limited to 12",
+      "verbatimText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. ... Fees are not presently required for day or overnight use in the Granite Chief Wilderness. ... Group size is limited to 12 people for day and overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_ltbmu_granite_chief", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

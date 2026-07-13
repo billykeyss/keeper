@@ -1,0 +1,65 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Upper Sunset Lake", "waterType": "lake", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": "268642", "lon": -119.879, "lat": 38.6065, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "USDA Forest Service, Eldorado National Forest (Amador Ranger District)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Upper Sunset Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Upper Sunset Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "topozone_upper_sunset", "url": "https://www.topozone.com/california/alpine-ca/reservoir/upper-sunset-lake/", "title": "Upper Sunset Lake Topo Map — TopoZone (Pacific Valley, CA quad, Alpine County)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "hometownlocator_upper_sunset", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,2,fid,268642,n,upper%20sunset%20lake.cfm", "title": "Upper Sunset Lake — GNIS Feature Detail (HomeTownLocator)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Located in sec 27,T9N,R19E, Mount Diablo Meridian" },
+    { "key": "lake_link_upper_sunset", "url": "https://www.lake-link.com/california-lakes/alpine-county/upper-sunset-lake/297014/", "title": "Upper Sunset Lake (CA) — Fishing, Map & Access | Lake-Link", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Upper Sunset Lake is a 10 acre lake located in beautiful Alpine County, California." },
+    { "key": "alpine_county_fishing_page", "url": "https://www.alpinecounty.com/fishing", "title": "Fishing — Alpine County Chamber of Commerce (lists Sunset Lake, Lower & Upper, among East Slope lakes)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Sunset Lake (Lower & Upper)" },
+    { "key": "sierra_nevada_unlimited_sunset_lakes", "url": "https://www.sierranevadaunlimited.com/sunsetlakes.html", "title": "Sunset Lakes Area — Sierra Nevada Unlimited (Blue Lakes Road / Wet Meadows OHV routes)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "There are many short, interconnecting OHV routes available out toward Tamarack Lake, the cluster of Sunset Lakes, and Wet Meadow Reservoir. The main dirt road, which winds 3.5 miles out to Lower Sunset Lake, is in good condition and can be negotiated by high clearance vehicles." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Upper Sunset Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

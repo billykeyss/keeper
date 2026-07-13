@@ -1,0 +1,103 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Gerle Creek Divide Reservoir",
+    "waterType": "reservoir",
+    "states": ["CA"],
+    "counties": ["El Dorado"],
+    "aliases": ["Gerle Creek Reservoir"],
+    "gnisId": "274834",
+    "lon": -120.3933,
+    "lat": 38.9693,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "USDA Forest Service — Eldorado National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "cdfw_wild_trout_waters", "url": "https://wildlife.ca.gov/Fishing/Inland/Trout-Waters", "title": "Designated Wild and Heritage Trout Waters — California Department of Fish and Wildlife (North Central Region list, Gerle Creek Divide Reservoir entry)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Gerle Creek Divide Reservoir" },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Gerle Creek Divide Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Gerle Creek Divide Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "usfs_gerle_creek_area", "url": "https://www.fs.usda.gov/r05/eldorado/recreation/gerle-creek-area", "title": "Gerle Creek Area — Recreation, Eldorado National Forest (USDA Forest Service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "An accessible fishing dock is located at Gerle Creek Divide Reservoir. Common fish species include brown and rainbow trout. No Motorized Boats Allowed." },
+    { "key": "cdfw_provisional_stocking_2026_no_listing", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Gerle Creek Divide Reservoir not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "wikidata_gerle_creek_gnis", "url": "https://www.wikidata.org/wiki/Q49700850", "title": "Gerle Creek Divide Reservoir — Wikidata (GNIS ID 274834)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usgs", "retrievedDate": "2026-07-13", "quotedText": "GNIS ID: 274834" }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Gerle Creek Divide Reservoir is a CDFW-designated Wild Trout water but is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; designated Wild Trout water but not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "cdfw_wild_trout_waters"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "vessel",
+      "parameters": { "gas_motor_allowed": false, "electric_motor_allowed": false, "non_motorized_allowed": true, "note": "Motorized boats are prohibited on Gerle Creek Divide Reservoir; only non-motorized watercraft (canoes, kayaks, etc.) are permitted." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_eldorado",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Eldorado National Forest, Gerle Creek Area recreation page",
+      "humanSummary": "No motorized boats allowed; non-motorized watercraft only",
+      "verbatimText": "No Motorized Boats Allowed",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_gerle_creek_area", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Gerle Creek Divide Reservoir has a handicap-accessible fishing dock and is a CDFW-designated Wild Trout water supporting self-sustaining brown and rainbow trout populations; CDFW's current provisional stocking document does not list it as a hatchery-stocked water.", "raw": { "accessible_dock": true, "wild_trout_designated": true, "stocked": false } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_eldorado",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Eldorado National Forest, Gerle Creek Area recreation page; CDFW Designated Wild and Heritage Trout Waters",
+      "humanSummary": "Handicap-accessible fishing dock on site; designated Wild Trout water with a self-sustaining (not stocked) brown and rainbow trout population",
+      "verbatimText": "An accessible fishing dock is located at Gerle Creek Divide Reservoir. Common fish species include brown and rainbow trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_gerle_creek_area", "corroborating": ["cdfw_wild_trout_waters", "cdfw_provisional_stocking_2026_no_listing"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

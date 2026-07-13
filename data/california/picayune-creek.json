@@ -1,0 +1,188 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Picayune Creek",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Placer"],
+    "aliases": [],
+    "gnisId": null,
+    "lon": -120.3118637,
+    "lat": 39.1624059,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tahoe", "name": "USDA Forest Service — Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "granitechief_blog_picayune_valley",
+      "url": "https://granitechief.blog/2008/09/15/picayune-valley/",
+      "title": "Picayune Valley 2008-09 — Granite Chief Wilderness (granitechief.blog)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "usfs_tahoe",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "the creek water slides down a series of bedrock pools across the metamorphic bedrock, then over a 40 foot waterfall... the creek follows a bright white granitic dike through the metamorphic bench"
+    },
+    {
+      "key": "flyfishing_sierra_granite_chief",
+      "url": "https://flyfishingthesierra.com/granite-chief-wilderness/",
+      "title": "Granite Chief Wilderness — primitive and natural beauty (flyfishingthesierra.com)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Rainbow trout are present in Picayune Creek, which serves as a spawning stream for the Middle Fork American River. This is sort of a mini Yosemite with Glacial waterfalls and polished granite domes."
+    },
+    {
+      "key": "parc_headwaters",
+      "url": "https://www.parc-auburn.org/headwaters.html",
+      "title": "Headwaters — Protect American River Canyons (parc-auburn.org)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "usfs_tahoe",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Picayune Valley [is] the exciting tiny glaciated valley that has the same geologic features of Yosemite but on a lesser, people-sized scale... the streams [are] highly productive rainbow trout nurseries."
+    },
+    {
+      "key": "usfs_ltbmu_granite_chief",
+      "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness",
+      "title": "Granite Chief Wilderness — Recreation Site, Lake Tahoe Basin Management Unit / Tahoe National Forest (USDA Forest Service)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "usfs_tahoe",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use."
+    },
+    {
+      "key": "ccr_7_50_b_4",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 §7.50(b)(4) — American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek (See subsection (b)(24)). Sat. preceding Memorial Day through Sep. 30. 5 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout."
+    },
+    {
+      "key": "ccr_7_40_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Picayune Creek not listed)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "cdfw_provisional_stocking_2026_no_match",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=",
+      "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Picayune Creek not listed)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": null
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "general_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -2, "anchor_holiday": "memorial_day", "verbatim": "Saturday preceding Memorial Day" }, "end": { "type": "fixed", "month": 9, "day": 30, "verbatim": "September 30" } },
+          { "label": "catch_and_release_season", "status": "open_catch_release", "start": { "type": "fixed", "month": 10, "day": 1, "verbatim": "October 1" }, "end": { "type": "relative", "ordinal": "last", "weekday": "mon", "month": 5, "relation": "preceding", "offset_days": -3, "anchor_holiday": "memorial_day", "verbatim": "Friday preceding Memorial Day" } }
+        ],
+        "note": "Picayune Creek is a tributary of the Middle Fork American River above Folsom Lake and falls under CCR §7.50(b)(4)'s special listing for the American River forks and their tributaries above Folsom Lake, rather than the general statewide stream regulation. Date_spec encodes 'Saturday/Friday preceding Memorial Day' as the last Monday of May (Memorial Day) minus 2/3 days, matching the convention used elsewhere in this dataset (e.g. independence-lake.json), since the resolver has no anchor_holiday implementation."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §7.50(b)(4)",
+      "humanSummary": "Open with a 5-trout bag limit from the Saturday preceding Memorial Day through September 30; from October 1 through the Friday preceding Memorial Day, only artificial lures with barbless hooks may be used and no trout may be kept.",
+      "verbatimText": "American River, North Fork, Middle Fork, South Fork and their tributaries above Folsom Lake (Placer, El Dorado, Amador, and Alpine Cos.), except Caples Creek (See subsection (b)(24)). Sat. preceding Memorial Day through Sep. 30. 5 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": ["ccr_7_40_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "5 trout daily bag limit during the general season (Sat. preceding Memorial Day through Sep. 30); 0 trout (catch-and-release only, artificial lures with barbless hooks) during the winter season (Oct. 1 through the Fri. preceding Memorial Day)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §7.50(b)(4)",
+      "humanSummary": "5 trout daily bag limit in the general season; 0 trout (catch-and-release) in the winter artificial-lure/barbless-hook season.",
+      "verbatimText": "Sat. preceding Memorial Day through Sep. 30. 5 trout. Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applicable Oct. 1 through the Fri. preceding Memorial Day: only artificial lures with barbless hooks may be used." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "14 CCR §7.50(b)(4)",
+      "humanSummary": "From October 1 through the Friday preceding Memorial Day, only artificial lures with barbless hooks may be used.",
+      "verbatimText": "Oct. 1 through the Fri. preceding Memorial Day. Only artificial lures with barbless hook may be used. 0 trout.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_7_50_b_4", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Picayune Creek runs through Picayune Valley within the federally designated Granite Chief Wilderness (Tahoe National Forest). No wilderness permit or fee is presently required for day or overnight use; group size for day and overnight use is limited to 12 people.", "raw": { "permit_required": false, "fee_required": false, "max_group_size": 12 } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_tahoe",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS — Granite Chief Wilderness recreation page",
+      "humanSummary": "No wilderness permit or fee currently required for day or overnight access to Picayune Creek/Valley in the Granite Chief Wilderness; group size capped at 12.",
+      "verbatimText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness. Fees are not presently required for day or overnight use in the Granite Chief Wilderness. Group size is limited to 12 people for day and overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_ltbmu_granite_chief", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

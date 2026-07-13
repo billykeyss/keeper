@@ -1,0 +1,106 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Castle Creek", "waterType": "creek", "states": ["CA"], "counties": ["Nevada"], "aliases": ["Upper Castle Creek", "Lower Castle Creek"], "gnisId": "268602", "lon": -120.357, "lat": 39.321, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] },
+    { "key": "usgs", "name": "U.S. Geological Survey — Geographic Names Information System", "state": null, "type": "federal", "roles": ["none"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Castle Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Castle Creek not listed, under any spelling including Upper/Lower Castle Creek)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Castle Creek not listed; no planned plants found for this water)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_castle_creek_nevada_co", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name+LIKE+%27%25Castle+Creek%25%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map, geonames MapServer) — Stream records for \"Castle Creek\" variants in California", "documentType": "gis", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usgs", "retrievedDate": "2026-07-13", "quotedText": "gaz_id 268602, gaz_name \"Upper Castle Creek\", gaz_featureclass \"Stream\", county_name \"Nevada\", state_alpha \"CA\" — coordinates near -120.37,39.32 to -120.35,39.36; gaz_id 227762, gaz_name \"Lower Castle Creek\", gaz_featureclass \"Stream\", county_name \"Nevada\", state_alpha \"CA\" — coordinates near -120.40,39.33 to -120.36,39.37. (A separate, unrelated \"Castle Creek\" stream, gaz_id 258054, exists in Shasta County, and another, gaz_id 270340, in Tulare County — neither is this water.)" },
+    { "key": "syrcl_van_norden_castle_creek", "url": "https://yubariver.org/projects/van-norden-meadow-restoration-project/", "title": "Van Norden Meadow Restoration Project — South Yuba River Citizens League (SYRCL)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Reconnecting eroded stream channels within the South Yuba River, Lytton, and Castle creeks with their surrounding meadow floodplain. ... Installed process-based restoration techniques (beaver dam analogues) in Castle Creek to help reverse channel incision. ... Relocated 13,000 fish (12,000 of which were a native minnow species) out of harm's way prior to beginning the project with partners from the TNF, CDFW, and TU." },
+    { "key": "tdlt_van_norden_public", "url": "https://www.truckeedonnerlandtrust.org/news-events/van-norden-meadow-belongs-to-the-public", "title": "Van Norden Meadow Now Belongs to the Public — Truckee Donner Land Trust", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Van Norden Meadow, one of the largest sub-alpine meadows in the Sierras, now belongs to the American people as part of the Tahoe National Forest." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "general_stream_season",
+            "status": "open",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" },
+            "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" }
+          },
+          {
+            "label": "winter_zero_trout_bag",
+            "status": "open_catch_release",
+            "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" },
+            "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" }
+          }
+        ],
+        "note": "Tahoe-basin check: Castle Creek (GNIS: \"Upper Castle Creek\" gaz_id 268602 / \"Lower Castle Creek\" gaz_id 227762, Nevada Co.) drains Castle Valley below Castle Peak and Basin Peak northward into Lake Van Norden and the South Yuba River headwaters at Donner Summit — i.e. it drains west into the Yuba River / Sacramento River system, NOT into Lake Tahoe, so the §7.50(b) Lake Tahoe tributary special closure does not apply. It is not listed by its own name (or as Upper/Lower Castle Creek) in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation §5.85(a)(2): open with a five-trout bag from the last Saturday in April through November 15, then a zero-trout catch-and-release period with gear restrictions from November 16 through the Friday preceding the last Saturday in April. The creek and adjoining Van Norden Meadow are within the Tahoe National Forest (US Forest Service) and are the subject of an active SYRCL/USFS/CDFW/Trout Unlimited meadow restoration project (beaver dam analogues, channel reconnection); no special fishing regulation specific to this restoration work was found in CCR §7.40/§7.50."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation — Castle Creek drains to the South Yuba River, not Lake Tahoe, and is not listed in §7.40(b)/§7.50(b)); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "gnis_castle_creek_nevada_co", "syrcl_van_norden_castle_creek"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit, in effect from the last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, last Saturday in April through November 15",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release for trout), November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from November 16 through the Friday preceding the last Saturday in April, for all species of fish. During the regular season (last Saturday in April through November 15) the general stream regulation imposes no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. Castle Creek is wholly within California (Nevada Co.); no Nevada reciprocity applies." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

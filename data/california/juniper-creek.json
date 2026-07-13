@@ -1,0 +1,210 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Juniper Creek",
+    "waterType": "creek",
+    "states": ["CA"],
+    "counties": ["Nevada"],
+    "aliases": [],
+    "gnisId": "262050",
+    "lon": -120.0716,
+    "lat": 39.3655,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "usgs_gauge_site_page",
+      "url": "https://waterdata.usgs.gov/monitoring-location/USGS-392156120041400/",
+      "title": "Truckee RV Blw Juniper CK NR Hirschdale, CA — USGS Water Data for the Nation (site 392156120041400)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "TRUCKEE RV BLW JUNIPER CK NR HIRSCHDALE, CA"
+    },
+    {
+      "key": "usgs_site_service_rdb",
+      "url": "https://waterservices.usgs.gov/nwis/site/?sites=392156120041400&format=rdb&siteOutput=expanded",
+      "title": "USGS NWIS Site Service — expanded site record for gauge 392156120041400 (lat/long, county, quad)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "USGS\t392156120041400\tTRUCKEE RV BLW JUNIPER CK NR HIRSCHDALE, CA\tST\t392156\t1200414\t39.36546298\t-120.0715856\t...\t06\t057\t...MARTIS PEAK, CA NV..."
+    },
+    {
+      "key": "gnis_arcgis_streams_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D262050&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 262050, \"Juniper Creek\", Stream, CA, Nevada/Placer Cos.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":262050,\"gaz_name\":\"Juniper Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"}"
+    },
+    {
+      "key": "lahontan_truckee_basin_assessment",
+      "url": "https://www.waterboards.ca.gov/lahontan/water_issues/programs/tmdl/truckee/docs/truckee_river_watershed_assessment.pdf",
+      "title": "Water Quality Assessment and Modeling of the California Portion of the Truckee River Basin — Lahontan Regional Water Quality Control Board",
+      "documentType": "pdf",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Using historic data, annual sediment load was estimated for ten major tributaries to the Truckee River. These include Bear Creek, Squaw Creek, Donner Creek, Trout Creek, Little Truckee River, Prosser Creek, Juniper Creek, Gray Creek, and Bronco Creek. ... Juniper Creek at mouth near Hirschdale"
+    },
+    {
+      "key": "ccr_5_85_a_2",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85",
+      "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish."
+    },
+    {
+      "key": "ccr_7_40_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Juniper Creek not listed)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": null
+    },
+    {
+      "key": "ccr_7_50_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Juniper Creek not listed; Truckee River entry (154) covers only the main-stem river, Nevada/Placer/Sierra Cos., with no tributary-inclusion language)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year. (B) Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout. (C) Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout. Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout."
+    },
+    {
+      "key": "cdfw_booklet_2026",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)",
+      "documentType": "pdf",
+      "instrumentType": "booklet",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "(2) All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish."
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "open_water", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+          { "label": "catch_and_release_winter", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" } }
+        ],
+        "note": "Juniper Creek is not listed in CCR §7.40(b) or §7.50(b) (the Truckee River's own special-regulation entry (154) governs only the named main-stem river, Nevada/Placer/Sierra Cos., and includes no tributary-inclusion language), so the general statewide stream regulation in §5.85(a)(2) applies to this tributary."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open last Saturday in April through November 15 with standard gear; open November 16 through the Friday before the last Saturday in April for artificial-lures-with-barbless-hooks catch-and-release only (general statewide stream regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals during the main open season (last Saturday in April through November 15): five-trout daily bag limit and ten-trout possession limit. Zero-trout bag limit applies November 16 through the Friday preceding the last Saturday in April." },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit in season; 0-trout (catch-and-release) limit in the winter closure window",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "No gear restrictions apply during the main open season (last Saturday in April through November 15). From November 16 through the Friday preceding the last Saturday in April, only artificial lures with barbless hooks may be used for all species of fish." },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "No gear restriction in main season; artificial lures with barbless hooks only during the Nov. 16–pre-last-Sat.-in-Apr. window",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

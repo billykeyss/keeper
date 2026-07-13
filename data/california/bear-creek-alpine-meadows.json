@@ -1,0 +1,83 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Bear Creek (Alpine Meadows)", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": null, "lon": -120.2427, "lat": 39.1706, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tnf", "name": "U.S. Forest Service, Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "trwc_bear_creek_assessment_2018", "url": "https://www.truckeeriverwc.org/wp-content/uploads/2023/05/Bear-Creek-Watershed-Assessment-no-AppB_reduced.pdf", "title": "Bear Creek Watershed Assessment, Placer County, California (Balance Hydrologics, Inc., for the Truckee River Watershed Council, Feb. 16, 2018)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "usfs_tnf", "retrievedDate": "2026-07-13", "quotedText": "Bear Creek is a tributary to the Middle Truckee River approximately 3.7 miles downstream from Lake Tahoe. The 5.2 square mile watershed ranges in elevation from 6,187 feet at the confluence with the Truckee River to 8,600 feet at Ward Peak along the Sierra Nevada Crest." },
+    { "key": "trwc_bear_creek_fish", "url": "https://www.truckeeriverwc.org/wp-content/uploads/2023/05/Bear-Creek-Watershed-Assessment-no-AppB_reduced.pdf", "title": "Bear Creek Watershed Assessment, Placer County, California — Section 3.6.4.1 Fishes", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "usfs_tnf", "retrievedDate": "2026-07-13", "quotedText": "Numerous rainbow trout were observed in Bear Creek during a September 2017 field visit, with more fish concentrated in the reach between Alpine Meadows Road and Alpine Meadows Ski Resort. No other fish species were observed during the field visit, and far fewer rainbow trout were observed in Bear Creek downstream of Alpine Meadows Road." },
+    { "key": "wikipedia_alpine_meadows", "url": "https://en.wikipedia.org/wiki/Alpine_Meadows,_California", "title": "Alpine Meadows, California — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_tnf", "retrievedDate": "2026-07-13", "quotedText": "Alpine Meadows is an unincorporated community in Placer County, California. It is located on Bear Creek, a tributary of the Truckee River, 5 miles (8 km) west of Tahoe City, at an elevation of 6,480 feet (1,975 m)." },
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Bear Creek, Placer Co. not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Bear Creek, Placer Co. not listed; only Bear Creek entries are San Bernardino Co. and the Fall River Complex, Shasta/Siskiyou Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_tahoe_trib", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(152) — Tahoe Lake and tributaries (checked and found NOT to apply: Bear Creek is not a Lake Tahoe tributary — per the Truckee River Watershed Council's Bear Creek Watershed Assessment, it joins the Middle Truckee River approximately 3.7 miles downstream of the Lake Tahoe outlet, not Lake Tahoe itself)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "(152) Tahoe Lake and tributaries (Placer and El Dorado Cos.). (A) Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout. (B) Tahoe Lake within 300 feet of the mouth of its tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout." },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five trout daily bag limit and 10 trout possession limit, with no gear restrictions." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Bear Creek, Placer Co. not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [
+        { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+        { "label": "winter_zero_trout_bag", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" } }
+      ], "note": "Tahoe-tributary check (required for Tahoe-basin waters): Bear Creek (Alpine Meadows) rises on the Sierra Crest near Ward Peak and flows east/northeast, but per the Truckee River Watershed Council's 2018 Bear Creek Watershed Assessment it joins the Middle Truckee River approximately 3.7 miles downstream of the Lake Tahoe outlet at Tahoe City -- it does NOT drain directly into Lake Tahoe. It is therefore NOT a 'Tahoe Lake tributary' under §7.50(b)(152), and that special closure/gear restriction does not apply. Bear Creek (Alpine Meadows), Placer County, is also not listed by its own name in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation in §5.85(a)(2)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation — joins the Middle Truckee River ~3.7 miles below the Lake Tahoe outlet, not a Lake Tahoe tributary, so the §7.50(b)(152) Tahoe closure does not apply); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "ccr_7_50_tahoe_trib", "cdfw_booklet_2026", "trwc_bear_creek_assessment_2018"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals during the open season (last Saturday in April through November 15): five-trout daily bag limit and ten-trout possession limit. During the winter closed period (November 16 through the Friday before the last Saturday in April), a zero-trout bag limit applies and trout must be released unharmed." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit during the open season; zero-trout bag limit (catch-and-release only) during the winter closed period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "ccr_7_50_tahoe_trib", "cdfw_booklet_2026", "trwc_bear_creek_assessment_2018"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "During the winter closed period (November 16 through the Friday preceding the last Saturday in April), only artificial lures with barbless hooks may be used for all species of fish." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Artificial lures with barbless hooks only during the winter zero-bag-limit period",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

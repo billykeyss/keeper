@@ -1,0 +1,78 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Lyons Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.1811, "lat": 38.8501, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "USDA Forest Service, Eldorado National Forest (Desolation Wilderness)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Lyons Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Lyons Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "recreation_gov_desolation_permit", "url": "https://www.recreation.gov/permits/233261", "title": "Desolation Wilderness Permit — Recreation.gov", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Permits are required all year round and allow an individual or group (of up to 12) travelling & camping together to stay in this Wilderness." },
+    { "key": "topozone_lyons_lake", "url": "https://www.topozone.com/california/el-dorado-ca/lake/lyons-lake/", "title": "Lyons Lake Topo Map — El Dorado County, California (Pyramid Peak Area) — TopoZone", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Lyons Lake is displayed on the Pyramid Peak US Geological Survey (USGS) topo map quadrangle... The latitude and longitude coordinates (GPS waypoint) of Lyons Lake are 38.8504155 (North), -120.1811505 (West) and the approximate elevation is 8,373 feet (2,552 meters) above sea level." },
+    { "key": "sierrarecmagazine_desolation_fishing", "url": "https://sierrarecmagazine.com/explore-desolation-wilderness/backcountry-fishing-in-desolation-wilderness/", "title": "Backcountry Fishing in Desolation Wilderness — Sierra Recreation Magazine", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Take the Lyons trail to Lyons Lake for Large Brook trout." },
+    { "key": "flyfishingthesierra_desolation", "url": "https://flyfishingthesierra.com/desolation-wilderness/", "title": "Desolation Wilderness – fish within a subalpine environment — Fly Fishing the Sierra", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Lyons Lake: 5.25 miles from Trailhead, 8400 feet. The lake has a small rock dam at the southern end with a plunge pool below, opening into a wide shallow pond. Midges work great as well as Ants and Beetles. Contains Brookies." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Lyons Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Lyons Lake lies within the Desolation Wilderness (Eldorado National Forest), reached via the Lyons Creek Trail near Wrights Lake. A wilderness permit is required year-round for both day use and overnight visits; overnight stays additionally require a bear-resistant food canister and payment of overnight camping fees, with a trailhead quota system in effect May through October.", "raw": { "access_type": "wilderness_permit_required", "quota_season": "May-October" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_eldorado",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Recreation.gov — Desolation Wilderness Permit",
+      "humanSummary": "Desolation Wilderness access requires a permit year-round (free day-use permit; paid overnight permit with bear canister requirement and a May-October trailhead quota)",
+      "verbatimText": "Permits are required all year round and allow an individual or group (of up to 12) travelling & camping together to stay in this Wilderness.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "recreation_gov_desolation_permit", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

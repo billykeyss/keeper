@@ -1,0 +1,104 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "South Fork Rubicon River", "waterType": "river", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.4702, "lat": 38.9699, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Eldorado National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] },
+    { "key": "gdpud", "name": "Georgetown Divide Public Utility District", "state": "CA", "type": "state_agency", "roles": ["land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (South Fork Rubicon River not listed; Rubicon River not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (South Fork Rubicon River not listed; Rubicon River not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "wiki_rubicon_river", "url": "https://en.wikipedia.org/wiki/Rubicon_River_(California)", "title": "Rubicon River (California) — Wikipedia (identity/course of the South Fork: originates about a mile southeast of Loon Lake, flows southwest, receives Gerle Creek, then turns west to its confluence with the main Rubicon River)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "The South Fork originates about a mile southeast of Loon Lake and initially flows southwest. It receives Gerle Creek as a tributary before turning west to meet the main Rubicon River." },
+    { "key": "wiki_loon_lake", "url": "https://en.wikipedia.org/wiki/Loon_Lake_(California)", "title": "Loon Lake (California) — Wikipedia (pre-1914 water rights history: Georgetown Divide Water Company and predecessor companies claimed pre-1914 rights in the South Fork Rubicon and Pilot Creek drainages; rights and facilities in the South Fork Rubicon River watershed passed to Georgetown Divide Public Utility District and were later, in 1961, conveyed in part to SMUD)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "gdpud", "retrievedDate": "2026-07-13", "quotedText": "Georgetown Divide Water Company and other water companies...claimed pre-1914 rights in the South Fork Rubicon and Pilot Creek drainages. Sacramento Municipal Utility District (SMUD) was interested in obtaining rights to facilities of the GDPUD in the South Fork Rubicon River watershed that included Loon Lake, for development of SMUD's Upper American River Project, and in 1961, an agreement was made between SMUD and GDPUD and the associated rights to the South Fork Rubicon watershed were turned over." },
+    { "key": "flyfishingthesierra_rubicon", "url": "https://flyfishingthesierra.com/rubicon-river/", "title": "Rubicon River — a hidden gem with good fishing (flyfishingthesierra.com; describes the South Fork Rubicon River's flat reach southeast of Loon Lake, abundant small wild rainbow trout in upper pools, and rainbow/brown trout fishery further downstream)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Small rainbow trout are quite abundant in these pools. Surveys have shown an average fish density of 116 adult rainbows per mile. Further downstream the fishing greatly improves with rainbows and browns providing a good fishery." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "the last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } }, { "label": "winter_zero_trout_bag", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "the Friday preceding the last Saturday in April" } } ], "note": "South Fork Rubicon River is a distinct named fork of the Rubicon system (originates about a mile southeast of Loon Lake, joins the main Rubicon River well downstream, near Ellicott's Bridge) and is not listed by its own name, nor is the mainstem 'Rubicon River' entry treated as covering it, in CCR §7.40(b) or §7.50(b). It therefore falls under the general statewide stream regulation §5.85(a)(2): open with a five-trout bag from the last Saturday in April through November 15, then a zero-trout catch-and-release period with gear restrictions from November 16 through the Friday preceding the last Saturday in April." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open the last Saturday in April through November 15 (general statewide stream regulation; not listed as a special-regulation water under its own name); November 16 through the Friday preceding the last Saturday in April is a zero-trout, artificial-lures-with-barbless-hooks period",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "wiki_rubicon_river"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit, in effect from the last Saturday in April through November 15." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit, last Saturday in April through November 15",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout bag limit (catch-and-release for trout), November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Gear restriction applies from November 16 through the Friday preceding the last Saturday in April, for all species of fish. During the regular season (last Saturday in April through November 15) the general stream regulation imposes no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license. The South Fork Rubicon River is wholly within California (El Dorado Co.); no Nevada reciprocity applies." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "The South Fork Rubicon River watershed (including Loon Lake, its reservoir/dam near the river's headwaters) is the subject of pre-1914 appropriative water rights originally claimed by the Georgetown Divide Water Company and predecessor companies. Those facilities and water-right claims passed to the Georgetown Divide Public Utility District (GDPUD), and in 1961 GDPUD conveyed the South Fork Rubicon watershed rights and associated pre-1914 rights in part to the Sacramento Municipal Utility District (SMUD) for SMUD's Upper American River Project. This affects streamflow/reservoir operations on the river but is not itself an angling take-rule.", "raw": { "rights_holder_history": "Georgetown Divide Water Company (pre-1914 claims) -> GDPUD -> partial 1961 conveyance to SMUD", "affected_facilities": "Loon Lake storage/dam; South Fork Rubicon River, Gerle Creek diversions" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "gdpud",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Wikipedia — Loon Lake (California), water-rights history section",
+      "humanSummary": "Watershed carries pre-1914 appropriative water rights (Georgetown Divide Water Company / GDPUD), partly conveyed to SMUD in 1961 for the Upper American River Project; affects reservoir/flow operations, not an angling take-rule.",
+      "verbatimText": "Georgetown Divide Water Company and other water companies...claimed pre-1914 rights in the South Fork Rubicon and Pilot Creek drainages. Sacramento Municipal Utility District (SMUD) was interested in obtaining rights to facilities of the GDPUD in the South Fork Rubicon River watershed that included Loon Lake, for development of SMUD's Upper American River Project, and in 1961, an agreement was made between SMUD and GDPUD and the associated rights to the South Fork Rubicon watershed were turned over.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "wiki_loon_lake", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

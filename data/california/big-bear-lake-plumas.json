@@ -1,0 +1,79 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Big Bear Lake", "waterType": "lake", "states": ["CA"], "counties": ["Plumas"], "aliases": [], "gnisId": null, "lon": -120.6689, "lat": 39.6904, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_plumas", "name": "Plumas National Forest, USDA Forest Service", "state": "CA", "type": "federal", "roles": ["land_management", "access"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Speckled dace", "scientificName": "Rhinichthys osculus", "category": "minnow", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Big Bear Lake, Plumas Co., not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (only a 'Big Bear' entry found is Bear Creek, San Bernardino Co., from Big Bear Dam — no separate Big Bear Lake, Plumas Co. entry)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Bear Creek (San Bernardino Co.) from Big Bear Dam to confluence of Santa Ana River. All year. Only artificial lures may be used. 2 trout." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (Plumas Co. table, p.14-15; Big Bear Lake not listed)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_bigbearlake_memo_2015", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=111313", "title": "CDFW Memorandum — Fisheries Monitoring in Plumas County: Big Bear Lake (CA Lakes ID 12247), Nov. 10, 2015", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "On July 21-22, 2013, California Department of Fish and Wildlife (CDFW) personnel conducted fisheries and amphibian monitoring surveys at Big Bear Lake (CA Lakes ID 12247) in southern Plumas County. Two overnight gill nets were set for a combined total of 29.3 hours and returned four brook trout (Salvelinus fontinalis) and sixty-six speckled dace (Rhinichthys osculus). Big Bear Lake is one of five associated lakes formerly planted with fingerling trout by CDFW in the Lakes Basin watershed in southern Plumas County. Fish planting was halted in the area in 2000 and plants have not been resumed. Most recently, Big Bear Lake was planted with rainbow trout between 1956 and 2000. Occasional brook trout plants occurred from 1950 through 1992. Due to the accessibility and popularity of the lake as well as low numbers of trout captured in the 2013 gill net surveys CDFW will resume fingerling rainbow trout plants at Big Bear Lake." },
+    { "key": "hometownlocator_bigbearlake", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,256883,n,big%20bear%20lake.cfm", "title": "Big Bear Lake (in Plumas County, CA) — GNIS Feature Detail, HomeTownLocator", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Big Bear Lake ... a physical feature (Lake) in Plumas County. It lies at 39.6903614 (North), -120.6688787 (West), in secs 7 and 18, T21N, R12E, Mount Diablo Meridian, at an elevation of 6489 feet above mean sea level." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Big Bear Lake (Plumas Co., in the Lakes Basin Recreation Area near Gold Lake/Elwell Lakes Lodges) is not listed in CCR §7.40(b) or §7.50(b) — the only 'Big Bear' entry in §7.50 is Bear Creek (San Bernardino Co.) below Big Bear Dam, an unrelated water — so Big Bear Lake falls under the general statewide lake regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Big Bear Lake's trout fishery is not currently part of CDFW's routine hatchery stocking rotation. Regular fingerling rainbow and brook trout plants (1950s-2000) were halted in 2000 across the Lakes Basin watershed pending a backcountry-fisheries status review; a 2013 CDFW gill-net survey found the lake still held a small, apparently self-sustaining brook trout population plus native speckled dace, and a 2015 internal CDFW memo stated an intent to resume fingerling rainbow trout plants, but Big Bear Lake does not appear in CDFW's current (2026) Provisional Stocking Document for the Plumas Co. release table, so any resumed stocking is not confirmed as ongoing.", "raw": {} },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Memorandum — Fisheries Monitoring in Plumas County: Big Bear Lake (CA Lakes ID 12247), Nov. 10, 2015",
+      "humanSummary": "Historic put-and-grow trout plants halted in 2000; a small wild brook trout population plus native speckled dace persist, and a 2015 CDFW memo proposed resuming fingerling rainbow trout plants, though this is not confirmed in CDFW's current stocking plan",
+      "verbatimText": "Big Bear Lake is one of five associated lakes formerly planted with fingerling trout by CDFW in the Lakes Basin watershed in southern Plumas County. Fish planting was halted in the area in 2000 and plants have not been resumed. ... Due to the accessibility and popularity of the lake as well as low numbers of trout captured in the 2013 gill net surveys CDFW will resume fingerling rainbow trout plants at Big Bear Lake.",
+      "isParaphrase": false, "confidence": "medium",
+      "sourceKeys": { "primary": "cdfw_bigbearlake_memo_2015", "corroborating": ["cdfw_provisional_stocking_2026"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

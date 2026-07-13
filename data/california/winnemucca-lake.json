@@ -1,0 +1,78 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Winnemucca Lake", "waterType": "lake", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": null, "lon": -119.9933, "lat": 38.6696, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_enf", "name": "Eldorado National Forest, USDA Forest Service", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Winnemucca Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Winnemucca Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_carson_pass_lakes_report", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=192662", "title": "Frog Lake, Winnemucca Lake, Round Top Lake, and Fourth of July Lake, Alpine County — CDFW Region 2 Angler Survey Box Analysis (Ewing, April 2021)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Winnemucca Lake is a 54-acre lake in Alpine County (38° 40' 11.56 N, 119° 59' 36.46 W), situated at 8,995 feet above mean sea level. The shoreline is a mix of rocks and conifer forest. The lake bottom appears to be primarily composed of mud and various-sized rock substrate. When Winnemucca Lake spills, water drains into nearby Woods Lake and the South Fork American River watershed. The lake receives water from rain and snowmelt runoff from the immediate area. CDFW historically stocked Winnemucca Lake with fingerling-sized BK and RT, with the last recorded stocking of RT in 2000. CDFW currently manages Winnemucca Lake as a self-sustaining BK and RT fishery. Winnemucca Lake is open all year for fishing and other recreational opportunities, but has limited access during the winter season when there is snow." },
+    { "key": "cdfw_carson_pass_lakes_report_intro", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=192662", "title": "Frog Lake, Winnemucca Lake, Round Top Lake, and Fourth of July Lake, Alpine County — CDFW Region 2 (Introduction/Environmental Setting)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "In 2018, the California Department of Fish and Wildlife (CDFW) installed an angler survey box (ASB) at the Carson Pass trailhead, located along the Pacific Crest Trail, to evaluate the fisheries in Frog, Winnemucca, Round Top, and Fourth of July Lakes... All four lakes are in the Mokelumne Wilderness of the Sierra Nevada mountain range in Alpine County (Mussulman and Lockhart 2016)... Eldorado National Forest (ENF) manages the land in the Carson Pass trail area." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Winnemucca Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). CDFW's own angler-survey report on this lake independently confirms it is open all year, with limited winter access due to snow." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "cdfw_carson_pass_lakes_report"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Winnemucca Lake lies within the Mokelumne Wilderness on Eldorado National Forest land, accessed via the Carson Pass/Frog Lake trailhead (Pacific Crest Trail) off Highway 88. CDFW's own angler-survey program describes the lake as a self-sustaining Rainbow Trout / Brook Trout fishery with no current supplemental stocking; historic stocking of Rainbow Trout ended in 2000.", "raw": { "wilderness": "Mokelumne Wilderness", "managing_agency": "Eldorado National Forest", "access": "Carson Pass/Frog Lake trailhead off Highway 88 (PCT)" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_enf",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Region 2, Frog Lake, Winnemucca Lake, Round Top Lake, and Fourth of July Lake Angler Survey Box Analysis (Ewing, April 2021) — Environmental Setting; Winnemucca Lake",
+      "humanSummary": "Winnemucca Lake is within the Mokelumne Wilderness (Eldorado National Forest), reached via the Carson Pass/Frog Lake PCT trailhead off Hwy 88; it is a self-sustaining Rainbow/Brook Trout fishery with no current stocking.",
+      "verbatimText": "All four lakes are in the Mokelumne Wilderness of the Sierra Nevada mountain range in Alpine County... Eldorado National Forest (ENF) manages the land in the Carson Pass trail area. ... CDFW historically stocked Winnemucca Lake with fingerling-sized BK and RT, with the last recorded stocking of RT in 2000. CDFW currently manages Winnemucca Lake as a self-sustaining BK and RT fishery.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_carson_pass_lakes_report", "corroborating": ["cdfw_carson_pass_lakes_report_intro"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,93 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Bronco Creek", "waterType": "creek", "states": ["CA"], "counties": ["Nevada"], "aliases": ["Alder Creek (historical)", "Wick's Creek (historical)", "Wicke's Creek (historical)"], "gnisId": null, "lon": -120.02, "lat": 39.384, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "lahontan_rwqcb", "name": "Lahontan Regional Water Quality Control Board", "state": "CA", "type": "state_agency", "roles": ["none"] },
+    { "key": "truckee_donner_historical_society", "name": "Truckee-Donner Historical Society", "state": "CA", "type": "ngo", "roles": ["none"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Bronco Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Bronco Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "lahontan_truckee_tmdl_program_page", "url": "https://www.waterboards.ca.gov/rwqcb6/water_issues/programs/tmdl/truckee/", "title": "Truckee River – Sediment H.U. 635.20 | Lahontan Regional Water Quality Control Board", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "lahontan_rwqcb", "retrievedDate": "2026-07-13", "quotedText": "Gray and Bronco creek watersheds are adjacent drainages located in the eastern portion of the Truckee River TMDL project area, near the California/Nevada state line. Both creeks have their headwaters in the Mount Rose wilderness area of Nevada, and the majority of their drainage areas are in Nevada. [They] discharge into the Truckee River upstream of the US Geological Survey's (USGS) gauging station at Farad in Nevada County." },
+    { "key": "lahontan_truckee_tmdl_watershed_assessment", "url": "https://www.waterboards.ca.gov/lahontan/water_issues/programs/tmdl/truckee/docs/truckee_river_watershed_assessment.pdf", "title": "Water Quality Assessment and Modeling of the California Portion of the Truckee River Watershed — Lahontan RWQCB", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "lahontan_rwqcb", "retrievedDate": "2026-07-13", "quotedText": "The major tributaries to the Truckee River in California include: Bear Creek, Squaw Creek, Cabin Creek, Pole Creek, Donner Creek, Trout Creek, Prosser Creek, the Little Truckee River, Gray Creek, and Bronco Creek. ... the study area includes portions of the Bronco and Gray creeks watersheds that originate in Nevada, but terminate in California." },
+    { "key": "truckeehistory_ghosts_of_canyon", "url": "https://www.truckeehistory.org/ghosts-of-the-truckee-river-canyon.html", "title": "Ghosts of the Truckee River Canyon — Truckee-Donner Historical Society", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "truckee_donner_historical_society", "retrievedDate": "2026-07-13", "quotedText": "One mile below Iceland and fourteen miles below Truckee is Bronco Creek, first called Alder Cr. and then Wick's or Wicke's Cr. before acquiring the modern name of Bronco Creek. Alexander M. and Lucius D. Wicks, brothers, operated a wood yard here, complete with store, telegraph station and residence." },
+    { "key": "usgs_10345700_site", "url": "https://waterdata.usgs.gov/ca/nwis/inventory/?site_no=10345700", "title": "USGS 10345700 Bronco Creek at Floriston CA — USGS Water Data", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "lahontan_rwqcb", "retrievedDate": "2026-07-13", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [
+    { "key": "bronco_take_season", "groupKey": null, "label": "take_season", "status": "open", "startSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April" }, "endSpec": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+    { "key": "bronco_winter_cr", "groupKey": null, "label": "winter_cr", "status": "open_catch_release", "startSpec": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "endSpec": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" } }
+  ],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "take_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } }, { "label": "winter_cr", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" } } ], "note": "Bronco Creek (Nevada Co.) is a Truckee River tributary near the CA/NV state line, adjacent to Gray Creek, discharging into the Truckee River upstream of the USGS Farad gauge; its headwaters lie on the Carson Range/Mt. Rose side of the Mount Rose Wilderness (documented in the Lahontan RWQCB's Truckee River TMDL watershed assessment, where it was historically named Alder Creek and then Wick's/Wicke's Creek). It is not named in CCR §7.40(b) or §7.50(b), so it falls under the general statewide regulation for inland streams, rivers, and canals in §5.85(a)(2)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open with no gear restrictions from the last Saturday in April through November 15; open catch-and-release for trout (artificial lures with barbless hooks only) from November 16 through the Friday preceding the last Saturday in April (general statewide stream regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals during the take season (last Saturday in April through November 15): five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": "bronco_take_season", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit during the take season (last Saturday in April through November 15)",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true, "counting_rule": "Zero-trout bag limit from November 16 through the Friday preceding the last Saturday in April; trout must be released unharmed and should not be removed from the water." },
+      "groupKey": null, "seasonPeriodKey": "bronco_winter_cr", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "0 trout (catch-and-release) from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "Applies only during the winter window (November 16 through the Friday preceding the last Saturday in April); no gear restrictions during the take season." },
+      "groupKey": null, "seasonPeriodKey": "bronco_winter_cr", "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Only artificial lures with barbless hooks may be used (all species) from November 16 through the Friday preceding the last Saturday in April",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

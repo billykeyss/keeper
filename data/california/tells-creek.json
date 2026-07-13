@@ -1,0 +1,77 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Tells Creek", "waterType": "creek", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": "268136", "lon": -120.3774, "lat": 38.8978, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "USDA Forest Service — Eldorado National Forest", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "gnis_268136", "url": "https://www.wikidata.org/wiki/Q49926111", "title": "Tells Creek — GNIS Feature ID 268136 (Geographic Names Information System, USGS)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Tells Creek. Instance of: stream. Administrative region: El Dorado County, California. Coordinates: 38°53'52\"N, 120°22'37\"W. GNIS Feature ID: 268136." },
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals...are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit. From November 16 through the day before the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Tells Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Tells Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided, all inland streams, rivers, and canals are open the last Saturday in April through November 15 with a five-trout daily bag and possession limit of 10. Closed the remainder of the year except artificial lures with barbless hooks may be used, zero-trout bag limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "fs_eldorado_van_vleck", "url": "https://www.fs.usda.gov/r05/eldorado/recreation/van-vleck-robbs-valley-bassi-area", "title": "Eldorado National Forest — Van Vleck/Robbs Valley/Bassi Recreation Area", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Tells Creek Camping Area is designed for equestrian users and South Fork Group Campground is a popular staging area for OHV users." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } }, { "label": "winter_catch_and_release", "status": "open_catch_release", "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" }, "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "offset_days": -1, "verbatim": "Day before the last Saturday in April" } } ], "note": "Tells Creek is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream regulation in §5.85(a)(2): open the last Saturday in April through November 15, with a zero-trout, artificial-lure-with-barbless-hook-only restriction the rest of the year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open last Saturday in April through November 15 (general statewide stream regulation); zero-trout bag limit and artificial lures with barbless hooks only from November 16 through the day before the last Saturday in April",
+      "verbatimText": "All inland streams, rivers, and canals...are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit. From November 16 through the day before the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals during the open season (last Saturday in April through November 15): five-trout daily bag limit and ten-trout possession limit. Zero-trout bag limit applies the rest of the year." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit during the open season; zero-trout limit in the winter closure window",
+      "verbatimText": "All inland streams, rivers, and canals...are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit. From November 16 through the day before the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false, "note": "From November 16 through the day before the last Saturday in April, only artificial lures with barbless hooks may be used on Tells Creek, under a zero-trout bag limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Artificial lures with barbless hooks only during the winter zero-bag-limit window (Nov 16 through the day before the last Saturday in April)",
+      "verbatimText": "From November 16 through the day before the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

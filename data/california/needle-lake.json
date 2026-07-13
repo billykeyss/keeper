@@ -1,0 +1,207 @@
+{
+  "asOf": "2026-07-13",
+  "water": {
+    "name": "Needle Lake",
+    "waterType": "lake",
+    "states": ["CA"],
+    "counties": ["Placer"],
+    "aliases": [],
+    "gnisId": "264019",
+    "lon": -120.2975175,
+    "lat": 39.200892,
+    "verifyCurrent": false
+  },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tahoe", "name": "USDA Forest Service, Tahoe National Forest / Lake Tahoe Basin Management Unit", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    {
+      "key": "topozone_needle_lake",
+      "url": "https://www.topozone.com/california/placer-ca/lake/needle-lake-2/",
+      "title": "Needle Lake Topo Map, Placer County, CA (Granite Chief Area) — TopoZone (GNIS record)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Needle Lake is located at latitude 39.200892 (North) and longitude -120.2975175 (West) with an approximate elevation of 8,514 feet. It is displayed on the \"Granite Chief\" USGS topo map quad."
+    },
+    {
+      "key": "hometownlocator_needle_lake",
+      "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,264019,n,needle%20lake.cfm",
+      "title": "Needle Lake — GNIS Feature ID 264019, Placer County, California",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Feature ID: 264019. Feature Name: Needle Lake. Feature Type/Class: Physical / Lake. County: Placer County. State: California. Located in secs 27 and 34, T16N, R15E, Mount Diablo Meridian."
+    },
+    {
+      "key": "ccr_5_85_a_1",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85",
+      "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit."
+    },
+    {
+      "key": "ccr_7_40_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Needle Lake not listed)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": null
+    },
+    {
+      "key": "ccr_7_50_no_listing",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
+      "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Needle Lake not listed)",
+      "documentType": "webpage",
+      "instrumentType": "commission_reg",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": null
+    },
+    {
+      "key": "fgc_7145",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC",
+      "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement",
+      "documentType": "webpage",
+      "instrumentType": "statute",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "usfs_granite_chief_wilderness_page",
+      "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/granite-chief-wilderness",
+      "title": "Granite Chief Wilderness — Lake Tahoe Basin Management Unit, USDA Forest Service",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "agency_mirror",
+      "authorityKey": "usfs_tahoe",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness."
+    }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          {
+            "label": "open_water",
+            "status": "open",
+            "start": { "type": "year_round", "verbatim": "All year" },
+            "end": { "type": "year_round", "verbatim": "All year" }
+          }
+        ],
+        "note": "Needle Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1)."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": {
+        "daily": 5,
+        "possession": 10,
+        "unit": "fish",
+        "aggregation": "combined_group",
+        "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": {
+        "required": true,
+        "min_age": 16,
+        "under_min_age": "no_license_required",
+        "note": "Anglers 16 years of age or older must have a valid California sport fishing license."
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "cdfw",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "Needle Lake lies within the Granite Chief Wilderness (Tahoe National Forest / Lake Tahoe Basin Management Unit), below Needle Peak, reached via a use trail from the Granite Chief Trail out of Squaw Valley. No wilderness permit is presently required for day or overnight use.",
+        "raw": { "permit_required": false }
+      },
+      "groupKey": null,
+      "seasonPeriodKey": null,
+      "authorityKey": "usfs_tahoe",
+      "rulePolarity": "applies",
+      "speciesScope": "all",
+      "speciesTargets": [],
+      "scope": { "type": "water" },
+      "appliesToClass": "any",
+      "jurisdictionState": "CA",
+      "citation": "USFS — Granite Chief Wilderness (LTBMU) recreation page",
+      "humanSummary": "No wilderness permit required for day or overnight use in the Granite Chief Wilderness, where Needle Lake is located",
+      "verbatimText": "Wilderness permits are not presently required for day or overnight use in the Granite Chief Wilderness.",
+      "isParaphrase": false,
+      "confidence": "high",
+      "sourceKeys": { "primary": "usfs_granite_chief_wilderness_page", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

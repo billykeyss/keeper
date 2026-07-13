@@ -1,0 +1,92 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Jones Fork Silver Creek", "waterType": "creek", "states": ["CA"], "counties": ["El Dorado"], "aliases": ["Middle Fork Silver Creek", "Jones Fork", "Jones and Jones Fork"], "gnisId": "262001", "lon": -120.4183, "lat": 38.8657, "verifyCurrent": true },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs", "name": "USDA Forest Service — Eldorado National Forest (Crystal Basin Recreation Area)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish. In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Jones Fork Silver Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Jones Fork Silver Creek not listed; the only 'Silver Creek' entry is Silver Creek (Mono Co.), tributary to West Walker River — a different, unrelated water)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_provisional_stocking_2026_no_listing", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW (no entry for Jones Fork Silver Creek or Union Valley Reservoir; the plan's only 'Silver Creek' listing is in Alpine Co., a different water)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "hometownlocator_jones_fork", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,262001,n,jones%20fork%20silver%20creek.cfm", "title": "Jones Fork Silver Creek (in El Dorado County, CA) — Hometown Locator (GNIS feature detail)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Jones Fork Silver Creek is a physical feature (stream) in El Dorado County." },
+    { "key": "usfs_jones_fork_campground", "url": "https://www.fs.usda.gov/r05/eldorado/recreation/jones-fork-campground", "title": "Eldorado National Forest — Jones Fork Campground", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "23 miles east of Placerville on Highway 50 and 13.5 miles north on Ice House Road (Forest Road 3), near Jones Fork of Silver Creek (On Union Valley Reservoir)." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": {
+        "periods": [
+          { "label": "harvest_season", "status": "open",
+            "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "last Saturday in April" },
+            "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } },
+          { "label": "winter_catch_release", "status": "open_catch_release",
+            "start": { "type": "fixed", "month": 11, "day": 16, "verbatim": "November 16" },
+            "end": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "relation": "preceding", "offset_days": -1, "verbatim": "Friday preceding the last Saturday in April" } }
+        ],
+        "note": "Jones Fork Silver Creek (GNIS ID 262001) is a named tributary stream that flows into Union Valley Reservoir in the Crystal Basin Recreation Area of Eldorado National Forest, El Dorado County. It is a distinct, separately GNIS-named water from Big Silver Creek (another, larger Union Valley Reservoir tributary) and from the unrelated waters named 'Silver Creek' elsewhere in this dataset (Silver Creek and Tributaries to Sworinger Lake in Modoc/Lassen Cos.; Silver Creek (Mono) in Mono Co.; Silver King Creek and Tributaries in Alpine Co.). It is not named in CCR §7.40(b) or §7.50(b) (the only 'Silver Creek' special listing found is Silver Creek (Mono Co.), tributary to West Walker River — an unrelated water), so it falls under the general statewide stream regulation at §5.85(a)(2): open all year, with a 5-trout harvest season from the last Saturday in April through Nov. 15 and a 0-trout, artificial-lures-with-barbless-hooks catch-and-release season from Nov. 16 through the Friday before the last Saturday in April."
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "5.85(a)(2)",
+      "humanSummary": "Open all year under the general statewide stream regulation: harvest season (last Saturday in April through Nov. 15, 5 trout) and a zero-trout catch-and-release season (Nov. 16 through the Friday before the last Saturday in April, artificial lures with barbless hooks only). Not listed in CCR §7.40(b) or §7.50(b).",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions. From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies, and only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams during the open harvest season (last Saturday in April through November 15): five trout daily, ten in possession, with no gear restrictions." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit during the open harvest season (last Saturday in April through Nov. 15).",
+      "verbatimText": "...are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 0, "possession": 0, "unit": "fish", "aggregation": "combined_group", "catch_and_release": true },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "5.85(a)(2)",
+      "humanSummary": "Zero-trout (catch-and-release) from Nov. 16 through the Friday before the last Saturday in April; trout must be released unharmed.",
+      "verbatimText": "From November 16 through the Friday preceding the last Saturday in April, a zero-trout bag limit applies... In waters where the bag limit for trout is zero, trout must be released unharmed and should not be removed from the water.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": [] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": false, "artificial_only": true, "flies_only": false, "lures_allowed": true, "barbless_required": true, "single_hook_required": false },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "5.85(a)(2)",
+      "humanSummary": "During the winter catch-and-release season (Nov. 16 through the Friday before the last Saturday in April) only artificial lures with barbless hooks may be used, for all species; no gear restrictions during the open harvest season.",
+      "verbatimText": "...only artificial lures with barbless hooks may be used for all species of fish.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw", "rulePolarity": "applies",
+      "speciesScope": "all", "speciesTargets": [], "scope": { "type": "water" }, "appliesToClass": "any",
+      "jurisdictionState": "CA", "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+.",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

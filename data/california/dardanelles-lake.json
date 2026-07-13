@@ -1,0 +1,82 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Dardanelles Lake", "waterType": "lake", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": null, "lon": -120.022, "lat": 38.76, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_ltbmu", "name": "USDA Forest Service, Lake Tahoe Basin Management Unit", "state": null, "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Lahontan cutthroat trout", "scientificName": "Oncorhynchus clarkii henshawi", "category": "trout", "nativeStatus": "native", "presence": "stocked" },
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "char", "nativeStatus": "introduced", "presence": "historical" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Dardanelles Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Dardanelles Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "cdfw_dardanelles_memo_2018", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=161020", "title": "CDFW Memorandum — Gillnet Survey and Visual Encounter Survey at Dardanelles Lake, El Dorado County (7/27/2018)", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Dardanelles Lake, El Dorado County, is within the Lake Tahoe basin and is part of the Upper Truckee Lahontan Cutthroat Trout Restoration Expansion Area. In 2012, the USDA Forest Service, Lake Tahoe Basin Management Unit began non-native brook trout removal at Dardanelles Lake using gill nets and backpack electrofishers. A total of 453 brook trout were removed and no fish have been caught in Dardanelles Lake since the 2013/2014 winter gill net set. With brook trout eradicated from the lake, Lahontan cutthroat trout can be introduced. To introduce Lahontan cutthroat trout to Dardanelles Lake, CDFW will aerially plant the lake with fingerling-sized trout annually until such time a self-sustaining population is established." },
+    { "key": "cdfw_lct_species_page", "url": "https://wildlife.ca.gov/Conservation/Fishes/Lahontan-Cutthroat-Trout", "title": "Lahontan Cutthroat Trout | California Department of Fish and Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "In California, the historic range of Lahontan cutthroat trout includes Lake Tahoe and the Carson, Truckee, and Walker river basins." },
+    { "key": "cdfw_fish_planting_schedule", "url": "https://nrm.dfg.ca.gov/FishPlants/PublicPlantSearch", "title": "CDFW Fish Planting Schedule — Public Plant Search (water name list includes \"Dardanelles Lake (El Dorado)\"; no plants shown in current window)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "topozone_dardanelles", "url": "https://www.topozone.com/california/el-dorado-ca/lake/dardanelles-lake/", "title": "Dardanelles Lake Topo Map CA, El Dorado County (Echo Lake Area) — TopoZone", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_ltbmu", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "sierra_rec_meiss_country", "url": "https://sierrarecmagazine.com/guide-to-hiking-meiss-country-in-lake-tahoe/", "title": "Guide to Hiking Meiss Country in Lake Tahoe — Sierra REC Magazine", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_ltbmu", "retrievedDate": "2026-07-13", "quotedText": "Managed in partnership by Eldorado National Forest and the Lake Tahoe Basin Management Unit" },
+    { "key": "sierra_rec_christmas_valley", "url": "https://sierrarecmagazine.com/hiking-christmas-valley-trail-to-dardanelles-lake-in-south-lake-tahoe/", "title": "Hiking Christmas Valley Trail to Dardanelles Lake in South Lake Tahoe — Sierra REC Magazine", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_ltbmu", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "daves_sierra_fishing_dardanelles", "url": "https://www.davessierrafishing.com/destinations/dardanelleslake.html", "title": "Fishing Dardanelles Lake — Dave's Sierra Fishing", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Dardanelles Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). Backcountry access is seasonal in practice (typically late spring through fall, snow permitting) but there is no regulatory closed season." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Dardanelles Lake sits within the Upper Truckee Lahontan Cutthroat Trout Restoration Expansion Area. USDA Forest Service (LTBMU) removed a non-native brook trout population from the lake by gillnet and backpack electrofishing (2012 through the 2013/2014 winter gill-net set, 453 brook trout removed), and a 2018 CDFW pre-stocking survey confirmed the lake was fishless. CDFW's plan was to aerially plant Lahontan cutthroat trout fingerlings annually until a self-sustaining native population is established; as of 2026 the lake is on CDFW's recognized water list for the Fish Planting Schedule tool but does not appear in the current Provisional Stocking Document or in the tool's live planting window, so anglers should not assume an active annual plant.", "raw": { "brook_trout_removed": 453, "removal_period": "2012-2013/2014", "fishless_confirmed": "2018-06-12" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "CDFW Memorandum, Gillnet Survey and Visual Encounter Survey at Dardanelles Lake (7/27/2018)",
+      "humanSummary": "Native Lahontan cutthroat trout restoration water: non-native brook trout eradicated (2012-2014), lake confirmed fishless in 2018, and CDFW has aerially planted or plans to aerially plant native LCT fingerlings to establish a self-sustaining population; not a guaranteed annual stocking.",
+      "verbatimText": "Dardanelles Lake, El Dorado County, is within the Lake Tahoe basin and is part of the Upper Truckee Lahontan Cutthroat Trout Restoration Expansion Area. ... A total of 453 brook trout were removed and no fish have been caught in Dardanelles Lake since the 2013/2014 winter gill net set. With brook trout eradicated from the lake, Lahontan cutthroat trout can be introduced. To introduce Lahontan cutthroat trout to Dardanelles Lake, CDFW will aerially plant the lake with fingerling-sized trout annually until such time a self-sustaining population is established.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "cdfw_dardanelles_memo_2018", "corroborating": ["cdfw_lct_species_page", "cdfw_fish_planting_schedule"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

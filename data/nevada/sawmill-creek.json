@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Sawmill Creek", "waterType": "creek", "states": ["NV"], "counties": ["Carson City"], "aliases": [], "gnisId": null, "lon": -119.795, "lat": 39.155, "verifyCurrent": true },
+  "authorities": [
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "s_ndow_sawmill_creek", "url": "https://www.ndow.org/waters/sawmill-creek-2/", "title": "Sawmill Creek — Nevada Department of Wildlife (Carson City, Western Region, \"Creek or Stream\")", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Sawmill Creek Region Western County Carson City Type of water Creek or Stream Other Bodies of Water North Canyon Creek – Carson City ... Secret Harbor Creek ... Ash Canyon Creek ... Baily Fishing Pond ... Carson River – Carson City ... Clear Creek – Carson City" },
+    { "key": "s_cr2516_carson_all", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Carson City, general \"All waters\" listing", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "CARSON CITY. CLOSED WATERS: None. OPEN WATERS: All waters. (Except as noted below). Open year around. Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye. Any hour of the day or night." },
+    { "key": "s_cr2516_carson_specials", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "CR 25-16 — Carson City special-water listings (only \"Lake Tahoe and tributaries\" and \"Baily Fishing Pond\" are broken out; Sawmill Creek is not named)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Lake Tahoe and tributaries. Open year around. Daily: 5 game fish. Possession: 10 game fish. 1 hour before sunrise to 2 hours after sunset. Baily Fishing Pond. Open year around. Daily: 3 game fish. Possession: 6 game fish. Hours park is open to public use." },
+    { "key": "s_ndow_ash_canyon", "url": "https://www.ndow.org/waters/ash-canyon-creek/", "title": "Ash Canyon Creek — Nevada Department of Wildlife (lists Sawmill Creek as a distinct related Carson City water)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Other Bodies of Water North Canyon Creek – Carson City ... Sawmill Creek ... Secret Harbor Creek ... Baily Fishing Pond ... Carson River – Carson City ... Clear Creek – Carson City" },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-13", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "Open year around" }, "end": { "type": "year_round", "verbatim": "Open year around" } } ], "note": "Sawmill Creek has its own dedicated NDOW fishery page (ndow.org/waters/sawmill-creek-2), which catalogs it under Carson City County / Western Region as a distinct 'Creek or Stream' — listed as a separate 'Other Body of Water' alongside, and distinguishable from, North Canyon Creek, Ash Canyon Creek, Clear Creek, Secret Harbor Creek, Baily Fishing Pond and the Carson River, all also in Carson City. It is not the same water as the unrelated Sawmill Creek/Sawmill Lake/Sawmill Pond entries found in other Nevada and Nye/Eureka/Elko counties. Carson City has no closed waters, and Sawmill Creek is not individually broken out in CR 25-16's special-water rows (only 'Lake Tahoe and tributaries' and 'Baily Fishing Pond' are), so the governing rule is the county's general 'All waters (Except as noted below)' listing — open year around." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Carson City — All waters)",
+      "humanSummary": "Open year-round (Nevada / Carson City general 'All waters' listing; Sawmill Creek is a distinct NDOW-cataloged Carson City stream not individually listed with special regulations).",
+      "verbatimText": "All waters. (Except as noted below). Open year around.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516_carson_all", "corroborating": ["s_cr2516_carson_specials", "s_ndow_sawmill_creek", "s_ndow_ash_canyon"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "Carson City general limit: Daily 5 trout, 5 mountain whitefish, and 15 warmwater game fish (of which not more than 5 may be black bass and 5 may be walleye); Possession 10 trout, 10 mountain whitefish, and 30 warmwater game fish (of which not more than 10 may be black bass and 10 may be walleye). On a small foothill trout creek the practical limit is 5 trout per day / 10 in possession." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Carson City — All waters)",
+      "humanSummary": "5 trout daily / 10 in possession (plus the county's separate mountain-whitefish and warmwater allowances) under the Carson City general 'All waters' limit.",
+      "verbatimText": "Daily: 5 trout, 5 mountain whitefish and 15 warmwater game fish of which not more than 5 may be black bass and 5 may be walleye. Possession: 10 trout, 10 mountain whitefish and 30 warmwater gamefish of which 10 may be black bass and 10 may be walleye.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516_carson_all", "corroborating": [] }
+    },
+    {
+      "ruleType": "fishing_hours",
+      "parameters": { "basis": "any_hour", "note": "Under the Carson City general 'All waters' listing, fishing is permitted any hour of the day or night (the restricted 1-hour-before-sunrise-to-2-hours-after-sunset window applies only to the 'Lake Tahoe and tributaries' row, which does not cover Sawmill Creek)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NV CR 25-16 (Carson City — All waters)",
+      "humanSummary": "Fishing is allowed any hour of the day or night.",
+      "verbatimText": "Any hour of the day or night",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_cr2516_carson_all", "corroborating": [] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 12, "under_min_age": "no_license_required", "note": "A Nevada fishing license is required for anglers 12 and older. Sawmill Creek is a Nevada (Carson City) inland stream, so a standard Nevada resident/nonresident license applies." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ndow",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
+      "citation": "NDOW — Apply & Buy: Fishing Licenses",
+      "humanSummary": "A Nevada fishing license is required for anglers age 12 and older; none required under 12.",
+      "verbatimText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "s_ndow_apply_buy", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

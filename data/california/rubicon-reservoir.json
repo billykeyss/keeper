@@ -1,0 +1,79 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Rubicon Reservoir", "waterType": "reservoir", "states": ["CA"], "counties": ["El Dorado"], "aliases": [], "gnisId": "231998", "lon": -120.2209591, "lat": 38.9851955, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "smud", "name": "Sacramento Municipal Utility District (Upper American River Project, FERC No. 2101)", "state": "CA", "type": "state_agency", "roles": ["land_management"] },
+    { "key": "usfs", "name": "USDA Forest Service — Eldorado National Forest (Desolation Wilderness)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Rubicon Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Rubicon Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "topoquest_rubicon_reservoir", "url": "https://topoquest.com/place-detail.php?id=231998", "title": "Rubicon Reservoir, CA — GNIS Feature Detail (TopoQuest)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "GNIS Feature ID: 231998; Feature Name: Rubicon Reservoir; Feature Type: Reservoir; State: California; County: El Dorado County; USGS Quadrangle: Rockbound Valley, CA; Elevation: 6528 ft MSL; Coordinates: N38.985196° W120.220959°" },
+    { "key": "smud_rubicon_reservoir_page", "url": "https://www.smud.org/In-Our-Community/Visit-our-Recreational-Areas/UARP-Stream-Flow-and-Reservoir-Conditions/Rubicon-Reservoir", "title": "Reservoir Conditions: Rubicon Reservoir — SMUD", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "smud", "retrievedDate": "2026-07-13", "quotedText": "The rugged land of smooth granite and sparse forest surrounding this 6,500' lake is accessible by trail from Loon Lake Campground or from Rockbound Valley in Desolation Wilderness." },
+    { "key": "usfs_deso_permits", "url": "https://www.fs.usda.gov/r05/eldorado/permits/desolation-wilderness-permits", "title": "Desolation Wilderness Permits — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Permits are required year-round for overnight use." },
+    { "key": "usfs_deso_dayuse", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/desolation-day-use-permits-parking", "title": "Desolation Day Use Permits & Parking — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Day use is not subject to fees nor limited by quota at any time of the year." },
+    { "key": "spiritbleach_zone6", "url": "https://www.spiritbleach.com/2021/09/rubicon-reservoir-highlights.html", "title": "Rubicon Reservoir Highlights — SpiritBleach (trip report)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-13", "quotedText": "Zone 6 Desolation Wilderness permit and Loon Lake campsite reservation" }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Rubicon Reservoir, a SMUD-managed impoundment on the Rubicon River in Rockbound Valley (Desolation Wilderness, El Dorado Co.; USGS 'Rockbound Valley' quad, GNIS ID 231998), is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake/reservoir regulation in §5.85(a)(1)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake/reservoir regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Rubicon Reservoir lies within Desolation Wilderness (Eldorado National Forest), identified by hikers/backpackers as part of Wilderness Zone 6 ('the Rubicon'). A wilderness permit is required to enter: a free day-use permit (self-issued at major trailheads, no fee and not quota-limited) and, for overnight trips, an overnight permit required year-round, with a zone-quota system in effect from the Friday before Memorial Day through September 30 (reservations via Recreation.gov).", "raw": { "wilderness_zone": "Zone 6 ('the Rubicon')", "day_use_permit": "required; free; no fee; not quota-limited", "overnight_permit": "required year-round", "overnight_quota_season": "Friday before Memorial Day through September 30" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USDA Forest Service — Desolation Wilderness Permits (Eldorado National Forest)",
+      "humanSummary": "In Desolation Wilderness (Zone 6): a free day-use permit and (for overnight trips) an overnight permit required year-round; overnight zone-quota season runs the Friday before Memorial Day through September 30 (reserve via Recreation.gov)",
+      "verbatimText": "Permits are required year-round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_deso_permits", "corroborating": ["usfs_deso_dayuse", "spiritbleach_zone6"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

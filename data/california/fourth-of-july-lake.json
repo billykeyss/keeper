@@ -1,0 +1,80 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Fourth of July Lake", "waterType": "lake", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": null, "lon": -120.0174, "lat": 38.6497, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "Eldorado National Forest (Amador Ranger District), U.S. Forest Service", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [
+    { "commonName": "Brook trout", "scientificName": "Salvelinus fontinalis", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
+    { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
+  ],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "cdfw_asb_2018_2020", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=192662", "title": "Frog Lake, Winnemucca Lake, Round Top Lake, and Fourth of July Lake, Alpine County — 2018–2020 Angler Survey Box Analysis (Ewing, CDFW North Central Region, April 2021)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Fourth of July Lake is a 15-acre lake in Alpine County (38° 38' 58.28 N, 120° 01' 02.37 W), situated at 8,172 feet above mean sea level. The shoreline is a mix of rocks, willows, and conifer forest. The lake bottom appears to be primarily composed of mud and various-sized rock substrate. When Fourth of July spills, water flows into Summit City Creek, eventually contributing to the Mokelumne River. The lake receives water from rain and snowmelt runoff from the immediate area. CDFW historically stocked Fourth of July Lake with fingerling-sized BK, RT, LCT, and Kokanee Salmon (Oncorhynchus nerka; KS), with the last recorded stocking of KS in 1982. CDFW currently manages Fourth of July Lake as a self-sustaining BK and RT fishery. Fourth of July Lake is open all year for fishing and other recreational opportunities, but has limited access during the winter season when there is snow." },
+    { "key": "topozone_4th_july", "url": "https://www.topozone.com/california/alpine-ca/lake/fourth-of-july-lake-3/", "title": "Fourth of July Lake Topo Map, CA, Alpine County (Caples Lake USGS 7.5' Quadrangle) — TopoZone", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Fourth of July Lake is displayed on the Caples Lake USGS topo map. The lake's coordinates are 38.6496828 (North), -120.0173871 (West), and its elevation is 8179 feet." },
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Fourth of July Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Fourth of July Lake not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "usfs_moke_overnight_permits", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness-general-overnight-permits", "title": "Mokelumne Wilderness General Overnight Permits — Eldorado National Forest, U.S. Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Permits are mandatory for entry into the Mokelumne Wilderness year-round for overnight use. This General Mokelumne Wilderness permit does not permit this person/group to camp in the CPMA or the three CPMA lakes (Winnemucca, Round Top, and Fourth of July Lakes and surrounding areas)." },
+    { "key": "usfs_cpma_permits", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/carson-pass-management-area-permits", "title": "Carson Pass Management Area Permits — Eldorado National Forest, U.S. Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "6 sites at Fourth of July Lake. 3-night stay limit. Permits are required year-round for overnight use. Maximum group size is 8 people for overnight use." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Fourth of July Lake is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide lake regulation in §5.85(a)(1). CDFW's own angler-survey report also states the lake is open all year, with limited winter access due to snow." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year (general statewide lake regulation; not listed as a special-regulation water); winter access is limited by snow.",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026", "cdfw_asb_2018_2020"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Fourth of July Lake sits within the Mokelumne Wilderness (Eldorado National Forest), reached via Woods Lake and Round Top Lake, and is one of three lakes (with Winnemucca and Round Top) inside the Carson Pass Management Area (CPMA). A wilderness permit is required year-round for any overnight stay (day use requires no permit); the general Mokelumne Wilderness permit specifically does NOT cover camping at the three CPMA lakes — a separate CPMA overnight permit is required, capped at 6 designated sites at Fourth of July Lake with a 3-night stay limit and a maximum group size of 8.", "raw": { "cpma_sites_fourth_of_july": 6, "stay_limit_nights": 3, "max_group_size": 8, "permit_required_overnight": true, "permit_required_day_use": false } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_eldorado",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS Eldorado National Forest — Mokelumne Wilderness General Overnight Permits; Carson Pass Management Area Permits",
+      "humanSummary": "Wilderness/CPMA overnight permit required for camping (none for day use); 6 sites, 3-night stay limit, 8-person max group size at Fourth of July Lake.",
+      "verbatimText": "Permits are mandatory for entry into the Mokelumne Wilderness year-round for overnight use. This General Mokelumne Wilderness permit does not permit this person/group to camp in the CPMA or the three CPMA lakes (Winnemucca, Round Top, and Fourth of July Lakes and surrounding areas). 6 sites at Fourth of July Lake. 3-night stay limit. Maximum group size is 8 people for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_cpma_permits", "corroborating": ["usfs_moke_overnight_permits"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Summit City Creek", "waterType": "creek", "states": ["CA"], "counties": ["Alpine"], "aliases": [], "gnisId": "267916", "lon": -120.0294, "lat": 38.5716, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_eldorado", "name": "USDA Forest Service, Eldorado National Forest (Mokelumne Wilderness)", "state": "CA", "type": "federal", "roles": ["access", "land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_2", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(2) — Trout, General Statewide Regulations (inland streams, rivers, and canals)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Summit City Creek not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Summit City Creek not listed; Alpine Co. entries include Carson River East Fork, Corral Valley Creek, Coyote Valley Creek, Heenan Lake, Milk Ranch Creek, Murray Canyon Creek, Silver King Creek, and Willow Creek, but not Summit City Creek)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose." },
+    { "key": "usfs_mokelumne_wilderness", "url": "https://www.fs.usda.gov/r05/eldorado/wilderness/mokelumne-wilderness", "title": "Mokelumne Wilderness — Eldorado National Forest, USDA Forest Service", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Permits are mandatory for entry into the Mokelumne Wilderness year round for overnight use." },
+    { "key": "topozone_summit_city_creek", "url": "https://www.topozone.com/california/alpine-ca/stream/summit-city-creek/", "title": "Summit City Creek Topo Map CA, Alpine County (Mokelumne Peak Area) — TopoZone", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Summit City Creek is a stream in Alpine County. Summit City Creek is situated nearby to Fourth of July Lake... Summit City Creek is displayed on the Mokelumne Peak US Geological Survey Map." },
+    { "key": "sierrarec_mokelumne_backpacking", "url": "https://sierrarecmagazine.com/portfolio/backpacking-trails-mokelumne-wilderness/", "title": "Backpacking Trails Mokelumne Wilderness — Sierra Recreation Magazine", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "The Evergreen Trail starts near Upper Blue Lake campground and proceeds over a small pass and down into Summit City Canyon near the site of an old mining community. It crosses Summit City Creek and joins the Summit City trail (to Forestdale Divide) and Camp Irene trail (which continues down Summit City Creek)." },
+    { "key": "wikidata_summit_city_creek", "url": "https://www.wikidata.org/wiki/Q49939721", "title": "Summit City Creek — Wikidata (GNIS ID 267916)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usfs_eldorado", "retrievedDate": "2026-07-13", "quotedText": "Summit City Creek: natural watercourse in Alpine County, California, United States of America. GNIS ID: 267916." }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "general_stream_season", "status": "open", "start": { "type": "relative", "ordinal": "last", "weekday": "sat", "month": 4, "verbatim": "Last Saturday in April" }, "end": { "type": "fixed", "month": 11, "day": 15, "verbatim": "November 15" } } ], "note": "Summit City Creek is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide stream/river regulation in §5.85(a)(2)." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "Open from the last Saturday in April through November 15 (general statewide stream regulation; not listed as a special-regulation water)",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland streams, rivers, and canals: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "gear_method",
+      "parameters": { "bait_allowed": true, "artificial_only": false, "flies_only": false, "lures_allowed": true, "barbless_required": false, "single_hook_required": false, "note": "No gear restrictions apply beyond the general statewide rules, since Summit City Creek is not listed as a special-regulation water." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "asserts_none", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(2)",
+      "humanSummary": "No gear restrictions (general statewide stream regulation)",
+      "verbatimText": "All inland streams, rivers, and canals, except those listed in Sections 7.40(b) and 7.50(b), are open to fishing from the last Saturday in April through November 15 with a five-trout daily bag limit and ten-trout possession limit, with no gear restrictions.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_2", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "Every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Summit City Creek flows within the Mokelumne Wilderness (Eldorado National Forest), where a wilderness permit is mandatory year-round for overnight use (backpacking/camping); no such permit is required for day use.", "raw": { "permit_required_for": "overnight use", "permit_period": "year round" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "usfs_eldorado",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "USFS Eldorado National Forest — Mokelumne Wilderness permit requirements",
+      "humanSummary": "Wilderness permit mandatory year-round for overnight camping along this reach; not required for day use",
+      "verbatimText": "Permits are mandatory for entry into the Mokelumne Wilderness year round for overnight use.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "usfs_mokelumne_wilderness", "corroborating": [] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}

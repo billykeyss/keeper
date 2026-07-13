@@ -1,0 +1,83 @@
+{
+  "asOf": "2026-07-13",
+  "water": { "name": "Lake Van Norden", "waterType": "reservoir", "states": ["CA"], "counties": ["Nevada", "Placer"], "aliases": ["Van Norden Lake", "Van Norden Reservoir", "Van Norden Dam"], "gnisId": null, "lon": -120.363, "lat": 39.314, "verifyCurrent": true },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usfs_tnf", "name": "USDA Forest Service — Tahoe National Forest", "state": "CA", "type": "federal", "roles": ["land_management", "access"] },
+    { "key": "syrcl", "name": "South Yuba River Citizens League", "state": "CA", "type": "ngo", "roles": ["land_management"] },
+    { "key": "tdlt", "name": "Truckee Donner Land Trust", "state": "CA", "type": "land_trust", "roles": ["land_management"] }
+  ],
+  "reaches": [],
+  "species": [],
+  "speciesGroups": [],
+  "sources": [
+    { "key": "ccr_5_85_a_1", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85(a)(1) — Trout, General Statewide Regulations (inland lakes, reservoirs, and ponds)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit." },
+    { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Van Norden not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Van Norden not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null },
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license" },
+    { "key": "syrcl_van_norden_project", "url": "https://yubariver.org/projects/van-norden-meadow-restoration-project/", "title": "Van Norden Meadow Restoration Project — South Yuba River Citizens League (SYRCL)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "syrcl", "retrievedDate": "2026-07-13", "quotedText": "Relocated 13,000 fish (12,000 of which were a native minnow species) out of harm's way prior to beginning the project with partners from the TNF, CDFW, and TU." },
+    { "key": "sierrasun_van_norden_jewel", "url": "https://www.sierrasun.com/news/van-norden-meadow-a-sierra-jewel/", "title": "Van Norden Meadow: A Sierra Jewel — Sierra Sun", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "syrcl", "retrievedDate": "2026-07-13", "quotedText": "Last year most of the Van Norden dam was taken down. The resulting dirt (60,000 cubic yards) was used as fill for the river channel (2.75 miles of channel fill)." },
+    { "key": "sierrasun_dam_1872", "url": "https://www.sierrasun.com/news/van-norden-meadow-a-sierra-jewel/", "title": "Van Norden Meadow: A Sierra Jewel — Sierra Sun (dam construction date)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tdlt", "retrievedDate": "2026-07-13", "quotedText": "The goal of the project is to restore the meadow to its original natural beauty before the arrival of emigrants and the building of the Van Norden dam in 1872." },
+    { "key": "yubariver_headwaters_post", "url": "https://yubariver.org/posts/van-norden-meadow-a-look-at-the-south-yuba-river-headwaters/", "title": "Van Norden Meadow: A Look at the South Yuba River Headwaters — SYRCL", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "syrcl", "retrievedDate": "2026-07-13", "quotedText": "the reservoir and dam negatively impact the health of the South Yuba River downstream (SYRCL, 2015), the dam is out of compliance and is a safety hazard, and the TDLT does not have the water rights necessary to store the water in the reservoir." },
+    { "key": "donnersummitca_meadow_restoration", "url": "https://www.donnersummitca.com/projects-information/2022/7/22/meadow-restoration", "title": "Meadow Restoration — Donner Summit, California", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tdlt", "retrievedDate": "2026-07-13", "quotedText": "the dam was breached and Lake Van Norden was reduced in the mid 1970s" },
+    { "key": "caclimateinvestments_wetlands", "url": "https://www.caclimateinvestments.ca.gov/2023-profiles/wetlandsrestoration", "title": "Van Norden Meadow Restoration Project — California Climate Investments (Wetlands and Watershed Restoration Program)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null }
+  ],
+  "groups": [],
+  "seasonPeriods": [],
+  "regulations": [
+    {
+      "ruleType": "season",
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Lake Van Norden is not listed in CCR §7.40(b) or §7.50(b), so it would fall under the general statewide lake/reservoir regulation in §5.85(a)(1) if fishable water were present. See the accompanying special-status regulation for the current condition of the impoundment." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "Open all year under the general statewide lake/reservoir regulation (not a listed special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "bag",
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "5.85(a)(1)",
+      "humanSummary": "5 trout daily bag limit, 10 trout possession limit (general statewide rule; not a listed special-regulation water)",
+      "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing"] }
+    },
+    {
+      "ruleType": "license",
+      "parameters": { "required": true, "min_age": 16, "under_min_age": "no_license_required", "note": "Anglers 16 years of age or older must have a valid California sport fishing license." },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "F&G Code §7145",
+      "humanSummary": "California sport fishing license required for anglers 16+",
+      "verbatimText": "every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": {
+        "description": "Lake Van Norden is a historic impoundment on the South Yuba River in Summit Valley near Donner Summit, formed behind a dam built in 1872. The dam was notched in 1976 (and again in 2019) to reduce impoundment, and the Truckee Donner Land Trust purchased and protected the surrounding Summit Valley property in 2012 before transferring it to the Tahoe National Forest in 2017. As Phase 1 of an active, multi-year meadow-restoration project led by SYRCL with the U.S. Forest Service and other partners, most of the remaining dam berm was removed in 2022 (roughly 60,000 cubic yards of material was used as channel fill), and about 13,000 fish (roughly 12,000 of a native minnow species) were relocated out of the impoundment beforehand by CDFW, the Forest Service, and Trout Unlimited. Phase 2 (2024-2026) is reconnecting remaining floodplain hydrology. As of this writing the site is being actively converted from a reservoir back into a wet meadow, and little to no standing, fishable reservoir water remains.",
+        "raw": { "dam_built": 1872, "dam_notched": [1976, 2019], "phase1_dam_removal_year": 2022, "fish_relocated_estimate": 13000, "fish_relocated_native_minnow_estimate": 12000 }
+      },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "syrcl",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "SYRCL Van Norden Meadow Restoration Project; Sierra Sun, \"Van Norden Meadow: A Sierra Jewel\"; Donner Summit, California — Meadow Restoration",
+      "humanSummary": "Historic reservoir largely decommissioned: the dam was mostly removed in 2022 as part of an active USFS/SYRCL meadow-restoration project, with fish relocated out beforehand; the site is being converted back to wet meadow and no maintained fishery currently exists here.",
+      "verbatimText": "Last year most of the Van Norden dam was taken down. The resulting dirt (60,000 cubic yards) was used as fill for the river channel (2.75 miles of channel fill).",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "sierrasun_van_norden_jewel", "corroborating": ["syrcl_van_norden_project", "yubariver_headwaters_post", "donnersummitca_meadow_restoration", "sierrasun_dam_1872"] }
+    }
+  ],
+  "reciprocity": [],
+  "stockingEvents": [],
+  "stockingSchedule": []
+}
