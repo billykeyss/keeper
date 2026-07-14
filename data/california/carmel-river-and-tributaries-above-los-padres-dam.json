@@ -66,14 +66,14 @@
       "quotedText": "GNIS has no dam-specific entry for Los Padres Dam (delisted 2021); location corroborated via OSM/Nominatim's \"Los Padres Dam\" node (36.3860722,-121.6682030), cross-checked against mapcarta/mindat mirrors, and anchored to the Carmel River's GNIS stream record (gaz_id 270301); correcting the file's prior coordinate (-121.66,36.36), which sat ~3.0km from the true dam location."
     },
     {
-      "key": "ccr_7_50_b_25",
-      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",
-      "title": "14 CCR \u00a77.50(b)(25) \u2014 Carmel River and tributaries above Los Padres Dam (Monterey Co.) (NOTE: Cornell's mirror has not yet reflected recent CCR \u00a77.50(b) renumbering and does not currently show this entry; content verified instead via the CDFW booklet, now cited as primary)",
+      "key": "ccr_7_40_b_25",
+      "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",
+      "title": "14 CCR \u00a77.40(b)(25) \u2014 Carmel River and tributaries above Los Padres Dam (Monterey Co.)",
       "documentType": "webpage",
       "instrumentType": "commission_reg",
       "authorityLevel": "primary_regulatory",
       "authorityKey": "cdfw",
-      "retrievedDate": "2026-07-01",
+      "retrievedDate": "2026-07-13",
       "quotedText": "(25) Carmel River and tributaries above Los Padres Dam (Monterey Co.). Last Sat. in Apr. through Nov. 15. Only artificial lures with barbless hooks may be used. 5 Brown Trout, 0 Rainbow Trout."
     },
     {
@@ -136,7 +136,7 @@
       },
       "appliesToClass": "any",
       "jurisdictionState": "CA",
-      "citation": "7.50(b)(25)",
+      "citation": "7.40(b)(25)",
       "humanSummary": "Open last Saturday in April through November 15; closed the rest of the year.",
       "verbatimText": "Last Sat. in Apr. through Nov. 15.",
       "isParaphrase": false,
@@ -145,7 +145,7 @@
         "primary": "cdfw_booklet_2026",
         "corroborating": [
           "cdfw_booklet_2026",
-          "ccr_7_50_b_25"
+          "ccr_7_40_b_25"
         ]
       }
     },
@@ -170,7 +170,7 @@
       },
       "appliesToClass": "any",
       "jurisdictionState": "CA",
-      "citation": "7.50(b)(25)",
+      "citation": "7.40(b)(25)",
       "humanSummary": "Only artificial lures with barbless hooks may be used.",
       "verbatimText": "Only artificial lures with barbless hooks may be used.",
       "isParaphrase": false,
@@ -179,7 +179,7 @@
         "primary": "cdfw_booklet_2026",
         "corroborating": [
           "cdfw_booklet_2026",
-          "ccr_7_50_b_25"
+          "ccr_7_40_b_25"
         ]
       }
     },
@@ -207,7 +207,7 @@
       },
       "appliesToClass": "any",
       "jurisdictionState": "CA",
-      "citation": "7.50(b)(25)",
+      "citation": "7.40(b)(25)",
       "humanSummary": "5 Brown Trout daily bag/possession limit.",
       "verbatimText": "5 Brown Trout, 0 Rainbow Trout.",
       "isParaphrase": false,
@@ -216,7 +216,7 @@
         "primary": "cdfw_booklet_2026",
         "corroborating": [
           "cdfw_booklet_2026",
-          "ccr_7_50_b_25"
+          "ccr_7_40_b_25"
         ]
       }
     },
@@ -244,7 +244,7 @@
       },
       "appliesToClass": "any",
       "jurisdictionState": "CA",
-      "citation": "7.50(b)(25)",
+      "citation": "7.40(b)(25)",
       "humanSummary": "0 Rainbow Trout \u2014 catch-and-release only; all rainbow trout (including resident steelhead-strain fish) must be released.",
       "verbatimText": "5 Brown Trout, 0 Rainbow Trout.",
       "isParaphrase": false,
@@ -253,7 +253,7 @@
         "primary": "cdfw_booklet_2026",
         "corroborating": [
           "cdfw_booklet_2026",
-          "ccr_7_50_b_25"
+          "ccr_7_40_b_25"
         ]
       }
     },

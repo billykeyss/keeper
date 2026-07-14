@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Grant Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": ["Grant Lake Reservoir"], "gnisId": "260769", "lon": -119.1115, "lat": 37.8400, "verifyCurrent": false },
+  "water": { "name": "Grant Lake", "waterType": "reservoir", "states": ["CA"], "counties": ["Mono"], "aliases": ["Grant Lake Reservoir"], "gnisId": "260769", "lon": -119.1115, "lat": 37.8400, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [

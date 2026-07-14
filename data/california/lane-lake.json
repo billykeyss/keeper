@@ -49,7 +49,7 @@
       "ruleType": "bag",
       "parameters": { "daily": 2, "possession": 2, "unit": "fish", "aggregation": "combined_group", "counting_rule": "The table entry sets a 2-trout daily bag limit; per 14 CCR 7.50(a)(4), unless otherwise provided it is unlawful to possess more than one daily bag limit, so the possession limit also equals 2." },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
-      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Brook trout"}, {"speciesCommonName": "Rainbow trout"}],
+      "rulePolarity": "applies", "speciesScope": "listed", "speciesTargets": [{"speciesCommonName": "Brook trout"}, {"speciesCommonName": "Rainbow trout"}, {"speciesCommonName": "Lahontan cutthroat trout"}],
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
       "citation": "7.50(b)(76)",
       "humanSummary": "2 trout daily bag and possession limit",

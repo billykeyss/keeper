@@ -9,7 +9,7 @@
   ],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
-    { "commonName": "Kern River rainbow trout", "scientificName": "Oncorhynchus aguabonita gilberti", "category": "trout", "nativeStatus": "native", "presence": "native" },
+    { "commonName": "Kern River rainbow trout", "scientificName": "Oncorhynchus mykiss gilberti", "category": "trout", "nativeStatus": "native", "presence": "native" },
     { "commonName": "Brown trout", "scientificName": "Salmo trutta", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" }
   ],
   "speciesGroups": [],

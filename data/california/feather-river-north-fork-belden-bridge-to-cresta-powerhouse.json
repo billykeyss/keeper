@@ -14,8 +14,8 @@
       "North Fork Feather River"
     ],
     "gnisId": "264163",
-    "lon": -121.32,
-    "lat": 39.92,
+    "lon": -121.3292,
+    "lat": 39.9164,
     "verifyCurrent": false
   },
   "authorities": [
@@ -97,7 +97,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-13",
-      "quotedText": "{\"gaz_id\":264163,\"gaz_name\":\"North Fork Feather River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Plumas\"/\"Butte\"}; GNIS stream-path vertices bracketing this reach convert to approximately 40.003°N, 121.267°W (near Belden) down to 39.869°N, 121.374°W (near Cresta). The file's recorded coordinate (-121.32, 39.92) falls within this stretch of river, consistent with the straight-line midpoint between Belden Bridge (40.00649°N, 121.24946°W per Plumas County sources) and Cresta Powerhouse (39.82627°N, 121.40886°W per public survey data), computed at approximately 39.916°N, 121.329°W."
+      "quotedText": "\"gaz_id\":264163,\"gaz_name\":\"North Fork Feather River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Plumas\" (paired record repeats with \"county_name\":\"Butte\"); this reach's bounding features are not separately gazetteered, so the representative point is the straight-line midpoint between Belden Bridge (40.00649°N, 121.24946°W, matching GNIS populated-place \"Belden\", gaz_id 266440, at 40.00600°N, 121.24914°W) and Cresta Powerhouse (39.82627°N, 121.40886°W per public survey/geoview.info data), computed at 39.9164°N, 121.3292°W — replacing the file's previous water coordinate (-121.32, 39.92), which was about 0.9 km off this midpoint."
     }
   ],
   "groups": [
