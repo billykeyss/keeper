@@ -1,8 +1,9 @@
 {
   "asOf": "2026-07-03",
-  "water": { "name": "Elk Grove Park Pond", "waterType": "pond", "states": ["CA"], "counties": ["Sacramento"], "aliases": [], "gnisId": null, "lon": -121.3757, "lat": 38.3950, "verifyCurrent": false },
+  "water": { "name": "Elk Grove Park Pond", "waterType": "pond", "states": ["CA"], "counties": ["Sacramento"], "aliases": ["Elk Grove Park Lake"], "gnisId": null, "lon": -121.3757, "lat": 38.3950, "verifyCurrent": false },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "ccsd", "name": "Cosumnes Community Services District", "state": "CA", "type": "state_agency", "roles": ["land_management", "access"] }
   ],
   "reaches": [],
   "species": [
@@ -15,31 +16,34 @@
     { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Elk Grove Park Pond not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit." },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
-    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "R2 Sacramento Elk Grove Park Pond Rainbow Trout Catchable Put and Take January-April & October-December" }
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "R2 Sacramento Elk Grove Park Pond Rainbow Trout Catchable Put and Take January-April & October-December" },
+    { "key": "osm_water_relation_2431161", "url": "https://www.openstreetmap.org/relation/2431161", "title": "OpenStreetMap water body (relation 2431161, natural=water multipolygon) — pond/lake in Elk Grove Park, Sacramento Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "USGS GNIS (The National Map Gazetteer, geonames MapServer/7 lakes-reservoirs-ponds layer) has no entry for \"Elk Grove Park Pond\" or any \"Elk Grove\"-named lake/pond/reservoir in Sacramento County, CA — queried directly by name and by bounding box around the park, zero results both times, consistent with this being a small municipal park feature not tracked in GNIS. In its absence, OSM relation 2431161 (natural=water multipolygon) mapping the actual pond/lake within Elk Grove Park was used to cross-check the coordinate: its polygon centroid (38.3949745, -121.3756721) matches the file's recorded coordinate (38.3950, -121.3757) to within ~10m, confirming it." },
+    { "key": "ccsd_park_wildlife_protection", "url": "https://www.cosumnescsd.gov/879/Elk-Grove-Park-Wildlife-Protection", "title": "Elk Grove Park Wildlife Protection — Fishing Regulations, Cosumnes Community Services District", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ccsd", "retrievedDate": "2026-07-13", "quotedText": "The following regulations are in effect at Elk Grove Park Lake: You may fish during normal park operating hours, from March 1 – November 30. Fishing is prohibited on the same calendar day as any fish plant. All applicable California Department of Fish & Wildlife (CDFW) regulations will be enforced. You must have a valid fishing license if you are 16 years of age or older. You must exhibit, on demand, a fishing license to any peace officer, authorized CDFW employee or Cosumnes Community Services District (District) employee. Fish may be taken with no more than one closely-attended rod and line per angler. Only single-point barbless hooks may be used. Artificial lures are prohibited. All fishing tackle must be lead free. You must exhibit, on demand, all fish and any device or apparatus capable of being used to take them, to any peace officer, authorized CDFW or District employee. You may not consume alcohol while fishing. Daily bag and possession limit of 5 fish per angler." },
+    { "key": "ccsd_elk_grove_park_page", "url": "https://www.cosumnescsd.gov/574/Elk-Grove-Park", "title": "Elk Grove Park — Cosumnes Community Services District (park hours, address)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ccsd", "retrievedDate": "2026-07-13", "quotedText": "9950 Elk Grove-Florin Rd Elk Grove, CA 95624 ... Park Hours Sunrise to 1 Hour After Sunset" }
   ],
   "groups": [],
   "seasonPeriods": [],
   "regulations": [
     {
       "ruleType": "season",
-      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Elk Grove Park Pond is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide regulation for lakes, reservoirs, and ponds in §5.85(a)(1)." },
+      "parameters": { "periods": [ { "label": "open_water", "status": "open", "start": { "type": "year_round", "verbatim": "All year" }, "end": { "type": "year_round", "verbatim": "All year" } } ], "note": "Elk Grove Park Pond is not listed in CCR §7.40(b) or §7.50(b), so it falls under the general statewide regulation for lakes, reservoirs, and ponds in §5.85(a)(1) as a matter of state law. However, the park's owner/operator (Cosumnes Community Services District) restricts on-site fishing access to March 1 – November 30 during normal park operating hours, and additionally bars fishing on the same calendar day as any fish plant; see the 'special' rule below for the district's posted rules, which control what an angler may actually do at the pond." },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
       "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
       "citation": "5.85(a)(1)",
-      "humanSummary": "Open all year (general statewide lake/pond regulation; not listed as a special-regulation water)",
+      "humanSummary": "Open all year under state law (general statewide lake/pond regulation; not listed as a special-regulation water) — but see the park district's stricter March 1–November 30 access window below",
       "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
     },
     {
       "ruleType": "bag",
-      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit." },
+      "parameters": { "daily": 5, "possession": 10, "unit": "fish", "aggregation": "combined_group", "counting_rule": "General statewide trout limit for inland lakes, reservoirs, and ponds: five-trout daily bag limit and ten-trout possession limit. NOTE: the Cosumnes Community Services District posts a stricter on-site limit at Elk Grove Park Pond — a combined daily bag AND possession limit of 5 fish per angler (not 10 in possession). See the 'special' rule for the district's posted rules." },
       "groupKey": null, "seasonPeriodKey": null, "authorityKey": "cdfw",
       "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
       "citation": "5.85(a)(1)",
-      "humanSummary": "5 trout daily bag limit, 10 trout possession limit",
+      "humanSummary": "State statewide limit is 5 trout/day, 10 in possession; the park district's own posted on-site limit is stricter (5 fish daily bag and possession combined)",
       "verbatimText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit.",
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": { "primary": "ccr_5_85_a_1", "corroborating": ["ccr_7_40_no_listing", "ccr_7_50_no_listing", "cdfw_booklet_2026"] }
@@ -55,6 +59,18 @@
       "verbatimText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose...",
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": { "primary": "fgc_7145", "corroborating": [] }
+    },
+    {
+      "ruleType": "special",
+      "parameters": { "description": "Cosumnes Community Services District's own posted rules for fishing at Elk Grove Park Pond/Lake (the district owns and manages the park; these on-site rules are stricter than the state's general lake regulation). Fishing is allowed only during normal park operating hours, March 1 through November 30 (park hours are sunrise to one hour after sunset); fishing is prohibited on the same calendar day as any fish plant; only single-point barbless hooks may be used and artificial lures are prohibited; all fishing tackle must be lead-free; only one closely-attended rod and line per angler; alcohol may not be consumed while fishing; anglers 16+ need a valid California fishing license; and the daily bag and possession limit is 5 fish per angler (combined, not the state's separate 10-fish possession allowance).", "raw": { "season": "March 1 – November 30, during normal park operating hours", "park_hours": "sunrise to 1 hour after sunset", "stocking_day_closure": "fishing prohibited on the same calendar day as any fish plant", "gear": "single-point barbless hooks only; artificial lures prohibited; all tackle must be lead-free; one closely-attended rod and line per angler", "alcohol": "prohibited while fishing", "license": "valid California fishing license required, age 16+", "bag_possession": "5 fish per angler, daily bag and possession combined" } },
+      "groupKey": null, "seasonPeriodKey": null, "authorityKey": "ccsd",
+      "rulePolarity": "applies", "speciesScope": "all", "speciesTargets": [],
+      "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
+      "citation": "Cosumnes Community Services District — Elk Grove Park Wildlife Protection (posted fishing regulations)",
+      "humanSummary": "Park district's posted on-site rules: fishing allowed only March 1–November 30 during normal park hours (sunrise to 1 hr after sunset); no fishing on fish-plant days; single-point barbless hooks only, no artificial lures, lead-free tackle, one rod/line per angler; no alcohol while fishing; CA license required (16+); 5-fish daily bag AND possession limit combined",
+      "verbatimText": "The following regulations are in effect at Elk Grove Park Lake: You may fish during normal park operating hours, from March 1 – November 30. Fishing is prohibited on the same calendar day as any fish plant. All applicable California Department of Fish & Wildlife (CDFW) regulations will be enforced. You must have a valid fishing license if you are 16 years of age or older. You must exhibit, on demand, a fishing license to any peace officer, authorized CDFW employee or Cosumnes Community Services District (District) employee. Fish may be taken with no more than one closely-attended rod and line per angler. Only single-point barbless hooks may be used. Artificial lures are prohibited. All fishing tackle must be lead free. You must exhibit, on demand, all fish and any device or apparatus capable of being used to take them, to any peace officer, authorized CDFW or District employee. You may not consume alcohol while fishing. Daily bag and possession limit of 5 fish per angler.",
+      "isParaphrase": false, "confidence": "high",
+      "sourceKeys": { "primary": "ccsd_park_wildlife_protection", "corroborating": ["ccsd_elk_grove_park_page"] }
     }
   ],
   "reciprocity": [],

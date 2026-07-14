@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Cold Creek", "waterType": "creek", "states": ["CA"], "counties": ["Fresno"], "aliases": ["Cold Creek and tributaries"], "gnisId": null, "lon": -119.1100, "lat": 37.3600, "verifyCurrent": true },
+  "water": { "name": "Cold Creek", "waterType": "creek", "states": ["CA"], "counties": ["Fresno"], "aliases": ["Cold Creek and tributaries"], "gnisId": "221319", "lon": -119.0018, "lat": 37.3808, "verifyCurrent": true },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D221319+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 221319, \"Cold Creek\", Stream, CA, Fresno Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":221319,\"gaz_name\":\"Cold Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Fresno\",\"objectid_1\":1516743,\"isunknowncoords\":2}, mouth point (Web Mercator -13247219.6049, 4492316.4271 → 37.38078°N, 119.00180°W). Corrects prior file coordinates (-119.1100, 37.3600), which were roughly 9.8 km southwest of the actual mouth and appear to have been a guessed estimate rather than a GNIS pull; the corrected point is corroborated by the Wikipedia infobox coordinate for Lake Thomas A. Edison (37.38278°N, 118.97611°W), which Cold Creek flows into." },
     { "key": "ccr_7_50_b_28", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(28) — Cold Creek and tributaries (tributary to Thomas Edison Lake)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(28) Cold Creek (Fresno Co.) and tributaries (tributary to Thomas Edison Lake). Sat. preceding Memorial Day through Sep. 30. 5 trout" },
     { "key": "ccr_7_50_a4", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a)(4) — General possession limit provision for listed trout waters", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

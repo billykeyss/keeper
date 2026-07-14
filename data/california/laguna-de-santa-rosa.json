@@ -12,9 +12,9 @@
     "aliases": [
       "Santa Rosa Creek watershed slough"
     ],
-    "gnisId": null,
-    "lon": -122.774,
-    "lat": 38.462,
+    "gnisId": "226766",
+    "lon": -122.7834,
+    "lat": 38.3779,
     "verifyCurrent": false
   },
   "authorities": [
@@ -107,6 +107,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": null
+    },
+    {
+      "key": "gnis_arcgis_226766",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D226766&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Other Hydrographic Features layer record for gaz_id 226766, \"Laguna de Santa Rosa\", Lake, Sonoma County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":226766,\"gaz_name\":\"Laguna de Santa Rosa\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Sonoma\"}; geometry (Web Mercator -13668190.8545, 4632952.7664) converts to lon -122.783448, lat 38.377928. Corrects prior file coordinates (-122.774, 38.462), which were roughly 9.4 km northeast of the GNIS point and appear to have been a guessed estimate rather than a GNIS pull."
     },
     {
       "key": "fgc_7145",

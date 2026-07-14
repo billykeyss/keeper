@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Mendocino"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.6280,
-    "lat": 38.9400,
+    "gnisId": "224039",
+    "lon": -123.7336,
+    "lat": 38.9544,
     "verifyCurrent": false
   },
   "authorities": [
@@ -22,6 +22,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_224039", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Garcia+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 224039, \"Garcia River\", Stream, Mendocino Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":224039,\"gaz_name\":\"Garcia River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Mendocino\"} — geometry multipoint; first point (Web Mercator -13773966.2498, 4715135.8887) converts to lon -123.733644, lat 38.954358, at the river's mouth near Point Arena (matches the Wikipedia infobox mouth coordinate of 38.95444N, 123.73361W within ~10 m), replacing the file's previous coordinate (-123.6280, 38.9400), which was off by ~9.27 km." },
     { "key": "ccr_7_40_b_45", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(45) — Garcia River (Mendocino Co.), main stem below Eureka Hill Road bridge", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Fourth Sat. in May through Mar. 31. Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31." },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "usgs_garcia_gauge", "url": "https://waterdata.usgs.gov/monitoring-location/USGS-11467590/", "title": "USGS 11467590 — Garcia River at Eureka Hill Rd near Point Arena, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },

@@ -12,9 +12,9 @@
       "Del Norte"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.53,
-    "lat": 41.3,
+    "gnisId": "266887",
+    "lon": -124.0811,
+    "lat": 41.5331,
     "verifyCurrent": true
   },
   "authorities": [
@@ -116,6 +116,17 @@
     }
   ],
   "sources": [
+    {
+      "key": "gnis_arcgis_266887",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Klamath+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 266887, \"Klamath River\", Stream, Del Norte/Humboldt/Siskiyou/Trinity Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":266887,\"gaz_name\":\"Klamath River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Del Norte\"} — geometry multipoint; first point (Web Mercator -13812649.7636, 5091289.4655) converts to lon -124.081144, lat 41.533065, at the river's mouth near Requa, CA, replacing the file's previous coordinate (-123.53, 41.3), which was off by roughly 45 km."
+    },
     {
       "key": "ccr_7_40_b_50",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",

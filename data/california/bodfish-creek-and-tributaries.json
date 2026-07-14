@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Bodfish Creek and tributaries", "waterType": "creek", "states": ["CA"], "counties": ["Santa Clara"], "aliases": [], "gnisId": null, "lon": -121.6672, "lat": 37.0041, "verifyCurrent": false },
+  "water": { "name": "Bodfish Creek and tributaries", "waterType": "creek", "states": ["CA"], "counties": ["Santa Clara"], "aliases": [], "gnisId": "219577", "lon": -121.6308, "lat": 37.0133, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -8,6 +8,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D219577+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 219577, \"Bodfish Creek\", Stream, CA, Santa Clara Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":219577,\"gaz_name\":\"Bodfish Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Santa Clara\",\"objectid_1\":1035612,\"isunknowncoords\":2}, mouth point (Web Mercator -13539877.7201, 4440959.0045 → 37.01329°N, 121.63079°W). Corrects prior file coordinates (-121.6672, 37.0041), which coincidentally match the USGS stream-gauge site (station 11154100, Bodfish Creek near Gilroy) rather than the GNIS mouth location — the gauge sits roughly 3.4 km downstream/southeast of the creek's actual GNIS point. The corrected point is corroborated by HomeTownLocator's GNIS-derived coordinate for Bodfish Creek (Santa Clara Co.), 37.0132822°N, 121.630778°W." },
     { "key": "ccr_7_40_b_19", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(19) — Bodfish Creek and tributaries (Santa Clara Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(19) Bodfish Creek and tributaries (Santa Clara Co.). Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "usgs_bodfish_creek_gauge", "url": "https://waterdata.usgs.gov/monitoring-location/11154100/", "title": "USGS Monitoring Location 11154100 — Bodfish Creek near Gilroy, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

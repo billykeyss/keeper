@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-02",
-  "water": { "name": "Dismal Creek", "waterType": "creek", "states": ["CA"], "counties": ["Modoc"], "aliases": [], "gnisId": null, "lon": -120.1600, "lat": 41.9700, "verifyCurrent": false },
+  "water": { "name": "Dismal Creek", "waterType": "creek", "states": ["CA"], "counties": ["Modoc"], "aliases": [], "gnisId": "1164088", "lon": -120.1714, "lat": 41.9763, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -8,6 +8,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1164088&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams (Mouth) layer record for gaz_id 1164088, \"Dismal Creek\", Stream, Lake Co. OR / Modoc Co. CA (border-crossing)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":1164088,\"gaz_name\":\"Dismal Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"OR\",\"county_name\":\"Modoc\"/\"Lake\",\"objectid_1\":1411487,\"isunknowncoords\":2}, two-point multipoint (source near 42.06656°N, 120.15108°W in Lake Co. OR; mouth near 41.97628°N, 120.17135°W in Modoc Co. CA). Corrects prior file coordinates (-120.1600, 41.9700), which were ~1.2 km from the actual CA-side (Modoc Co.) mouth point and appear to have been a guessed estimate rather than a GNIS pull." },
     { "key": "ccr_7_50_b_43", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(43) — Dismal Creek (Modoc Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Dismal Creek (Modoc Co.). Sat. Preceding Memorial Day through the last day in Feb. Only artificial lures with barbless hooks may be used. 0 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "cdfw_wild_trout_waters", "url": "https://wildlife.ca.gov/Fishing/Inland/Trout-Waters", "title": "CDFW — Designated Wild and Heritage Trout Waters", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },

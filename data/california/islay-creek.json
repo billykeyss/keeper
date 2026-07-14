@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Islay Creek", "waterType": "creek", "states": ["CA"], "counties": ["San Luis Obispo"], "aliases": [], "gnisId": null, "lon": -120.8855, "lat": 35.2764, "verifyCurrent": false },
+  "water": { "name": "Islay Creek", "waterType": "creek", "states": ["CA"], "counties": ["San Luis Obispo"], "aliases": [], "gnisId": "243930", "lon": -120.8855, "lat": 35.2764, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D243930&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 243930, \"Islay Creek\", Stream, CA, San Luis Obispo Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":243930,\"gaz_name\":\"Islay Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"San Luis Obispo\",\"objectid_1\":61948,\"isunknowncoords\":2}, mouth point (Web Mercator -13457249.2597, 4201388.6783 → 35.27554°N, 120.88853°W). Confirms prior file coordinates (-120.8855, 35.2764), which are approximately 291 m from the GNIS mouth point — within tolerance, no correction needed." },
     { "key": "ccr_7_40_b_49", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(49) — Islay Creek (San Luis Obispo Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(49) Islay Creek (San Luis Obispo Co.). Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "parks_montana_de_oro", "url": "https://www.parks.ca.gov/?page_id=592", "title": "Montaña de Oro State Park — California State Parks", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

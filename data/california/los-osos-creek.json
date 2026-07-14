@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Los Osos Creek", "waterType": "creek", "states": ["CA"], "counties": ["San Luis Obispo"], "aliases": [], "gnisId": null, "lon": -120.8282, "lat": 35.3380, "verifyCurrent": false },
+  "water": { "name": "Los Osos Creek", "waterType": "creek", "states": ["CA"], "counties": ["San Luis Obispo"], "aliases": [], "gnisId": "245184", "lon": -120.8282, "lat": 35.3380, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D245184&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 245184, \"Los Osos Creek\", Stream, CA, San Luis Obispo Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":245184,\"gaz_name\":\"Los Osos Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"San Luis Obispo\",\"objectid_1\":62447,\"isunknowncoords\":2}, endpoint (Web Mercator -13450538.8647, 4209914.1442 → 35.33803°N, 120.82825°W). Confirms existing file coordinates (-120.8282, 35.3380)." },
     { "key": "ccr_7_40_b_58", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(58) — Los Osos Creek (San Luis Obispo Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(58) Los Osos Creek (San Luis Obispo Co.). Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "cemar_slo_steelhead", "url": "http://www.cemar.org/SSRP/pdfs/SSRP_SanLuisObispo.pdf", "title": "Steelhead/Rainbow Trout Resources of San Luis Obispo County", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

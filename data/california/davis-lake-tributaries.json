@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-02",
-  "water": { "name": "Davis Lake tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Plumas"], "aliases": ["Lake Davis tributaries"], "gnisId": null, "lon": -120.5200, "lat": 39.9300, "verifyCurrent": false },
+  "water": { "name": "Davis Lake tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Plumas"], "aliases": ["Lake Davis tributaries"], "gnisId": "259098", "lon": -120.5105345, "lat": 39.9125448, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -14,7 +14,8 @@
     { "key": "ccr_7_50_b_40", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(40) — Davis Lake tributaries (Plumas Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(40) Davis Lake tributaries (Plumas Co.). Sat. preceding Memorial Day through the last day in Feb. 5 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "plumas_county_lake_davis", "url": "https://plumascounty.org/get-outside/places-to-visit/lake-davis/", "title": "Lake Davis | Plumas County California", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_hometownlocator_259098", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,2,fid,259098,n,lake%20davis.cfm", "title": "USGS GNIS feature record (via HomeTownLocator) for GNIS ID 259098, \"Lake Davis\", reservoir, Plumas County, CA — lat 39.9125448, lon -120.5105345", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null }
   ],
   "groups": [],
   "seasonPeriods": [],

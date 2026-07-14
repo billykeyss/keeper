@@ -10,7 +10,7 @@
       "El Dorado"
     ],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "258198",
     "lon": -120.1320224,
     "lat": 38.8524778,
     "verifyCurrent": false
@@ -51,6 +51,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-03",
       "quotedText": "All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and ten-trout possession limit."
+    },
+    {
+      "key": "gnis_arcgis_258198",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D258198&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 258198, \"Channel Lake\", Lake, El Dorado County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":258198,\"gaz_name\":\"Channel Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"El Dorado\"}; geometry (Web Mercator -13373032.7551, 4700558.9498) converts to lon -120.131997, lat 38.852455, matching the file's recorded coordinate (-120.1320224, 38.8524778) to within ~10m."
     },
     {
       "key": "ccr_7_40_no_listing",

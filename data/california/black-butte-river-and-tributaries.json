@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Black Butte River and tributaries", "waterType": "river", "states": ["CA"], "counties": ["Glenn", "Mendocino"], "aliases": [], "gnisId": null, "lon": -122.8586, "lat": 39.5947, "verifyCurrent": false },
+  "water": { "name": "Black Butte River and tributaries", "waterType": "river", "states": ["CA"], "counties": ["Glenn", "Mendocino"], "aliases": [], "gnisId": "257104", "lon": -122.8586, "lat": 39.5947, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D257104+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 257104, \"Black Butte River\", Stream, CA, Glenn/Mendocino Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":257104,\"gaz_name\":\"Black Butte River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Glenn\"/\"Mendocino\",\"objectid_1\":924461,\"isunknowncoords\":2}, mouth point (Web Mercator -13676559.4864, 4807205.2938 → 39.59461°N, 122.85862°W). Confirms the file's existing coordinates (-122.8586, 39.5947), which are within ~10 m of the GNIS mouth point." },
     { "key": "ccr_7_40_b_18", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(18) — Black Butte River and tributaries (Glenn Co.) except Cold Creek", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(18) Black Butte River and tributaries (Glenn Co.) except Cold Creek. Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "wikipedia_black_butte_river", "url": "https://en.wikipedia.org/wiki/Black_Butte_River", "title": "Black Butte River (Wikipedia)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

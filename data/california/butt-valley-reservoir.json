@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Butt Valley Reservoir", "waterType": "reservoir", "states": ["CA"], "counties": ["Plumas"], "aliases": ["Butt Lake"], "gnisId": null, "lon": -121.1716, "lat": 40.1426, "verifyCurrent": false },
+  "water": { "name": "Butt Valley Reservoir", "waterType": "reservoir", "states": ["CA"], "counties": ["Plumas"], "aliases": ["Butt Lake"], "gnisId": "257757", "lon": -121.1716, "lat": 40.1426, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -10,9 +10,10 @@
   ],
   "speciesGroups": [ { "key": "trout", "name": "Trout", "category": "trout", "authorityKey": "cdfw" } ],
   "sources": [
-    { "key": "ccr_7_50_b_21", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(21) — Butt Valley Reservoir (Plumas Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(21) Butt Valley Reservoir (Plumas Co.): \"All year. 2 trout. 4 trout in possession.\"" },
+    { "key": "ccr_7_50_b_21", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "14 CCR §7.50(b)(21) — Butt Valley Reservoir (Plumas Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(21) Butt Valley Reservoir (Plumas Co.). All year. 2 trout. 4 trout in possession." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet, updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(21) Butt Valley Reservoir (Plumas Co.). All year. 2 trout. 4 trout in possession." },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "hometownlocator_butt_valley_reservoir", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,2,fid,257757,n,butt%20valley%20reservoir.cfm", "title": "Butt Valley Reservoir (GNIS Feature ID 257757) — Plumas County, California — HomeTownLocator", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": null }
   ],
   "groups": [],
   "seasonPeriods": [],

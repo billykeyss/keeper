@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Berryessa Lake tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Lake", "Napa"], "aliases": ["Lake Berryessa tributaries"], "gnisId": null, "lon": -122.4200, "lat": 38.7000, "verifyCurrent": false },
+  "water": { "name": "Berryessa Lake tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Lake", "Napa"], "aliases": ["Lake Berryessa tributaries"], "gnisId": "255067", "lon": -122.2286929, "lat": 38.5879387, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -9,9 +9,10 @@
   ],
   "speciesGroups": [],
   "sources": [
-    { "key": "ccr_7_50_b_10", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(10) — Berryessa Lake tributaries (Lake and Napa Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(10) Berryessa Lake tributaries (Lake and Napa Cos.). Last Sat. in Apr. through Sep. 30. 2 trout. 4 trout in in possession." },
+    { "key": "ccr_7_50_b_10", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(10) — Berryessa Lake tributaries (Lake and Napa Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(10) Berryessa Lake tributaries (Lake and Napa Cos.). Last Sat. in Apr. through Sep. 30. 2 trout. 4 trout in possession." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_domestic_names_255067", "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_CA_Text.zip", "title": "USGS GNIS Domestic Names (California) bulk file — record for gaz_id 255067, \"Lake Berryessa\", Reservoir, Napa Co., CA", "documentType": "gis", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "255067|Lake Berryessa|Reservoir|California|06|Napa|055|Lake Berryessa|06/14/2000|04/05/2023|Official|Congressional Legislation|01/01/1956|383517N|1221343W|38.5879387|-122.2286929|||0.0|0.0 — this GNIS reservoir record (gaz_id 255067, not present in the live carto.nationalmap.gov ArcGIS MapServer/7 mirror at time of check, but present in the official USGS GNIS Domestic Names bulk distribution for CA) is used as the anchor coordinate for these Lake Berryessa tributary mouths; converts to lat 38.5879387, lon -122.2286929, matching the file's corrected coordinate. This replaced the file's prior coordinate (-122.4200, 38.7000), which was ~20km away (outside the lake's own bounding box) and unsupported by any GNIS-backed source." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -36,7 +37,7 @@
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "CA",
       "citation": "7.50(b)(10)",
       "humanSummary": "2 trout daily bag limit, 4 trout in possession",
-      "verbatimText": "2 trout. 4 trout in in possession.",
+      "verbatimText": "2 trout. 4 trout in possession.",
       "isParaphrase": false, "confidence": "high",
       "sourceKeys": { "primary": "ccr_7_50_b_10", "corroborating": ["cdfw_booklet_2026"] }
     },

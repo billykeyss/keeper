@@ -1,9 +1,9 @@
 {
   "asOf": "2026-07-02",
-  "water": { "name": "Eagle Lake", "waterType": "lake", "states": ["CA"], "counties": ["Lassen"], "aliases": ["Eagle Lake and tributaries"], "gnisId": null, "lon": -120.7397, "lat": 40.6403, "verifyCurrent": false },
+  "water": { "name": "Eagle Lake", "waterType": "lake", "states": ["CA"], "counties": ["Lassen"], "aliases": ["Eagle Lake and tributaries"], "gnisId": "222812", "lon": -120.7453, "lat": 40.6358, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [
-    { "key": "eagle_lake_main", "name": "Eagle Lake (main body)", "fromDesc": "Eagle Lake full-pool shoreline", "toDesc": "Eagle Lake open water", "lon": -120.7397, "lat": 40.6403 },
+    { "key": "eagle_lake_main", "name": "Eagle Lake (main body)", "fromDesc": "Eagle Lake full-pool shoreline", "toDesc": "Eagle Lake open water", "lon": -120.7453, "lat": 40.6358 },
     { "key": "gallatin_closed_zone", "name": "Gallatin Marina breakwater / Pine Creek Slough / Pine Creek below Hwy. 44", "fromDesc": "Inside the breakwater at the Gallatin Marina", "toDesc": "Pine Creek Slough and Pine Creek below State Highway 44", "lon": -120.6900, "lat": 40.6900 },
     { "key": "eagle_lake_tributaries", "name": "Eagle Lake tributaries (including Pine Creek above Hwy. 44)", "fromDesc": "Eagle Lake tributary streams", "toDesc": "Pine Creek above State Highway 44", "lon": -120.7700, "lat": 40.7800 }
   ],
@@ -17,7 +17,8 @@
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "cdfw_eagle_lake_rainbow", "url": "https://wildlife.ca.gov/Fishing/Inland/Eagle-Lake-Rainbow-Trout", "title": "CDFW — Fishing for Eagle Lake Rainbow Trout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
-    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R1 Lassen Eagle Lake Eagle Lake Trout Catchable Put and Take April-May & October-November" }
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R1 Lassen Eagle Lake Eagle Lake Trout Catchable Put and Take April-May & October-November" },
+    { "key": "hometownlocator_eagle_lake", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,222812,n,eagle%20lake.cfm", "title": "Eagle Lake (GNIS Feature ID 222812) — Lassen County, California — HomeTownLocator", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "Eagle Lake is a physical feature (lake) in Lassen County." }
   ],
   "groups": [],
   "seasonPeriods": [],

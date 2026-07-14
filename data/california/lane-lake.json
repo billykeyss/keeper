@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Lane Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -119.5416, "lat": 38.2927, "verifyCurrent": false },
+  "water": { "name": "Lane Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": "262313", "lon": -119.5416, "lat": 38.2927, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [
@@ -10,6 +10,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_262313", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D262313&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 262313, \"Lane Lake\", Lake, Mono County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":262313,\"gaz_name\":\"Lane Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Mono\"}; geometry (Web Mercator -13307294.1177, 4620838.6353) converts to lon -119.541457, lat 38.292568, matching the file's recorded coordinate (-119.5416, 38.2927) to within ~50m." },
     { "key": "ccr_7_50_b_76", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(76) — Lane Lake", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(76) Lane Lake (Mono Co.). All year. Only artificial lures may be used. 2 trout" },
     { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General Provisions for waters listed in the special-regulations table", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

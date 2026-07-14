@@ -1,7 +1,7 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Coon Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": ["Coon Creek and tributaries east of Highway 65"], "gnisId": null, "lon": -121.1500, "lat": 38.8700, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "water": { "name": "Coon Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": ["Coon Creek and tributaries east of Highway 65", "Raccoon Creek"], "gnisId": "221504", "lon": -121.5749, "lat": 38.8453, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }, { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] } ],
   "reaches": [],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_221504", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D221504&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 221504, official name \"Raccoon Creek\" (Coon Creek), Stream, CA, Placer Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":221504,\"gaz_name\":\"Raccoon Creek\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\"} — mouth point -121.5749, 38.8453 (confirmed independently via HomeTownLocator's GNIS-derived coordinate 38.8453124/-121.5748736); correcting the file's prior coordinate (-121.15, 38.87), a guessed point in the upper/eastern Placer Co. course, ~38km from the true mouth." },
     { "key": "ccr_7_40_b_29", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(29) — Coon Creek and tributaries (Placer Co.) east of Highway 65", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(29) Coon Creek and tributaries (Placer Co.) east of Highway 65. Fourth Sat. in May through Oct. 15." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }

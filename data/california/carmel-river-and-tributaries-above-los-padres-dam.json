@@ -10,9 +10,9 @@
       "Monterey"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -121.66,
-    "lat": 36.36,
+    "gnisId": "270301",
+    "lon": -121.6682,
+    "lat": 36.3861,
     "verifyCurrent": false
   },
   "authorities": [
@@ -23,6 +23,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -45,6 +54,17 @@
   ],
   "speciesGroups": [],
   "sources": [
+    {
+      "key": "gnis_arcgis_270301",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D270301&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 270301, \"Carmel River\", Stream, CA, Monterey Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "GNIS has no dam-specific entry for Los Padres Dam (delisted 2021); location corroborated via OSM/Nominatim's \"Los Padres Dam\" node (36.3860722,-121.6682030), cross-checked against mapcarta/mindat mirrors, and anchored to the Carmel River's GNIS stream record (gaz_id 270301); correcting the file's prior coordinate (-121.66,36.36), which sat ~3.0km from the true dam location."
+    },
     {
       "key": "ccr_7_50_b_25",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50",

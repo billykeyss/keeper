@@ -9,8 +9,10 @@
     "counties": [
       "El Dorado"
     ],
-    "aliases": [],
-    "gnisId": null,
+    "aliases": [
+      "Lake Number Nine"
+    ],
+    "gnisId": "254978",
     "lon": -120.2183382,
     "lat": 38.9088707,
     "verifyCurrent": false
@@ -41,6 +43,17 @@
   "species": [],
   "speciesGroups": [],
   "sources": [
+    {
+      "key": "gnis_arcgis_254978",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D254978&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 254978, \"Lake Number Nine\", Lake, El Dorado County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":254978,\"gaz_name\":\"Lake Number Nine\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"El Dorado\"}; geometry (Web Mercator -13382634.5743, 4708624.4833) converts to lon -120.218252, lat 38.908857, matching the file's recorded coordinate (-120.2183382, 38.9088707) to within ~8m."
+    },
     {
       "key": "ccr_5_85_a_1",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85",

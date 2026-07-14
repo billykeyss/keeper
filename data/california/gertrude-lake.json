@@ -10,7 +10,7 @@
       "El Dorado"
     ],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "224135",
     "lon": -120.2012019,
     "lat": 38.8843366,
     "verifyCurrent": false
@@ -106,6 +106,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-03",
       "quotedText": null
+    },
+    {
+      "key": "gnis_arcgis_224135",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D224135&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 224135, \"Gertrude Lake\", Lake, El Dorado County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":224135,\"gaz_name\":\"Gertrude Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"El Dorado\"}; geometry (Web Mercator -13380724.1083, 4705135.2588) converts to lon -120.201090, lat 38.884462, matching the file's recorded coordinate (-120.2012019, 38.8843366, ~15m offset, within tolerance)."
     }
   ],
   "groups": [],

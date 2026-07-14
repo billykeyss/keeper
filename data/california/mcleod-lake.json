@@ -10,7 +10,7 @@
       "Mono"
     ],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "274662",
     "lon": -119.0305,
     "lat": 37.6082,
     "verifyCurrent": false
@@ -48,6 +48,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "(92) McLeod Lake (Mono Co.). All year. Only artificial lures with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "gnis_arcgis_274662",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D274662&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 274662, \"McLeod Lake\", Lake, Mono County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":274662,\"gaz_name\":\"McLeod Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Mono\"}; geometry (Web Mercator -13250426.16, 4524209.05) converts to lon -119.030603, lat 37.608090, matching the file's recorded coordinate (-119.0305, 37.6082) to within ~10m."
     },
     {
       "key": "cdfw_booklet_2026",

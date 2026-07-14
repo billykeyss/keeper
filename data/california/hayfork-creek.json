@@ -10,9 +10,9 @@
       "Trinity"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.3,
-    "lat": 40.6,
+    "gnisId": "266799",
+    "lon": -123.45172,
+    "lat": 40.61404,
     "verifyCurrent": true
   },
   "authorities": [
@@ -98,6 +98,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_streams_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D266799+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 266799, \"Hayfork Creek\", Stream, CA, Trinity Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":266799,\"gaz_name\":\"Hayfork Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Trinity\"}, mouth point (Web Mercator -13742582.2226, 4955577.5802 → 40.61404°N, 123.45172°W). Corrects prior file coordinates (-123.3, 40.6), which were roughly 12.9 km east of the actual mouth and appear to have been a guessed estimate rather than a GNIS pull; the corrected point is corroborated by the Wikipedia infobox mouth coordinate for Hayfork Creek, 40°36′51″N 123°27′06″W (40.61417°N, 123.45167°W) near Hyampom, CA."
     }
   ],
   "groups": [],

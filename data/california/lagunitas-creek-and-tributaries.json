@@ -12,9 +12,9 @@
     "aliases": [
       "Papermill Creek"
     ],
-    "gnisId": null,
-    "lon": -122.807,
-    "lat": 38.0716,
+    "gnisId": "254865",
+    "lon": -122.8269,
+    "lat": 38.0799,
     "verifyCurrent": false
   },
   "authorities": [
@@ -25,6 +25,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -47,6 +56,17 @@
   ],
   "speciesGroups": [],
   "sources": [
+    {
+      "key": "gnis_arcgis_254865",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D254865&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 254865, \"Lagunitas Creek\", Stream, CA, Marin Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":254865,\"gaz_name\":\"Lagunitas Creek\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\"} — first point of the multipoint geometry is the creek's mouth on Tomales Bay: lon -122.8269, lat 38.0799, confirmed independently by Wikipedia's infobox mouth coordinate (38.08000, -122.82694); correcting the file's prior coordinate (-122.807, 38.0716), ~2km southeast."
+    },
     {
       "key": "ccr_7_40_b_53",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",

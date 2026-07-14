@@ -17,9 +17,9 @@
       "Middle Fork American River",
       "South Fork American River"
     ],
-    "gnisId": null,
-    "lon": -121.067,
-    "lat": 38.907,
+    "gnisId": "267066",
+    "lon": -121.1455,
+    "lat": 38.7116,
     "verifyCurrent": false
   },
   "authorities": [
@@ -95,6 +95,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Region: R2; County: El Dorado; Release Water: American River Silver Fork; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: June-September. Region: R2; County: El Dorado; Release Water: American River, South Fork, Camp Sacramento; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: May-August. Region: R2; County: El Dorado; Release Water: American River, South Fork, Chili Bar; Species: Rainbow Trout; Release Size: Catchable; Release Program: Put and Take; Release Month Range: April-May & September-October."
+    },
+    {
+      "key": "gnis_arcgis_267066",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D267066+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 267066, \"North Fork American River\", Stream, CA (El Dorado/Placer/Sacramento Cos.)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":267066,\"gaz_name\":\"North Fork American River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\"} — geometry first point (Web Mercator -13485857.056, 4680440.889) converts to lon -121.1455, lat 38.7116, the North Fork's mouth where it enters Folsom Lake near Auburn (matches Wikipedia's infobox coordinate 38.71167, -121.14556 for the same confluence/mouth). The prior recorded coordinate (-121.067, 38.907) was about 23 km east-northeast, near Foresthill/the North Fork canyon interior rather than the lake-adjacent boundary implied by \"above Folsom Lake,\" and has been corrected to this GNIS-backed mouth point, used here as the representative point for the compound multi-fork entry."
     }
   ],
   "groups": [],

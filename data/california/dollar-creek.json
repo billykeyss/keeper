@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-04",
-  "water": { "name": "Dollar Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": null, "lon": -120.1224, "lat": 39.20801, "verifyCurrent": false },
+  "water": { "name": "Dollar Creek", "waterType": "creek", "states": ["CA"], "counties": ["Placer"], "aliases": [], "gnisId": "1662294", "lon": -120.094927, "lat": 39.197134, "verifyCurrent": false },
   "authorities": [
     { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
   ],
@@ -15,7 +15,8 @@
     { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Dollar Creek not listed by name)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": null },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
     { "key": "wiki_tahoe_inflow", "url": "https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_inflow_streams", "title": "List of Lake Tahoe inflow streams — Wikipedia (Dollar Creek listed under North shore)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "Dollar Creek ... flows into Lake Tahoe at Dollar Point, California" },
-    { "key": "usgs_fs03502", "url": "https://pubs.usgs.gov/fs/fs03502/table01.html", "title": "USGS FS-035-02 — Table 1. Information for USGS sites in the Lake Tahoe Basin, California and Nevada", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "10336684 Dollar Creek near Tahoe City, Calif. 1973-74 1.07" }
+    { "key": "usgs_fs03502", "url": "https://pubs.usgs.gov/fs/fs03502/table01.html", "title": "USGS FS-035-02 — Table 1. Information for USGS sites in the Lake Tahoe Basin, California and Nevada", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-04", "quotedText": "10336684 Dollar Creek near Tahoe City, Calif. 1973-74 1.07" },
+    { "key": "gnis_arcgis_1662294", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1662294&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams (Mouth) layer record for gaz_id 1662294, \"Dollar Creek\", Stream, Placer Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":1662294,\"gaz_name\":\"Dollar Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Placer\",\"isunknowncoords\":2}; geometry multipoint with two candidate mouth points (isunknowncoords flag set): point 1 (Web Mercator -13368906.09, 4749948.84) converts to lon -120.094927, lat 39.197134; point 2 (Web Mercator -13372224.36, 4752915.31) converts to lon -120.124735, lat 39.217783. Point 1 is ~1.85km from the 'Dollar Point, California' CDP centroid (39.19028, -120.11444 per Wikipedia) vs. ~3.18km for point 2, and matches this stream's mouth at Lake Tahoe near Dollar Point (Placer Co.) cited by the wiki_tahoe_inflow source; point 1 selected. Corrects the prior file coordinate (-120.1224, 39.20801), which was ~2.66km from this GNIS point." }
   ],
   "groups": [
     {
@@ -42,7 +43,7 @@
       "humanSummary": "Open catch-and-release only, Saturday before Memorial Day through Sept. 30; closed to all fishing the rest of the year (Lake Tahoe tributary special regulation).",
       "verbatimText": "Tahoe Lake tributaries upstream to the first lake. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout",
       "isParaphrase": false, "confidence": "high",
-      "sourceKeys": { "primary": "ccr_7_50_152", "corroborating": ["ccr_7_50_a1", "wiki_tahoe_inflow", "usgs_fs03502"] }
+      "sourceKeys": { "primary": "ccr_7_50_152", "corroborating": ["ccr_7_50_a1", "wiki_tahoe_inflow", "usgs_fs03502", "gnis_arcgis_1662294"] }
     },
     {
       "ruleType": "bag",

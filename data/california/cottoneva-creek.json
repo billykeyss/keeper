@@ -1,7 +1,7 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Cottoneva Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mendocino"], "aliases": ["Cottaneva Creek"], "gnisId": null, "lon": -123.7950, "lat": 39.7460, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "water": { "name": "Cottoneva Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mendocino"], "aliases": ["Cottaneva Creek"], "gnisId": "254782", "lon": -123.8292, "lat": 39.7360, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }, { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] } ],
   "reaches": [],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_254782", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D254782&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 254782, official name \"Cottaneva Creek\", Stream, CA, Mendocino Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-13", "quotedText": "{\"gaz_id\":254782,\"gaz_name\":\"Cottaneva Creek\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\"} — first-point coordinate -123.8292, 39.7360; correcting the file's prior coordinate (-123.7950, 39.7460), ~3.1km away." },
     { "key": "ccr_7_40_b_33", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40(b)(33) — Cottoneva Creek (Mendocino Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(33) Cottoneva Creek (Mendocino Co.). Main stem below the confluence of South Fork Cottoneva Creek. Fourth Sat. in May through Mar. 31. Only artificial lures with barbless hooks may be used from the fourth Sat. in May through Oct. 31. Only barbless hooks may be used from Nov. 1 through Mar. 31. 2 hatchery trout or hatchery steelhead. 4 hatchery trout or hatchery steelhead in possession." },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "ccr_8_00", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-8.00", "title": "CCR T14 §8.00 — Low-Flow Fishing Closures", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
