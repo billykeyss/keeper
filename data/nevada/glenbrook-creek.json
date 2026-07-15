@@ -1,8 +1,9 @@
 {
   "asOf": "2026-07-04",
-  "water": { "name": "Glenbrook Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": null, "lon": -119.922, "lat": 39.086, "verifyCurrent": false },
+  "water": { "name": "Glenbrook Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": "859826", "lon": -119.9413, "lat": 39.088, "verifyCurrent": false },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [],
@@ -10,7 +11,8 @@
   "sources": [
     { "key": "ndow_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16, Fishing Seasons and Regulations (Jan. 1, 2026 – Dec. 31, 2027) — Douglas County CLOSED WATERS", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "CLOSED WATERS: Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
     { "key": "ndow_cr2516_douglas_tahoe", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "Nevada Board of Wildlife Commissioners, CR 25-16 — Douglas County, Lake Tahoe and tributaries", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Lake Tahoe and tributaries    Open year around    Daily: 5 game fish    Possession: 10 game fish    1 hour before sunrise to 2 hours after sunset" },
-    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." }
+    { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." },
+    { "key": "gnis_arcgis_glenbrook_creek", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Glenbrook+Creek%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 859826, \"Glenbrook Creek\", Stream, Douglas County, NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":859826,\"gaz_name\":\"Glenbrook Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Douglas\"} — geometry multipoint; first point (Web Mercator -13351805.2858, 4734280.2135) converts to lon -119.94131, lat 39.08797 (mouth at Lake Tahoe). The file's previous coordinate (-119.922, 39.086) was off by ~1.68 km and has been corrected to this GNIS point." }
   ],
   "groups": [],
   "seasonPeriods": [],

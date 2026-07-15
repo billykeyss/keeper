@@ -6,13 +6,14 @@
     "states": ["NV"],
     "counties": ["Clark"],
     "aliases": ["Laughlin / Colorado River below Davis Dam"],
-    "gnisId": null,
+    "gnisId": "45730",
     "lon": -114.5695,
     "lat": 35.1988,
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -28,7 +29,8 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Colorado River below Davis Dam: Open year around. Daily: 5 trout, 6 black bass, 10 striped bass, and 25 catfish. Minimum size for black bass is 13 inches total length. No limit on other game fish. Possession: 10 trout, 12 black bass, 20 striped bass, and 50 catfish. Hours: Any hour of the day or night." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/colorado-river/", "title": "Laughlin / Colorado River below Davis Dam — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "This 12-mile section of the Colorado River forms the Nevada-Arizona boundary. Game fish species include striped bass, small- and largemouth bass, channel catfish, rainbow trout, bluegill, and redear sunfish. If you accidentally catch a razorback [sucker], please handle it carefully and release it immediately." },
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/colorado-river/", "title": "Laughlin / Colorado River below Davis Dam — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "The Colorado River forms the boundary between Arizona and Nevada. Much of the 12 miles of river within Nevada is contained by dikes and is subject to commercial and private development. ... Game fish species include striped bass, small- and largemouth bass, channel catfish, rainbow trout, bluegill, and redear sunfish. ... If you accidentally catch a razorback, please handle it carefully and release it immediately." },
+    { "key": "gnis_arcgis_colorado_river", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D45730+AND+county_name%3D%27Clark%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 45730, \"Colorado River\", Stream, multi-state (feature recurs under many states/counties including Clark Co., NV, reflecting the river's full length)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":45730,\"gaz_name\":\"Colorado River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":null,\"county_name\":\"Clark\"} — geometry multipoint; nearest vertex to the Davis Dam / Laughlin reach (Web Mercator -12760519.7583, 4151771.4465) converts to lon -114.57164, lat 35.19917, about 200 m from the file's recorded -114.5695, 35.1988 — consistent with the same river reach." },
     { "key": "s_ndow_angler_guide", "url": "https://www.ndow.org/wp-content/uploads/2021/11/06-COLORADO-RIVER-BELOW-DAVIS-DAM-2021-Remediated.pdf", "title": "Colorado River below Davis Dam — Angler and Fishery Survey Information (NDOW, 2021)", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Boating access along the Nevada side occurs at Sportsman's Park in Laughlin, Big Bend State Park, and the Avi Resort and Casino." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
   ],

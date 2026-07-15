@@ -73,6 +73,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "topozone_lampe_park",
+      "url": "https://www.topozone.com/nevada/douglas-nv/park/lampe-park/",
+      "title": "Lampe Park Topo Map — Douglas County, NV (Gardnerville Area) — TopoZone (no GNIS record exists for \"Lampe Park Pond\" or \"Lampe Park\" in the USGS National Map gazetteer; coordinate 38.9351848, -119.7446214 matches the file's recorded lon/lat)",
+      "documentType": "webpage",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

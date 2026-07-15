@@ -12,9 +12,9 @@
     "aliases": [
       "Lake Mead National Recreation Area (Nevada waters)"
     ],
-    "gnisId": null,
-    "lon": -114.7702,
-    "lat": 36.0261,
+    "gnisId": "7862",
+    "lon": -114.4298,
+    "lat": 36.1725,
     "verifyCurrent": false
   },
   "authorities": [
@@ -26,6 +26,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -133,6 +142,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_bulk_lake_mead",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_NV_Text.zip",
+      "title": "USGS GNIS (The National Map, Domestic Names bulk download) — Nevada record for feature_id 7862, \"Lake Mead\", Reservoir, Clark County, NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "7862|Lake Mead|Reservoir|Nevada|32|Clark|003|Middle Point|02/08/1980|04/05/2023|Official|Board Decision|01/01/1948|361021N|1142547W|36.1725406|-114.4298448|||0.0|0.0 — note: this feature is not indexed in the live carto.nationalmap.gov ArcGIS \"Other Hydrographic Features\" layer 7 (query for gaz_name='Lake Mead' AND state_alpha='NV' returns zero results there), so the authoritative USGS GNIS bulk text download was used instead; matches independently corroborated by TopoZone's Lake Mead (Clark County, NV, reservoir) coordinate of 36.1724589, -114.4298656."
     }
   ],
   "groups": [],

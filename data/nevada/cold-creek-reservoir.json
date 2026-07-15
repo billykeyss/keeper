@@ -13,8 +13,8 @@
       "Cold Creek Reservoir (Newark Valley)"
     ],
     "gnisId": null,
-    "lon": -115.68,
-    "lat": 39.82,
+    "lon": -115.7496,
+    "lat": 39.8446,
     "verifyCurrent": false
   },
   "authorities": [
@@ -94,6 +94,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "s_fishnv_geo",
+      "url": "https://www.fish.wildlifenv.com/waters/3049",
+      "title": "FishNV (NDOW interactive fishing-waters map/API) — Cold Creek Reservoir polygon spatial metadata, water id 3049",
+      "documentType": "api",
+      "instrumentType": "gis",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "{\"id\":3049,\"water_name\":\"Cold Creek Reservoir\",\"counties\":\"White Pine\",\"spatial_metadata\":{\"centroid\":[-115.74956489274372,39.84459331009779],\"bbox\":{\"sw\":[-115.7505919572405,39.84247704328865],\"ne\":[-115.74863768940787,39.84677684359375]}}} — centroid converts to lon -115.7496, lat 39.8446, replacing the file's previous coordinate (-115.68, 39.82), which was off by roughly 6.5 km. This also lines up (~250 m) with USGS GNIS gaz_id 839607, \"Cold Creek\" (Stream, NV, White Pine Co.), whose downstream point is at lon -115.7470, lat 39.8464; GNIS has no separate point feature named \"Cold Creek Reservoir\" itself."
     }
   ],
   "groups": [],

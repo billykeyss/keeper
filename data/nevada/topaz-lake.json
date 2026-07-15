@@ -6,14 +6,15 @@
     "states": ["NV"],
     "counties": ["Douglas"],
     "aliases": ["Topaz Reservoir"],
-    "gnisId": null,
-    "lon": -119.5498,
-    "lat": 38.6774,
+    "gnisId": "861754",
+    "lon": -119.5343,
+    "lat": 38.6809,
     "verifyCurrent": true
   },
   "authorities": [
     { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -34,9 +35,10 @@
   ],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Topaz Lake. Open year around. Daily: 5 trout, 5 mountain whitefish, and 25 warmwater game fish of which not more than 5 may be black bass. Possession: 10 trout, 10 mountain whitefish and 50 warmwater game fish of which not more than 10 may be black bass. Hours: 1 hour before sunrise to 2 hours after sunset." },
-    { "key": "s_ndow_waters_topaz", "url": "https://www.ndow.org/waters/topaz-lake/", "title": "Topaz Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Topaz Lake is a relatively large reservoir with 2,410 acres of surface area... created in 1922 for irrigation water storage. It straddles the Nevada-California border and is jointly managed by state wildlife agencies. The fishery features rainbow trout as the primary species, along with brown trout, cutthroat hybrids, and tiger trout. Stocking Updates (Stocked / Species / Inches / Date Stocked): 3960 Rainbow Trout, 10.5, 06-24-2026; 3597 Rainbow Trout, 9.1, 04-02-2026; 812 Rainbow Trout, 10.3, 10-24-2025; 1581 Rainbow Trout, 8.0, 10-24-2025; 2196 Rainbow Trout, 10.1, 10-15-2025; 5832 Rainbow Trout, 8.0, 09-02-2025; 5826 Rainbow Trout, 8.6, 08-28-2025; 5820 Rainbow Trout, 8.6, 08-27-2025; 6469 Rainbow Trout, 8.7, 10-21-2024; 3108 Rainbow Trout, 9.5, 09-30-2024; 3897 Rainbow Trout, 8.3, 12-04-2023; 5916 Rainbow Trout, 8.5, 11-20-2023; 1022 Rainbow Trout, 9.5, 11-20-2023; 5250 Rainbow Trout, 8.9, 10-20-2023; 572 Cuttbow, 9.6, 10-02-2023; 6091 Rainbow Trout, 8.3, 10-02-2023; 6020 Rainbow Trout, 7.5, 09-27-2023; 3909 Cuttbow, 9.5, 09-25-2023; 757 Tiger Trout, 11.2, 09-25-2023; 6383 Rainbow Trout, 9, 09-19-2023; 1245 Tiger Trout, 11.5, 09-12-2023; 3724 Rainbow Trout, 9.8, 04-13-2023; 4976 Rainbow Trout, 9.3, 04-13-2023; 3630 Tiger Trout, 10.1, 03-17-2023. Rainbow trout is the dominant sport fish, but bowcutt trout, brown trout, and occasionally tiger trout are stocked." },
+    { "key": "s_ndow_waters_topaz", "url": "https://www.ndow.org/waters/topaz-lake/", "title": "Topaz Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "s_ca_regs", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Anyone 16 years or older fishing anywhere in Lake Tahoe or Topaz Lake must possess either a California sport fishing license or a Nevada sport fishing license." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "gnis_arcgis_topaz_lake", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Topaz+Lake%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Lakes layer record for gaz_id 861754, \"Topaz Lake\", Lake, Douglas County, NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":861754,\"gaz_name\":\"Topaz Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39009,\"state_alpha\":\"NV\",\"county_name\":\"Douglas\"} — geometry point (Web Mercator -13306498.9208, 4676065.4166) converts to lon -119.53431, lat 38.68090; the file's previously recorded coordinate (-119.5498, 38.6774) was off by roughly 1.4 km and has been corrected to this GNIS value." }
   ],
   "groups": [],
   "seasonPeriods": [],

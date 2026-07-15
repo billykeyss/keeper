@@ -11,8 +11,8 @@
     ],
     "aliases": [],
     "gnisId": null,
-    "lon": -115.7269,
-    "lat": 36.4756,
+    "lon": -115.742,
+    "lat": 36.4257,
     "verifyCurrent": false
   },
   "authorities": [
@@ -24,6 +24,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -82,6 +91,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_cold_creek_stream_clark",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Cold+Creek%27+AND+state_alpha%3D%27NV%27+AND+county_name%3D%27Clark%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 859284, \"Cold Creek\", Stream, Clark County, NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "{\"gaz_id\":859284,\"gaz_name\":\"Cold Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Clark\"} — geometry multipoint from Web Mercator (-12885822.3521, 4365789.6481) to (-12884183.4054, 4357832.8662), converting to approximately lon -115.755/lat 36.472 (upstream end) to lon -115.741/lat 36.415 (downstream end). Cold Creek Pond has no separate GNIS point record of its own; it is one of three small ponds fed by this creek reach (per NDOW's Cold Creek Pond Angler Guide). The corrected coordinate (-115.742, 36.4257) falls on this GNIS stream line, corroborated by NDOW's Angler Guide access directions (turn onto Shootingstar Road off Cold Creek Road, pass two smaller ponds, reach the larger Cold Creek Pond in about ½ mile) and by Clark County Fire Station 82's geocoded address on Cold Creek Rd near Camp Bonanza Rd (~36.4223, -115.7304, ~1.1 km away) — the file's previous coordinate (-115.7269, 36.4756) sat about 5.9 km north of the fire station and off the Cold Creek drainage entirely."
     }
   ],
   "groups": [],

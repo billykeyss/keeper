@@ -14,9 +14,9 @@
       "Pahranagat Lake",
       "Pahranagat Refuge waters"
     ],
-    "gnisId": null,
-    "lon": -115.1225,
-    "lat": 37.2866,
+    "gnisId": "858225",
+    "lon": -115.12623,
+    "lat": 37.29976,
     "verifyCurrent": true
   },
   "authorities": [
@@ -37,6 +37,15 @@
       "type": "federal",
       "roles": [
         "land_management"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -123,6 +132,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_official_reservoir_record",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_NV_Text.zip",
+      "title": "USGS GNIS (The National Map) — Nevada Domestic Names bulk data, record for feature_id 858225, \"Upper Pahranagat Lake\", Reservoir, Lincoln Co., NV",
+      "documentType": "gis",
+      "instrumentType": "gis",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "858225|Upper Pahranagat Lake|Reservoir|Nevada|32|Lincoln|017|Alamo|12/12/1980|03/18/2019||||371759N|1150734W|37.2997617|-115.1262275|||0.0|0.0 — official primary coordinates lat 37.2997617, lon -115.1262275 (the carto.nationalmap.gov ArcGIS geonames mirror does not currently return this record by name or gaz_id, so the authoritative bulk GNIS text file was used instead); corrects the file's previous guessed coordinate (-115.1225, 37.2866), which was roughly 1.5 km off."
     }
   ],
   "groups": [],

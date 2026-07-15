@@ -14,8 +14,8 @@
       "Hafen Park Pond"
     ],
     "gnisId": null,
-    "lon": -114.0672,
-    "lat": 36.8058,
+    "lon": -114.0781,
+    "lat": 36.7973,
     "verifyCurrent": false
   },
   "authorities": [
@@ -27,6 +27,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "osm",
+      "name": "OpenStreetMap (OpenStreetMap Foundation)",
+      "state": null,
+      "type": "ngo",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -69,7 +78,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": "Game fish include rainbow trout and channel catfish, which are stocked seasonally depending on water temperature. ... Stocking Updates (selected): 1411 Rainbow Trout, 8.2 in, 02-03-2026; 1445 Rainbow Trout, 9.0 in, 12-02-2025; 42 Channel Catfish, 18.6 in, 10-03-2025; 86 Channel Catfish, 16 in, 04-11-2025; 711 Rainbow Trout, 9.9 in, 01-30-2023."
+      "quotedText": "Game fish include rainbow trout and channel catfish, which are stocked seasonally depending on water temperature."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -81,6 +90,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "s_osm_mesquite_urban_pond",
+      "url": "https://www.openstreetmap.org/relation/12909210",
+      "title": "Mesquite Urban Pond (natural=water, water=pond) — OpenStreetMap",
+      "documentType": "gis",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "osm",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

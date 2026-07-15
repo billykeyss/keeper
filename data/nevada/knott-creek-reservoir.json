@@ -6,13 +6,14 @@
     "states": ["NV"],
     "counties": ["Humboldt"],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "858046",
     "lon": -118.7940,
     "lat": 41.6688,
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -24,8 +25,9 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/09/24-A-CR-25-16-Fishing-Seasons-and-Regulations-for-January-1-2026-through-December-31-2027.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons and Regulations CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Knott Creek Reservoir including inlet and outlet streams: Open year around. Daily: 1 trout. Possession: 2 trout. Hours: Any hour of the day or night." },
-    { "key": "s_ndow_knott", "url": "https://www.ndow.org/waters/knott-creek-reservoir/", "title": "Knott Creek Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Rainbow trout, bowcutt trout (rainbow x cutthroat trout hybrid), and tiger trout (brown x brook trout hybrid) that typically reach 30 inches in length. This is a trophy trout fishery. Stocking Updates: 1103 Rainbow Trout, 9.3, 06-03-2026; 503 Brown Trout, 5.9, 09-16-2025; 760 Tiger Trout, 5.5, 09-16-2025; 501 Brown Trout, 6.7, 10-03-2024; 747 Tiger Trout, 7.0, 10-03-2024; 323 Rainbow Trout, 9.9, 06-12-2024; 492 Brown Trout, 10.1, 06-12-2024; 924 Rainbow Trout, 9.3, 06-12-2024; 700 Cutbow Trout, 9.4, 10-05-2023; 774 Tiger Trout, 11.5, 09-29-2023." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_knott", "url": "https://www.ndow.org/waters/knott-creek-reservoir/", "title": "Knott Creek Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Fish include rainbow trout, bowcutt trout (rainbow x cutthroat trout hybrid), and tiger trout (brown x brook trout hybrid) that generally grow to 30 inches. Stocking Updates: 1103 Rainbow Trout, 9.3, 06-03-2026; 503 Brown Trout, 5.9, 09-16-2025; 760 Tiger Trout, 5.5, 09-16-2025; 501 Brown Trout, 6.7, 10-03-2024; 747 Tiger Trout, 7.0, 10-03-2024; 323 Rainbow Trout, 9.9, 06-12-2024; 492 Brown Trout, 10.1, 06-12-2024; 924 Rainbow Trout, 9.3, 06-12-2024; 700 Cutbow Trout, 9.4, 10-05-2023; 774 Tiger Trout, 11.5, 09-29-2023." },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "gnis_arcgis_reservoirs_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Knott+Creek+Reservoir%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoirs layer record for gaz_id 858046, \"Knott Creek Reservoir\", Reservoir, NV, Humboldt Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":858046,\"gaz_name\":\"Knott Creek Reservoir\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"NV\",\"county_name\":\"Humboldt\"} — geometry (Web Mercator -13224086.9333, 5111497.5331) converts to lon -118.79399, lat 41.66881, matching the file's recorded coordinate (-118.79400, 41.66880) to within ~15m." }
   ],
   "groups": [],
   "seasonPeriods": [],

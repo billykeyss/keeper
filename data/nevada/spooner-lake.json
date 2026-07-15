@@ -10,7 +10,7 @@
       "Douglas"
     ],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "861535",
     "lon": -119.9108,
     "lat": 39.1067,
     "verifyCurrent": false
@@ -24,6 +24,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -106,6 +115,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_spooner_lake",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Spooner+Lake%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Reservoirs layer record for gaz_id 861535, \"Spooner Lake\", Reservoir, Douglas Co., NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "{\"gaz_id\":861535,\"gaz_name\":\"Spooner Lake\",\"gaz_featureclass\":\"Reservoir\",\"fcode\":39004,\"state_alpha\":\"NV\",\"county_name\":\"Douglas\"} — geometry point (Web Mercator -13348154.7904, 4737020.967) converts to lon -119.90851, lat 39.10708, matching the file's coordinate (-119.9108, 39.1067) within ~200 m."
     }
   ],
   "groups": [],

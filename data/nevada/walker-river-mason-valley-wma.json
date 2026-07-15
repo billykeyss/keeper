@@ -12,9 +12,9 @@
     "aliases": [
       "Walker River within Mason Valley Wildlife Management Area"
     ],
-    "gnisId": null,
-    "lon": -119.11,
-    "lat": 39.1,
+    "gnisId": "844617",
+    "lon": -119.0979,
+    "lat": 39.0977,
     "verifyCurrent": true
   },
   "authorities": [
@@ -94,6 +94,28 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_streams_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D844617&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 844617, \"Walker River\", Stream, Lyon Co. / Mineral Co., NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "{\"gaz_id\":844617,\"gaz_name\":\"Walker River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Lyon\"/\"Mineral\"}. GNIS digitizes the full river course as a multipoint path spanning both counties rather than a single mouth point, so no single GNIS coordinate is specific to the Mason Valley WMA reach; water.lon/lat instead uses the Mason Valley WMA locale point (see topozone_mvwma) as the best available proxy for this reach's location."
+    },
+    {
+      "key": "topozone_mvwma",
+      "url": "https://www.topozone.com/nevada/lyon-nv/park/mason-valley-wildlife-management-area/",
+      "title": "TopoZone — Mason Valley Wildlife Management Area, Lyon County, NV (topo map / GPS coordinates)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

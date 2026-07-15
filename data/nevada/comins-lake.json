@@ -6,13 +6,14 @@
     "states": ["NV"],
     "counties": ["White Pine"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -114.8117,
-    "lat": 39.165,
+    "gnisId": "859315",
+    "lon": -114.8077,
+    "lat": 39.1516,
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -26,9 +27,10 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/09/24-A-CR-25-16-Fishing-Seasons-and-Regulations-for-January-1-2026-through-December-31-2027.pdf", "title": "State of Nevada Board of Wildlife Commissioners — CR 25-16: Fishing Seasons and Regulations, January 1, 2026 – December 31, 2027", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Comins Lake: Open year around. Daily: 5 trout and 5 black bass. No limit on northern pike (unlimited possession). Possession: 10 trout and 10 black bass. Hours: Any hour of the day or night." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/comins-lake/", "title": "Comins Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Comins Lake is located 10 miles southeast of Ely, Nevada... Rainbow Trout, Brown Trout, and Tiger Trout are stocked into Comins Lake on an annual basis... Largemouth bass are self-sustaining. Northern Pike are an aquatic invasive species that negatively impact the Comins Lake fishery; NDOW encourages anglers to remove all pike caught." },
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/comins-lake/", "title": "Comins Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Rainbow trout, brown trout, and largemouth bass currently inhabit the reservoir... The reservoir has been chemically treated twice to remove northern pike, first in 1989 and most recently in the summer of 2015. In both instances, northern pike decimated the reservoir's trout and bass populations through predation... Largemouth bass are self-sustaining and generally need on further stocking, while trout are stocked annually in the spring and fall." },
     { "key": "s_ndow_water_stocking", "url": "https://www.ndow.org/waters/comins-lake/", "title": "Comins Lake — Nevada Department of Wildlife (Stocking Updates)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Largemouth bass are self-sustaining and generally need on further stocking, while trout are stocked annually in the spring and fall. ... Stocking Updates (selected): 3410 Rainbow Trout, 8.9 in, 05-25-2026; 2498 Tiger Trout, 9.7 in, 05-19-2026; 5292 Rainbow Trout, 9.5 in, 05-06-2026; 7061 Brown Trout, 9.3 in, 05-05-2026; 1692 Tiger Trout, 11 in, 12-19-2025; 6176 Bluegill, 2.7 in, 06-11-2024; 1698 Bluegill, 6.1 in, 06-29-2023; 5006 Rainbow Trout, 9.6 in, 05-08-2023." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "gnis_arcgis_comins_lake", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Comins+Lake%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoirs layer record for gaz_id 859315, \"Comins Lake\", Reservoir, White Pine County, NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":859315,\"gaz_name\":\"Comins Lake\",\"gaz_featureclass\":\"Reservoir\",\"fcode\":39004,\"state_alpha\":\"NV\",\"county_name\":\"White Pine\"} — geometry point (Web Mercator -12780335.0036, 4743413.0720) converts to lon -114.8077, lat 39.1516; corrects the file's prior coordinate (-114.8117, 39.165), which was off by ~1.5 km and did not match GNIS." }
   ],
   "groups": [],
   "seasonPeriods": [],

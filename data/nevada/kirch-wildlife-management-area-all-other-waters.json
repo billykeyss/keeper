@@ -5,14 +5,15 @@
     "waterType": "reservoir",
     "states": ["NV"],
     "counties": ["Nye"],
-    "aliases": ["Wayne E. Kirch WMA waters", "Kirch WMA (Sunnyside)", "Cold Springs Reservoir", "Haymeadow Reservoir"],
+    "aliases": ["Wayne E. Kirch WMA waters", "Kirch WMA (Sunnyside)", "Adams-McGill Reservoir", "Cold Springs Reservoir", "Haymeadow Reservoir"],
     "gnisId": null,
-    "lon": -115.14,
-    "lat": 38.36,
+    "lon": -115.13833,
+    "lat": 38.35294,
     "verifyCurrent": true
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -27,7 +28,8 @@
     { "key": "s_ndow_adams_mcgill", "url": "https://www.ndow.org/waters/adams-mcgill-reservoir/", "title": "Adams-McGill Reservoir at Kirch WMA (Sunnyside) — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "A self-sustaining largemouth bass fishery exists in the reservoir as well as a put-and-take rainbow trout fishery. Adams-McGill Reservoir is located on the Kirch Wildlife Management Area (formerly Sunnyside) in the White River Valley of Nye County. Stocking Updates: 1955 Rainbow Trout, 8.6, 04-11-2026; 2002 Rainbow Trout, 9.3, 04-18-2024; 4092 Rainbow Trout, 8.6, 04-27-2023; 4238 Rainbow Trout, 8.7, 04-26-2023." },
     { "key": "s_ndow_haymeadow", "url": "https://www.ndow.org/waters/haymeadow-reservoir/", "title": "Haymeadow Reservoir at Kirch WMA — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Haymeadow Reservoir was impounded in 1967 and is located on the Kirch Wildlife Management Area (KWMA), formerly Sunnyside. Its main purpose is to increase the amount of wetlands for waterfowl and to create a sport fishery. Stocking Updates: 4968 Rainbow Trout, 8.9, 05-05-2026; 4991 Rainbow Trout, 9.1, 05-03-2026; 5070 Rainbow trout, 8.6, 05-01-2026; 5010 Rainbow Trout, 9.5, 04-22-2025; 5015 Rainbow Trout, 9.5, 04-22-2025; 5568 Rainbow Trout, 9.0, 10-30-2024; 5024 Rainbow Trout, 9.3, 10-24-2024; 3900 Rainbow Trout, 9.2, 06-05-2024; 5016 Rainbow Trout, 9.8, 05-09-2024; 4862 Rainbow Trout, 8.7, 04-17-2023; 5138 Rainbow Trout, 9.7, 04-13-2023." },
     { "key": "s_ndow_cold_springs", "url": "https://www.ndow.org/waters/cold-springs-reservoir/", "title": "Cold Springs Reservoir at Kirch WMA — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Stocking Updates: 4950 Rainbow Trout, 9.0, 05-11-2026; 5010 Rainbow Trout, 9.0, 05-07-2026; 4968 Rainbow Trout, 8.9, 05-06-2026; 4277 Rainbow Trout, 9.1, 11-19-2025; 5922 Rainbow Trout, 9.1, 11-18-2025; 5016 Rainbow Trout, 9.8, 04-23-2025; 5000 Rainbow Trout, 10, 04-16-2025; 7812 Rainbow Trout, 9.1, 11-12-2024; 5012 Rainbow Trout, 8.9, 04-16-2024; 4960 Rainbow Trout, 9.3, 04-04-2024; 9176 Rainbow Trout, 7.5, 10-24-2023; 5057 Rainbow Trout, 8.6, 04-25-2023; 5110 Rainbow Trout, 8.8, 04-19-2023; 4998 Rainbow Trout, 8.9, 04-18-2023." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "s_gnis_kirch_reservoirs", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Hay+Meadow+Reservoir%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) + OpenStreetMap — centroid of the three named reservoirs comprising this composite \"all other waters\" entry: Adams-McGill Reservoir (GNIS gaz_id 857883, Nye Co.), Hay Meadow Reservoir (GNIS gaz_id 858014, Nye Co.), and Cold Springs Reservoir (no GNIS entry found; OSM natural=water way only)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "Hay Meadow Reservoir (gaz_id 858014): Web Mercator (-12820041.84, 4626055.87) converts to lon -115.16440, lat 38.32934. Adams-McGill Reservoir (gaz_id 857883, per OSM gnis:feature_id tag corroborated by HomeTownLocator's GNIS-sourced rendering): lon -115.10540, lat 38.38282. Cold Springs Reservoir (OSM natural=water way, no GNIS record found): lon -115.14521, lat 38.34665. Centroid of the three: lon -115.13833, lat 38.35294, used as this composite water's recorded coordinate since GNIS has no single feature named \"Kirch Wildlife Management Area: All other waters.\"" }
   ],
   "groups": [],
   "seasonPeriods": [],

@@ -14,8 +14,8 @@
       "Lahontan Lake"
     ],
     "gnisId": null,
-    "lon": -119.2035,
-    "lat": 39.375,
+    "lon": -119.126781,
+    "lat": 39.350252,
     "verifyCurrent": false
   },
   "authorities": [
@@ -27,6 +27,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -111,7 +120,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": "Lahontan Reservoir is located along the Carson River as part of the Bureau of Reclamation's Newlands Irrigation Project, approximately 20 miles southwest of Fallon. Primary game fish include walleye, white bass, wipers, channel catfish, white catfish, largemouth bass and crappie. Stocking Updates: 350000 Walleye, 0.5 in, 04-28-2026; 482 Wiper, 3.0 in, 10-08-2025; 2000 Wiper, 7 in, 05-29-2025; 1000000 Walleye, 1.0 in, 04-25-2025; 1019 Wiper, 3.84 in, 09-30-2024; 2400 Wiper, 8-10 in, 05-23-2024; 1950 Wiper, 8 in, 06-07-2023."
+      "quotedText": "Lahontan Reservoir is located along the Carson River and is part of the Bureau of Reclamation's Newlands Irrigation Project for watering farmland in Lahontan Valley."
     },
     {
       "key": "s_ndow_aig_lahontan",
@@ -133,7 +142,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
-      "quotedText": "No consumption of fish from Lahontan Reservoir, the Carson River below Dayton, and all waters in Lahontan Valley. Methylmercury concentrations in all game fishes from this area are above safe state and federal consumption levels, the legacy of historic Comstock-era mercury use."
+      "quotedText": "Carson River from Dayton to the Lahontan Dam and all water in the Lahontan Valley: No consumption of any fish"
     },
     {
       "key": "s_ndow_apply_buy",
@@ -145,6 +154,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "topozone_lahontan_reservoir",
+      "url": "https://www.topozone.com/nevada/lyon-nv/reservoir/lahontan-reservoir/",
+      "title": "Lahontan Reservoir Topo Map — TopoZone (Lyon County, NV; Silver Springs South USGS quad; named reservoir feature at 39.3502518, -119.1267812, elev. ~4,157 ft)",
+      "documentType": "webpage",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],
@@ -300,7 +320,7 @@
       "jurisdictionState": "NV",
       "citation": "NDOW \u2014 Mercury in Fish advisory",
       "humanSummary": "Nevada health and wildlife agencies advise against eating any fish caught from Lahontan Reservoir due to mercury contamination.",
-      "verbatimText": "No consumption of fish from Lahontan Reservoir, the Carson River below Dayton, and all waters in Lahontan Valley.",
+      "verbatimText": "Carson River from Dayton to the Lahontan Dam and all water in the Lahontan Valley: No consumption of any fish",
       "isParaphrase": false,
       "confidence": "high",
       "sourceKeys": {

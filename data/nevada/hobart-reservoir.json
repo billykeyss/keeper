@@ -6,13 +6,14 @@
     "states": ["NV"],
     "counties": ["Washoe"],
     "aliases": ["Hobart Creek Reservoir", "Hobart Reservoir and tributaries and Franktown Creek downstream from Hobart Reservoir to Red House"],
-    "gnisId": null,
+    "gnisId": "863321",
     "lon": -119.8662,
     "lat": 39.194,
     "verifyCurrent": true
   },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules", "permit_issuer"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -25,9 +26,10 @@
   "speciesGroups": [],
   "sources": [
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Hobart Reservoir and tributaries and Franktown Creek downstream from Hobart Reservoir to Red House: May 1 through October 31. Daily: 5 trout of which not more than 2 may be tiger trout. Possession: 10 trout of which not more than 4 may be tiger trout. Hours: 1 hour before sunrise to 2 hours after sunset." },
-    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/hobart-reservoir/", "title": "Hobart Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Rainbow trout, brook trout, cutthroat trout, and bowcutt trout (rainbow x cutthroat trout hybrid). Brook trout are the only naturally reproducing population. Situated at 7,650 feet elevation in the Carson Range within Toiyabe National Forest... The reservoir will remain inaccessible from May through fall 2026 due to dam repairs and drainage, with fishing expected to resume after restocking in the following season. Stocking Updates (Stocked, Species, Inches, Date Stocked, Year to Date): 497 Rainbow Trout 8.8 07-02-2025 2462; 223 Tiger Trout 9.8 07-02-2025 1681; 774 Tiger Trout 9.9 06-26-2025 1458; 684 Tiger Trout 10.3 06-26-2025 684; 1965 Rainbow Trout 9.7 07-16-2024 1965; 1010 Tiger Trout 10.7 06-24-2024 1010; 40 Brook Trout 12.0 06-19-2024 40; 935 Tiger Trout 11.2 09-26-2023 2434; 1499 Tiger Trout 10.2 07-20-2023 1499; 1012 Rainbow Trout 9.5 07-19-2023 1012" },
-    { "key": "s_nac_503_504", "url": "https://www.leg.state.nv.us/nac/NAC-503.html", "title": "Nev. Admin. Code § 503.504(3)(c)(2) — Western Region: restrictions on bait and lures", "documentType": "webpage", "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Only artificial lures may be used in: (1) Hinkson Slough on the Mason Valley Wildlife Management Area; and (2) Hobart Reservoir." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_water", "url": "https://www.ndow.org/waters/hobart-reservoir/", "title": "Hobart Reservoir — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-15", "quotedText": "Hobart Reservoir is located at an elevation of 7,650 feet in the Carson Range of the Toiyabe National Forest... Rainbow trout, brook trout, cutthroat trout, and bowcutt trout (rainbow x cutthroat trout hybrid) have been introduced into the lake. Brook trout are the only self-sustaining species... Hobart Reservoir will NOT be accessible from May through the Fall of 2026 due to dam repairs. During this project, the reservoir will be drained and repairs should only lead to closures for one season. Fishing should start to rebound after being restocked next season. Stocking Updates (Stocked, Species, Inches, Date Stocked, Year to Date): 497 Rainbow Trout 8.8 07-02-2025 2462; 223 Tiger Trout 9.8 07-02-2025 1681; 774 Tiger Trout 9.9 06-26-2025 1458; 684 Tiger Trout 10.3 06-26-2025 684; 1965 Rainbow Trout 9.7 07-16-2024 1965; 1010 Tiger Trout 10.7 06-24-2024 1010; 40 Brook Trout 12.0 06-19-2024 40; 935 Tiger Trout 11.2 09-26-2023 2434; 1499 Tiger Trout 10.2 07-20-2023 1499; 1012 Rainbow Trout 9.5 07-19-2023 1012" },
+    { "key": "s_nac_503_504", "url": "https://www.leg.state.nv.us/nac/NAC-503.html", "title": "Nev. Admin. Code § 503.504(3)(c)(2) — Western Region: restrictions on bait and lures", "documentType": "webpage", "instrumentType": "admin_code", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-15", "quotedText": "Only artificial lures may be used in: (1) Hinkson Slough on the Mason Valley Wildlife Management Area; and (2) Hobart Reservoir." },
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-15", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "gnis_arcgis_863321", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D863321&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 863321, \"Hobart Creek Reservoir\", Reservoir, Washoe County, NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":863321,\"gaz_name\":\"Hobart Creek Reservoir\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"NV\",\"county_name\":\"Washoe\"} — geometry (Web Mercator -13343442.0538, 4749503.0221) converts to lon -119.86618, lat 39.19403, matching the file's recorded coordinate (-119.8662, 39.194) to within ~10m." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -88,7 +90,7 @@
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
       "citation": "NDOW — Hobart Reservoir water page (dam repair notice)",
       "humanSummary": "Hobart Reservoir is expected to be drained and inaccessible for fishing from May through fall 2026 due to dam repairs; verify current access before a trip.",
-      "verbatimText": "The reservoir will remain inaccessible from May through fall 2026 due to dam repairs and drainage, with fishing expected to resume after restocking in the following season.",
+      "verbatimText": "Hobart Reservoir will NOT be accessible from May through the Fall of 2026 due to dam repairs. During this project, the reservoir will be drained and repairs should only lead to closures for one season. Fishing should start to rebound after being restocked next season.",
       "isParaphrase": false, "confidence": "low",
       "sourceKeys": { "primary": "s_ndow_water", "corroborating": [] }
     },

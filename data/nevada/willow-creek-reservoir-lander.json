@@ -12,7 +12,7 @@
     "aliases": [
       "Willow Creek Reservoirs"
     ],
-    "gnisId": null,
+    "gnisId": "849682",
     "lon": -117.1629,
     "lat": 40.5582,
     "verifyCurrent": false
@@ -26,6 +26,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -94,6 +103,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_reservoirs_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Willow%20Creek%20Reservoir%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Reservoirs layer record for gaz_id 849682, \"Willow Creek Reservoir\", Reservoir, NV, Lander Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "{\"gaz_id\":849682,\"gaz_name\":\"Willow Creek Reservoir\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"NV\",\"county_name\":\"Lander\"} — geometry (Web Mercator -13042516.5557, 4947392.9908) converts to lon -117.16292, lat 40.55820, matching the file's recorded coordinate (-117.1629, 40.5582) to within ~10m."
     }
   ],
   "groups": [],

@@ -19,8 +19,8 @@
       "Great Basin National Park High Lakes"
     ],
     "gnisId": null,
-    "lon": -114.303,
-    "lat": 38.962,
+    "lon": -114.3023,
+    "lat": 38.9748,
     "verifyCurrent": false
   },
   "authorities": [
@@ -41,6 +41,15 @@
       "type": "federal",
       "roles": [
         "land_management"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -124,6 +133,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "gnis_arcgis_snake_range_high_lakes",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name+IN+%28%27Stella+Lake%27%2C%27Teresa+Lake%27%2C%27Baker+Lake%27%2C%27Johnson+Lake%27%2C%27Brown+Lake%27%2C%27Dead+Lake%27%29+AND+state_alpha%3D%27NV%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lakes layer records for the six named lakes comprising \"Snake Range High Lakes\" (Great Basin National Park, White Pine County, NV): Stella Lake (gaz_id 861580), Teresa Lake (gaz_id 863340), Baker Lake (gaz_id 858788), Johnson Lake (gaz_id 860224), Brown Lake (gaz_id 859026), Dead Lake (gaz_id 859468)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "\"Snake Range High Lakes\" is a regulatory grouping (NBWC CR 25-16) rather than a single GNIS feature, so no individual gaz_id exists for it. Constituent lake coordinates (Web Mercator, converted to lon/lat): Stella Lake (-114.31867, 39.00533), Teresa Lake (-114.31116, 39.00317), Baker Lake (-114.31036, 38.95736), Johnson Lake (-114.29772, 38.94362), Brown Lake (-114.30215, 39.00369), Dead Lake (-114.27397, 38.93592). The file's previous coordinate (-114.303, 38.962) had no GNIS citation and sat about 1.4 km from the centroid of these six named lakes; corrected to that centroid (-114.3023, 38.9748), a representative point spanning the group."
     }
   ],
   "groups": [],

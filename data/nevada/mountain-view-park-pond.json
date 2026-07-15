@@ -14,8 +14,8 @@
       "Mountain View Pond #2"
     ],
     "gnisId": null,
-    "lon": -119.734,
-    "lat": 38.947,
+    "lon": -119.7525,
+    "lat": 38.9486,
     "verifyCurrent": false
   },
   "authorities": [
@@ -27,6 +27,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "osm",
+      "name": "OpenStreetMap (OpenStreetMap Foundation)",
+      "state": null,
+      "type": "ngo",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -95,6 +104,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "s_osm_mountain_view_pond2",
+      "url": "https://www.openstreetmap.org/way/1144545017",
+      "title": "OpenStreetMap way 1144545017 — \"Mountain View Pond #2\" (natural=water, water=pond), a mapped pond west of Snaffle Bit Drive within Mountain View Park, Gardnerville, Douglas County, NV. Used as coordinate source because this water has no GNIS (USGS geonames) entry.",
+      "documentType": "gis",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "osm",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

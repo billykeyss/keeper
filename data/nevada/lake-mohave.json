@@ -14,8 +14,8 @@
       "Cottonwood Cove"
     ],
     "gnisId": null,
-    "lon": -114.6866,
-    "lat": 35.491,
+    "lon": -114.6436,
+    "lat": 35.4372,
     "verifyCurrent": false
   },
   "authorities": [
@@ -32,6 +32,15 @@
     {
       "key": "fws",
       "name": "U.S. Fish and Wildlife Service",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
       "state": null,
       "type": "federal",
       "roles": [
@@ -158,6 +167,17 @@
       "authorityKey": "fws",
       "retrievedDate": "2026-07-02",
       "quotedText": "Biologists stagger the growth of these rainbow trout throughout the year in order to annually produce catchable sized 10-12 inch fish for weekly stockings at Willow Beach."
+    },
+    {
+      "key": "s_wikipedia_lake_mohave",
+      "url": "https://en.wikipedia.org/wiki/Lake_Mohave",
+      "title": "Lake Mohave — Wikipedia",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

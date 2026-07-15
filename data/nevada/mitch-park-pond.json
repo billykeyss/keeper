@@ -27,6 +27,15 @@
         "take_rules",
         "permit_issuer"
       ]
+    },
+    {
+      "key": "osm",
+      "name": "OpenStreetMap",
+      "state": null,
+      "type": "ngo",
+      "roles": [
+        "none"
+      ]
     }
   ],
   "reaches": [],
@@ -80,6 +89,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "s_osm_mitch_park",
+      "url": "https://www.openstreetmap.org/way/268411358",
+      "title": "OpenStreetMap way 268411358 — \"Mitch Park\", Gardnerville Ranchos, Douglas County, NV (no GNIS gazetteer record found for \"Mitch Park Pond\" or \"Mitch Park\" in Douglas County, NV — the pond sits within this park polygon, off Mitch Drive/Topaz Lane)",
+      "documentType": "gis",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "osm",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "Nominatim centroid for OSM way 268411358 \"Mitch Park\": lat 38.9078079, lon -119.7335998, matching the file's recorded coordinate (-119.7336, 38.9078) to within ~10m."
     }
   ],
   "groups": [],

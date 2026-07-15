@@ -1,8 +1,9 @@
 {
   "asOf": "2026-07-04",
-  "water": { "name": "Incline Creek", "waterType": "creek", "states": ["NV"], "counties": ["Washoe"], "aliases": [], "gnisId": null, "lon": -119.94069, "lat": 39.24418, "verifyCurrent": true },
+  "water": { "name": "Incline Creek", "waterType": "creek", "states": ["NV"], "counties": ["Washoe"], "aliases": [], "gnisId": "860098", "lon": -119.94742, "lat": 39.23852, "verifyCurrent": true },
   "authorities": [
-    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [],
@@ -13,7 +14,8 @@
     { "key": "ndow_license_req", "url": "https://www.eregulations.com/nevada/fishing/general-statewide-regulations", "title": "Nevada General Statewide Fishing Regulations — Fishing License Requirement (NDOW / eRegulations)", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Any resident 12 years of age or older who fishes in Nevada is required to have a fishing license." },
     { "key": "ndow_incline_water", "url": "https://www.ndow.org/waters/incline-creek/", "title": "Incline Creek — Nevada Department of Wildlife (directory entry: Region Western, County Washoe, Type Creek or Stream; no species, stocking, or regulation content shown)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null },
     { "key": "wiki_tahoe_inflow", "url": "https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_inflow_streams", "title": "List of Lake Tahoe inflow streams — Wikipedia (Incline Creek, east shore)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "flows through Diamond Peak Ski Resort to Crystal Bay, Lake Tahoe at Incline Village" },
-    { "key": "osm_incline_creek", "url": "https://www.openstreetmap.org/relation/19058880", "title": "OpenStreetMap — Incline Creek (relation 19058880): the named creek in Washoe Co., NV, draining past Diamond Peak to Lake Tahoe at Incline Village on the east/north shore; representative lower-reach point ~39.24418, -119.94069", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null }
+    { "key": "osm_incline_creek", "url": "https://www.openstreetmap.org/relation/19058880", "title": "OpenStreetMap — Incline Creek (relation 19058880): the named creek in Washoe Co., NV, draining past Diamond Peak to Lake Tahoe at Incline Village on the east/north shore; representative lower-reach point ~39.24418, -119.94069", "documentType": "gis", "instrumentType": "gis", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": null },
+    { "key": "gnis_arcgis_incline_creek", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Incline+Creek%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 860098, \"Incline Creek\", Stream, Washoe County, NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":860098,\"gaz_name\":\"Incline Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Washoe\"} — geometry multipoint; first point (Web Mercator -13352486.1292, 4755895.916) converts to lon -119.94742, lat 39.23852 (the stream's mouth at Lake Tahoe). This is ~855m from the file's previous coordinate (-119.94069, 39.24418), which had been taken from an OSM representative point further up the lower reach rather than from GNIS; corrected to the GNIS-sourced mouth coordinate." }
   ],
   "groups": [],
   "seasonPeriods": [],

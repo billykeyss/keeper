@@ -1,10 +1,11 @@
 {
   "asOf": "2026-07-04",
-  "water": { "name": "McFaul Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": null, "lon": -119.94914, "lat": 38.99477, "verifyCurrent": true },
+  "water": { "name": "McFaul Creek", "waterType": "creek", "states": ["NV"], "counties": ["Douglas"], "aliases": [], "gnisId": "860523", "lon": -119.955181, "lat": 38.9937971, "verifyCurrent": true },
   "authorities": [
     { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
     { "key": "usfs", "name": "USDA Forest Service, Pacific Southwest Research Station", "state": null, "type": "federal", "roles": ["none"] },
-    { "key": "wiki", "name": "Wikipedia (Wikimedia Foundation)", "state": null, "type": "ngo", "roles": ["none"] }
+    { "key": "wiki", "name": "Wikipedia (Wikimedia Foundation)", "state": null, "type": "ngo", "roles": ["none"] },
+    { "key": "usgs", "name": "U.S. Geological Survey", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [],
@@ -14,7 +15,8 @@
     { "key": "s_cr2516_douglas_closed", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "CR 25-16 — Douglas County CLOSED WATERS (McFaul Creek not listed as closed; only Glenbrook Creek is)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Topaz Lake within the jetties of Topaz Marina. Lake Tahoe within the boat launch area, inside the jetty at the Cave Rock boat ramp, north end. Glenbrook Creek from Lake Tahoe to Highway 50." },
     { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-04", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
     { "key": "s_usfs_wa_kingsbury", "url": "https://www.fs.usda.gov/psw/publications/documents/psw_gtr175/psw_gtr175.pdf", "title": "Lake Tahoe Watershed Assessment, Volume I (USDA Forest Service Gen. Tech. Rep. PSW-GTR-175) — Time Line, \"McFaul/Burke/Edgewood Creeks Watersheds (Kingsbury)\"", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "third_party", "authorityKey": "usfs", "retrievedDate": "2026-07-04", "quotedText": "Time Line of Human Land Use and Environmental Conditions, McFaul/Burke/Edgewood Creeks Watersheds (Kingsbury)" },
-    { "key": "s_wiki_inflow", "url": "https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_inflow_streams", "title": "List of Lake Tahoe inflow streams — Wikipedia (East shore section; McFaul Creek)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "wiki", "retrievedDate": "2026-07-04", "quotedText": "flows into Lake Tahoe at Zephyr Cove, Nevada" }
+    { "key": "s_wiki_inflow", "url": "https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_inflow_streams", "title": "List of Lake Tahoe inflow streams — Wikipedia (East shore section; McFaul Creek)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "wiki", "retrievedDate": "2026-07-04", "quotedText": "flows into Lake Tahoe at Zephyr Cove, Nevada" },
+    { "key": "gnis_arcgis_mcfaul_creek", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27McFaul+Creek%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 860523, \"McFaul Creek\", Stream, Douglas Co., NV", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-15", "quotedText": "{\"gaz_id\":860523,\"gaz_name\":\"McFaul Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Douglas\"} — geometry multipoint; first point (Web Mercator -13353351.1117, 4720783.8488) converts to lon -119.95519, lat 38.99380 (mouth, at Lake Tahoe), matching GNIS's published primary coordinate of 38.9937971, -119.955181. The previously recorded coordinate (-119.94914, 38.99477) was off by ~534 m and has been corrected to the GNIS value." }
   ],
   "groups": [],
   "seasonPeriods": [],

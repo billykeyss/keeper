@@ -14,8 +14,8 @@
       "Mason Valley Wildlife Management Area North Pond"
     ],
     "gnisId": null,
-    "lon": -119.1,
-    "lat": 39.105,
+    "lon": -119.1012,
+    "lat": 39.1229,
     "verifyCurrent": true
   },
   "authorities": [
@@ -95,6 +95,17 @@
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
       "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+    },
+    {
+      "key": "roadtrippers_north_pond",
+      "url": "https://maps.roadtrippers.com/us/yerington-nv/nature/mason-valley-wma-north-pond",
+      "title": "Mason Valley WMA — North Pond — Roadtrippers (no GNIS record exists for \"North Pond\", \"Bass Pond\", or \"Crappie Pond\" in the USGS National Map gazetteer for Lyon County, NV — only \"Hinkson Slough\" [gaz_id 841011] has a GNIS entry among the WMA's Fish Series ponds; coordinate 39.122875, -119.101150 corroborated independently by Campendium's listing for the same site)",
+      "documentType": "webpage",
+      "instrumentType": "gis",
+      "authorityLevel": "third_party",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-15",
+      "quotedText": null
     }
   ],
   "groups": [],

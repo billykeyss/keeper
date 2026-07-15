@@ -11,8 +11,8 @@
     ],
     "aliases": [],
     "gnisId": null,
-    "lon": -115.1225,
-    "lat": 36.0714,
+    "lon": -115.1141,
+    "lat": 36.0665,
     "verifyCurrent": false
   },
   "authorities": [
@@ -24,6 +24,15 @@
       "roles": [
         "take_rules",
         "permit_issuer"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -94,7 +103,18 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": "The primary fishery consists of rainbow trout and channel catfish, with catchable sizes of both species being stocked seasonally. Bluegill, redear sunfish, black crappie, and largemouth bass also occur and spawn naturally. Stocking Updates (selected): 381 Channel Catfish, 19 in, 06-13-2026; 476 Channel Catfish, 17.5 in, 05-23-2026; 1890 Rainbow Trout, 8.9 in, 03-03-2026; 1215 Rainbow Trout, 8.5 in, 12-22-2025; 1045 Rainbow trout, 10.6 in, 01-11-2023"
+      "quotedText": "The primary fishery consists of rainbow trout and channel catfish, with catchable sizes of both species being stocked seasonally. Bluegill, redear sunfish, black crappie, and largemouth bass also occur and spawn naturally."
+    },
+    {
+      "key": "s_wikipedia_sunset_park_nv",
+      "url": "https://en.wikipedia.org/wiki/Sunset_Park_(Nevada)",
+      "title": "Sunset Park (Nevada) — Wikipedia",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-15",
+      "quotedText": "Coordinates: 36°3′57″N 115°6′42″W / 36.06583°N 115.11167°W. Sunset Regional Park is located near Harry Reid International Airport in the southeast part of Las Vegas Valley. Located near the Tomiyasu neighborhood in Paradise, the park is bordered by Sunset Road on the north, Eastern Avenue on the west and Warm Springs Road on the south. Sunset Park Pond is around 14 acres (57,000 m2) in surface area and 10 to 12 feet (3.7 m) deep."
     },
     {
       "key": "s_ndow_apply_buy",
@@ -105,7 +125,7 @@
       "authorityLevel": "primary_regulatory",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-02",
-      "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
+      "quotedText": "People of all ages are allowed to head out to the waters to catch a fish but anyone 12 years of age or older is required to have a fishing license in their possession while in the field."
     }
   ],
   "groups": [],
