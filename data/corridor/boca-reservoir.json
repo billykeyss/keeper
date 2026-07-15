@@ -4,11 +4,11 @@
     "name": "Boca Reservoir",
     "waterType": "reservoir",
     "states": ["CA"],
-    "counties": ["Nevada", "Sierra"],
+    "counties": ["Nevada"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.0940,
-    "lat": 39.3890,
+    "gnisId": "219570",
+    "lon": -120.0967,
+    "lat": 39.4059,
     "verifyCurrent": false
   },
   "authorities": [
@@ -36,7 +36,8 @@
     { "key": "fgc_license", "url": "https://www.ca.gov/departments/174/services/29/", "title": "CDFW — Get a Fishing or Hunting License (Fish & Game Code §7145)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who is 16 years of age or older must possess a valid sport fishing license when taking any fish, shell fish, reptile, or amphibian in California according to Fish and Game Code Section 7145." },
     { "key": "fgc_license_statute", "url": "https://codes.findlaw.com/ca/fish-and-game-code/fgc-sect-7145/", "title": "California Fish & Game Code §7145", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
     { "key": "fgc_secondrod", "url": "https://law.justia.com/codes/california/2005/fgc/7145-7155.html", "title": "California Fish & Game Code §7149.4 — Second-Rod Sport Fishing Stamp", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling." },
-    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R2 Nevada Boca Reservoir Lahontan Cutthroat Trout Sub-catchable Put and Grow April-September; R2 Nevada Boca Reservoir Kokanee Salmon Fingerling Put and Grow April-June" }
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R2 Nevada Boca Reservoir Lahontan Cutthroat Trout Sub-catchable Put and Grow April-September; R2 Nevada Boca Reservoir Kokanee Salmon Fingerling Put and Grow April-June" },
+    { "key": "gnis_arcgis_219570", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D219570&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 219570, \"Boca Reservoir\", Reservoir, Nevada County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":219570,\"gaz_name\":\"Boca Reservoir\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"}; geometry (Web Mercator -13369098.217, 4779983.6224) converts to lon -120.096653, lat 39.405917 — corrected from the file's prior recorded coordinate (-120.0940, 39.3890), which was off by ~1.9km." }
   ],
   "groups": [],
   "seasonPeriods": [],

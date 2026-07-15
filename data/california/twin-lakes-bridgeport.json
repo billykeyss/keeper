@@ -14,9 +14,9 @@
       "Lower Twin Lake",
       "Twin Lakes (Bridgeport)"
     ],
-    "gnisId": null,
-    "lon": -119.35,
-    "lat": 38.16,
+    "gnisId": "236698",
+    "lon": -119.33639,
+    "lat": 38.1625,
     "verifyCurrent": false
   },
   "authorities": [
@@ -113,6 +113,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "wikipedia_gnis_236698",
+      "url": "https://en.wikipedia.org/wiki/Twin_Lakes_(Bridgeport,_California)",
+      "title": "Wikipedia — Twin Lakes (Bridgeport, California), infobox citing GNIS Feature ID 236698",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": null
     }
   ],
   "groups": [],

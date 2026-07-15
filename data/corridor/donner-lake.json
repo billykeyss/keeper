@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Nevada"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.2437,
-    "lat": 39.3237,
+    "gnisId": "1654915",
+    "lon": -120.26444,
+    "lat": 39.32278,
     "verifyCurrent": false
   },
   "authorities": [
@@ -37,7 +37,8 @@
     { "key": "fgc_license", "url": "https://www.ca.gov/departments/174/services/29/", "title": "CDFW — Get a Fishing or Hunting License (Fish & Game Code §7145)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who is 16 years of age or older must possess a valid sport fishing license when taking any fish, shell fish, reptile, or amphibian in California according to Fish and Game Code Section 7145." },
     { "key": "fgc_license_statute", "url": "https://codes.findlaw.com/ca/fish-and-game-code/fgc-sect-7145/", "title": "California Fish & Game Code §7145", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
     { "key": "fgc_secondrod", "url": "https://law.justia.com/codes/california/2005/fgc/7145-7155.html", "title": "California Fish & Game Code §7149.4 — Second-Rod Sport Fishing Stamp", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Any person who has a valid second-rod sport fishing stamp affixed to his or her valid sport fishing license may fish with two rods in inland lakes and reservoirs in any sport fishery in which the regulations of the commission provide for the taking of fish by angling." },
-    { "key": "cdfw_booklet", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW, updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Anyone 16 years or older fishing anywhere in Lake Tahoe or Topaz Lake must possess either a California sport fishing license or a Nevada sport fishing license (Nevada also requires a trout stamp)." }
+    { "key": "cdfw_booklet", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW, updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Anyone 16 years or older fishing anywhere in Lake Tahoe or Topaz Lake must possess either a California sport fishing license or a Nevada sport fishing license (Nevada also requires a trout stamp)." },
+    { "key": "wikipedia_donner_lake_coord", "url": "https://en.wikipedia.org/wiki/Donner_Lake", "title": "Wikipedia — Donner Lake, Nevada County, California (infobox coordinates; used because the USGS GNIS ArcGIS gazetteer (nationalmap.gov geonames MapServer/7) has no queryable record for this lake by name or by gaz_id in Nevada County, CA — confirmed by direct gaz_id and bounding-box queries against the service)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "39°19′22″N 120°15′52″W﻿ / ﻿39.32278°N 120.26444°W = 39.32278, -120.26444 — corrected from the file's prior recorded coordinate (-120.2437, 39.3237), which was off by ~1.8km (near the lake's east shore/outlet rather than its center). Wikidata (Q3888447) cross-references GNIS Feature ID 1654915 for this lake; the OSM/Nominatim relation centroid (39.3229, -120.2691) and latitude.to (39.3203, -120.2587) independently corroborate this location." }
   ],
   "groups": [],
   "seasonPeriods": [],

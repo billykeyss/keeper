@@ -6,13 +6,14 @@
     "states": ["CA"],
     "counties": ["Orange"],
     "aliases": ["San Juan Creek main stem"],
-    "gnisId": null,
-    "lon": -117.6628,
-    "lat": 33.5013,
+    "gnisId": "273492",
+    "lon": -117.6837,
+    "lat": 33.4617,
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -23,7 +24,8 @@
     { "key": "ccr_7_40_b_91", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(91) — San Juan Creek main stem (Orange Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(91) San Juan Creek main stem (Orange Co.). Closed to all fishing all year." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "noaa_socal_steelhead", "url": "https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/southern-california-steelhead", "title": "Southern California Steelhead — NOAA Fisheries", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_arcgis_273492", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D273492+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 273492, \"San Juan Creek\", Stream, Orange/Riverside Cos., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":273492,\"gaz_name\":\"San Juan Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Orange\",\"objectid_1\":1266750}; geometry multipoint, first point (Web Mercator -13100486.7251, 3956748.4031) converts to lon -117.683675, lat 33.461699, at the creek's mouth at Doheny State Beach, Dana Point (matches Wikipedia's mouth location ~33.461°N 117.684°W); corrects the file's prior coordinate (-117.6628, 33.5013), which was ~4.8 km upstream/inland and did not match any GNIS-recorded point for this feature." }
   ],
   "groups": [],
   "seasonPeriods": [],

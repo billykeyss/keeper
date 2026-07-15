@@ -1,6 +1,6 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Soulajule Reservoir tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Marin"], "aliases": [], "gnisId": null, "lon": -122.7787, "lat": 38.1481, "verifyCurrent": false },
+  "water": { "name": "Soulajule Reservoir tributaries", "waterType": "stream", "states": ["CA"], "counties": ["Marin"], "aliases": [], "gnisId": "1800716", "lon": -122.7787, "lat": 38.1481, "verifyCurrent": false },
   "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
   "reaches": [],
   "species": [ { "commonName": "rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "native", "presence": "native" } ],
@@ -8,7 +8,8 @@
   "sources": [
     { "key": "ccr_7_50_b_144", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(144) — Soulajule Reservoir tributaries", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(144) Soulajule Reservoir tributaries (Marin Co.). Sat. preceding Memorial Day through Sep. 30. 2 trout. 4 trout in possession." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_wikipedia_1800716", "url": "https://en.wikipedia.org/wiki/Soulajule_Reservoir", "title": "Soulajule Reservoir — Wikipedia (infobox coordinates sourced from USGS GNIS feature ID 1800716, Marin County, CA; used as the anchor coordinate for these tributary mouths, since the reservoir itself is not returned by a direct query of the carto.nationalmap.gov GNIS ArcGIS mirror)", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "Coordinates: 38°08′53″N 122°46′47″W" }
   ],
   "groups": [],
   "seasonPeriods": [],

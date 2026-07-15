@@ -6,13 +6,14 @@
     "states": ["CA"],
     "counties": ["Monterey", "San Luis Obispo"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.8600,
-    "lat": 35.8000,
+    "gnisId": "272621",
+    "lon": -120.8846,
+    "lat": 35.7586,
     "verifyCurrent": false
   },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -21,6 +22,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_272621", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D272621&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 272621, \"Nacimiento River\", Stream, CA, Monterey/San Luis Obispo Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "GNIS has no dam-specific entry for Nacimiento Dam; location corroborated via OpenStreetMap way 348813465 \"Nacimiento Dam\" (35.7586429,-120.8846146) and Wikipedia infobox coordinates for \"Nacimiento Dam\" (35.75861,-120.885), which agree closely, and anchored to the Nacimiento River's GNIS stream record (gaz_id 272621); correcting the file's prior coordinate (-120.86,35.80), which sat ~5.1km from the true dam location on the regulated reach." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "ccr_lii_740", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "Cal. Code Regs. Tit. 14, § 7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Main stem below Nacimiento Dam, downstream to its confluence with the Salinas River. Sat. preceding Memorial Day through Oct. 31." },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }

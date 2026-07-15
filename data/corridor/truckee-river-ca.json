@@ -12,7 +12,7 @@
       "Sierra"
     ],
     "aliases": [],
-    "gnisId": null,
+    "gnisId": "861787",
     "lon": -120.1,
     "lat": 39.35,
     "verifyCurrent": true
@@ -813,7 +813,18 @@
       "authorityLevel": "agency_mirror",
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
-      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam \u2014 Closed to all fishing all year. (B) confluence of Trout Creek downstream to the mouth of Prosser Creek \u2014 All year, artificial flies with barbless hooks only, 0 trout. (C) mouth of Prosser Creek downstream to the Nevada State Line \u2014 two-period season."
+      "quotedText": "(154) Truckee River (Nevada, Placer, and Sierra Cos.). (A) Truckee River for 1,000 feet below the Lake Tahoe outlet dam. Closed to all fishing all year. (B) Truckee River from the confluence of Trout Creek downstream to the mouth of Prosser Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout (C) Truckee River from the mouth of Prosser Creek downstream to the Nevada State Line. Last Saturday in Apr. through Nov. 15. Only artificial lures may be used. 2 trout Nov. 16 through the Friday preceding the last Saturday in Apr. Only artificial lures with barbless hooks may be used. 0 trout"
+    },
+    {
+      "key": "gnis_arcgis_861787",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D861787&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) \u2014 Stream layer record for gaz_id 861787, \"Truckee River\", Stream, spanning Placer/Nevada/Sierra Cos., CA and Washoe/Storey/Nevada Cos., NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":861787,\"gaz_name\":\"Truckee River\",\"gaz_featureclass\":\"Stream\",\"county_name\":[\"Nevada\",\"Storey\",\"Washoe\",\"Placer\",\"Sierra\"]}; GNIS records this as a single multi-state feature (mouth at Pyramid Lake, NV, ~lon -119.448 lat 39.857) with no separate CA-only sub-feature. The traced course's California-end vertex (lon -120.14409, lat 39.16741) matches this file's reach_a (Lake Tahoe outlet) to within ~50m, and the file's water.lon/lat (-120.1, 39.35) falls on that traced course within the file's California reaches (between the Trout Creek and Prosser Creek confluences) \u2014 confirmed as the correct representative point for the California-scoped corridor even though no single GNIS point covers only the CA segment."
     }
   ],
   "groups": [

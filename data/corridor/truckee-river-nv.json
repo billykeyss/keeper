@@ -14,9 +14,9 @@
       "Truckee River \u2014 Reno/Sparks reach",
       "Truckee River (Washoe/Storey County)"
     ],
-    "gnisId": null,
-    "lon": -119.78,
-    "lat": 39.52,
+    "gnisId": "861787",
+    "lon": -119.448,
+    "lat": 39.8574,
     "verifyCurrent": true
   },
   "authorities": [
@@ -218,7 +218,7 @@
       "authorityLevel": "third_party",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
-      "quotedText": "In the stretch from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary: only artificial lures with single barbless hooks may be used."
+      "quotedText": "In that portion from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary, only artificial lures with single barbless hooks may be used."
     },
     {
       "key": "s_2news",
@@ -229,7 +229,18 @@
       "authorityLevel": "third_party",
       "authorityKey": "ndow",
       "retrievedDate": "2026-07-01",
-      "quotedText": "Only artificial lures with single barbless hooks may be used in the Truckee River (Washoe and Storey County) in that portion from E Mustang Road bridge (I-80 Exit 23) to Derby Dam and from 1,000 feet downstream of Derby Dam to the Pyramid Lake Paiute Reservation boundary."
+      "quotedText": null
+    },
+    {
+      "key": "gnis_arcgis_861787",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Truckee+River%27+AND+state_alpha%3D%27NV%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 861787, \"Truckee River\", Stream, Washoe/Storey Co., NV",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "ndow",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":861787,\"gaz_name\":\"Truckee River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"NV\",\"county_name\":\"Washoe\"} — geometry multipoint; first point (Web Mercator -13296887.1419, 4845243.6600) converts to lon -119.447967, lat 39.857410, at the river's mouth where it empties into Pyramid Lake, replacing the file's previous coordinate (-119.78, 39.52), which was off by roughly 47 km."
     }
   ],
   "groups": [],
@@ -378,8 +389,7 @@
       "sourceKeys": {
         "primary": "s_nac_503_504",
         "corroborating": [
-          "s_eregs_west",
-          "s_2news"
+          "s_eregs_west"
         ]
       }
     },

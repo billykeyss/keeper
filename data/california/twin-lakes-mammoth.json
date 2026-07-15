@@ -13,7 +13,7 @@
       "Twin Lakes (Mammoth)",
       "Mammoth Twin Lakes"
     ],
-    "gnisId": null,
+    "gnisId": "268523",
     "lon": -119.00778,
     "lat": 37.61806,
     "verifyCurrent": false
@@ -87,6 +87,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": null
+    },
+    {
+      "key": "gnis_arcgis_268523",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D268523&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 268523, \"Twin Lakes\", Lake, Mono County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":268523,\"gaz_name\":\"Twin Lakes\",\"gaz_featureclass\":\"Lake\",\"fcode\":39004,\"state_alpha\":\"CA\",\"county_name\":\"Mono\"}; geometry (Web Mercator -13247945.4431, 4525592.5890) converts to lon -119.008319, lat 37.617935, matching the file's recorded coordinate (-119.00778, 37.61806) to within ~55m."
     },
     {
       "key": "fgc_7145",

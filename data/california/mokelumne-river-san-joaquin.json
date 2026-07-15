@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["San Joaquin"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -121.2911,
-    "lat": 38.1298,
+    "gnisId": "228902",
+    "lon": -121.5700,
+    "lat": 38.0960,
     "verifyCurrent": false
   },
   "authorities": [
@@ -29,7 +29,8 @@
   "sources": [
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "ccr_lii_740", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "Cal. Code Regs. Tit. 14, § 7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "From Camanche Dam to Elliot Road. Jan. 1 through Mar. 31. 1 hatchery trout or hatchery steelhead" },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_arcgis_228902", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Mokelumne+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 228902, \"Mokelumne River\", Stream, San Joaquin/Sacramento/Calaveras/Amador Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":228902,\"gaz_name\":\"Mokelumne River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"San Joaquin\"} — geometry multipoint; first point (Web Mercator -13533106.7135, 4593001.2817) converts to lon -121.569966, lat 38.096035, at the river's mouth in the Sacramento-San Joaquin Delta near Walnut Grove (confirmed against Wikipedia infobox mouth coordinate 38°05'46\"N 121°34'12\"W), replacing the file's previous coordinate (-121.2911, 38.1298), which was off by roughly 25 km (it had been set to the Elliot Road–Woodbridge Dam reach location instead of the river's canonical GNIS point)." }
   ],
   "groups": [],
   "seasonPeriods": [],

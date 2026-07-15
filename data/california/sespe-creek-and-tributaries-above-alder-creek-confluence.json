@@ -12,9 +12,9 @@
     "aliases": [
       "Upper Sespe Creek"
     ],
-    "gnisId": null,
-    "lon": -118.97,
-    "lat": 34.6,
+    "gnisId": "273633",
+    "lon": -118.9545,
+    "lat": 34.5647,
     "verifyCurrent": false
   },
   "authorities": [
@@ -25,6 +25,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -72,6 +81,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_269472",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D269472&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 269472, \"Alder Creek\", Stream, CA, Ventura Co. (mouth point, marking its confluence with Sespe Creek)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "Alder Creek mouth/confluence point (gaz_id 269472): 34.5647118, -118.9545444, cross-checked against the hometownlocator.com GNIS mirror (\"7 mile long tributary of Sespe Creek\") and against Sespe Creek's own GNIS stream record (gaz_id 273633, whose course passes directly between this point's neighboring vertices). Used to anchor the water record's coordinate; correcting the file's prior coordinate (-118.97, 34.6), which sat ~4.2km from the true confluence location."
     }
   ],
   "groups": [],

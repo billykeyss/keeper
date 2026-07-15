@@ -2,7 +2,8 @@
   "asOf": "2026-07-03",
   "water": { "name": "Philbrook Reservoir", "waterType": "reservoir", "states": ["CA"], "counties": ["Butte"], "aliases": [], "gnisId": "264680", "lon": -121.4689, "lat": 40.0268, "verifyCurrent": false },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -14,7 +15,8 @@
     { "key": "ccr_7_40_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "CCR T14 §7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations (Philbrook Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
     { "key": "ccr_7_50_no_listing", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50 — Alphabetical List of Trout Waters with Special Fishing Regulations (Philbrook Reservoir not listed)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": null },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
-    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "R2 Butte Philbrook Reservoir Rainbow Trout Sub-catchable Put and Grow May-June" }
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-03", "quotedText": "R2 Butte Philbrook Reservoir Rainbow Trout Sub-catchable Put and Grow May-June" },
+    { "key": "gnis_arcgis_264680", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D264680&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 264680, \"Philbrook Reservoir\", Reservoir, Butte County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":264680,\"gaz_name\":\"Philbrook Reservoir\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"CA\",\"county_name\":\"Butte\"}; geometry (Web Mercator -13521829.9485, 4869759.5786) converts to lon -121.468665, lat 40.026264, matching the file's recorded coordinate (-121.4689, 40.0268) to within ~55m." }
   ],
   "groups": [],
   "seasonPeriods": [],

@@ -10,9 +10,9 @@
       "Modoc"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.13,
-    "lat": 41.985,
+    "gnisId": "267515",
+    "lon": -120.1283,
+    "lat": 41.9766,
     "verifyCurrent": false
   },
   "authorities": [
@@ -70,6 +70,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_267515",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D267515&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 267515, \"South Fork Twelvemile Creek\", Stream, Modoc Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":267515,\"gaz_name\":\"South Fork Twelvemile Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Modoc\"}; geometry multipoint, first point (Web Mercator -13372620.9108, 5157469.0669) converts to lon -120.128298, lat 41.976561. GNIS has no separate entry for a plain \"Twelvemile Creek\" in Modoc Co. (the only other CA match for that exact name is an unrelated stream in Del Norte Co.); this South Fork record is the nearest/only GNIS-indexed match for the CCR §7.50(b)(157) \"Twelvemile Creek (Modoc Co.)\" regulation, and sits ~949m from the file's prior coordinate (-120.13, 41.985) — coordinate corrected to this GNIS point."
     }
   ],
   "groups": [],

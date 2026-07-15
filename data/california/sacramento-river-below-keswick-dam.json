@@ -21,9 +21,9 @@
     "aliases": [
       "Sacramento River and mainstem below Keswick Dam"
     ],
-    "gnisId": null,
-    "lon": -122.01,
-    "lat": 39.21,
+    "gnisId": "1654949",
+    "lon": -121.8527,
+    "lat": 38.0633,
     "verifyCurrent": false
   },
   "authorities": [
@@ -126,6 +126,17 @@
     }
   ],
   "sources": [
+    {
+      "key": "gnis_arcgis_streams_layer",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1654949+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 1654949, \"Sacramento River\", Stream, CA, Siskiyou/Shasta/Tehama/Butte/Glenn/Colusa/Sutter/Yolo/Sacramento/Solano/Contra Costa Cos.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":1654949,\"gaz_name\":\"Sacramento River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Siskiyou/Shasta/Tehama/Butte/Glenn/Colusa/Sutter/Yolo/Sacramento/Solano/Contra Costa\"}, mouth point (Web Mercator -13564585.9552, 4588365.878 → 38.06326°N, 121.85275°W), near Collinsville at the Sacramento River's confluence with Suisun Bay. Corrects prior file coordinates (-122.01, 39.21), which were roughly 130 km north of the actual GNIS mouth point (in the vicinity of Colusa/Maxwell) and appear to have been a guessed estimate rather than a GNIS pull."
+    },
     {
       "key": "ccr_7_40_b_80",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",

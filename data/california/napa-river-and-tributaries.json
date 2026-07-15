@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Napa"],
     "aliases": ["Napa River and tributaries"],
-    "gnisId": null,
-    "lon": -122.3600,
-    "lat": 38.3800,
+    "gnisId": "255110",
+    "lon": -122.2439,
+    "lat": 38.0699,
     "verifyCurrent": false
   },
   "authorities": [
@@ -26,7 +26,8 @@
   "sources": [
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated June 1, 2026) — CDFW", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "ccr_lii_740", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "Cal. Code Regs. Tit. 14, § 7.40 — Alphabetical List of Hatchery Trout, Hatchery Steelhead, and Salmon Waters with Special Fishing Regulations", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Main stem above the Oakville Cross Road Bridge near Yountville and all Napa River tributaries. Closed to all fishing all year." },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_arcgis_streams_layer", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D255110+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 255110, \"Napa River\", Stream, CA, Napa/Solano Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":255110,\"gaz_name\":\"Napa River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Napa\"/\"Solano\",\"objectid_1\":1382990,\"isunknowncoords\":2}, mouth point (Web Mercator -13608125.5083, 4589308.6531 → 38.06993°N, 122.24387°W). Corrects prior file coordinates (-122.3600, 38.3800), a mid-river estimate near the Napa/Yountville reach roughly 36 km from the actual GNIS mouth point; corroborated by the Wikipedia infobox mouth coordinate for the Napa River, 38°4′12″N 122°14′38″W (38.07000°N, 122.24389°W), at Carquinez Strait/San Pablo Bay." }
   ],
   "groups": [],
   "seasonPeriods": [],

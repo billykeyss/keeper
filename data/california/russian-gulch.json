@@ -12,9 +12,9 @@
     "aliases": [
       "Russian Gulch Creek"
     ],
-    "gnisId": null,
-    "lon": -123.128,
-    "lat": 38.478,
+    "gnisId": "1723332",
+    "lon": -123.156685,
+    "lat": 38.466863,
     "verifyCurrent": false
   },
   "authorities": [
@@ -61,6 +61,17 @@
     }
   ],
   "sources": [
+    {
+      "key": "gnis_arcgis_1723332",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1723332+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 1723332, \"Russian Gulch Creek\", Stream, Sonoma Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":1723332,\"gaz_name\":\"Russian Gulch Creek\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Sonoma\",\"objectid_1\":2153533}; geometry multipoint, first point (Web Mercator -13709739.4404, 4645589.4929) converts to lon -123.156685, lat 38.466863, near this creek's mouth on the Sonoma Coast north of Jenner (consistent with Sonoma RCD's description of Russian Gulch draining directly to the Pacific ~3 mi north of Jenner); corrects prior file coordinates (-123.128, 38.478), which were off by ~2.8 km from this GNIS-recorded point."
+    },
     {
       "key": "ccr_7_40_b_78",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",

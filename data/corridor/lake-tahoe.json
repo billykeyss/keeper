@@ -4,9 +4,9 @@
     "name": "Lake Tahoe",
     "waterType": "lake",
     "states": ["CA", "NV"],
-    "counties": ["El Dorado", "Placer", "Washoe", "Douglas"],
+    "counties": ["El Dorado", "Placer", "Washoe", "Douglas", "Carson City"],
     "aliases": ["Tahoe Lake"],
-    "gnisId": null,
+    "gnisId": "1654975",
     "lon": -120.0324,
     "lat": 39.0968,
     "verifyCurrent": true
@@ -14,7 +14,8 @@
   "authorities": [
     { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
     { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
-    { "key": "trpa", "name": "Tahoe Regional Planning Agency", "state": null, "type": "state_agency", "roles": ["land_management", "access"] }
+    { "key": "trpa", "name": "Tahoe Regional Planning Agency", "state": null, "type": "state_agency", "roles": ["land_management", "access"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -88,6 +89,12 @@
       "title": "Lake Tahoe – Sand Harbor — Nevada Department of Wildlife", "documentType": "webpage",
       "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-02",
       "quotedText": "Stocking Updates (selected): 4554 Rainbow Trout, 9.8 in, 05-19-2026; 4522 Rainbow Trout, 10.2 in, 05-05-2026; 1452 Cutthroat Trout, 9.7 in, 08-14-2025; 3002 Cutthroat Trout, 10.4 in, 08-14-2025. At times, Lahontan cutthroat trout have been stocked, but they are rare. Cave Rock and Sand Harbor State Parks produce the best catches for small rainbow trout since they are stocked from these locations."
+    },
+    {
+      "key": "gnis_hometownlocator_1654975", "url": "https://california.hometownlocator.com/maps/feature-map,ftc,1,fid,1654975,n,lake%20tahoe.cfm",
+      "title": "Lake Tahoe (GNIS Feature ID 1654975, Placer County, CA) — HomeTownLocator.com (GNIS data mirror; the USGS carto.nationalmap.gov GNIS ArcGIS gazetteer service itself has no queryable record for this gaz_id/name in CA or NV)", "documentType": "webpage",
+      "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "usgs", "retrievedDate": "2026-07-14",
+      "quotedText": "Latitude: 39.0960755; Longitude: -120.0333974; GNIS Feature ID: 1654975 — confirms the file's recorded coordinate (lon -120.0324, lat 39.0968), off by roughly 120 meters, within tolerance."
     }
   ],
   "groups": [

@@ -10,9 +10,9 @@
       "Lassen"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.66,
-    "lat": 40.415,
+    "gnisId": "235834",
+    "lon": -120.257449,
+    "lat": 40.336295,
     "verifyCurrent": false
   },
   "authorities": [
@@ -95,6 +95,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "R1 Lassen Susan River Lower Eagle Lake Trout Catchable Put and Take April-June | R1 Lassen Susan River Upper Eagle Lake Trout Catchable Put and Take May-June"
+    },
+    {
+      "key": "gnis_arcgis_235834",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Susan+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 235834, \"Susan River\", Stream, Lassen Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":235834,\"gaz_name\":\"Susan River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Lassen\"} — geometry multipoint; first point (Web Mercator -13386997.954, 4914932.836) converts to lon -120.257449, lat 40.336295, at the river's mouth on Honey Lake near Litchfield, replacing the file's previous coordinate (-120.66, 40.415), which was off by ~35 km (near Susanville, mid-course, not GNIS-sourced)."
     }
   ],
   "groups": [],

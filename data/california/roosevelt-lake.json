@@ -1,8 +1,9 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Roosevelt Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -119.5420, "lat": 38.2954, "verifyCurrent": false },
+  "water": { "name": "Roosevelt Lake", "waterType": "lake", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": "265561", "lon": -119.5420, "lat": 38.2954, "verifyCurrent": false },
   "authorities": [
-    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -16,7 +17,8 @@
     { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General provisions for the §7.50(b) special-regulation waters list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
-    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R6 Mono Roosevelt Lake Lahontan Cutthroat Trout Fingerling Put and Grow August-September" }
+    { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R6 Mono Roosevelt Lake Lahontan Cutthroat Trout Fingerling Put and Grow August-September" },
+    { "key": "gnis_arcgis_265561", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D265561&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 265561, \"Roosevelt Lake\", Lake, Mono County, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":265561,\"gaz_name\":\"Roosevelt Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39000,\"state_alpha\":\"CA\",\"county_name\":\"Mono\"}; geometry (Web Mercator -13307337.6507, 4621290.5244) converts to lon -119.541848, lat 38.295754, matching the file's recorded coordinate (-119.5420, 38.2954) to within ~40m." }
   ],
   "groups": [],
   "seasonPeriods": [],

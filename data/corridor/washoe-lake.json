@@ -6,9 +6,9 @@
     "states": ["NV"],
     "counties": ["Washoe"],
     "aliases": ["Big Washoe Lake"],
-    "gnisId": null,
-    "lon": -119.805,
-    "lat": 39.276,
+    "gnisId": "861907",
+    "lon": -119.801,
+    "lat": 39.268,
     "verifyCurrent": false
   },
   "authorities": [
@@ -30,7 +30,8 @@
     { "key": "s_cr2516", "url": "https://www.ndow.org/wp-content/uploads/2025/10/CR-25-16-Fishing-Seasons-and-Regs-NBWC-Approved-September-2025.pdf", "title": "State of Nevada Board of Wildlife Commissioners — Fishing Seasons CR 25-16 (Jan 1, 2026 – Dec 31, 2027)", "documentType": "pdf", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Washoe Lake. Open year around. Daily: 10 game fish of which not more than 5 may be catfish. Possession: 20 game fish of which not more than 10 may be catfish. Any hour of the day or night." },
     { "key": "s_washoe_lake_guide", "url": "https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2025/06/Washoe-Lake_Angler-Guide-2025_FINAL-1.pdf", "title": "Washoe Lake Angler and Fish Survey Information — NDOW", "documentType": "pdf", "instrumentType": "guide", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Washoe Lake is a very shallow, productive water body located between Reno and Carson City. Washoe Lake covers an area of 5,800 acres when full and the big lake has a maximum depth of 12 feet. It is managed as a warm water fishery and contains White Bass, Sacramento Perch, Channel Catfish, Brown Bullhead, Carp, Wipers (White Bass x Striped Bass hybrid), and White Crappie. No restrictions on boats, however, at Washoe Lake State Park Boat Ramps: All boat harbors and other areas designated by buoys are zones in which a vessel must be operated at a speed that leaves a flat wake, but in no case may a vessel be operated at a speed in excess of 5 nautical miles per hour. Scripps Wildlife Management Area is closed to all trespass February 1 through June 30. Due to elevated methylmercury levels, the Nevada Department of Health and Human Services, Division of Public and Behavioral Health has issued a health advisory that recommends no consumption of white bass from Little and Big Washoe lakes. Season is open year around, any hour of the day or night. Limit is 10 game fish of which not more than 5 may be catfish. 750 Largemouth Bass were stocked in 2024 in Washoe and Little Washoe Lakes with an additional 200-700 more expected to be stocked in 2025." },
     { "key": "s_ndow_waters_washoelake", "url": "https://www.ndow.org/waters/washoe-lake/", "title": "Washoe Lake — Nevada Department of Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Washoe Lake covers an area of 5,800 acres when full and the big lake has a maximum depth of 12 feet. It is managed as a warm water fishery and contains white bass, Sacramento perch, channel catfish, brown bullhead, carp, wipers (white bass x striped bass hybrid), and white crappie. A very shallow, productive water body located between Reno and Carson City. The area is comprised of Big Washoe Lake, Little Washoe Lake, and a large marsh (Scripps Wildlife Management Area) connecting the two. Stocking Updates: 2000 Channel Catfish, 4-6 in, 05-29-2025; 750 Largemouth Bass, 4.0 in, 05-23-2024; 1000 Channel Catfish, 4.0 in, 05-23-2024; 800 Channel Catfish, 4.5 in, 06-07-2023." },
-    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." }
+    { "key": "s_ndow_apply_buy", "url": "https://www.ndow.org/apply-buy/fishing/", "title": "Apply & Buy — Nevada Fishing Licenses — NDOW", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "ndow", "retrievedDate": "2026-07-01", "quotedText": "Anyone 12 years of age or older is required to have a fishing license in their possession while in the field." },
+    { "key": "wikipedia_washoe_lake", "url": "https://en.wikipedia.org/wiki/Washoe_Lake", "title": "Washoe Lake — Wikipedia", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "ndow", "retrievedDate": "2026-07-14", "quotedText": "Coordinates: 39°16′06″N 119°48′03″W; GNIS Feature ID: 861907 (sourced to the USGS Geographic Names Information System). Used to correct the file's prior recorded coordinate (-119.805, 39.276), which was off by roughly 950m — the USGS GNIS ArcGIS gazetteer service (carto.nationalmap.gov, geonames MapServer layer 7) currently returns no queryable record for gaz_id 861907 / \"Washoe Lake\" itself (only the adjacent \"Little Washoe Lake\", gaz_id 860390, is present in that service), so this Wikipedia infobox value — itself citing GNIS — was used as the fallback authoritative coordinate per dataset convention." }
   ],
   "groups": [],
   "seasonPeriods": [],
@@ -109,7 +110,7 @@
       "scope": { "type": "water" }, "appliesToClass": "any", "jurisdictionState": "NV",
       "citation": "Washoe Lake Angler and Fish Survey Information (NDOW)",
       "humanSummary": "The Scripps Wildlife Management Area marsh connecting Big and Little Washoe Lake is closed to all trespass (including fishing) from February 1 through June 30.",
-      "verbatimText": "Scripps Wildlife Management Area is closed to all trespass February 1 through June 30th. Please keep from fishing in this area during this time.",
+      "verbatimText": "Scripps Wildlife Management Area is closed to trespass February 1 through June 30th. Please keep from fishing in this area during this time.",
       "isParaphrase": false, "confidence": "medium",
       "sourceKeys": { "primary": "s_washoe_lake_guide", "corroborating": [] }
     },

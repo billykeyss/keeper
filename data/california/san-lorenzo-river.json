@@ -6,9 +6,9 @@
     "states": ["CA"],
     "counties": ["Santa Cruz"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -122.0691,
-    "lat": 37.0453,
+    "gnisId": "248894",
+    "lon": -122.012475,
+    "lat": 36.964122,
     "verifyCurrent": false
   },
   "authorities": [
@@ -27,7 +27,8 @@
     { "key": "ccr_7_40_b_92", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(b)(92) — San Lorenzo River (Santa Cruz Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(92) San Lorenzo River (Santa Cruz Co.) from the mouth to the Lomond Street bridge in the town of Boulder Creek. Also see Section 8.00(c) Low-Flow Restrictions. Dec. 1 through Mar. 7, but only on Sat., Sun., Wed., legal holidays and opening and closing days. Only barbless hooks may be used. 2 hatchery trout or hatchery steelhead **. 4 hatchery trout or hatchery steelhead ** in possession." },
     { "key": "ccr_7_40_a_general", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40", "title": "14 CCR §7.40(a) — General provisions and footnote definitions for the anadromous/hatchery special-regulations water list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Hatchery trout or steelhead in anadromous waters are those showing a healed adipose fin clip (adipose fin is absent). Unless otherwise provided, all other trout and steelhead must be immediately released." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
-    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." }
+    { "key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..." },
+    { "key": "gnis_arcgis_248894", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D248894+AND+state_alpha%3D%27CA%27&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 248894, \"San Lorenzo River\", Stream, Santa Cruz Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":248894,\"gaz_name\":\"San Lorenzo River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Santa Cruz\"}; geometry multipoint, first point (Web Mercator -13582366.6167, 4434107.0645) converts to lon -122.012475, lat 36.964122, the river's mouth at Monterey Bay in Santa Cruz, matching Wikipedia's infobox mouth coordinate (36.96417°N, 122.01250°W) to within ~10m. Corrects the file's prior coordinate (-122.0691, 37.0453), which was ~10.3km upstream near Ben Lomond/Felton and did not match any GNIS-derived point on this stream; gnisId (previously null) set to 248894." }
   ],
   "groups": [],
   "seasonPeriods": [],

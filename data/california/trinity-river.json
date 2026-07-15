@@ -11,9 +11,9 @@
       "Humboldt"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.2,
-    "lat": 40.85,
+    "gnisId": "236551",
+    "lon": -123.7087,
+    "lat": 41.1849,
     "verifyCurrent": true
   },
   "authorities": [
@@ -24,6 +24,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -169,6 +178,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_236551",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Trinity+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 236551, \"Trinity River\", Stream, Trinity/Humboldt Cos., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-13",
+      "quotedText": "{\"gaz_id\":236551,\"gaz_name\":\"Trinity River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Trinity\"/\"Humboldt\"} — geometry multipoint; first point (Web Mercator -13771187.9167, 5039645.9252) converts to lon -123.708686, lat 41.184854, at the river's mouth (confluence with the Klamath River at Weitchpec, CA), replacing the file's previous coordinate (-123.2, 40.85), which was off by roughly 56 km and appears to have been a guessed estimate rather than a GNIS pull. Corroborated by the Wikipedia infobox mouth coordinate for the Trinity River, 41°11′5″N 123°42′31″W (41.18472°N, 123.70861°W)."
     }
   ],
   "groups": [],

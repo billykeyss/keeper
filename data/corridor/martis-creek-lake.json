@@ -6,14 +6,15 @@
     "states": ["CA"],
     "counties": ["Placer", "Nevada"],
     "aliases": ["Martis Lake", "Martis Creek Reservoir"],
-    "gnisId": null,
-    "lon": -120.1140,
-    "lat": 39.2970,
+    "gnisId": "1655186",
+    "lon": -120.1141,
+    "lat": 39.3202,
     "verifyCurrent": true
   },
   "authorities": [
     {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]},
-    {"key": "usace", "name": "U.S. Army Corps of Engineers", "state": null, "type": "federal", "roles": ["land_management"]}
+    {"key": "usace", "name": "U.S. Army Corps of Engineers", "state": null, "type": "federal", "roles": ["land_management"]},
+    {"key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"]}
   ],
   "reaches": [],
   "species": [],
@@ -25,7 +26,8 @@
     {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(87) Martis Creek from the Martis Lake dam downstream to the confluence with the Truckee River (Nevada Co.). All year. Only artificial lures with barbless hooks may be used. 0 trout. (88) Martis Lake tributaries (Nevada and Placer cos.). All year. Only artificial lures with barbless hooks may be used. 0 trout. [No separate 'Martis Lake' (the reservoir itself) entry appears in the current §7.50(b) list.]"},
     {"key": "cdfw_rulemaking_record", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=175721", "title": "CDFW Sierra District trout regulation simplification — rulemaking analysis (Martis Lake)", "documentType": "pdf", "instrumentType": "admin_code", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(112) Martis Lake and tributaries (Nevada and Placer Cos.) (A) Martis Lake. Last Saturday in Apr. through Nov. 15. Only artificial lures with barbless hooks may be used. 0 [trout] -> Move to statewide reg / Move to statewide reg for lakes and reservoirs SL. (B) Martis Lake tributaries. Closed to all fishing all year -> All year."},
     {"key": "usace_page", "url": "https://www.spk.usace.army.mil/Missions/Recreation/Martis-Creek-Lake", "title": "Martis Creek Lake | U.S. Army Corps of Engineers", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "usace", "retrievedDate": "2026-07-01", "quotedText": "Martis Creek Lake was the first \"catch and release trophy trout\" lake established in California. Varieties include Rainbow, Brown and Lahonton Cutthroat trout. Anglers must use flies, barbless hooks and artificial lures only. Live bait is not permitted. No fishing is allowed in the streams above the lake."},
-    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."},
+    {"key": "gnis_arcgis_1655186", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D1655186&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 1655186, \"Martis Creek Lake\", Reservoir, Nevada/Placer Counties, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":1655186,\"gaz_name\":\"Martis Creek Lake\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"/\"Placer\"}; geometry (Web Mercator -13371036.1314, 4767642.0772) converts to lon -120.114061, lat 39.320202 — corrected from the file's prior recorded coordinate (-120.1140, 39.2970), which was off by ~2.58km in latitude."}
   ],
   "groups": [],
   "seasonPeriods": [],

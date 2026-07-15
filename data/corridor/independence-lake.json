@@ -6,14 +6,15 @@
     "states": ["CA"],
     "counties": ["Nevada", "Sierra"],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.2930,
-    "lat": 39.4360,
+    "gnisId": "261699",
+    "lon": -120.309075,
+    "lat": 39.442318,
     "verifyCurrent": false
   },
   "authorities": [
     {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]},
-    {"key": "tnc", "name": "The Nature Conservancy", "state": null, "type": "land_trust", "roles": ["access", "land_management"]}
+    {"key": "tnc", "name": "The Nature Conservancy", "state": null, "type": "land_trust", "roles": ["access", "land_management"]},
+    {"key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"]}
   ],
   "reaches": [],
   "species": [
@@ -28,7 +29,8 @@
     {"key": "ccr_5_41", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.41", "title": "CCR T14 §5.41 — Landlocked Salmon", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) Open season: All year. (b) Daily bag limit: Five. (c) Possession limit: Ten. (d) Size limit: None."},
     {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(63) Independence Lake and tributaries (Nevada and Sierra cos.). NOTE: ALL LAHONTAN CUTTHROAT TROUT TAKEN SHALL BE IMMEDIATELY RETURNED TO THE WATER. (A) ...within 300 feet of the mouths of all tributaries. Closed to all fishing all year. (B) Independence Lake except... Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."},
     {"key": "tnc_page", "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/independence-lake", "title": "Independence Lake Preserve | The Nature Conservancy", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tnc", "retrievedDate": "2026-07-01", "quotedText": "Independence Lake is open to fishing the Saturday preceding Memorial Day through September 30. Lahontan Cutthroat Trout (LCT) are protected under state and federal law... All LCT taken shall be immediately returned to the water. Only artificial lures with barbless hooks may be used, and no scented or live bait allowed. All creeks flowing into Independence Lake are closed to fishing. No fishing allowed within 300 feet of where creeks enter the lake. Fishing limit: 0 trout. Five kokanee salmon per day with a total of 10 in possession, no size limit."},
-    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."},
+    {"key": "gnis_arcgis_261699", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D261699&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 261699, \"Independence Lake\", Reservoir, Nevada/Sierra Counties, CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":261699,\"gaz_name\":\"Independence Lake\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"CA\",\"county_name\":\"Nevada\"}; geometry (Web Mercator -13392744.9546, 4785229.3214) converts to lon -120.309075, lat 39.442318 — corrected from the file's prior recorded coordinate (-120.2930, 39.4360), which was off by ~1.55km."}
   ],
   "groups": [
     {"key": "independence_lake_63", "authorityKey": "cdfw", "citation": "7.50(b)(63)", "humanSummary": "Independence Lake and tributaries: Lahontan cutthroat trout conservation water. Tributaries and the 300-ft near-shore buffer are closed all year; the open water is catch-and-release trout (artificial lures, barbless hooks) Sat. before Memorial Day–Sep 30; kokanee harvest is allowed separately under the statewide landlocked-salmon rule.", "verbatimText": "Independence Lake and tributaries (Nevada and Sierra cos.). NOTE: ALL LAHONTAN CUTTHROAT TROUT TAKEN SHALL BE IMMEDIATELY RETURNED TO THE WATER. (A) Independence Lake tributaries and Independence Lake within 300 feet of the mouths of all tributaries. Closed to all fishing all year. (B) Independence Lake except Independence Lake within 300 feet of the mouths of all tributaries. Sat. preceding Memorial Day through Sep. 30. Only artificial lures with barbless hooks may be used. 0 trout."}

@@ -13,9 +13,9 @@
     "aliases": [
       "Upper Sacramento River"
     ],
-    "gnisId": null,
-    "lon": -122.298,
-    "lat": 41.18,
+    "gnisId": "1654949",
+    "lon": -122.4458,
+    "lat": 40.6118,
     "verifyCurrent": false
   },
   "authorities": [
@@ -26,6 +26,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -116,6 +125,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_1654949",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1654949&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 1654949, \"Sacramento River\", Stream, CA, Siskiyou Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "GNIS has no dam-specific entry for Keswick Dam; location corroborated via OSM/Nominatim's \"Keswick Dam\" node (40.6117647,-122.4457785), cross-checked against its bounding box (40.6114–40.6122 lat, -122.4474–-122.4441 lon), and anchored to the Sacramento River's GNIS stream record (gaz_id 1654949); correcting the file's prior coordinate (-122.298,41.18), which sat ~64km northeast of the true dam location, within the Dunsmuir/Sweetbriar portion of the regulated reach rather than at the reach's Keswick Dam boundary."
     }
   ],
   "groups": [

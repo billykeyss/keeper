@@ -1,9 +1,10 @@
 {
   "asOf": "2026-07-02",
-  "water": { "name": "Webber Lake", "waterType": "lake", "states": ["CA"], "counties": ["Sierra"], "aliases": [], "gnisId": null, "lon": -120.4132, "lat": 39.4854, "verifyCurrent": false },
+  "water": { "name": "Webber Lake", "waterType": "lake", "states": ["CA"], "counties": ["Sierra"], "aliases": [], "gnisId": "237380", "lon": -120.4132, "lat": 39.4854, "verifyCurrent": false },
   "authorities": [
     { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
-    { "key": "tdlt", "name": "Truckee Donner Land Trust", "state": "CA", "type": "land_trust", "roles": ["access", "land_management"] }
+    { "key": "tdlt", "name": "Truckee Donner Land Trust", "state": "CA", "type": "land_trust", "roles": ["access", "land_management"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [
@@ -19,7 +20,8 @@
     { "key": "tdlt_webber_lake_page", "url": "https://www.truckeedonnerlandtrust.org/webber-lake-lacey-meadows", "title": "Webber Lake & Lacey Meadows — Truckee Donner Land Trust", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tdlt", "retrievedDate": "2026-07-02", "quotedText": "Webber Lake Lacey Meadows are open to the public from dawn to dusk for day use. Camping, fires, and motorized vehicles are prohibited on the property except in the campground." },
     { "key": "cdfw_provisional_stocking_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=74004&inline=", "title": "2026 Provisional Stocking Document for Trout and Inland Salmon — CDFW", "documentType": "pdf", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "R2 Sierra Webber Lake Lahontan Cutthroat Trout Sub-catchable Put and Grow June-September; R2 Sierra Webber Lake Lahontan Cutthroat Trout Super-catchable Put and Take June-September; R2 Sierra Webber Lake Lahontan Cutthroat Trout Fingerling Put and Grow June-September" },
     { "key": "cdfw_lct_species_page", "url": "https://wildlife.ca.gov/Conservation/Fishes/Lahontan-Cutthroat-Trout", "title": "Lahontan Cutthroat Trout | California Department of Fish and Wildlife", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "In California, the historic range of Lahontan cutthroat trout includes Lake Tahoe and the Carson, Truckee, and Walker river basins." },
-    { "key": "tahoe_quarterly_webber", "url": "https://tahoequarterly.com/features/webber-lake-opens-gates", "title": "Everything You Need To Know About Webber Lake — Tahoe Quarterly", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tdlt", "retrievedDate": "2026-07-02", "quotedText": "Its waters still teem with trophy trout—now supplemented by recently planted Lahontan cutthroats." }
+    { "key": "tahoe_quarterly_webber", "url": "https://tahoequarterly.com/features/webber-lake-opens-gates", "title": "Everything You Need To Know About Webber Lake — Tahoe Quarterly", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "tdlt", "retrievedDate": "2026-07-02", "quotedText": "Its waters still teem with trophy trout—now supplemented by recently planted Lahontan cutthroats." },
+    { "key": "gnis_arcgis_237380", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D237380&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Lake layer record for gaz_id 237380, \"Webber Lake\", Lake, Sierra Co., CA", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":237380,\"gaz_name\":\"Webber Lake\",\"gaz_featureclass\":\"Lake\",\"fcode\":39009,\"state_alpha\":\"CA\",\"county_name\":\"Sierra\"}; geometry (Web Mercator -13404334.2325, 4791445.5434) converts to lon -120.413183, lat 39.485429, ~10m from the file's recorded coordinate (-120.4132, 39.4854) — within tolerance, coordinate confirmed." }
   ],
   "groups": [],
   "seasonPeriods": [],

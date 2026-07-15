@@ -13,9 +13,9 @@
       "Klamath River Salmon River",
       "Salmon River (Siskiyou Co.)"
     ],
-    "gnisId": null,
-    "lon": -123.1934,
-    "lat": 41.2394,
+    "gnisId": "232287",
+    "lon": -123.4934,
+    "lat": 41.3776,
     "verifyCurrent": true
   },
   "authorities": [
@@ -101,6 +101,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_232287",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Salmon+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 232287, \"Salmon River\", Stream, Siskiyou/Humboldt Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":232287,\"gaz_name\":\"Salmon River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Siskiyou\"} — geometry multipoint; first point (Web Mercator -13747223.0788, 5068202.7670) converts to lon -123.4934, lat 41.3776, at the river's mouth (confluence with the Klamath River near Somes Bar), replacing the file's previous coordinate (-123.1934, 41.2394), which was off by ~29.4 km."
     }
   ],
   "groups": [],

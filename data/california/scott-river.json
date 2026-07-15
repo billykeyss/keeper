@@ -10,9 +10,9 @@
       "Siskiyou"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -122.93,
-    "lat": 41.68,
+    "gnisId": "1654942",
+    "lon": -123.03505,
+    "lat": 41.77903,
     "verifyCurrent": true
   },
   "authorities": [
@@ -23,6 +23,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -66,6 +75,17 @@
     }
   ],
   "sources": [
+    {
+      "key": "gnis_arcgis_1654942",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D1654942&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 1654942, \"Scott River\", Stream, CA, Siskiyou Co.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":1654942,\"gaz_name\":\"Scott River\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\",\"county_name\":\"Siskiyou\"} — geometry multipoint; first point converts to lon -123.03505, lat 41.77903, near the river's mouth at the confluence with the Klamath River, correcting the file's prior coordinate (-122.93, 41.68) which sat ~14km southeast along the mainstem and did not match any GNIS-derived point."
+    },
     {
       "key": "ccr_7_40_b_50",
       "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.40",

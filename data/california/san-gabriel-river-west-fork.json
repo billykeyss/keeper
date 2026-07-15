@@ -12,9 +12,9 @@
     "aliases": [
       "West Fork San Gabriel River"
     ],
-    "gnisId": null,
-    "lon": -117.92,
-    "lat": 34.24,
+    "gnisId": "274442",
+    "lon": -117.856740,
+    "lat": 34.239731,
     "verifyCurrent": false
   },
   "authorities": [
@@ -96,6 +96,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_274442",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D274442+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 274442, \"West Fork San Gabriel River\", Stream, Los Angeles Co., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":274442,\"gaz_name\":\"West Fork San Gabriel River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Los Angeles\",\"objectid_1\":1480601}; geometry multipoint, first point (Web Mercator -13119752.2764, 4061037.6859) converts to lon -117.856740, lat 34.239731, at the mouth where the West Fork joins the main San Gabriel River near the Highway 39/East Fork Road junction; corrects prior file coordinates (-117.92, 34.24), which were off by roughly 5.8 km from this GNIS-recorded point."
     }
   ],
   "groups": [],

@@ -12,7 +12,7 @@
     "aliases": [
       "Upper Otay Reservoir"
     ],
-    "gnisId": null,
+    "gnisId": "250852",
     "lon": -116.935,
     "lat": 32.652,
     "verifyCurrent": false
@@ -118,6 +118,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-01",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_250852",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D250852&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Reservoir layer record for gaz_id 250852, \"Upper Otay Lake\", Reservoir, San Diego County, CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":250852,\"gaz_name\":\"Upper Otay Lake\",\"gaz_featureclass\":\"Reservoir\",\"state_alpha\":\"CA\",\"county_name\":\"San Diego\"}; geometry (Web Mercator -13017086.2567, 3849130.9139) converts to lon -116.934475, lat 32.651452, matching the file's recorded coordinate (-116.935, 32.652) to within ~90m."
     }
   ],
   "groups": [],

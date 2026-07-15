@@ -11,9 +11,9 @@
       "Mendocino"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.0044,
-    "lat": 38.5024,
+    "gnisId": "267200",
+    "lon": -123.1295,
+    "lat": 38.4505,
     "verifyCurrent": false
   },
   "authorities": [
@@ -176,6 +176,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_267200",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_name%3D%27Russian+River%27+AND+state_alpha%3D%27CA%27&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 267200, \"Russian River\", Stream, Mendocino/Sonoma Cos., CA",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":267200,\"gaz_name\":\"Russian River\",\"gaz_featureclass\":\"Stream\",\"fcode\":46000,\"state_alpha\":\"CA\",\"county_name\":\"Mendocino/Sonoma\"} — geometry multipoint; first point (Web Mercator -13706708.9671, 4643259.7016) converts to lon -123.129462, lat 38.450475, at the river's mouth near Jenner, replacing the file's previous coordinate (-123.0044, 38.5024), which was off by ~12.3 km."
     }
   ],
   "groups": [

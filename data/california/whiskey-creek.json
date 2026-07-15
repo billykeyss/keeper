@@ -1,7 +1,7 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Whiskey Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -118.7600, "lat": 37.5900, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "water": { "name": "Whiskey Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": ["Whisky Creek"], "gnisId": "251455", "lon": -118.7335, "lat": 37.5769, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }, { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] } ],
   "reaches": [],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "stocked", "presence": "stocked" },
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_251455", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D251455&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 251455, \"Whisky Creek\", Stream, CA, Mono Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":251455,\"gaz_name\":\"Whisky Creek\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\",\"county_name\":\"Mono\"} — geometry multipoint; first point converts to lon -118.73347, lat 37.57688 near the creek's mouth at Crowley Lake (onWater lists this reach as \"Whisky Creek\" near the Crowley Lake Fish Camp Tackle Shop, consistent with the CCR's \"downstream from Crowley Lake Drive\" description); correcting the file's prior guessed coordinate (-118.7600, 37.5900), which sat ~2.8km away with no traceable source." },
     { "key": "ccr_7_50_b_165", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(165) — Whiskey Creek (Mono Co.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(165) Whiskey Creek (Mono Co.) downstream from Crowley Lake Drive (old Highway 395). Sat. preceding Memorial Day through Sep. 30. 5 trout" },
     { "key": "ccr_7_50_a", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(a) — General provisions for the §7.50(b) special-regulation waters list", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Unless otherwise provided, it is unlawful to possess more than one daily bag limit." },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (updated June 1, 2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },

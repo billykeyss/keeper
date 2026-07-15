@@ -11,9 +11,9 @@
       "Nevada"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -120.1033,
-    "lat": 39.4442,
+    "gnisId": "266929",
+    "lon": -120.0946,
+    "lat": 39.3846,
     "verifyCurrent": false
   },
   "authorities": [
@@ -277,6 +277,17 @@
     }
   ],
   "sources": [
+    {
+      "key": "gnis_266929_wikidata",
+      "url": "https://www.wikidata.org/wiki/Q6652360",
+      "title": "Little Truckee River — Wikidata (GNIS ID 266929)",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "third_party",
+      "authorityKey": "cdfw",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "GNIS ID (P590): 266929; coordinate location (P625): 39.384722, -120.094722 (Nevada Co., CA, at the river's mouth into Boca Reservoir near the town of Boca) — corrected from the file's prior recorded coordinate (-120.1033, 39.4442), which was off by roughly 6.6km. Independently corroborated by TopoZone's listing for Little Truckee River (39.3846295, -120.0946422) and consistent with the file's own reach polyline endpoint (-120.09441, 39.390494) near Boca. Note: the USGS GNIS ArcGIS gazetteer mirror (carto.nationalmap.gov, geonames MapServer) has a record for gaz_id 266929 in its 'Other Hydrographic Features' layer with a mismatched/corrupted geometry (converts to roughly -120.349, 39.492, misclassified featureclass 'Lake') and no record at all in its 'Streams (Mouth)' layer — that mirror record was not used as authoritative given the conflict with two independent corroborating sources."
+    },
     {
       "key": "ccr_7_50_b_80",
       "url": "https://govt.westlaw.com/calregs/Document/I13E5B590A72311EFA8E7D644C32D1717?viewType=FullText&originationContext=documenttoc&transitionType=StatuteNavigator&contextData=%28sc.Default%29",

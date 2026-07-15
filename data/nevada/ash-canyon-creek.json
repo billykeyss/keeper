@@ -1,9 +1,10 @@
 {
   "asOf": "2026-07-04",
-  "water": { "name": "Ash Canyon Creek", "waterType": "creek", "states": ["NV"], "counties": ["Carson City"], "aliases": [], "gnisId": null, "lon": -119.84876, "lat": 39.1678, "verifyCurrent": true },
+  "water": { "name": "Ash Canyon Creek", "waterType": "creek", "states": ["NV"], "counties": ["Carson City"], "aliases": [], "gnisId": "858751", "lon": -119.778, "lat": 39.1682, "verifyCurrent": true },
   "authorities": [
     { "key": "ndow", "name": "Nevada Department of Wildlife", "state": "NV", "type": "state_agency", "roles": ["take_rules"] },
-    { "key": "osm", "name": "OpenStreetMap", "state": null, "type": "ngo", "roles": ["none"] }
+    { "key": "osm", "name": "OpenStreetMap", "state": null, "type": "ngo", "roles": ["none"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
   ],
   "reaches": [],
   "species": [],

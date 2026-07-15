@@ -7,12 +7,13 @@
     "counties": ["Sierra"],
     "aliases": [],
     "gnisId": null,
-    "lon": -120.1170,
-    "lat": 39.4740,
+    "lon": -120.1041,
+    "lat": 39.4704,
     "verifyCurrent": true
   },
   "authorities": [
-    {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]}
+    {"key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"]},
+    {"key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"]}
   ],
   "reaches": [],
   "species": [],
@@ -23,9 +24,10 @@
   "sources": [
     {"key": "ccr_5_85", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.85", "title": "CCR T14 §5.85 — Trout (General Statewide Regulations)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit."},
     {"key": "ccr_5_41", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-5.41", "title": "CCR T14 §5.41 — Landlocked Salmon", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(a) Open season: All year. (b) Daily bag limit: Five. (c) Possession limit: Ten. (d) Size limit: None. Exceptions: Bucks Lake (Plumas Co.), Pardee Lake (Amador Co.), New Bullards Bar Reservoir (Yuba Co.), and Trinity Lake (Trinity Co.), which shall be subject to the following limits: (a) Daily bag limit: Ten. (b) Possession limit: Twenty."},
-    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Trout (T14 CCR §5.85) (a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds... are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit. Stampede Reservoir does not appear in the Alphabetical List of Trout Waters with Special Fishing Regulations (§7.50)."},
+    {"key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Trout (T14 CCR §5.85) (a) General Statewide Regulations: (1) All inland lakes, reservoirs, and ponds, including those on private lands, are open to fishing all year with a five-trout daily bag limit and 10 trout possession limit."},
     {"key": "wildlife_ca_kokanee", "url": "https://wildlife.ca.gov/Fishing/Inland/Kokanee", "title": "CDFW — Fishing for Kokanee", "documentType": "webpage", "instrumentType": "guide", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "5.41. LANDLOCKED SALMON (a) Open season: All year (b) Daily bag limit: Five (c) Possession limit: Ten (d) Size limit: None. Exceptions: Bucks Lake (Plumas Co.), Pardee Lake (Amador Co.), New Bullards Bar Reservoir (Yuba Co.), and Trinity Lake (Trinity Co.), which shall be subject to the following limits: (a) Daily bag limit: Ten (b) Possession limit: Twenty."},
-    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."}
+    {"key": "fgc_7145", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7145.&lawCode=FGC", "title": "California Fish and Game Code §7145 — Sport Fishing License Requirement", "documentType": "webpage", "instrumentType": "statute", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."},
+    {"key": "usgs_nwis_10344300", "url": "https://waterservices.usgs.gov/nwis/site/?sites=10344300&format=rdb", "title": "USGS NWIS Site Service — Site 10344300, \"STAMPEDE RES NR BOCA CA\" (Lake site, Stampede Reservoir)", "documentType": "webpage", "instrumentType": "gis", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "USGS\t10344300\tSTAMPEDE RES NR BOCA CA\tLK\t39.4704352\t-120.1040627\tS\tNAD83\t4.09\t.16\tNAVD88\t16050102"}
   ],
   "groups": [],
   "seasonPeriods": [],

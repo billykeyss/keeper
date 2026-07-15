@@ -1,7 +1,10 @@
 {
   "asOf": "2026-07-02",
-  "water": { "name": "Mill Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": null, "lon": -119.4530, "lat": 38.3190, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "water": { "name": "Mill Creek", "waterType": "creek", "states": ["CA"], "counties": ["Mono"], "aliases": [], "gnisId": "263600", "lon": -119.5007, "lat": 38.4010, "verifyCurrent": false },
+  "authorities": [
+    { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] },
+    { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] }
+  ],
   "reaches": [],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "stocked" },
@@ -9,6 +12,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_263600", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D263600&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 263600, \"Mill Creek\", Stream, CA, Mono Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":263600,\"gaz_name\":\"Mill Creek\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\",\"county_name\":\"Mono\"} — multipoint geometry spanning source (-119.4735, 38.5169) to mouth; mouth point converts to lon -119.5007, lat 38.4010 at the confluence with the West Walker River, close by GNIS's Lost Cannon Creek mouth point (-119.5316, 38.4049) confirming this is the correct tributary named in 14 CCR §7.50(b)(95); correcting the file's prior coordinate (-119.4530, 38.3190), which sat ~10km south with no GNIS backing." },
     { "key": "ccr_7_50_b_95", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(95) — Mill Creek (Mono Co. tributary to West Walker River)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": "(95) Mill Creek (Mono Co. tributary to West Walker River) and tributaries upstream from confluence with Lost Cannon Creek. All year. Only artificial flies with barbless hooks may be used. 0 trout" },
     { "key": "cdfw_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (Updated 06/01/2026)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },
     { "key": "monocounty_west_walker", "url": "https://www.monocounty.org/places-to-go/lakes-rivers-creeks/west-walker-river/", "title": "West Walker River | Fishing | Visit Mono County", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-02", "quotedText": null },

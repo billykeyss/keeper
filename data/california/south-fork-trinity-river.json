@@ -7,12 +7,13 @@
       "CA"
     ],
     "counties": [
-      "Trinity"
+      "Trinity",
+      "Humboldt"
     ],
     "aliases": [],
-    "gnisId": null,
-    "lon": -123.45,
-    "lat": 40.62,
+    "gnisId": "249724",
+    "lon": -123.6023,
+    "lat": 40.8899,
     "verifyCurrent": true
   },
   "authorities": [
@@ -23,6 +24,15 @@
       "type": "state_agency",
       "roles": [
         "take_rules"
+      ]
+    },
+    {
+      "key": "usgs",
+      "name": "U.S. Geological Survey (Geographic Names Information System)",
+      "state": null,
+      "type": "federal",
+      "roles": [
+        "none"
       ]
     }
   ],
@@ -115,6 +125,17 @@
       "authorityKey": "cdfw",
       "retrievedDate": "2026-07-02",
       "quotedText": "Except as otherwise provided in this article, every person 16 years of age or older who takes any fish, reptile, or amphibian for any purpose other than profit shall first obtain a valid license for that purpose..."
+    },
+    {
+      "key": "gnis_arcgis_249724",
+      "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/6/query?where=gaz_id%3D249724&outFields=*&f=json",
+      "title": "USGS GNIS (The National Map Gazetteer) — Streams layer record for gaz_id 249724, \"South Fork Trinity River\", Stream, CA, Trinity/Humboldt Cos.",
+      "documentType": "webpage",
+      "instrumentType": "webpage",
+      "authorityLevel": "primary_regulatory",
+      "authorityKey": "usgs",
+      "retrievedDate": "2026-07-14",
+      "quotedText": "{\"gaz_id\":249724,\"gaz_name\":\"South Fork Trinity River\",\"gaz_featureclass\":\"Stream\",\"state_alpha\":\"CA\"} — geometry multipoint; first point converts to lon -123.6023, lat 40.8899, near the river's mouth at its confluence with the Trinity River near Salyer, correcting the file's prior coordinate (-123.45, 40.62) which sat roughly 25–30km southeast, well upstream near the Hyampom Valley, and did not match any GNIS-derived point. (Wikipedia's infobox mouth coordinate of 122°36'08\"W appears to be a transposition typo for 123°36'08\"W — real-world Salyer, CA sits at approximately -123.58, 40.89, consistent with this GNIS point, not with -122.6.)"
     }
   ],
   "groups": [],

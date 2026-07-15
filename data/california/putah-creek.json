@@ -1,7 +1,7 @@
 {
   "asOf": "2026-07-01",
-  "water": { "name": "Putah Creek", "waterType": "creek", "states": ["CA"], "counties": ["Solano", "Yolo"], "aliases": ["Putah Creek Interdam Reach", "Upper Putah Creek"], "gnisId": null, "lon": -122.0894, "lat": 38.5018, "verifyCurrent": false },
-  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] } ],
+  "water": { "name": "Putah Creek", "waterType": "creek", "states": ["CA"], "counties": ["Solano", "Yolo"], "aliases": ["Putah Creek Interdam Reach", "Upper Putah Creek"], "gnisId": "234522", "lon": -121.7602, "lat": 38.5301, "verifyCurrent": false },
+  "authorities": [ { "key": "cdfw", "name": "California Department of Fish and Wildlife", "state": "CA", "type": "state_agency", "roles": ["take_rules"] }, { "key": "usgs", "name": "U.S. Geological Survey (Geographic Names Information System)", "state": null, "type": "federal", "roles": ["none"] } ],
   "reaches": [],
   "species": [
     { "commonName": "Rainbow trout", "scientificName": "Oncorhynchus mykiss", "category": "trout", "nativeStatus": "introduced", "presence": "introduced" },
@@ -9,6 +9,7 @@
   ],
   "speciesGroups": [],
   "sources": [
+    { "key": "gnis_arcgis_234522", "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_id%3D234522&outFields=*&f=json", "title": "USGS GNIS (The National Map Gazetteer) — Other Hydrographic Features layer record for gaz_id 234522, \"Putah Creek\", CA, Yolo Co.", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "primary_regulatory", "authorityKey": "usgs", "retrievedDate": "2026-07-14", "quotedText": "{\"gaz_id\":234522,\"gaz_name\":\"Putah Creek\",\"gaz_featureclass\":\"Lake\",\"state_alpha\":\"CA\",\"county_name\":\"Yolo\"} — geometry point converts to lon -121.7602, lat 38.5301 (confirmed against Wikipedia's infobox, which cites the same GNIS ID 234522), correcting the file's prior coordinate (-122.0894, 38.5018) which sat ~15km west near Monticello Dam/Lake Berryessa and was not sourced from GNIS." },
     { "key": "ccr_7_50_b_115", "url": "https://www.law.cornell.edu/regulations/california/14-CCR-7.50", "title": "CCR T14 §7.50(b)(115) — Putah Creek (Solano and Yolo Cos.)", "documentType": "webpage", "instrumentType": "commission_reg", "authorityLevel": "primary_regulatory", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": "(115) Putah Creek (Solano and Yolo Cos.) from Solano Lake to Monticello Dam. All year. Only artificial lures with barbless hooks may be used. 0 trout" },
     { "key": "cdfw_freshwater_booklet_2026", "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=", "title": "2026 California Freshwater Sport Fishing Regulations (CDFW booklet)", "documentType": "pdf", "instrumentType": "booklet", "authorityLevel": "agency_mirror", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
     { "key": "putah_creek_trout_interdam", "url": "https://putahcreektrout.org/interdam-putah-creek/", "title": "Interdam Putah Creek — Putah Creek Trout", "documentType": "webpage", "instrumentType": "webpage", "authorityLevel": "third_party", "authorityKey": "cdfw", "retrievedDate": "2026-07-01", "quotedText": null },
