@@ -5,3 +5,5 @@ dist
 .playwright-mcp/
 logs/
 .chat-sessions/
+.cache
+verify-out
