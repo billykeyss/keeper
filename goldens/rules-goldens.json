@@ -1,0 +1,2406 @@
+{
+  "keeperSha": "c726e0591bfdeb8b35ce44fe3cdde7e5b8e3c7df",
+  "recordedAt": "2026-11-16T18:11:23.382Z",
+  "cases": [
+    {
+      "slug": "battle-born-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-born-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-born-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-born-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boca-reservoir",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boca-reservoir",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boca-reservoir",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boca-reservoir",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "davis-creek-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "davis-creek-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "davis-creek-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "davis-creek-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "donner-lake",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "donner-lake",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "donner-lake",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "donner-lake",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "idlewild-ponds",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "idlewild-ponds",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "idlewild-ponds",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "idlewild-ponds",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "independence-lake",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "independence-lake",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "independence-lake",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "independence-lake",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "lake-tahoe",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 2
+    },
+    {
+      "slug": "lake-tahoe",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 2
+    },
+    {
+      "slug": "lake-tahoe",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 2
+    },
+    {
+      "slug": "lake-tahoe",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 2
+    },
+    {
+      "slug": "little-truckee-river",
+      "on": "2026-01-15",
+      "overall": "catch_and_release",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Little Truckee River — Stampede Dam to Boca Reservoir",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "little-truckee-river",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Little Truckee River — Stampede Dam to Boca Reservoir",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "little-truckee-river",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Little Truckee River — Stampede Dam to Boca Reservoir",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "little-truckee-river",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Little Truckee River — Stampede Dam to Boca Reservoir",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "marilyns-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "marilyns-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "marilyns-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "marilyns-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "martis-creek-lake",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "martis-creek-lake",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "martis-creek-lake",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "martis-creek-lake",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "paradise-ponds",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "paradise-ponds",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "paradise-ponds",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "paradise-ponds",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "prosser-creek-reservoir",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "prosser-creek-reservoir",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "prosser-creek-reservoir",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "prosser-creek-reservoir",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "pyramid-lake",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "pyramid-lake",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "pyramid-lake",
+      "on": "2026-07-01",
+      "overall": "catch_and_release",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "pyramid-lake",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "rancho-san-rafael-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "rancho-san-rafael-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "rancho-san-rafael-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "rancho-san-rafael-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "sparks-marina",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "sparks-marina",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "sparks-marina",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "sparks-marina",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "stampede-reservoir",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "stampede-reservoir",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "stampede-reservoir",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "stampede-reservoir",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "truckee-river-ca",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Truckee River Reach A",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River Reach B",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Truckee River Reach C",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-ca",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Truckee River Reach A",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River Reach B",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Truckee River Reach C",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-ca",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Truckee River Reach A",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River Reach B",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Truckee River Reach C",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-ca",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Truckee River Reach A",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River Reach B",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Truckee River Reach C",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-nv",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Truckee River at Derby Dam (closed 1,000 ft below dam)",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River — E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-nv",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Truckee River at Derby Dam (closed 1,000 ft below dam)",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River — E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-nv",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Truckee River at Derby Dam (closed 1,000 ft below dam)",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River — E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "truckee-river-nv",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        },
+        {
+          "scope": "Truckee River at Derby Dam (closed 1,000 ft below dam)",
+          "status": "closed"
+        },
+        {
+          "scope": "Truckee River — E Mustang Road bridge (I-80 Exit 23) downstream to Pyramid Lake Paiute Reservation boundary",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 0
+    },
+    {
+      "slug": "verdi-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "verdi-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "verdi-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "verdi-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "virginia-lake",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "virginia-lake",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "virginia-lake",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "virginia-lake",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "washoe-lake",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "washoe-lake",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "washoe-lake",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "washoe-lake",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "wilson-common",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "wilson-common",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "wilson-common",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "wilson-common",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alder-creek-nevada-county",
+      "on": "2026-01-15",
+      "overall": "catch_and_release",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alder-creek-nevada-county",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alder-creek-nevada-county",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alder-creek-nevada-county",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "angora-creek",
+      "on": "2026-01-15",
+      "overall": "catch_and_release",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "angora-creek",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "angora-creek",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "angora-creek",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "ash-canyon-creek",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "ash-canyon-creek",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "ash-canyon-creek",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "ash-canyon-creek",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bass-pond-mason-valley-wma",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bass-pond-mason-valley-wma",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bass-pond-mason-valley-wma",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bass-pond-mason-valley-wma",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beaver-slough-mason-valley-wma",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beaver-slough-mason-valley-wma",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beaver-slough-mason-valley-wma",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beaver-slough-mason-valley-wma",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boggy-creek",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boggy-creek",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boggy-creek",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "boggy-creek",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alameda-creek-and-tributaries",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Alameda Creek mainstem and tributaries downstream of reservoirs (excl. Arroyo Del Valle segment)",
+          "status": "closed"
+        },
+        {
+          "scope": "Arroyo Del Valle (Bernal Ave. to Thiessen St./Vineyard Ave.)",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs",
+          "status": "unknown"
+        },
+        {
+          "scope": "San Antonio and Calaveras Reservoirs",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alameda-creek-and-tributaries",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Alameda Creek mainstem and tributaries downstream of reservoirs (excl. Arroyo Del Valle segment)",
+          "status": "closed"
+        },
+        {
+          "scope": "Arroyo Del Valle (Bernal Ave. to Thiessen St./Vineyard Ave.)",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs",
+          "status": "unknown"
+        },
+        {
+          "scope": "San Antonio and Calaveras Reservoirs",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alameda-creek-and-tributaries",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Alameda Creek mainstem and tributaries downstream of reservoirs (excl. Arroyo Del Valle segment)",
+          "status": "closed"
+        },
+        {
+          "scope": "Arroyo Del Valle (Bernal Ave. to Thiessen St./Vineyard Ave.)",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "San Antonio and Calaveras Reservoirs",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "alameda-creek-and-tributaries",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Alameda Creek mainstem and tributaries downstream of reservoirs (excl. Arroyo Del Valle segment)",
+          "status": "closed"
+        },
+        {
+          "scope": "Arroyo Del Valle (Bernal Ave. to Thiessen St./Vineyard Ave.)",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Alameda Creek tributaries upstream of San Antonio, Calaveras, and Del Valle Reservoirs",
+          "status": "unknown"
+        },
+        {
+          "scope": "San Antonio and Calaveras Reservoirs",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "american-river-sacramento",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Nimbus Dam to USGS gauging station cable crossing",
+          "status": "closed"
+        },
+        {
+          "scope": "USGS gauging station to SMUD power line crossing at Ancil Hoffman Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Ancil Hoffman Park SMUD power line crossing to Jibboom Street bridge",
+          "status": "closed"
+        },
+        {
+          "scope": "Jibboom Street bridge to the mouth",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "american-river-sacramento",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Nimbus Dam to USGS gauging station cable crossing",
+          "status": "closed"
+        },
+        {
+          "scope": "USGS gauging station to SMUD power line crossing at Ancil Hoffman Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Ancil Hoffman Park SMUD power line crossing to Jibboom Street bridge",
+          "status": "closed"
+        },
+        {
+          "scope": "Jibboom Street bridge to the mouth",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "american-river-sacramento",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Nimbus Dam to USGS gauging station cable crossing",
+          "status": "closed"
+        },
+        {
+          "scope": "USGS gauging station to SMUD power line crossing at Ancil Hoffman Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Ancil Hoffman Park SMUD power line crossing to Jibboom Street bridge",
+          "status": "closed"
+        },
+        {
+          "scope": "Jibboom Street bridge to the mouth",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "american-river-sacramento",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Nimbus Dam to USGS gauging station cable crossing",
+          "status": "closed"
+        },
+        {
+          "scope": "USGS gauging station to SMUD power line crossing at Ancil Hoffman Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Ancil Hoffman Park SMUD power line crossing to Jibboom Street bridge",
+          "status": "closed"
+        },
+        {
+          "scope": "Jibboom Street bridge to the mouth",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "antelope-creek-tehama",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "North Fork confluence to USGS gauging station at mouth of Antelope Creek Canyon",
+          "status": "unknown"
+        },
+        {
+          "scope": "USGS gauging station at mouth of Antelope Creek Canyon to the mouth of Antelope Creek",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "antelope-creek-tehama",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "North Fork confluence to USGS gauging station at mouth of Antelope Creek Canyon",
+          "status": "open"
+        },
+        {
+          "scope": "USGS gauging station at mouth of Antelope Creek Canyon to the mouth of Antelope Creek",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "antelope-creek-tehama",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "North Fork confluence to USGS gauging station at mouth of Antelope Creek Canyon",
+          "status": "open"
+        },
+        {
+          "scope": "USGS gauging station at mouth of Antelope Creek Canyon to the mouth of Antelope Creek",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "antelope-creek-tehama",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "North Fork confluence to USGS gauging station at mouth of Antelope Creek Canyon",
+          "status": "open"
+        },
+        {
+          "scope": "USGS gauging station at mouth of Antelope Creek Canyon to the mouth of Antelope Creek",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-creek",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Battle Creek Reach A (mouth to Coleman NFH weir)",
+          "status": "closed"
+        },
+        {
+          "scope": "Battle Creek Reach B (above Coleman NFH to Angel Falls / Ponderosa Way Bridge)",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-creek",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Battle Creek Reach A (mouth to Coleman NFH weir)",
+          "status": "closed"
+        },
+        {
+          "scope": "Battle Creek Reach B (above Coleman NFH to Angel Falls / Ponderosa Way Bridge)",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-creek",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Battle Creek Reach A (mouth to Coleman NFH weir)",
+          "status": "closed"
+        },
+        {
+          "scope": "Battle Creek Reach B (above Coleman NFH to Angel Falls / Ponderosa Way Bridge)",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "battle-creek",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Battle Creek Reach A (mouth to Coleman NFH weir)",
+          "status": "closed"
+        },
+        {
+          "scope": "Battle Creek Reach B (above Coleman NFH to Angel Falls / Ponderosa Way Bridge)",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bear-river-and-tributaries-placer",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Bear River Reach A (Hwy 20 to Boardman Diversion Dam)",
+          "status": "open"
+        },
+        {
+          "scope": "Bear River Reach B (Hwy 65 to South Sutter ID Diversion Dam)",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bear-river-and-tributaries-placer",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Bear River Reach A (Hwy 20 to Boardman Diversion Dam)",
+          "status": "unknown"
+        },
+        {
+          "scope": "Bear River Reach B (Hwy 65 to South Sutter ID Diversion Dam)",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bear-river-and-tributaries-placer",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Bear River Reach A (Hwy 20 to Boardman Diversion Dam)",
+          "status": "open"
+        },
+        {
+          "scope": "Bear River Reach B (Hwy 65 to South Sutter ID Diversion Dam)",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bear-river-and-tributaries-placer",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Bear River Reach A (Hwy 20 to Boardman Diversion Dam)",
+          "status": "open"
+        },
+        {
+          "scope": "Bear River Reach B (Hwy 65 to South Sutter ID Diversion Dam)",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-chico-creek",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach A",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach B",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach C",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-chico-creek",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach A",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach B",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach C",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-chico-creek",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach A",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach B",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach C",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-chico-creek",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Chico Creek Reach A",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach B",
+          "status": "open"
+        },
+        {
+          "scope": "Big Chico Creek Reach C",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "baily-fishing-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "baily-fishing-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "baily-fishing-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "baily-fishing-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "barber-creek",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "barber-creek",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "barber-creek",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "barber-creek",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beatty-urban-pond",
+      "on": "2026-01-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beatty-urban-pond",
+      "on": "2026-04-25",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beatty-urban-pond",
+      "on": "2026-07-01",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "beatty-urban-pond",
+      "on": "2026-11-15",
+      "overall": "open",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "open"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-sur-river",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Sur River within Pfeiffer Big Sur State Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Big Sur River within the Ventana Wilderness Area",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-sur-river",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Sur River within Pfeiffer Big Sur State Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Big Sur River within the Ventana Wilderness Area",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-sur-river",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Sur River within Pfeiffer Big Sur State Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Big Sur River within the Ventana Wilderness Area",
+          "status": "catch_and_release"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "big-sur-river",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Big Sur River within Pfeiffer Big Sur State Park",
+          "status": "closed"
+        },
+        {
+          "scope": "Big Sur River within the Ventana Wilderness Area",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bogus-creek",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bogus-creek",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bogus-creek",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "bogus-creek",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "butano-creek",
+      "on": "2026-01-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek above Butano Falls",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek, mouth to Pescadero-Bean Hollow Road county bridge",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "butano-creek",
+      "on": "2026-04-25",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek above Butano Falls",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek, mouth to Pescadero-Bean Hollow Road county bridge",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "butano-creek",
+      "on": "2026-07-01",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek above Butano Falls",
+          "status": "catch_and_release"
+        },
+        {
+          "scope": "Butano Creek, mouth to Pescadero-Bean Hollow Road county bridge",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "butano-creek",
+      "on": "2026-11-15",
+      "overall": "unknown",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek above Butano Falls",
+          "status": "unknown"
+        },
+        {
+          "scope": "Butano Creek, mouth to Pescadero-Bean Hollow Road county bridge",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "aptos-creek",
+      "on": "2026-01-15",
+      "overall": "closed",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "aptos-creek",
+      "on": "2026-04-25",
+      "overall": "closed",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "aptos-creek",
+      "on": "2026-07-01",
+      "overall": "closed",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    },
+    {
+      "slug": "aptos-creek",
+      "on": "2026-11-15",
+      "overall": "closed",
+      "scopes": [
+        {
+          "scope": "water",
+          "status": "closed"
+        }
+      ],
+      "licenseCount": 1
+    }
+  ]
+}
