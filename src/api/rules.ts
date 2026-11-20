@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { and, eq, or, inArray, isNull, lte, gte, desc, sql } from "drizzle-orm";
+import { and, eq, or, inArray, desc, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import { db } from "../db/client";
 import {
@@ -8,62 +8,9 @@ import {
   species, speciesGroup, waterBodySpecies, licenseReciprocity,
   speciesStockingEvent, speciesStockingSchedule,
 } from "../db/schema";
-import type { DateSpec } from "../params/shared";
-import { isDateInWindow, windowResolvable } from "./season";
+import { resolveWater, isValidIsoDate, type CandidateRule, type DateSpec, type PeriodStatus, type ReachInfo } from "../resolve/index.ts";
 
 export const rules = new Hono();
-
-type Params = Record<string, unknown>;
-type ScopeStatus = "open" | "catch_and_release" | "closed" | "unknown";
-
-const isoDate = /^\d{4}-\d{2}-\d{2}$/;
-function validDate(on: string): boolean {
-  if (!isoDate.test(on)) return false;
-  const t = Date.parse(on + "T00:00:00Z");
-  if (Number.isNaN(t)) return false;
-  return new Date(t).toISOString().slice(0, 10) === on;
-}
-
-const STATUS_LABEL: Record<ScopeStatus, string> = {
-  open: "Open",
-  catch_and_release: "Catch & release only",
-  closed: "Closed",
-  unknown: "Check current regulations",
-};
-
-// A single active period status contributed by a rule that is in force on `on`.
-type PeriodStatus = "open" | "closed" | "open_catch_release";
-
-interface ResolvedRule {
-  regId: number;
-  ruleType: string;
-  summary: string;
-  detail: Params;
-  citation: string | null;
-  sourceUrl: string | null;
-  polarity: string;
-  confidence: string;
-  appliesTo: string;
-  species: string[];
-  // resolution bookkeeping (stripped before serialization)
-  _scopeKey: string; // "water" or `reach:<id>`
-  _inForce: boolean; // definitely applies on `on` (not unknown-activity)
-  _activePeriodStatuses: PeriodStatus[]; // season statuses this rule contributes on `on`
-  _authorityName?: string;
-  // season-type rules also carry per-period activeNow annotations
-  periods?: Array<{ label: string; status: PeriodStatus; activeNow: boolean }>;
-}
-
-/** Whether an active closure rule forces its whole scope to "closed".
- *  Reach-scope closures always close their reach. Water-scope closures close the whole water
- *  ONLY when they are not partial-area ('spatial') closures — spatial buffers around tributary
- *  mouths / swim areas render as informational rule cards without flipping the water to closed.
- *  Fail-closed: any non-spatial water-scoped closure (year_round/seasonal/emergency/…) closes. */
-function closureClosesScope(isWaterScope: boolean, params: unknown): boolean {
-  if (!isWaterScope) return true;
-  const kind = (params as { closure_kind?: string } | null)?.closure_kind;
-  return kind !== "spatial";
-}
 
 rules.get("/api/waters/:id/rules", async (c) => {
   const idRaw = c.req.param("id");
@@ -71,14 +18,13 @@ rules.get("/api/waters/:id/rules", async (c) => {
   if (!Number.isInteger(waterId) || waterId <= 0) return c.json({ error: "unknown water" }, 404);
 
   const on = c.req.query("on") ?? new Date().toISOString().slice(0, 10);
-  if (!validDate(on)) return c.json({ error: "on must be a valid YYYY-MM-DD date" }, 400);
+  if (!isValidIsoDate(on)) return c.json({ error: "on must be a valid YYYY-MM-DD date" }, 400);
 
   const [water] = await db.select().from(waterBody).where(eq(waterBody.id, waterId));
   if (!water) return c.json({ error: "unknown water" }, 404);
 
   const reaches = await db.select().from(reach).where(eq(reach.waterBodyId, waterId));
   const reachIds = reaches.map((r) => r.id);
-  const reachById = new Map(reaches.map((r) => [r.id, r]));
 
   const wbaRows = await db.select({ authorityId: waterBodyAuthority.authorityId })
     .from(waterBodyAuthority).where(eq(waterBodyAuthority.waterBodyId, waterId));
@@ -103,6 +49,8 @@ rules.get("/api/waters/:id/rules", async (c) => {
     citation: regulation.citation,
     humanSummary: regulation.humanSummary,
     seasonPeriodId: regulation.seasonPeriodId,
+    validFrom: regulation.validFrom,
+    validTo: regulation.validTo,
     authorityId: regulation.authorityId,
     targetType: regulationTarget.targetType,
     targetId: regulationTarget.targetId,
@@ -119,8 +67,6 @@ rules.get("/api/waters/:id/rules", async (c) => {
       targetMatch,
       eq(regulationTarget.mode, "include"),
       inArray(regulation.status, ["verified", "published"]),
-      or(isNull(regulation.validFrom), lte(regulation.validFrom, on)),
-      or(isNull(regulation.validTo), gte(regulation.validTo, on)),
     ));
 
   // Any regulation carved out by an exclude target matching the same water/reach/authority set.
@@ -177,122 +123,6 @@ rules.get("/api/waters/:id/rules", async (c) => {
     for (const a of aRows) authNameById.set(a.id, a.name);
   }
 
-  // --- resolve each candidate into a rule row + season bookkeeping ---
-  const resolved: ResolvedRule[] = [];
-  for (const r of candidates) {
-    const params = (r.parameters ?? {}) as Params;
-    const scopeKey = r.targetType === "reach" ? `reach:${r.targetId}` : "water";
-    const base: Omit<ResolvedRule, "_inForce" | "_activePeriodStatuses" | "periods"> = {
-      regId: r.regId,
-      ruleType: r.ruleType,
-      summary: r.humanSummary,
-      detail: params,
-      citation: r.citation ?? r.groupCitation ?? null,
-      sourceUrl: urlByReg.get(r.regId) ?? null,
-      polarity: r.rulePolarity,
-      confidence: r.confidence,
-      appliesTo: r.appliesToClass,
-      species: speciesByReg.get(r.regId) ?? [],
-      _scopeKey: scopeKey,
-      _authorityName: authNameById.get(r.authorityId),
-    };
-
-    if (r.ruleType === "season") {
-      // season-type rules always render (they describe the calendar); annotate activeNow per period.
-      const periodsRaw = Array.isArray((params as any).periods) ? (params as any).periods : [];
-      const periods = periodsRaw.map((p: any) => {
-        const active = windowResolvable(p.start as DateSpec, p.end as DateSpec)
-          ? isDateInWindow(p.start as DateSpec, p.end as DateSpec, on)
-          : false;
-        return { label: p.label as string, status: p.status as PeriodStatus, activeNow: active };
-      });
-      const activeStatuses = periods.filter((p: any) => p.activeNow).map((p: any) => p.status as PeriodStatus);
-      resolved.push({ ...base, _inForce: true, _activePeriodStatuses: activeStatuses, periods });
-      continue;
-    }
-
-    if (r.seasonPeriodId != null && r.periodStart && r.periodEnd) {
-      const start = r.periodStart as DateSpec;
-      const end = r.periodEnd as DateSpec;
-      if (!windowResolvable(start, end)) {
-        // Unresolvable spec: activity unknown — keep the card, contribute no season evidence.
-        resolved.push({ ...base, _inForce: false, _activePeriodStatuses: [] });
-        continue;
-      }
-      if (!isDateInWindow(start, end, on)) continue; // resolved and out of window → not in force today
-      resolved.push({ ...base, _inForce: true, _activePeriodStatuses: [r.periodStatus as PeriodStatus] });
-      continue;
-    }
-
-    // Unbound rule (no season period): always in force (subject to validity, already filtered).
-    resolved.push({ ...base, _inForce: true, _activePeriodStatuses: [] });
-  }
-
-  // --- derive per-scope status ---
-  function deriveStatus(scopeRules: ResolvedRule[], isWaterScope: boolean): ScopeStatus {
-    // 1. Active closure that closes this whole scope, or an active "closed" season period.
-    for (const rr of scopeRules) {
-      if (!rr._inForce) continue;
-      if (rr.ruleType === "closure" && closureClosesScope(isWaterScope, rr.detail)) return "closed";
-      if (rr._activePeriodStatuses.includes("closed")) return "closed";
-    }
-
-    // 2. Collect active season-period evidence for this scope. `_activePeriodStatuses` already
-    //    folds in BOTH bound season_period bindings (in-window via isDateInWindow) AND `season`-rule
-    //    parameters.periods entries that are active on `on`.
-    let hasOpen = false;
-    let hasOpenCR = false;
-    for (const rr of scopeRules) {
-      if (!rr._inForce) continue;
-      for (const st of rr._activePeriodStatuses) {
-        if (st === "open") hasOpen = true;
-        else if (st === "open_catch_release") hasOpenCR = true;
-      }
-    }
-
-    // 3. An open period exists. Scope status must reflect only bags that could permit harvest in
-    //    THIS scope — an unrelated always-in-force catch-and-release protection bag for a different
-    //    species (cui-ui at Pyramid, LCT at Independence) must not downgrade a keepable fishery.
-    if (hasOpen) {
-      const activeBags = scopeRules.filter((rr) => rr._inForce && rr.ruleType === "bag");
-      const permitsHarvest = activeBags.some((rr) => {
-        if (rr.polarity !== "applies") return false; // asserts_none bags are neutral, not permissive
-        if (rr.detail.catch_and_release === true) return false;
-        const daily = rr.detail.daily;
-        return (typeof daily === "number" && daily > 0) || daily == null;
-      });
-      if (permitsHarvest) return "open";
-      const hasCRBag = activeBags.some(
-        (rr) => rr.detail.catch_and_release === true || rr.detail.daily === 0,
-      );
-      if (hasCRBag) return "catch_and_release";
-      return "open"; // open season, no bag rule (or only asserts_none) → open
-    }
-
-    // 4. No open period, but an active catch-and-release ("open_catch_release") season period.
-    if (hasOpenCR) return "catch_and_release";
-
-    // 5. Nothing resolvable.
-    return "unknown";
-  }
-
-  const serialize = (rr: ResolvedRule) => ({
-    ruleType: rr.ruleType,
-    summary: rr.summary,
-    detail: rr.detail,
-    citation: rr.citation,
-    sourceUrl: rr.sourceUrl,
-    polarity: rr.polarity,
-    confidence: rr.confidence,
-    appliesTo: rr.appliesTo,
-    species: rr.species,
-    ...(rr.periods ? { periods: rr.periods } : {}),
-  });
-
-  // license rules surface in a dedicated top-level section, not the scope rule cards.
-  const licenseRules = resolved.filter((r) => r.ruleType === "license");
-  const scopeableRules = resolved.filter((r) => r.ruleType !== "license");
-
   // Reach path geometry, for the map's "tap a section to highlight it" affordance. One lookup,
   // converted to the same [lon,lat][] line shape the map already uses for reach pins.
   const reachLineById = new Map<number, [number, number][]>();
@@ -310,23 +140,38 @@ rules.get("/api/waters/:id/rules", async (c) => {
     }
   }
 
-  // --- assemble scopes: water first, then each reach in id order ---
-  // `line` is the traced path when known (few reaches have it); `point` is the always-present
-  // representative marker — the map spotlights the line if it has one, else zooms to the point.
-  const scopes: Array<{ scope: string; kind: "water" | "reach"; reachId: number | null; line: [number, number][] | null; point: [number, number] | null; sublabel: string | null; status: ScopeStatus; rules: ReturnType<typeof serialize>[] }> = [];
-
-  const waterScopeRules = scopeableRules.filter((r) => r._scopeKey === "water");
-  const waterStatus = deriveStatus(waterScopeRules, true);
-  scopes.push({ scope: "water", kind: "water", reachId: null, line: null, point: null, sublabel: null, status: waterStatus, rules: waterScopeRules.map(serialize) });
-
-  for (const rc of reaches) {
-    const scopeRules = scopeableRules.filter((r) => r._scopeKey === `reach:${rc.id}`);
-    if (scopeRules.length === 0) continue; // omit reaches with no applicable rules
-    const status = deriveStatus(scopeRules, false);
-    const sublabel = rc.fromDesc && rc.toDesc ? `${rc.fromDesc} → ${rc.toDesc}` : null;
-    const point: [number, number] | null = rc.lon != null && rc.lat != null ? [rc.lon, rc.lat] : null;
-    scopes.push({ scope: rc.name ?? `Reach ${rc.id}`, kind: "reach", reachId: rc.id, line: reachLineById.get(rc.id) ?? null, point, sublabel, status, rules: scopeRules.map(serialize) });
-  }
+  // --- build DB-free candidates and resolve them (validity, season windows, scope status) ---
+  const cands: CandidateRule[] = candidates.map((r) => ({
+    regId: r.regId,
+    ruleType: r.ruleType,
+    parameters: (r.parameters ?? {}) as Record<string, unknown>,
+    polarity: r.rulePolarity,
+    confidence: r.confidence,
+    appliesTo: r.appliesToClass,
+    citation: r.citation ?? r.groupCitation ?? null,
+    summary: r.humanSummary,
+    sourceUrl: urlByReg.get(r.regId) ?? null,
+    species: speciesByReg.get(r.regId) ?? [],
+    scopeKey: r.targetType === "reach" ? `reach:${r.targetId}` : "water",
+    period: r.seasonPeriodId != null && r.periodStart && r.periodEnd
+      ? { status: r.periodStatus as PeriodStatus, start: r.periodStart as DateSpec, end: r.periodEnd as DateSpec }
+      : null,
+    validFrom: r.validFrom ?? null,
+    validTo: r.validTo ?? null,
+    authorityName: authNameById.get(r.authorityId),
+  }));
+  const reachInfos: ReachInfo[] = reaches.map((rc) => ({
+    key: String(rc.id),
+    name: rc.name,
+    fromDesc: rc.fromDesc,
+    toDesc: rc.toDesc,
+    lon: rc.lon,
+    lat: rc.lat,
+    line: reachLineById.get(rc.id) ?? null,
+  }));
+  const resolvedWater = resolveWater(cands, reachInfos, on, water.verifyCurrent);
+  // The API's reachId stays the numeric DB id (the pure module keys reaches by string).
+  const scopes = resolvedWater.scopes.map((s) => ({ ...s, reachId: s.reachId == null ? null : Number(s.reachId) }));
 
   // --- reciprocity (joined authority names) ---
   const honoring = alias(authority, "honoring_auth");
@@ -381,8 +226,6 @@ rules.get("/api/waters/:id/rules", async (c) => {
     .innerJoin(source, eq(source.id, speciesStockingSchedule.sourceId))
     .where(eq(speciesStockingSchedule.waterBodyId, waterId));
 
-  const overall: ScopeStatus = waterStatus;
-
   return c.json({
     water: {
       id: water.id,
@@ -392,9 +235,9 @@ rules.get("/api/waters/:id/rules", async (c) => {
       counties: water.counties,
       verifyCurrent: water.verifyCurrent,
     },
-    status: { overall, label: STATUS_LABEL[overall], verifyCurrent: water.verifyCurrent },
+    status: resolvedWater.status,
     scopes,
-    licenses: licenseRules.map((r) => ({ ...serialize(r), authority: r._authorityName ?? null })),
+    licenses: resolvedWater.licenses,
     reciprocity: recRows,
     species: speciesRows,
     stocking: { events: stockingEventRows, schedule: stockingScheduleRows },
